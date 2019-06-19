@@ -5,7 +5,7 @@ seo-title: Définition - Service de souscription
 title: Définition - Service de souscription
 uuid: f 1 c 27139-cef 2-4122-af 12-c 839 cfc 82 e 6 e
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 Mettez en œuvre le service de souscription en tant que point de référence unique utilisé par les solutions Experience Cloud (désignées sous le nom de Catégories dans la souscription) pour déterminer si des cookies doivent être créés sur le périphérique d&#39;un visiteur.
 
-Le service de souscription est une bibliothèque JavaScript fournie avec [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) et existe dans le JS du visiteur dans l&#39;objet global `adobe` comme `adobe.optIn` objet. Le service de souscription installé vous permet de spécifier si un visiteur peut s&#39;abonner à des solutions Adobe à la fois ou pour présenter des solutions par ordre pour chaque autorisation. La fonctionnalité de gestion du consentement du service de souscription permet de mettre en œuvre diverses configurations en fonction de vos besoins spécifiques en matière de confidentialité.
+Le service de souscription est une bibliothèque JavaScript fournie avec Experience Cloud ID (ECID) et existe dans le JS du visiteur dans l&#39;objet global `adobe` comme `adobe.optIn` objet. Le service de souscription installé vous permet de spécifier si un visiteur peut s&#39;abonner à des solutions Adobe à la fois ou pour présenter des solutions par ordre pour chaque autorisation. La fonctionnalité de gestion du consentement du service de souscription permet de mettre en œuvre diverses configurations en fonction de vos besoins spécifiques en matière de confidentialité.
 
 Le service de souscription vous permet de spécifier si un visiteur peut s&#39;abonner à des solutions Adobe à la fois ou pour présenter des solutions par ordre pour chaque autorisation. Une fois le processus d’approbation terminé et enregistré par le client, l’ensemble des solutions Adobe peuvent récupérer les approbations visiteur de la CMP en réponse aux appels de consentement associés.
 
