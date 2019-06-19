@@ -5,7 +5,7 @@ seo-title: Service de souscription
 title: Service de souscription
 uuid: aebd 72 ad -4118-471 b -9755-d 08 a 72 caa 0 fd
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Le service de souscription vous permet de configurer des protocoles pour que le visiteur détermine si vous pouvez définir un cookie sur le périphérique ou le navigateur de l&#39;utilisateur lors de la visite de votre site.
 
-Le service de souscription est une extension du service [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) , conçue pour vous permettre de contrôler si les solutions Experience Cloud peuvent créer des cookies dans les pages Web pour les visiteurs avant leur autorisation. Le service de souscription vous permet également de définir des protocoles pour l&#39;intégration à votre plateforme de gestion des autorisations (CMP) et aux systèmes existants dans le cadre de votre conception plus grande.
+Le service de souscription est une extension de l&#39;identifiant d&#39;expérience (ECID), conçue pour vous permettre de contrôler si les solutions Experience Cloud peuvent créer des cookies dans les pages Web pour les visiteurs avant leur autorisation. Le service de souscription vous permet également de définir des protocoles pour l&#39;intégration à votre plateforme de gestion des autorisations (CMP) et aux systèmes existants dans le cadre de votre conception plus grande.
 
 Grâce au service de souscription, vous pouvez spécifier si un visiteur peut s&#39;abonner à des solutions Adobe à la fois ou présenter des solutions dans l&#39;ordre pour les autorisations. Une fois le processus d’approbation terminé et enregistré par le client, vous pouvez récupérer les approbations visiteur de la CMP de l’ensemble des solutions Adobe.
 
