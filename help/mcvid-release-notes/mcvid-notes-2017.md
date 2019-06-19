@@ -6,7 +6,7 @@ seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
 uuid: 79452 df 0-49 db -42 b 8-96 fe -01 aa 7629 fbb 5
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -74,7 +74,7 @@ Août 2017
 
 **Documentation révisée**
 
-Mise à jour et révision des  [Questions fréquentes](/help/mcvid-faq-intro/ecid-faq-intro.md) pour inclure des questions fréquentes distinctes pour différentes [!DNL Experience Cloud] solutions.
+Mise à jour et révision des  [Questions fréquentes](/help/mcvid-faq-intro/mcvid-faq-intro.md) pour inclure des questions fréquentes distinctes pour différentes [!DNL Experience Cloud] solutions.
 
 ## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -134,7 +134,7 @@ Date de publication : Juin 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="../mcvid-faq-intro/ecid-faq.md" format="dita" scope="local"> FAQ </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../mcvid-faq-intro/mcvid-faq.md" format="dita" scope="local"> FAQ </a> </p> </td> 
    <td colname="col2"> <p>Mise à jour de la section <span class="keyword">Analytics</span> relative à la recherche d’informations sur le serveur de suivi. </p> </td> 
   </tr> 
  </tbody> 
