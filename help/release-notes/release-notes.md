@@ -6,7 +6,7 @@ seo-title: Notes de mise à jour 2019
 title: Notes de mise à jour 2019
 uuid: a 5 a 59410-7 f 85-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -21,7 +21,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Service Opt-in**. Opt-in est une extension d’[Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) qui vous permet de contrôler la création de cookies par les bibliothèques Experience Cloud sur les pages web pour les visiteurs (ainsi que de décider quelles sont les bibliothèques concernées). Avec [Launch](https://docs.adobelaunch.com/), vous pouvez simplifier la collecte des consentements de souscription des visiteurs pour la solution Experience Cloud en autorisant Analytics, Target, Audience Manager et d’autres solutions Experience Cloud, ou une partie de celles-ci, à souscrire à votre système de gestion du consentement.
+**Service Opt-in**. La souscription est une extension de l&#39;identifiant d&#39;expérience (ECID) qui permet de contrôler si les bibliothèques Experience Cloud peuvent créer des cookies dans les pages Web pour les visiteurs. Grâce [au lancement de Platform Platform,](https://docs.adobelaunch.com/)vous pouvez simplifier la collecte des consents de souscription des visiteurs pour la solution Experience Cloud en activant Analytics, Target, Audience Manager et d&#39;autres solutions Experience Cloud pour souscrire votre système de gestion de l&#39;autorisation.
 
 ## Version 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
