@@ -6,7 +6,7 @@ seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
 uuid: 7 a 5 a 314 a -3 ff 8-4561-9 c 64-6 c 10 d 2223887
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -24,9 +24,7 @@ Novembre 2016
 >[!IMPORTANT]
 >
 >* 1.10 requiert [!DNL AppMeasurement] 1.8.0.
->* Avec la bibliothèque du service d&#39;identité de Platform Platform 2.0.0 +, la synchronisation des identifiants commence par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html).
->
-
+>* Avec la bibliothèque du service d&#39;identité de Platform Platform 2.0.0 +, la synchronisation des identifiants commence par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](/help/introduction/match-rates.md).
 
 
 **Correctifs et améliorations**
