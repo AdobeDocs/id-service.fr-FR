@@ -6,7 +6,7 @@ seo-title: Implémentation avec la gestion dynamique des balises
 title: Implémentation avec la gestion dynamique des balises
 uuid: c 4 f 752 c 4-392 e -4909-b 178-911706857064
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ Les anciennes implémentations utilisent la gestion dynamique des balises pour c
 
 >[!NOTE]
 >
->[Actuellement, le lancement d&#39;Adobe](https://docs.adobelaunch.com/) est l&#39;outil d&#39;implémentation préféré et recommandé, car il permet de simplifier les tâches complexes de gestion des balises et d&#39;automatiser le placement du code au-delà des fonctionnalités de la gestion dynamique des balises. Voir [Implémentation avec Lancer](../implementation-guides/ecid-implement-with-launch.md).
+>Actuellement, [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) est l&#39;outil de mise en œuvre préféré et recommandé, car il simplifie les tâches complexes de gestion des balises et automatise le placement du code au-delà des fonctionnalités de la gestion dynamique des balises. Voir [Implémentation avec Lancer](../implementation-guides/ecid-implement-with-launch.md).
 
 ## Dynamic Tag Management et service d’ID {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
