@@ -2,20 +2,20 @@
 description: Le service d’ID utilise l’ID d’organisation, le cookie AMCV d’Experience Cloud et un cookie demdex pour créer et stocker les identifiants uniques et persistants des visiteurs de votre site. Ces cookies permettent au service d’ID d’effectuer le suivi des visiteurs dans vos différents domaines et d’activer le partage de données entre différentes solutions Experience Cloud.
 keywords: playstation ; Service d'ID
 seo-description: Le service d’ID utilise l’ID d’organisation, le cookie AMCV d’Experience Cloud et un cookie demdex pour créer et stocker les identifiants uniques et persistants des visiteurs de votre site. Ces cookies permettent au service d’ID d’effectuer le suivi des visiteurs dans vos différents domaines et d’activer le partage de données entre différentes solutions Experience Cloud.
-seo-title: Cookies et service d'identité de Platform Platform
-title: Cookies et service d'identité de Platform Platform
+seo-title: Les cookies et le service Experience Cloud ID
+title: Les cookies et le service Experience Cloud ID
 uuid: c 5 cbd 235-37 ee -4605-8792-b 1 a 991 e 190
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Cookies et service d&#39;identité de Platform Platform{#cookies-and-the-experience-cloud-id-service}
+# Les cookies et le service Experience Cloud ID{#cookies-and-the-experience-cloud-id-service}
 
 Le service d’ID utilise l’ID d’organisation, le cookie AMCV d’Experience Cloud et un cookie demdex pour créer et stocker les identifiants uniques et persistants des visiteurs de votre site. Ces cookies permettent au service d’ID d’effectuer le suivi des visiteurs dans vos différents domaines et d’activer le partage de données entre différentes solutions Experience Cloud.
 
-## Comprendre les cookies du service d&#39;ID {#section-f438168beaec409ab8b2cc58bd021e26}
+## Understanding ID Service cookies {#section-f438168beaec409ab8b2cc58bd021e26}
 
 Le bon fonctionnement du service d’ID repose sur les cookies AMCV, AMCVS et Demdex. Ces cookies ne sont que des fichiers qui stockent les données utilisées par le service d’ID. Ces cookies du service d’ID ne sont ni dangereux, ni malveillants, ni différents des autres cookies propriétaires ou tiers stockés par un site web ou par un service dans un navigateur. Ces cookies suivent les mêmes règles que les autres cookies propriétaires ou tiers. Pour plus d&#39;informations sur les cookies utilisés par le service d&#39;ID, reportez-vous aux sections ci-dessous.
 
@@ -39,7 +39,7 @@ Attributs suivants du cookie défini par le service d&#39;ID.
 
 **Nom**
 
-Le nom du cookie AMCV suit la syntaxe `AMCV_<variable name>@AdobeOrg`. Dans le nom, `<variable name>` les éléments sont des espaces réservés pour une partie de votre ID d&#39;organisation Experience Cloud. Cet ID est transmis au serveur de collecte de données par la fonction `Visitor.getInstance` dans le code du service d’ID.
+The AMCV cookie name follows the syntax `AMCV_<variable name>@AdobeOrg`. In the name, the `<variable name>` elements are placeholders for part of your Experience Cloud organization ID. Cet ID est transmis au serveur de collecte de données par la fonction `Visitor.getInstance` dans le code du service d’ID.
 
 Un nom de cookie entièrement formé doit ressembler à celui-ci :
 
@@ -69,7 +69,7 @@ Toutefois, comme le cookie AMCV est défini dans le domaine propriétaire, il ne
 
 **Nom**
 
-Le nom du cookie AMCVS suit la syntaxe `AMCVS_####@AdobeOrg`. Dans le nom, les éléments #### représentent des espaces réservés à une partie de l’ID d’organisation d’Experience Cloud. Cet ID est transmis au serveur de collecte de données par `theVisitor.getInstance` fonction dans le code du service d&#39;ID.
+The AMCVS cookie name follows the syntax `AMCVS_####@AdobeOrg`. Dans le nom, les éléments #### représentent des espaces réservés à une partie de l’ID d’organisation d’Experience Cloud. This ID is passed in to the DCS by `theVisitor.getInstance` function in the ID service code.
 
 Un nom de cookie entièrement formé doit ressembler à celui-ci :
 
@@ -79,7 +79,7 @@ AMCVS_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Contenu**
 
-Le cookie AMCVS sert de drapeau indiquant que la session a été initialisée. Sa valeur est toujours `1` et interrompue lorsque la session est terminée.
+Le cookie AMCVS sert de drapeau indiquant que la session a été initialisée. Its value is always `1` and discontinues when the session has ended.
 
 **Domaine**
 
@@ -114,7 +114,7 @@ Le tableau ci-dessous répertorie et définit quelques attributs importants du c
  </tbody> 
 </table>
 
-Pour plus d&#39;informations, voir [Présentation des appels au domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Génération de l’Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ Le service d’ID commence à créer un MID lorsque votre page se charge. Au cou
 
 ## Étapes suivantes {#section-8db1727a63bc4ff68b495f270315d453}
 
-Voir [Comment le service d&#39;identité de Platform Platform demande et définit des identifiants….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+See [How the Experience Cloud ID Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
