@@ -1,19 +1,19 @@
 ---
-description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code Experience Platform Identity Service, ce qui l'empêche de définir des cookies dans le domaine tiers d'un navigateur.
+description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code de service Experience Cloud ID, ce qui l'empêche de définir les cookies dans le domaine tiers d'un navigateur.
 keywords: Service d’identification
-seo-description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code Experience Platform Identity Service, ce qui l'empêche de définir des cookies dans le domaine tiers d'un navigateur.
-seo-title: Prise en charge COPPA dans le service d'identité d'Experience Platform
-title: Prise en charge COPPA dans le service d'identité d'Experience Platform
+seo-description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code de service Experience Cloud ID, ce qui l'empêche de définir les cookies dans le domaine tiers d'un navigateur.
+seo-title: Prise en charge COPPA dans le service Experience Cloud ID
+title: Prise en charge COPPA dans le service Experience Cloud ID
 uuid: 621 b 5 ebd -92 e 7-4635-be 85-8 d 7 e 36589 fcb
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Prise en charge COPPA dans le service d&#39;identité d&#39;Experience Platform {#coppa-support-in-the-experience-cloud-id-service}
+# Prise en charge COPPA dans le service Experience Cloud ID {#coppa-support-in-the-experience-cloud-id-service}
 
-La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code Experience Platform Identity Service, ce qui l&#39;empêche de définir des cookies dans le domaine tiers d&#39;un navigateur.
+La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code de service Experience Cloud ID, ce qui l&#39;empêche de définir les cookies dans le domaine tiers d&#39;un navigateur.
 
 >[!NOTE]
 >
