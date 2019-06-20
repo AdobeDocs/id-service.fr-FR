@@ -1,25 +1,25 @@
 ---
 cloud: platform-cloud
-product: Service d'identité
+product: Service d’identification
 audience: utilisateur final
-user-guide-title: Aide du service d'identité de Platform Platform
+user-guide-title: Aide du service Experience Cloud ID
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Aide du service d&#39;identité {#using}
+# Experience Cloud ID Service Help {#using}
 
-+ [Aide du service d&#39;identité](home.md)
++ [Aide du service d&#39;ID](home.md)
 + Aperçu {#intro}
    + [Aperçu](introduction/overview.md)
-   + [A propos du service d&#39;identité](introduction/about-id-service.md)
-   + [Cookies et service d&#39;identité](introduction/cookies.md)
-   + [Demande et définition des identifiants par le service d&#39;identité](introduction/id-request.md)
+   + [A propos du service d&#39;ID](introduction/about-id-service.md)
+   + [Cookies et service d’ID](introduction/cookies.md)
+   + [Demande et définition des identifiants par le service d&#39;ID](introduction/id-request.md)
    + [Comprendre la synchronisation et les taux de correspondance](introduction/match-rates.md)
-+ Guides de mise en œuvre {#implementation-guides}
++ Implementation guides {#implementation-guides}
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
    + [Méthodes d&#39;implémentation](implementation-guides/implementation-methods.md)
    + [Mise en œuvre avec Launch](implementation-guides/ecid-implement-with-launch.md)
@@ -28,11 +28,11 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
    + [Implémentation pour Target](implementation-guides/setup-target.md)
    + [Mise en œuvre pour Analytics et Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implémentation pour Analytics, Audience Manager et Target](implementation-guides/setup-aam-analytics-target.md)
-   + [Utilisation du service d&#39;identité avec A 4 T et une implémentation côté serveur de Target](implementation-guides/ecid-a4t-target.md)
-   + [Intégration directe au service d&#39;identité](implementation-guides/direct-integration.md)
+   + [Utilisation du service  ID avec A4T et une mise en œuvre côté serveur de Target](implementation-guides/ecid-a4t-target.md)
+   + [Intégration directe au service d&#39;ID](implementation-guides/direct-integration.md)
    + [Cas d’utilisation de l’intégration directe](implementation-guides/direct-integration-examples.md)
-   + [Tester et vérifier le service d&#39;identité](implementation-guides/test-verify.md)
-   + Documentation de souscription {#opt-in-service}
+   + [Tester et vérifier le service d&#39;ID](implementation-guides/test-verify.md)
+   + Opt-in Documentation {#opt-in-service}
       + [Présentation du service de souscription](implementation-guides/opt-in-service/optin-overview.md)
       + [Définition - Service de souscription](implementation-guides/opt-in-service/getting-started.md)
       + [Validation du service de souscription](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
@@ -41,8 +41,8 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
       + [Cas d’utilisation d’Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Références d’Opt-in](implementation-guides/opt-in-service/api.md)
       + [(bêta) Utilisation des services de souscription avec la structure IAB](implementation-guides/opt-in-service/iab.md)
-+ API des services d’identités {#id-service-api}
-   + [Présentation de l&#39;API du service d&#39;identité](library/library.md)
++ API du service d’ID {#id-service-api}
+   + [Présentation de l&#39;API du service d&#39;ID](library/library.md)
    + Configuration {#configurations}
       + [Présentation des configurations](library/function-vars/function-vars.md)
       + [audienceManagerServer et audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -83,27 +83,27 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
       + [Présentation de la référence Analytics](reference/analytics-reference/analytics-reference.md)
       + [Définition des Analytics ID et Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Ordre des opérations pour les Analytics ID](reference/analytics-reference/analytics-order-of-operations.md)
-      + [Points de prise de décision concernant la migration du service d&#39;identité](reference/analytics-reference/migration-decisions.md)
-      + [Scénarios de migration du service d&#39;identité](reference/analytics-reference/migration-scenarios.md)
+      + [Points de prise de décision concernant la migration du service d&#39;ID](reference/analytics-reference/migration-decisions.md)
+      + [Scénarios de migration du service d&#39;ID](reference/analytics-reference/migration-scenarios.md)
       + [Demandes Analytics et d&#39;identité](reference/analytics-reference/legacy-analytics.md)
       + [CNAME de collecte de données et suivi inter-domaines](reference/analytics-reference/cname.md)
       + [Mise en œuvre côté serveur alliée à JavaScript](reference/analytics-reference/server-side.md)
-      + [Période de grâce du service d&#39;identité](reference/analytics-reference/grace-period.md)
-   + [Stratégies de sécurité du contenu et service d&#39;identité](reference/csp.md)
-   + [Prise en charge COPPA dans le service d&#39;identité](reference/coppa.md)
-   + [Prise en charge de CORS dans le service d&#39;identité](reference/cors.md)
+      + [Période de grâce du service d’ID](reference/analytics-reference/grace-period.md)    
+   + [Stratégies de sécurité du contenu et service d&#39;ID](reference/csp.md)
+   + [Prise en charge COPPA dans le service d&#39;ID](reference/coppa.md)
+   + [Prise en charge de CORS dans le service d&#39;ID](reference/cors.md)
    + [ID de client et états d’authentification](reference/authenticated-state.md)
    + [Méthodes de bibliothèque ECID dans un univers ITP Safari](reference/ecid-library-methods.md)
-   + [Obtention de la région et de l&#39;utilisateur - ID du cookie AMCV ou du service d&#39;identité](reference/regions.md)
-   + [Conditions requises pour le service d&#39;identité](reference/requirements.md)
-   + [Video Heartbeat et le service d&#39;identité](reference/heartbeat.md)
-   + [Outils de données et service d&#39;identité](reference/dwb.md)
+   + [Obtention des identifiants de région et d’utilisateur à partir du cookie AMCV et du service d’ID](reference/regions.md)
+   + [Conditions requises pour le service d&#39;ID](reference/requirements.md)
+   + [Pulsation vidéo et service d&#39;ID](reference/heartbeat.md)
+   + [Outils de données et service d&#39;ID](reference/dwb.md)
 + Questions fréquentes {#faqs}
    + [Présentation des questions fréquentes](faq-intro/faq-intro.md)
-   + [FAQ sur le service d&#39;identité](faq-intro/faq.md)
-   + [FAQ sur le service d&#39;analyse et d&#39;identité](faq-intro/analytics-faq.md)
+   + [FAQ sur le service d’ID](faq-intro/faq.md)
+   + [Questions fréquentes sur Analytics et le service d’ID](faq-intro/analytics-faq.md)
    + [Questions fréquentes sur d’autres solutions Experience Cloud](faq-intro/other-faq.md)
-+ Notes de mise à jour du service d&#39;identité {#release-notes}
++ Release notes for ID Service {#release-notes}
    + [Notes de mise à jour 2019](release-notes/release-notes.md)
    + [Notes de mise à jour 2018](release-notes/notes-2018.md)
    + [Notes de mise à jour 2017](release-notes/notes-2017.md)
