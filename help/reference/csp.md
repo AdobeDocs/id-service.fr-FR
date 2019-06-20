@@ -2,16 +2,16 @@
 description: Une stratégie de sécurité du contenu (Content Security Policy, CSP) est un en-tête HTTP et une fonction de sécurité qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Passez en revue cette section si vous utilisez le service d’ID ainsi que des stratégies de sécurité du contenu strictes utilisant des listes blanches pour accepter des ressources provenant de domaines de confiance. Vous devez ajouter les domaines Adobe répertoriés dans cette section à vos listes blanches de stratégie de sécurité du contenu.
 keywords: Service d’identification
 seo-description: Une stratégie de sécurité du contenu (Content Security Policy, CSP) est un en-tête HTTP et une fonction de sécurité qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Passez en revue cette section si vous utilisez le service d’ID ainsi que des stratégies de sécurité du contenu strictes utilisant des listes blanches pour accepter des ressources provenant de domaines de confiance. Vous devez ajouter les domaines Adobe répertoriés dans cette section à vos listes blanches de stratégie de sécurité du contenu.
-seo-title: Stratégies de sécurité du contenu et service d'identité de Platform Platform
-title: Stratégies de sécurité du contenu et service d'identité de Platform Platform
+seo-title: Stratégies de sécurité du contenu et service Experience Cloud ID
+title: Stratégies de sécurité du contenu et service Experience Cloud ID
 uuid: 7399 Edf 3-01 c 1-4730-834 e-e 2 dd 2 c 5791 ff
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Stratégies de sécurité du contenu et service d&#39;identité de Platform Platform {#content-security-policies-and-the-experience-cloud-id-service}
+# Stratégies de sécurité du contenu et service Experience Cloud ID {#content-security-policies-and-the-experience-cloud-id-service}
 
 Une stratégie de sécurité du contenu (Content Security Policy, CSP) est un en-tête HTTP et une fonction de sécurité qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Passez en revue cette section si vous utilisez le service d’ID ainsi que des stratégies de sécurité du contenu strictes utilisant des listes blanches pour accepter des ressources provenant de domaines de confiance. Vous devez ajouter les domaines Adobe répertoriés dans cette section à vos listes blanches de stratégie de sécurité du contenu.
 
@@ -53,7 +53,7 @@ Ajoutez les noms de domaine ou URL suivants à votre stratégie de sécurité du
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Service d’identification des visiteurs</b> </p> </td> 
-   <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure <span class="codeph">*.demdex.net</span>. </p> <p>Les appels au domaine <span class="codeph"> demdex. net</span> sont utilisés pour générer <a href="../introduction/cookies.md" format="dita" scope="local"> les cookies et le service d'identité de Platform Platform</a> et pour les synchronisations ID. Voir également <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure <span class="codeph">*.demdex.net</span>. </p> <p>Calls to the <span class="codeph"> demdex.net</span> domain are used to generate the <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud ID Service</a> and for ID syncs. Voir également <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
