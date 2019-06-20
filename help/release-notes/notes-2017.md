@@ -1,19 +1,19 @@
 ---
-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Platform pour 2017.
+description: Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID pour 2017.
 keywords: Service d’identification
-seo-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Platform pour 2017.
+seo-description: Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID pour 2017.
 seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
 uuid: 79452 df 0-49 db -42 b 8-96 fe -01 aa 7629 fbb 5
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Notes de mise à jour 2017 {#release-notes}
 
-Fonctionnalités, mises à jour ou modifications apportées au service d&#39;identité d&#39;Experience Platform pour 2017.
+Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID pour 2017.
 
 Ces modifications sont également contenues dans les [notes de mise à jour d’Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Pour obtenir des notes de mise à jour antérieures sur le service d’ID, voir les [notes de mise à jour précédentes](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) ou les liens au bas de cette page.
 
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative <span class="codeph">visitor.FIELDS. </span> Voir <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getvisitorvalues</a>. </p> </td> 
+   <td colname="col2"> <p>Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative <span class="codeph">visitor.FIELDS. </span> See <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Correction d’un bogue lié à Chrome en raison duquel le service d’ID générait une erreur en cliquant sur le bouton Retour de ce navigateur.
 * Le service d’ID relance désormais les synchronisations des identifiants lorsque l’ID de zone géographique de la réponse à l’appel d’événement change.
-* Ajout d’une nouvelle documentation, [Stratégies de sécurité de contenu et service d&#39;identité d&#39;Experience Platform](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui expliquent comment placer des appels Liste blanche aux domaines Adobe utilisés par le service d&#39;ID.
+* Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et service Experience Cloud ID](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment placer sur liste blanche les appels vers les domaines Adobe utilisés par le service d’ID.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -181,7 +181,7 @@ Date de publication : Février 2017
   </tr> 
   <tr> 
    <td colname="col1"> <p>Méthode d’API de service d’identification, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>Cette méthode publique ajoute le <span class="wintitle">SDID (Supplemental Data ID)</span> comme paramètre de chaîne de requête à une URL de redirection. Voir <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendsupplementaldataidto</a>. (MCID-285) </p> </td> 
+   <td colname="col2"> <p>Cette méthode publique ajoute le <span class="wintitle">SDID (Supplemental Data ID)</span> comme paramètre de chaîne de requête à une URL de redirection. See <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -200,7 +200,7 @@ Janvier 2017
 
 >[!IMPORTANT]
 >
->Le code du service d&#39;ID v 2.0 synchronise automatiquement les identifiants avec Adobe Media Optimizer par défaut. En d&#39;autres termes, un appel de la page vers `cm.eversttech.net`, c&#39;est un domaine hérité [!DNL Media Optimizer] contrôlé [!DNL Adobe]par. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>Le code du service d&#39;ID v 2.0 synchronise automatiquement les identifiants avec Adobe Media Optimizer par défaut. This means you&#39;ll see a call from the page to `cm.eversttech.net`, which is a legacy [!DNL Media Optimizer] domain controlled by [!DNL Adobe]. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Correctifs et améliorations**
 
