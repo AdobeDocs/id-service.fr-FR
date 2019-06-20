@@ -1,19 +1,19 @@
 ---
-description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code appropriés requis par le service d'identité d'Experience Platform.
+description: Consultez cette section pour vous assurer que vous utilisez les solutions, les services et les versions de code appropriés requis par le service Experience Cloud ID.
 keywords: Service d’identification
-seo-description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code appropriés requis par le service d'identité d'Experience Platform.
-seo-title: Conditions requises pour le service d'identité de Platform Platform
-title: Conditions requises pour le service d'identité de Platform Platform
+seo-description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code appropriés requis par le service Experience Cloud ID.
+seo-title: Conditions requises pour le service Experience Cloud ID
+title: Conditions requises pour le service Experience Cloud ID
 uuid: 608 b 1082-6 e 9 e -4101-b 6 cb -60027950109 b
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Conditions requises pour le service d&#39;identité de Platform Platform {#requirements-for-the-experience-cloud-id-service}
+# Conditions requises pour le service Experience Cloud ID {#requirements-for-the-experience-cloud-id-service}
 
-Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code appropriés requis par le service d&#39;identité d&#39;Experience Platform.
+Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code appropriés requis par le service Experience Cloud ID.
 
 ## Les conditions requises assurent le succès et la prise en charge de la mise en œuvre {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
