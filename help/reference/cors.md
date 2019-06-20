@@ -1,19 +1,19 @@
 ---
-description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Experience Platform Identity Service prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
+description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud ID prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
 keywords: Service d’identification
-seo-description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Experience Platform Identity Service prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
-seo-title: Prise en charge de CORS dans le service d'identité d'Experience Platform
-title: Prise en charge de CORS dans le service d'identité d'Experience Platform
+seo-description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud ID prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
+seo-title: Prise en charge de CORS dans le service Experience Cloud ID
+title: Prise en charge de CORS dans le service Experience Cloud ID
 uuid: e 656 b 573-72 a 8-4312-a 7 d 5-5 cc 3818 f 0 a 9 e
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Prise en charge de CORS dans le service d&#39;identité d&#39;Experience Platform {#cors-support-in-the-experience-cloud-id-service}
+# Prise en charge de CORS dans le service Experience Cloud ID {#cors-support-in-the-experience-cloud-id-service}
 
-Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Experience Platform Identity Service prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
+Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud ID prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
 
 ## Problèmes liés aux règles sur la même origine et aux demandes de service d’ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -60,7 +60,7 @@ Observons le fonctionnement de ces en-têtes : Dans cet exemple, imaginons une 
  </tbody> 
 </table>
 
-Voir aussi [usecorsonly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+See also [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 ## Autres avantages liés à l’utilisation des normes CORS {#section-6f44f30694c44f95bf9854b8a2af8449}
 
