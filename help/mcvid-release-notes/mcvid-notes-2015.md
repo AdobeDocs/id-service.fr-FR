@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Notes de mise à jour et mises à jour de 2015.
 seo-title: Notes de mise à jour 2015
 title: Notes de mise à jour 2015
-uuid: 49423699-1 e 0 f -49 e 4-9135-2 ae 84 b 4 f 92 df
-translation-type: tm+mt
+uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -19,21 +19,21 @@ Notes de mise à jour et mises à jour de 2015.
 
 Novembre 2015
 
-La loi COPPA (Children&#39;s Online Privacy Protection Act) interdit la collecte en ligne d&#39;informations personnelles des mineurs de moins de 13 ans sans le consentement vérifiable des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service de [!DNL Experience Cloud] ID afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur. See [COPPA Support in the Experience Cloud ID Service](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Pour les versions 1.5.3 ou ultérieures.
+La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service de [!DNL Experience Cloud] ID afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur. Voir [Prise en charge de la norme COPPA dans le service Experience Cloud ID](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Pour les versions 1.5.3 ou ultérieures.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 Septembre 2015
 
 * Correction d’un bogue dans le navigateur Safari qui empêchait la synchronisation des services lorsque des utilisateurs bloquaient les cookies tiers. (AAM-20764)
-* Les appels au service d&#39;ID incluent désormais l&#39;ID de version dans `d_visid_ver=` le paramètre. L’ID renvoyé est utile aux équipes internes pour le dépannage et les problèmes de prise en charge. (AAM-20824)
+* Les appels au service d’ID incluent désormais l’ID de version dans le paramètre `d_visid_ver=`. L’ID renvoyé est utile aux équipes internes pour le dépannage et les problèmes de prise en charge. (AAM-20824)
 
 ## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 Août 2015
 
 * Correction d’un bogue afin d’empêcher le service d’ID de demander un iframe s’il n’y a aucune donnée à synchroniser ou à déclencher. (AAM-20164)
-* Correction d’un bogue qui empêchait le service d’ID de définir correctement un cookie de domaine de niveau supérieur à parties multiples. Par exemple, si vous avez un domaine, `my_company.co.uk`dans certains cas, le service d&#39;ID définirait un cookie uniquement `co.uk` . (AN-104683)
+* Correction d’un bogue qui empêchait le service d’ID de définir correctement un cookie de domaine de niveau supérieur à parties multiples. Si, par exemple, vous avez un domaine du type `my_company.co.uk`, dans certains cas, le service d’ID définirait un cookie dans `co.uk` seulement. (AN-104683)
 
    Seuls quelques clients étaient concernés, s’ils satisfaisaient *tous* les critères suivants :
 
@@ -44,14 +44,14 @@ Août 2015
 
 Les révisions de la documentation de cette version sont les suivantes :
 
-* [Méthodes d&#39;API et bibliothèque de code](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97): Réorganisation du contenu et du texte. Dans la plupart des cas, une page est dédiée à chaque méthode.
+* [Méthodes d’API et bibliothèque de code](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97) : Réorganisation du contenu et du texte. Dans la plupart des cas, une page est dédiée à chaque méthode.
 * [Conditions requises du service Experience Cloud ID](../mcvid-reference/mcvid-requirements.md) : contenu révisé et texte réorganisé.
 
 ## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Juillet 2015
 
-Le service [!DNL Experience Cloud] ID prend en charge plusieurs ID et états d’authentification. Cette modification arrête la prise en charge des mises en correspondance des [!DNL Audience Manager] DPID avec les ID utilisés par la fonction `setCustomerIDs`. Voir [ID de client et états d&#39;authentification](../mcvid-reference/mcvid-authenticated-state.md)
+Le service [!DNL Experience Cloud] ID prend en charge plusieurs ID et états d’authentification. Cette modification arrête la prise en charge des mises en correspondance des [!DNL Audience Manager] DPID avec les ID utilisés par la `setCustomerIDs`fonction. Voir [ID de client et états d’authentification](../mcvid-reference/mcvid-authenticated-state.md)
 
 ## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
@@ -79,4 +79,4 @@ Correction de la gestion des délais d’attente des demandes pour les objets bl
 
 Janvier 2015
 
-Recherche `<head>/<body>` de balises retravaillées pour le conteneur `<script>` de balises de demande JSONP, ainsi que la création de `<script>` la balise pour tenir compte des différentes implémentations DOM (HTML/XHTML) avec éventuellement différents paramètres de respect de la casse. (AN-9355)
+Reprise de la recherche des balises `<head>/<body>` pour le conteneur de balises `<script>` de la demande JSONP, ainsi que la création de la balise `<script>` afin de comptabiliser différentes mises en œuvre DOM (HTML/XHTML) avec éventuellement différents paramètres de respect de la casse. (AN-9355)
