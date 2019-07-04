@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service Experience Cloud ID afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
 seo-title: Prise en charge COPPA dans le service Experience Cloud ID
 title: Prise en charge COPPA dans le service Experience Cloud ID
-uuid: 621 b 5 ebd -92 e 7-4635-be 85-8 d 7 e 36589 fcb
-translation-type: tm+mt
+uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -28,7 +28,7 @@ Au chargement d’une page web, le service [!DNL Experience Cloud] ID appelle u
 
 **Cookies et conformité à la loi COPPA**
 
-Les cookies tiers qui effectuent le suivi des visiteurs dans différents domaines sur des sites Web destinés aux enfants déclenchent des exigences de consentement des parents COPPA. Pour respecter plus facilement la loi COPPA dans le cadre des analyses internes du site Web, ajoutez la variable `disableThirdPartyCookies:true` à la fonction `Visitor.getInstance`, comme illustré ci-après.
+Les cookies tiers qui effectuent le suivi des visiteurs dans différents domaines sur des sites Web destinés aux enfants déclenchent des exigences de consentement des parents COPPA. Pour respecter plus facilement la loi COPPA dans le cadre des analyses internes du site Web, ajoutez la variable `disableThirdPartyCookies:true` à la `Visitor.getInstance` fonction, comme illustré ci-après.
 
 ```js
 //Call the ID service 
@@ -41,10 +41,10 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 });
 ```
 
-Lorsqu’il est défini sur la valeur `true`, l’objet `disableThirdPartyCookies` empêche le serveur de collecte de données de renvoyer le cookie tiers demdex.net. Si le navigateur d’un visiteur du site contient déjà ce cookie, le service d’ID ne l’utilise pas pour créer un [!DNL Experience Cloud] ID ou renvoyer un ID existant. Le service [!DNL Experience Cloud] ID crée à la place un ID aléatoire dans le cookie propriétaire. Une fois qu’il est activé, vous pouvez collecter des données à l’aide du service d’ID et les partager dans les différentes solutions [!DNL Experience Cloud], y compris les autres opérations internes autorisées par la loi COPPA.
+Lorsqu’il est défini sur la valeur `true`, `disableThirdPartyCookies` l’objet empêche le serveur de collecte de données de renvoyer le cookie tiers demdex.net. Si le navigateur d’un visiteur du site contient déjà ce cookie, le service d’ID ne l’utilise pas pour créer un [!DNL Experience Cloud] ID ou renvoyer un ID existant. Le service [!DNL Experience Cloud] ID crée à la place un ID aléatoire dans le cookie propriétaire. Une fois qu’il est activé, vous pouvez collecter des données à l’aide du service d’ID et les partager dans les différentes [!DNL Experience Cloud] solutions, y compris les autres opérations internes autorisées par la loi COPPA.
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
->* [Centre de traitement des données personnelles Adobe](http://www.adobe.com/privacy.html)
->* [Définition de la loi COPPA](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis) (en anglais)
+>* [Centre de traitement des données personnelles Adobe](http://www.adobe.com/fr/privacy.html)
+>* [Définition de la loi COPPA (en anglais)](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
