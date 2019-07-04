@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
 seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7 fb 831 b 3-cf 7 e -40 e 2-a 219-07 fec 28 ad 49 c
-translation-type: tm+mt
+uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,12 +26,12 @@ Contenu :
 
 ## du lien personnalisé{#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-This function uses the following syntax (italics represents a placeholder for a variable): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
+Cette fonction utilise la syntaxe suivante (le format italique représente un espace réservé pour une variable) : ` var *`valeurs`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`type d’ID`*, visitor.FIELDS. *`type d’ID`*]);`
 
 Dans les paramètres de la fonction :
 
-* ` *`callback`*` représente votre propre code de rappel qui reçoit les identifiants renvoyés.
-* *(Facultatif)* ` visitor.FIELDS. *`Le type`*` d&#39;ID est un énumération qui permet de spécifier [les valeurs](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) d&#39;ID que cette fonction doit renvoyer.
+* ` *`callback`*` représente votre propre code de rappel qui reçoit les ID renvoyés.
+* *(Facultatif)* ` visitor.FIELDS. *`type d’ID`*` est une énumération permettant d’indiquer les [valeurs d’ID](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) que vous souhaitez que cette fonction renvoie.
 
 Pour plus d’informations, voir les cas d’utilisation et définitions suivants.
 
@@ -62,7 +62,7 @@ Dans l’exemple de réponse par défaut, certaines valeurs ont été raccourcie
 
 ## Cas d’utilisation 2 : demander le jeu de données personnalisé {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de l’énumération `visitor.FIELDS`. Dans ce cas, nous ne voulons que l’Experience Cloud ID (MCID) et l’Analytics ID (MCAID) du visiteur. Vos requête et réponse pourraient ressembler aux exemples suivants.
+Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de `visitor.FIELDS` l’énumération. Dans ce cas, nous ne voulons que l’Experience Cloud ID (MCID) et l’Analytics ID (MCAID) du visiteur. Vos requête et réponse pourraient ressembler aux exemples suivants.
 
 ```js
 //Call the ID service 
@@ -84,7 +84,7 @@ L’exemple de réponse personnalisée renvoie uniquement les ID indiqués dans 
 
 ## Paramètres de réponse définis {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de l’énumération `visitor.FIELDS`. Notez que cette méthode renvoie une chaîne vide en l’absence de valeurs pour une variable spécifique.
+Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de `visitor.FIELDS` l’énumération Notez que cette méthode renvoie une chaîne vide en l’absence de valeurs pour une variable spécifique.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -100,7 +100,7 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>ID de zone géographique de la collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. </p> <p>Voir <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> ID de région de DCS, Emplacements et noms </a> d'hôtes et <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getlocationhint </a>. </p> </td> 
+   <td colname="col2"> <p>ID de zone géographique de la collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. </p> <p>Voir <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données </a> (DCS Region IDs, Locations, and Host Names) et <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
