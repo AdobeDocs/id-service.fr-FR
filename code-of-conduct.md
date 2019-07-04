@@ -1,6 +1,6 @@
 ---
 source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Code de conduite Adobe
@@ -46,4 +46,5 @@ Les membres du projet qui ne suivent ou qui n’appliquent pas le présent Code 
 
 ## Attribution
 
-Le présent Code de conduite est une adaptation de la [Convention du contributeur](https://contributor-covenant.org), version 1.4, disponible à l’adresse [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Ce Code de conduite est adapté du[Contributor Covenant](https://contributor-covenant.org), version 1.4,
+disponible à l’adresse [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
