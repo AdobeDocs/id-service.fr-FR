@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Un indicateur booléen optionnel qui désactive la synchronisation des identifiants.
 seo-title: disableIdSyncs
 title: disableIdSyncs
-uuid: 8 bea 1 de 8-53 c 8-4 a 15-bcf 5-f 0869763 a 32 e
-translation-type: tm+mt
+uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,9 +17,9 @@ Un indicateur booléen optionnel qui désactive la synchronisation des identifia
 
 >[!NOTE]
 >
->Cette configuration a été `idSyncDisableSyncs` renommée `disableIdSyncs` dans la version v 3.0 du 18 janvier 2018.
+>Cette configuration était `idSyncDisableSyncs` et a été renommée `disableIdSyncs` dans la version 3.0 du 18 janvier 2018.
 
-**Syntax:** `disableIdSyncs: true|false` (default is `false`.)
+**Syntaxe :** `disableIdSyncs: true|false` (la valeur par défaut est `false`).
 
 **Exemple de code**
 
