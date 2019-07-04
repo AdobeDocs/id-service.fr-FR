@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Cette configuration vous permet d’effacer les Experience Cloud ID (ECID) orphelins ou bloqués, en s’appuyant sur la version mise à jour du service d’ID.
 seo-title: resetBeforeVersion
 title: resetBeforeVersion
-uuid: b 00 d 18 b 8-6720-42 f 9-9 c 83-bd 306184 cc 0 c
-translation-type: tm+mt
+uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
