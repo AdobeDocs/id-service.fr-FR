@@ -3,8 +3,8 @@ description: Launch by Adobe est l’outil principalement utilisé pour configur
 seo-description: Launch by Adobe est l’outil principalement utilisé pour configurer, déployer et intégrer le service Experience Cloud ID à vos autres solutions Experience Cloud.
 seo-title: Mise en œuvre avec Launch
 title: Mise en œuvre avec Launch
-uuid: b 3282 f 8 e -82 b 8-4635-8 c 80-1 b 365 e 8 a 9693
-translation-type: tm+mt
+uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
