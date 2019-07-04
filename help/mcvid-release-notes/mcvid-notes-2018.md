@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud ID en 2018.
 seo-title: Notes de mise à jour 2018
 title: Notes de mise à jour 2018
-uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ACE
-translation-type: tm+mt
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,7 +27,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Renforcement de la sécurité pour les cookies AMCV </p> </td> 
-   <td colname="col2"> <p>Pendant une analyse de sécurité interne, il a été déterminé que lors de l’utilisation de la bibliothèque de DTM, les cookies utilisés pour la gestion des sessions échouent à définir les attributs appropriés. Cela peut entraîner le partage inopportun des informations des cookies. Afin de résoudre ce problème, nous avons introduit une configuration permettant au client de définir le cookie AMCV comme étant sécurisé. Voir <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Pendant une analyse de sécurité interne, il a été déterminé que lors de l’utilisation de la bibliothèque de DTM, les cookies utilisés pour la gestion des sessions échouent à définir les attributs appropriés. Cela peut entraîner le partage inopportun des informations des cookies. Afin de résoudre ce problème, nous avons introduit une configuration permettant au client de définir le cookie AMCV comme étant sécurisé. Voir <a href="https://marketing.adobe.com/resources/help/fr_FR/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
 
 >[!NOTE]
 >
->Il est recommandé de mettre à niveau la version 3.1.0 vers la dernière version au moment opportun. Voir la description de la version 3.1.2. Le dernier bundle est disponible dans l’Adobe Launch, la Dynamic Tag Management et AppMeasurement.
+>Nous vous recommandons de procéder à la mise à niveau de la version 3.1.0 vers la dernière version dès que possible. Voir la description de la version 3.1.2. Le dernier bundle est disponible dans l’Adobe Launch, la Dynamic Tag Management et AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
