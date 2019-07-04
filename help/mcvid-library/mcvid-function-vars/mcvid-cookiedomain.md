@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Requise pour les domaines de niveau supérieur à parties multiples où chacune des deux dernières parties de l’URL comporte plus de deux caractères.
 seo-title: cookieDomain
 title: cookieDomain
-uuid: a 57 e 5477-c 07 b -4 d 54-8 aea -8 e 8 b 152 f 1423
-translation-type: tm+mt
+uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,12 +15,12 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Requise pour les domaines de niveau supérieur à parties multiples où chacune des deux dernières parties de l’URL comporte plus de deux caractères.
 
-**Syntaxe :**` cookieDomain: " *`URL`*"` (le `www` préfixe n&#39;est pas requis.)
+**Syntaxe :** ` cookieDomain: " *`URL`*"` (le préfixe `www` n’est pas requis).
 
 **Exemple d’utilisation**
 
 * Obligatoire :`www.example.com.uk`
-* Non requis : `www.example.co.uk`
+* Facultatif : `www.example.co.uk`
 
 **Exemple de code**
 
