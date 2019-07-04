@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Cette propriété remplace les Experience Cloud ID et Analytics ID d’un visiteur qui passe d’un domaine à un autre. Pour remplacer un identifiant, vous devez posséder les domaines et avoir mis en œuvre le service d’ID sur chacun d’entre eux. Ce code ne vous permet pas de remplacer les identifiants sur des domaines que vous ne contrôlez pas.
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: 8 e 48127 a-ac 62-4 ea 0-9756-2 a 27 b 20 ecbcf
-translation-type: tm+mt
+uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Cette propriété remplace les Experience Cloud ID et Analytics ID d’un visiteur qui passe d’un domaine à un autre. Pour remplacer un identifiant, vous devez posséder les domaines et avoir mis en œuvre le service d’ID sur chacun d’entre eux. Ce code ne vous permet pas de remplacer les identifiants sur des domaines que vous ne contrôlez pas.
 
-**Syntax:** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (default is `false`)
+**Syntaxe :** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (la valeur par défaut est `false`)
 
 **Exemple de code**
 
