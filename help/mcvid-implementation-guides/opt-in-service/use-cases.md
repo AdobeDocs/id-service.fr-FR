@@ -1,10 +1,10 @@
 ---
-description: Exemples de cas d'utilisation et de solutions pour gérer le service de souscription.
-seo-description: Exemples de cas d'utilisation et de solutions pour gérer le service de souscription.
+description: Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
+seo-description: Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
 seo-title: Cas d’utilisation d’Opt-in
 title: Cas d’utilisation d’Opt-in
-uuid: d 75 a 44 d 5-b 713-43 d 1-b 5 b 6-95 d 1 d 0 d 213 a 7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 # Cas d’utilisation d’Opt-in {#opt-in-use-cases}
 
-Exemples de cas d&#39;utilisation et de solutions pour gérer le service de souscription.
+Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
 
 ## Conseils et dépannage {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -22,7 +22,7 @@ Exemples de cas d&#39;utilisation et de solutions pour gérer le service de sous
 
 ## Scénarios d’Opt-in {#section-1178053c065c430bba26f82ef383a71c}
 
-Ces exemples d&#39;utilisation constituent des exemples d&#39;utilisation du service de souscription.
+Ces cas d’utilisation sont des exemples d’utilisation du service Opt-in.
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
