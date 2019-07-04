@@ -1,20 +1,20 @@
 ---
-description: Une fois que vous avez activé la souscription sur votre site Web, utilisez les méthodes de validation pour vérifier que le service fonctionne comme prévu à l'aide des outils de développement de votre navigateur.
-seo-description: Une fois que vous avez activé la souscription sur votre site Web, utilisez les méthodes de validation pour vérifier que le service fonctionne comme prévu à l'aide des outils de développement de votre navigateur.
-seo-title: Validation du service de souscription
-title: Validation du service de souscription
-uuid: 1743360 a-d 757-4 e 50-8697-0 fa 92 b 302 cbc
-translation-type: tm+mt
+description: Une fois le service Opt-in activé sur votre site web, utilisez les différentes méthodes de validation afin de vérifier que celui-ci fonctionne correctement, à l’aide des outils de développement de votre navigateur.
+seo-description: Une fois le service Opt-in activé sur votre site web, utilisez les différentes méthodes de validation afin de vérifier que celui-ci fonctionne correctement, à l’aide des outils de développement de votre navigateur.
+seo-title: Validation du service Opt-in
+title: Validation du service Opt-in
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# Validation du service de souscription{#validating-opt-in-service}
+# Validation du service Opt-in{#validating-opt-in-service}
 
-Une fois que vous avez activé la souscription sur votre site Web, utilisez les méthodes de validation pour vérifier que le service fonctionne comme prévu à l&#39;aide des outils de développement de votre navigateur.
+Une fois le service Opt-in activé sur votre site web, utilisez les différentes méthodes de validation afin de vérifier que celui-ci fonctionne correctement, à l’aide des outils de développement de votre navigateur.
 
-## Cas d&#39;utilisation 1 : Activer la souscription {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## Cas d’utilisation 1 : Activation d’Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -30,7 +30,7 @@ Dans Chrome, cliquez sur la page web avec le bouton droit de la souris, puis cli
 
 Dans l’exemple ci-dessus, les balises JS Adobe suivantes sont installées sur la page : ECID, AAM, Analytics et Target.
 
-**Comment prouver que la souscription fonctionne comme prévu :**
+**Comment voir si Opt-in fonctionne comme prévu ?**
 
 Aucune requête vers les serveurs Adobe suivants n’apparaît :
 
@@ -42,7 +42,7 @@ Aucune requête vers les serveurs Adobe suivants n’apparaît :
 
 >[!NOTE]
 >
->Un appel à `http://dpm.demdex.net/optOutStatus`, qui est un point de fin READ ONLY utilisé pour récupérer l&#39;état d&#39;exclusion du visiteur, peut s&#39;afficher. Ce point de terminaison n’entraîne pas la création de cookies tiers et ne collecte aucune information sur la page.
+>Vous devez voir un appel vers `http://dpm.demdex.net/optOutStatus`, un point de terminaison en LECTURE SEULE utilisé pour récupérer l’état de désinscription du visiteur. Ce point de terminaison n’entraîne pas la création de cookies tiers et ne collecte aucune information sur la page.
 
 Aucun cookie ne doit avoir été créé par les balises Adobe : (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
