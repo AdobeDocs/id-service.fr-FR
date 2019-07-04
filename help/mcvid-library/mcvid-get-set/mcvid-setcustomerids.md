@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: setCustomerIDs définit une ou plusieurs paires clé-valeur qui définissent les ID de client et leur état d’authentification.
 seo-title: setCustomerIDs
 title: setCustomerIDs
-uuid: 4 f 960 f 98-cec 2-4 db 6-84 ea -0259 e 2128 ea 2
-translation-type: tm+mt
+uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
