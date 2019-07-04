@@ -2,16 +2,16 @@
 description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
 keywords: Service d’identification
 seo-description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
-seo-title: Intégration directe au service Experience Cloud ID
-title: Intégration directe au service Experience Cloud ID
-uuid: de 502 f 7 e-cffd -4130-b 3 ca -7 d 6 b 9 a 9 caae 9
-translation-type: tm+mt
+seo-title: Intégration directe avec le service Experience Cloud ID
+title: Intégration directe avec le service Experience Cloud ID
+uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# Intégration directe au service Experience Cloud ID {#direct-integration-with-the-experience-cloud-id-service}
+# Intégration directe avec le service Experience Cloud ID {#direct-integration-with-the-experience-cloud-id-service}
 
 Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
 
@@ -21,7 +21,7 @@ Les appareils qui ne peuvent pas utiliser les bibliothèques de code VisitorAPI.
 
 ![](assets/directSyntax.png)
 
-Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l&#39;appel comme variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d&#39;ID, mais rester concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html) (Supported Attributes for DCS API Calls).
+Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d’ID, mais restez concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 Le service d’ID prend en charge les appels HTTP et HTTPS. Utilisez HTTPS pour transmettre des données à partir d’une page sécurisée.
 
@@ -44,7 +44,7 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
 }
 ```
 
-## Paramètres de demande et de réponse définis {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## Paramètres de requête et de réponse définis {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **Paramètres de requête**
 
@@ -70,10 +70,10 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>Paramètre facultatif qui transmet le DPID (Data Provider ID), l'ID unique - ID (DPUUID) et un <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> ID d'état authentifié</a> au service d'ID. Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
+   <td colname="col2"> <p>Paramètre facultatif qui transmet l’ID du fournisseur de données (DPID), l’ID de l’utilisateur unique (DPUUID) et un <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> ID d’état authentifié</a> au service d’ID. Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Syntaxe : <span class="codeph">...d_cid=DPID%01DPUUID%01état d’authentification...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemple : <span class="codeph">… d_ cid = 123 % 01456011…</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemple : <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>État d’authentification</b> </p> <p>Il s’agit d’un ID facultatif dans le paramètre <span class="codeph">d_cid</span>. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (Inconnu) </li> 
