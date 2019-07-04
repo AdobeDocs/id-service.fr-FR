@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Définissez le nom de domaine par défaut utilisé par les appels au service Experience Cloud ID en votre propre nom de sous-domaine avec ces configurations.
 seo-title: audienceManagerServer et audienceManagerServerSecure
 title: audienceManagerServer et audienceManagerServerSecure
-uuid: e 21 cacbf -5151-4 d 34-b 0 f 7-9 e 90275 f 4 c 7 c
-translation-type: tm+mt
+uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -22,14 +22,14 @@ Définissez le nom de domaine par défaut utilisé par les appels au service Exp
 
 **Rôle**
 
-Normalement, le service [!DNL Experience Cloud] d&#39;ID lance des appels [!DNL Adobe] à `dpm.demdex.net`. Parfois, vous pouvez ne pas vouloir effectuer des appels à cette destination, car elle semble trop générique ou « tierce ». Pour que l’appel au service d’ID ressemble davantage à un appel propriétaire, utilisez ces configurations pour ajouter votre nom de sous-domaine [!DNL Audience Manager] à `demdex.net` comme indiqué ci-dessous. Pour plus d’informations sur l’appel à `dpm.demdex.net`, voir [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Normalement, le service [!DNL Experience Cloud] ID appelle [!DNL Adobe] à l’adresse `dpm.demdex.net`. Parfois, vous pouvez ne pas vouloir effectuer des appels à cette destination, car elle semble trop générique ou « tierce ». Pour que l’appel au service d’ID ressemble davantage à un appel propriétaire, utilisez ces configurations pour ajouter votre nom de [!DNL Audience Manager] sous-domaine à `demdex.net` comme indiqué ci-dessous. Pour plus d’informations sur l’appel à `dpm.demdex.net`, voir [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 **Conditions**
 
 Ces configurations nécessitent que vous utilisiez :
 
-* Nom [!DNL Audience Manager] du sous-domaine d&#39;enregistrement pour votre société. Vérifiez ou obtenez ce nom auprès de votre conseiller.
-* Nom du sous-domaine associé à votre [!DNL Organization ID].
+* Le nom du [!DNL Audience Manager] sous-domaine de l’enregistrement pour votre société. Vérifiez ou obtenez ce nom auprès de votre conseiller.
+* Le nom du sous-domaine associé à votre [!DNL Organization ID].
 * *Les deux* paramètres de configuration portant le même nom de sous-domaine.
 
 **Exemple de code**
