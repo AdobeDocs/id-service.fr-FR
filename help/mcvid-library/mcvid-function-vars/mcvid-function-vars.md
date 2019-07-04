@@ -1,11 +1,11 @@
 ---
 description: Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
-keywords: ID d'organisation ; Service d'ID
+keywords: ID d’organisation, service d’ID
 seo-description: Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
 seo-title: Configurations
 title: Configurations
-uuid: 2 dfe 1 ed 6-f 3 a 6-4 f 5 c -976 b-eeb 43738 c 20 c
-translation-type: tm+mt
+uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,9 +17,9 @@ Configurez le service d’ID en transmettant les propriétés suivantes à la m�
 
 >[!NOTE]
 >
->Les bibliothèques Javascript *d&#39;Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse :[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse : [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
-Articles connexes :
+Articles connexes :
 
 + [audienceManagerServer et audienceManagerServerSecure](mcvid-subdomain-config.md)
 + [cookieDomain](mcvid-cookiedomain.md)
