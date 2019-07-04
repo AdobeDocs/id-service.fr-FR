@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Suivez les instructions ci-dessous pour intégrer le champ Experience Cloud ID au Data Workbench. Ce processus permet d’utiliser l’Experience Cloud ID persistant dans votre flux de données, ce qui offre une intégration plus étroite aux autres produits d’Adobe Experience Cloud et une amélioration du suivi des visiteurs.
 seo-title: Data Workbench et service Experience Cloud ID
 title: Data Workbench et service Experience Cloud ID
-uuid: 9448 abc 8-04 fb -47 d 2-be 08-1 dfbddb 0764 e
-translation-type: tm+mt
+uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,11 +15,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Suivez les instructions ci-dessous pour intégrer le champ Experience Cloud ID au Data Workbench. Ce processus permet d’utiliser l’Experience Cloud ID persistant dans votre flux de données, ce qui offre une intégration plus étroite aux autres produits d’Adobe Experience Cloud et une amélioration du suivi des visiteurs.
 
-Pour mettre à jour le [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) afin d’utiliser le service d’ID :
+Pour mettre à jour le [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) pour utiliser le service d’ID :
 
-1. Recherchez le fichier de configuration [Decoder Group](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) actuel.
+1. Recherchez le fichier de configuration actuel [Decoder Group](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html).
 
-   En règle générale, il [!DNL Decoder Group] se trouve dans un [!DNL Profile Manager] emplacement sur ce chemin : `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copiez le format de décodeur actuel à partir du fichier de configuration.
+   En règle générale, le fichier [!DNL Decoder Group] se trouve dans un [!DNL Profile Manager] sur ce chemin d’accès : `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copiez le format de décodeur dans le fichier de configuration.
 1. Collez le format de décodeur en dessous du format d’origine.
 1. Ouvrez le format de décodeur et ajoutez ces nouvelles positions de champ à la fin de la liste :
 
