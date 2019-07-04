@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Cette méthode d’aide permet d’ajouter le SDID (Supplemental Data ID) comme paramètre de chaîne de requête à une URL de redirection. Elle est utile lorsque vous utilisez A4T et que vous devez conserver le SDID d’une page à l’autre et assembler ces visites distinctes. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID avec le même ID d’organisation sur les domaines source et de destination.
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
-uuid: f 3504 d 82-8 da 3-4971-818 b -3 df 57 df 4 ec 2 d
-translation-type: tm+mt
+uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,7 +26,7 @@ Contenu :
 
 ## Syntaxe et exemple de code {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Syntaxe :**` appendSupplementalDataIDTo( *`URLSDID`*, *``*)`
+**Syntaxe :** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **Exemple de code**
 
@@ -50,11 +50,11 @@ Comme indiqué ci-dessous, la redirection d’URL contient le SDID du visiteur, 
 
 ## Modification du délai d’expiration du SDID à l’aide de la configuration sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-La configuration [sdidparamexpiry](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) permet de modifier l&#39;intervalle d&#39;expiration SDID par défaut lors de la transmission de cet identifiant d&#39;une page à une autre à l&#39;aide de la fonction `appendSupplementalDataIDTo` helper. Par défaut, le code du service d’ID sur la page de réception dispose de 30 secondes pour obtenir le SDID auprès de l’URL envoyée par la page référente. Si le code du service d’ID sur la page de réception ne peut pas récupérer le SDID en moins de 30 secondes, il demande un nouveau SDID. Cette fonctionnalité est principalement destinée aux clients A4T qui ont besoin de transmettre le SDID d’une page à une autre et qui souhaitent contrôler l’intervalle d’expiration.
+La configuration [sdidParamExpiry](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) permet de modifier l’intervalle d’expiration par défaut du SDID lors de la transmission de cet ID d’une page à une autre au moyen de la fonction d’aide `appendSupplementalDataIDTo`. Par défaut, le code du service d’ID sur la page de réception dispose de 30 secondes pour obtenir le SDID auprès de l’URL envoyée par la page référente. Si le code du service d’ID sur la page de réception ne peut pas récupérer le SDID en moins de 30 secondes, il demande un nouveau SDID. Cette fonctionnalité est principalement destinée aux clients A4T qui ont besoin de transmettre le SDID d’une page à une autre et qui souhaitent contrôler l’intervalle d’expiration.
 
-Si vous devez modifier le délai d’expiration par défaut du SDID, ajoutez `sdidParamExpiry` à la fonction `Visitor.getInstance` en utilisant la syntaxe suivante :
+Si vous devez modifier le délai d’expiration par défaut du SDID, ajoutez `sdidParamExpiry` à la `Visitor.getInstance` fonction en utilisant la syntaxe suivante :
 
-**Syntaxe :**` sdidParamExpiry: *`heure en secondes`*`
+**Syntaxe :** ` sdidParamExpiry: *`temps en secondes`*`
 
 **Exemple de code**
 
