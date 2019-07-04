@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service Experience Cloud ID.
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607 dc 035-dffc -4 f 4 d-be 51-08 ef 6 c 0 a 8 fad
-translation-type: tm+mt
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service Experience Cloud ID.
 
-**Syntax: ** `useCORSOnly: true|false` (default is `false`.)
+**Syntaxe : ** `useCORSOnly: true|false` (la valeur par défaut est `false`).
 
 **Aperçu**
 
