@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud ID, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 seo-title: Méthodes callTimeOut
 title: Méthodes callTimeOut
-uuid: e 5047498-11 db -4945-b 356-c 92 b 7 d 447573
-translation-type: tm+mt
+uuid: e5047498-11db-4945-b356-c92b7d447573
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,15 +27,15 @@ Appelez ces fonctions du service d’ID pour déterminer l’état du délai d�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Service Experience Cloud ID </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. mcidcalltimedout ()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Analytics</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. analyticsidcalltimedout ()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. aamidcalltimedout ()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
