@@ -1,28 +1,28 @@
 ---
-description: Mettez en œuvre le service de souscription en tant que point de référence unique utilisé par les solutions Experience Cloud (désignées sous le nom de Catégories dans la souscription) pour déterminer si des cookies doivent être créés sur le périphérique d'un visiteur.
-seo-description: Mettez en œuvre le service de souscription en tant que point de référence unique utilisé par les solutions Experience Cloud (désignées sous le nom de Catégories dans la souscription) pour déterminer si des cookies doivent être créés sur le périphérique d'un visiteur.
-seo-title: Définition - Service de souscription
-title: Définition - Service de souscription
-uuid: f 1 c 27139-cef 2-4122-af 12-c 839 cfc 82 e 6 e
-translation-type: tm+mt
+description: Mettez le service Opt-in en œuvre en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
+seo-description: Mettez le service Opt-in en œuvre en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
+seo-title: Configuration du service Opt-in
+title: Configuration du service Opt-in
+uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
+translation-type: ht
 source-git-commit: ae65e9c7da5ac9cbe22de3f956bcd7cbef2052a7
 
 ---
 
 
-# Définition - Service de souscription{#setting-up-opt-in-service}
+# Configuration du service Opt-in{#setting-up-opt-in-service}
 
-Mettez en œuvre le service de souscription en tant que point de référence unique utilisé par les solutions Experience Cloud (désignées sous le nom de Catégories dans la souscription) pour déterminer si des cookies doivent être créés sur le périphérique d&#39;un visiteur.
+Mettez le service Opt-in en œuvre en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
 
-Le service de souscription est une bibliothèque JavaScript fournie avec [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) et existe dans le JS du visiteur dans l&#39;objet global `adobe` comme `adobe.optIn` objet. Le service de souscription installé vous permet de spécifier si un visiteur peut s&#39;abonner à des solutions Adobe à la fois ou pour présenter des solutions par ordre pour chaque autorisation. La fonctionnalité de gestion du consentement du service de souscription permet de mettre en œuvre diverses configurations en fonction de vos besoins spécifiques en matière de confidentialité.
+Le service Opt-in est une bibliothèque JavaScript inclue avec [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/fr_FR/mcvid/) et existe dans le JavaScript du visiteur dans l’objet `adobe` global comme objet `adobe.optIn`. Le service Opt-in installé vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Le service Opt-in, fonctionnalité de gestion de contenu, vous permet de mettre en œuvre plusieurs configurations pour vos besoins spécifiques de confidentialité.
 
-Le service de souscription vous permet de spécifier si un visiteur peut s&#39;abonner à des solutions Adobe à la fois ou pour présenter des solutions par ordre pour chaque autorisation. Une fois le processus d’approbation terminé et enregistré par le client, l’ensemble des solutions Adobe peuvent récupérer les approbations visiteur de la CMP en réponse aux appels de consentement associés.
+Le service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, l’ensemble des solutions Adobe peuvent récupérer les approbations visiteur de la CMP en réponse aux appels de consentement associés.
 
 ## Conditions préalables {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID version 4.0.
 
-   [Téléchargez](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la dernière mise à jour d’ECID.
+   [Télécharger](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la dernière version d’ECID.
 
 1. Bibliothèques utilisées :
 
@@ -42,11 +42,11 @@ Le service de souscription vous permet de spécifier si un visiteur peut s&#39;a
 
 1. Les besoins de confidentialité de votre société dépendent du degré de conformité au RGPD que vous souhaitez avoir. Vous devez savoir quelles bibliothèques les équipes chargées de la confidentialité de votre société sont prêtes à utiliser avec un consentement préalable.
 
-Si vous utilisez [Adobe Launch](https://docs.adobelaunch.com/), profitez de l’ [Extension de souscription](../../mcvid-implementation-guides/opt-in-service/launch.md) pour configurer le service de souscription.
+Si vous utilisez [Adobe Launch](https://docs.adobelaunch.com/), profitez de [l’extension Opt-in](../../mcvid-implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
 
-## Catégories de souscription {#section-9ab0492ab4414f0ca16dc08d3a905f47}
+## Catégories Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
-Les préférences d’un visiteur en matière d’opt-in dépendent d’une solution Adobe Experience Cloud, au sein de laquelle chaque solution est représentée par une catégorie. Les catégories sont fournies par l’objet `adobe.OptInCategories` où, par exemple, le composant ECID est représenté par `adobe.OptInCategories`. `ECID`. Voici la définition de `adobe.OptInCategories` :
+Les préférences d’un visiteur en matière d’opt-in dépendent d’une solution Adobe Experience Cloud, au sein de laquelle chaque solution est représentée par une catégorie. Les catégories sont fournies par `adobe.OptInCategories` l’objet où, par exemple, le composant ECID est représenté par `adobe.OptInCategories`. `ECID`. Voici la définition de `adobe.OptInCategories` :
 
 Les paramètres d’opt-in sont gérés par catégorie. Chaque solution Experience Cloud est représentée par une catégorie.
 
@@ -60,12 +60,12 @@ adobe.OptInCategories = {
 };
 ```
 
-Le service de souscription permet de définir les préférences d&#39;autorisation des visiteurs par solution Adobe utilisée sur votre site. Cela comprend une bibliothèque pour la sauvegarde des paramètres d’un visiteur par catégorie approuvée. De plus, un flux séquentiel est pris en charge, où le processus d’approbation reçoit des préférences « confirmer » ou « refuser » pour chaque catégorie, chacune son tour. Vous pouvez définir les solutions ou catégories pour lesquelles demander le consentement, pour l’ensemble ou individuellement.
-Toutes les bibliothèques côté client de solutions Adobe dépendent du service de souscription et ne génèrent aucun cookie, sauf si la solution a été accordée à la solution. Opt-in prend en charge plusieurs approches pour fournir et mettre à jour les paramètres de consentement pour le visiteur actuel. Cette section fournit des exemples pour définir les préférences de service de souscription. Voir la référence de l&#39;API [de souscription](../../mcvid-implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour obtenir la liste complète des fonctions et paramètres.
+Le service Opt-in vous permet de définir les préférences d’autorisation des visiteurs pour chaque solution Adobe utilisée sur votre site. Cela comprend une bibliothèque pour la sauvegarde des paramètres d’un visiteur par catégorie approuvée. De plus, un flux séquentiel est pris en charge, où le processus d’approbation reçoit des préférences « confirmer » ou « refuser » pour chaque catégorie, chacune son tour. Vous pouvez définir les solutions ou catégories pour lesquelles demander le consentement, pour l’ensemble ou individuellement. 
+L’ensemble des bibliothèques côté client des solutions Adobe dépend du service Opt-in. Elles ne génèrent pas de cookie, sauf si l’autorisation a été donnée pour la solution. Opt-in prend en charge plusieurs approches pour fournir et mettre à jour les paramètres de consentement pour le visiteur actuel. Cette section présente des exemples de définition des préférences du service Opt-in. Voir les [Références de l’API d’Opt-in](../../mcvid-implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour obtenir la liste complète des fonctions et paramètres.
 
-Les configurations de service de souscription sont fournies dans la `getInstance()` fonction JS du visiteur qui instancie `adobe` l&#39;objet global. Ce qui suit répertorie les paramètres [de configuration JS du visiteur](../../mcvid-implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) pour le service de souscription.
+Les configurations du service Opt-in sont fournies dans la `getInstance()` fonction du fichier JavaScript Visiteur, qui instancie `adobe` l’objet global. Vous trouverez ci-après les [paramètres de configuration](../../mcvid-implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) JavaScript Visiteur pour le service Opt-in.
 
-**Exemple de configuration de souscription dans l&#39;initialisation de`Visitor`l&#39;objet global**
+**Exemple de configuration d’Opt-in lors de l’initialisation de`Visitor`l’objet global**
 
 ```
 // FORMAT: Object<adobe.OptInCategories enum: boolean> 
@@ -90,15 +90,15 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 **Gestion des modifications du consentement**
 
-À tout moment lors de son passage sur votre site, un visiteur peut définir ses préférences pour la première fois ou modifier celles-ci à l’aide de votre CMP. Une fois le fichier JavaScript Visiteur initialisé avec les premiers paramètres, les autorisations du visiteur peuvent être modifiées. Voir [Modifications du consentement](../../mcvid-implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc) pour obtenir une liste de gestion des fonctions de consentement.
+À tout moment lors de son passage sur votre site, un visiteur peut définir ses préférences pour la première fois ou modifier celles-ci à l’aide de votre CMP. Une fois le fichier JavaScript Visiteur initialisé avec les premiers paramètres, les autorisations du visiteur peuvent être modifiées. Voir [Modifications du consentement](../../mcvid-implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc) pour obtenir la liste des fonctions de gestion du consentement.
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
 -->
 
-## Processus de souscription {#section-70cd243dec834c8ea096488640ae20a5}
+## Processus d’Opt-in {#section-70cd243dec834c8ea096488640ae20a5}
 
-Le service de souscription prend en charge un flux de travail où les autorisations peuvent être collectées sur plusieurs cycles de requête et les préférences sont données un par un. En utilisant les fonctions suivantes et en stipulant *true* pour `shouldWaitForComplete`, votre solution peut collecter le consentement pour une catégorie ou pour un sous-ensemble de catégories parmi toutes celles qui existent, puis collecter le consentement pour la catégorie suivante ou le sous-ensemble de catégories suivant. A compter du premier appel, la `adobe.optIn.status` propriété *est en attente* jusqu&#39;à `adobe.optIn.complete()` ce qu&#39;elle soit appelée à la fin du flux. Une fois appelée, son état est défini sur *complete*.
+Le service Opt-in prend en charge un processus avec lequel des autorisations peuvent être collectées sur plus d’un cycle de requêtes et les préférences sont délivrées une par une. En utilisant les fonctions suivantes et en stipulant *true* pour `shouldWaitForComplete`, votre solution peut collecter le consentement pour une catégorie ou pour un sous-ensemble de catégories parmi toutes celles qui existent, puis collecter le consentement pour la catégorie suivante ou le sous-ensemble de catégories suivant. La propriété `adobe.optIn.status` démarre au premier appel et est mise *en attente* jusqu’à ce que `adobe.optIn.complete()` soit appelée en fin de flux. Une fois appelée, son état est défini sur *complete*.
 
 ```
 adobe.optIn.approve(['AAM', 'ECID'], true); 
@@ -106,11 +106,11 @@ adobe.optIn.deny(['ANALYTICS'], true);
 adobe.optIn.complete();
 ```
 
-Voir [Paramètres de configuration de processus](../../mcvid-implementation-guides/opt-in-service/api.md#section-2c5adfa5459c4e72b96d2693123a53c2).
+Voir les [Paramètres de configuration du workflow](../../mcvid-implementation-guides/opt-in-service/api.md#section-2c5adfa5459c4e72b96d2693123a53c2).
 
 ## Inspection des autorisations d’Opt-in de votre visiteur {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Alors que vos visiteurs modifient leurs autorisations, vous devez connaître les autorisations résultantes pour synchroniser votre magasin de consentement avec les modifications apportées au service de souscription. Inspectez les préférences de votre visiteur à l’aide des [fonctions d’autorisation](../../mcvid-implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155). Par exemple :
+Lorsque vos visiteurs modifient leurs autorisations, vous avez besoin d’informations sur les autorisations qui résultent de ces modifications, afin de synchroniser le stockage des consentements avec les modifications apportées au service Opt-in. Inspectez les préférences de votre visiteur à l’aide des [fonctions d’autorisation](../../mcvid-implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155). Par exemple :
 
 **Échantillon de fetchPermissions**
 
@@ -138,10 +138,10 @@ Voir la [documentation sur l’API](../../mcvid-implementation-guides/opt-in-ser
 
 ## Stockage des préférences des visiteurs {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
-Le service de souscription fournit une option permettant de stocker les préférences de consentement adaptées à un environnement de développement ou à un environnement dans lequel il est impossible d&#39;utiliser une gestion de la relation client. La définition de la propriété `isOptInStorageEnabled` de configuration *comme vraie* déclenche le service de souscription pour créer un cookie sur le système du visiteur dans votre domaine.
+Le service Opt-in fournit une option de stockage des préférences de consentement adaptée à un environnement de développement ou à un environnement dans lequel l’utilisation d’un CRM est impossible. Le fait de définir la propriété de configuration `isOptInStorageEnabled` sur *true* entraîne le service Opt-in à créer un cookie sur le système du visiteur dans votre domaine.
 
-L’objet `adobe.optIn` est sans état et ne fournit pas de mécanisme de stockage. Il est plutôt prévu que vous gériez les paramètres de consentement d’Adobe dans la plate-forme de gestion de contenu (CMP) existante, si celle-ci permet le stockage de données de consentement. Alternativement, vous pouvez stocker les préférences des visiteurs dans un cookie sur leur navigateur. Vous disposez de deux options pour fournir les préférences de l&#39;utilisateur au service de souscription :
+`adobe.optIn` L’objet est sans état et ne fournit pas de mécanisme de stockage. Il est plutôt prévu que vous gériez les paramètres de consentement d’Adobe dans la plate-forme de gestion de contenu (CMP) existante, si celle-ci permet le stockage de données de consentement. Alternativement, vous pouvez stocker les préférences des visiteurs dans un cookie sur leur navigateur. Deux options s’offrent à vous pour transmettre les préférences d’un utilisateur au service Opt-in :
 
-* Si votre solution de persistance de consentement, qu&#39;il s&#39;agisse d&#39;un CMP ou d&#39;un cookie sur le navigateur du visiteur, autorise la récupération opportune des préférences du visiteur, vous pouvez les fournir au service de souscription pendant l&#39;initialisation du visiteur.
-* Cependant, si la récupération peut être un processus long ou qu&#39;il est préférable dans un processus asynchrone, vous pouvez utiliser `approve()` la fonction du service pour fournir ces paramètres une fois qu&#39;ils ont été chargés avec succès.
+* Si votre solution de consentement permanente, que ce soit une CMP ou un cookie sur le navigateur du visiteur, autorise l’extraction opportune des préférences d’un visiteur, vous pouvez transmettre celles-ci au service Opt-in lors de l’initialisation du visiteur.
+* Cependant, lorsque l’extraction risque de durer un certain temps et qu’elle peut par ailleurs servir de processus asynchrone, vous pouvez utiliser la `approve()` fonction pour fournir ces paramètres une fois qu’ils sont bien chargés.
 
