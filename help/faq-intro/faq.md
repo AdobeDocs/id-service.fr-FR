@@ -2,11 +2,11 @@
 description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation du service d’ID.
 keywords: Service d’identification
 seo-description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation du service d’ID.
-seo-title: Questions fréquentes sur le service d’ID
-title: Questions fréquentes sur le service d’ID
-uuid: e 8 d 8 f 819-3 d 73-4 fa 2-864 c -4867071 c 14 ee
+seo-title: Service d’identification Questions fréquentes
+title: FAQ sur le service d’ID
+uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -23,27 +23,27 @@ Voir [Aperçu](../introduction/overview.md).
 
 **Pourquoi le service d’ID n’effectue-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
-Ce problème peut être difficile à diagnostiquer. Vous pouvez néanmoins vérifier les en-têtes de stratégie de sécurité du contenu de votre site. Si votre stratégie de sécurité est stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir [Stratégies de sécurité du contenu et service Experience Cloud ID](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Ce problème peut être difficile à diagnostiquer. Vous pouvez néanmoins vérifier les en-têtes de stratégie de sécurité du contenu de votre site. Si votre stratégie de sécurité est stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir [Stratégies de sécurité du contenu et service d&#39;identité de Platform Platform](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Stockage du fichier VisitorAPI.js**
 
 Vous pouvez rencontrer des problèmes si vous hébergez le fichier VisitorAPI.js comme fichier local dans des applications mobiles. Nous vous recommandons d’héberger le fichier sur un serveur web.
 
-## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## Temps de chargement des pages et latence {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **Comment le placement de la bibliothèque VisitorAPI.js du service d’ID affecte-t-il le temps de chargement des pages ?**
 
-Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. Vous pouvez ainsi vous assurer que l’appel d’un ID disparaît avant que le corps de la page ne commence à se charger. Cela maximise les chances de réussite d’un renvoi d’ID.
+Placez la bibliothèque VisitorAPI.js dans la partie supérieure de la page, dans la `<head>` section d’en-tête du code. Vous pouvez ainsi vous assurer que l’appel d’un ID disparaît avant que le corps de la page ne commence à se charger. Cela maximise les chances de réussite d’un renvoi d’ID.
 
 L’appel du service d’ID est asynchrone et est le seul appel au [domaine demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
 
-For [!DNL Target] customers, placing ID service code in the `<body>` of the page may increase the odds that it could block a [!DNL Target] call. If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
+Pour les [!DNL Target]clients, le placement du code du service d’ID dans le corps `<body>` de la page peut augmenter les risques qu’il puisse bloquer un appel [!DNL Target]. Si vous devez placer le code du service d’ID dans le corps de votre page, il doit être placé après la balise `<body>` ouverte.
 
 **Le service d’ID effectue-t-il un appel au serveur à chaque chargement de page ?**
 
 Non, cet appel n’a lieu que la première fois que la page est affichée et une fois tous les 7 jours par la suite. Pendant ce temps, les appels au serveur ne sont pas requis. Le service d’ID fonctionne en mode côté client et n’a pas besoin d’effectuer un appel au serveur pour renvoyer un ID.
 
-See [Overview](../introduction/overview.md).
+Voir [Aperçu](../introduction/overview.md).
 
 **Lorsque vous utilisez le service d’ID, qu’est-ce qui peut ralentir le chargement des pages ou affecter l’expérience de l’utilisateur ?**
 
@@ -67,13 +67,13 @@ Il en résultera de meilleures performances pour les utilisateurs se servant de 
 
 Les requêtes de ressources utilisant la norme CORS sont généralement préférables à celles utilisant JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et annulent la priorité des requêtes relatives à d’autres appels synchrones et asynchrones sur la page. La norme CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
-Voir [Prise en charge de CORS dans le service Experience Cloud ID](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Voir [Prise en charge de CORS dans le service d&#39;identité d&#39;Experience Platform](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Le service d’ID prend-il en charge la norme CORS ?**
 
-Oui. See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Oui. See [CORS Support in the Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Qu’est-ce que la norme CORS ?**
 
@@ -83,9 +83,9 @@ Oui. See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#
 
 Si vos exigences en matière de sécurité sont strictes, définissez la configuration de l’API du service d’ID sur `useCORSOnly: true`. Il est recommandé de n’activer ce mode que si vous pensez que vos visiteurs utilisent des navigateurs qui prennent en charge la norme CORS.
 
-Voir [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) et [usecorsonly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Voir [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) et [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
