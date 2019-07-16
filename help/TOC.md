@@ -2,15 +2,15 @@
 cloud: platform-cloud
 product: Service d’identification
 audience: end-user
-user-guide-title: Aide du service Experience Cloud ID
+user-guide-title: Aide du service d'identité de Platform Platform
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID Service Help {#using}
+# Experience Platform Identity Service Help {#using}
 
 + [Aide du service d’ID](home.md)
 + Aperçu {#intro}
