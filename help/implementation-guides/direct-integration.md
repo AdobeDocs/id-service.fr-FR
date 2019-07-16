@@ -2,16 +2,16 @@
 description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
 keywords: Service d’identification
 seo-description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
-seo-title: Intégration directe au service Experience Cloud ID
-title: Intégration directe au service Experience Cloud ID
-uuid: de 502 f 7 e-cffd -4130-b 3 ca -7 d 6 b 9 a 9 caae 9
+seo-title: Intégration directe au service d'identité de Platform Platform
+title: Intégration directe au service d'identité de Platform Platform
+uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Direct integration with the Experience Cloud ID Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
 
@@ -21,17 +21,17 @@ Les appareils qui ne peuvent pas utiliser les bibliothèques de code VisitorAPI.
 
 ![](assets/directSyntax.png)
 
-In this syntax example, the `d_` prefix identifies the key-value pairs in the call as a system-level variable. You can pass quite a few `d_` parameters to the ID service, but stay focused on the key-value pairs as shown in the code above. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html) (Supported Attributes for DCS API Calls).
+Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d’ID, mais restez concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html) (Supported Attributes for DCS API Calls).
 
 Le service d’ID prend en charge les appels HTTP et HTTPS. Utilisez HTTPS pour transmettre des données à partir d’une page sécurisée.
 
-## Sample request {#section-26302b8851704888b6f8e6b2071bcdb0}
+## Exemple de requête {#section-26302b8851704888b6f8e6b2071bcdb0}
 
 Votre requête pourrait ressembler à l’exemple ci-dessous. Les variables longues ont été raccourcies.
 
 ![](assets/directExample.png)
 
-## Sample response {#section-89bc103b3e9e4a8b98e74c32897b1200}
+## Exemple de réponse {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
 Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-dessous. Votre réponse peut être différente.
 
@@ -44,7 +44,7 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
 }
 ```
 
-## Request and response parameters defined {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## Paramètres de requête et de réponse définis {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **Paramètres de requête**
 
@@ -62,18 +62,18 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Identifiant visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local"> Les cookies et le service Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>Identifiant visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service d'identité de Platform Platform</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet ID, voir <a href="../reference/requirements.md" format="dita" scope="local"> Conditions requises pour le service Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet ID, voir <a href="../reference/requirements.md" format="dita" scope="local"> Conditions requises pour le service d'identité de Platform Platform</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>An optional parameter that passes the Data Provider ID (DPID), the Unique User ID (DPUUID), and an <a href="../reference/authenticated-state.md" format="dita" scope="local"> authenticated state ID</a> to the ID service. Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
+   <td colname="col2"> <p>Paramètre facultatif qui transmet l’ID du fournisseur de données (DPID), l’ID de l’utilisateur unique (DPUUID) et un <a href="../reference/authenticated-state.md" format="dita" scope="local"> ID d’état authentifié</a> au service d’ID. Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Syntaxe : <span class="codeph">...d_cid=DPID%01DPUUID%01état d’authentification...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Example: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemple : <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>État d’authentification</b> </p> <p>Il s’agit d’un ID facultatif dans le paramètre <span class="codeph">d_cid</span>. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (Inconnu) </li> 
@@ -100,7 +100,7 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
-   <td colname="col2"> <p>Requis. Définit le numéro de version de l’API. Laissez ce paramètre défini sur <span class="codeph">d_ver=2</span>. </p> </td> 
+   <td colname="col2"> <p>Obligatoire. Définit le numéro de version de l’API. Laissez ce paramètre défini sur <span class="codeph">d_ver=2</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
