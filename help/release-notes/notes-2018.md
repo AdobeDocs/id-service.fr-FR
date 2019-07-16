@@ -1,19 +1,19 @@
 ---
-description: Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID pour 2018.
+description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Platform pour 2018.
 keywords: Service d’identification
-seo-description: Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID pour 2018.
+seo-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Platform pour 2018.
 seo-title: Notes de mise à jour 2018
 title: Notes de mise à jour 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Notes de mise à jour 2018 {#release-notes}
 
-Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID pour 2018.
+Fonctionnalités, mises à jour ou modifications apportées au service d&#39;identité d&#39;Experience Platform pour 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ Cette section contient des mises à jour, des mises à jour ou des modifications
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Pic irréaliste au niveau du nombre de visiteurs uniques </p> </td> 
-   <td colname="col2"> <p>Avec le lancement du service Experience Cloud ID 3.1.0, nous avons détecté une erreur qui créait un pic irréaliste du nombre de visiteurs uniques lorsque cette version était mise en œuvre. Ce comportement se produit uniquement avec la dernière version d’ECID (v3.1.0) et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actif uniquement » dans les paramètres de confidentialité du navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
+   <td colname="col2"> <p>Avec la version d'Experience Platform Identity Service 3.1.0, nous avons trouvé un problème qui a créé un pic irrégulier du nombre de visiteurs uniques lors de la mise en œuvre de cette version. Ce comportement se produit uniquement avec la dernière version d’ECID (v3.1.0) et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actif uniquement » dans les paramètres de confidentialité du navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
   </tr> 
  </tbody> 
 </table>
