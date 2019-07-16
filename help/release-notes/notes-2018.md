@@ -4,9 +4,9 @@ keywords: Service d’identification
 seo-description: Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID pour 2018.
 seo-title: Notes de mise à jour 2018
 title: Notes de mise à jour 2018
-uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ACE
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -78,7 +78,7 @@ Cette section contient des mises à jour, des mises à jour ou des modifications
 
 >[!NOTE]
 >
->Il est recommandé de mettre à niveau la version 3.1.0 vers la dernière version au moment opportun. Voir la description de la version 3.1.2. Le dernier bundle est disponible dans l’Adobe Launch, la Dynamic Tag Management et AppMeasurement.
+>Nous vous recommandons de procéder à la mise à niveau de la version 3.1.0 vers la dernière version dès que possible. Voir la description de la version 3.1.2. Le dernier lot est disponible dans Adobe Experience Platform Launch, DTM et appmeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
