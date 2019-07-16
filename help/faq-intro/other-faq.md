@@ -2,16 +2,16 @@
 description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
 keywords: Service d’identification
 seo-description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
-seo-title: Questions fréquentes pour d'autres solutions Experience Cloud
-title: Questions fréquentes pour d'autres solutions Experience Cloud
-uuid: 7 d 848663-6 cbb -4 d 80-ab 06-7 b 6 d 2 dc 20 e 2 b
+seo-title: Questions fréquentes sur d’autres solutions Experience Cloud
+title: Questions fréquentes sur d’autres solutions Experience Cloud
+uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# FAQs for other Experience Cloud solutions{#faqs-for-other-experience-cloud-solutions}
+# Questions fréquentes sur d’autres solutions Experience Cloud{#faqs-for-other-experience-cloud-solutions}
 
 Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
 
@@ -25,7 +25,7 @@ Voir [Mise en œuvre standard avec la gestion dynamique des balises (DTM)](../im
 
 ## Analytics et Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**L’historique des visites d’un utilisateur sera-t-il exporté d’[!DNL Adobe Analytics]vers[!DNL Audience Manager]une fois le service Experience Cloud ID mis en œuvre ?**
+**L&#39;historique des visites d&#39;un utilisateur sera-t-il exporté[!DNL Adobe Analytics][!DNL Audience Manager]après la mise en œuvre du service d&#39;identité d&#39;Experience Platform ?**
 
 Il y a deux possibilités :
 
