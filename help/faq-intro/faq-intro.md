@@ -1,19 +1,19 @@
 ---
-description: Questions fréquemment posées sur le service Experience Cloud ID ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
+description: Questions fréquentes sur le service d'identité d'Experience Platform, ainsi que des sections sur le service d'ID et les autres combinaisons de solutions Experience Cloud.
 keywords: Service d’identification
-seo-description: Questions fréquemment posées sur le service Experience Cloud ID ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
+seo-description: Questions fréquentes sur le service d'identité d'Experience Platform, ainsi que des sections sur le service d'ID et les autres combinaisons de solutions Experience Cloud.
 seo-title: Questions fréquentes
 title: Questions fréquentes
-uuid: b 075957 b -165 f -4087-99 ad-bf 608 b 4 d 4967
+uuid: b075957b-165f-4087-99ad-bf608b4d4967
 translation-type: tm+mt
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Questions fréquentes {#faqs}
 
-Questions fréquemment posées sur le service Experience Cloud ID ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
+Questions fréquentes sur le service d&#39;identité d&#39;Experience Platform, ainsi que des sections sur le service d&#39;ID et les autres combinaisons de solutions Experience Cloud.
 
 * [FAQ sur le service d’ID](faq.md)
 * [Questions fréquentes sur Analytics et le service d’ID](analytics-faq.md)
