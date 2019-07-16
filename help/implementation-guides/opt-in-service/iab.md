@@ -1,27 +1,27 @@
 ---
-description: Connectez leur plateforme de gestion de l'approbation (CMP) à l'aide du module externe IAB de souscription.
-seo-description: Connectez leur plateforme de gestion de l'approbation (CMP) à l'aide du module externe IAB de souscription.
-seo-title: (bêta) Utilisation des services de souscription avec la structure IAB
-title: (bêta) Utilisation des services de souscription avec la structure IAB
-uuid: 8 df 39 d 9 c-c 016-490 e-b 4 db-d 02 e 4044 b 480
+description: Connecter leur plateforme de gestion de contenu (CMP) à l’aide du module IAB Opt-in.
+seo-description: Connecter leur plateforme de gestion de contenu (CMP) à l’aide du module IAB Opt-in.
+seo-title: Utilisation des services Opt-in avec un framework IAB (bêta)
+title: Utilisation des services Opt-in avec un framework IAB (bêta)
+uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
 
-# (bêta) Utilisation des services de souscription avec la structure IAB{#beta-using-opt-in-services-with-iab-framework}
+# Utilisation des services Opt-in avec un framework IAB (bêta){#beta-using-opt-in-services-with-iab-framework}
 
-Connectez leur plateforme de gestion de l&#39;approbation (CMP) à l&#39;aide du module externe IAB de souscription.
+Connecter leur plateforme de gestion de contenu (CMP) à l’aide du module IAB Opt-in.
 
-Les clients Audience Manager qui utilisent [la structure de transparence et le cadre de consentement IAB (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) peuvent connecter leur plateforme de gestion de l&#39;autorisation (CMP) à l&#39;aide du module externe IAB de souscription. La souscription est une fonctionnalité incorporée dans la bibliothèque JavaScript ECID qui peut désactiver les bibliothèques de solutions Adobe individuelles en fonction des préférences du visiteur définies dans un CMP. Lorsque le module IAB est implémenté avec la bibliothèque ECID, les préférences du visiteur issues de votre CMP compatible IAB sont automatiquement mappées à la souscription. Ces préférences activent les bibliothèques basées sur Audience Manager (DIL et ECID) et les appels associés lors de la réception du consentement.
+Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) can connect their Consent Management Platform (CMP) with Opt-in’s IAB plugin. L’Opt-in est une fonctionnalité intégrée à la bibliothèque JavaScript ECID. Elle peut désactiver les bibliothèques individuelles des solutions Adobe en fonction des préférences du visiteur, définies sur une CMP. Lorsque le module IAB est mis en œuvre avec la bibliothèque d’ECID, les préférences du visiteur de votre CMP conforme aux normes IAB sont automatiquement associées à Opt-in. Ces préférences activent les bibliothèques basées sur Audience Manager (DIL et ECID) et les appels associés lors de la réception du consentement.
 
 ## Mise en œuvre d’une CMP qui prend en charge l’IAB {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
 Pour intégrer Opt-in au consentement de l’IAB, vous devez :
 
 1. mettre en œuvre une CMP prenant en charge l’IAB et [enregistrée comme fournisseur d’IAB](https://vendorlist.consensu.org/vendorlist.json), ou développer une CMP interne qui mette en œuvre les spécifications d’IAB et l’enregistrer comme CMP auprès d’IAB Europe ;
-1. Définissez/chargez le `__cmp` fichier avant de charger le fichier JS Adobe.
+1. définir ou charger `__cmp` avant de charger le JavaScript Adobe.
 
 Pour plus de détails, lisez les [documents d’Interactive Advertising Bureau](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/v1.1%20Implementation%20Guidelines.md).
 
@@ -29,9 +29,9 @@ Pour plus de détails, lisez les [documents d’Interactive Advertising Bureau](
 
 >[!NOTE]
 >
->La souscription n&#39;est disponible que dans ECID 4.0 +
+>Opt-in est disponible uniquement dans ECID 4.0+
 
-Utilisez Adobe Launch pour mettre en œuvre Opt-in et le module IAB pour votre site. Lisez la [documentation de l’extension Opt-in d’ECID](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/) pour apprendre à configurer l’extension Launch.
+Utilisez   Adobe Experience Platform Launch   pour implémenter la souscription et le module IAB pour votre site. Read the [documentation for the ECID Opt-in extension](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/) to learn how to set up the Experience Platform Launch extension.
 
 Lorsque vous activez manuellement IAB pour Opt-in, assurez-vous que les paramètres suivants sont définis sur « true » dans l’objet Visiteur :
 
@@ -46,7 +46,7 @@ Une fois les paramètres correctement configurés, les bibliothèques ECID et DI
 
 >[!IMPORTANT]
 >
->Audience Manager nécessite un consentement pour les *points 1, 2 et 5, ainsi que du consentement du fournisseur*, afin de déployer des cookies et lancer ou honorer les synchronisations d’ID. Pour plus d&#39;informations sur le module externe IAB dans la documentation d&#39;Audience Manager** [ici](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)**.
+>Audience Manager nécessite un consentement pour les *points 1, 2 et 5, ainsi que du consentement du fournisseur*, afin de déployer des cookies et lancer ou honorer les synchronisations d’ID. Read more about the IAB plugin in Audience Manager documentation ** [here](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)**.
 
 Pour plus d’informations sur la façon de valider à la fois Opt-in et le module IAB, référez-vous au cas d’utilisation 4 du guide de validation, [**ici** ](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
