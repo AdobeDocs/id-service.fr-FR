@@ -1,19 +1,19 @@
 ---
-description: Avant de déployer le service Experience Cloud ID, vous devez comprendre comment ce service affecte le suivi des visiteurs sur plusieurs domaines et les problèmes potentiels si vous collectez des données avec des méthodes différentes ou via des fichiers JavaScript.
+description: Avant de déployer le service d'identité d'Experience Platform, vous devez comprendre comment ce service affecte le suivi des visiteurs sur plusieurs domaines et les problèmes potentiels si vous collectez des données avec des méthodes différentes ou via des fichiers JavaScript.
 keywords: Service d’identification
-seo-description: Avant de déployer le service Experience Cloud ID, vous devez comprendre comment ce service affecte le suivi des visiteurs sur plusieurs domaines et les problèmes potentiels si vous collectez des données avec des méthodes différentes ou via des fichiers JavaScript.
-seo-title: Points de prise de décision concernant la migration vers le service Experience Cloud ID
-title: Points de prise de décision concernant la migration vers le service Experience Cloud ID
-uuid: ee 56 b 5 de-fcf 3-4 cfb -9 e 53-762 af 7 c 4 d 2 ff
+seo-description: Avant de déployer le service d'identité d'Experience Platform, vous devez comprendre comment ce service affecte le suivi des visiteurs sur plusieurs domaines et les problèmes potentiels si vous collectez des données avec des méthodes différentes ou via des fichiers JavaScript.
+seo-title: Points de prise de décision concernant la migration du service d'identité de Platform Platform
+title: Points de prise de décision concernant la migration du service d'identité de Platform Platform
+uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Points de prise de décision concernant la migration vers le service Experience Cloud ID
+# Points de prise de décision concernant la migration du service d&#39;identité de Platform Platform
 
-Avant de déployer le service Experience Cloud ID, vous devez comprendre comment ce service affecte le suivi des visiteurs sur plusieurs domaines et les problèmes potentiels si vous collectez des données avec des méthodes différentes ou via des fichiers JavaScript.
+Avant de déployer le service d&#39;identité d&#39;Experience Platform, vous devez comprendre comment ce service affecte le suivi des visiteurs sur plusieurs domaines et les problèmes potentiels si vous collectez des données avec des méthodes différentes ou via des fichiers JavaScript.
 
 Répondez aux questions de cette section pour déterminer quelles autres étapes de migration vous devez suivre.
 
@@ -110,7 +110,7 @@ Vous devrez peut-être mettre à jour la façon dont vous effectuez un suivi sur
  <tbody> 
   <tr> 
    <td colname="col1"> <p>JavaScript et/ou Flash </p> </td> 
-   <td colname="col2"> <p>Aucune. Le service <span class="keyword">Experience Cloud</span> ID prend en charge ces méthodes de collecte de données. </p> </td> 
+   <td colname="col2"> <p>Aucun. Le service <span class="keyword">Experience Cloud</span> ID prend en charge ces méthodes de collecte de données. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
