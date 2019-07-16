@@ -1,19 +1,19 @@
 ---
-description: Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID.
+description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Platform.
 keywords: Service d’identification
-seo-description: Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID.
+seo-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Platform.
 seo-title: Notes de mise à jour 2019
 title: Notes de mise à jour 2019
-uuid: a 5 a 59410-7 f 85-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
+uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Notes de mise à jour 2019 {#release-notes}
 
-Cette section contient des mises à jour, des mises à jour ou des modifications apportées au service Experience Cloud ID.
+Fonctionnalités, mises à jour ou modifications apportées au service d&#39;identité d&#39;Experience Platform.
 
 ## Notes de mise à jour 2019 {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
@@ -27,6 +27,6 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
 
 | Élément | Description |
 |---|---|
-| L’indicateur `disableIdSyncs` ne fonctionne pas après une certaine chaîne. | Fixe. Values set on `disableidSyncs` parameter for `getInstance` function are now being honored. |
+| L’indicateur `disableIdSyncs` ne fonctionne pas après une certaine chaîne. | Corrigé. Les valeurs définies du `disableidSyncs` paramètre pour la `getInstance` fonction sont désormais honorées. |
 | Les iFrames tiers n’obtiennent pas ECID. | Correction d’ECID sous Safari Mobile et dans plusieurs iFrames ne fonctionnant pas. |
 
