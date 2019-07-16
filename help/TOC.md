@@ -1,28 +1,28 @@
 ---
 cloud: platform-cloud
 product: Service d’identification
-audience: utilisateur final
+audience: end-user
 user-guide-title: Aide du service Experience Cloud ID
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
 
 # Experience Cloud ID Service Help {#using}
 
-+ [Aide du service d&#39;ID](home.md)
++ [Aide du service d’ID](home.md)
 + Aperçu {#intro}
    + [Aperçu](introduction/overview.md)
-   + [A propos du service d&#39;ID](introduction/about-id-service.md)
+   + [À propos du service d’ID](introduction/about-id-service.md)
    + [Cookies et service d’ID](introduction/cookies.md)
-   + [Demande et définition des identifiants par le service d&#39;ID](introduction/id-request.md)
+   + [Requête et définition d’ID par le service  ID](introduction/id-request.md)
    + [Comprendre la synchronisation et les taux de correspondance](introduction/match-rates.md)
-+ Implementation guides {#implementation-guides}
++ Guides de mise en œuvre {#implementation-guides}
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
-   + [Méthodes d&#39;implémentation](implementation-guides/implementation-methods.md)
-   + [Mise en œuvre avec Launch](implementation-guides/ecid-implement-with-launch.md)
+   + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
+   + [Implémentation avec le lancement de plateforme Experience](implementation-guides/ecid-implement-with-launch.md)
    + [Mise en œuvre à l’aide de DTM](implementation-guides/standard.md)
    + [Implémentation pour Analytics](implementation-guides/setup-analytics.md)
    + [Implémentation pour Target](implementation-guides/setup-target.md)
@@ -32,19 +32,19 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
    + [Intégration directe au service d&#39;ID](implementation-guides/direct-integration.md)
    + [Cas d’utilisation de l’intégration directe](implementation-guides/direct-integration-examples.md)
    + [Tester et vérifier le service d&#39;ID](implementation-guides/test-verify.md)
-   + Opt-in Documentation {#opt-in-service}
-      + [Présentation du service de souscription](implementation-guides/opt-in-service/optin-overview.md)
-      + [Définition - Service de souscription](implementation-guides/opt-in-service/getting-started.md)
-      + [Validation du service de souscription](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Configuration d’Opt-in avec Launch](implementation-guides/opt-in-service/launch.md)
+   + Documentation Opt-in {#opt-in-service}
+      + [Aperçu du service Opt-in](implementation-guides/opt-in-service/optin-overview.md)
+      + [Configuration du service Opt-in](implementation-guides/opt-in-service/getting-started.md)
+      + [Validation du service Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
+      + [Configuration de souscription avec le lancement de plateforme d&#39;expérience](implementation-guides/opt-in-service/launch.md)
       + [Configuration d’Opt-in à l’aide de DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Cas d’utilisation d’Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Références d’Opt-in](implementation-guides/opt-in-service/api.md)
-      + [(bêta) Utilisation des services de souscription avec la structure IAB](implementation-guides/opt-in-service/iab.md)
+      + [Utilisation des services Opt-in avec un framework IAB (bêta)](implementation-guides/opt-in-service/iab.md)
 + API du service d’ID {#id-service-api}
    + [Présentation de l&#39;API du service d&#39;ID](library/library.md)
    + Configuration {#configurations}
-      + [Présentation des configurations](library/function-vars/function-vars.md)
+      + [Aperçu des configurations](library/function-vars/function-vars.md)
       + [audienceManagerServer et audienceManagerServerSecure](library/function-vars/subdomain-config.md)
       + [cookieDomain](library/function-vars/cookiedomain.md)
       + [cookieLifetime](library/function-vars/cookielifetime.md)
@@ -80,7 +80,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 + Référence {#reference}
    + [Présentation de référence](reference/reference.md)
    + Référence Analytics {#analytics-reference}
-      + [Présentation de la référence Analytics](reference/analytics-reference/analytics-reference.md)
+      + [Aperçu de la référence Analytics](reference/analytics-reference/analytics-reference.md)
       + [Définition des Analytics ID et Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Ordre des opérations pour les Analytics ID](reference/analytics-reference/analytics-order-of-operations.md)
       + [Points de prise de décision concernant la migration du service d&#39;ID](reference/analytics-reference/migration-decisions.md)
@@ -88,7 +88,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
       + [Demandes Analytics et d&#39;identité](reference/analytics-reference/legacy-analytics.md)
       + [CNAME de collecte de données et suivi inter-domaines](reference/analytics-reference/cname.md)
       + [Mise en œuvre côté serveur alliée à JavaScript](reference/analytics-reference/server-side.md)
-      + [Période de grâce du service d’ID](reference/analytics-reference/grace-period.md)    
+      + [Période de grâce du service d’ID](reference/analytics-reference/grace-period.md)
    + [Stratégies de sécurité du contenu et service d&#39;ID](reference/csp.md)
    + [Prise en charge COPPA dans le service d&#39;ID](reference/coppa.md)
    + [Prise en charge de CORS dans le service d&#39;ID](reference/cors.md)
@@ -99,11 +99,11 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
    + [Pulsation vidéo et service d&#39;ID](reference/heartbeat.md)
    + [Outils de données et service d&#39;ID](reference/dwb.md)
 + Questions fréquentes {#faqs}
-   + [Présentation des questions fréquentes](faq-intro/faq-intro.md)
+   + [Aperçu des questions fréquentes](faq-intro/faq-intro.md)
    + [FAQ sur le service d’ID](faq-intro/faq.md)
    + [Questions fréquentes sur Analytics et le service d’ID](faq-intro/analytics-faq.md)
    + [Questions fréquentes sur d’autres solutions Experience Cloud](faq-intro/other-faq.md)
-+ Release notes for ID Service {#release-notes}
++ Notes de mise à jour du service d’ID {#release-notes}
    + [Notes de mise à jour 2019](release-notes/release-notes.md)
    + [Notes de mise à jour 2018](release-notes/notes-2018.md)
    + [Notes de mise à jour 2017](release-notes/notes-2017.md)
