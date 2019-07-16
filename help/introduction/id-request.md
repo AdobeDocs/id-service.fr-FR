@@ -2,28 +2,28 @@
 description: Cette section décrit le processus de requête d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
 keywords: Service d’identification
 seo-description: Cette section décrit le processus de requête d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
-seo-title: Demande et définition d'identifiants par le service Experience Cloud ID
-title: Demande et définition d'identifiants par le service Experience Cloud ID
-uuid: ff 7 f 5 b 7 e-e 959-4391-b 75 c-b 7 a 36286 e 0 ea
+seo-title: Demande et définition d'identifiants par le service d'identité de Platform Platform
+title: Demande et définition d'identifiants par le service d'identité de Platform Platform
+uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# How the Experience Cloud ID Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Platform Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 Cette section décrit le processus de requête d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
 
 >[!NOTE]
 >
->If you&#39;re not familiar with how the Experience Cloud ID Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
+>If you&#39;re not familiar with how the Experience Platform Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
 **Conseil :** Voir aussi notre [ vidéo sur le service d’ID avec suivi interdomaines](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Requête d’un Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
-Les exemples ci-après montrent comment le service d’ID demande l’identifiant visiteur Experience Cloud et le reçoit. Ces exemples utilisent deux sociétés fictives, Food Company et Sports Company, pour démontrer les flux de données pour les demandes d&#39;ID et les réponses. Chaque société dispose d’un ID d’organisation Experience Cloud unique et a mis en œuvre le code du service d’ID sur tous ses sites. Ces cas d’utilisation représentent les flux de données pour une mise en œuvre générique du service d’ID sans Analytics, d’ID hérités ni de navigateurs qui bloquent les cookies tiers.
+Les exemples ci-après montrent comment le service d’ID demande l’identifiant visiteur Experience Cloud et le reçoit. Ces exemples utilisent deux sociétés fictives, Food Company et Sports Company, pour illustrer les flux de données pour les requêtes d’ID et les réponses. Chaque société dispose d’un ID d’organisation Experience Cloud unique et a mis en œuvre le code du service d’ID sur tous ses sites. Ces cas d’utilisation représentent les flux de données pour une mise en œuvre générique du service d’ID sans Analytics, d’ID hérités ni de navigateurs qui bloquent les cookies tiers.
 
 ![](assets/sample_sites.png)
 
@@ -31,7 +31,7 @@ Les exemples ci-après montrent comment le service d’ID demande l’identifian
 
 Dans cet exemple, un nouveau visiteur se rend sur le site des pizzas géré par la société Food Company. La société Food Company a placé le code du service d’ID sur le site Web des pizzas. Lorsque le site des pizzas est chargé, le code du service d’ID recherche le cookie AMCV dans le domaine pizza.
 
-* Si le cookie AMCV est défini, le visiteur du site dispose d’un Experience Cloud ID. Dans ce cas, le cookie effectue le suivi du visiteur et partage les données avec d&#39;autres solutions Experience Cloud.
+* Si le cookie AMCV est défini, le visiteur du site dispose d’un Experience Cloud ID. Dans ce cas, le cookie effectue le suivi du visiteur et partage les données avec d’autres solutions Experience Cloud.
 * Si le cookie AMCV n’est pas défini, le code du service d’ID appelle un [serveur de collecte de données](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) régional à l’adresse `dpm.demdex.net/id` (voir aussi [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). L’appel comprend l’ID d’organisation de la société Food Company. L’ID d’organisation est défini dans la fonction `Visitor.getInstance` du code du service d’ID.
 
 ![](assets/request1.png)
@@ -44,7 +44,7 @@ Le serveur de collecte de données renvoie dans la réponse l’[!DNL Experience
 
 Comme vous allez le constater dans l’exemple suivant, l’ID demdex et l’ID d’organisation permettent au service d’ID de créer le MID correct et de le renvoyer lorsque le visiteur passe sur un autre site appartenant à la société Food Company.
 
-## Cross-site request and response {#section-15ea880453af467abd2874b8b4ed6ee9}
+## Requête et réponse intersites {#section-15ea880453af467abd2874b8b4ed6ee9}
 
 Dans cet exemple, le visiteur de la société Food Company passe du site des pizzas au site des tacos. La société Food Company a mis en œuvre le code du service d’ID sur le site Web des tacos. Le visiteur ne s’est jamais rendu sur le site des tacos.
 
@@ -52,11 +52,11 @@ Il n’existe donc pas de cookie AMCV sur le site des tacos. De plus, le service
 
 ![](assets/request2.png)
 
-Une fois que le serveur de collecte de données a reçu l’ID d’organisation et l’ID demdex, il crée le MID correct pour le visiteur du site et le renvoie. Comme le est dérivé de manière mathématique de l’ID d’organisation et de l’ID demdex, le cookie AMCV contient la valeur MID `mid = 1234`mid = .
+Une fois que le serveur de collecte de données a reçu l’ID d’organisation et l’ID demdex, il crée le MID correct pour le visiteur du site et le renvoie. Comme le MID est dérivé de manière mathématique de l’ID d’organisation et de l’ID demdex, le cookie AMCV contient la valeur MID, `mid = 1234`.
 
 ![](assets/response2.png)
 
-## ID requests from other sites {#section-ba9a929e50d64b0aba080630fd83b6f1}
+## Requêtes d’ID depuis d’autres sites {#section-ba9a929e50d64b0aba080630fd83b6f1}
 
 Dans cet exemple, notre visiteur quitte les sites de Food Company et accède au site de football appartenant à la société Sports Company. Lorsque le visiteur accède au site de football, le processus de recherche et de demande d’ID fonctionne comme cela a été décrit dans les exemples précédents. Comme la société Sports Company possède son propre ID d’organisation, le service d’ID renvoie toutefois un autre MID. Le nouveau MID est unique aux domaines contrôlés par la société Sports Company et permet à celle-ci d’effectuer le suivi et de partager les données du visiteur dans l’ensemble des solutions [!DNL Experience Cloud]. L’ID demdex reste identique pour ce visiteur, car il contient un cookie tiers et persiste dans les différents domaines.
 
