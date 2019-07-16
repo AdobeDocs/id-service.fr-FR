@@ -1,21 +1,21 @@
 ---
-description: La pulsation vidéo nécessite le service Experience Cloud ID. Lorsque vous mesurez une vidéo sur JavaScript ou Flash, la mise en œuvre du service d’ID sur les pages de votre site et dans la lecture vidéo garantit que les visiteurs ne sont pas comptabilisés séparément lorsqu’ils regardent la vidéo.
+description: La pulsation vidéo nécessite le service d'identité de Platform Platform. Lorsque vous mesurez une vidéo sur JavaScript ou Flash, la mise en œuvre du service d’ID sur les pages de votre site et dans la lecture vidéo garantit que les visiteurs ne sont pas comptabilisés séparément lorsqu’ils regardent la vidéo.
 keywords: Service d’identification
-seo-description: La pulsation vidéo nécessite le service Experience Cloud ID. Lorsque vous mesurez une vidéo sur JavaScript ou Flash, la mise en œuvre du service d’ID sur les pages de votre site et dans la lecture vidéo garantit que les visiteurs ne sont pas comptabilisés séparément lorsqu’ils regardent la vidéo.
-seo-title: Mesure de pulsation vidéo et service Experience Cloud ID
-title: Mesure de pulsation vidéo et service Experience Cloud ID
-uuid: 07986 a 78-23 ac -4 fd 4-ab 8 f-be 9275616 a 29
+seo-description: La pulsation vidéo nécessite le service d'identité de Platform Platform. Lorsque vous mesurez une vidéo sur JavaScript ou Flash, la mise en œuvre du service d’ID sur les pages de votre site et dans la lecture vidéo garantit que les visiteurs ne sont pas comptabilisés séparément lorsqu’ils regardent la vidéo.
+seo-title: Pulsation vidéo et service d'identité de Platform Platform
+title: Pulsation vidéo et service d'identité de Platform Platform
+uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Mesure de pulsation vidéo et service Experience Cloud ID {#video-heartbeat-and-the-experience-cloud-id-service}
+# Video Heartbeat and the Experience Platform Identity Service {#video-heartbeat-and-the-experience-cloud-id-service}
 
-La pulsation vidéo nécessite le service Experience Cloud ID. Lorsque vous mesurez une vidéo sur JavaScript ou Flash, la mise en œuvre du service d’ID sur les pages de votre site et dans la lecture vidéo garantit que les visiteurs ne sont pas comptabilisés séparément lorsqu’ils regardent la vidéo.
+La pulsation vidéo nécessite le service d&#39;identité de Platform Platform. Lorsque vous mesurez une vidéo sur JavaScript ou Flash, la mise en œuvre du service d’ID sur les pages de votre site et dans la lecture vidéo garantit que les visiteurs ne sont pas comptabilisés séparément lorsqu’ils regardent la vidéo.
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Mesure vidéo dans Analytics à l’aide de Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
 
