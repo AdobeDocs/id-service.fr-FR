@@ -6,7 +6,7 @@ seo-title: Service d’identification Questions fréquentes
 title: FAQ sur le service d’ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -23,7 +23,7 @@ Voir [Aperçu](../introduction/overview.md).
 
 **Pourquoi le service d’ID n’effectue-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
-Ce problème peut être difficile à diagnostiquer. Vous pouvez néanmoins vérifier les en-têtes de stratégie de sécurité du contenu de votre site. Si votre stratégie de sécurité est stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir [Stratégies de sécurité du contenu et service d&#39;identité de Platform Platform](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Ce problème peut être difficile à diagnostiquer. Vous pouvez néanmoins vérifier les en-têtes de stratégie de sécurité du contenu de votre site. Si votre stratégie de sécurité est stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir [Stratégies de sécurité du contenu et service d'identité d'Experience Cloud](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Stockage du fichier VisitorAPI.js**
 
@@ -67,13 +67,13 @@ Il en résultera de meilleures performances pour les utilisateurs se servant de 
 
 Les requêtes de ressources utilisant la norme CORS sont généralement préférables à celles utilisant JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et annulent la priorité des requêtes relatives à d’autres appels synchrones et asynchrones sur la page. La norme CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
-Voir [Prise en charge de CORS dans le service d&#39;identité d&#39;Experience Platform](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Voir [Prise en charge de CORS dans le service d'identité Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Le service d’ID prend-il en charge la norme CORS ?**
 
-Oui. See [CORS Support in the Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Oui. See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Qu’est-ce que la norme CORS ?**
 
