@@ -6,7 +6,7 @@ seo-title: Questions fréquentes sur d’autres solutions Experience Cloud
 title: Questions fréquentes sur d’autres solutions Experience Cloud
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ Voir [Mise en œuvre standard avec la gestion dynamique des balises (DTM)](../im
 
 ## Analytics et Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**L&#39;historique des visites d&#39;un utilisateur sera-t-il exporté[!DNL Adobe Analytics][!DNL Audience Manager]après la mise en œuvre du service d&#39;identité d&#39;Experience Platform ?**
+**L'historique des visites d'un utilisateur sera-t-il exporté[!DNL Adobe Analytics][!DNL Audience Manager]après la mise en œuvre du service d'identité Experience Cloud ?**
 
 Il y a deux possibilités :
 
