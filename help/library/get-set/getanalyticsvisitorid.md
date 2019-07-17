@@ -1,19 +1,19 @@
 ---
-description: Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité de Platform Platform. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
+description: Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité Experience Cloud. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
 keywords: Service d’identification
-seo-description: Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité de Platform Platform. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
+seo-description: Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité Experience Cloud. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Renvoie l&#39;Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d&#39;identité de Platform Platform. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
+Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité Experience Cloud. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
 
 **Syntaxe** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
