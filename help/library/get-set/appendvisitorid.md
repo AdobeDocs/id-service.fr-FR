@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo (suivi interdomaines)
 title: appendVisitorIDsTo (suivi interdomaines)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ Contenu :
 
 ## Suivi des visiteurs sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un identifiant unique pour ce visiteur. Le cookie tiers contient un autre ID utilisé par le service d’ID pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’ID ne peut pas :
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un identifiant unique pour ce visiteur. Le cookie tiers contient un autre ID utilisé par le service d’ID pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’ID ne peut pas :
 
 * régénérer l’ID unique pour le visiteur du site lorsque ce dernier accède à un autre domaine ;
 * effectuer le suivi des visiteurs sur des domaines différents appartenant à votre organisation.
