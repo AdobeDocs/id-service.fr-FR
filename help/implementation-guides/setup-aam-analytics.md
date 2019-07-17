@@ -1,19 +1,19 @@
 ---
-description: Ces instructions concernent les clients Analytics et Audience Manager qui souhaitent utiliser le service d'identité Experience Platform et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+description: Ces instructions concernent les clients Analytics et Audience Manager qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
 keywords: Service d’identification
-seo-description: Ces instructions concernent les clients Analytics et Audience Manager qui souhaitent utiliser le service d'identité Experience Platform et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
-seo-title: Mise en œuvre du service d'identité d'Experience Platform pour Analytics et Audience Manager
-title: Mise en œuvre du service d'identité d'Experience Platform pour Analytics et Audience Manager
+seo-description: Ces instructions concernent les clients Analytics et Audience Manager qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+seo-title: Mise en œuvre du service d'identité Experience Cloud pour Analytics et Audience Manager
+title: Mise en œuvre du service d'identité Experience Cloud pour Analytics et Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implement the Experience Cloud Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Ces instructions concernent les clients Analytics et Audience Manager qui souhaitent utiliser le service d&#39;identité Experience Platform et qui n&#39;utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+Ces instructions concernent les clients Analytics et Audience Manager qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
 
 >[!IMPORTANT]
 >
@@ -179,7 +179,7 @@ Vous avez besoin d’une période de grâce si les nouveaux visiteurs doivent av
 
 Interrompez la période de grâce une fois que votre mise en œuvre peut capturer le MID au lieu de lire le cookie s_vi.
 
-See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **Intégration des données du parcours de navigation**
 
@@ -199,7 +199,7 @@ Pour tester la mise en œuvre du service d’ID, recherchez les éléments suiva
 
 * [le cookie AMCV](../introduction/cookies.md) dans le domaine où est hébergée votre page.
 * la valeur du MID dans la demande d’image Analytics à l’aide de l’[outil de débogage Adobe](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
-* See also, [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+* See also, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 Pour vérifier le transfert côté serveur, consultez [Comment vérifier la mise en œuvre de votre transfert côté serveur](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html).
 
