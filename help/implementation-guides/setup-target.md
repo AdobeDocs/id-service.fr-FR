@@ -1,19 +1,19 @@
 ---
-description: Ces instructions concernent les clients Target qui souhaitent utiliser le service d'identité Experience Platform et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+description: Ces instructions concernent les clients Target qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
 keywords: Service d’identification
-seo-description: Ces instructions concernent les clients Target qui souhaitent utiliser le service d'identité Experience Platform et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
-seo-title: Mise en œuvre du service d'identité d'Experience Platform pour Target
-title: Mise en œuvre du service d'identité d'Experience Platform pour Target
+seo-description: Ces instructions concernent les clients Target qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+seo-title: Mise en œuvre du service d'identité Experience Cloud pour Target
+title: Mise en œuvre du service d'identité Experience Cloud pour Target
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
+# Implement the Experience Cloud Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
 
-Ces instructions concernent les clients Target qui souhaitent utiliser le service d&#39;identité Experience Platform et qui n&#39;utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+Ces instructions concernent les clients Target qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
 
 >[!IMPORTANT]
 >
@@ -77,7 +77,7 @@ Pour tester la mise en œuvre du service d’ID :
 * Recherchez le cookie AMCV dans le domaine où est hébergée votre page.
 * Vérifiez que `mboxMCGVID` apparaît dans la requête [!DNL Target] et qu’il contient l’[!DNL Experience Cloud] ID (MID).
 
-See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
+See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
 
 **Déploiement**
 
