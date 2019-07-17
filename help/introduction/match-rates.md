@@ -1,19 +1,19 @@
 ---
-description: Présentation des processus de synchronisation des identifiants et des taux de correspondance dans le service d'identité d'Experience Platform, y compris Adobe Media Optimizer et le service d'ID.
+description: Présentation des processus de synchronisation des identifiants et des taux de correspondance dans le service d'identité d'Experience Cloud, notamment Adobe Media Optimizer et le service d'ID.
 keywords: Service d’identification
-seo-description: Présentation des processus de synchronisation des identifiants et des taux de correspondance dans le service d'identité d'Experience Platform, y compris Adobe Media Optimizer et le service d'ID.
+seo-description: Présentation des processus de synchronisation des identifiants et des taux de correspondance dans le service d'identité d'Experience Cloud, notamment Adobe Media Optimizer et le service d'ID.
 seo-title: Comprendre la synchronisation des identifiants et les taux de correspondance
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Comprendre la synchronisation des identifiants et les taux de correspondance{#understanding-id-synchronization-and-match-rates}
 
-Présentation des processus de synchronisation des identifiants et des taux de correspondance dans le service d&#39;identité d&#39;Experience Platform, y compris Adobe Media Optimizer et le service d&#39;ID.
+Présentation des processus de synchronisation des identifiants et des taux de correspondance dans le service d'identité d'Experience Cloud, notamment Adobe Media Optimizer et le service d'ID.
 
 ## Synchronisation des identifiants et taux de correspondance {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ Le service d’ID synchronise les identifiants en temps réel. Ces processus fon
 
 **Étape 1 : Chargement de la page**
 
-Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Visitor.getInstance`lance un appel [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P au service d’ID. Le service d’ID répond avec un cookie qui inclut l’[!DNL Experience Cloud] ID (MID) du visiteur. Les MID est un identifiant unique attribué à chaque visiteur du site. Voir également [Cookies et service d&#39;identité de Platform Platform](../introduction/cookies.md).
+Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Visitor.getInstance`lance un appel [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P au service d’ID. Le service d’ID répond avec un cookie qui inclut l’[!DNL Experience Cloud] ID (MID) du visiteur. Les MID est un identifiant unique attribué à chaque visiteur du site. Voir également [Cookies et service d'identité Experience Cloud](../introduction/cookies.md).
 
 **Étape 2 : Chargement de l’iFrame**
 
@@ -43,7 +43,7 @@ Pendant que le corps de la page se charge, le service d’ID charge une iFrame a
 * Se charge aussi vite que possible. Si le rythme est trop rapide, vous pouvez charger l’iFrame après l’événement de chargement de la fenêtre (non recommandé). Voir [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) pour plus de détails.
 * Empêche le code de l’iFrame d’avoir accès à la page parente ou d’affecter cette dernière.
 
-Voir également [Demande et définition d&#39;identifiants par le service d&#39;identité de Platform Platform….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+Voir également [Demande et définition d'identifiants par le service d'identité Experience Cloud](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **Étape 3 : Déclenchement des synchronisations d’identifiants**
 
