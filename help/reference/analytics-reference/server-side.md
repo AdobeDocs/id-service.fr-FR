@@ -6,7 +6,7 @@ seo-title: Mise en œuvre côté serveur alliée à JavaScript
 title: Mise en œuvre côté serveur alliée à JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -21,7 +21,7 @@ Veillez à rechercher les identifiants visiteur Experience Cloud et Analytics e
 
 >[!IMPORTANT]
 >
->Appmeasurement pour Java ne prend actuellement pas en charge le service d&#39;identité de Platform Platform.
+>Appmeasurement pour Java ne prend actuellement pas en charge le service d'identité Experience Cloud.
 
 ## API d’insertion de données {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -33,4 +33,4 @@ Voir [Balises XML prises en charge](https://marketing.adobe.com/developer/en_US/
 
 ## AppMeasurement pour Java {#section-d664b94934924d048300d9c2b6560085}
 
-Le service d&#39;identité d&#39;Experience Platform n&#39;est actuellement pas pris en charge par appmeasurement pour Java.
+Le service d'identité Experience Cloud n'est actuellement pas pris en charge par appmeasurement pour Java.
