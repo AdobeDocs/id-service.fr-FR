@@ -1,19 +1,19 @@
 ---
-description: Appelez ces fonctions du service d'ID pour déterminer le délai d'expiration pour une demande d'identifiant de plateforme Experience Platform, Analytics ou Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+description: Appelez ces fonctions du service d'ID pour déterminer le délai d'expiration pour une demande d'identifiant d'Experience Cloud, Analytics ou Audience Manager ID. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 keywords: Service d’identification
-seo-description: Appelez ces fonctions du service d'ID pour déterminer le délai d'expiration pour une demande d'identifiant de plateforme Experience Platform, Analytics ou Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+seo-description: Appelez ces fonctions du service d'ID pour déterminer le délai d'expiration pour une demande d'identifiant d'Experience Cloud, Analytics ou Audience Manager ID. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 seo-title: Méthodes callTimeOut
 title: Méthodes callTimeOut
 uuid: e5047498-11db-4945-b356-c92b7d447573
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Méthodes callTimeOut{#calltimeout-methods}
 
-Appelez ces fonctions du service d&#39;ID pour déterminer le délai d&#39;expiration pour une demande d&#39;identifiant de plateforme Experience Platform, Analytics ou Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+Appelez ces fonctions du service d'ID pour déterminer le délai d'expiration pour une demande d'identifiant d'Experience Cloud, Analytics ou Audience Manager ID. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
 ## Fonctions du délai d’expiration {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,7 +26,7 @@ Appelez ces fonctions du service d&#39;ID pour déterminer le délai d&#39;expir
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Service d'identité de Platform Platform </p> </td> 
+   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
