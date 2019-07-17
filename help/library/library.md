@@ -1,19 +1,19 @@
 ---
-description: Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d'identité Experience Platform.
+description: Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d'identité Experience Cloud.
 keywords: Service d’identification
-seo-description: Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d'identité Experience Platform.
+seo-description: Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d'identité Experience Cloud.
 seo-title: API du service d’ID
 title: API du service d’ID
 uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # API du service d’ID{#id-service-api}
 
-Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d&#39;identité Experience Platform.
+Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d'identité Experience Cloud.
 
 * [Aperçu des configurations](function-vars/function-vars.md)
 * [Présentation des méthodes](get-set/get-set.md)
