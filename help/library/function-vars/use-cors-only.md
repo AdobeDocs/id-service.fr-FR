@@ -1,19 +1,19 @@
 ---
-description: Un indicateur booléen optionnel qui contrôle la manière dont le navigateur demande des ressources à partir du service d'identité de Platform Platform.
+description: Un indicateur booléen optionnel qui contrôle la manière dont le navigateur demande des ressources à partir du service d'identité Experience Cloud.
 keywords: Service d’identification
-seo-description: Un indicateur booléen optionnel qui contrôle la manière dont le navigateur demande des ressources à partir du service d'identité de Platform Platform.
+seo-description: Un indicateur booléen optionnel qui contrôle la manière dont le navigateur demande des ressources à partir du service d'identité Experience Cloud.
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # useCORSOnly{#usecorsonly}
 
-Un indicateur booléen optionnel qui contrôle la manière dont le navigateur demande des ressources à partir du service d&#39;identité de Platform Platform.
+Un indicateur booléen optionnel qui contrôle la manière dont le navigateur demande des ressources à partir du service d'identité Experience Cloud.
 
 **Syntaxe :** `useCORSOnly: true|false` (la valeur par défaut est `false`).
 
