@@ -1,19 +1,19 @@
 ---
-description: Remplacez le nom de domaine par défaut utilisé par les appels d'Experience Platform Identity Service par votre propre nom de sous-domaine avec ces configurations.
+description: Remplacez le nom de domaine par défaut utilisé par les appels d'Experience Cloud Identity Service par votre propre nom de sous-domaine avec ces configurations.
 keywords: Service d’identification
-seo-description: Remplacez le nom de domaine par défaut utilisé par les appels d'Experience Platform Identity Service par votre propre nom de sous-domaine avec ces configurations.
+seo-description: Remplacez le nom de domaine par défaut utilisé par les appels d'Experience Cloud Identity Service par votre propre nom de sous-domaine avec ces configurations.
 seo-title: audienceManagerServer et audienceManagerServerSecure
 title: audienceManagerServer et audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # audienceManagerServer et audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Remplacez le nom de domaine par défaut utilisé par les appels d&#39;Experience Platform Identity Service par votre propre nom de sous-domaine avec ces configurations.
+Remplacez le nom de domaine par défaut utilisé par les appels d'Experience Cloud Identity Service par votre propre nom de sous-domaine avec ces configurations.
 
 **Syntaxe :**
 
