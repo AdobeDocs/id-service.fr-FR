@@ -6,7 +6,7 @@ seo-title: Obtenir les identifiants de région et d’utilisateur à partir du c
 title: Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID
 uuid: bdd9d001-f29f-4ff0-800b-8182243da218
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 Le cookie AMCV contient l’Experience Cloud ID (MID), ainsi qu’un identifiant de zone géographique pour les visiteurs de votre site. Ces identifiants sont enregistrés en tant que paires clés-valeurs. Le mid:user ID contient l’Experience Cloud ID du visiteur. L’identifiant aamlh:region contient l’identifiant de région du visiteur de votre site. Vous pouvez récupérer ces informations en analysant le cookie AMCV.
 
-For more information, see [Get User IDs and Regions Through the Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html).
+For more information, see [Get User IDs and Regions Through the Experience Cloud Identity Service](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html).
 
 Si vous êtes un [!DNL Audience Manager] client, vous pouvez obtenir l’identifiant de région à partir de la réponse envoyée par le serveur de collecte des données (DCS). Voir [Obtention des identifiants et des régions à partir d’une réponse DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-aam-ids.html).
 
