@@ -2,16 +2,16 @@
 description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
 keywords: Service d’identification
 seo-description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
-seo-title: Intégration directe au service d'identité de Platform Platform
-title: Intégration directe au service d'identité de Platform Platform
+seo-title: Intégration directe au service d'identité Experience Cloud
+title: Intégration directe au service d'identité Experience Cloud
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
 
@@ -62,11 +62,11 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Identifiant visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service d'identité de Platform Platform</a>. </p> </td> 
+   <td colname="col2"> <p>Identifiant visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service d'identité Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet ID, voir <a href="../reference/requirements.md" format="dita" scope="local"> Conditions requises pour le service d'identité de Platform Platform</a>. </p> </td> 
+   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet ID, voir <a href="../reference/requirements.md" format="dita" scope="local"> Conditions requises pour le service d'identité Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
