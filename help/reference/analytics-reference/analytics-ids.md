@@ -1,19 +1,19 @@
 ---
-description: Le service d'identité d'Experience Platform remplace les anciennes méthodes d'identification des visiteurs Analytics.
+description: Le service d'identité Experience Cloud remplace les anciennes méthodes d'identification des visiteurs Analytics.
 keywords: Service d’identification
-seo-description: Le service d'identité d'Experience Platform remplace les anciennes méthodes d'identification des visiteurs Analytics.
+seo-description: Le service d'identité Experience Cloud remplace les anciennes méthodes d'identification des visiteurs Analytics.
 seo-title: Définition des Analytics ID et Experience Cloud ID
 title: Définition des Analytics ID et Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Définition des Analytics ID et Experience Cloud ID{#setting-analytics-and-experience-cloud-ids}
 
-Le service d&#39;identité d&#39;Experience Platform remplace les anciennes méthodes d&#39;identification des visiteurs Analytics.
+Le service d'identité Experience Cloud remplace les anciennes méthodes d'identification des visiteurs Analytics.
 
 Une fois le service d’ID mis en œuvre, son code s’exécute avant AppMeasurement. Le service d’ID récupère les Experience Cloud et Analytics ID afin que ces valeurs soient prêtes au chargement d’AppMeasurement.
 
