@@ -6,7 +6,7 @@ seo-title: Experience Cloud Identity Service
 title: Experience Cloud Identity Service
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
 
@@ -35,13 +35,7 @@ Le service d'ID d'Adobe Experience Cloud (service d'ID) fournit un identifiant p
      <p> <b>Annonces :</b> </p> 
      <p> <p>Important : la prise en charge du service ID pour Internet Explorer 6, 7 et 8 est obsolète et cessera dans une prochaine version. </p> </p> 
     </draft-comment> </td> 
-   <td colname="col2"> <p> <b>Notes de mise à jour</b> </p> <p><b>La version 4.0</b> du 12 février 2019 comprend le <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> service Opt-in</a> utilisé pour déterminer si vous pouvez placer un cookie sur le périphérique ou le navigateur d’un utilisateur lors de sa visite sur votre site. </p> <p>La version du 18 janvier 2018 inclut la mise à jour JavaScript 3.0.0 ainsi que les mises à jour des méthodes API. Voir <a href="library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414" format="dita" scope="local"> disableIdSyncs</a> et <a href="library/function-vars/disable-cookies.md#reference-2dd2d60d12f34f0b98bbb5606b3734cc" format="dita" scope="local"> disableThirdPartyCookies</a>. </p> 
-    <draft-comment> 
-     <p>La version d’octobre 2017 n’inclut pas de modifications ou de mises à jour du code pour le service d’ID. Le code du service d’ID reste inchangé dans la version 2.5. </p> 
-    </draft-comment> 
-    <draft-comment> 
-     <p> La version de septembre 2017 incrémente le code du service d’ID à la version 2.5. </p> 
-    </draft-comment> <p> 
+   <td colname="col2"> <p> <b>Notes de mise à jour</b> </p> <p><b>La version 4.4</b> du 17 juillet 2019 comprend la prise en charge de <a href="reference/hashing-support.md" format="dita" scope="local"> l'algorithme de hachage SHA -256</a> qui permet de transmettre des ID de client ou des adresses électroniques, et transmet les identifiants hachés.</p><p><b>La version 4.0</b> du 12 février 2019 comprend le <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> service Opt-in</a> utilisé pour déterminer si vous pouvez placer un cookie sur le périphérique ou le navigateur d’un utilisateur lors de sa visite sur votre site. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Pour connaître les nouvelles fonctionnalités et les correctifs, voir les dernières <a href="https://marketing.adobe.com/resources/help/en_US/whatsnew/" format="https" scope="external">notes de mises à jour d’Experience Cloud</a>. </li> 
       <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Pour lire les anciennes notes de mise à jour, voir les <a href="https://marketing-stage.adobe.com/resources/help/en_US/whatsnew/c_legacy_releases.html" format="html" scope="external">notes de mise à jour précédentes</a>. </li> 
