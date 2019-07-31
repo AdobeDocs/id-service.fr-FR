@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Aide du service d'identité Experience Cloud
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
 
@@ -98,6 +98,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
    + [Conditions requises pour le service d'ID](reference/requirements.md)
    + [Pulsation vidéo et service d'ID](reference/heartbeat.md)
    + [Outils de données et service d'ID](reference/dwb.md)
+   + [Prise en charge de hachage SHA 256 pour setcustomerids](reference/hashing-support.md)
 + Questions fréquentes {#faqs}
    + [Aperçu des questions fréquentes](faq-intro/faq-intro.md)
    + [FAQ sur le service d’ID](faq-intro/faq.md)
