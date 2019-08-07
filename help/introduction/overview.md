@@ -1,18 +1,18 @@
 ---
-description: Rôle du service d'identité Experience Cloud dans Adobe Experience Cloud.
-seo-description: Le service d'identité Experience Cloud active la structure d'identification commune pour les services principaux d'Experience Cloud, les solutions et les attributs et audiences du client dans le service principal People.
+description: Rôle du service d'identité d'Experience Platform dans Adobe Experience Cloud.
+seo-description: Le service d'identité Experience Platform active la structure d'identification commune pour les services principaux d'Experience Cloud, les solutions et les attributs et audiences du client.
 seo-title: Aperçu du service d’ID
 title: Aperçu
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
 # Aperçu
 
-Le service d'identité Experience Cloud active la structure d'identification commune pour les services principaux d'Experience Cloud, les solutions et les attributs et audiences du client dans le service principal People. Pour ce faire, il attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
+Le service d'identité Experience Platform active la structure d'identification commune pour les services principaux d'Experience Cloud, les solutions et les attributs et audiences du client dans le service d'identité de plate-forme. (Vous pouvez voir des références aux anciens noms ou acronymes, tels que le service Experience Cloud ID, ECID, Marketing Cloud ID Service, MID et le service d'identification des visiteurs). Le service d'identité fonctionne en attribuant un identifiant persistant unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
 
 ![](assets/ecid.png)
 
