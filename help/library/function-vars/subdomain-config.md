@@ -6,7 +6,7 @@ seo-title: audienceManagerServer et audienceManagerServerSecure
 title: audienceManagerServer et audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -29,7 +29,7 @@ Normalement, le service [!DNL Experience Cloud] ID appelle [!DNL Adobe] à l’
 Ces configurations nécessitent que vous utilisiez :
 
 * Le nom du [!DNL Audience Manager] sous-domaine de l’enregistrement pour votre société. Vérifiez ou obtenez ce nom auprès de votre conseiller.
-* Le nom du sous-domaine associé à votre [!DNL Organization ID].
+* Le nom du sous-domaine associé à votre [!UICONTROL ID d’organisation].
 * *Les deux* paramètres de configuration portant le même nom de sous-domaine.
 
 **Exemple de code**
