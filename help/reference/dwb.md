@@ -6,7 +6,7 @@ seo-title: Outils de données et service d'identité Experience Cloud
 title: Outils de données et service d'identité Experience Cloud
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -19,7 +19,7 @@ Pour mettre à jour le [Data Workbench](https://marketing.adobe.com/resources/he
 
 1. Recherchez le fichier de configuration [Decoder Group](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) actuel.
 
-   En règle générale, le fichier [!DNL Decoder Group] se trouve dans un [!DNL Profile Manager] sur ce chemin d’accès : `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copiez le format de décodeur dans le fichier de configuration.
+   Typically, the [!DNL Decoder Group] is located in a [!UICONTROL Profile Manager] on this path: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copiez le format de décodeur dans le fichier de configuration.
 1. Collez le format de décodeur en dessous du format d’origine.
 1. Ouvrez le format de décodeur et ajoutez ces nouvelles positions de champ à la fin de la liste :
 
