@@ -6,7 +6,7 @@ seo-title: Mise en œuvre du service d'identité Experience Cloud pour Analytics
 title: Mise en œuvre du service d'identité Experience Cloud pour Analytics et Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -32,7 +32,7 @@ La migration vers le transfert côté serveur nécessite des préparations et de
 
 1. Travaillez avec vos contacts [!DNL Analytics] et [!DNL Audience Manager] pour préparer votre migration du service d’ID et du transfert côté serveur. Faites en sorte que la sélection du serveur de suivi soit un aspect essentiel de ce plan.
 
-1. Effectuez la mise en service de [!DNL Profiles & Audiences]. Pour démarrer, remplissez le formulaire sur le [site d’intégration et de mise en service](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES).
+1. Pour démarrer, remplissez le formulaire sur le [site d’intégration et de mise en service](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES).
 
 1. Mettez en œuvre le service d’ID et le [!DNL Audience Management Module] simultanément. Pour fonctionner correctement, le [!DNL Audience Management Module] (transfert côté serveur) et le service d’ID doivent être mis à jour pour le même ensemble de pages et au même moment.
 
@@ -137,7 +137,7 @@ Si vous ne savez pas comment trouver votre serveur de suivi, voir [Question fré
 
 ## Étape 6 : Mise à jour de votre fichier AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
-Cette étape nécessite [!DNL AppMeasurement]. Vous ne pouvez pas continuer si vous utilisez toujours s_code.
+Cette étape nécessite [!UICONTROL AppMeasurement]. Vous ne pouvez pas continuer si vous utilisez toujours s_code.
 
 Ajoutez la `Visitor.getInstance` fonction affichée ci-dessous à votre `AppMeasurement.js` fichier. Placez-le dans la section qui contient des configurations telles que `linkInternalFilters`, `charSet`, `trackDownloads`, etc. :
 
@@ -158,7 +158,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## Étape 7 : Ajout du code de l’API visiteur à la page {#section-c2bd096a3e484872a72967b6468d3673}
 
-Placez le fichier ` [!DNL VisitorAPI.js]` à l’intérieur des balises `<head>` sur chaque page. Lorsque vous placez le `VisitorAPI.js` fichier sur votre page :
+Placez le fichier ` [!UICONTROL VisitorAPI.js]` à l’intérieur des balises `<head>` sur chaque page. Lorsque vous placez le `VisitorAPI.js` fichier sur votre page :
 
 * Insérez-le au début de la `<head>` section afin qu’il s’affiche avant les balises d’autres solutions.
 * Il doit s’exécuter avant AppMeasurement et le code d’autres [!DNL Experience Cloud] solutions.
