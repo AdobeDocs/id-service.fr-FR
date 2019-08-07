@@ -5,7 +5,7 @@ seo-title: Utilisation des services Opt-in avec un framework IAB (bêta)
 title: Utilisation des services Opt-in avec un framework IAB (bêta)
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -46,9 +46,9 @@ Une fois les paramètres correctement configurés, les bibliothèques ECID et DI
 
 >[!IMPORTANT]
 >
->Audience Manager nécessite un consentement pour les *points 1, 2 et 5, ainsi que du consentement du fournisseur*, afin de déployer des cookies et lancer ou honorer les synchronisations d’ID. Read more about the IAB plugin in Audience Manager documentation ** [here](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)**.
+>Audience Manager nécessite un consentement pour les *points 1, 2 et 5, ainsi que du consentement du fournisseur*, afin de déployer des cookies et lancer ou honorer les synchronisations d’ID. Pour en savoir plus sur le module IAB, consultez la documentation Audience Manager, [ici](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html).
 
-Pour plus d’informations sur la façon de valider à la fois Opt-in et le module IAB, référez-vous au cas d’utilisation 4 du guide de validation, [**ici** ](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
+Pour plus d’informations sur la façon de valider à la fois Opt-in et le module IAB, référez-vous au cas d’utilisation 4 du guide de validation, [ici](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
 ## Documentation connexe {#section-55da1110051a4b39b1037803f4a7b264}
 
