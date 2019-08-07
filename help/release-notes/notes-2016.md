@@ -6,7 +6,7 @@ seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -23,7 +23,7 @@ Novembre 2016
 
 >[!IMPORTANT]
 >
->* La version 1.10 requiert [!DNL AppMeasurement] 1.8.0.
+>* La version 1.10 requiert [!UICONTROL AppMeasurement] version 1.8.0.
 >* Avec la bibliothèque du service d'identité Experience Cloud 2.0.0 +, la synchronisation des identifiants commence par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](/help/introduction/match-rates.md).
 
 
