@@ -6,7 +6,7 @@ seo-title: Tester et vérifier le service d'identité Experience Cloud
 title: Tester et vérifier le service d'identité Experience Cloud
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -44,7 +44,7 @@ To verify the status of the ID service with the [!DNL Adobe] [debugger](https://
 
 Le MID est stocké dans une paire clé-valeur qui suit cette syntaxe : `MID= *`Experience Cloud ID`*`. Le débogueur affiche ces informations telles que montrées ci-dessous.
 
-**Succès**
+**Opération succès**
 
 Le service d’ID a été correctement mis en œuvre si une réponse telle que celle-ci s’affiche :
 
@@ -79,19 +79,19 @@ Consultez cette section pour savoir où chercher et que chercher lorsque vous ut
 
 **Demandes de service d’ID réussies dans Charles**
 
-Le code de votre service d’ID fonctionne correctement si la fonction `Visitor.getInstance` lance un appel JavaScript à `dpm.demdex.net`. Une demande réussie inclut votre [ID d’organisation](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L’ID d’organisation est transmis en tant que paire clé-valeur utilisant la syntaxe : `d_orgid= *`organization ID`*`. Recherchez les appels `dpm.demdex.net` et JavaScript dans l’onglet [!DNL Structure]. Recherchez votre ID d’organisation dans l’onglet [!DNL Request].
+Le code de votre service d’ID fonctionne correctement si la fonction `Visitor.getInstance` lance un appel JavaScript à `dpm.demdex.net`. Une demande réussie inclut votre [ID d’organisation](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L’ID d’organisation est transmis en tant que paire clé-valeur utilisant la syntaxe : `d_orgid= *`organization ID`*`. Look for the `dpm.demdex.net` and the JavaScript calls under the [!UICONTROLStructure] tab. Look for your Organization ID under the [!UICONTROLRequest] tab.
 
 ![](assets/charles_request.png)
 
 **Réponses du service d’ID réussies dans Charles**
 
-Votre compte a été configuré correctement pour le service d’ID si la réponse des [serveurs de collecte des données](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) renvoie un MID. Le MID est renvoyé comme une paire clé-valeur qui suit cette syntaxe : `d_mid: *`visiteur Experience Cloud ID`*`. Recherchez le MID dans l’onglet [!DNL Response] tel qu’affiché ci-dessous.
+Votre compte a été configuré correctement pour le service d’ID si la réponse des [serveurs de collecte des données](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) renvoie un MID. Le MID est renvoyé comme une paire clé-valeur qui suit cette syntaxe : `d_mid: *`visiteur Experience Cloud ID`*`. Look for the MID in the [!UICONTROLResponse] tab as shown below.
 
 ![](assets/charles_response_success.png)
 
 **Échec des réponses du service d’ID dans Charles**
 
-Votre compte n’a pas été configuré correctement si la réponse DCS ne contient pas le MID. Une réponse manquée renvoie un code et un message d’erreur dans l’onglet [!DNL Response] tel qu’affiché ci-dessous. Contactez le service à la clientèle si ce message d’erreur s’affiche dans la réponse DCS.
+Votre compte n’a pas été configuré correctement si la réponse DCS ne contient pas le MID. An unsuccessful response returns an error code and message in the [!UICONTROLResponse] tab as shown below. Contactez le service à la clientèle si ce message d’erreur s’affiche dans la réponse DCS.
 
 ![](assets/charles_response_unsuccessful.png)
 
