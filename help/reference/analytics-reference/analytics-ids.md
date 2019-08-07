@@ -1,12 +1,12 @@
 ---
 description: Le service d'identité Experience Cloud remplace les anciennes méthodes d'identification des visiteurs Analytics.
 keywords: Service d’identification
-seo-description: Le service d'identité Experience Cloud remplace les anciennes méthodes d'identification des visiteurs Analytics.
+seo-description: Le service d'identité d'Experience Platform remplace les anciennes méthodes d'identification des visiteurs Analytics.
 seo-title: Définition des Analytics ID et Experience Cloud ID
 title: Définition des Analytics ID et Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
