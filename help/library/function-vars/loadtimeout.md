@@ -4,8 +4,8 @@ keywords: Service d’identification
 seo-description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) le délai d’expiration d’une réponse du service d’ID.
 seo-title: loadTimeout
 title: loadTimeout
-uuid: f 627 e 044-bd 73-49 a 4-8 a 90-6 d 19 aa 566751
-translation-type: tm+mt
+uuid: f627e044-bd73-49a4-8a90-6d19aa566751
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,13 +15,13 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) le délai d’expiration d’une réponse du service d’ID.
 
-**Syntaxe :**` loadTimeout: *`intervalle en millisecondes`*`
+**Syntaxe :** ` loadTimeout: *`intervalle en millisecondes`*`
 
 La valeur par défaut est de 30 000 millisecondes (30 secondes). Il est vivement recommandé *de ne pas* modifier la valeur par défaut.
 
 >[!NOTE]
 >
->Les appels au service d&#39;ID sont asynchrones par rapport à un autre code non Adobe sur la page. Par conséquent, l’augmentation ou la réduction du délai d’attente n’a aucune incidence sur la vitesse du rendu du contenu par la page. Toutefois, de longs délais peuvent avoir un impact sur les délais de chargement de la page tels qu’ils sont mesurés par des outils de surveillance réseau courants, mais pas sur le délai du rendu.
+>Les appels au service d’ID sont asynchrones par rapport aux autres codes hors Adobe sur la page. Par conséquent, l’augmentation ou la réduction du délai d’attente n’a aucune incidence sur la vitesse du rendu du contenu par la page. Toutefois, de longs délais peuvent avoir un impact sur les délais de chargement de la page tels qu’ils sont mesurés par des outils de surveillance réseau courants, mais pas sur le délai du rendu.
 
 **Exemple de code**
 
