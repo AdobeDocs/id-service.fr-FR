@@ -1,10 +1,10 @@
 ---
-description: Exemples de cas d'utilisation et de solutions pour gérer le service de souscription.
-seo-description: Exemples de cas d'utilisation et de solutions pour gérer le service de souscription.
+description: Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
+seo-description: Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
 seo-title: Cas d’utilisation d’Opt-in
 title: Cas d’utilisation d’Opt-in
-uuid: d 75 a 44 d 5-b 713-43 d 1-b 5 b 6-95 d 1 d 0 d 213 a 7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 # Cas d’utilisation d’Opt-in {#opt-in-use-cases}
 
-Exemples de cas d&#39;utilisation et de solutions pour gérer le service de souscription.
+Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
 
 ## Conseils et dépannage {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -20,9 +20,9 @@ Exemples de cas d&#39;utilisation et de solutions pour gérer le service de sous
 * Opt-in est une mise en œuvre par domaine. Les mises en œuvre interdomaines ne sont pas gérées.
 * Afin de désactiver les appels de tiers pour une bibliothèque spécifique, vous devez configurer cette préférence séparément dans chacune des bibliothèques.
 
-## Scénarios d’Opt-in {#section-1178053c065c430bba26f82ef383a71c}
+## Scénarios d’Opt-in  {#section-1178053c065c430bba26f82ef383a71c}
 
-Ces exemples d&#39;utilisation constituent des exemples d&#39;utilisation du service de souscription.
+Ces cas d’utilisation sont des exemples d’utilisation du service Opt-in.
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
