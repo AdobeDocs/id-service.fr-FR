@@ -1,11 +1,11 @@
 ---
 description: Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
-keywords: suivi inter-domaines ; Service d'ID
+keywords: suivi inter-domaines ; service d’ID
 seo-description: Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
-uuid: e 92 ce 1 f 5-67 a 4-476 c -9 d 04-41 d 4 e 96 b 1592
-translation-type: tm+mt
+uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
 
-**Syntax:** ` `disableThirdPartyCalls: true|false`` (default is `false`.)
+**Syntaxe :** ` `disableThirdPartyCalls: true|false`` (la valeur par défaut est `false`).
 
 Lorsque `disableThirdPartyCalls: true`, le service d’identification ne lancera pas d’appel vers d’autres domaines.
 
