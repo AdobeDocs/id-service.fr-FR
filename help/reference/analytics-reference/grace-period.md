@@ -4,14 +4,14 @@ keywords: Service d’identification
 seo-description: Si plusieurs fichiers JavaScript envoient des données à la même suite de rapports ou si vous avez recours à d’autres technologies sur votre site, par exemple la mesure vidéo Flash, nous vous recommandons de configurer une période de grâce.
 seo-title: Période de grâce du service d’ID
 title: Période de grâce du service d’ID
-uuid: 10 a 7 db 7 d-de 32-4379-914 f-edaf 929 efa 32
-translation-type: tm+mt
+uuid: 10a7db7d-de32-4379-914f-edaf929efa32
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
 
 
-# Période de grâce du service d’ID{#the-id-service-grace-period}    
+# Période de grâce du service d’ID{#the-id-service-grace-period}
 
 Si plusieurs fichiers JavaScript envoient des données à la même suite de rapports ou si vous avez recours à d’autres technologies sur votre site, par exemple la mesure vidéo Flash, nous vous recommandons de configurer une période de grâce.
 
@@ -23,14 +23,14 @@ Le déploiement du service [!DNL Experience Cloud] ID sur les sites qui utilise
 
 >[!NOTE]
 >
->La prise en charge de la période de grâce requiert la version 1.3 ou ultérieure du service [!DNL Experience Cloud] d&#39;ID.
+>La prise en charge de la période de grâce nécessite la version 1.3 ou ultérieure du service [!DNL Experience Cloud] ID.
 
-## Ai-je besoin d&#39;une période de grâce ? {#section-fd34c7ff697348a39f49258b7d39eb42}
+## Ai-je besoin d’une période de grâce ?{#section-fd34c7ff697348a39f49258b7d39eb42}
 
-Si vous disposez d’un seul fichier JavaScript Analytics et que vous n’utilisez aucune autre bibliothèque AppMeasurement, vous n’avez pas besoin d’une période de grâce. Vous pouvez simplement mettre à jour le fichier JavaScript unique ; les nouveaux visiteurs seront identifiés de manière cohérente à l’aide de Marketing Cloud ID durant leur visite.
+Si vous disposez d’un seul fichier JavaScript Analytics et que vous n’utilisez aucune autre bibliothèque AppMeasurement, vous n’avez pas besoin d’une période de grâce. Vous pouvez simplement mettre à jour le fichier JavaScript unique ; les nouveaux visiteurs seront identifiés de manière cohérente à l’aide de Experience Cloud ID durant leur visite.
 
 Si plusieurs fichiers JavaScript envoient des données à la *même suite de rapports* ou si vous avez recours à d’autres technologies sur votre site, par exemple la mesure vidéo Flash, nous vous recommandons de configurer une période de grâce.
 
-## Comment mettre en place une période de grâce ? {#section-512d5cd8570e483cbdd8b04457a16ced}
+## Comment mettre en place une période de grâce ?  {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Contactez [le service d&#39;assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Contactez [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
