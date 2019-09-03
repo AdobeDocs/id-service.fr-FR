@@ -5,7 +5,7 @@ seo-description: Notes de mise à jour et mises à jour de 2015.
 seo-title: Notes de mise à jour 2015
 title: Notes de mise à jour 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,11 +19,11 @@ Notes de mise à jour et mises à jour de 2015.
 
 Novembre 2015
 
-La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service de [!DNL Experience Cloud] ID afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur. See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Pour les versions 1.5.3 ou ultérieures.
+La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service de [!DNL Experience Cloud] ID afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur. Voir [Prise en charge de la loi COPPA dans le service Experience Cloud Identity](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Pour les versions 1.5.3 ou ultérieures.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
-septembre 2015
+Septembre 2015
 
 * Correction d’un bogue dans le navigateur Safari qui empêchait la synchronisation des services lorsque des utilisateurs bloquaient les cookies tiers. (AAM-20764)
 * Les appels au service d’ID incluent désormais l’ID de version dans le paramètre `d_visid_ver=`. L’ID renvoyé est utile aux équipes internes pour le dépannage et les problèmes de prise en charge. (AAM-20824)
@@ -45,7 +45,7 @@ Août 2015
 Les révisions de la documentation de cette version sont les suivantes :
 
 * [Méthodes d’API et bibliothèque de code](../library/library.md#concept-ff27497375644a898d47984aefb21c97) : Réorganisation du contenu et du texte. Dans la plupart des cas, une page est dédiée à chaque méthode.
-* [Conditions requises pour le service d'identité Experience Cloud](../reference/requirements.md): Révision du contenu et du texte réorganisé.
+* [Conditions requises du service Experience Cloud Identity](../reference/requirements.md) : Contenu révisé et texte réorganisé.
 
 ## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
