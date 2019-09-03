@@ -1,11 +1,11 @@
 ---
-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2017.
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 keywords: Service d’identification
-seo-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2017.
+seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Notes de mise à jour 2017 {#release-notes}
 
-Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2017.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 
-Ces modifications sont également contenues dans les [notes de mise à jour d’Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Pour obtenir des notes de mise à jour antérieures sur le service d’ID, voir les [notes de mise à jour précédentes](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) ou les liens au bas de cette page.
+Ces modifications sont également reprises dans les [notes de mise à jour Experience Cloud](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/). Pour obtenir des notes de mise à jour antérieures sur le service d’ID, reportez-vous aux [précédentes notes de mise à jour](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/?f=c_legacy_releases) ou aux liens situés au bas de cette page.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Ces modifications sont également contenues dans les [notes de mise à jour d’
 
 ## Version 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
-septembre 2017
+Septembre 2017
 
 <!--
 <p>
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Correction d’un bogue lié à Chrome en raison duquel le service d’ID générait une erreur en cliquant sur le bouton Retour de ce navigateur.
 * Le service d’ID relance désormais les synchronisations des identifiants lorsque l’ID de zone géographique de la réponse à l’appel d’événement change.
-* Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et service d'identité d'Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment envoyer des appels Liste blanche aux domaines Adobe utilisés par le service d'ID.
+* Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et service Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment placer sur liste blanche les appels vers les domaines Adobe utilisés par le service d’ID.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -106,7 +106,7 @@ Juillet 2017
 
 ## Version 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
-Date de publication : juin 2017
+Date de publication : Juin 2017
 
 <table id="table_7E412383E89D46759B00FE7328C9946F"> 
  <thead> 
@@ -192,7 +192,8 @@ Correction d’un bogue en raison duquel le service d’identification envoyait 
 
 **Nouvelle documentation**
 
-[Utilisation de la prérécupération DNS avec différents services et solutions Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[Utilisation de la prérécupération DNS avec différentes solutions et services Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](
+https://marketing.adobe.com/resources/help/fr_FR/mcloud/dns-prefetch.html)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
