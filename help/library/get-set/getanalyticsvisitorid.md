@@ -1,11 +1,11 @@
 ---
-description: Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité Experience Cloud. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
+description: Renvoie l’Analytics ID hérité (s’il existe) qui était stocké dans le cookie s_vi avant la mise en œuvre du service Experience Cloud Identity. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
 keywords: Service d’identification
-seo-description: Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité Experience Cloud. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
+seo-description: Renvoie l’Analytics ID hérité (s’il existe) qui était stocké dans le cookie s_vi avant la mise en œuvre du service Experience Cloud Identity. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Renvoie l'Analytics ID hérité (le cas échéant) stocké dans le cookie s_ vi avant la mise en œuvre du service d'identité Experience Cloud. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
+Renvoie l’Analytics ID hérité (s’il existe) qui était stocké dans le cookie s_vi avant la mise en œuvre du service Experience Cloud Identity. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
 
 **Syntaxe** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -44,7 +44,7 @@ Le `aid` paramètre apparaît dans une chaîne de requête dans deux ensembles d
 Le paramètre `aid` apparaît dans une chaîne de requête dans les cas suivants :
 
 * Le service [!DNL Experience Cloud] ID est déployé correctement.
-* Le visiteur d’un site possède un [!DNL Analytics] ID préexistant qui est stocké dans le [cookie s_vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
+* Le visiteur d’un site possède un ID [!DNL Analytics] préexistant qui est stocké dans le [cookie s_vi](https://marketing.adobe.com/resources/help/fr_FR/whitepapers/cookies/cookies_analytics.html).
 
 **Cas 2**
 
@@ -52,5 +52,5 @@ Le `aid` paramètre apparaît dans une chaîne de requête lorsque votre organis
 
 >[!MORE_LIKE_THIS]
 >
->* Cookies [Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Cookies Analytics](https://marketing.adobe.com/resources/help/fr_FR/whitepapers/cookies/cookies_analytics.html)
 
