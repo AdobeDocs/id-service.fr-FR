@@ -1,11 +1,11 @@
 ---
-description: Renvoie l'identifiant de région du service d'identité Experience Cloud. Un ID de zone géographique (ou indicateur de location) est un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur à Audience Manager.
+description: Renvoie l’ID de zone géographique du service Experience Cloud Identity. Un ID de zone géographique (ou indicateur de location) est un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur à Audience Manager.
 keywords: Service d’identification
-seo-description: Renvoie l'identifiant de région du service d'identité Experience Cloud. Un ID de zone géographique (ou indicateur de location) est un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur à Audience Manager.
+seo-description: Renvoie l’ID de zone géographique du service Experience Cloud Identity. Un ID de zone géographique (ou indicateur de location) est un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur à Audience Manager.
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,11 +13,11 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # getLocationHint{#getlocationhint}
 
-Renvoie l'identifiant de région du service d'identité Experience Cloud. Un ID de zone géographique (ou indicateur de location) est un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur à Audience Manager.
+Renvoie l’ID de zone géographique du service Experience Cloud Identity. Un ID de zone géographique (ou indicateur de location) est un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur à Audience Manager.
 
 **Syntaxe :** ` var *`nom de variable`* = visitor.getLocationHint()`
 
-Pour obtenir la liste des ID de zone géographique et des emplacements correspondants, voir [ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html).
+Pour obtenir la liste des ID de zone géographique et d’emplacements correspondants, voir [DCS Region IDs, Locations, and Host Names](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html).
 
 **Exemple de code**
 
