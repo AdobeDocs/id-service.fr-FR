@@ -5,7 +5,7 @@ seo-description: getInstance renvoie un objet d’identification visiteur pour l
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Si `getInstance` ne trouve pas d’instance existante, une instance est créée et renvoyée. This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
+Si `getInstance` ne trouve pas d’instance existante, une instance est créée et renvoyée. Ce comportement est similaire à celui de la [ `s_gi()` fonction ](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/?f=function_s_gi.html) d’[!DNL AppMeasurement].
 
 **Utilisation courante**
 
