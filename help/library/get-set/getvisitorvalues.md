@@ -5,7 +5,7 @@ seo-description: Il s’agit d’une API asynchrone qui renvoie les identifiants
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -18,13 +18,13 @@ Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, 
 Contenu :
 
 <ul class="simplelist"> 
- <li> <a href="../../library/get-set/getvisitorvalues.md#section-5aebe3907b2b46e997f45a1d1ed35c09" format="dita" scope="local">du lien personnalisé</a> </li> 
+ <li> <a href="../../library/get-set/getvisitorvalues.md#section-5aebe3907b2b46e997f45a1d1ed35c09" format="dita" scope="local"> Syntaxe </a> </li> 
  <li> <a href="../../library/get-set/getvisitorvalues.md#section-36a31683558742a5915db3a391e09f7b" format="dita" scope="local"> Cas d’utilisation 1 : demander le jeu de données par défaut </a> </li> 
  <li> <a href="../../library/get-set/getvisitorvalues.md#section-467b2f4e513344c89b7332b05f6f59f3" format="dita" scope="local"> Cas d’utilisation 2 : demander le jeu de données personnalisé </a> </li> 
  <li> <a href="../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5" format="dita" scope="local"> Paramètres de réponse définis </a> </li> 
 </ul>
 
-## du lien personnalisé{#section-5aebe3907b2b46e997f45a1d1ed35c09}
+## Syntaxe {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
 Cette fonction utilise la syntaxe suivante (le format italique représente un espace réservé pour une variable) : ` var *`valeurs`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`type d’ID`*, visitor.FIELDS. *`type d’ID`*]);`
 
@@ -84,7 +84,7 @@ L’exemple de réponse personnalisée renvoie uniquement les ID indiqués dans 
 
 ## Paramètres de réponse définis {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de `visitor.FIELDS` l’énumération Notez que cette méthode renvoie une chaîne vide en l’absence de valeurs pour une variable spécifique.
+Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de `visitor.FIELDS` l’énumération. Notez que cette méthode renvoie une chaîne vide en l’absence de valeurs pour une variable spécifique.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -108,7 +108,7 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud ID du visiteur. </p> <p>Voir <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies et service d'identité Experience Cloud </a>. </p> </td> 
+   <td colname="col2"> <p>Experience Cloud ID du visiteur. </p> <p>Voir <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud Identity </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
