@@ -2,16 +2,16 @@
 description: Une stratégie de sécurité du contenu (Content Security Policy, CSP) est un en-tête HTTP et une fonction de sécurité qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Passez en revue cette section si vous utilisez le service d’ID ainsi que des stratégies de sécurité du contenu strictes utilisant des listes blanches pour accepter des ressources provenant de domaines de confiance. Vous devez ajouter les domaines Adobe répertoriés dans cette section à vos listes blanches de stratégie de sécurité du contenu.
 keywords: Service d’identification
 seo-description: Une stratégie de sécurité du contenu (Content Security Policy, CSP) est un en-tête HTTP et une fonction de sécurité qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Passez en revue cette section si vous utilisez le service d’ID ainsi que des stratégies de sécurité du contenu strictes utilisant des listes blanches pour accepter des ressources provenant de domaines de confiance. Vous devez ajouter les domaines Adobe répertoriés dans cette section à vos listes blanches de stratégie de sécurité du contenu.
-seo-title: Stratégies de sécurité du contenu et service d'identité d'Experience Cloud
-title: Stratégies de sécurité du contenu et service d'identité d'Experience Cloud
+seo-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
+title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Content Security Policies and the Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
+# Stratégies de sécurité du contenu et service Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
 
 Une stratégie de sécurité du contenu (Content Security Policy, CSP) est un en-tête HTTP et une fonction de sécurité qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Passez en revue cette section si vous utilisez le service d’ID ainsi que des stratégies de sécurité du contenu strictes utilisant des listes blanches pour accepter des ressources provenant de domaines de confiance. Vous devez ajouter les domaines Adobe répertoriés dans cette section à vos listes blanches de stratégie de sécurité du contenu.
 
@@ -53,14 +53,14 @@ Ajoutez les noms de domaine ou URL suivants à votre stratégie de sécurité du
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Service d’identification des visiteurs</b> </p> </td> 
-   <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure <span class="codeph">*.demdex.net</span>. </p> <p>Calls to the <span class="codeph"> demdex.net</span> domain are used to generate the <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a> and for ID syncs. Voir également <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure <span class="codeph">*.demdex.net</span>. </p> <p>Les appels au domaine <span class="codeph"> demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local"> cookies et le service Experience Cloud Identity</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!MORE_LIKE_THIS]
 >
->* [Référence des stratégies de sécurité du contenu](https://content-security-policy.com/)
->* [MDN : Stratégie de sécurité du contenu](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipédia : Stratégie de sécurité du contenu](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [Référence de la stratégie de sécurité du contenu](https://content-security-policy.com/)
+>* [MDN : Politique de sécurité du contenu](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/CSP)
+>* [Wikipedia : Content Security Policy](https://fr.wikipedia.org/wiki/Content_Security_Policy)
 
