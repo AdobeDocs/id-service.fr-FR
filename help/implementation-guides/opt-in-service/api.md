@@ -4,7 +4,7 @@ seo-description: API pour la bibliothèque et références des paramètres de co
 seo-title: Références d’Opt-in
 title: Références d’Opt-in
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -27,7 +27,7 @@ adobe.OptInCategories = {
 
 ## Paramètres de configuration d’Opt-in {#section-d66018342baf401389f248bb381becbf}
 
-Cette section aborde l’utilisation de l’API pour configurer Opt-in. Une grande partie de la configuration et de la mise en œuvre peut être réalisée à l&#39;aide de l&#39;extension de lancement de Platform Platform.
+Cette section aborde l’utilisation de l’API pour configurer Opt-in. Une grande partie de la configuration et de la mise en œuvre peut être effectuée avec l’extension Experience Platform Launch.
 
 Les configurations d’Opt-in sont fournies dans la fonction `getInstance()` du fichier JavaScript Visiteur, qui instancie l’objet `adobe` global. Vous trouverez ci-après les configurations du fichier JavaScript Visiteur liées au service Opt-in.
 
@@ -89,7 +89,7 @@ Fonction qui refuse ou désinscrit le visiteur de l’ensemble des catégories s
 
 `adobe.optIn.complete()`
 
-Fonction qui entraîne l’agrégation des appels faisant partie de la procédure d’approbation [approve()] ou de refus [deny()] en une requête unique pour définir les préférences d’un visiteur. Lorsque vous souscrivez aux modifications d’Opt-in (voir `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) ci-dessous), votre rappel (callback) se déclenche uniquement lors de l’appel de cette fonction.
+Fonction qui entraîne l’agrégation des appels faisant partie de la procédure d’approbation [approve()] ou de refus [deny()] en une requête unique pour définir les préférences d’un visiteur. Lorsque vous souscrivez aux modifications d’Opt-in (voir `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) ci-dessous, votre rappel (callback) se déclenche uniquement lors de l’appel de cette fonction.
 
 ## Paramètres des autorisations d’Opt-in des visiteurs {#section-7fe57279b5b44b4f8fe47e336df60155}
 
