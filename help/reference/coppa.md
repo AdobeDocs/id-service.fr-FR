@@ -1,19 +1,19 @@
 ---
-description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code Experience Cloud Identity Service, ce qui l'empêche de définir les cookies dans le domaine tiers d'un navigateur.
+description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service Experience Cloud Identity afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
 keywords: Service d’identification
-seo-description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code Experience Cloud Identity Service, ce qui l'empêche de définir les cookies dans le domaine tiers d'un navigateur.
-seo-title: Prise en charge COPPA dans le service d'identité Experience Cloud
-title: Prise en charge COPPA dans le service d'identité Experience Cloud
+seo-description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service Experience Cloud Identity afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
+seo-title: Prise en charge de la loi COPPA dans le service Experience Cloud Identity
+title: Prise en charge de la loi COPPA dans le service Experience Cloud Identity
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
 
 
-# COPPA Support in the Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# Prise en charge de la loi COPPA dans le service Experience Cloud Identity {#coppa-support-in-the-experience-cloud-id-service}
 
-La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients concernés par la loi COPPA peuvent ajouter une variable facultative à leur code Experience Cloud Identity Service, ce qui l'empêche de définir les cookies dans le domaine tiers d'un navigateur.
+La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service Experience Cloud Identity afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
 
 >[!NOTE]
 >
@@ -45,6 +45,6 @@ Lorsqu’il est défini sur la valeur `true`, `disableThirdPartyCookies` l’obj
 
 >[!MORE_LIKE_THIS]
 >
->* [Centre de traitement des données personnelles Adobe](http://www.adobe.com/privacy.html)
->* [Définition de la loi COPPA (en anglais)](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
+>* [Centre de traitement des données personnelles Adobe](http://www.adobe.com/fr/privacy.html)
+>* [Définition de la loi COPPA](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
