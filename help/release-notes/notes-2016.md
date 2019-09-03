@@ -1,11 +1,11 @@
 ---
-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2016.
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 keywords: Service d’identification
-seo-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2016.
+seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # Notes de mise à jour 2016 {#release-notes}
 
-Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2016.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 
-Ces modifications sont également contenues dans les [notes de mise à jour d’Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Pour lire les anciennes annonces, reportez-vous aux [notes de mise à jour précédentes](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html).[!DNL Experience Cloud]
+Ces modifications sont également reprises dans les [notes de mise à jour Experience Cloud](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/). Reportez-vous aux [précédentes notes de mise à jour](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/?f=c_legacy_releases) pour obtenir des annonces [!DNL Experience Cloud] plus anciennes.
 
 ## Version 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -24,7 +24,7 @@ Novembre 2016
 >[!IMPORTANT]
 >
 >* La version 1.10 requiert [!UICONTROL AppMeasurement] version 1.8.0.
->* Avec la bibliothèque du service d'identité Experience Cloud 2.0.0 +, la synchronisation des identifiants commence par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](/help/introduction/match-rates.md).
+>* Si vous utilisez la bibliothèque version 2.0.0 ou ultérieure du service Experience Cloud Identity, la synchronisation des identifiants commencera par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](/help/introduction/match-rates.md).
 
 
 **Correctifs et améliorations**
@@ -43,7 +43,7 @@ Novembre 2016
 
 ## Version 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
-octobre 2016
+Octobre 2016
 
 **Correctifs et améliorations**
 
@@ -57,7 +57,7 @@ octobre 2016
 
 ## Version 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
-septembre 2016
+Septembre 2016
 
 **Correctifs et améliorations**
 
@@ -65,7 +65,7 @@ Ajout de `disableThirdPartyCalls` comme indicateur booléen optionnel que vous p
 
 ## Version 1.7.0 {#section-f7d59104de6644fca3691480383d4644}
 
-août 2016
+Août 2016
 
 **Correctifs et améliorations**
 
@@ -77,11 +77,11 @@ août 2016
 
 **Documentation nouvelle et révisée**
 
-Revised: [Requirements for the Experience Cloud Identity Service](../reference/requirements.md)
+Révision : [Conditions requises du service Experience Cloud Identity](../reference/requirements.md)
 
 **Problèmes connus**
 
-Les clients qui utilisent le code DIL [!DNL Audience Manager] et le code visitorAPI.js sur la même page doivent définir la variable DIL `secureDataCollection= false`. Voir [secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html).
+Les clients qui utilisent le code DIL [!DNL Audience Manager] et le code visitorAPI.js sur la même page doivent définir la variable DIL `secureDataCollection= false`. Pour plus d’informations, voir [secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html).
 
 ## Version 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -101,9 +101,9 @@ Juillet 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Partage des ressources cross-origin (CORS) </p> </td> 
-   <td colname="col2"> <p>Grâce au partage des ressources cross-origin (CORS), les navigateurs peuvent demander des ressources auprès d’un domaine autre que le domaine actuel. Experience Cloud Identity Service prend en charge les normes CORS pour activer les demandes de ressources cross-origin côté client. Dans les navigateurs non compatibles avec la norme CORS, les demandes JSONP sont restaurées. </p> <p>Voir : </p> 
+   <td colname="col2"> <p>Grâce au partage des ressources cross-origin (CORS), les navigateurs peuvent demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS afin de permettre les requêtes de ressources cross-origin côté client. Dans les navigateurs non compatibles avec la norme CORS, les demandes JSONP sont restaurées. </p> <p>Voir : </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Prise en charge de CORS dans le service d'identité Experience Cloud </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Prise en charge de la norme CORS dans le service Experience Cloud Identity </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,17 +123,17 @@ Juillet 2016
 
 **Nouveau**
 
-* [Mise en œuvre du service d'identité Experience Cloud pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Mise en œuvre du service d'identité Experience Cloud pour Analytics, Audience Manager et Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Mise en œuvre du service Experience Cloud Identity pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Révision**
 
-* [Conditions requises pour le service d'identité Experience Cloud](../reference/requirements.md)
-* [Test et vérification du service d'identité Experience Cloud](../implementation-guides/test-verify.md)
+* [Conditions requises pour le service Experience Cloud Identity](../reference/requirements.md)
+* [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md)
 
 ## Version 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
-juin 2016
+Juin 2016
 
 <table id="table_5D604D0820C84EC996ACB99126C8A3DF"> 
  <thead> 
@@ -145,11 +145,11 @@ juin 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Modifications de l’attribut <span class="codeph">iframe.sandbox</span> </p> </td> 
-   <td colname="col2"> <p>L’attribut iFrame est désormais défini de sorte que <span class="codeph">iframe.sandbox=’allow-scripts allow-same-origin’;</span>. </p> <p>Le fait d’autoriser seulement ces 2 jetons permet de renforcer la sécurité et d’offrir au service d’identification les fonctionnalités de base requises pour la synchronisation des ID. </p> <p>L’attribut sandbox n’est pas pris en charge dans Internet Explorer version 9 ou antérieure. Pour en savoir plus, voir la section sur les attributs de cette <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">documentation sur les iFrames </a>. </p> </td> 
+   <td colname="col2"> <p>L’attribut iFrame est désormais défini de sorte que <span class="codeph">iframe.sandbox=’allow-scripts allow-same-origin’;</span>. </p> <p>Le fait d’autoriser seulement ces 2 jetons permet de renforcer la sécurité et d’offrir au service d’identification les fonctionnalités de base requises pour la synchronisation des ID. </p> <p>L’attribut sandbox n’est pas pris en charge dans Internet Explorer version 9 ou antérieure. Pour en savoir plus, voir la section sur les attributs de cette <a href="https://developer.mozilla.org/fr-FR/docs/Web/HTML/Element/iframe" format="https" scope="external">documentation sur les iFrames</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Codage de l’Experience Cloud ID (MID) </p> </td> 
-   <td colname="col2"> <p>Le service d’ID code la valeur MID qui est renvoyée du serveur ou lorsqu’elle est définie par la fonction <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Pour plus d’informations sur le MID, voir <a href="../introduction/cookies.md" format="dita" scope="local">Cookies et Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>Le service d’ID code la valeur MID qui est renvoyée du serveur ou lorsqu’elle est définie par la fonction <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Pour plus d’informations sur le MID, voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud Identity</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -165,8 +165,8 @@ Mai 2016
 **Mises à jour de la documentation**
 
 * [Versions minimales des SDK pour Android et iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Outils de données et service d'identité Experience Cloud](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Test et vérification du service d'identité Experience Cloud](../implementation-guides/test-verify.md)
+* [Data Workbench et service Experience Cloud Identity](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md)
 
 ## Version 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +174,7 @@ Avril 2016
 
 **Mises à jour de la documentation**
 
-[Mise en œuvre du service d'identité Experience Cloud pour Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Mise en œuvre du service Experience Cloud Identity pour Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Version 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -201,9 +201,9 @@ Mars 2016
 
 **Mises à jour de la documentation**
 
-* [Mise en œuvre du service d'identité Experience Cloud pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : Nouvelle procédure qui décrit la configuration du service d'ID.[!DNL Analytics]
+* [Mise en œuvre du service Experience Cloud Identity pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : nouvelle procédure qui décrit comment configurer le service d’ID avec [!DNL Analytics].
 
-* [Points de prise de décision concernant la migration du service d'identité Experience Cloud](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : Révision du texte pour clarté. Lorsque vous utilisez un seul domaine, vous pouvez effectuer la migration hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Si le CNAME fonctionne, il n’y a toutefois aucune raison de le modifier.
+* [Points de prise de décision concernant la migration vers le service Experience Cloud Identity](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : révision du texte pour le clarifier. Lorsque vous utilisez un seul domaine, vous pouvez effectuer la migration hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Si le CNAME fonctionne, il n’y a toutefois aucune raison de le modifier.
 
 ## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
