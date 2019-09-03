@@ -1,19 +1,19 @@
 ---
-description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation du service d’ID.
+description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
 keywords: Service d’identification
-seo-description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation du service d’ID.
-seo-title: Service d’identification Questions fréquentes
+seo-description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
+seo-title: FAQ sur le service d’ID
 title: FAQ sur le service d’ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Questions fréquentes sur le service d’ID{#id-service-faqs}
+# FAQ sur le service d’ID{#id-service-faqs}
 
-Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation du service d’ID.
+Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
 
 ## Fonction {#section-659e89f8b9a74cb8afff35587dc96836}
 
@@ -23,7 +23,7 @@ Voir [Aperçu](../introduction/overview.md).
 
 **Pourquoi le service d’ID n’effectue-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
-Ce problème peut être difficile à diagnostiquer. Vous pouvez néanmoins vérifier les en-têtes de stratégie de sécurité du contenu de votre site. Si votre stratégie de sécurité est stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir [Stratégies de sécurité du contenu et service d'identité d'Experience Cloud](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Ce problème peut être difficile à diagnostiquer. Vous pouvez néanmoins vérifier les en-têtes de stratégie de sécurité du contenu de votre site. Si votre stratégie de sécurité est stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir [Stratégies de sécurité du contenu et service Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)
 
 **Stockage du fichier VisitorAPI.js**
 
@@ -37,7 +37,7 @@ Placez la bibliothèque VisitorAPI.js dans la partie supérieure de la page, dan
 
 L’appel du service d’ID est asynchrone et est le seul appel au [domaine demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
 
-Pour les [!DNL Target]clients, le placement du code du service d’ID dans le corps `<body>` de la page peut augmenter les risques qu’il puisse bloquer un appel [!DNL Target]. Si vous devez placer le code du service d’ID dans le corps de votre page, il doit être placé après la balise `<body>` ouverte.
+Pour les [!DNL Target] clients, le placement du code du service d’ID dans le corps `<body>` de la page peut augmenter les risques qu’il puisse bloquer un appel [!DNL Target]. Si vous devez placer le code du service d’ID dans le corps de votre page, il doit être placé après la balise `<body>` ouverte.
 
 **Le service d’ID effectue-t-il un appel au serveur à chaque chargement de page ?**
 
@@ -67,13 +67,13 @@ Il en résultera de meilleures performances pour les utilisateurs se servant de 
 
 Les requêtes de ressources utilisant la norme CORS sont généralement préférables à celles utilisant JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et annulent la priorité des requêtes relatives à d’autres appels synchrones et asynchrones sur la page. La norme CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
-Voir [Prise en charge de CORS dans le service d'identité Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Le service d’ID prend-il en charge la norme CORS ?**
 
-Oui. See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Oui. Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Qu’est-ce que la norme CORS ?**
 
@@ -87,5 +87,5 @@ Voir [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2
 
 >[!MORE_LIKE_THIS]
 >
->* [Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
 
