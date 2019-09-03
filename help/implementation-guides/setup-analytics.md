@@ -1,19 +1,19 @@
 ---
-description: Ces instructions concernent les clients Analytics qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+description: Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
 keywords: Service d’identification
-seo-description: Ces instructions concernent les clients Analytics qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
-seo-title: Mise en œuvre du service d'identité Experience Cloud pour Analytics
-title: Mise en œuvre du service d'identité Experience Cloud pour Analytics
+seo-description: Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics
+title: Mise en œuvre du service Experience Cloud Identity pour Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Mise en œuvre du service Experience Cloud Identity pour Analytics{#implement-the-experience-cloud-id-service-for-analytics}
 
-Ces instructions concernent les clients Analytics qui souhaitent utiliser le service d'identité Experience Cloud et qui n'utilisent pas la gestion dynamique des balises (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
 
 >[!IMPORTANT]
 >
@@ -39,7 +39,7 @@ Pour mettre en œuvre le service d’ID pour Adobe Analytics, procédez comme s
 Le [!UICONTROL service d’ID] requiert la bibliothèque de code `VisitorAPI.js`. Pour télécharger cette bibliothèque de code :
 
 1. Accédez à **[!UICONTROL Admin]** &gt; **[!UICONTROL Gestionnaire de code]**.
-1. In [!UICONTROL Code Manager], click either **[!UICONTROL JavaScript (New)]** or **[!UICONTROL JavaScript (Legacy)]**.
+1. Dans [!UICONTROL Gestionnaire de code], cliquez sur **[!UICONTROL JavaScript (nouveau)]** ou **[!UICONTROL JavaScript (hérité)]**.
 
    Les bibliothèques de code compressées sont alors téléchargées.
 
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Étape 3 : Ajout de l’ID d’organisation Experience Cloud à Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par [!DNL Experience Cloud]l’ID d’organisation. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver dans la page [!DNL Experience Cloud]d’administration. Voir également [Administration – Services principaux](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). La fonction modifiée peut ressembler à l’exemple ci-après.
+Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par [!DNL Experience Cloud] l’ID d’organisation. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver dans la page [!DNL Experience Cloud] d’administration. Voir aussi [Administration - Services principaux](https://marketing.adobe.com/resources/help/fr_FR/mcloud/admin_getting_started.html). La fonction modifiée peut ressembler à l’exemple ci-après.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -134,7 +134,7 @@ Pour déterminer les variables de serveur de suivi à utiliser, procédez comme 
 
 
 
-If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Si vous ne savez pas comment trouver votre serveur de suivi, consultez [la FAQ](../faq-intro/faq.md) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
 
 ## Étape 5 : Mise à jour du fichier AppMeasurement.js ou s_code.js {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -146,7 +146,7 @@ Placez le code dans la section qui contient des configurations telles que `linkI
 
 ***(Étape facultative mais recommandée)*Créez une prop personnalisée.****
 
-Définissez une prop personnalisée dans le fichier `AppMeasurement.js` ou `s_code.js` pour mesurer la couverture. Ajoutez la prop personnalisée suivante à la `doPlugins`fonction  du fichier `AppMeasurement.js` ou `s_code.js` :
+Définissez une prop personnalisée dans le fichier `AppMeasurement.js` ou `s_code.js` pour mesurer la couverture. Ajoutez la prop personnalisée suivante à la `doPlugins`fonction du fichier `AppMeasurement.js` ou `s_code.js` :
 
 ```js
 // prop1 is used as an example only. Choose any available prop. 
@@ -164,7 +164,7 @@ Placez ce code en production après les tests et la vérification.
 
 ## Étape 7 : (facultative) Configuration d’une période de grâce {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Les périodes de grâce peuvent durer jusqu’à 180 jours. En cas de besoin, vous pouvez renouveler une période de grâce.
+Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de configurer une [période de grâce](../reference/analytics-reference/grace-period.md) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. En cas de besoin, vous pouvez renouveler une période de grâce.
 
 **Mise en œuvre partielle**
 
@@ -178,13 +178,13 @@ Vous avez besoin d’une période de grâce si les nouveaux visiteurs doivent av
 
 Interrompez la période de grâce une fois que votre mise en œuvre peut capturer le MID au lieu de lire le cookie s_vi.
 
-Voir [Cookies et service d'identité Experience Cloud](../introduction/cookies.md).
+Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
 
 Vous avez besoin d’une période de grâce si vous envoyez les données à un système interne à partir d’un flux de données de parcours de navigation et si ce processus utilise les colonnes `visid_high` et `visid_low`.
 
 Interrompez la période de grâce une fois que le processus d’ingestion des données peut utiliser les colonnes `post_visid_high` et `post_visid_low`.
 
-Voir [Référence des colonnes de données du parcours de navigation](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
+Voir [Référence des colonnes de données du parcours de navigation](https://marketing.adobe.com/resources/help/fr_FR/sc/clickstream/datafeeds_reference.html).
 
 **Ingestion des données du parcours de navigation**
 
@@ -197,9 +197,9 @@ Vous pouvez tester et déployer les éléments comme suit.
 Pour tester la mise en œuvre du service d’ID, recherchez les éléments suivants :
 
 * le [cookie AMCV](../introduction/cookies.md) dans le domaine où est hébergée votre page ;
-* la valeur du MID dans la demande d’image [!DNL Analytics] à l’aide de l’[outil de débogage Adobe](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
+* Valeur MID dans la demande d’image [!DNL Analytics] avec [l’outil du débogueur Adobe](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/debugger.html).
 
-See, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+Voir [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md).
 
 **Déploiement du code**
 
