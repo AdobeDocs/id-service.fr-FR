@@ -4,7 +4,7 @@ seo-description: Le service Opt-in vous permet de configurer des protocoles perm
 seo-title: Service Opt-in
 title: Service Opt-in
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -14,17 +14,17 @@ source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 Le service Opt-in vous permet de configurer des protocoles permettant aux visiteurs de vous donner ou pas l’autorisation d’installer des cookies sur leurs appareils ou sur leurs navigateurs lorsqu’ils visitent votre site.
 
-Le service de souscription est une extension de l&#39;identifiant d&#39;expérience (ECID), conçue pour vous permettre de contrôler si les solutions Experience Cloud peuvent créer des cookies dans les pages Web pour les visiteurs avant leur autorisation. Le service Opt-in vous laisse également en charge de la configuration des protocoles et de l’intégration à votre plate-forme de gestion de contenu (CMP) et aux systèmes existants, faisant partie d’un ensemble plus vaste.
+Le service Opt-in est une extension du service Experience Cloud ID (ECID), conçu pour vous permettre de contrôler la création de cookies par les solutions Experience Cloud sur les pages web pour les visiteurs avant d’avoir eu l’accord de l’utilisateur (ainsi que de désigner les solutions concernées). Le service Opt-in vous laisse également en charge de la configuration des protocoles et de l’intégration à votre plate-forme de gestion de contenu (CMP) et aux systèmes existants, faisant partie d’un ensemble plus vaste.
 
 L’utilisation du service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, vous pouvez récupérer les approbations visiteur de la CMP de l’ensemble des solutions Adobe.
 
-The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Le service Opt-in est mis en œuvre et configuré facilement à l’aide d’[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) avec [l’extension Opt-in](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Pour commencer, reportez-vous à la section [Configuration du service Opt-in](../../implementation-guides/opt-in-service/getting-started.md) pour commencer.
 
 >[!NOTE]
 >
->Le service Opt-in vous permet de configurer un système d’approbation ou de refus du téléchargement des cookies Adobe uniquement. Celui-ci ne perrmet pas de rassembler les préférences utilisateur en matière de consentement, ni ne constitue un référentiel de préférences.
+>Le service Opt-in vous permet de configurer un système d’approbation ou de refus du téléchargement des cookies Adobe uniquement. Celui-ci ne permet pas de rassembler les préférences utilisateur en matière de consentement ni ne constitue un référentiel de préférences.
 
 >[!IMPORTANT]
 >
