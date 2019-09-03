@@ -1,19 +1,19 @@
 ---
-description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Experience Cloud Identity Service prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
+description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS qui permettent d’envoyer des requêtes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
 keywords: Service d’identification
-seo-description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Experience Cloud Identity Service prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
-seo-title: Prise en charge de CORS dans le service d'identité Experience Cloud
-title: Prise en charge de CORS dans le service d'identité Experience Cloud
+seo-description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS qui permettent d’envoyer des requêtes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
+seo-title: Prise en charge de la norme CORS dans le service Experience Cloud Identity
+title: Prise en charge de la norme CORS dans le service Experience Cloud Identity
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# CORS Support in the Experience Cloud Identity Service {#cors-support-in-the-experience-cloud-id-service}
+# Prise en charge de la norme CORS dans le service Experience Cloud Identity {#cors-support-in-the-experience-cloud-id-service}
 
-Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Experience Cloud Identity Service prend en charge les normes CORS qui permettent les demandes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
+Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS qui permettent d’envoyer des requêtes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
 
 ## Problèmes liés aux règles sur la même origine et aux demandes de service d’ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -46,7 +46,7 @@ Observons le fonctionnement de ces en-têtes : Dans cet exemple, imaginons une 
    <td colname="col1"> <p> <b>Demande</b> </p> </td> 
    <td colname="col2"> <p>Alors que la page de l’entreprise financière se charge, le navigateur envoie une demande à <span class="codeph">dpm.demdex.net</span>. Il s’agit d’un appel au domaine des serveurs de collecte de données (DCS) utilisés par le service d’ID. Cette demande sur plusieurs domaines comprend l’en-tête : </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origin:https://www.finance-website.com</span> </li> 
+      <li> <span class="codeph"> Origin: https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -76,7 +76,7 @@ Le tableau ci-dessous décrit certains avantages que CORS offre aux clients util
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Plus de sécurité</b> </p> </td> 
-   <td colname="col2"> <p>CORS utilise <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> pour demander des données et les transférer. Cette méthode est plus sécurisée qu’une demande JSONP. Elle fait en sorte qu’il n’existe aucune façon d’exécuter du JavaScript aléatoire, qui peut être compris dans la réponse du DCS. Les données utiles de la réponse CORS XMLHttpRequest sont analysées par le JavaScript du service d’ID et ne sont pas simplement exécutées dans une fonction de rappel. </p> <p> <p>Remarque : Pour accepter les cookies, la propriété <span class="codeph">withCredentials</span> de l’objet <span class="codeph">XMLHttpRequest</span> doit être définie sur <span class="codeph">true</span>. Cette propriété est prise en charge dans Chrome, Firefox, Internet Explorer 10 et versions ultérieures, Opera et Safari. </p> </p> </td> 
+   <td colname="col2"> <p>CORS utilise <a href="https://developer.mozilla.org/fr-FR/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> pour demander des données et les transférer. Cette méthode est plus sécurisée qu’une demande JSONP. Elle fait en sorte qu’il n’existe aucune façon d’exécuter du JavaScript aléatoire, qui peut être compris dans la réponse du DCS. Les données utiles de la réponse CORS XMLHttpRequest sont analysées par le JavaScript du service d’ID et ne sont pas simplement exécutées dans une fonction de rappel. </p> <p> <p>Remarque : Pour accepter les cookies, la propriété <span class="codeph">withCredentials</span> de l’objet <span class="codeph">XMLHttpRequest</span> doit être définie sur <span class="codeph">true</span>. Cette propriété est prise en charge dans Chrome, Firefox, Internet Explorer 10 et versions ultérieures, Opera et Safari. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Amélioration des performances</b> </p> </td> 
