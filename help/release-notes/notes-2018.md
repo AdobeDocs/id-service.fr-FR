@@ -1,11 +1,11 @@
 ---
-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2018.
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2018.
 keywords: Service d’identification
-seo-description: Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2018.
+seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2018.
 seo-title: Notes de mise à jour 2018
 title: Notes de mise à jour 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Notes de mise à jour 2018 {#release-notes}
 
-Fonctionnalités, mises à jour ou modifications apportées au service d'identité d'Experience Cloud pour 2018.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ Fonctionnalités, mises à jour ou modifications apportées au service d'identit
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Pic irréaliste au niveau du nombre de visiteurs uniques </p> </td> 
-   <td colname="col2"> <p>Avec la version d'Experience Cloud ID Service 3.1.0, nous avons trouvé un problème qui a créé un pic irrégulier du nombre de visiteurs uniques lors de la mise en œuvre de cette version. Ce comportement se produit uniquement avec la dernière version d’ECID (v3.1.0) et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actif uniquement » dans les paramètres de confidentialité du navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
+   <td colname="col2"> <p>Avec le lancement du service Experience Cloud Identity 3.1.0, nous avons détecté une erreur qui créait un pic irréaliste du nombre de visiteurs uniques lorsque cette version était mise en œuvre. Ce comportement se produit uniquement avec la dernière version d’ECID (v3.1.0) et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actif uniquement » dans les paramètres de confidentialité du navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Fonctionnalités, mises à jour ou modifications apportées au service d'identit
 
 >[!NOTE]
 >
->Nous vous recommandons de procéder à la mise à niveau de la version 3.1.0 vers la dernière version dès que possible. Voir la description de la version 3.1.2. Le dernier lot est disponible dans Adobe Experience Platform Launch, DTM et appmeasurement.
+>Nous vous recommandons de procéder à la mise à niveau de la version 3.1.0 vers la dernière version dès que possible. Voir la description de la version 3.1.2. Le dernier bundle est disponible dans Adobe Experience Platform Launch, Dynamic Tag Management et AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
