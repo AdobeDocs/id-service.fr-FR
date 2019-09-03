@@ -1,11 +1,11 @@
 ---
-description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
+description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
 keywords: Service d’identification
-seo-description: Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
+seo-description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
 seo-title: Questions fréquentes sur d’autres solutions Experience Cloud
 title: Questions fréquentes sur d’autres solutions Experience Cloud
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Questions fréquentes sur d’autres solutions Experience Cloud{#faqs-for-other-experience-cloud-solutions}
 
-Questions fréquemment posées sur les fonctionnalités et les problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
+Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’autres solutions Experience Cloud avec le service d’ID.
 
 ## Dynamic Tag Management (DTM) {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
 
@@ -25,7 +25,7 @@ Voir [Mise en œuvre standard avec la gestion dynamique des balises (DTM)](../im
 
 ## Analytics et Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**L'historique des visites d'un utilisateur sera-t-il exporté[!DNL Adobe Analytics][!DNL Audience Manager]après la mise en œuvre du service d'identité Experience Cloud ?**
+**L’historique des visites d’un utilisateur sera-t-il exporté d’[!DNL Adobe Analytics]vers[!DNL Audience Manager]une fois le service Experience Cloud Identity mis en œuvre ?**
 
 Il y a deux possibilités :
 
