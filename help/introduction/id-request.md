@@ -2,24 +2,24 @@
 description: Cette section décrit le processus de requête d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
 keywords: Service d’identification
 seo-description: Cette section décrit le processus de requête d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
-seo-title: Demande et définition d'identifiants par le service d'identité Experience Cloud
-title: Demande et définition d'identifiants par le service d'identité Experience Cloud
+seo-title: Requête et définition d’ID par le service Experience Cloud Identity
+title: Requête et définition d’ID par le service Experience Cloud Identity
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# How the Experience Cloud Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Requête et définition d’ID par le service Experience Cloud Identity{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 Cette section décrit le processus de requête d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
 
 >[!NOTE]
 >
->If you're not familiar with how the Experience Cloud Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
+>Si vous ne savez pas comment le service Experience Cloud Identity crée un identifiant visiteur, prenez quelques instants pour consulter la section [Experience Cloud](../introduction/cookies.md).
 
-**Conseil :** Voir aussi notre [ vidéo sur le service d’ID avec suivi interdomaines](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html).
+**Conseil :** Voir aussi notre [vidéo sur le service d’ID avec suivi interdomaines](https://helpx.adobe.com/fr/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Requête d’un Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
@@ -32,7 +32,7 @@ Les exemples ci-après montrent comment le service d’ID demande l’identifian
 Dans cet exemple, un nouveau visiteur se rend sur le site des pizzas géré par la société Food Company. La société Food Company a placé le code du service d’ID sur le site Web des pizzas. Lorsque le site des pizzas est chargé, le code du service d’ID recherche le cookie AMCV dans le domaine pizza.
 
 * Si le cookie AMCV est défini, le visiteur du site dispose d’un Experience Cloud ID. Dans ce cas, le cookie effectue le suivi du visiteur et partage les données avec d’autres solutions Experience Cloud.
-* Si le cookie AMCV n’est pas défini, le code du service d’ID appelle un [serveur de collecte de données](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) régional à l’adresse `dpm.demdex.net/id` (voir aussi [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). L’appel comprend l’ID d’organisation de la société Food Company. L’ID d’organisation est défini dans la fonction `Visitor.getInstance` du code du service d’ID.
+* Si le cookie AMCV n’est pas défini, le code du service d’ID appelle un [serveur de collecte de données régionale](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) à l’adresse `dpm.demdex.net/id` (voir aussi [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). L’appel comprend l’ID d’organisation de la société Food Company. L’ID d’organisation est défini dans la fonction `Visitor.getInstance` du code du service d’ID.
 
 ![](assets/request1.png)
 
