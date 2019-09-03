@@ -1,11 +1,11 @@
 ---
-description: Instructions et exemples de code pour les implémentations standard et non standard du service d'identité Experience Cloud.
+description: Instructions et exemples de code pour les mises en œuvre standard et non standard du service Experience Cloud Identity.
 keywords: Service d’identification
-seo-description: Instructions et exemples de code pour les implémentations standard et non standard du service d'identité Experience Cloud.
+seo-description: Instructions et exemples de code pour les mises en œuvre standard et non standard du service Experience Cloud Identity.
 seo-title: Guides de mise en œuvre
 title: Guides de mise en œuvre
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Méthodes de mise en œuvre
 
-Instructions et exemples de code pour les implémentations standard et non standard du service d'identité Experience Cloud.
+Instructions et exemples de code pour les mises en œuvre standard et non standard du service Experience Cloud Identity.
 
 >[!IMPORTANT]
 >
