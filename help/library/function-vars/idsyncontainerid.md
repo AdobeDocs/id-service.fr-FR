@@ -5,7 +5,7 @@ seo-description: Cette propriété définit l’identifiant du conteneur de la s
 seo-title: idSyncContainerID
 title: idSyncContainerID
 uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -46,7 +46,7 @@ Les conteneurs sont des objets créés par [!DNL Audience Manager]. Bien qu’il
 * sont disponibles, mais non utilisées pour la synchronisation des identifiants ;
 * sont utilisées pour la synchronisation des identifiants.
 
-Même si vous n’êtes pas un [!DNL Audience Manager] client d’, votre compte comporte ces conteneurs si vous échangez des identifiants avec différentes sources de données sur différentes pages de votre domaine. En effet, [!DNL Audience Manager] fournit la technologie et la fonctionnalité back-end qui permettent la synchronisation des identifiants.
+Même si vous n’êtes pas un client[!DNL Audience Manager], votre compte comporte ces conteneurs si vous échangez des identifiants avec différentes sources de données sur différentes pages de votre domaine. En effet, [!DNL Audience Manager] fournit la technologie et la fonctionnalité back-end qui permettent la synchronisation des identifiants.
 
 **Cas d’utilisation**
 
@@ -82,7 +82,7 @@ Selon votre situation, vous pouvez, ou non, avoir besoin d’ajouter cette confi
 
 ## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Si vous avez déployé [!UICONTROL DIL]*et* VisitorAPI.js sur la même page :
+Si vous avez déployé [!UICONTROL DIL] *et* VisitorAPI.js sur la même page :
 
 * Le code du service d’identification des visiteurs a la priorité sur DIL pour les synchronisations des identifiants.
 * Définissez la `idSyncContainerID` configuration uniquement dans le code du service d’ID.
