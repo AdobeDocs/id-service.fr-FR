@@ -6,7 +6,7 @@ seo-title: Synchronisation des ID par URL ou source de données
 title: Synchronisation des ID par URL ou source de données
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
+source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
 
 ---
 
@@ -14,13 +14,6 @@ source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
 # Synchronisation des ID par URL ou source de données{#id-synchronization-by-url-or-data-source}
 
 Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement la synchronisation d’un identifiant dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
-
-Contenu :
-
-<ul class="simplelist"> 
- <li> <a href="../../library/get-set/idsync.md#section-90ac61617482463aaf4c57009b830332" format="dita" scope="local"> Syntaxe, propriétés et macros </a> </li> 
- <li> <a href="../../library/get-set/idsync.md#section-0115615c37584a19a2ab11e917c4e7e9" format="dita" scope="local"> Exemple de code et résultat </a> </li> 
-</ul>
 
 ## Syntaxe, propriétés et macros {#section-90ac61617482463aaf4c57009b830332}
 
@@ -99,60 +92,46 @@ Les deux fonctions acceptent les macros suivantes :
 
 Les deux fonctions renvoient `Successfully queued` en cas de réussite. Autrement, elles renvoient une chaîne contenant un message d’erreur.
 
-**visitor.idSyncByURL**
+### visitor.idSyncByURL
 
-<table id="table_56AD8291DF9445C69CC2BF50435E1626"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Exemple de code </th> 
-   <th colname="col2" class="entry"> Exemple de résultat </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Visitor 
-      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
+**Exemple de code**
 
-    // Fire url with macros replacedvisitor
-    . idsyncbyurl ({
-    dpid : ' 24 ', // doit être une URL de chaîne
-    : '//su.addthis.com/red/usync?pid=16&amp;puid=%DID%&amp;url=%HTTP_PROTO%://dpm.demdex.net/ibs:dpid=420&amp;dpuuid= {{uid}}',
-    minutestolive : 20160 // optional, default to 20160 minutes (14 days)
-    }) ;
-    
-    &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
-<td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+```javascript
+   //Instatiate Visitor
+    var visitor = Visitor.getInstance
+    ("MARKETING-CLOUD-ORG-ID-HERE",{}); 
+   // Fires url with macros replaced 
+    visitor.idSyncByURL({ 
+    dpid: '24', // must be a string 
+    url: '//su.addthis.com/red/usync?pid=16&puid=%DID%&url=%HTTP_PROTO%://
+    dpm.demdex.net/ibs:dpid=420&dpuuid={{uid}}', 
+    minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+```
 
-**visitor.idSyncByDataSource**
+**Exemple de résultat**
 
-<table id="table_90D61A7E715D47238AAFF2808B33C2F0"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Exemple de code </th> 
-   <th colname="col2" class="entry"> Exemple de résultat </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Visitor 
-      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
+`http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D`
 
-    // Fires 'http:/https:' +'//dpm.demdex.net/ibs:dpid= &lt; dpid &gt; &amp; dpuuid = &lt; dpuuid &gt;'
-    visitor. idsyncbydatasource ({
-    dpid : ' 24 ', // doit être un stringdpuuid
-    : ' 98765 ', // doit être une stringminutestolive
-    : 20160 // optional, default to 20160 minutes (14 days)
-    }) ;
-    &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
-<td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### visitor.idSyncByDataSource
+
+**Exemple de code**
+
+```javascript
+  //Instantiate Visitor
+   var visitor = Visitor.getInstance
+   ("MARKETING-CLOUD-ORG-ID-HERE",{}); 
+  // Fires 'http:/https:' + '//dpm.demdex.net/ibs:dpid=&dpuuid='
+   visitor.idSyncByDataSource({ 
+     dpid: '24', // must be a string
+     dpuuid: '98765', // must be a string 
+     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+```
+
+**Exemple de résultat**
+
+`http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765`
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
+>* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
