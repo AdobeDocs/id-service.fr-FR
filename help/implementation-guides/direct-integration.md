@@ -5,7 +5,7 @@ seo-description: Cette mise en œuvre permet aux clients d’utiliser le service
 seo-title: Intégration directe avec le service Experience Cloud Identity
 title: Intégration directe avec le service Experience Cloud Identity
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ Les appareils qui ne peuvent pas utiliser les bibliothèques de code VisitorAPI.
 
 ![](assets/directSyntax.png)
 
-Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d’ID, mais restez concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d’ID, mais restez concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html) (Supported Attributes for DCS API Calls).
 
 Le service d’ID prend en charge les appels HTTP et HTTPS. Utilisez HTTPS pour transmettre des données à partir d’une page sécurisée.
 
