@@ -4,7 +4,7 @@ seo-description: Le service Opt-in vous permet de configurer des protocoles perm
 seo-title: Service Opt-in
 title: Service Opt-in
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -18,7 +18,7 @@ Le service Opt-in est une extension du service Experience Cloud ID (ECID), con
 
 L’utilisation du service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, vous pouvez récupérer les approbations visiteur de la CMP de l’ensemble des solutions Adobe.
 
-Le service Opt-in est mis en œuvre et configuré facilement à l’aide d’[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) avec [l’extension Opt-in](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Pour commencer, reportez-vous à la section [Configuration du service Opt-in](../../implementation-guides/opt-in-service/getting-started.md) pour commencer.
 
