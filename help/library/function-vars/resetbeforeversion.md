@@ -5,7 +5,7 @@ seo-description: Cette configuration vous permet d’effacer les Experience Clo
 seo-title: resetBeforeVersion
 title: resetBeforeVersion
 uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
