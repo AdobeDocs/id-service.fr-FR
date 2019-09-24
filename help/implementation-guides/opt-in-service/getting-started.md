@@ -4,7 +4,7 @@ seo-description: Mettez le service Opt-in en œuvre en tant que seul point de r�
 seo-title: Configuration du service Opt-in
 title: Configuration du service Opt-in
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
@@ -22,7 +22,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. ECID version 4.0.
 
-   [Télécharger](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la dernière version d’ECID.
+   [Téléchargez](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la dernière mise à jour d’ECID.
 
 1. Bibliothèques utilisées :
 
@@ -42,7 +42,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. Les besoins de confidentialité de votre société dépendent du degré de conformité au RGPD que vous souhaitez avoir. Vous devez savoir quelles bibliothèques les équipes chargées de la confidentialité de votre société sont prêtes à utiliser avec un consentement préalable.
 
-Si vous utilisez [Adobe Launch](https://docs.adobelaunch.com/), profitez de [l’extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
+Si vous utilisez [Adobe Launch](https://docs.adobelaunch.com/), profitez de l’ [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## Catégories Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -134,7 +134,7 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-Voir la  [documentation sur l’API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour plus de détails sur ces fonctions ou sur les autres fonctions, propriétés ou configurations mentionnées dans ce document.
+Voir la [documentation sur l’API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour plus de détails sur ces fonctions ou sur les autres fonctions, propriétés ou configurations mentionnées dans ce document.
 
 ## Stockage des préférences des visiteurs {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
