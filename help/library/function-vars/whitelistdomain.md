@@ -5,7 +5,7 @@ seo-description: 'Ces configurations permettent à différentes instances du cod
 seo-title: whitelistParentDomain et whitelistIframeDomains
 title: whitelistParentDomain et whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -73,7 +73,7 @@ Ces configurations permettent de résoudre le problème de définition d’un co
 
 >[!TIP]
 >
->Vous pouvez également mettre en œuvre ces configurations lorsque vous diffusez une vidéo dans un iFrame au moyen de la [mesure de pulsation vidéo](https://marketing.adobe.com/resources/help/fr_FR/sc/appmeasurement/hbvideo/). La mesure de pulsation vidéo requiert un ID du service d’ID (le MID) pour fonctionner correctement.
+>You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). La mesure de pulsation vidéo requiert un ID du service d’ID (le MID) pour fonctionner correctement.
 
 **Cas d’utilisation 1 : le navigateur bloque les cookies tiers et le service d’ID est mis en œuvre sur l’iFrame et la page parente**
 
