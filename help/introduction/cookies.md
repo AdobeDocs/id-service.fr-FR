@@ -5,7 +5,7 @@ seo-description: Le service d’ID utilise l’ID d’organisation, le cookie A
 seo-title: Cookies et service Experience Cloud Identity
 title: Cookies et service Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -114,7 +114,7 @@ Le tableau ci-dessous répertorie et définit quelques attributs importants du c
  </tbody> 
 </table>
 
-Pour plus d’informations connexes, voir [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Génération de l’Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
