@@ -5,7 +5,7 @@ seo-description: Les navigateurs utilisent la norme CORS (Cross Origin Resourc
 seo-title: Prise en charge de la norme CORS dans le service Experience Cloud Identity
 title: Prise en charge de la norme CORS dans le service Experience Cloud Identity
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -76,7 +76,7 @@ Le tableau ci-dessous décrit certains avantages que CORS offre aux clients util
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Plus de sécurité</b> </p> </td> 
-   <td colname="col2"> <p>CORS utilise <a href="https://developer.mozilla.org/fr-FR/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> pour demander des données et les transférer. Cette méthode est plus sécurisée qu’une demande JSONP. Elle fait en sorte qu’il n’existe aucune façon d’exécuter du JavaScript aléatoire, qui peut être compris dans la réponse du DCS. Les données utiles de la réponse CORS XMLHttpRequest sont analysées par le JavaScript du service d’ID et ne sont pas simplement exécutées dans une fonction de rappel. </p> <p> <p>Remarque : Pour accepter les cookies, la propriété <span class="codeph">withCredentials</span> de l’objet <span class="codeph">XMLHttpRequest</span> doit être définie sur <span class="codeph">true</span>. Cette propriété est prise en charge dans Chrome, Firefox, Internet Explorer 10 et versions ultérieures, Opera et Safari. </p> </p> </td> 
+   <td colname="col2"> <p>CORS utilise <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> pour demander des données et les transférer. Cette méthode est plus sécurisée qu’une demande JSONP. Elle fait en sorte qu’il n’existe aucune façon d’exécuter du JavaScript aléatoire, qui peut être compris dans la réponse du DCS. Les données utiles de la réponse CORS XMLHttpRequest sont analysées par le JavaScript du service d’ID et ne sont pas simplement exécutées dans une fonction de rappel. </p> <p> <p>Remarque : Pour accepter les cookies, la propriété <span class="codeph">withCredentials</span> de l’objet <span class="codeph">XMLHttpRequest</span> doit être définie sur <span class="codeph">true</span>. Cette propriété est prise en charge dans Chrome, Firefox, Internet Explorer 10 et versions ultérieures, Opera et Safari. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Amélioration des performances</b> </p> </td> 
