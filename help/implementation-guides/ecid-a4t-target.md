@@ -5,7 +5,7 @@ seo-description: Ces instructions concernent les clients A4T avec un serveur mix
 seo-title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -47,7 +47,7 @@ Ensuite, vous devez effectuer une *`payload request`* côté serveur auprès du 
 
 >[!NOTE]
 >
->Cette méthode demande une mbox unique depuis [!DNL Target]. Si vous devez demander plusieurs mbox au cours d’un seul appel, voir [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Cette méthode demande une mbox unique depuis [!DNL Target]. Si vous avez besoin de demander plusieurs mboxes dans un seul appel, voir [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 Votre demande de données utiles doit ressembler à l’exemple de code suivant. Dans l’exemple de code, la fonction `visitor.setCustomerIDs` est optionnelle. Pour plus d’informations, voir [ID de client et états de l’authentification.](../reference/authenticated-state.md)
 
@@ -199,5 +199,5 @@ Response.send("
 
 >[!MORE_LIKE_THIS]
 >
->* [Package du service d’ID côté serveur à partir du Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Package du service d’ID côté serveur à partir de Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
