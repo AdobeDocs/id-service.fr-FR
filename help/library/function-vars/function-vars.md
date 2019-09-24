@@ -5,7 +5,7 @@ seo-description: Configurez le service d’ID en transmettant les propriétés s
 seo-title: Configurations
 title: Configurations
 uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ Configurez le service d’ID en transmettant les propriétés suivantes à la m�
 
 >[!NOTE]
 >
->Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse : [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse :[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Articles connexes :
 
