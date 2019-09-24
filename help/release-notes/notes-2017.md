@@ -5,7 +5,7 @@ seo-description: Description des nouvelles fonctionnalités, des mises à jour e
 seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 
-Ces modifications sont également reprises dans les [notes de mise à jour Experience Cloud](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/). Pour obtenir des notes de mise à jour antérieures sur le service d’ID, reportez-vous aux [précédentes notes de mise à jour](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/?f=c_legacy_releases) ou aux liens situés au bas de cette page.
+Ces modifications sont également contenues dans les [notes de mise à jour d’Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Pour obtenir des notes de mise à jour antérieures sur le service d’ID, voir les [notes de mise à jour précédentes](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) ou les liens au bas de cette page.
 
 >[!NOTE]
 >
@@ -192,8 +192,7 @@ Correction d’un bogue en raison duquel le service d’identification envoyait 
 
 **Nouvelle documentation**
 
-[Utilisation de la prérécupération DNS avec différentes solutions et services Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](
-https://marketing.adobe.com/resources/help/fr_FR/mcloud/dns-prefetch.html)
+[Utilisation de la prérécupération DNS avec différents services et solutions Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
