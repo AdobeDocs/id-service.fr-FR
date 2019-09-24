@@ -5,7 +5,7 @@ seo-description: Ces instructions concernent les clients d’Analytics et d’Au
 seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -26,13 +26,13 @@ Ces instructions concernent les clients d’Analytics et d’Audience Manager q
 
 ## Étape 1 : Planifier le transfert côté serveur {#section-880797cc992d4755b29cada7b831f1fc}
 
-En plus des étapes décrites ici, les clients qui utilisent [!DNL Analytics] et [!DNL Audience Manager] doivent passer au transfert côté serveur. Le transfert côté serveur permet de supprimer le code DIL (code de collecte de données d’Audience Manager) et de le remplacer par le [Module de Gestion de l’audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Pour plus d’informations, reportez-vous à la [documentation du transfert côté serveur](https://marketing.adobe.com/resources/help/fr_FR/analytics/audiences/ssf.html).
+En plus des étapes décrites ici, les clients qui utilisent [!DNL Analytics] et [!DNL Audience Manager] doivent passer au transfert côté serveur. Le transfert côté serveur vous permet de supprimer le DIL (le code de collecte des données d’Audience Manager) et de le remplacer par le [Module de Gestion de l’audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Voir la [documentation du transfert côté serveur](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html) pour en savoir plus.
 
 La migration vers le transfert côté serveur nécessite des préparations et de la coordination. Ce processus implique des modifications externes du code de votre site et des étapes internes qu’Adobe doit effectuer pour configurer votre compte. En fait, nombre de ces procédures de migration doivent être effectuées en parallèle et être mises en production en même temps. Votre parcours de mise en œuvre doit suivre cette séquence d’événements :
 
 1. Travaillez avec vos contacts [!DNL Analytics] et [!DNL Audience Manager] pour préparer votre migration du service d’ID et du transfert côté serveur. Faites en sorte que la sélection du serveur de suivi soit un aspect essentiel de ce plan.
 
-1. Pour démarrer, complétez le formulaire sur le [site d’intégration et de mise en service](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES).
+1. Pour démarrer, remplissez le formulaire sur le [site d’intégration et de mise en service](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES).
 
 1. Mettez en œuvre le service d’ID et le [!DNL Audience Management Module] simultanément. Pour fonctionner correctement, le [!DNL Audience Management Module] (transfert côté serveur) et le service d’ID doivent être mis à jour pour le même ensemble de pages et au même moment.
 
@@ -133,7 +133,7 @@ Pour déterminer les variables de serveur de suivi à utiliser, procédez comme 
 * URL du serveur Experience Cloud = URL du serveur de suivi
 * URL du serveur sécurisé Experience Cloud = URL du serveur sécurisé de suivi
 
-Si vous ne savez pas comment trouver votre serveur de suivi, consultez [la FAQ](../faq-intro/faq.md) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
+Si vous ne savez pas comment trouver votre serveur de suivi, voir [Question fréquentes](../faq-intro/faq.md) et [Définition correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## Étape 6 : Mise à jour de votre fichier AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -145,7 +145,7 @@ Ajoutez la `Visitor.getInstance` fonction affichée ci-dessous à votre `AppMeas
 
 >[!IMPORTANT]
 >
->À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://marketing.adobe.com/resources/help/fr_FR/reference/ssf.html) pour obtenir des instructions.
+>À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) pour obtenir des instructions.
 
 ***(Étape facultative mais recommandée)*Créez une prop personnalisée****
 
@@ -165,7 +165,7 @@ Placez le fichier ` [!UICONTROL VisitorAPI.js]` à l’intérieur des balises `<
 
 ## Étape 8 : (facultative) Configuration d’une période de grâce {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de configurer une [période de grâce](../reference/analytics-reference/grace-period.md) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. En cas de besoin, vous pouvez renouveler une période de grâce.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Les périodes de grâce peuvent durer jusqu’à 180 jours. En cas de besoin, vous pouvez renouveler une période de grâce.
 
 **Mise en œuvre partielle**
 
@@ -187,7 +187,7 @@ Vous avez besoin d’une période de grâce si vous envoyez les données à un s
 
 Interrompez la période de grâce une fois que le processus d’ingestion des données peut utiliser les colonnes `post_visid_high` et `post_visid_low`.
 
-Voir aussi [Référence des colonnes de données du parcours de navigation](https://marketing.adobe.com/resources/help/fr_FR/sc/clickstream/datafeeds_reference.html).
+Voir également [Référence des colonnes de données du parcours de navigation](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
 ## Étape 9 : Test et déploiement du code du service d’ID {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -198,10 +198,10 @@ Vous pouvez tester et déployer les éléments comme suit.
 Pour tester la mise en œuvre du service d’ID, recherchez les éléments suivants :
 
 * [le cookie AMCV](../introduction/cookies.md) dans le domaine où est hébergée votre page.
-* la valeur du MID dans la demande d’image Analytics à l’aide de [l’outil du débogueur Adobe](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/debugger.html).
+* la valeur du MID dans la demande d’image Analytics à l’aide de l’[outil de débogage Adobe](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
 * Voir aussi [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md).
 
-Pour vérifier le transfert côté serveur, voir [Comment vérifier la mise en œuvre du transfert côté serveur](https://marketing.adobe.com/resources/help/fr_FR/reference/ssf-verify.html).
+Pour vérifier le transfert côté serveur, consultez [Comment vérifier la mise en œuvre de votre transfert côté serveur](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html).
 
 **Déploiement**
 
