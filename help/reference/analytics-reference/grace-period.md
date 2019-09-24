@@ -5,7 +5,7 @@ seo-description: Si plusieurs fichiers JavaScript envoient des données à la m�
 seo-title: Période de grâce du service d’ID
 title: Période de grâce du service d’ID
 uuid: 10a7db7d-de32-4379-914f-edaf929efa32
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -33,4 +33,4 @@ Si plusieurs fichiers JavaScript envoient des données à la *même suite de rap
 
 ## Comment mettre en place une période de grâce ?  {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Contactez [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
+Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
