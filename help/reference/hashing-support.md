@@ -4,7 +4,7 @@ keywords: Service d’identification
 seo-description: Le service Experience Cloud ID (ECID) prend en charge l’algorithme de hachage SHA-256 qui vous permet de transmettre des ID de client ou des adresses électroniques, et transmet des identifiants hachés. Il s’agit d’une méthode JavaScript facultative pour envoyer des identifiants hachés à Experience Cloud. Vous pouvez continuer à utiliser vos propres méthodes de hachage avant d’envoyer les ID de client.
 seo-title: Prise en charge du hachage SHA-256 pour setCustomerIDs
 title: Prise en charge du hachage SHA-256 pour setCustomerIDs
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
@@ -35,7 +35,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client, un état d’authentification et un type de hachage (SHA-256) à chaque visiteur. Si vous ne spécifiez aucun type de hachage, ce dernier n’aura pas lieu.
 
-La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces identifiants en tant [qu’attributs du client](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) vers Experience Cloud et accéder à ces données à partir de différentes solutions.
+La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) vers Experience Cloud et accéder à ces données à partir de différentes solutions.
 
 Les ID de client, les états authentifiés et le type de hachage *ne sont pas* stockés dans un cookie à utiliser ultérieurement. Au lieu de cela, les ID de client, les états authentifiés et le type de hachage doivent être stockés dans une variable d’instance, qui peut être récupérée en utilisant [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), comme illustré ci-dessous :
 
@@ -68,9 +68,9 @@ Reportez-vous au tableau ci-dessous pour obtenir une description du paramètre `
 
 ## Ajout d’une Action dans Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Pour en savoir plus, consultez la [documentation Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html).
+Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Read more about Launch in the [Launch product documentation](https://docs.adobe.com/content/help/en/launch/using/overview.html).
 
-Pour ajouter une action à Launch, consultez la [documentation sur les règles](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) dans Adobe Launch et reportez-vous à la capture d’écran ci-dessous :
+To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
 
 ![](/help/reference/assets/hashing-support.png)
 
