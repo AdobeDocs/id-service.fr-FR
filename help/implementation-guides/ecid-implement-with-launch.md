@@ -4,7 +4,7 @@ seo-description: Adobe Experience Platform Launch est l’outil principal pou
 seo-title: Mise en œuvre avec Launch
 title: Mise en œuvre avec Launch
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -16,7 +16,7 @@ Adobe Experience Platform Launch est l’outil principal pour configurer, dé
 
 ## À propos de Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch ](https://docs.adobelaunch.com/) est le gestionnaire de balises de dernière génération d’Adobe, intégré à Adobe Experience Cloud. Launch permet à ses clients de :
+[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) est la nouvelle génération de la fonctionnalité de gestion des balises d’Adobe intégrée à Adobe Experience Cloud. Launch permet à ses clients de :
 
 * Déployer des produits web côté client grâce à des mises en œuvre appelées extensions.
 * Collecter, définir et partager des données de façon systématique entre les produits marketing et publicitaires d’autres fournisseurs et d’Adobe.
