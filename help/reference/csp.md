@@ -5,7 +5,7 @@ seo-description: Une stratégie de sécurité du contenu (Content Security Polic
 seo-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -60,7 +60,7 @@ Ajoutez les noms de domaine ou URL suivants à votre stratégie de sécurité du
 
 >[!MORE_LIKE_THIS]
 >
->* [Référence de la stratégie de sécurité du contenu](https://content-security-policy.com/)
->* [MDN : Politique de sécurité du contenu](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/CSP)
->* [Wikipedia : Content Security Policy](https://fr.wikipedia.org/wiki/Content_Security_Policy)
+>* [Référence des stratégies de sécurité du contenu](https://content-security-policy.com/)
+>* [MDN : Stratégie de sécurité du contenu](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [Wikipédia : Stratégie de sécurité du contenu](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
