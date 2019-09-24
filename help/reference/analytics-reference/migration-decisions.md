@@ -5,7 +5,7 @@ seo-description: Avant de déployer le service Experience Cloud Identity, vous
 seo-title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -60,10 +60,10 @@ Si plusieurs domaines envoient des données vers la *même suite de rapports*, i
    <td colname="col1"> <p>Un seul domaine </p> </td> 
    <td colname="col2"> <p>Lorsque vous utilisez un seul domaine, vous pouvez effectuer la migration hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Si le CNAME fonctionne, il n’y a toutefois aucune raison de le modifier. </p> <p>Si toutefois vous le supprimez : </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Vérifiez que le nouveau serveur de suivi est <a href="https://marketing.adobe.com/resources/help/fr_FR/whitepapers/rdc/" format="https" scope="external">compatible avec RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Vérifiez que le nouveau serveur de suivi est <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">compatible avec RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passez du CNAME à un serveur de suivi RDC quelques mois avant la migration vers le service <span class="keyword">Experience Cloud</span> ID. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>N’utilisez pas</i> de serveur de suivi <span class="codeph">*.2o7.net</span>. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Contactez le <a href="https://helpx.adobe.com/fr/marketing-cloud/contact-support.html" format="https" scope="external">service à la clientèle</a> pour configurer la migration des visiteurs. Cela permet d’assurer des décomptes cohérents des visiteurs. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Contactez le <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">service à la clientèle</a> pour configurer la migration des visiteurs. Cela permet d’assurer des décomptes cohérents des visiteurs. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
