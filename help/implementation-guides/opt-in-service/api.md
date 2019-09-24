@@ -4,7 +4,7 @@ seo-description: API pour la bibliothèque et références des paramètres de co
 seo-title: Références d’Opt-in
 title: Références d’Opt-in
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
