@@ -5,7 +5,7 @@ seo-description: Une vue d’ensemble des processus de synchronisation des ident
 seo-title: Comprendre la synchronisation des identifiants et les taux de correspondance
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -51,7 +51,7 @@ La synchronisation des identifiants est une URL qui se déclenche dans l’iFram
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Voir aussi [Synchronisation des identifiants pour les transferts de données entrantes](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
+Voir également [Synchronisation des identifiants pour les transferts de données entrants](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
 
 **Étape 4 : Enregistrement des identifiants**
 
@@ -70,7 +70,7 @@ Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Expe
 
 ## Synchronisation des identifiants avec Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] est une exception au processus de synchronisation des identifiants basé sur l’iFrame. Comme [!DNL Media Optimizer] est un domaine de confiance, les synchronisations des identifiants ont lieu à partir de la page parente plutôt que dans l’[!UICONTROL iFrame de publication de destination]. Pendant la synchronisation, le service d’ID appelle [!DNL Media Optimizer] à l’adresse `cm.eversttech.net`, qui est un nom de domaine hérité utilisé par [!DNL Media Optimizer] avant son acquisition par Adobe. L’envoi de données à [!DNL Media Optimizer] permet d’améliorer les taux de correspondance et est automatique pour les clients du service d’ID utilisant la version 2.0 (ou ultérieure). Voir aussi [Cookies Media Optimizer](https://marketing.adobe.com/resources/help/fr_FR/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Media Optimizer] est une exception au processus de synchronisation des identifiants basé sur l’iFrame. Comme [!DNL Media Optimizer] est un domaine de confiance, les synchronisations des identifiants ont lieu à partir de la page parente plutôt que dans l’[!UICONTROL iFrame de publication de destination]. Pendant la synchronisation, le service d’ID appelle [!DNL Media Optimizer] à l’adresse `cm.eversttech.net`, qui est un nom de domaine hérité utilisé par [!DNL Media Optimizer] avant son acquisition par Adobe. L’envoi de données à [!DNL Media Optimizer] permet d’améliorer les taux de correspondance et est automatique pour les clients du service d’ID utilisant la version 2.0 (ou ultérieure). Voir aussi [Cookies Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
 
 >[!MORE_LIKE_THIS]
 >
