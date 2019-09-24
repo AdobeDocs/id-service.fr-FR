@@ -5,7 +5,7 @@ seo-description: Questions fréquemment posées sur les fonctionnalités et prob
 seo-title: Questions fréquentes sur Analytics et le service Identity
 title: Questions fréquentes sur Analytics et le service Identity
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ Chaque bloc de code AppMeasurement correctement configuré contient les informat
 
 Toutefois, les clients peuvent parfois diviser leur fichier Analytics AppMeasurement en fichiers distincts. Par exemple, certains clients peuvent placer les variables de configuration dans un fichier, utiliser un deuxième fichier pour les modules externes, puis placer le code AppMeasurement dans un troisième fichier. Cette pratique n’est pas recommandée.
 
-Si vous ne trouvez pas les informations relatives à votre serveur de suivi, votre instance Analytics n’est certainement pas configurée correctement. Contactez [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) si vous ne trouvez pas les informations sur votre serveur de suivi.
+Si vous ne trouvez pas les informations relatives à votre serveur de suivi, votre instance Analytics n’est certainement pas configurée correctement. Si vous ne trouvez pas les informations relatives votre serveur de suivi, contactez l’[Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Que se passe-t-il si j’utilise le service Identity et que je change de serveur de suivi ?**
 
@@ -35,7 +35,7 @@ Aucun changement pour les utilisateurs qui ont déjà été authentifiés par le
 
 Si vous disposez d’un site d’accès principal où les utilisateurs peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi interdomaines dans les navigateurs qui n’acceptent pas les cookies tiers (tels que Safari).
 
-Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini dans le [domaine demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) lors de la demande pour récupérer un identifiant visiteur. Ce cookie permet au service Identity de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation. Dans les navigateurs qui n’acceptent pas les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
+Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini dans le [domaine demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) durant la requête de récupération d’un identifiant visiteur. Ce cookie permet au service Identity de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation. Dans les navigateurs qui n’acceptent pas les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
 
 Même si un CNAME est configuré, si le site d’accès principal n’est pas le premier site visité, les visiteurs sont identifiés différemment sur le site secondaire et le site principal dans les navigateurs qui n’acceptent pas les cookies tiers.
 
@@ -51,7 +51,7 @@ Cependant, le code H n’est pas pris en charge par le code visitorAPI.js 1.6 
 
 **Qu’est-ce qu’une période de grâce et comment puis-je la configurer ?**
 
-Reportez-vous à la section [Période de grâce du service Identity](../reference/analytics-reference/grace-period.md) et contactez [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
+Voir [La Période](../reference/analytics-reference/grace-period.md) de grâce du service d’identité et contactez le service d’assistance [](https://helpx.adobe.com/marketing-cloud/contact-support.html)clientèle.
 
 **Pourquoi dois-je migrer vers la collecte de données en temps réel (RDC) pour utiliser le service Identity ?**
 
@@ -90,5 +90,5 @@ Il existe trois scénarios possibles selon lesquels les données Analytics sont,
 
 >[!MORE_LIKE_THIS]
 >
->* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
+>* [Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
