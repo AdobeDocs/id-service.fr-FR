@@ -6,7 +6,7 @@ seo-title: Guides de mise en œuvre du service d’ID
 solution: Experience Cloud
 title: Guides de mise en œuvre
 uuid: null
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -20,7 +20,7 @@ Veillez à lire et à comprendre les conditions requises du service d’ID avant
 
 ## Mise en œuvre standard
 
-Une mise en œuvre standard utilise [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) pour vous aider à prendre en main le service d’ID et l’intégrer à d’autres solutions Experience Cloud. Il est vivement recommandé d’utiliser Experience Platform Launch lors de la mise en œuvre du service d’ID.
+A standard implementation uses [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) to help you get started with the ID service and integrate it with other Experience Cloud solutions. Il est vivement recommandé d’utiliser Experience Platform Launch lors de la mise en œuvre du service d’ID.
 
 ## Ressources de mise en œuvre
 
