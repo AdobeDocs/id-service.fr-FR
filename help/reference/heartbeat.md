@@ -5,7 +5,7 @@ seo-description: La mesure de pulsation vidéo nécessite le service Experience�
 seo-title: Mesure de pulsation vidéo et service Experience Cloud Identity
 title: Mesure de pulsation vidéo et service Experience Cloud Identity
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -17,5 +17,5 @@ La mesure de pulsation vidéo nécessite le service Experience Cloud Identity.
 
 >[!MORE_LIKE_THIS]
 >
->* [Mesure vidéo dans Analytics à l’aide de Video Heartbeat](https://marketing.adobe.com/resources/help/fr_FR/sc/appmeasurement/hbvideo/)
+>* [Mesure vidéo dans Analytics à l’aide de Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
 
