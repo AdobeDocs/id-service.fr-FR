@@ -5,7 +5,7 @@ seo-description: Questions fréquemment posées sur les fonctionnalités et prob
 seo-title: FAQ sur le service d’ID
 title: FAQ sur le service d’ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -87,5 +87,5 @@ Voir [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2
 
 >[!MORE_LIKE_THIS]
 >
->* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
+>* [Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
