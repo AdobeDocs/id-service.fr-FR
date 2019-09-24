@@ -5,7 +5,7 @@ seo-description: Questions fréquemment posées sur les fonctionnalités et prob
 seo-title: Questions fréquentes sur d’autres solutions Experience Cloud
 title: Questions fréquentes sur d’autres solutions Experience Cloud
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
