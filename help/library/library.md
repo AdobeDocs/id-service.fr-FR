@@ -5,7 +5,7 @@ seo-description: Propriétés, méthodes et configurations qui vous permettent d
 seo-title: API du service d’ID
 title: API du service d’ID
 uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -20,5 +20,5 @@ Propriétés, méthodes et configurations qui vous permettent de travailler par 
 
 >[!NOTE]
 >
->Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse : [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse :[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
