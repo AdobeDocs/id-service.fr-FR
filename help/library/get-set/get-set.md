@@ -5,7 +5,7 @@ seo-description: Méthodes publiques qui permettent d’interagir avec le servic
 seo-title: Méthodes
 title: Méthodes
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ Méthodes publiques qui permettent d’interagir avec le service d’ID.
 
 >[!NOTE]
 >
->Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse : [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse :[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Articles connexes :
 
