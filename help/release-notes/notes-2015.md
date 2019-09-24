@@ -5,7 +5,7 @@ seo-description: Notes de mise à jour et mises à jour de 2015.
 seo-title: Notes de mise à jour 2015
 title: Notes de mise à jour 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
