@@ -15,7 +15,7 @@ source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 setCustomerIDs définit une ou plusieurs paires clé-valeur qui définissent les ID de client et leur état d’authentification.
 
-**Syntaxe :**`visitor.setCustomerIDs()`
+**Syntaxe :** `visitor.setCustomerIDs()`
 
 Vous pouvez définir un ou plusieurs ID comme l’illustre l’exemple de code ci-après. Voir [ID de client et états d’authentification](../../reference/authenticated-state.md) pour obtenir des informations supplémentaires et des exemples.
 
