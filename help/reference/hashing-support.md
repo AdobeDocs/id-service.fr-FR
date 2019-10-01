@@ -22,7 +22,7 @@ Il existe deux façons de mettre en œuvre la prise en charge du hachage avec se
 
 La première méthode utilise la méthode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`).
 
-Avant de procéder au hachage, la bibliothèque ECID effectue une normalisation des données sur les customerIDs. Ce processus supprime les espaces des customerIDs à chaque extrémité et convertit tous les caractères en minuscules. Par exemple, l’adresse électronique «&nbsp; ecid@adobe.com &nbsp;» devient «&nbsp;ecid@adobe.com&nbsp;»
+Avant de procéder au hachage, la bibliothèque ECID effectue une normalisation des données sur les customerIDs. Ce processus supprime les espaces des customerIDs à chaque extrémité et convertit tous les caractères en minuscules. Par exemple, l’adresse électronique «&nbsp; ecid@adobe.com &nbsp;» devient « ecid@adobe.com »
 
 Vous trouverez ci-dessous un exemple de code illustrant comment définir un identifiant client unique (l’adresse électronique mentionnée ci-dessus) avec un hachage SHA-256.
 
