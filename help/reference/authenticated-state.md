@@ -5,7 +5,7 @@ seo-description: Avec l’identifiant visiteur Experience Cloud, vous pouvez as
 seo-title: ID de client et états d’authentification
 title: ID de client et états d’authentification
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ---
@@ -17,11 +17,11 @@ Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres
 
 ## États d’authentification {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) vers [!DNL Experience Cloud] et accéder à ces données à partir de différentes solutions.
+La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://docs.adobe.com/content/help/fr-FR/core-services/interface/customer-attributes/attributes.html) vers [!DNL Experience Cloud] et accéder à ces données à partir de différentes solutions.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (synchronisation des ID de client) est requis pour les fonctionnalités d’attributs du client et des services principaux. La synchronisation des ID de client est une méthode d’identification facultative pour [!DNL Analytics]. [!DNL Target] nécessite `Visitor.AuthState.AUTHENTICATED` pour que les attributs du client fonctionnent. Pour obtenir des exemples, voir [Services principaux – Comment activer vos solutions](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
+>`setCustomerIDs` (synchronisation des ID de client) est requis pour les fonctionnalités d’attributs du client et des services principaux. La synchronisation des ID de client est une méthode d’identification facultative pour [!DNL Analytics]. [!DNL Target] nécessite `Visitor.AuthState.AUTHENTICATED` pour que les attributs du client fonctionnent. Pour obtenir des exemples, voir [Services principaux – Comment activer vos solutions](https://docs.adobe.com/content/help/fr-FR/core-services/interface/about-core-services/core-services.html).
 
 À partir de la version 1.5 du service Experience Cloud Identity, `setCustomerIDs` comprend l’objet `AuthState` facultatif. `AuthState` identifie les visiteurs selon leur état d’authentification (connecté ou déconnecté, par exemple). Vous définissez l’état d’authentification avec une valeur d’état répertoriée dans le tableau. L’état d’authentification est renvoyé sous la forme d’un entier.
 
@@ -41,12 +41,12 @@ La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visite
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">1</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 1 </span> </p> </td> 
    <td colname="col3"> <p>Authentifié pour une instance, une page ou une application spécifique. </p> <p> <p>Attention : Pour bien fonctionner, les attributs du client pour <span class="keyword">Target</span> nécessitent cet état. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">2</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 2 </span> </p> </td> 
    <td colname="col3"> <p>Déconnecté. </p> </td> 
   </tr> 
  </tbody> 
@@ -90,7 +90,7 @@ Les ID de client peuvent contenir des combinaisons d’ID et d’états authenti
 >[!IMPORTANT]
 >
 >* Les identifiants sont sensibles à la casse.
->* Utilisez uniquement des valeurs non codées pour vos ID.
+>* Utilisez uniquement des valeurs non codées pour les identifiants.
 >* Les ID de client et les états d’authentification ne sont pas stockés dans le cookie Identifiant visiteur. Ils doivent être définis pour chaque page ou contexte d’application.
 >* N’incluez aucune information d’identification personnelle dans les identifiants client. Si vous utilisez des informations d’identification personnelle pour identifier un visiteur (par exemple, une adresse électronique), il est recommandé de stocker plutôt une version hachée ou chiffrée de l’information. La bibliothèque ECID prend en charge le hachage des identifiants utilisateur. Reportez-vous à la section [Prise en charge du hachage SHA-256 pour setCustomerIDs](/help/reference/hashing-support.md).
 >
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Le service [!DNL Experience Cloud] ID prend en charge les identifiants et les états d’authentification du client dans le code de nos SDK Android et iOS. Voir les bibliothèques de code suivantes :
 
-* [Méthodes du SDK Android](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [Méthodes du SDK iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
+* [Méthodes du SDK Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/overview.html)
+* [Méthodes du SDK iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/overview.html)
 
 ## Remarque destinée aux clients Analytics et Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Si vous transmettez des ID déclarés à [!DNL Audience Manager], l’objet `userid` doit correspondre au code d’intégration associé à une source de données. Pour plus d’informations, reportez-vous à la section relative au [!UICONTROL service d’identification des visiteurs] de la documentation sur la [configuration du code des règles de fusion](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
+Si vous transmettez des ID déclarés à [!DNL Audience Manager], l’objet `userid` doit correspondre au code d’intégration associé à une source de données. Pour plus d’informations, reportez-vous à la section relative au [!UICONTROL service d’identification des visiteurs] de la documentation sur la [configuration du code des règles de fusion](https://docs.adobe.com/help/fr-FR/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
