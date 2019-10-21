@@ -6,7 +6,7 @@ seo-title: Cookies et service Experience Cloud Identity
 title: Cookies et service Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 57161205bb48a82db223a733f384ea8338596b7e
+source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
@@ -122,9 +122,9 @@ L’Experience Cloud ID (MID) est dérivé de manière mathématique de l’ID
 
 Le service d’ID commence à créer un MID lorsque votre page se charge. Au cours de ce processus, le code fourni par la `visitorAPI.js` bibliothèque de code envoie votre ID d’organisation dans un appel d’événement au service d’ID. Le service d’ID crée et renvoie le MID et un ID demdex dans les cookies AMCV et demdex respectivement.
 
-## Indicateurs de sécurité pour les cookies
+## Indicateurs de cookies
 
-Les tableaux suivants décrivent le fonctionnement des cookies Experience Cloud avec des indicateurs de sécurité :
+Le tableau suivant décrit les indicateurs des cookies Experience Cloud :
 
 | Cookie (défini par) | httpOnly | Sécuriser | MêmeSite |
 |--- |--- |--- |--- |
