@@ -5,13 +5,13 @@ seo-description: Le service d’ID utilise l’ID d’organisation, le cookie A
 seo-title: Cookies et service Experience Cloud Identity
 title: Cookies et service Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
 
-# Cookies et service Experience Cloud Identity{#cookies-and-the-experience-cloud-id-service}
+# Cookies et service Experience Cloud Identity {#cookies-and-the-experience-cloud-id-service}
 
 Le service d’ID utilise l’ID d’organisation, le cookie AMCV d’Experience Cloud et un cookie demdex pour créer et stocker les identifiants uniques et persistants des visiteurs de votre site. Ces cookies permettent au service d’ID d’effectuer le suivi des visiteurs dans vos différents domaines et d’activer le partage de données entre différentes solutions Experience Cloud.
 
@@ -21,17 +21,17 @@ Le bon fonctionnement du service d’ID repose sur les cookies AMCV, AMCVS et De
 
 ### Ce que peuvent faire les cookies du service d’ID
 
-* Définir et enregistrer un ID unique pour les visiteurs de votre site (le MID)
-* Conserver cet ID unique afin que le service d’ID puisse collecter et partager des données avec d’autres solutions Experience Cloud
+* Définir et enregistrer un ID unique pour les visiteurs de votre site (le MID).
+* Conserver cet ID unique afin que le service d’ID puisse collecter et partager des données avec d’autres solutions Experience Cloud.
 * Effectuer le suivi des utilisateurs dans vos domaines. Cependant, cela nécessite que vous possédiez ces autres domaines et que le code du service d’ID soit déployé sur ces derniers.
 
 ### Ce que ne peuvent pas faire les cookies du service d’ID
 
-* Stocker, transmettre ou exécuter des virus informatiques
-* Accéder ou stocker des informations d’identification personnelle comme votre adresse e-mail
-* Contrôler le matériel informatique ou les logiciels
-* Rendre les ordinateurs instables ou causer des problèmes de performance
-* Effectuer le suivi des utilisateurs sur des sites qui n’utilisent pas le service d’ID
+* Stocker, transmettre ou exécuter des virus informatiques.
+* Accéder ou stocker des informations d’identification personnelle comme votre adresse e-mail.
+* Contrôler le matériel informatique ou les logiciels.
+* Rendre les ordinateurs instables ou causer des problèmes de performance.
+* Effectuer le suivi des utilisateurs sur des sites qui n’utilisent pas le service d’ID.
 
 ## Cookie AMCV {#section-c55af54828dc4cce89f6118655d694c8}
 
@@ -114,7 +114,7 @@ Le tableau ci-dessous répertorie et définit quelques attributs importants du c
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Pour plus d’informations connexes, voir [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Génération de l’Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,15 +124,15 @@ Le service d’ID commence à créer un MID lorsque votre page se charge. Au cou
 
 ## Indicateurs de cookies
 
-Le tableau suivant décrit les indicateurs des cookies Experience Cloud :
+Le tableau suivant décrit les indicateurs des cookies d’Experience Cloud :
 
-| Cookie (défini par) | httpOnly | Sécuriser | MêmeSite |
+| Cookie (défini par) | httpOnly | Sécurisé | SameSite |
 |--- |--- |--- |--- |
 | demdex (réponse http) | Non | Oui | "Aucun" |
-| AMCV (Javascript) | Non | Configurable | Unset (par défaut, Lax) |
-| AMCVS (Javascript) | Non | Configurable | Unset (par défaut, Lax) |
+| AMCV (JavaScript) | Non | Configurable | Unset (par défaut : Lax) |
+| AMCVS (JavaScript) | Non | Configurable | Unset (par défaut : Lax) |
 
-*Remarque : Pour plus d’informations sur la configuration du cookie AMCV et AMCVS avec des attributs sécurisés, voir la rubrique relative à[secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html).*
+*Remarque : pour plus d’informations sur la configuration du cookie AMCV et AMCVS avec des attributs sécurisés, voir la rubrique relative à [secureCookie](https://docs.adobe.com/content/help/fr-FR/id-service/using/id-service-api/configurations/securecookie.translate.html).*
 
 ## Étapes suivantes {#section-8db1727a63bc4ff68b495f270315d453}
 
