@@ -6,7 +6,7 @@ seo-title: Comprendre la synchronisation des identifiants et les taux de corresp
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -72,7 +72,7 @@ Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Expe
 
 [!DNL Adobe Media Optimizer] est une exception au processus de synchronisation des identifiants basé sur l’iFrame. Comme [!DNL Media Optimizer] est un domaine de confiance, les synchronisations des identifiants ont lieu à partir de la page parente plutôt que dans l’[!UICONTROL iFrame de publication de destination]. Pendant la synchronisation, le service d’ID appelle [!DNL Media Optimizer] à l’adresse `cm.eversttech.net`, qui est un nom de domaine hérité utilisé par [!DNL Media Optimizer] avant son acquisition par Adobe. L’envoi de données à [!DNL Media Optimizer] permet d’améliorer les taux de correspondance et est automatique pour les clients du service d’ID utilisant la version 2.0 (ou ultérieure). Voir aussi [Cookies Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Signification des appels vers le domaine Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
