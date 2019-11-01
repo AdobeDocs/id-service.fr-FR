@@ -6,7 +6,7 @@ seo-title: Questions fréquentes sur Analytics et le service Identity
 title: Questions fréquentes sur Analytics et le service Identity
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -88,7 +88,7 @@ Il existe trois scénarios possibles selon lesquels les données Analytics sont,
 >
 >L’utilisation des dernières mises à jour de VisitorAPI.js et AppMeasurement.js avec les paramètres par défaut devrait éviter tout impact sérieux ou perceptible résultant des trois scénarios peu probables ci-dessus.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
