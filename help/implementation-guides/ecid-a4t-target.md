@@ -5,7 +5,7 @@ seo-description: Ces instructions concernent les clients A4T avec un serveur mix
 seo-title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
