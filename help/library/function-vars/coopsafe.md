@@ -5,7 +5,7 @@ seo-description: Une configuration booléenne facultative permet de déterminer 
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -30,7 +30,7 @@ Contenu :
 Pour utiliser `isCoopSafe`, vous devez :
 
 * Utiliser le code du service d’ID version 2.4 ou ultérieure.
-* Participer à [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
+* Participer à [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/fr_FR/mcdc/). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
 
 * Collaborer avec votre conseiller [!DNL Adobe] afin de définir un indicateur de liste blanche ou de liste noire pour votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
@@ -82,7 +82,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## Paramètres POST de l’appel d’événement  {#section-fcd441933506493faefaa6b51f194a17}
+## Paramètres POST de l’appel d’événement {#section-fcd441933506493faefaa6b51f194a17}
 
 En fonction de l’indicateur que vous définissez (`true` ou `false`), le service d’ID convertit `isCoopSafe` en les paramètres POST suivants et les envoie à [!DNL Adobe] dans un appel d’événement :
 
@@ -110,7 +110,7 @@ Les paramètres POST indiquent à [!DNL Experience Cloud] Device Co-op si cett
  </tbody> 
 </table>
 
-## API post-instanciation  {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## API post-instanciation {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Ces API permettent de remplacer l’état `isCoopSafe`. Elles sont nécessaires car elles permettent de modifier l’état post-instanciation/post-connexion d’un visiteur sur un site ou dans une application à une seule page dans le cas où la page ne s’actualise pas. Par exemple, vous devrez appeler ces API si un utilisateur s’authentifie auprès de votre site ou de votre application et accepte par la suite une règle des conditions d’utilisation qui autorise Device Co-op à utiliser ses données.
 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [Code DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [Code DIL isCoopSafe](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.translate.html)
 
