@@ -5,7 +5,7 @@ seo-description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSour
 seo-title: Synchronisation des ID par URL ou source de données
 title: Synchronisation des ID par URL ou source de données
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -134,5 +134,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORELIKETHIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
