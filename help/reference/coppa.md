@@ -5,7 +5,7 @@ seo-description: La loi COPPA (Children’s Online Privacy Protection Act) inte
 seo-title: Prise en charge de la loi COPPA dans le service Experience Cloud Identity
 title: Prise en charge de la loi COPPA dans le service Experience Cloud Identity
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -45,6 +45,6 @@ Lorsqu’il est défini sur la valeur `true`, `disableThirdPartyCookies` l’obj
 
 >[!MORELIKETHIS]
 >
->* [Centre de traitement des données personnelles Adobe](http://www.adobe.com/privacy.html)
+>* [Centre de traitement des données personnelles Adobe](http://www.adobe.com/fr/privacy.html)
 >* [Définition de la loi COPPA](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
