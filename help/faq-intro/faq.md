@@ -5,7 +5,7 @@ seo-description: Questions fréquemment posées sur les fonctionnalités et prob
 seo-title: FAQ sur le service d’ID
 title: FAQ sur le service d’ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -35,7 +35,7 @@ Vous pouvez rencontrer des problèmes si vous hébergez le fichier VisitorAPI.js
 
 Placez la bibliothèque VisitorAPI.js dans la partie supérieure de la page, dans la `<head>` section d’en-tête du code. Vous pouvez ainsi vous assurer que l’appel d’un ID disparaît avant que le corps de la page ne commence à se charger. Cela maximise les chances de réussite d’un renvoi d’ID.
 
-L’appel du service d’ID est asynchrone et est le seul appel au [domaine demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
+L’appel du service d’ID est asynchrone et est le seul appel au [domaine demdex.net](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.translate.html). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
 
 Pour les [!DNL Target] clients, le placement du code du service d’ID dans le corps `<body>` de la page peut augmenter les risques qu’il puisse bloquer un appel [!DNL Target]. Si vous devez placer le code du service d’ID dans le corps de votre page, il doit être placé après la balise `<body>` ouverte.
 
@@ -67,7 +67,7 @@ Il en résultera de meilleures performances pour les utilisateurs se servant de 
 
 Les requêtes de ressources utilisant la norme CORS sont généralement préférables à celles utilisant JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et annulent la priorité des requêtes relatives à d’autres appels synchrones et asynchrones sur la page. La norme CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
-Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
@@ -87,5 +87,5 @@ Voir [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2
 
 >[!MORELIKETHIS]
 >
->* [Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
 
