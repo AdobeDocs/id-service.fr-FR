@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Aide du service Experience Cloud Identity
 user-guide-url: /content/help/fr-FR/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
+source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
    + [Cookies et service d’ID](introduction/cookies.md)
    + [Requête et définition d’ID par le service d’ID](introduction/id-request.md)
    + [Comprendre la synchronisation et les taux de correspondance](introduction/match-rates.md)
-+ Guides de mise en œuvre {#implementation-guides}
-   + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
++ Mise en œuvre {#implementation}
    + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
+   + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
    + [Mise en œuvre avec Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Mise en œuvre à l’aide de DTM](implementation-guides/standard.md)
    + [Mise en œuvre pour Analytics](implementation-guides/setup-analytics.md)
