@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: Guides de mise en œuvre
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
 
@@ -16,7 +16,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Instructions et exemples de code pour les mises en œuvre standard et non standard du service Experience Cloud Identity.
 
-Veillez à lire et à comprendre les conditions requises du service d’ID avant de commencer à utiliser ces procédures.
+>[!IMPORTANT]
+>
+>Veillez à lire et à comprendre les conditions [requises pour utiliser le service d’ID](../reference/requirements.md) avant de commencer à utiliser ces procédures.
 
 ## Mise en œuvre standard
 
@@ -24,7 +26,6 @@ A standard implementation uses [Adobe Exprience Platform Launch](https://docs.ad
 
 ## Ressources de mise en œuvre
 
-* [Guides de mise en œuvre](implementation-guides.md)
 * [Méthodes de mise en œuvre](implementation-methods.md)
 * [Mise en œuvre avec Experience Platform Launch](ecid-implement-with-launch.md)
 * [Mise en œuvre avec Dynamic Tag Management](standard.md)
