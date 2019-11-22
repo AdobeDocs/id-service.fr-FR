@@ -1,50 +1,53 @@
 ---
 description: valeur nulle
-keywords: ordre des opérations ; service d’ID
+keywords: order of operations;ID Service
 seo-description: valeur nulle
 seo-title: CNAME de collecte de données et suivi inter-domaines
 title: CNAME de collecte de données et suivi inter-domaines
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 588c4b29ebd3cccea4f2ab032f69a4b6c6e97f2a
 
 ---
 
 
-# CNAME de collecte de données et suivi inter-domaines{#data-collection-cnames-and-cross-domain-tracking}
+# Collecte de données et identité{#data-collection-and-identity}
 
-Si vous disposez d’un site d’accès principal où les utilisateurs peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi interdomaines dans les navigateurs qui n’acceptent pas les cookies tiers (tels que Safari).
+Dans les analyses, vous pouvez utiliser trois méthodes pour identifier les visiteurs.
 
-Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini par les serveurs de collecte de données pendant la demande de récupération d’un identifiant visiteur. Ce cookie permet au service d’identification des visiteurs de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation Experience Cloud.
+- Utilisation du service d’identification des [visiteurs](https://docs.adobe.com/content/help/en/id-service/using/home.md)
+- Utilisation de l’identifiant visiteur Analytics [hérité](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-overview.md)
+- Fournir leur propre identité
 
-Dans les navigateurs qui n’acceptent pas les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
+## Using the Visitor ID Service{#using-the-visitor-id-service}
 
-Le cookie demdex.net permet au service d’identification des visiteurs de fournir le même niveau de suivi inter-domaines que le cookie s_vi dans Analytics, où le cookie est accepté dans certains navigateurs et utilisé sur plusieurs domaines, mais rejeté par d’autres navigateurs.
+Le service d’identification des visiteurs est la méthode recommandée pour identifier les visiteurs. Il est basé sur deux composants
 
-## CNAME de collecte de données {#section-48fd186d376a48079769d12c4bd9f317}
+- Identifiant propriétaire - Identifiant propriétaire pouvant être utilisé pour mesurer les visiteurs de votre propre site Web. Cet ID est stocké dans le premier ID de partie et stocké dans un cookie côté client et un cookie côté serveur (avec un CNAME).
+- Identifiant tiers (facultatif) : identifiant tiers distinct stocké sur demdex.net qui peut être utilisé pour mesurer les visiteurs sur plusieurs domaines (exemple.com et exemple.net)
 
-Lorsque le cookie Analytics a été défini par le serveur de collecte de données, de nombreux clients ont configuré les enregistrements CNAME du serveur de collecte de données dans le cadre d’une [mise en œuvre de cookie propriétaire](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) afin d’éviter des problèmes éventuels avec les navigateurs qui rejettent les cookies tiers. Ce processus configure votre domaine de serveur de collecte de données en fonction du domaine de votre site Web, de sorte que le cookie Identifiant visiteur soit défini comme cookie propriétaire.
+Analytics utilisera toujours l’identifiant propriétaire et si l’identifiant tiers est activé et présent, l’identifiant propriétaire de chaque site sera le même. Toutefois, si l’ID tiers est désactivé, soit par vos paramètres, soit parce que le navigateur bloque les cookies tiers, il n’est pas possible de lier le trafic sur les deux sites.
 
-Puisque le service d’identification des visiteurs définit à l’aide de JavaScript le cookie visiteur directement sur le domaine du site Web actif, cette configuration n’est plus nécessaire pour définir les cookies propriétaires.
+## Domaines Analytics hérités
 
-Les clients qui disposent d’une propriété Web unique (un seul domaine) peuvent migrer en dehors des CNAME de collecte de données et utiliser plutôt leur nom d’hôte de collecte de données par défaut (`omtrdc.net` ou `2o7.net`).
+Avant le lancement du service d’identification des visiteurs, il y a plusieurs années, de nombreux clients utilisaient les domaines d’analyse natifs pour définir les cookies d’ID. Il s’agit notamment `omtrdc.net``2o7.net` d’un domaine CNAME. `omtrdc.net`, `2o7.net` et dans certains cas, un domaine CNAME est utilisé pour stocker des cookies tiers. Les cookies ainsi définis ont toujours été limités à un seul client afin que les clients ne puissent pas combiner leurs données entre les entreprises. Les domaines tiers CNAMED, parfois appelés domaines tiers conviviaux, ne sont utilisés que lorsque les clients veulent suivre les utilisateurs sur les sites qu’ils possèdent (par exemple, exemple.com, example.co.jp). Cette méthode est en cours de désapprobation afin de permettre un service d’identification des visiteurs plus robuste et respectueux de la vie privée. Les clients doivent accéder au service d’identification des visiteurs avec un CNAME par domaine dès que possible.
 
-Toutefois, l’utilisation d’un CNAME pour la collecte de données vous permet par ailleurs d’effectuer un suivi sur les visiteurs entre un domaine d’entrée principal et d’autres domaines dans les navigateurs qui n’acceptent pas les cookies tiers. Les clients qui disposent de plusieurs propriétés Web (plusieurs domaines) peuvent avoir intérêt à préserver un CNAME de collecte de données. La section ci-après explique comment fonctionne le suivi inter-domaines.
+## Fournissez votre propre identité
 
-## Suivi inter-domaines à l’aide de CNAME – Fonctionnement {#section-78925af798e24917b9abed79de290ad9}
+Si un client choisit, il peut complètement contourner le système d’identification d’Adobe et mettre en oeuvre le sien en fournissant un identifiant [visiteur](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-custom.md)personnalisé. Il y a quelques choses à savoir si vous choisissez cette voie.
 
-En raison de la façon dont les cookies propriétaires peuvent être utilisés dans un contexte tiers dans Apple Safari et dans certains autres navigateurs, un CNAME vous permet d’effectuer un suivi sur les clients entre un domaine principal et d’autres domaines utilisant le même serveur de suivi.
+- Vous devez mettre en oeuvre des contrôles de confidentialité appropriés et d’exclusion
+- Cet identifiant s’applique uniquement à Analytics.
+- Vous êtes responsable de la persistance de cet ID
 
-Supposons que votre site principal se situe à l’adresse `mymainsite.com`. Vous avez configuré l’enregistrement CNAME pour pointer vers votre serveur de collecte de données sécurisé : `smetrics.mymainsite.com`.
+## CNAMES DE Collecte de données
 
-Lorsqu’un visiteur se rend sur le site `mymainsite.com`, le cookie du service d’ID est défini par le serveur de collecte de données. Cela est autorisé dans la mesure où le domaine du serveur de collecte de données correspond à celui du site Web. C’est ce que l’on désigne sous le nom d’utilisation d’un *contexte propriétaire* ou plus simplement de *cookie propriétaire*.
+Adobe recommande toujours l’utilisation d’un CNAME conjointement avec le service d’identification des visiteurs. Cela permet à l’identifiant visiteur propriétaire de persister à l’aide de cookies HTTP, ce qui rend les cookies plus durables.
 
-Si vous utilisez le même serveur de collecte de données sur d’autres sites (`myothersiteA.com` et `myothersiteB.com` par exemple), et qu’un visiteur se rend ultérieurement sur ces sites, le cookie qui avait été défini au cours de la visite de `mymainsite.com` est envoyé dans la demande HTTPS adressée au serveur de collecte de données (pour rappel, les navigateurs envoient tous les cookies d’un domaine avec l’ensemble des demandes HTTPS adressées à ce domaine, même si ce dernier ne correspond pas au domaine du site Web en cours). On parle, dans ce cas, d’utilisation d’un *contexte tiers* ou plus simplement de *cookie tiers*. Cela permet de réutiliser le même identifiant visiteur sur ces autres domaines. Notez que les navigateurs gèrent les cookies dans des contextes tiers différents des cookies propriétaires.
+## Exclusions
 
-*Remarque : Safari bloque tous les cookies dans le contexte tiers, quelle que soit la manière dont ils sont définis.*
-
-Par conséquent, pour qu’un visiteur soit identifié entre plusieurs domaines, votre domaine de collecte doit être un domaine que les utilisateurs visitent couramment. En l’absence de domaine *courant* à utiliser comme domaine de collecte de données, la gestion d’un enregistrement CNAME ne présente aucun avantage sur le plan inter-domaines. Si le site d’accès principal n’est pas le premier site visité, les visiteurs sont identifiés différemment sur le site secondaire et sur le site principal.
+Adobe propose aux API de partager des signaux d’exclusion avec nos systèmes afin que vous puissiez fournir aux utilisateurs des moyens d’exclure le suivi. Vous trouverez des instructions détaillées sur l’ [exclusion](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md) et l’ [inclusion](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md)
 
 ## Activation de la prise en charge de la collecte de données propriétaires (CNAME) avec le service Experience Cloud Identity {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-Pour activer la prise en charge du CNAME du serveur de collecte de données, définissez les variables `visitor.marketingCloudServerSecure`.
+La prise en charge du CNAME du serveur de collecte de données est [activée lors de la configuration d’un CNAME](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.md) et en définissant la `visitor.marketingCloudServerSecure` variable dans le service d’identité d’Experience Cloud et `s.trackingServerSecure` dans AppMeasurement.
