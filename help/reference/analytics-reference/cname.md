@@ -6,7 +6,7 @@ seo-title: CNAME de collecte de données et suivi inter-domaines
 title: CNAME de collecte de données et suivi inter-domaines
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 588c4b29ebd3cccea4f2ab032f69a4b6c6e97f2a
+source-git-commit: 989b5f537848a7506a96e2eac17409f8b0307217
 
 ---
 
@@ -26,11 +26,11 @@ Le service d’identification des visiteurs est la méthode recommandée pour id
 - Identifiant propriétaire - Identifiant propriétaire pouvant être utilisé pour mesurer les visiteurs de votre propre site Web. Cet ID est stocké dans le premier ID de partie et stocké dans un cookie côté client et un cookie côté serveur (avec un CNAME).
 - Identifiant tiers (facultatif) : identifiant tiers distinct stocké sur demdex.net qui peut être utilisé pour mesurer les visiteurs sur plusieurs domaines (exemple.com et exemple.net)
 
-Analytics utilisera toujours l’identifiant propriétaire et si l’identifiant tiers est activé et présent, l’identifiant propriétaire de chaque site sera le même. Toutefois, si l’ID tiers est désactivé, soit par vos paramètres, soit parce que le navigateur bloque les cookies tiers, il n’est pas possible de lier le trafic sur les deux sites.
+Analytics utilisera l’identifiant propriétaire à moins que les identifiants tiers ne soient activés alors que nous utiliserons cet identifiant lorsque les navigateurs le permettent. L’ID tiers est un espace de noms par client afin qu’un client ne puisse pas combiner des données avec un autre client dans Analytics.
 
 ## Domaines Analytics hérités
 
-Avant le lancement du service d’identification des visiteurs, il y a plusieurs années, de nombreux clients utilisaient les domaines d’analyse natifs pour définir les cookies d’ID. Il s’agit notamment `omtrdc.net``2o7.net` d’un domaine CNAME. `omtrdc.net`, `2o7.net` et dans certains cas, un domaine CNAME est utilisé pour stocker des cookies tiers. Les cookies ainsi définis ont toujours été limités à un seul client afin que les clients ne puissent pas combiner leurs données entre les entreprises. Les domaines tiers CNAMED, parfois appelés domaines tiers conviviaux, ne sont utilisés que lorsque les clients veulent suivre les utilisateurs sur les sites qu’ils possèdent (par exemple, exemple.com, example.co.jp). Cette méthode est en cours de désapprobation afin de permettre un service d’identification des visiteurs plus robuste et respectueux de la vie privée. Les clients doivent accéder au service d’identification des visiteurs avec un CNAME par domaine dès que possible.
+Avant le lancement du service d’identification des visiteurs Adobe, de nombreux clients utilisaient les domaines d’analyse natifs pour définir les cookies d’ID. Il s’agit notamment `omtrdc.net``2o7.net` d’un domaine CNAME. `omtrdc.net`, `2o7.net`dans certains cas, un domaine CNAME a été utilisé pour stocker des cookies tiers. Les cookies ainsi définis étaient limités à un seul client afin que les clients ne puissent pas combiner leurs données avec celles d’autres clients. Les domaines tiers CNAMED, parfois appelés domaines tiers conviviaux, ont été utilisés lorsque les clients veulent suivre les utilisateurs sur les sites qu’ils possèdent (par exemple, exemple.com, example.co.jp). Cette méthode ou l’utilisation de CNAME pour la prise en charge de domaines tiers conviviaux est déconseillée afin de permettre un service d’identification des visiteurs plus robuste et respectueux de la vie privée. Les clients doivent accéder au service d’identification des visiteurs avec un CNAME par domaine dès que possible.
 
 ## Fournissez votre propre identité
 
@@ -44,9 +44,9 @@ Si un client choisit, il peut complètement contourner le système d’identific
 
 Adobe recommande toujours l’utilisation d’un CNAME conjointement avec le service d’identification des visiteurs. Cela permet à l’identifiant visiteur propriétaire de persister à l’aide de cookies HTTP, ce qui rend les cookies plus durables.
 
-## Exclusions
+## OPTOUT
 
-Adobe propose aux API de partager des signaux d’exclusion avec nos systèmes afin que vous puissiez fournir aux utilisateurs des moyens d’exclure le suivi. Vous trouverez des instructions détaillées sur l’ [exclusion](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md) et l’ [inclusion](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md)
+Adobe fournit aux clients les API pour partager des signaux d’exclusion avec nos systèmes afin que les clients puissent à leur tour permettre aux utilisateurs de ne pas effectuer de suivi. Nous fournissons des instructions détaillées sur la manière dont le client peut mettre en oeuvre les contrôles appropriés pour prendre en charge le choix des utilisateurs ; soit l’API [d’](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md) exclusion, soit les options permettant d’ [empêcher le déclenchement](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md) du cookie jusqu’à obtention du consentement
 
 ## Activation de la prise en charge de la collecte de données propriétaires (CNAME) avec le service Experience Cloud Identity {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
