@@ -4,7 +4,7 @@ seo-title: Méthodes de bibliothèque ECID dans un univers ITP Safari
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 seo-description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 translation-type: tm+mt
-source-git-commit: 51abd7b0f38da4c3375c0d2fe48d8bf96bdfb387
+source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
@@ -28,6 +28,10 @@ Les règles d’ITP visent à redonner le contrôle aux développeurs. Les mises
 **Pourquoi Adobe se concentre sur la bibliothèque ECID lorsque d’autres méthodes de suivi des visiteurs Analytics sont utilisées avec les CNAME aujourd’hui ?**
 
 La bibliothèque ECID, le cookie AMCV et l’ECID (alias MID) étaient au départ la méthode d’intégration de toutes les solutions Adobe sous un ID. Cet ID restera l’identifiant prioritaire de niveau cookie dans la feuille de route du produit Adobe. Il s’agit de l’identifiant de cookie par défaut pour Adobe Experience Platform.
+
+**Les CNAME aident-ils les clients à activer le suivi multidomaines ?**
+
+Les mêmes règles et avertissements existent déjà avec les CNAME. Dans certains cas, les CNAME peuvent contribuer à un scénario multidomaines. Si vous disposez d’un site d’accès principal où les utilisateurs peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi interdomaines dans les navigateurs qui n’acceptent pas les cookies tiers. Toutefois, même si les CNAME peuvent contribuer à un scénario multidomaines dans certains cas, le passage de mises en œuvre ECID à des mises en œuvre CNAME a pour objectif l’identification persistante des visiteurs, et non le suivi multidomaines. Pour plus d’informations sur les CNAME et le multidomaines, voir [CNAME de collecte de données et suivi inter-domaines](/help/reference/analytics-reference/cname.md).
 
 D’autres questions fréquentes seront ajoutées ici lorsque des modifications ITP supplémentaires seront publiées. Pour plus d’informations, consultez [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
