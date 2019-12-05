@@ -5,13 +5,13 @@ seo-description: valeur nulle
 seo-title: CNAME de collecte de données et suivi inter-domaines
 title: CNAME de collecte de données et suivi inter-domaines
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# CNAME de collecte de données et suivi inter-domaines{#data-collection-cnames-and-cross-domain-tracking}
+# CNAME de collecte de données et suivi inter-domaines {#data-collection-cnames-and-cross-domain-tracking}
 
 Si vous disposez d’un site d’accès principal où les utilisateurs peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi interdomaines dans les navigateurs qui n’acceptent pas les cookies tiers (tels que Safari).
 
@@ -23,7 +23,7 @@ Le cookie demdex.net permet au service d’identification des visiteurs de fourn
 
 ## CNAME de collecte de données {#section-48fd186d376a48079769d12c4bd9f317}
 
-Lorsque le cookie Analytics a été défini par le serveur de collecte de données, de nombreux clients ont configuré les enregistrements CNAME du serveur de collecte de données dans le cadre d’une [mise en œuvre de cookie propriétaire](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) afin d’éviter des problèmes éventuels avec les navigateurs qui rejettent les cookies tiers. Ce processus configure votre domaine de serveur de collecte de données en fonction du domaine de votre site Web, de sorte que le cookie Identifiant visiteur soit défini comme cookie propriétaire.
+Lorsque le cookie Analytics a été défini par le serveur de collecte de données, de nombreux clients ont configuré les enregistrements CNAME du serveur de collecte de données dans le cadre d’une [mise en œuvre de cookie propriétaire](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-first-party.translate.html) afin d’éviter des problèmes éventuels avec les navigateurs qui rejettent les cookies tiers. Ce processus configure votre domaine de serveur de collecte de données en fonction du domaine de votre site Web, de sorte que le cookie Identifiant visiteur soit défini comme cookie propriétaire.
 
 Puisque le service d’identification des visiteurs définit à l’aide de JavaScript le cookie visiteur directement sur le domaine du site Web actif, cette configuration n’est plus nécessaire pour définir les cookies propriétaires.
 
