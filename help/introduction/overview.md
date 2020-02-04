@@ -1,18 +1,18 @@
 ---
-description: Le rôle du service Experience Platform Identity dans Adobe Experience Cloud.
-seo-description: Le service Experience Platform Identity active le framework d’identification courant pour les services principaux, les solutions, les attributs du client et les audiences d’Experience Cloud.
+description: Le rôle du service Experience Cloud Identity dans Adobe Experience Cloud.
+seo-description: Le service Experience Cloud Identity active le framework d’identification courant pour les services principaux, les solutions, les attributs du client et les audiences d’Experience Cloud.
 seo-title: Aperçu du service d’ID
 title: Aperçu
 uuid: null
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
 
 # Aperçu
 
-Le service Experience Platform Identity active le framework d’identification courant pour les services principaux, les solutions, les attributs du client et les audiences d’Experience Cloud dans le service Platform Identity. (Vous pouvez voir des références à d’anciens noms ou acronymes, tels que le service Experience Cloud ID, ECID, le service Marketing Cloud ID, MID, et le service d’identification des visiteurs). Pour ce faire, le service Identity attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
+Le service Experience Cloud Identity Service permet la structure d’identification commune pour les services principaux Experience Cloud, les solutions, les attributs du client et les audiences dans Platform Identity Service. (Vous pouvez voir des références à d’anciens noms ou acronymes, tels que le service Experience Cloud ID, ECID, le service Marketing Cloud ID, MID, et le service d’identification des visiteurs). Pour ce faire, le service Identity attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
 
 ![](assets/ecid.png)
 
