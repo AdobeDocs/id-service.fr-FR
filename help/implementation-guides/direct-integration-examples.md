@@ -1,19 +1,19 @@
 ---
 description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un identifiant unique et persistant pour les visiteurs de votre site.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un identifiant unique et persistant pour les visiteurs de votre site.
 seo-title: Cas d’utilisation de l’intégration directe
 title: Cas d’utilisation de l’intégration directe
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
 
 ---
 
 
 # Cas d’utilisation de l’intégration directe {#direct-integration-use-cases}
 
-Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un identifiant unique et persistant pour les visiteurs de votre site.
+Ces exemples couvrent deux cas d’utilisation courants liés à une intégration directe et à l’ID Experience Cloud (ECID ou MID). Cet identifiant est unique et persistant pour les visiteurs de votre site.
 
 >[!TIP]
 >
