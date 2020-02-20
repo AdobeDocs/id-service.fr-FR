@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
+translation-type: tm+mt
+source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
@@ -106,7 +106,8 @@ source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
    + [Questions fréquentes sur Analytics et le service d’ID](faq-intro/analytics-faq.md)
    + [Questions fréquentes sur d’autres solutions Experience Cloud](faq-intro/other-faq.md)
 + Notes de mise à jour du service d’ID {#release-notes}
-   + [Notes de mise à jour 2019](release-notes/release-notes.md)
+   + [Notes de mise à jour 2020](release-notes/release-notes.md)
+   + [Notes de mise à jour 2019](release-notes/notes-2019.md)
    + [Notes de mise à jour 2018](release-notes/notes-2018.md)
    + [Notes de mise à jour 2017](release-notes/notes-2017.md)
    + [Notes de mise à jour 2016](release-notes/notes-2016.md)
