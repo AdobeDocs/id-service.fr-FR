@@ -1,12 +1,12 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
 seo-title: Notes de mise à jour 2019
 title: Notes de mise à jour 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
+source-git-commit: ba84c4dac9023ab13f5176c5665adbbdaeb00d33
 
 ---
 
@@ -38,6 +38,20 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
 **Prise en charge d’ITP 2.1**. Si un serveur de suivi est défini dans un CNAME propriétaire, un nouveau cookie (s_ecid) est placé avec la valeur ECID. La bibliothèque ECID référence la valeur pour conserver l’identifiant au-delà de sept jours. Reportez-vous à la section [Méthodes de bibliothèque ECID dans un univers ITP Safari](/help/reference/ecid-library-methods.md).
 
 **Correction d’un bogue pour la configuration de secureCookie.**
+
+## Version 4.1
+
+Mise à jour `publishDestinations` par nouveau changement d’API. Avec cette mise à jour, les informations du référent de la page peuvent être exposées pendant la synchronisation ID, si nécessaire. (CORE-23693)
+
+## Version 4.2
+
+Prise en charge du module externe Audience Manager pour IAB TCF, disponible via l’objet d’inclusion ECID.
+
+**Correctifs**
+
+* IAB + OptIn ne parvient pas à obtenir le MID pour les clients qui reviennent (CORE-26022)
+* Correction d’un bogue sur la configuration de l’inclusion doOptInApply dans la gestion dynamique des balises (DTM-12958).
+* L’exclusion ECID désactive les synchronisations d’ID (CORE-23814)
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
