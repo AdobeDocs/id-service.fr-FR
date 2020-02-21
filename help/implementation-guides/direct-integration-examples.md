@@ -5,7 +5,7 @@ seo-description: Les exemples suivants présentent 2 cas d’utilisation couran
 seo-title: Cas d’utilisation de l’intégration directe
 title: Cas d’utilisation de l’intégration directe
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 # Cas d’utilisation de l’intégration directe {#direct-integration-use-cases}
 
-Ces exemples couvrent deux cas d’utilisation courants liés à une intégration directe et à l’ID Experience Cloud (ECID ou MID). Cet identifiant est unique et persistant pour les visiteurs de votre site.
+Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (ECID ou MID). Cet ID est un identifiant unique et persistant pour les visiteurs de votre site.
 
 >[!TIP]
 >
@@ -23,7 +23,7 @@ Ces exemples couvrent deux cas d’utilisation courants liés à une intégratio
 
 
 
-## Cas d’utilisation 1 : je dispose d’un ID Experience Cloud, mais je souhaite transmettre mes identifiants visiteur et définir un état d’authentification {#section-a67d89a343754d1286d03cf08d34b806}
+## Cas d’utilisation 1 : je dispose d’un Experience Cloud ID, mais je souhaite transmettre mes identifiants visiteur et définir un état d’authentification {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
