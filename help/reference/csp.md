@@ -5,7 +5,7 @@ seo-description: Une stratégie de sécurité du contenu (Content Security Polic
 seo-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7255228470a59a537251c3a3eec686f52a2b76ec
 
 ---
@@ -52,14 +52,14 @@ Ajoutez les noms de domaine ou URL suivants à votre stratégie de sécurité du
    <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure <span class="codeph">*.tt.omtrdc.net</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Service d’ID Experience Cloud et Audience Manager</b> </p> </td> 
-   <td colname="col2"> <p>Modifiez votre fournisseur de services CSP pour inclure les domaines ci-dessous.</p> 
+   <td colname="col1"> <p> <b>Service Experience Cloud ID et Audience Manager</b> </p> </td> 
+   <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure les domaines ci-dessous :</p> 
    <p><ul>
    <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li></ul></p> <p>Les appels au domaine <span class="codeph"> demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local"> cookies et le service Experience Cloud Identity</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external"> Signification des appels vers le domaine Demdex</a>. </p> </td> </tr> 
+   <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li></ul></p> <p>Les appels au domaine <span class="codeph"> demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local"> cookies et le service Experience Cloud Identity</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.translate.html" format="https" scope="external"> Signification des appels vers le domaine Demdex</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Module externe Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure *.adobe.com. **Remarque** : si Activity Map était déjà installé avant janvier 2020, votre navigateur verra toujours une requête initiale vers *.omniture.com, mais il sera redirigé vers *.adobe.com. </p></td> 
@@ -69,6 +69,6 @@ Ajoutez les noms de domaine ou URL suivants à votre stratégie de sécurité du
 
 >[!MORELIKETHIS]
 >* [Référence des stratégies de sécurité du contenu](https://content-security-policy.com/)
->* [MDN : Stratégie de sécurité du contenu](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipédia : Stratégie de sécurité du contenu](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN : Stratégie de sécurité du contenu](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP)
+>* [Wikipédia : Stratégie de sécurité du contenu](https://fr.wikipedia.org/wiki/Content_Security_Policy)
 
