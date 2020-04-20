@@ -5,8 +5,8 @@ seo-description: Description des nouvelles fonctionnalités, des mises à jour e
 seo-title: Notes de mise à jour 2019
 title: Notes de mise à jour 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
 
@@ -17,12 +17,12 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
 
 ## Version 4.4.1
 
-Ajout d’une case à cocher d’approbation de pré-inclusion pour les analyses des médias dans l’extension Launch ECID (CORE-33185)
+Ajout d’une case à cocher d’approbation de pré-inclusion pour les analyses des médias dans l’extension Launch ECID.
 
 **Correctifs**
 
-* Problème avec l’analyse de la chaîne d’entrée preOptInApprovals de l’extension Launch ECID (CORE-34041)
-* Baisse des performances lors de l’utilisation de trackingServer (CORE-32387)
+* Problème avec l’analyse de la chaîne d’entrée preOptInApprovals de l’extension de lancement ECID.
+* Abandon des performances lors de l’utilisation de trackingServer.
 
 ## Version 4.4 {#version-4point4}
 
@@ -32,11 +32,11 @@ Ajout d’une case à cocher d’approbation de pré-inclusion pour les analyses
 
 **Correctifs, améliorations, avancées**
 
-* Nous avons fait une mise à jour de la configuration de `cookieDomain`. La bibliothèque ECID filtre désormais la chaîne vide `cookieDomain` dans `initConfig` et utilise le domaine de cookie de niveau supérieur, qui est renvoyé par la méthode getDomain. (CORE-29223)
-* Nous avons corrigé un bogue lié à `getVisitorValues` dans `localVisitor`. (CORE-31287)
-* Nous avons corrigé un bogue en raison duquel la valeur MCOPTOUT était incohérente dans le navigateur Safari, renvoyée par la méthode `getVisitorValue`. (CORE-29719)
+* Nous avons fait une mise à jour de la configuration de `cookieDomain`. La bibliothèque ECID filtre désormais la chaîne vide `cookieDomain` dans `initConfig` et utilise le domaine de cookie de niveau supérieur, qui est renvoyé par la méthode getDomain.
+* Nous avons corrigé un bogue lié à `getVisitorValues` dans `localVisitor`.
+* Nous avons corrigé un bogue en raison duquel la valeur MCOPTOUT était incohérente dans le navigateur Safari, renvoyée par la méthode `getVisitorValue`. 
 * Nous avons mis à jour la bibliothèque Opt-in par l’ajout de `optIn.off` pour se désabonner des événements.
-* Nous avons corrigé un bogue lié à la fonction setTimeout, en raison duquel `setTimeout` violait la stratégie de sécurité du contenu (CSP) sur certains sites clients. (CORE-30623)
+* Nous avons corrigé un bogue lié à la fonction setTimeout, en raison duquel `setTimeout` violait la stratégie de sécurité du contenu (CSP) sur certains sites clients.
 
 ## Version 4.3 {#version-4point3}
 
@@ -46,7 +46,7 @@ Ajout d’une case à cocher d’approbation de pré-inclusion pour les analyses
 
 ## Version 4.1
 
-Mise à jour de `publishDestinations` par nouveau changement d’API. Avec cette mise à jour, les informations du référent de la page peuvent être exposées pendant la synchronisation ID, si nécessaire. (CORE-23693)
+Mise à jour de `publishDestinations` par nouveau changement d’API. Avec cette mise à jour, les informations du référent de la page peuvent être exposées pendant la synchronisation ID, si nécessaire.
 
 ## Version 4.2
 
@@ -54,9 +54,9 @@ Prise en charge du module externe Audience Manager pour IAB TCF, disponible via
 
 **Correctifs**
 
-* IAB + OptIn ne parvient pas à obtenir le MID pour les clients qui reviennent (CORE-26022)
-* Correction d’un bogue sur la configuration de l’inclusion doesOptInApply dans DTM (DTM-12958).
-* L’exclusion ECID désactive les synchronisations d’ID (CORE-23814)
+* IAB + OptIn ne parvient pas à obtenir le MID pour les clients qui reviennent.
+* Correction d’un bogue sur la configuration opt-in doOptInApply dans la gestion dynamique des balises.
+* L’exclusion ECID désactive les synchronisations d’ID.
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
@@ -67,4 +67,4 @@ Prise en charge du module externe Audience Manager pour IAB TCF, disponible via
 | Élément | Description |
 |---|---|
 | L’indicateur `disableIdSyncs` ne fonctionne pas après une certaine chaîne. | Corrigé. Les valeurs définies du `disableidSyncs` paramètre pour la `getInstance` fonction sont désormais honorées. |
-| Les iFrames tiers n’obtiennent pas ECID. | Correction d’ECID sous Safari Mobile et dans plusieurs iFrames ne fonctionnant pas. |
+| Les iFrames tiers ne reçoivent pas d’ECID | Correction de l’ECID sur Safari Mobile et des ECID dans divers iFrames qui ne fonctionnaient pas. |
