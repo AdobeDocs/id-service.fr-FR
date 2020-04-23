@@ -5,7 +5,7 @@ seo-description: Description des nouvelles fonctionnalités, des mises à jour e
 seo-title: Notes de mise à jour 2019
 title: Notes de mise à jour 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
@@ -21,8 +21,8 @@ Ajout d’une case à cocher d’approbation de pré-inclusion pour les analyses
 
 **Correctifs**
 
-* Problème avec l’analyse de la chaîne d’entrée preOptInApprovals de l’extension de lancement ECID.
-* Abandon des performances lors de l’utilisation de trackingServer.
+* Problème avec l’analyse de la chaîne d’entrée preOptInApprovals de l’extension Launch ECID.
+* Baisse des performances lors de l’utilisation de trackingServer.
 
 ## Version 4.4 {#version-4point4}
 
@@ -55,7 +55,7 @@ Prise en charge du module externe Audience Manager pour IAB TCF, disponible via
 **Correctifs**
 
 * IAB + OptIn ne parvient pas à obtenir le MID pour les clients qui reviennent.
-* Correction d’un bogue sur la configuration opt-in doOptInApply dans la gestion dynamique des balises.
+* Correction d’un bogue sur la configuration de l’inclusion doesOptInApply dans la gestion dynamique des balises.
 * L’exclusion ECID désactive les synchronisations d’ID.
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
@@ -67,4 +67,4 @@ Prise en charge du module externe Audience Manager pour IAB TCF, disponible via
 | Élément | Description |
 |---|---|
 | L’indicateur `disableIdSyncs` ne fonctionne pas après une certaine chaîne. | Corrigé. Les valeurs définies du `disableidSyncs` paramètre pour la `getInstance` fonction sont désormais honorées. |
-| Les iFrames tiers ne reçoivent pas d’ECID | Correction de l’ECID sur Safari Mobile et des ECID dans divers iFrames qui ne fonctionnaient pas. |
+| Certains iFrames tiers ne disposent pas de l’ECID. | Correction de l’ECID sur Safari Mobile et des ECID dans divers iFrames qui ne fonctionnaient pas. |
