@@ -6,7 +6,7 @@ seo-title: CNAME de collecte de données et suivi inter-domaines
 title: CNAME de collecte de données et suivi inter-domaines
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
 
 ---
 
@@ -31,19 +31,17 @@ Les clients qui disposent d’une propriété Web unique (un seul domaine) peuve
 
 Toutefois, l’utilisation d’un CNAME pour la collecte de données vous permet par ailleurs d’effectuer un suivi sur les visiteurs entre un domaine d’entrée principal et d’autres domaines dans les navigateurs qui n’acceptent pas les cookies tiers. Les clients qui disposent de plusieurs propriétés Web (plusieurs domaines) peuvent avoir intérêt à préserver un CNAME de collecte de données. La section suivante explique comment fonctionne le suivi entre visiteurs de domaines.
 
-## Suivi inter-domaines à l’aide de CNAME – Fonctionnement {#section-78925af798e24917b9abed79de290ad9}
+## Suivi entre domaines {#section-78925af798e24917b9abed79de290ad9}
 
-En raison de la façon dont les cookies propriétaires peuvent être utilisés dans un contexte tiers dans Apple Safari et dans certains autres navigateurs, un CNAME vous permet d’effectuer un suivi sur les clients entre un domaine principal et d’autres domaines utilisant le même serveur de suivi.
+Le service d’identification des visiteurs utilise demdex.net comme domaine pour le suivi des visiteurs entre domaines (mais dans la même société de propriété) si les paramètres de confidentialité et de navigateur de l’utilisateur le permettent.
 
-Supposons que votre site principal se situe à l’adresse `mymainsite.com`. Vous avez configuré l’enregistrement CNAME pour pointer vers votre serveur de collecte de données sécurisé : `smetrics.mymainsite.com`.
+Un CNAME ne fournit pas d’avantages interdomaines supplémentaires. Supposons que votre site principal se situe à l’adresse `mymainsite.com`. Vous avez configuré l’enregistrement CNAME pour pointer vers votre serveur de collecte de données sécurisé : `smetrics.mymainsite.com`.
 
 Lorsqu’un visiteur se rend sur le site `mymainsite.com`, le cookie du service d’ID est défini par le serveur de collecte de données. Cela est autorisé dans la mesure où le domaine du serveur de collecte de données correspond à celui du site Web. C’est ce que l’on désigne sous le nom d’utilisation d’un *contexte propriétaire* ou plus simplement de *cookie propriétaire*.
 
-Si vous utilisez le même serveur de collecte de données sur d’autres sites (`myothersiteA.com` et `myothersiteB.com` par exemple), et qu’un visiteur se rend ultérieurement sur ces sites, le cookie qui avait été défini au cours de la visite de `mymainsite.com` est envoyé dans la demande HTTPS adressée au serveur de collecte de données (pour rappel, les navigateurs envoient tous les cookies d’un domaine avec l’ensemble des demandes HTTPS adressées à ce domaine, même si ce dernier ne correspond pas au domaine du site Web en cours). On parle, dans ce cas, d’utilisation d’un *contexte tiers* ou plus simplement de *cookie tiers*. Cela permet de réutiliser le même identifiant visiteur sur ces autres domaines. Notez que les navigateurs gèrent les cookies dans des contextes tiers différents des cookies propriétaires.
+Si vous utilisez le même serveur de collecte de données sur d’autres sites (`myothersiteA.com` et `myothersiteB.com` par exemple), et qu’un visiteur se rend ultérieurement sur ces sites, le cookie qui avait été défini au cours de la visite de `mymainsite.com` est envoyé dans la demande HTTPS adressée au serveur de collecte de données (pour rappel, les navigateurs envoient tous les cookies d’un domaine avec l’ensemble des demandes HTTPS adressées à ce domaine, même si ce dernier ne correspond pas au domaine du site Web en cours). Il s’agit de ce que l’on appelle l’utilisation d’un cookie dans un contexte ** tiers ou simplement d’un cookie ** tiers, même si vous utilisez un CNAME. Adobe recommande un CNAME pour chaque domaine unique.
 
 *Remarque : Safari bloque tous les cookies dans le contexte tiers, quelle que soit la manière dont ils sont définis.*
-
-Par conséquent, pour qu’un visiteur soit identifié entre plusieurs domaines, votre domaine de collecte doit être un domaine que les utilisateurs visitent couramment. En l’absence de domaine *courant* à utiliser comme domaine de collecte de données, la gestion d’un enregistrement CNAME ne présente aucun avantage sur le plan inter-domaines. Si le site d’accès principal n’est pas le premier site visité, les visiteurs sont identifiés différemment sur le site secondaire et sur le site principal.
 
 ## Activation de la prise en charge de la collecte de données propriétaires (CNAME) avec le service Experience Cloud Identity {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
