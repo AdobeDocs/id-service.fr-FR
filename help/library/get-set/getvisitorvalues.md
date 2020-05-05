@@ -1,12 +1,12 @@
 ---
 description: Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -37,7 +37,7 @@ Pour plus d’informations, voir les cas d’utilisation et définitions suivant
 
 ## Cas d’utilisation 1 : demander le jeu de données par défaut {#section-36a31683558742a5915db3a391e09f7b}
 
-Ce code renvoie le jeu de données standard. Vos requête et réponse pourraient ressembler aux exemples suivants.
+Ce code renvoie le jeu de données standard. Votre demande et votre réponse peuvent ressembler aux exemples suivants.
 
 ```js
 //Call the ID service 
@@ -62,7 +62,7 @@ Dans l’exemple de réponse par défaut, certaines valeurs ont été raccourcie
 
 ## Cas d’utilisation 2 : demander le jeu de données personnalisé {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de `visitor.FIELDS` l’énumération. Dans ce cas, nous ne voulons que l’Experience Cloud ID (MCID) et l’Analytics ID (MCAID) du visiteur. Vos requête et réponse pourraient ressembler aux exemples suivants.
+Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de `visitor.FIELDS` l’énumération. Dans ce cas, nous ne voulons que l’ID d’expérience utilisateur (MCID) et l’ID Analytics (MCAID) du visiteur. Votre demande et votre réponse peuvent ressembler aux exemples suivants.
 
 ```js
 //Call the ID service 
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
 ```
 
-L’exemple de réponse personnalisée renvoie uniquement les ID indiqués dans la requête.
+L’exemple de réponse personnalisé renvoie uniquement les identifiants spécifiés dans la requête.
 
 ```js
 //Formatted IDs in JSON response 
@@ -84,7 +84,7 @@ L’exemple de réponse personnalisée renvoie uniquement les ID indiqués dans 
 
 ## Paramètres de réponse définis {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de `visitor.FIELDS` l’énumération. Notez que cette méthode renvoie une chaîne vide en l’absence de valeurs pour une variable spécifique.
+Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de `visitor.FIELDS` l’énumération. Remarque : cette méthode renvoie une chaîne vide si aucune valeur n’est définie pour une variable particulière.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -100,7 +100,7 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>ID de zone géographique de la collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données spécifique du service d’ID. </p> <p>Voir <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données </a> (DCS Region IDs, Locations, and Host Names) et <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col2"> <p>ID de la région de collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données du service d’ID particulier. </p> <p>Voir <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données </a> (DCS Region IDs, Locations, and Host Names) et <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,11 +108,11 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud ID du visiteur. </p> <p>Voir <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud Identity </a>. </p> </td> 
+   <td colname="col2"> <p>ID d’expérience du visiteur. </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
-   <td colname="col2"> <p>Indicateur qui signale si un visiteur a exercé son droit d’opposition à la collecte de données. </p> <p>Les valeurs incluent : </p> <p> 
+   <td colname="col2"> <p>Indicateur qui indique si un visiteur a choisi de ne pas participer à la collecte de données. </p> <p>Les valeurs sont les suivantes : </p> <p> 
      <ul id="ul_E82431DE12B449F8822499364B363798"> 
       <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph"> 'isoptedout-true'</span> : un visiteur a exercé son droit d’opposition à la collecte de données. </li> 
       <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph"> 'isoptedout-true'</span> : un visiteur n’a pas exercé son droit d’opposition à la collecte de données. </li> 
