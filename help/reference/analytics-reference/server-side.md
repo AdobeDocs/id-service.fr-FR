@@ -1,12 +1,12 @@
 ---
 description: Dans certaines mises en œuvre, les identifiants visiteur sont transmis de JavaScript à un serveur, de sorte que des événements Analytics supplémentaires (tels qu’un achat) puissent être envoyés par le serveur.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: Dans certaines mises en œuvre, les identifiants visiteur sont transmis de JavaScript à un serveur, de sorte que des événements Analytics supplémentaires (tels qu’un achat) puissent être envoyés par le serveur.
 seo-title: Mise en œuvre côté serveur alliée à JavaScript
 title: Mise en œuvre côté serveur alliée à JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Dans certaines mises en œuvre, les identifiants visiteur sont transmis de JavaScript à un serveur, de sorte que des événements Analytics supplémentaires (tels qu’un achat) puissent être envoyés par le serveur.
 
-L’API du service d’ID fournit les méthodes ([getMarketingCloudVisitorID](../../library/get-set/getmcvid.md) et [getAnalyticsVisitorID](../../library/get-set/getanalyticsvisitorid.md)) permettant de récupérer les valeurs d’ID qui peuvent alors être transmises au serveur.
+L’API du service d’ID fournit les méthodes, [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md) et [getAnalyticsVisitorID](../../library/get-set/getanalyticsvisitorid.md), pour récupérer les valeurs d’ID qui peuvent ensuite être transmises au serveur.
 
 Veillez à rechercher les identifiants visiteur Experience Cloud et Analytics et envoyez les deux identifiants (s’ils existent) afin de vous assurer que les données envoyées sont associées au profil du visiteur Analytics existant.
 
@@ -29,7 +29,7 @@ Incluez l’identifiant visiteur Analytics (s’il est défini) dans l’éléme
 
 Incluez l’identifiant visiteur Experience Cloud dans l’élément `<marketingCloudVisitorID>`.
 
-Voir [Balises XML prises en charge](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
+Voir Balises [XML](https://www.adobe.io)prises en charge.
 
 ## AppMeasurement pour Java {#section-d664b94934924d048300d9c2b6560085}
 
