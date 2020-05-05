@@ -1,12 +1,12 @@
 ---
 description: Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
 seo-title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -17,9 +17,9 @@ Avant de déployer le service Experience Cloud Identity, vous devez comprendre
 
 Répondez aux questions de cette section pour déterminer quelles autres étapes de migration vous devez suivre.
 
-## Avez-vous un CNAME de collecte de données ?
+## Disposez-vous d’un CNAME de collecte de données ?
 
-Nombre de clients peuvent procéder à la migration hors d’un CNAME de collecte de données dans le cadre de la migration du service d’ID.
+De nombreux clients peuvent migrer hors d’un CNAME de collecte de données dans le cadre de la migration du service d’ID.
 
 <table id="table_13F7C1E3D64D4F86B0149C9D3B54AADD"> 
  <thead> 
@@ -31,7 +31,7 @@ Nombre de clients peuvent procéder à la migration hors d’un CNAME de collect
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Avec un CNAME </p> </td> 
-   <td colname="col2"> <p>Reportez-vous à la question suivante pour décider si vous devez effectuer la migration hors d’un CNAME de collecte de données. </p> </td> 
+   <td colname="col2"> <p>Reportez-vous à la question suivante pour déterminer si vous devez migrer hors d’un CNAME de collecte de données. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sans CNAME </p> </td> 
@@ -40,14 +40,14 @@ Nombre de clients peuvent procéder à la migration hors d’un CNAME de collect
  </tbody> 
 </table>
 
-## Si vous avez un CNAME de collecte de données, avez-vous plusieurs domaines ?
+## Si vous disposez d’un CNAME de collecte de données, avez-vous plusieurs domaines ?
 
-Si plusieurs domaines envoient des données vers la *même suite de rapports*, il est recommandé d’utiliser un CNAME de collecte de données pour effectuer le suivi des visiteurs sur les domaines. Si vous collectez des données sur un seul domaine, il n’y a aucun avantage à préserver un CNAME de collecte de données.
+Si vous avez plusieurs domaines qui envoient des données à la *même suite* de rapports, nous vous recommandons de collecter les données avec un CNAME. Vous pouvez ainsi effectuer le suivi des visiteurs entre les domaines. Si vous collectez des données sur un seul domaine, la gestion d’un CNAME de collecte de données n’offre aucun avantage.
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Collecte des données sur </th> 
+   <th colname="col1" class="entry"> Collecte de données depuis </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -58,12 +58,12 @@ Si plusieurs domaines envoient des données vers la *même suite de rapports*, i
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un seul domaine </p> </td> 
-   <td colname="col2"> <p>Lorsque vous utilisez un seul domaine, vous pouvez effectuer la migration hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Si le CNAME fonctionne, il n’y a toutefois aucune raison de le modifier. </p> <p>Si toutefois vous le supprimez : </p> 
+   <td colname="col2"> <p>L’utilisation d’un seul domaine vous permet de migrer hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Toutefois, il n’est pas nécessaire de modifier votre CNAME si celui-ci fonctionne. </p> <p>Si vous supprimez le CNAME : </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Vérifiez que le nouveau serveur de suivi est <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">compatible avec RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Vérifiez que le nouveau serveur de suivi est <a href="https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatible avec RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passez du CNAME à un serveur de suivi RDC quelques mois avant la migration vers le service <span class="keyword">Experience Cloud</span> ID. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>N’utilisez pas</i> de serveur de suivi <span class="codeph">*.2o7.net</span>. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Contactez le <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">service à la clientèle</a> pour configurer la migration des visiteurs. Cela permet d’assurer des décomptes cohérents des visiteurs. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Contactez le <a href="https://helpx.adobe.com/fr/marketing-cloud/contact-support.html" format="https" scope="external">service à la clientèle</a> pour configurer la migration des visiteurs. Cela permet d’assurer des décomptes cohérents des visiteurs. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -76,7 +76,7 @@ Si vous disposez de plusieurs fichiers JavaScript Analytics ou d’applications 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Collecte des données à l’aide de </th> 
+   <th colname="col1" class="entry"> Collecte de données avec </th> 
    <th colname="col2" class="entry"> Actions requises </th> 
   </tr> 
  </thead>
@@ -91,14 +91,14 @@ Si vous disposez de plusieurs fichiers JavaScript Analytics ou d’applications 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un seul fichier JavaScript Analytics </p> </td> 
-   <td colname="col2"> <p>Vous pouvez mettre à jour votre fichier JavaScript unique afin d’utiliser le service d’identification des visiteurs sans période de grâce. </p> </td> 
+   <td colname="col2"> <p>Vous pouvez mettre à jour votre fichier JavaScript unique pour utiliser le service d’identification des visiteurs sans période de grâce. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Utilisez-vous des méthodes de collecte de données non prises en charge ?
+## Utilisez-vous des méthodes de collecte de données non prises en charge ?
 
-Vous devrez peut-être mettre à jour la façon dont vous effectuez un suivi sur les liens ou migrer hors de Silverlight.
+Vous devrez peut-être mettre à jour la façon dont vous effectuez le suivi des liens ou migrer hors de Silverlight.
 
 <table id="table_A72AEB92F48345DD83F136B9989F4EF9"> 
  <thead> 
@@ -114,11 +114,11 @@ Vous devrez peut-être mettre à jour la façon dont vous effectuez un suivi sur
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
-   <td colname="col2"> <p>Si les visiteurs peuvent accéder au contenu Silverlight et aux autres sections de votre site qui utilisent le service <span class="keyword">Experience Cloud</span> ID, vous devez migrer hors de Silverlight. Silverlight n’est pas pris en charge par le service d’ID. </p> <p> Si vous effectuez le suivi d’un lecteur vidéo Silverlight, le fournisseur fournit généralement des API JavaScript que vous pouvez utiliser à la place. </p> </td> 
+   <td colname="col2"> <p>Si les visiteurs peuvent accéder au contenu Silverlight et aux autres sections de votre site qui utilisent le service <span class="keyword">Experience Cloud</span> ID, vous devez migrer hors de Silverlight. Silverlight n’est pas pris en charge par le service d’ID. </p> <p> Si vous effectuez le suivi d’un lecteur vidéo Silverlight, le fournisseur fournit probablement des API JavaScript que vous pouvez utiliser à la place. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Balises d’image codées de manière irréversible </p> </td> 
-   <td colname="col2"> <p>Mettez ces liens à jour pour utiliser JavaScript. </p> </td> 
+   <td colname="col1"> <p>Balises d’image codées en dur </p> </td> 
+   <td colname="col2"> <p>Mettez à jour les liens codés en dur pour utiliser JavaScript. </p> </td> 
   </tr> 
  </tbody> 
 </table>
