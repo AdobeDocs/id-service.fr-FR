@@ -1,19 +1,19 @@
 ---
-description: getInstance renvoie un objet d’identification visiteur pour l’ID d’organisation Experience Cloud spécifié. Cela est requis pour initialiser l’objet d’identification visiteur fourni à AppMeasurement par le biais de s.visitor.
-keywords: Service d’identification
-seo-description: getInstance renvoie un objet d’identification visiteur pour l’ID d’organisation Experience Cloud spécifié. Cela est requis pour initialiser l’objet d’identification visiteur fourni à AppMeasurement par le biais de s.visitor.
+description: getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experience Cloud spécifié. Ceci est nécessaire pour initialiser l’objet ID de visiteur fourni à AppMeasurement par le biais de s.visiteur.
+keywords: ID Service
+seo-description: getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experience Cloud spécifié. Ceci est nécessaire pour initialiser l’objet ID de visiteur fourni à AppMeasurement par le biais de s.visiteur.
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # getInstance{#getinstance}
 
-getInstance renvoie un objet d’identification visiteur pour l’ID d’organisation Experience Cloud spécifié. Cela est requis pour initialiser l’objet d’identification visiteur fourni à AppMeasurement par le biais de s.visitor.
+getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experience Cloud spécifié. Ceci est nécessaire pour initialiser l’objet ID de visiteur fourni à AppMeasurement par le biais de s.visiteur.
 
 **Syntaxe**
 
@@ -33,7 +33,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*N’instanciez pas* la fonction Visitor avec `var visitor = new Visitor`. Vous devez utiliser l’appel de fonction approprié indiqué ici. S’applique à la bibliothèque de code [!UICONTROL VisitorAPI.js] version 3.0 ou ultérieure.
+>*N’instanciez pas* la fonction Visitor avec `var visitor = new Visitor`. Vous devez utiliser l’appel de fonction approprié indiqué ici. Applies to [!UICONTROL VisitorAPI.js] code library v3.0 or higher.
 
 **ActionScript/Flash**
 
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Si `getInstance` ne trouve pas d’instance existante, une instance est créée et renvoyée. This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
+Si `getInstance` ne trouve pas d’instance existante, une instance est créée et renvoyée. Cette fonction est similaire à la [`s_gi()` fonction ](https://docs.adobe.com/content/help/en/analytics/implementation/vars/functions/s-gi.html) de [!DNL AppMeasurement].
 
 **Utilisation courante**
 
