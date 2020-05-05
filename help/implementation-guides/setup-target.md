@@ -1,19 +1,19 @@
 ---
-description: Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
-keywords: Service d’identification
-seo-description: Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+description: Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser la gestion dynamique des balises pour mettre en oeuvre le service d’ID. La gestion dynamique des balises simplifie le processus d’implémentation et assure automatiquement le placement et le séquencement du code corrects.
+keywords: ID Service
+seo-description: Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser la gestion dynamique des balises pour mettre en oeuvre le service d’ID. La gestion dynamique des balises simplifie le processus d’implémentation et assure automatiquement le placement et le séquencement du code corrects.
 seo-title: Mise en œuvre du service Experience Cloud Identity pour Target
 title: Mise en œuvre du service Experience Cloud Identity pour Target
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Mise en œuvre du service Experience Cloud Identity pour Target{#implement-the-experience-cloud-id-service-for-target}
 
-Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser DTM pour mettre en œuvre le service d’ID. DTM facilite le workflow de mise en œuvre et assure automatiquement le placement et le séquencement adéquats du code.
+Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, nous vous recommandons vivement d’utiliser la gestion dynamique des balises pour mettre en oeuvre le service d’ID. La gestion dynamique des balises simplifie le processus d’implémentation et assure automatiquement le placement et le séquencement du code corrects.
 
 >[!IMPORTANT]
 >
@@ -25,17 +25,17 @@ Ces instructions concernent les clients de Target qui souhaitent utiliser le ser
 
 ## Étape 1 : Obtention du code du service d’ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Le [!UICONTROL service d’ID] requiert la bibliothèque de code `VisitorAPI.js`. Pour obtenir ce code, contactez le [service à la clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Le [!UICONTROL service d’ID] requiert la bibliothèque de code `VisitorAPI.js`. Contactez le service à la [clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir ce code.
 
 ## Étape 2 : Ajout de la fonction Visitor.getInstance au code du service d’ID {#section-287ef2958e9f43858fe9d630ae519e22}
 
-**Partie 1 : Copiez la fonction Visitor.getInstance ci-dessous**
+**Partie 1 : Copiez la fonction Visiteur.getInstance ci-dessous**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE"); 
 ```
 
-**Partie 2 : Ajoutez le code de la fonction au fichier VisitorAPI.js**
+**Partie 2 : Ajouter le code de la fonction au fichier VisitorAPI.js**
 
 Placez la `Visitor.getInstance` fonction à la fin du fichier, après le bloc de code. Le fichier modifié doit ressembler à celui-ci :
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## Étape 3 : Ajout de l’ID d’organisation Experience Cloud à Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par [!DNL Experience Cloud] l’ID d’organisation. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver dans la page [!DNL Experience Cloud] d’administration. Voir également [Administration – Services principaux](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). La fonction modifiée peut ressembler à l’exemple ci-après.
+Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par [!DNL Experience Cloud] l’ID d’organisation. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver dans la page [!DNL Experience Cloud] d’administration. Voir aussi [Administration - Services](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html)principaux. La fonction modifiée peut ressembler à l’exemple ci-après.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
@@ -72,7 +72,7 @@ Vous pouvez tester et déployer les éléments comme suit.
 
 **Tests et vérification**
 
-Pour tester la mise en œuvre du service d’ID :
+Pour tester la mise en oeuvre du service d’ID :
 
 * Recherchez le cookie AMCV dans le domaine où est hébergée votre page.
 * Vérifiez que `mboxMCGVID` apparaît dans la requête [!DNL Target] et qu’il contient l’[!DNL Experience Cloud] ID (MID).
@@ -81,4 +81,4 @@ Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md
 
 **Déploiement**
 
-Déployez votre code une fois qu’il a réussi les tests.
+Déployez votre code une fois qu’il a réussi le test.
