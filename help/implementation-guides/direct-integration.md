@@ -1,19 +1,19 @@
 ---
-description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
-keywords: Service d’identification
-seo-description: Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
+description: Cette implémentation permet aux clients d’utiliser le service d’ID sur les périphériques qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d'autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, les exemples de code et les définitions.
+keywords: ID Service
+seo-description: Cette implémentation permet aux clients d’utiliser le service d’ID sur les périphériques qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d'autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, les exemples de code et les définitions.
 seo-title: Intégration directe avec le service Experience Cloud Identity
 title: Intégration directe avec le service Experience Cloud Identity
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Intégration directe avec le service Experience Cloud Identity {#direct-integration-with-the-experience-cloud-id-service}
 
-Cette mise en œuvre permet aux clients d’utiliser le service d’ID sur des appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les appareils tels que les consoles de jeu, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour la syntaxe, des exemples de code et des définitions.
+Cette implémentation permet aux clients d’utiliser le service d’ID sur les périphériques qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d&#39;autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, les exemples de code et les définitions.
 
 ## Syntaxe {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -21,19 +21,19 @@ Les appareils qui ne peuvent pas utiliser les bibliothèques de code VisitorAPI.
 
 ![](assets/directSyntax.png)
 
-Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d’ID, mais restez concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html) (Supported Attributes for DCS API Calls).
+Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d’ID, mais restez concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
-Le service d’ID prend en charge les appels HTTP et HTTPS. Utilisez HTTPS pour transmettre des données à partir d’une page sécurisée.
+Le service d’ID prend en charge les appels HTTP et HTTPS. Utilisez HTTPS pour transmettre des données à partir d’une page sécurisée.
 
 ## Exemple de requête {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-Votre requête pourrait ressembler à l’exemple ci-dessous. Les variables longues ont été raccourcies.
+Votre demande peut ressembler à l’exemple ci-dessous. De longues variables ont été raccourcies.
 
 ![](assets/directExample.png)
 
 ## Exemple de réponse {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-dessous. Votre réponse peut être différente.
+Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-dessous. Votre réponse peut être différente.
 
 ```js
 {
@@ -58,11 +58,11 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Domaine hérité contrôlé par <span class="keyword">Adobe</span>. Voir <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a> (Understanding Calls to the Demdex Domain). </p> </td> 
+   <td colname="col2"> <p>Domaine hérité contrôlé par <span class="keyword">Adobe</span>. Voir <a href="https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a> (Understanding Calls to the Demdex Domain). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Identifiant visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>ID de visiteur Experience Cloud. See <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
@@ -88,7 +88,7 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Le service d’ID est un système réparti géographiquement et équilibré en charge. L’ID identifie la zone géographique du centre de données traitant l’appel. Voir <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données</a> (DCS Region IDs, Locations, and Host Names). </p> </td> 
+   <td colname="col2"> <p>Le service d’ID est un système géographiquement réparti et dont la charge est équilibrée. L’identifiant identifie la région du centre de données qui gère l’appel. Voir <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données</a> (DCS Region IDs, Locations, and Host Names). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,11 +96,11 @@ Le service d’ID renvoie les données dans un objet JSON comme indiqué ci-des
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>Bloc chiffré de métadonnées JavaScript. Les restrictions de taille limitent le blob à 512 octets ou moins. </p> </td> 
+   <td colname="col2"> <p>Bloc chiffré de métadonnées JavaScript. Les contraintes de taille limitent l'objet blob à 512 octets ou moins. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
-   <td colname="col2"> <p>Obligatoire. Définit le numéro de version de l’API. Laissez ce paramètre défini sur <span class="codeph">d_ver=2</span>. </p> </td> 
+   <td colname="col2"> <p>Obligatoire. Cette opération définit le numéro de version de l’API. Laissez ce paramètre défini sur <span class="codeph">d_ver=2</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -119,7 +119,7 @@ Certains paramètres de réponse font partie de la requête et ont été défini
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>Intervalle de resynchronisation, indiqué en secondes. L’intervalle par défaut est de 604 800 secondes (7 jours). </p> </td> 
+   <td colname="col2"> <p>Intervalle de resynchronisation, défini en secondes. L’intervalle par défaut est de 604 800 secondes (7 jours). </p> </td> 
   </tr> 
  </tbody> 
 </table>
