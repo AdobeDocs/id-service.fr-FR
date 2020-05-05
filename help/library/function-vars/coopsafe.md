@@ -1,12 +1,12 @@
 ---
 description: Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -30,7 +30,7 @@ Contenu :
 Pour utiliser `isCoopSafe`, vous devez :
 
 * Utiliser le code du service d’ID version 2.4 ou ultérieure.
-* Participer à [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/fr_FR/mcdc/). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
+* Participez à l’opération [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
 
 * Collaborer avec votre conseiller [!DNL Adobe] afin de définir un indicateur de liste blanche ou de liste noire pour votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
@@ -54,8 +54,8 @@ Pour utiliser `isCoopSafe`, vous devez :
    <td colname="col1"> <p> <b>DIL sur des sites tiers</b> </p> </td> 
    <td colname="col2"> <p>Ajoutez <span class="codeph">isCoopSafe</span> au code de votre service d’ID pour l’utiliser sur des sites tiers sur lesquels vous : </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
-      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">ne pouvez pas vous assurer que les visiteurs authentifiés ont ou n’ont pas accepté les conditions d’utilisation ; </li> 
-      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">devez contrôler la manière dont ces données sont utilisées par Device Co-op pour créer la coopérative Device Graph. </li> 
+      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Impossible de s'assurer que les visiteurs authentifiés ont ou n'ont pas accepté les contrats de durée d'utilisation. </li> 
+      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Vous devez contrôler comment ces données sont utilisées par Device Co-op pour créer le graphique de l'appareil. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -73,7 +73,7 @@ Les options booléennes déterminent la manière dont les données des clients s
 
 **Exemple de code**
 
-Définissez le code comme ci-dessous lorsque le code de votre service d’ID instancie :
+Définissez cette variable lorsque votre code de service d’ID instancie :
 
 ```js
 var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
@@ -112,7 +112,7 @@ Les paramètres POST indiquent à [!DNL Experience Cloud] Device Co-op si cett
 
 ## API post-instanciation {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-Ces API permettent de remplacer l’état `isCoopSafe`. Elles sont nécessaires car elles permettent de modifier l’état post-instanciation/post-connexion d’un visiteur sur un site ou dans une application à une seule page dans le cas où la page ne s’actualise pas. Par exemple, vous devrez appeler ces API si un utilisateur s’authentifie auprès de votre site ou de votre application et accepte par la suite une règle des conditions d’utilisation qui autorise Device Co-op à utiliser ses données.
+Ces API permettent de remplacer l’état `isCoopSafe`. Elles sont nécessaires car elles vous permettent de modifier l’état post-instanciation/post-connexion d’un visiteur sur un site ou dans une application d’une seule page où la page n’est pas actualisée. Par exemple, vous devez appeler ces API si un utilisateur s’authentifie sur votre site ou application et accepte ultérieurement une stratégie de conditions d’utilisation qui permet à Device Co-op d’utiliser ses données.
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [Code DIL isCoopSafe](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.translate.html)
+>* [Code DIL isCoopSafe](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
