@@ -5,13 +5,16 @@ seo-description: Questions fréquemment posées sur les fonctionnalités et prob
 seo-title: FAQ sur le service d’ID
 title: FAQ sur le service d’ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '804'
+ht-degree: 100%
 
 ---
 
 
-# FAQ sur le service d’ID{#id-service-faqs}
+# FAQ sur le service d’ID {#id-service-faqs}
 
 Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
 
@@ -21,11 +24,11 @@ Questions fréquemment posées sur les fonctionnalités et problèmes liés à l
 
 Voir [Aperçu](../introduction/overview.md).
 
-**Pourquoi le service d’ID n’appelle-t-il pas pour récupérer l’ID Experience Cloud ?**
+**Pourquoi le service d’ID ne lance-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
-Cela peut être difficile à diagnostiquer. Vous pouvez notamment vérifier les en-têtes de stratégie de sécurité de contenu de votre site. Si vous avez une stratégie de sécurité stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. See [Content Security Policies and the Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Cela peut être difficile à diagnostiquer. Vous pouvez notamment vérifier les en-têtes de stratégie de sécurité de contenu de votre site. Si vous avez une stratégie de sécurité stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir la section [Stratégies de sécurité du contenu et service Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)
 
-**enregistrement de fichier VisitorAPI.js**
+**Enregistrement de fichier VisitorAPI.js**
 
 Vous pouvez rencontrer des problèmes si vous hébergez le fichier VisitorAPI.js comme fichier local dans des applications mobiles. Nous vous recommandons d’héberger le fichier sur un serveur Web.
 
@@ -35,43 +38,43 @@ Vous pouvez rencontrer des problèmes si vous hébergez le fichier VisitorAPI.js
 
 Placez la bibliothèque VisitorAPI.js dans la partie supérieure de la page, dans la `<head>` section d’en-tête du code. Vous pouvez ainsi vous assurer que l’appel d’un ID disparaît avant que le corps de la page ne commence à se charger. Cela maximise les chances de réussite d’un renvoi d’ID.
 
-The ID service call is asynchronous and is the only call to the [demdex.net domain](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
+L’appel du service d’ID est asynchrone et est le seul appel au [domaine demdex.net](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
 
 Pour les [!DNL Target] clients, le placement du code du service d’ID dans le corps `<body>` de la page peut augmenter les risques qu’il puisse bloquer un appel [!DNL Target]. Si vous devez placer le code du service d’ID dans le corps de votre page, il doit être placé après la balise `<body>` ouverte.
 
-**Le service d’ID effectue-t-il un appel serveur à chaque chargement de page ?**
+**Le service d’ID lance-t-il un appel serveur à chaque chargement de page ?**
 
-Non, cet appel ne se produit que lors du premier rendu de la page et une fois tous les 7 jours par la suite. En attendant, les appels au serveur ne sont pas requis. Le service d’ID fonctionne en mode client et n’a pas besoin d’effectuer un appel serveur pour renvoyer un identifiant.
+Non, cet appel ne se produit que lors du premier rendu de la page et une fois tous les 7 jours par la suite. En attendant, les appels au serveur ne sont pas requis. Le service d’ID fonctionne en mode côté client et n’a pas besoin d’effectuer un appel serveur pour renvoyer un identifiant.
 
 Voir [Aperçu](../introduction/overview.md).
 
-**Lors de l’utilisation du service d’ID, qu’est-ce qui peut ralentir le chargement des pages ou affecter l’expérience de l’utilisateur ?**
+**Lors de l’utilisation du service d’ID, qu’est-ce qui peut ralentir le chargement des pages ou affecter l’expérience de l’utilisateur ?**
 
-Il est difficile de cataloguer toutes les conditions possibles. Des milliards de clients de consommation se connectent à nos services et la grande variété d&#39;endroits et de comment ils se connectent affecte les performances. Par exemple :
+Il est difficile de cataloguer toutes les conditions possibles. Des milliards de clients finaux se connectent à nos services et la grande variété d’endroits et de méthodes utilisés pour ces connexions affecte les performances. Par exemple :
 
-* Les vitesses varient considérablement sur les réseaux mobiles. Ces réseaux souffrent également de la perte de signaux et de données ou de paquets vocaux.
-* La connectivité souffre sur les appareils connectés par WiFi dans diverses conditions. Par exemple, les problèmes de perte de paquets et de vitesse sont courants dans les lieux publics comme les cafés ou dans d&#39;autres environnements comme les avions où les paquets doivent rebondir par satellite avant d&#39;atteindre les réseaux terrestres.
+* Les vitesses varient considérablement sur les réseaux mobiles. Ces réseaux souffrent également de pertes de signal et de données ou de paquets vocaux.
+* La connectivité souffre sur les appareils connectés par WiFi dans diverses conditions. Par exemple, les problèmes de perte de paquets et de vitesse sont fréquents dans les lieux publics comme les cafés ou dans d’autres environnements comme les avions où les paquets doivent rebondir par satellite avant d’atteindre les réseaux terrestres.
 * Les réseaux locaux mal configurés peuvent avoir un impact négatif sur la connectivité et la vitesse.
-* Les périphériques clients peuvent rencontrer leurs propres problèmes, tels qu&#39;une faible mémoire, un échange de disque excessif ou une puissance CPU limitée par rapport aux charges de travail actuelles.
-* Les navigateurs mettent en file d&#39;attente et exécutent les appels de serveur distant et traitent même les réponses avec des règles différentes, selon le fabricant et la version du navigateur. Ce comportement affecte la vitesse et les performances.
+* Les périphériques clients peuvent rencontrer leurs propres problèmes, tels qu’une faible mémoire, un échange de disque excessif ou une puissance CPU limitée par rapport aux charges de travail actuelles.
+* Les navigateurs mettent en file d’attente et exécutent les appels de serveur distant et traitent même les réponses avec des règles différentes, selon le fabricant et la version du navigateur. Ce comportement affecte la vitesse et les performances.
 
-**Pouvez-vous nommer certaines améliorations apportées pour raccourcir les temps de chargement de page ?**
+**Pouvez-vous nommer certaines améliorations apportées pour raccourcir les temps de chargement de page ?**
 
-Par exemple, le thread cède. Nous avons introduit des threads produisant des résultats en cas de plusieurs demandes de synchronisation d&#39;ID. Nous avons observé dans des rapports de laboratoire que pour les clients qui effectuent plusieurs synchronisations d’identifiants, l’interface utilisateur serait bloquée en raison de nombreux calculs incessants du processeur. En conséquence, nous avons introduit des threads permettant de séparer les requêtes de synchronisation des identifiants de 100 msec chacune.
+Par exemple, la méthode dite du thread yielding. Nous avons introduit le thread yielding des résultats en cas de plusieurs demandes de synchronisation d’ID. Nous avons observé dans des rapports de laboratoire que pour les clients qui effectuent plusieurs synchronisations d’identifiants, l’interface utilisateur avait tendance à se bloquer en raison des nombreux calculs incessants effectués par le processeur. En conséquence, nous avons introduit le thread yielding permettant de séparer les requêtes de synchronisation des identifiants de 100 msec chacune.
 
-Cette modification améliore les performances des clients utilisant Visiteur 2.3.0+ et DIL 6.10+. Les améliorations des temps de chargement des pages sont illustrées dans la figure ci-dessous :
+Cette modification améliore les performances des clients utilisant Visitor 2.3.0+ et DIL 6.10+. Les améliorations des temps de chargement des pages sont illustrées dans la figure ci-dessous :
 
 ![](assets/id_sync_improvements_copy.png)
 
-**Les requêtes de navigateur utilisant CORS ou JSON-P affectent-elles les performances des pages ?**
+**Les requêtes de navigateur utilisant CORS ou JSON-P affectent-elles les performances des pages ?**
 
-Les demandes de ressources avec CORS sont généralement plus préférables qu’avec JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et déhiérarchisent les requêtes par rapport à d’autres appels synchrones et asynchrones sur la page. CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
+Les demandes de ressources avec CORS sont généralement préférables à celles effectuées avec JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et dépriorisent les requêtes par rapport à d’autres appels synchrones et asynchrones sur la page. CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
 Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
-**Le service d’ID prend-il en charge CORS ?**
+**Le service d’ID prend-il en charge CORS ?**
 
 Oui. Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
@@ -83,7 +86,7 @@ Oui. Voir [Prise en charge de la norme CORS dans le service Experience Cloud I
 
 Si vos exigences en matière de sécurité sont strictes, définissez la configuration de l’API du service d’ID sur `useCORSOnly: true`. Vous ne devez activer ce mode que si vous êtes certain que les visiteurs de votre site utilisent des navigateurs qui prennent en charge CORS.
 
-See [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) and [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Voir les sections [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) et [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORELIKETHIS]
 >
