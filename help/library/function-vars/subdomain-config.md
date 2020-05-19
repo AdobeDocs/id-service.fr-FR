@@ -5,13 +5,16 @@ seo-description: Définissez le nom de domaine par défaut utilisé par les appe
 seo-title: audienceManagerServer et audienceManagerServerSecure
 title: audienceManagerServer et audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '243'
+ht-degree: 100%
 
 ---
 
 
-# audienceManagerServer et audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
+# audienceManagerServer et audienceManagerServerSecure {#audiencemanagerserver-and-audiencemanagerserversecure}
 
 Définissez le nom de domaine par défaut utilisé par les appels au service Experience Cloud Identity en votre propre nom de sous-domaine avec ces configurations.
 
@@ -22,14 +25,14 @@ Définissez le nom de domaine par défaut utilisé par les appels au service Exp
 
 **Rôle**
 
-Normalement, le service [!DNL Experience Cloud] ID appelle [!DNL Adobe] à l’adresse `dpm.demdex.net`. Parfois, vous pouvez ne pas vouloir effectuer des appels à cette destination, car elle semble trop générique ou « tierce ». Pour que l’appel au service d’ID ressemble davantage à un appel propriétaire, utilisez ces configurations pour ajouter votre nom de [!DNL Audience Manager] sous-domaine à `demdex.net` comme indiqué ci-dessous. For more information about the `dpm.demdex.net` call, see [Understanding Calls to the Demdex Domain](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html).
+Normalement, le service [!DNL Experience Cloud] ID appelle [!DNL Adobe] à l’adresse `dpm.demdex.net`. Parfois, vous pouvez ne pas vouloir effectuer des appels à cette destination, car elle semble trop générique ou « tierce ». Pour que l’appel au service d’ID ressemble davantage à un appel propriétaire, utilisez ces configurations pour ajouter votre nom de [!DNL Audience Manager] sous-domaine à `demdex.net` comme indiqué ci-dessous. Pour plus d’informations sur l’appel à `dpm.demdex.net`, voir [Signification des appels vers le domaine Demdex](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html).
 
 **Conditions**
 
-Ces configurations nécessitent que vous utilisiez les éléments suivants :
+Ces configurations nécessitent que vous utilisiez les éléments suivants :
 
 * Le nom du [!DNL Audience Manager] sous-domaine de l’enregistrement pour votre société. Vérifiez ou obtenez ce nom auprès de votre conseiller.
-* The subdomain name associated with your [!UICONTROL Organization ID].
+* Le nom du sous-domaine associé à votre [!UICONTROL ID d’organisation].
 * *Les deux* paramètres de configuration portent le même nom de sous-domaine.
 
 **Exemple de code**
