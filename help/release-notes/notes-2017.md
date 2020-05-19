@@ -5,8 +5,11 @@ seo-description: Description des nouvelles fonctionnalités, des mises à jour e
 seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 
-Ces modifications sont également consignées dans les notes [de mise à jour d’](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html)Experience Cloud.
+Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html).
 
 >[!NOTE]
 >
@@ -50,12 +53,12 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 **Correctifs et autres modifications**
 
 * Correction d’un bogue lié à Chrome en raison duquel le service d’ID lançait une erreur en cliquant sur le bouton Précédent dans ce navigateur.
-* Le service d’ID déclenche à nouveau la synchronisation des identifiants lorsque l’identifiant de région dans la réponse d’appel du événement change.
-* Added new documentation, [Content Security Policies and the Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), that explains how to whitelist calls to Adobe domains used by the ID service.
+* Le service d’ID déclenche à nouveau les synchronisations des identifiants lorsque l’identifiant de région change dans la réponse d’appel d’événement change.
+* Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et le service Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’identification.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
-Août 2017
+Août 2017
 
 <table id="table_D9623D34F4444B038F7835750932C8AA"> 
  <thead> 
@@ -101,7 +104,7 @@ Juillet 2017
 
 **Correctifs et autres modifications**
 
-* Correction d’un bogue dans VisitorAPI.js v2.2 qui empêchait le service d’ID et la Cible de travailler ensemble dans Internet Explorer.
+* Correction d’un bogue dans VisitorAPI.js v2.2 qui empêchait le service d’ID et Target de fonctionner ensemble dans Internet Explorer.
 * Révision du code afin d’améliorer la manière dont le service d’ID envoie les données à l’iFrame de publication de destination. Cela permet de réduire l’utilisation du processeur.
 
 ## Version 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
@@ -118,7 +121,7 @@ Date de publication : Juin 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain et whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>Ces configurations permettent à différentes instances du code du service d’ID implémentées dans un iFrame et sur la page parente de communiquer entre elles. Ils sont conçus pour aider à résoudre les problèmes liés à deux cas d’utilisation spécifiques où vous pouvez contrôler ou non la page/le domaine parent et où le code du service d’ID est chargé dans l’iFrame d’un domaine que vous contrôlez. </p> </td> 
+   <td colname="col2"> <p>Ces configurations permettent à différentes instances du code du service d’ID implémentées dans un iFrame et sur la page parente de communiquer entre elles. Elles sont conçues pour aider à résoudre les problèmes liés à deux cas d’utilisation spécifiques où vous pouvez contrôler ou non la page/le domaine parent et où le code du service d’ID est chargé dans l’iFrame d’un domaine que vous contrôlez. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,7 +183,7 @@ Date de publication : février 2017
    <td colname="col2"> <p>Cette propriété définit l’identifiant du conteneur utilisé par <span class="keyword">Audience Manager</span> pour la synchronisation des identifiants. Voir <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID service API method, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>Méthode d’API de service d’identification, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>Cette méthode publique ajoute le <span class="wintitle">SDID (Supplemental Data ID)</span> comme paramètre de chaîne de requête à une URL de redirection. Voir <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
@@ -192,7 +195,7 @@ Correction d’un bogue en raison duquel le service d’identification envoyait 
 
 **Nouvelle documentation**
 
-[Utilisation de la prérécupération DNS avec différentes solutions et services Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
+[Utilisation de la prérécupération DNS avec différents services et solutions Experience Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -205,8 +208,8 @@ Janvier 2017
 **Correctifs et améliorations**
 
 * Correction d’un bogue qui empêchait AppMeasurement d’effectuer des appels de suivi vers Analytics. (MCID-254, MCID-256, MCID-286)
-* Correction d’un bogue qui empêchait l’échec du service d’ID immédiatement si un visiteur avait activé un bloqueur d’annonces et que ce bloqueur était configuré pour exclure le domaine demdex.net. Il s’agit d’un bug rare et inhabituel, car la plupart des outils de blocage publicitaire ne bloquent pas le domaine demdex.net. (MCID-233)
-* Correction d’un bogue lié aux interactions entre le code du service d’ID et un script personnalisé sur le site Web d’un client. Ce problème empêchait Internet Explorer 9 de charger les pages Web. (MCID-206)
+* Correction d’un bogue empêchant la panne du service ID juste après qu’un visiteur active un bloqueur d’annonces publicitaires configuré pour exclure le domaine demdex.net. Ce bogue reste rare et inhabituel car la plupart des bloqueurs d’annonces publicitaires ne bloquent pas le domaine demdex.net. (MCID-233)
+* Correction d’un bogue lié aux interactions entre le code du service d’ID et un script personnalisé sur le site Web d’un client. Ce problème empêchait Internet Explorer 9 de charger les pages Web. (MCID-206)
 
 ## Années précédentes {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
