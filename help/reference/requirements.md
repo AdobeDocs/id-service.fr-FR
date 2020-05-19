@@ -5,8 +5,11 @@ seo-description: Consultez cette section pour vous assurer que vous utilisez les
 seo-title: Conditions requises pour le service Experience Cloud Identity
 title: Conditions requises pour le service Experience Cloud Identity
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '783'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +20,7 @@ Consultez cette section pour vous assurer que vous utilisez les solutions, servi
 
 ## Les conditions requises assurent le succès et la prise en charge de la mise en œuvre {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditions requises du code et suit les instructions telles qu’elles s’affichent sur l’aide [!DNL Adobe]. Une mise en oeuvre non prise en charge produira des résultats inattendus et empêchera le service à la clientèle et nos équipes d’ingénieurs de vous aider à résoudre les problèmes ou à les résoudre avec le service d’ID.
+Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditions requises du code et suit les instructions telles qu’elles s’affichent sur l’aide [!DNL Adobe]. Une mise en œuvre non prise en charge produira des résultats inattendus et empêchera l’assistance clientèle et nos équipes d’ingénieurs de vous aider à résoudre les problèmes ou à les résoudre avec le service d’ID.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
@@ -33,16 +36,16 @@ Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditi
     <ul id="ul_59CDE179566844B494F3068FF6333809"> 
      <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Insérez le code d’intégration du header dans la section <span class="codeph">&lt;head&gt;</span> de votre page. </li> 
      <li id="li_13962F2CB1764091A84863BE499675A2">Insérez le code d’intégration du footer avant la balise de fermeture <span class="codeph">&lt;/body&gt;</span>. </li> 
-    </ul> <p>Une mise en oeuvre standard n’est pas prise en charge lorsque vous : </p> 
+    </ul> <p>Une mise en œuvre standard n’est pas prise en charge lorsque vous : </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> Placez l’un de ces codes incorporés de la gestion dynamique des balises ailleurs dans votre balisage et/ou code de page. </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> Ajoutez, ajoutez ou chargez du code DTM avec des méthodes asynchrones, des méthodes d’appel/de rappel ou des wrappers. </li> 
+     <li id="li_1F16C6D412944197BEA56BC24730782C"> Placez l’un de ces codes DTM incorporés ailleurs dans votre code de balisage et/ou de page. </li> 
+     <li id="li_05615C01F3A947BBBD41046E68377224"> Apposez, ajoutez ou chargez du code DTM avec des méthodes asynchrones, des méthodes d’appel/de rappel ou des wrappers. </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">Incluez plusieurs instances de code incorporé sur la même page. </li> 
     </ul> <p>Voir <a href="https://docs.adobe.com/content/help/fr-FR/dtm/using/client-side/deployment.html" format="https" scope="external">Code incorporé et options d’hébergement</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Mise en œuvre non standard </a> </p> </td> 
-   <td colname="col2"> <p>Pour les mises en oeuvre non standard ou manuelles, vous devez configurer le service d’ID comme décrit dans les procédures décrites dans ce guide. Comme pour les instructions de gestion dynamique des balises ci-dessus, un placement et un chargement de code incorrects créeront une mise en oeuvre non prise en charge. </p> </td> 
+   <td colname="col2"> <p>Pour les mises en œuvre non standard ou manuelles, vous devez configurer le service d’ID comme décrit dans les procédures de ce guide. Comme pour les instructions relatives à DTM ci-dessus, un placement et un chargement de code incorrects créeront une mise en œuvre non prise en charge. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -58,7 +61,7 @@ Pour utiliser le service d’ID, votre société doit être activée pour [!DNL 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> État d’Experience Cloud </th> 
+   <th colname="col1" class="entry"> État d’Experience Cloud </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -78,9 +81,9 @@ Pour utiliser le service d’ID, votre société doit être activée pour [!DNL 
  </tbody> 
 </table>
 
-## Conditions requises pour Analytics : collecte des données régionale{#section-7d04bb013bc84a25bae3b148bc0ca25f}
+## Conditions requises pour Analytics : collecte des données régionale {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://docs.adobe.com/content/help/fr-FR/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://docs.adobe.com/content/help/fr-FR/analytics/technotes/rdc/regional-data-collection.translate.html)
 
 ## Bibliothèques de code et versions minimales requises {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -95,7 +98,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
 <table id="table_8E773F76DBCB4797A0C117080CA8707C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Solution Experience Cloud </th> 
+   <th colname="col1" class="entry"> Solution Experience Cloud </th> 
    <th colname="col3" class="entry"> Bibliothèque de code </th> 
    <th colname="col4" class="entry"> Version requise </th> 
   </tr> 
@@ -121,7 +124,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Bibliothèque d’intégration des données</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Bibliothèque d’intégration des données</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        mis à jour à partir de 4.9 
@@ -129,11 +132,11 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Voir <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Code mbox</a> </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Voir <a href="https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Code mbox</a> </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Voir <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Mise en œuvre d’at.jss</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Voir <a href="https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Mise en œuvre d’at.jss</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -143,18 +146,18 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
 
 Au minimum, le service d’ID requiert les versions du SDK répertoriées ci-dessous.
 
-* Android : 4.11.0
-* iOS : 4.11.0
+* Android : 4.11.0
+* iOS : 4.11.0
 
 >[!TIP]
 >
 >Nous vous recommandons d’utiliser les dernières versions du code plutôt que la version minimale requise.
 
-Le code de votre SDK doit être activé pour le service d’ID. Enable and download the latest SDK code for each app from your [Adobe Mobile Services](https://mobilemarketing.adobe.com/) account. Voir également :
+Le code de votre SDK doit être activé pour le service d’ID. Activez et téléchargez le dernier code du SDK pour chaque application depuis votre compte [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Voir également :
 
-* [Configuration des options du SDK Service d’identification des visiteurs](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Méthodes du SDK Android](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [Méthodes SDK iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Configuration des options du SDK Service d’identification des visiteurs](https://docs.adobe.com/content/help/fr-FR/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Méthodes du SDK Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [Méthodes du SDK iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
