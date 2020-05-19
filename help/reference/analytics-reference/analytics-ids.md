@@ -5,8 +5,11 @@ seo-description: Le service Experience Cloud Identity remplace les anciennes mé
 seo-title: Définition des Analytics ID et Experience Cloud ID
 title: Définition des Analytics ID et Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '972'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 
-Une fois le service d’ID mis en oeuvre, ce code s’exécute avant AppMeasurement. Le service d’ID récupère les Experience Cloud et Analytics ID afin que ces valeurs soient prêtes au chargement d’AppMeasurement.
+Une fois le service d’ID mis en œuvre, ce code s’exécute avant AppMeasurement. Le service d’ID récupère les Experience Cloud et Analytics ID afin que ces valeurs soient prêtes au chargement d’AppMeasurement.
 
 Au chargement d’AppMeasurement, les valeurs des Experience Cloud et Analytics ID sont demandées par le service d’ID et sont envoyées à la collecte de données avec chaque appel au serveur. Dans la mesure où le service d’ID détermine l’identifiant du visiteur et le transmet simplement à AppMeasurement, il doit être inclus et implémenté sur chaque page avant votre fichier JavaScript AppMeasurement.
 
@@ -35,9 +38,9 @@ Pour éviter ce cas de figure, de nombreux clients ont implémenté des enregist
 
 **JavaScript**
 
-JavaScript peut lire et écrire des cookies définis dans le domaine propriétaire (domaine du site Web actuel). Le service [!DNL Experience Cloud] ID applique cette méthode pour définir le cookie `AMCV_###@AdobeOrg` qui contient tous les identifiants visiteur. De cette manière, le domaine du serveur de suivi ne doit plus nécessairement correspondre à celui du site web pour que le cookie Identifiant visiteur soit stocké. Dans la plupart des cas, il s’agit de la méthode privilégiée pour définir le cookie du service d’ID, car elle élimine la surcharge des enregistrements CNAME et des certificats SSL.
+JavaScript peut lire et écrire des cookies définis dans le domaine propriétaire (domaine du site Web actuel). Le service [!DNL Experience Cloud] ID applique cette méthode pour définir le cookie `AMCV_###@AdobeOrg` qui contient tous les identifiants visiteur. De cette manière, le domaine du serveur de suivi ne doit plus nécessairement correspondre à celui du site web pour que le cookie Identifiant visiteur soit stocké. Dans la plupart des cas, il s’agit de la méthode privilégiée pour définir le cookie du service d’ID, car elle élimine les frais supplémentaires liés aux enregistrements CNAME et des certificats SSL.
 
-Cependant, il arrive parfois que la définition du cookie dans l’en-tête HTTP soit bénéfique pour le suivi inter-domaines, ce qui est décrit dans les CNAME de collecte de [données et le suivi](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d)inter-domaines.
+Cependant, il arrive parfois que la définition du cookie dans l’en-tête HTTP soit bénéfique pour le suivi inter-domaines, ce qui est décrit dans [CNAME de collecte de données et suivi inter-domaines](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).
 
 ## Analytics ID personnalisés {#section-b6a7bd19e9ff432390010062450808f6}
 
@@ -47,25 +50,25 @@ Cela comprend, sans s’y limiter, les audiences partagées, Analytics for Tar
 
 ## Classement des identifiants visiteur Analytics {#section-de1dc9fc9b6d4388995b70e35b8bcddf}
 
-Après avoir déployé le service d’identification des visiteurs, il existe cinq façons d’identifier un visiteur dans Analytics (répertoriées dans le tableau suivant par ordre de préférence) :
+Après avoir déployé le service d’identification des visiteurs, il existe cinq façons d’identifier un visiteur dans Analytics (répertoriées dans le tableau suivant par ordre de préférence) :
 
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Ordre utilisé </th> 
-   <th colname="col2" class="entry"> Paramètre de Requête (méthode de collecte) </th> 
+   <th colname="col2" class="entry"> Paramètre de requête (méthode de collecte) </th> 
    <th colname="col3" class="entry"> Présenter quand </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>s.visitorID est défini. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
    <td colname="col3"> <p>Le visiteur disposait d’un cookie s_vi existant avant le déploiement du service <span class="keyword">Experience Cloud</span> ID ou vous avez configuré une <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">période de grâce</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -75,7 +78,7 @@ Après avoir déployé le service d’identification des visiteurs, il existe ci
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (cookie de secours sur H.25.3 ou plus récent ou AppMeasurement pour JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (cookie de secours sur H.25.3 ou plus récent ou AppMeasurement pour JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Un navigateur n’accepte pas les cookies tiers. Or, le serveur de suivi Analytics est configuré en tant que serveur de suivi tiers. </p> <p> <p>Remarque : Le <span class="codeph">fid</span> est un identifiant hérité. Il n’est pas utilisé si vous avez implémenté le service d’ID sur votre site. Dans ce cas, le <span class="codeph"> fid</span> n’est pas nécessaire, car le <a href="../../introduction/cookies.md" format="dita" scope="local"> cookie AMCV</a> propriétaire le rend obsolète. Il a été conservé pour prendre en charge le code hérité et pour des raisons historiques. </p> </p> </td> 
   </tr> 
   <tr> 
