@@ -5,19 +5,22 @@ seo-description: Renvoie l’Analytics ID hérité (s’il existe) qui était s
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
 
-# getAnalyticsVisitorID{#getanalyticsvisitorid}
+# getAnalyticsVisitorID {#getanalyticsvisitorid}
 
 Renvoie l’Analytics ID hérité (s’il existe) qui était stocké dans le cookie s_vi avant la mise en œuvre du service Experience Cloud Identity. Si un Analytics ID n’a pas été précédemment attribué à un visiteur, cette méthode renvoie une chaîne vide.
 
 **Syntaxe** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-Cette fonction est généralement utilisée avec les solutions personnalisées qui impliquent la lecture de l’identifiant visiteur. Il n’est pas utilisé par une mise en oeuvre standard. `getAnalyticsVisitorID` fonctionne également avec des fonctions de rappel pour lire les [!DNL Analytics] identifiants et les placer dans votre système ou application.
+Cette fonction est généralement utilisée avec les solutions personnalisées qui impliquent la lecture de l’identifiant visiteur. Elle n’est pas utilisée par une mise en œuvre standard. `getAnalyticsVisitorID` fonctionne également avec des fonctions de rappel pour lire les [!DNL Analytics] identifiants et les placer dans votre système ou application.
 
 **Exemple de code**
 
@@ -44,7 +47,7 @@ Le `aid` paramètre apparaît dans une chaîne de requête dans deux ensembles d
 Le paramètre `aid` apparaît dans une chaîne de requête dans les cas suivants :
 
 * Le service [!DNL Experience Cloud] ID est déployé correctement.
-* Le visiteur d’un site possède un [!DNL Analytics] ID préexistant qui est stocké dans le [cookie s_vi](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
+* Le visiteur d’un site possède un [!DNL Analytics] ID préexistant qui est stocké dans le [cookie s_vi](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
 
 **Cas 2**
 
@@ -52,5 +55,5 @@ Le `aid` paramètre apparaît dans une chaîne de requête lorsque votre organis
 
 >[!MORELIKETHIS]
 >
->* [Cookies Analytics](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Cookies Analytics](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-privacy.html)
 
