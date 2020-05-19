@@ -1,19 +1,22 @@
 ---
-description: Cette fonction vous permet de partager un identifiant Experience Cloud visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+description: Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 keywords: ID Service
-seo-description: Cette fonction vous permet de partager un identifiant Experience Cloud visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+seo-description: Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 seo-title: appendVisitorIDsTo (suivi interdomaines)
 title: appendVisitorIDsTo (suivi interdomaines)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '446'
+ht-degree: 100%
 
 ---
 
 
-# appendVisitorIDsTo (suivi interdomaines){#appendvisitoridsto-cross-domain-tracking}
+# appendVisitorIDsTo (suivi interdomaines) {#appendvisitoridsto-cross-domain-tracking}
 
-Cette fonction vous permet de partager un identifiant Experience Cloud visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
 Contenu :
 
@@ -25,16 +28,16 @@ Contenu :
 
 ## Suivi des visiteurs sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Le service d’ID écrit un cookie propriétaire et tiers dans le navigateur lorsqu’une personne visite votre site (voir [Cookies et service Experience Cloud Identity](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un identifiant unique pour ce visiteur. Le cookie tiers contient un autre ID utilisé par le service d’ID pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’ID ne peut pas :
+Le service d’ID écrit un cookie propriétaire et tiers dans le navigateur lorsqu’une personne visite votre site (voir [Cookies et service Experience Cloud Identity](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un identifiant unique pour ce visiteur. Le cookie tiers contient un autre ID utilisé par le service d’ID pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’ID ne peut pas :
 
-* Régénérez l’identifiant unique de ce visiteur de site lorsqu’il accède à un autre domaine.
-* Effectuez le suivi des visiteurs sur différents domaines appartenant à votre entreprise.
+* Régénérer l’identifiant unique de ce visiteur de site lorsqu’il accède à un autre domaine.
+* Effectuer le suivi des visiteurs sur différents domaines appartenant à votre entreprise.
 
-Pour résoudre ce problème, mettez en œuvre ` Visitor.appendVisitorIDsTo( *`l’URL`*)`. Cette propriété permet au service d’ID de suivre les visiteurs du site sur plusieurs domaines, même si leurs navigateurs bloquent les cookies tiers. Ça marche comme ça :
+Pour résoudre ce problème, mettez en œuvre ` Visitor.appendVisitorIDsTo( *`l’URL`*)`. Cette propriété permet au service d’ID de suivre les visiteurs du site sur plusieurs domaines, même si leurs navigateurs bloquent les cookies tiers. Voici son fonctionnement :
 
 * Lorsqu’un visiteur navigue sur vos autres domaines, ` Visitor.appendVisitorIDsTo( *`l’URL`*)` ajoute le MID comme paramètre de requête dans l’URL redirigée depuis le domaine d’origine vers le domaine de destination.
-* Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une demande à Adobe pour cet identifiant visiteur. Cette requête inclut l’ID de cookie tiers, qui n’est pas disponible dans ce cas.
-* Le code du service d’ID sur la page de destination utilise le MID transmis pour effectuer le suivi du visiteur.
+* Le code du service d’ID sur le domaine de destination extrait l’MID de l’URL au lieu d’envoyer une requête d’identifiant à Adobe pour l’ID de ce visiteur. Cette requête inclut l’ID de cookie tiers, qui n’est pas disponible dans ce cas.
+* Le code du service d’ID sur la page de destination utilise l’MID transmis pour effectuer le suivi du visiteur.
 
 Consultez l’exemple de code pour plus de détails.
 
@@ -66,7 +69,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Prise en charge de </th> 
-   <th colname="col2" class="entry"> Voir la section </th> 
+   <th colname="col2" class="entry"> Voir </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -78,8 +81,8 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Méthodes du service d’ID Android </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> Méthodes du service d’ID iOS </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://docs.adobe.com/content/help/fr-FR/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Méthodes du service d’ID Android </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> Méthodes du service d’ID iOS </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
