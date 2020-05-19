@@ -5,8 +5,11 @@ seo-description: Description des nouvelles fonctionnalités, des mises à jour e
 seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1162'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 
-Ces modifications sont également consignées dans les notes [de mise à jour d’](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html)Experience Cloud.
+Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html).
 
 ## Version 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -47,9 +50,9 @@ Octobre 2016
 
 **Correctifs et améliorations**
 
-* Correction d’un bogue en raison duquel les ID utilisateur uniques d’Audience Manager (AAMUUID) étaient transmis en tant qu’ID Experience Cloud au service d’ID.
-* Si la durée de vie (TTL) d’un cookie AMCV a expiré, le service d’ID renvoie toujours ces informations au serveur tant que le cookie contient un ID Experience Cloud. Après cet appel, le service d’ID effectue un appel asynchrone pour mettre à jour le cookie. Cela contribue à améliorer les performances, car le service d’identification n’a pas besoin d’attendre une réponse du serveur. Il peut utiliser les valeurs d’un cookie AMCV existant, puis demander une mise à jour.
-* Le service d’ID synchronise automatiquement les ID Experience Cloud (MID) avec Adobe Media Optimizer et d’autres domaines Adobe internes directement sur la page. La synchronisation automatique est activée pour tous les comptes nouveaux et existants. Cela permet d’améliorer les taux de correspondance pour Media Optimizer. Cela s’applique à VisitorAPI.js 1.8 ou version ultérieure. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+* Correction d’un bogue qui transmettait des identifiants utilisateur Audience Manager uniques (AAMUUID) en tant qu’Experience Cloud ID au service ID.
+* Si la durée de vue d’un cookie AMCV expire, le service d’identification renvoie tout de même cette information au serveur, tant que le cookie contient un Experience Cloud ID. Après cet appel, le service d’ID effectue un appel asynchrone pour mettre à jour le cookie. Cela contribue à améliorer les performances, car le service d’identification n’a pas besoin d’attendre une réponse du serveur. Il peut utiliser les valeurs d’un cookie AMCV existant, puis demander une mise à jour.
+* Le service d’ID synchronise automatiquement les Experience Cloud ID (MID) avec Adobe Media Optimizer et d’autres domaines Adobe internes directement sur la page. La synchronisation automatique est activée pour tous les comptes nouveaux et existants. Cela permet d’améliorer les taux de correspondance pour Media Optimizer. Cela s’applique à VisitorAPI.js 1.8 ou version ultérieure. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Documentation nouvelle et révisée**
 
@@ -81,7 +84,7 @@ Révision : [Conditions requises du service Experience Cloud Identity](../ref
 
 **Problèmes connus**
 
-Les clients qui utilisent le code DIL [!DNL Audience Manager] et le code visitorAPI.js sur la même page doivent définir la variable DIL `secureDataCollection= false`. Voir [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
+Les clients qui utilisent le code DIL [!DNL Audience Manager] et le code visitorAPI.js sur la même page doivent définir la variable DIL `secureDataCollection= false`. Voir [secureDataCollection](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Version 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -100,8 +103,8 @@ Juillet 2016
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Partage des ressources entre Origines (CORS) </p> </td> 
-   <td colname="col2"> <p>Grâce au partage des ressources cross-origin (CORS), les navigateurs peuvent demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS afin de permettre les requêtes de ressources cross-origin côté client. Le service d’ID revient aux demandes JSONP sur les navigateurs qui ne prennent pas en charge CORS. </p> <p>Voir : </p> 
+   <td colname="col1"> <p>Partage des ressources cross-origin (CORS) </p> </td> 
+   <td colname="col2"> <p>Grâce au partage des ressources cross-origin (CORS), les navigateurs peuvent demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS afin de permettre les requêtes de ressources cross-origin côté client. Dans les navigateurs non compatibles avec la norme CORS, les demandes JSONP sont restaurées par le service ID. </p> <p>Voir : </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Prise en charge de la norme CORS dans le service Experience Cloud Identity </a> </li> 
     </ul> </td> 
@@ -149,14 +152,14 @@ Juin 2016
   </tr> 
   <tr> 
    <td colname="col1"> <p>Codage de l’Experience Cloud ID (MID) </p> </td> 
-   <td colname="col2"> <p>Le service d’ID code la valeur MID qui est renvoyée du serveur ou lorsqu’elle est définie par la fonction <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Pour plus d’informations sur le MID, voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>Le service d’ID code la valeur MID qui est renvoyée du serveur ou lorsqu’elle est définie par la fonction <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Pour plus d’informations sur le MID, voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud ID</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Correctifs**
 
-L’API du visiteur ne force plus un appel de resynchronisation supplémentaire avec Audience Manager lorsqu’il n’existe pas d’identifiant visiteur Analytics hérité.
+L’API visiteur n’impose plus un autre appel de resynchronisation avec Audience Manager lorsqu’il n’existe pas d’identifiant visiteur Analytics hérité.
 
 ## Version 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -170,7 +173,7 @@ Mai 2016
 
 ## Version 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
-Avril 2016
+Avril 2016
 
 **Mises à jour de la documentation**
 
@@ -178,7 +181,7 @@ Avril 2016
 
 ## Version 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
-Mars 2016
+Mars 2016
 
 <table id="table_F4ED1F88709E4D3BA69C747879A4E18F"> 
  <thead> 
@@ -189,7 +192,7 @@ Mars 2016
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Prise en charge des exclusions </p> </td> 
+   <td colname="col1"> <p>Prise en charge du droit d’opposition </p> </td> 
    <td colname="col2"> <p>Le service <span class="keyword">Experience Cloud</span> ID prend en charge les requêtes de droit d’opposition des visiteurs. </p> </td> 
   </tr> 
   <tr> 
