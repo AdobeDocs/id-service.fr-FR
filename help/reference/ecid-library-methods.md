@@ -3,15 +3,18 @@ title: Méthodes de bibliothèque ECID dans un univers ITP Safari
 seo-title: Méthodes de bibliothèque ECID dans un univers ITP Safari
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 seo-description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
 
 # Méthodes de bibliothèque ECID dans un univers ITP Safari
 
-Safari renforçant le suivi inter-domaines via ITP, Adobe doit conserver les meilleures pratiques pour les bibliothèques qui prennent en charge les clients, ainsi que la confidentialité et le choix des utilisateurs.
+Safari renforçant le suivi inter-domaines via ITP, Adobe doit conserver de bonnes pratiques pour les bibliothèques qui prennent en charge les clients, ainsi que la confidentialité et le choix des utilisateurs.
 
 Le 21 février 2019, Apple a annoncé sa dernière mise à jour vers ITP (Intelligent Tracking Prevention). Contrairement aux versions précédentes axées sur les cookies tiers, cette version détaille les nouvelles mesures de prévention du suivi pour les cookies propriétaires. Tous les cookies propriétaires persistants définis via l’API document.cookie, souvent appelés cookies « côté client », voient leur expiration plafonnée à 7 jours. Les cookies tiers continueront d’être bloqués, comme indiqué dans les versions précédentes d’ITP. Pour plus d’informations sur ITP 2.1 et l’impact des solutions Adobe, lisez [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers (en anglais)](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
@@ -57,7 +60,7 @@ Lorsqu’une requête d’ID est envoyée à demdex.net et qu’un ECID est réc
 
 Ce nouveau cookie `s_ecid` suit le même état d’exclusion que le cookie AMCV. Si l’ecid est lu à partir du cookie `s_ecid`, demdex est toujours appelé immédiatement pour récupérer le dernier état d’exclusion correspondant à cet identifiant et stocké dans le cookie AMCV.
 
-De plus, si votre client a désactivé le suivi Analytics via cette [méthode](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html), ce cookie `s_ecid` sera supprimé.
+De plus, si votre client a désactivé le suivi Analytics via cette [méthode](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/js/opt-out.html), ce cookie `s_ecid` sera supprimé.
 
 Le nom du serveur de suivi doit être fourni à la bibliothèque VisitorJS lors de l’initialisation de la bibliothèque à l’aide de trackingServer ou de trackingServerSecure. Cela doit correspondre à la configuration trackingServer dans les configurations Analytics.
 
