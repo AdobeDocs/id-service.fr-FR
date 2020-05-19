@@ -5,8 +5,11 @@ seo-description: Dans certaines mises en œuvre, les identifiants visiteur sont 
 seo-title: Mise en œuvre côté serveur alliée à JavaScript
 title: Mise en œuvre côté serveur alliée à JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '211'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +32,7 @@ Incluez l’identifiant visiteur Analytics (s’il est défini) dans l’éléme
 
 Incluez l’identifiant visiteur Experience Cloud dans l’élément `<marketingCloudVisitorID>`.
 
-Voir Balises [XML](https://www.adobe.io)prises en charge.
+Voir [Balises XML prises en charge](https://www.adobe.io).
 
 ## AppMeasurement pour Java {#section-d664b94934924d048300d9c2b6560085}
 
