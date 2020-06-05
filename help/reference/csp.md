@@ -5,11 +5,11 @@ seo-description: Une stratégie de sécurité de contenu (CSP) est une fonction 
 seo-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '539'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 87%
 
 ---
 
@@ -66,6 +66,10 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
  <tr>
  <td colname="col1"> <p> <b>Module externe Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure *.adobe.com. **Remarque** : si Activity Map était déjà installé avant janvier 2020, votre navigateur verra toujours une requête initiale vers *.omniture.com, mais il sera redirigé vers *.adobe.com. </p></td> 
+ </tr>
+ <tr>
+ <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
+ <td colname="col2"> <p>Si vous avez des contrôles sur les paramètres de chaîne de requête, veillez à mettre en liste blanche les paramètres "s_kwcid" et "ef_id". Techniquement, Advertising Analytics utilise uniquement "s_kwcid", mais si vous sélectionnez Ad Cloud Search ou DSP, il utilise également "ef_id". Ces paramètres de chaîne de requête sont alphanumériques. Le paramètre "s_kwcid" utilise "!" et le paramètre "ef_id" utilise le caractère ":". Si vous bloquez le " !" dans l’URL, vous devez également la mettre en liste blanche.</p></td> 
  </tr>
  </tbody> 
 </table>
