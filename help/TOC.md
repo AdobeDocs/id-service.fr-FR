@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Aide du service Experience Cloud Identity
 user-guide-description: The ID service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for services such as Analytics, Audience Manager, Target, and other Experience Cloud solutions or features.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 238135b08f66a3a10d6439bba558819e4aa5a7e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ ht-degree: 100%
    + [Obtention des identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID](reference/regions.md)
    + [Conditions requises pour le service d’ID](reference/requirements.md)
    + [Mesure de pulsation vidéo et service d’ID](reference/heartbeat.md)
-   + [Data Workbench et service ID](reference/dwb.md)
+   + [Data Workbench et service d’ID](reference/dwb.md)
    + [Prise en charge du hachage SHA-256 pour setCustomerIDs](reference/hashing-support.md)
 + Questions fréquentes {#faqs}
    + [Aperçu des questions fréquentes](faq-intro/faq-intro.md)
