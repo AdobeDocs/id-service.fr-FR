@@ -5,11 +5,11 @@ seo-description: Une stratégie de sécurité de contenu (CSP) est une fonction 
 seo-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -62,14 +62,14 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li></ul></p> <p>Les appels au domaine <span class="codeph"> demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local"> cookies et le service Experience Cloud Identity</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Signification des appels vers le domaine Demdex</a>. </p> </td> </tr> 
+   <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li></ul></p> <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et le service Experience Cloud Identity</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Module externe Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure *.adobe.com. **Remarque** : si Activity Map était déjà installé avant janvier 2020, votre navigateur verra toujours une requête initiale vers *.omniture.com, mais il sera redirigé vers *.adobe.com. </p></td> 
  </tr>
  <tr>
- <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Si vous avez des contrôles sur les paramètres de chaîne de requête, veillez à mettre en liste blanche les paramètres "s_kwcid" et "ef_id". Techniquement, Advertising Analytics utilise uniquement "s_kwcid", mais si vous sélectionnez Ad Cloud Search ou DSP, il utilise également "ef_id". Ces paramètres de chaîne de requête sont alphanumériques. Le paramètre "s_kwcid" utilise "!" et le paramètre "ef_id" utilise le caractère ":". Si vous bloquez le " !" dans l’URL, vous devez également la mettre en liste blanche.</p></td> 
+ <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
+ <td colname="col2"> <p>Si vous pouvez modifier les paramètres de chaîne de requête, veillez à mettre en liste blanche les paramètres « s_kwcid » et « ef_id ». Normalement, Advertising Analytics utilise uniquement « s_kwcid », mais si vous sélectionnez Ad Cloud Search ou DSP, « ef_id » est également utilisé. Ces paramètres de chaîne de requête sont alphanumériques. Le paramètre « s_kwcid » le caractère « ! » et le paramètre « ef_id » utilise le caractère « : ». Si le caractère « ! » est bloqué dans l’URL, vous devez également le mettre en liste blanche.</p></td> 
  </tr>
  </tbody> 
 </table>
