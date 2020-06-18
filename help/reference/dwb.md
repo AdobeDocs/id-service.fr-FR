@@ -5,9 +5,9 @@ seo-description: Suivez les instructions ci-dessous pour intégrer le champ Expe
 seo-title: Data Workbench et service Experience Cloud Identity
 title: Data Workbench et service Experience Cloud Identity
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 
@@ -28,6 +28,7 @@ Pour mettre à jour [Data Workbench](https://docs.adobe.com/content/help/fr-FR/d
 
    * `x-mcvisid`
    * `x-tnt-action`
+
    Laissez les champs vides si vous n’êtes pas prêt à les utiliser ou à les définir.  **Instructions de décodage**
 
 Consultez le contenu complet du décodeur ci-dessous, y compris les nouveaux champs indiqués ci-dessus.
