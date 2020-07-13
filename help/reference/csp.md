@@ -5,9 +5,9 @@ seo-description: Une stratégie de sécurité de contenu (CSP) est une fonction 
 seo-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 100%
 
@@ -75,6 +75,7 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
 </table>
 
 >[!MORELIKETHIS]
+>
 >* [Référence des stratégies de sécurité du contenu](https://content-security-policy.com/)
 >* [MDN : Stratégie de sécurité du contenu](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP)
 >* [Wikipédia : Stratégie de sécurité du contenu](https://fr.wikipedia.org/wiki/Content_Security_Policy)
