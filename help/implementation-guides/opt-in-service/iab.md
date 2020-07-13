@@ -4,9 +4,9 @@ seo-description: Connecter leur plateforme de gestion du consentement (CMP) à l
 seo-title: Utilisation des services Opt-in avec un framework IAB
 title: Utilisation des services Opt-in avec un framework IAB
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
-source-git-commit: 4c37c8dd3b76dbf17b955864f0562363350eaecd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 # Utilisation des services Opt-in avec un framework IAB {#using-opt-in-services-with-iab-framework}
 
->[!IMPORTANT] Le document suivant s’applique uniquement à IAB 2.0. Les utilisateurs doivent utiliser Visiteur.js version 5.0 pour travailler avec IAB 2.0.
+>[!IMPORTANT]
+>
+>Le document suivant s’applique uniquement à IAB 2.0. Les utilisateurs doivent utiliser Visiteur.js version 5.0 pour travailler avec IAB 2.0.
 
 Connectez la plateforme de gestion du consentement (CMP) au plug-in TCF (Transparency and Consent Framework) de l’IAB de l’Opt-in.
 
