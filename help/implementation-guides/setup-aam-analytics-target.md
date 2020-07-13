@@ -5,11 +5,11 @@ seo-description: Ces instructions concernent les clients d’Analytics, d’Audi
 seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,11 +20,10 @@ Ces instructions concernent les clients d’Analytics, d’Audience Manager et 
 
 >[!IMPORTANT]
 >
->Lisez les [exigences](../reference/requirements.md) du service d’ID avant de commencer et notez les conditions requises suivantes, qui sont spécifiques à cette mise en œuvre : >
+>Read the ID service [requirements](../reference/requirements.md) before you begin and note the following requirements that are specific to this implementation:
+>
 >* Les clients qui utilisent s_code ne peuvent pas effectuer cette procédure. Effectuez la mise à niveau vers le code mbox v61 pour terminer cette procédure.
 >* Configurez ce code et testez-le dans un environnement de développement *avant* de le mettre en œuvre en production.
->
-
 
 
 ## Étape 1 : Planifier le transfert côté serveur {#section-880797cc992d4755b29cada7b831f1fc}
@@ -54,8 +53,6 @@ Le service d’ID requiert la `VisitorAPI.js` bibliothèque de code. Pour télé
 >
 >* Les versions précédentes de l’API du service d’ID plaçaient cette fonction à un autre emplacement et nécessitaient une syntaxe différente. Si vous effectuez une migration à partir d’une version antérieure à la [version 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), notez le nouvel emplacement et la nouvelle syntaxe documentés ici.
 >* Le code en MAJUSCULES est un espace réservé pour des valeurs réelles. Remplacez ce texte par votre ID d’organisation, l’URL du serveur de suivi ou toute autre valeur nommée.
->
-
 
 
 **Partie 1 : Copiez la fonction Visiteur.getInstance ci-dessous**
