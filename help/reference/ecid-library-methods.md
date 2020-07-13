@@ -3,9 +3,9 @@ title: Méthodes de bibliothèque ECID dans un univers ITP Safari
 seo-title: Méthodes de bibliothèque ECID dans un univers ITP Safari
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 seo-description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 
@@ -42,7 +42,9 @@ D’autres questions fréquentes seront ajoutées ici lorsque des modifications 
 
 À mesure que des méthodes supplémentaires sont créées pour le suivi dans Safari, elles seront ajoutées comme référence à cette page.
 
->[!NOTE] *ECID* = *MID* = *MCID* dans toutes les documentations ci-dessous.
+>[!NOTE]
+>
+>*ECID* = *MID* = *MCID* dans toutes les documentations ci-dessous.
 
 Voir ci-dessous pour connaître les efforts liés à l’utilisation des bibliothèques ITP et ECID.
 
