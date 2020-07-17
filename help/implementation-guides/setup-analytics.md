@@ -5,11 +5,11 @@ seo-description: Ces instructions concernent les clients d’Analytics qui souha
 seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -126,10 +126,10 @@ Pour déterminer les variables de serveur de suivi à utiliser :
 
 >[!NOTE]
 >
->When used, match the [!DNL Experience Cloud] server URLs to their corresponding tracking server URLs like this:
+>Lorsqu’elles sont utilisées, faites correspondre les URL du serveur [!DNL Experience Cloud] aux URL du serveur de suivi correspondant de la façon suivante :
 >
->* [!DNL Experience Cloud]URL du serveur = URL du serveur de suivi
->* [!DNL Experience Cloud]URL du serveur sécurisé = URL du serveur sécurisé de suivi
+>* [!DNL Experience Cloud] URL du serveur = URL du serveur de suivi
+>* [!DNL Experience Cloud] URL du serveur sécurisé = URL du serveur sécurisé de suivi
 
 
 Si vous ne savez pas comment trouver votre serveur de suivi, consultez la [FAQ](../faq-intro/faq.md) et la [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
