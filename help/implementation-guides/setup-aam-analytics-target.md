@@ -5,11 +5,11 @@ seo-description: Ces instructions concernent les clients d’Analytics, d’Audi
 seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1572'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Ces instructions concernent les clients d’Analytics, d’Audience Manager et 
 
 >[!IMPORTANT]
 >
->Read the ID service [requirements](../reference/requirements.md) before you begin and note the following requirements that are specific to this implementation:
+>Lisez les [exigences](../reference/requirements.md) du service d’ID avant de commencer et notez les conditions requises suivantes, qui sont spécifiques à cette mise en œuvre :
 >
 >* Les clients qui utilisent s_code ne peuvent pas effectuer cette procédure. Effectuez la mise à niveau vers le code mbox v61 pour terminer cette procédure.
 >* Configurez ce code et testez-le dans un environnement de développement *avant* de le mettre en œuvre en production.
@@ -190,7 +190,7 @@ Voir aussi [Référence des colonnes de données du parcours de navigation](http
 
 ## Étape 9 : Test et vérification {#section-f857542bfc70496dbb9f318d6b3ae110}
 
-Lors de cette mise en œuvre, les solutions [!DNL Experience Cloud] renvoient des identifiants sous la forme de paires clés-valeurs. Chaque solution utilise des clés différentes (par exemple, le [!DNL Analytics] SDID et le [!DNL Target]mboxMCSDID) pour un même identifiant. Pour tester votre mise en œuvre, chargez votre page dans un environnement de développement. Utilisez votre console ou logiciel de navigateur qui contrôle les demandes et réponses HTTP pour vérifier les identifiants répertoriés ci-dessous. Le service d’ID a été mise en œuvre correctement si les paires clés-valeurs répertoriées ci-dessous renvoient les mêmes valeurs d’identifiant.
+Lors de cette mise en œuvre, les solutions [!DNL Experience Cloud] renvoient des identifiants sous la forme de paires clés-valeurs. Chaque solution utilise des clés différentes (par exemple, le [!DNL Analytics] SDID et le [!DNL Target] mboxMCSDID) pour un même identifiant. Pour tester votre mise en œuvre, chargez votre page dans un environnement de développement. Utilisez votre console ou logiciel de navigateur qui contrôle les demandes et réponses HTTP pour vérifier les identifiants répertoriés ci-dessous. Le service d’ID a été mise en œuvre correctement si les paires clés-valeurs répertoriées ci-dessous renvoient les mêmes valeurs d’identifiant.
 
 >[!TIP]
 >
