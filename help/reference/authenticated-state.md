@@ -5,11 +5,11 @@ seo-description: Avec l’identifiant visiteur Experience Cloud, vous pouvez as
 seo-title: ID de client et états d’authentification
 title: ID de client et états d’authentification
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visite
 
 ## Cas d’utilisation des états d’authentification {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-Vous pouvez affecter des états d’authentification à vos utilisateurs selon les actions qu’ils effectuent sur vos propriétés web et selon s’ils sont authentifiés. Vous trouverez quelques exemples dans le tableau ci-dessous :
+Vous pouvez affecter des états d’authentification à vos utilisateurs selon les actions qu’ils effectuent sur vos propriétés web et selon s’ils sont authentifiés. Vous trouverez quelques exemples dans le tableau ci-dessous :
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -69,10 +69,10 @@ Vous pouvez affecter des états d’authentification à vos utilisateurs selon l
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p>Cet état peut être utilisé pour des scénarios tels que : </p> <p> 
+   <td colname="col2"> <p>Cet état peut être utilisé pour des scénarios tels que : </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Lecture d’un courriel (cette action signifie probablement que le lecteur est le destinataire prévu, mais le courriel aurait également pu être transféré). </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Clic publicitaire d’un courrier électronique à un landing page. </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Lecture d’un email (cette action signifie probablement que le lecteur est le destinataire prévu, mais l’email aurait également pu être transféré). </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Clic d’un email vers une page d’entrée. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -94,7 +94,7 @@ Les ID de client peuvent contenir des combinaisons d’ID et d’états authenti
 >
 >* Les identifiants sont sensibles à la casse.
 >* Utilisez uniquement des valeurs non codées pour les identifiants.
->* Les ID de client et les états d’authentification ne sont pas stockés dans le cookie ID de visiteur. Ils doivent être définis pour chaque page ou contexte d’application.
+>* Les ID de client et les états d’authentification ne sont pas stockés dans le cookie Identifiant visiteur. Ils doivent être définis pour chaque page ou contexte d’application.
 >* N’incluez aucune information d’identification personnelle dans les identifiants client. Si vous utilisez des informations d’identification personnelle pour identifier un visiteur (par exemple, une adresse électronique), il est recommandé de stocker plutôt une version hachée ou chiffrée de l’information. La bibliothèque ECID prend en charge le hachage des identifiants utilisateur. Reportez-vous à la section [Prise en charge du hachage SHA-256 pour setCustomerIDs](/help/reference/hashing-support.md).
 
 
@@ -147,7 +147,7 @@ visitor.setCustomerIDs({
 
 ## Renvoi des ID de client et des états authentifiés {#section-71a610546188478fa9a3185a01d6e83b}
 
-Utilisez `getCustomerIDs` pour renvoyer les ID de client et les états authentifiés associés. Cette méthode renvoie un état authentifié par un visiteur sous la forme d’un entier.
+Utilisez `getCustomerIDs` pour renvoyer les ID de client et les états authentifiés associés. Cette méthode renvoie l’état authentifié d’un visiteur sous la forme d’un entier.
 
 **Syntaxe**
 
@@ -214,7 +214,7 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Prise en charge du SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-Le service [!DNL Experience Cloud] ID prend en charge les identifiants et les états d’authentification du client dans le code de nos SDK Android et iOS. Voir les bibliothèques de code suivantes :
+Le service [!DNL Experience Cloud] ID prend en charge les identifiants et les états d’authentification du client dans le code de nos SDK Android et iOS. Voir les bibliothèques de codes suivantes :
 
 * [Méthodes du SDK Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/overview.html)
 * [Méthodes du SDK iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/overview.html)
