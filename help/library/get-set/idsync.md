@@ -1,19 +1,22 @@
 ---
-description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement la synchronisation d’un identifiant dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
-keywords: Service d’identification
-seo-description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement la synchronisation d’un identifiant dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
+description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en oeuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
+keywords: ID Service
+seo-description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en oeuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
 seo-title: Synchronisation des ID par URL ou source de données
 title: Synchronisation des ID par URL ou source de données
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 52%
 
 ---
 
 
 # Synchronisation des ID par URL ou source de données{#id-synchronization-by-url-or-data-source}
 
-Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement la synchronisation d’un identifiant dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
+Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en oeuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
 
 ## Syntaxe, propriétés et macros {#section-90ac61617482463aaf4c57009b830332}
 
@@ -23,7 +26,7 @@ Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permetten
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Code </th> 
-   <th colname="col2" class="entry"> Synchronise les identifiants des utilisateurs </th> 
+   <th colname="col2" class="entry"> Synchronise les ID utilisateur </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,17 +36,14 @@ Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permetten
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
-   <td colname="col2"> <p>Si vous connaissez déjà le DPID et DPUUID et si vous voulez l’envoyer à <span class="keyword">Audience Manager</span> dans le format d’URL de synchronisation d’identifiant standard. </p> <p> 
-     <draft-comment>
-       Lorsque vous connaissez déjà l’identifiant d’utilisateur et souhaitez l’envoyer à Audience Manager. 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>Si vous connaissez déjà le DPID et DPUUID et si vous voulez l’envoyer à <span class="keyword">Audience Manager</span> dans le format d’URL de synchronisation d’identifiant standard. </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Propriétés**
 
-Le tableau suivant répertorie et définit les propriétés disponibles pour les deux fonctions.
+Le tableau suivant liste et définit les propriétés disponibles pour les deux fonctions.
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -57,17 +57,17 @@ Le tableau suivant répertorie et définit les propriétés disponibles pour les
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> Chaîne </td> 
-   <td colname="col3"> <p>Identifiant de fournisseur de données attribué par Audience Manager. </p> </td> 
+   <td colname="col3"> <p>ID de fournisseur de données attribué par Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> Chaîne </td> 
-   <td colname="col3"> <p>L’identifiant unique du fournisseur de données pour l’utilisateur. </p> </td> 
+   <td colname="col3"> <p>ID unique du fournisseur de données pour l’utilisateur. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> Nombre </td> 
-   <td colname="col3"> <p> <i>(Optionnel)</i> Définit le délai d’expiration du cookie. Doit être un nombre entier. Sa valeur par défaut est de 20 160 minutes (14 jours). </p> </td> 
+   <td colname="col3"> <p> <i>(Facultatif)</i> Définit le délai d’expiration du cookie. Doit être un entier. La valeur par défaut est de 2 0160 minutes (14 jours). </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
@@ -79,7 +79,7 @@ Le tableau suivant répertorie et définit les propriétés disponibles pour les
 
 **Macros**
 
-Les deux fonctions acceptent les macros suivantes :
+Les deux fonctions acceptent les macros suivantes :
 
 * `%TIMESTAMP%` : génère un horodatage (en millisecondes). Utilisé pour la mise en cache.
 * `%DID%` : insère l’identifiant Audience Manager pour l’utilisateur.
