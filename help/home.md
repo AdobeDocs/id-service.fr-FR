@@ -5,10 +5,10 @@ seo-description: Le service Adobe Experience Cloud Identity (service d’ID) 
 seo-title: Service Experience Cloud Identity
 title: Service Experience Cloud Identity
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '322'
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -34,10 +34,10 @@ Le service Adobe Experience Cloud Identity (service d’ID) fournit un identi
       <li id="li_B28082F3D075413D89E5AFB718657E17"> <a href="library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe </a> </li> 
       <li id="li_7744A4898EA542B9BF009D2066810050"> <a href="library/function-vars/idsyncontainerid.md#reference-5cfbed2240fa4def90f535f017a36015" format="dita" scope="local"> idSyncContainerID </a> </li> 
      </ul> </p> 
-    <draft-comment> 
-     <p> <b>Annonces :</b> </p> 
-     <p> <p>Important : la prise en charge du service ID pour Internet Explorer 6, 7 et 8 est obsolète et cessera dans une prochaine version. </p> </p> 
-    </draft-comment> </td> 
+     <!-- 
+     <p> <b>Announcements:</b> </p> 
+     <p> <p>Important:  ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release. </p> </p> 
+     --> </td> 
    <td colname="col2"> <p> <b>Notes de mise à jour</b> </p> <p><b>La version 4.4</b> du 17 juillet 2019 comprend la prise en charge de <a href="reference/hashing-support.md" format="dita" scope="local"> l’algorithme de hachage SHA-256</a> qui vous permet de transmettre des ID de client ou des adresses électroniques, et transmet des identifiants hachés.</p><p><b>La version 4.0</b> du 12 février 2019 comprend le <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> service Opt-in</a> utilisé pour déterminer si vous pouvez placer un cookie sur le périphérique ou le navigateur d’un utilisateur lors de sa visite sur votre site. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Pour connaître les nouvelles fonctionnalités et les correctifs, voir les dernières <a href="https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html" format="https" scope="external">notes de mises à jour d’Experience Cloud</a>. </li> 
