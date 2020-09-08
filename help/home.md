@@ -5,9 +5,9 @@ seo-description: Le service Adobe Experience Cloud Identity (service d’ID) 
 seo-title: Service Experience Cloud Identity
 title: Service Experience Cloud Identity
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
 ht-degree: 100%
 
@@ -24,8 +24,8 @@ Le service Adobe Experience Cloud Identity (service d’ID) fournit un identi
    <td colname="col1"> <p> <b>Prise en main</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> Aperçu </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local">Conditions requises pour le service Experience Cloud Identity</a> </li> 
-      <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local">Mise en œuvre standard avec la gestion dynamique des balises (DTM)</a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Conditions requises pour le service Experience Cloud Identity </a> </li> 
+      <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Mise en œuvre standard avec la gestion dynamique des balises (DTM)</a> </li> 
      </ul> </p> <p><b>Bibliothèques JavaScript d’Experience Cloud ID</b> </p> <p>Les ressources JavaScript pour le service Experience Cloud Identity se situent à l’adresse : <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a>. </p> <p> <b>Éléments nouveaux ou en vedette</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Service Opt-in</a> </li> 
