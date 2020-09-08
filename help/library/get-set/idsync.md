@@ -1,22 +1,22 @@
 ---
-description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en oeuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
+description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
 keywords: ID Service
-seo-description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en oeuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
+seo-description: Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
 seo-title: Synchronisation des ID par URL ou source de données
 title: Synchronisation des ID par URL ou source de données
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
-# Synchronisation des ID par URL ou source de données{#id-synchronization-by-url-or-data-source}
+# Synchronisation des ID par URL ou source de données {#id-synchronization-by-url-or-data-source}
 
-Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en oeuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
+Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
 
 ## Syntaxe, propriétés et macros {#section-90ac61617482463aaf4c57009b830332}
 
@@ -43,7 +43,7 @@ Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permetten
 
 **Propriétés**
 
-Le tableau suivant liste et définit les propriétés disponibles pour les deux fonctions.
+Le tableau suivant répertorie et définit les propriétés disponibles pour les deux fonctions.
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -55,9 +55,9 @@ Le tableau suivant liste et définit les propriétés disponibles pour les deux 
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> dpid </span> </td> 
+   <td colname="col1"> <span class="codeph"> Dpid </span> </td> 
    <td colname="col2"> Chaîne </td> 
-   <td colname="col3"> <p>ID de fournisseur de données attribué par Audience Manager. </p> </td> 
+   <td colname="col3"> <p>ID de fournisseur de données attribué par Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
@@ -67,7 +67,7 @@ Le tableau suivant liste et définit les propriétés disponibles pour les deux 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> Nombre </td> 
-   <td colname="col3"> <p> <i>(Facultatif)</i> Définit le délai d’expiration du cookie. Doit être un entier. La valeur par défaut est de 2 0160 minutes (14 jours). </p> </td> 
+   <td colname="col3"> <p> <i>(Facultatif)</i> Définit l’heure d’expiration du cookie. Doit être un nombre entier. La valeur par défaut est de 20160 minutes (14 jours). </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
@@ -79,7 +79,7 @@ Le tableau suivant liste et définit les propriétés disponibles pour les deux 
 
 **Macros**
 
-Les deux fonctions acceptent les macros suivantes :
+Les deux fonctions acceptent les macros suivantes :
 
 * `%TIMESTAMP%` : génère un horodatage (en millisecondes). Utilisé pour la mise en cache.
 * `%DID%` : insère l’identifiant Audience Manager pour l’utilisateur.
