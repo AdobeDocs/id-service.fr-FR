@@ -5,9 +5,9 @@ seo-description: Consultez cette section pour vous assurer que vous utilisez les
 seo-title: Conditions requises pour le service Experience Cloud Identity
 title: Conditions requises pour le service Experience Cloud Identity
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
 ht-degree: 100%
 
@@ -93,7 +93,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
 >
 >Nous vous recommandons d’utiliser les dernières versions du code plutôt que la version minimale requise.
 
-**JavaScript **
+**JavaScript**
 
 <table id="table_8E773F76DBCB4797A0C117080CA8707C"> 
  <thead> 
@@ -105,7 +105,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"> Service </span>Experience Cloud ID</b> </p> </td> 
+   <td colname="col1"> <p> <b> <span class="keyword"> Service </span>Experience Cloud ID</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 ou version ultérieure </p> </td> 
   </tr> 
@@ -129,7 +129,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Voir <a href="https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Code mbox</a> </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Voir <a href="https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Code mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
