@@ -4,7 +4,7 @@ seo-title: Modifications de l’étiquetage Google Chrome SameSite
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 seo-description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 translation-type: tm+mt
-source-git-commit: f74a028532e95ab17f5d2e64697d69eb64e03391
+source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 4%
@@ -64,7 +64,9 @@ En `lax` devenant le nouveau paramètre Site identique par défaut dans Chrome, 
 
 Pour tenir compte de la modification, Analytics définit désormais explicitement la valeur MêmeSite du `s_vi` cookie sur `lax`. Pour utiliser ce cookie dans un contexte tiers convivial, définissez la valeur MêmeSite sur `none`, ce qui signifie également que vous devez toujours utiliser HTTPS. Contactez le service à la clientèle pour que la valeur du même site soit modifiée pour vos CNAME sécurisés.
 
-> [!IMPORTANT] Cette action n’est pas requise pour les clients Analytics utilisant l’ECID, les clients utilisant un CNAME distinct pour chacun de leurs domaines ou les clients utilisant uniquement la collecte de données Analytics tierces.
+>[!IMPORTANT]
+>
+>Cette action n’est pas requise pour les clients Analytics utilisant l’ECID, les clients utilisant un CNAME distinct pour chacun de leurs domaines ou les clients utilisant uniquement la collecte de données Analytics tierces.
 
 ## Cookies Visiteurs standard Adobe
 
