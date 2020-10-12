@@ -1,83 +1,83 @@
 ---
-title: Modifications de l’étiquetage Google Chrome SameSite
-seo-title: Modifications de l’étiquetage Google Chrome SameSite
+title: Modifications de l’étiquetage SameSite de Google Chrome
+seo-title: Modifications de l’étiquetage SameSite de Google Chrome
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 seo-description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 translation-type: tm+mt
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Modifications de l’étiquetage Google Chrome SameSite {#google-chrome-samesite-labelling-changes}
+# Modifications de l’étiquetage SameSite de Google Chrome {#google-chrome-samesite-labelling-changes}
 
-L’attribut Même site indique aux navigateurs quand et comment déclencher des cookies dans les scénarios propriétaires et tiers. L&#39;attribut MêmeSite peut avoir l&#39;une des trois valeurs suivantes : `strict`, `lax`ou `none`. Chrome, Firefox, Edge, Safari et Opera sont pris en charge `strict` et `lax` depuis novembre 2017, alors qu’ `none` il a été introduit en 2018. Cependant, certains navigateurs plus anciens ne prennent pas en charge ce paramètre.
+L’attribut SameSite indique aux navigateurs à quel moment et de quelle manière déclencher des cookies dans les scénarios propriétaires et tiers. L’attribut SameSite peut avoir l’une des trois valeurs suivantes : `strict`, `lax` ou `none`. Chrome, Firefox, Edge, Safari et Opera prennent en charge `strict` et `lax` depuis novembre 2017, tandis que `none` a été introduit en 2018. Cependant, certains navigateurs plus anciens ne prennent pas en charge ce paramètre.
 
-En février 2020, Google a publié Chrome 80 et modifié le paramètre par défaut `none` pour le remplacer par `lax` un cookie sans valeur d’attribut SameSite spécifiée. Ce paramètre empêche l’utilisation d’un cookie dans un contexte tiers, également appelé &quot;cross-site&quot;. Tout cookie tiers qui en résulte doit être défini sur `SameSite=none` et étiqueté comme sécurisé.
+En février 2020, Google a lancé Chrome 80 et remplacé le paramètre par défaut `none` par `lax` lorsqu’un cookie n’a pas de valeur d’attribut SameSite spécifiée. Ce paramètre empêche l’utilisation d’un cookie sur un site tiers, également connu sous l’appellation « intersite ». Tout cookie tiers qui en résulte doit être défini sur `SameSite=none` et étiqueté comme étant sécurisé.
 
 Les cookies sans valeur d’attribut SameSite spécifiée sont définis par défaut sur `lax`.
 
-Consultez le document [standard des](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1) cookies pour plus d’informations sur les attributs SameSite.
+Consultez le [document portant sur les normes des cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1) pour plus d’informations sur les attributs SameSite.
 
 ## Valeurs d’attribut SameSite
 
-| Valeur de l’attribut SameSite | Descriptions |
+| Valeur d’attribut SameSite | Descriptions |
 | ------ | ------------ |
-| `strict` | Les cookies dotés de ce paramètre ne sont envoyés que lorsque la page de référence et le landing page font tous deux partie du même domaine que le cookie. |
-| `lax` | Les cookies dotés de ce paramètre ne sont envoyés que lorsque le domaine affiché dans l’URL du navigateur correspond au domaine du cookie. Il s’agit de la nouvelle valeur par défaut pour les cookies dans Chrome. |
-| `none` | Les cookies dotés de ce paramètre sont disponibles pour un accès externe ou tiers, tel que &quot;cross-site&quot;. Avant cette modification, `none` le paramètre Siteidentique était par défaut pour les cookies. L’utilisation de ce paramètre permet donc à un cookie de se comporter de la même manière qu’il fonctionnait traditionnellement. Cependant, Google exige que tout cookie avec ce paramètre spécifie désormais l’indicateur sécurisé, ce qui signifie que le cookie sera créé et envoyé uniquement avec des requêtes via HTTPS. Tous les cookies intersites sans indicateur sécurisé seront rejetés par Google. |
+| `strict` | Les cookies comprenant ce paramètre sont uniquement envoyés lorsque la page de référence et la page de destination font toutes deux partie du même domaine que le cookie. |
+| `lax` | Les cookies comprenant ce paramètre sont uniquement envoyés lorsque le domaine affiché dans l’URL du navigateur correspond au domaine du cookie. Cela constitue le nouveau réglage par défaut des cookies dans Chrome. |
+| `none` | Les cookies comprenant ce paramètre sont disponibles pour un accès externe ou tiers, tel que les accès « intersites ». Avant cette modification, le paramètre SameSite par défaut pour les cookies était `none`. L’utilisation de ce paramètre permet donc de conserver l’ancien comportement d’un cookie presque à l’identique. Cependant, Google exige que tout cookie comprenant ce paramètre affiche désormais l’indicateur « sécurisé ». Cela signifie que le cookie sera uniquement créé et envoyé avec des requêtes par HTTPS. Tous les cookies intersites ne présentant pas l’indicateur « sécurisé » seront rejetés par Google. |
 
 ## Ce que vous devez savoir en tant que client Adobe Experience Cloud
 
-**Aucune mise à jour JavaScript n’est requise**
+**Aucune mise à jour JavaScript requise**
 
-Les produits d’Adobe ont déjà publié des mises à jour côté serveur pour définir des cookies tiers avec les attributs appropriés. Aucune mise à jour de la bibliothèque JavaScript n’est nécessaire pour nos clients.
+Les produits Adobe ont déjà publié des mises à jour côté serveur pour définir les cookies tiers avec les attributs appropriés. Nos clients n’ont pas besoin d’effectuer une mise à jour de la bibliothèque JavaScript.
 
-**Vérifier que les points de terminaison tiers utilisent HTTPS**
+**S’assurer que les points d’entrée tiers utilisent HTTPS**
 
-Tous les clients doivent confirmer que leur configuration JavaScript utilise HTTPS pour leurs appels aux services d’Adobe. Cible, Audience Manager et ECID (Experience Cloud Identity Service) redirigent les appels HTTP tiers vers leurs points de terminaison HTTPS respectifs, ce qui peut augmenter la latence. Cela signifie que vous n’êtes pas tenu de modifier votre configuration. Les clients Analytics doivent mettre à jour leurs implémentations pour utiliser exclusivement HTTPS, car les redirections spécifiques à Analytics peuvent entraîner une perte de données.
+Tous les clients doivent confirmer que leur configuration JavaScript utilise HTTPS pour leurs appels aux services Adobe. Target, Audience Manager et le service d’identités Experience Cloud (ECID) redirigent les appels HTTP tiers vers leurs points d’entrée HTTPS respectifs, ce qui peut augmenter la latence. Cela signifie que vous n’êtes pas contraint de modifier votre configuration. Les clients Analytics doivent mettre à jour leurs implémentations pour utiliser exclusivement HTTPS, car les redirections spécifiques à Analytics peuvent entraîner une perte de données.
 
-**Les cookies correctement étiquetés doivent collecter les données comme prévu**
+**Les cookies correctement étiquetés devraient collecter les données comme prévu**
 
-Tant que les cookies sont correctement étiquetés, les navigateurs ne prennent aucune mesure pour les bloquer. Les consommateurs auront la possibilité de bloquer certains types de cookies, mais il s’agit actuellement d’un paramètre d’inclusion uniquement.
+Tant que les cookies sont correctement étiquetés, les navigateurs ne prennent aucune mesure pour les bloquer. Les clients auront la possibilité de bloquer certains types de cookies, mais il semblerait qu’il s’agisse pour le moment uniquement d’une option devant être sélectionnée manuellement.
 
-**Les cookies tiers existants sans les étiquettes mises à jour seront ignorés.**
+**Les cookies tiers existants sans étiquettes à jour seront ignorés.**
 
-Les cookies tiers créés avant que Chrome 80 ne commence à appliquer les paramètres Siteidentique=`none` et les indicateurs sécurisés seront ignorés par Chrome 80 si ces indicateurs ne sont pas présents.
+Les cookies tiers créés avant que Chrome 80 ne commence à appliquer les paramètres SameSite=`none` et les indicateurs « sécurisé » seront ignorés par Chrome 80 si ces indicateurs sont absents.
 
-La plupart des cookies tiers d’Adobe existants n’ont pas ces indicateurs et devront être mis à jour par les serveurs Edge avant que les utilisateurs ne procèdent à la mise à niveau vers Chrome 80, sans quoi ces cookies seront perdus. La mise à jour des serveurs Edge se produit automatiquement lorsque les utilisateurs visitent n’importe quel site Web où le cookie est utilisé.
+La plupart des cookies tiers d’Adobe existants ne possèdent pas ces indicateurs et devront être mis à jour par les serveurs Edge avant que les utilisateurs ne procèdent à la mise à niveau vers Chrome 80, sans quoi ces cookies seront perdus. La mise à jour des serveurs Edge est automatique lorsque les utilisateurs visitent n’importe quel site web où le cookie est utilisé.
 
-La plupart des produits d’Adobe disposent déjà des indicateurs appropriés pour les cookies. Les implémentations d’Analytics qui utilisent la collecte de données tierces et qui n’utilisent pas l’ECID font exception. Les clients peuvent connaître une légère augmentation temporaire du nombre de nouveaux visiteurs qui, autrement, auraient été des visiteurs de retour.
+La plupart des produits Adobe ont déjà attribué les indicateurs appropriés aux cookies. Les implémentations d’Analytics qui emploient la collecte de données tierces et n’utilisent pas ECID constituent les seules exceptions. Il se peut que les clients connaissent une légère augmentation temporaire du nombre de nouveaux visiteurs qui auraient été autrement des visiteurs récurrents.
 
-**Diminution possible de la correspondance des cookies pour les partenaires de destination et de marché (Audience Manager uniquement)**
+**Diminution possible de la correspondance des cookies pour les partenaires de Destination et de Marketplace (Audience Manager uniquement)**
 
-Bien que l’Adobe ait le contrôle de la mise à jour de ses cookies, l’Adobe ne peut pas forcer les partenaires à apporter les modifications nécessaires. La correspondance des cookies peut diminuer pour les clients d’Audience Manager qui utilisent des partenaires de destination ou des partenaires du marché qui n’ont pas effectué ces mises à jour.
+Bien qu’Adobe décide de la mise à jour de ses cookies, Adobe ne peut pas obliger les partenaires à apporter les modifications nécessaires. La correspondance des cookies peut diminuer pour les clients Audience Manager qui utilisent des partenaires de Destination ou des partenaires de Marketplace qui n’ont pas effectué ces mises à jour.
 
-**Cookies tiers compatibles avec Analytics (`s_vi`cookies Analytics uniquement)**
+**Cookies tiers compatibles avec Analytics (cookies `s_vi` Analytics uniquement)**
 
-Certaines implémentations d’Analytics utilisent un alias CNAME Analytics pour activer la création du `s_vi` cookie dans le domaine de ce CNAME. Si le CNAME se trouve dans le même domaine que votre site Web, il sera désigné comme cookie propriétaire. Cependant, si vous possédez plusieurs domaines et utilisez le même CNAME pour la collecte de données sur tous vos domaines, il sera désigné comme cookie tiers sur ces autres domaines.
+Certaines implémentations d’Analytics utilisent un pseudonyme CNAME Analytics pour activer la création du cookie `s_vi` dans le domaine de ce CNAME. Si le CNAME se trouve dans le même domaine que votre site web, il sera désigné comme cookie propriétaire. Cependant, si vous possédez plusieurs domaines et utilisez le même CNAME pour la collecte de données sur tous vos domaines, il sera désigné comme un cookie tiers sur ces autres domaines.
 
-En `lax` devenant le nouveau paramètre Site identique par défaut dans Chrome, le CNAME n’est plus visible sur les autres domaines.
+Lorsque `lax` devient le nouveau paramètre SameSite par défaut dans Chrome, le CNAME n’est plus visible sur les autres domaines.
 
-Pour tenir compte de la modification, Analytics définit désormais explicitement la valeur MêmeSite du `s_vi` cookie sur `lax`. Pour utiliser ce cookie dans un contexte tiers convivial, définissez la valeur MêmeSite sur `none`, ce qui signifie également que vous devez toujours utiliser HTTPS. Contactez le service à la clientèle pour que la valeur du même site soit modifiée pour vos CNAME sécurisés.
+Pour tenir compte du changement, Analytics définit désormais explicitement la valeur SameSite du cookie `s_vi` sur `lax`. Pour utiliser ce cookie dans un contexte tiers compatible, définissez la valeur SameSite sur `none` : cela signifie également que vous devez toujours utiliser HTTPS. Contactez l’assistance clientèle pour que la valeur SameSite soit modifiée pour vos CNAME sécurisés.
 
 >[!IMPORTANT]
 >
->Cette action n’est pas requise pour les clients Analytics utilisant l’ECID, les clients utilisant un CNAME distinct pour chacun de leurs domaines ou les clients utilisant uniquement la collecte de données Analytics tierces.
+>Cette action n’est pas requise pour les clients Analytics utilisant l’ECID, les clients utilisant un CNAME distinct pour chacun de leurs domaines ou les clients utilisant uniquement la collecte de données Analytics tierce.
 
-## Cookies Visiteurs standard Adobe
+## Cookies standards des visiteurs Adobe
 
-Seuls les cookies standard du visiteur commun sont répertoriés dans le tableau ci-dessous. Pour obtenir des configurations de cookies supplémentaires, consultez la documentation spécifique au produit ou contactez votre représentant d’Adobe.
+Seuls les cookies standards du visiteur communs sont répertoriés dans le tableau ci-dessous. Pour obtenir des configurations de cookies supplémentaires, consultez la documentation spécifique au produit ou prenez contact avec votre représentant Adobe.
 
 ### ECID
 
 | Cookie | Type | Attribut SameSite | Attribut sécurisé |
 | ------ | ---- | ------------------ | ---------------- |
-| AMCV_###@AdobeOrg | Propriétaire direct côté client | Sans valeur ajoutée *Chrome est défini par défaut comme `lax` paramètre | Configurable |
-| AMCVS_###@AdobeOrg | Propriétaire direct côté client | Sans valeur ajoutée *Chrome est défini par défaut comme `lax` paramètre | Configurable |
+| AMCV_###@AdobeOrg | Propriétaire côté client | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Configurable |
+| AMCVS_###@AdobeOrg | Propriétaire côté client | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Configurable |
 | s_ecid | Propriétaire côté serveur | SameSite==`lax` | Non défini |
 
 ### Audience Manager
@@ -91,22 +91,22 @@ Seuls les cookies standard du visiteur commun sont répertoriés dans le tableau
 
 | Cookie | Type | Attribut SameSite | Attribut sécurisé |
 | ------ | ---- | ------------------ | ---------------- |
-| s_vi | <ul><li> Propriétaire côté serveur en cas d’utilisation `CNAME` </li> <li>Tiers si vous utilisez 2o7.net ou omtrdc.net</li></ul> | <ul><li>`lax` if first-party</li> <li>`none` si tiers</li></ul> *Les clients peuvent modifier le paramètre par le biais du ticket du service d’assistance clientèle pour les domaines propriétaires* | Défini, en cas d’utilisation `none` et de demande HTTPS |
-| s_fid | Propriétaire direct côté client | Aucune valeur ajoutée *Chrome est défini par défaut comme `lax` paramètre | Non défini |
+| s_vi | <ul><li> Propriétaire côté serveur en cas d’utilisation de `CNAME` </li> <li>Tiers en cas d’utilisation de 2o7.net ou omtrdc.net</li></ul> | <ul><li>`lax` si propriétaire</li> <li>`none` si tiers</li></ul> *Les clients peuvent modifier le paramètre à l’aide d’un ticket provenant de l’assistance clientèle pour les domaines propriétaires* | Défini, en cas d’utilisation de `none` et d’une demande HTTPS |
+| s_fid | Propriétaire côté client | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Non défini |
 
 ### Target
 
 | Cookie | Type | Attribut SameSite | Attribut sécurisé |
 | ------ | ---- | ------------------ | ---------------- |
-| mbox | Premier niveau | Sans valeur ajoutée *Chrome est défini par défaut comme `lax` paramètre | Non défini |
+| mbox | Premier niveau | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Non défini |
 
-### ad cloud
+### Ad Cloud
 
 | Cookie | Type | Attribut SameSite | Attribut sécurisé |
 | ------ | ---- | ------------------ | ---------------- |
-| everest_g_v2 | Troisième niveau | `none` *Uniquement sur les navigateurs Google Chrome et Chrome* | Défini, en cas d’utilisation `none` et de demande HTTPS |
-| data_adcloud | Premier niveau | Sans valeur ajoutée *Chrome est défini par défaut comme `lax` paramètre | Non défini |
-| ev_tm | Troisième niveau | `none` *Uniquement sur les navigateurs Google Chrome et Chrome* | Défini, en cas d’utilisation `none` et de demande HTTPS |
+| everest_g_v2 | Troisième niveau | `none` *Uniquement sur les navigateurs Google Chrome et Chromium* | Défini, en cas d’utilisation de `none` et d’une demande HTTPS |
+| data_adcloud | Premier niveau | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Non défini |
+| ev_tm | Troisième niveau | `none` *Uniquement sur les navigateurs Google Chrome et Chromium* | Défini, en cas d’utilisation de `none` et d’une demande HTTPS |
 
 ### Bizible
 
@@ -118,8 +118,8 @@ Seuls les cookies standard du visiteur commun sont répertoriés dans le tableau
 
 | Cookie | Type | Attribut SameSite | Attribut sécurisé |
 | ------ | ---- | ------------------ | ---------------- |
-| _mkto_trk | Propriétaire direct côté client | Sans valeur ajoutée *Chrome est défini par défaut comme `lax` paramètre | Configurable pour les pages externes |
+| _mkto_trk | Propriétaire côté client | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Configurable pour les pages externes |
 
 > !![IMPORTANT] Les cookies tiers Adobes sont définis côté serveur.
 
-Pour plus d’informations, voir le document sur les stratégies [](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)Google Chrome SameSite de la Cible.
+Pour plus d’informations, voir le document concernant les [stratégies de Google Chrome concernant SameSite pour Target](https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html).
