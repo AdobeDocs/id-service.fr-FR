@@ -4,11 +4,11 @@ keywords: ID Service
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
 seo-title: Notes de mise à jour 2020
 title: Notes de mise à jour 2020
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,4 +28,4 @@ Correction d’un problème de performances sur `Internet-Explorer (IE) 11` lors
 * À partir de la version 4.5, ECID rejettera les identifiants vides envoyés à la méthode `setCustomerIDs`.
 * Correction d’un problème survenant lorsque l’inclusion était configurée sur `doesOptInApply=false` et `isIabContext=true`.
 
-Pour consulter les notes [de mise à jour mensuelles de tous les produits, reportez-vous à la page Notes](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html) de mise à jour desExperience Cloud.
+Pour consulter les notes de mise à jour mensuelles de tous les produits, reportez-vous aux [Notes de mise à jour Experience Cloud](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html).
