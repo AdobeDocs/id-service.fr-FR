@@ -5,9 +5,9 @@ seo-description: Le service Adobe Experience Cloud Identity (service d’ID) 
 seo-title: Service Experience Cloud Identity
 title: Service Experience Cloud Identity
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 100%
 
