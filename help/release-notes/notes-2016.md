@@ -5,9 +5,9 @@ seo-description: Description des nouvelles fonctionnalités, des mises à jour e
 seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 100%
 
@@ -97,7 +97,7 @@ Juillet 2016
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -141,7 +141,7 @@ Juin 2016
 <table id="table_5D604D0820C84EC996ACB99126C8A3DF"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -186,7 +186,7 @@ Mars 2016
 <table id="table_F4ED1F88709E4D3BA69C747879A4E18F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
