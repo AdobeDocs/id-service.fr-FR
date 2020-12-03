@@ -1,9 +1,9 @@
 ---
 title: Utiliser l’Opt-in pour contrôler les activités Experience Cloud en fonction du consentement de l’utilisateur
 description: L’objet Opt-in d’Adobe est une extension d’Adobe Experience Platform Identity Service, conçu pour vous aider à contrôler si et quelles solutions Experience Cloud peuvent créer des cookies sur les pages web ou lancer des balises, en fonction du consentement de l’utilisateur final.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ L’[!UICONTROL Opt-in] vous permet également de décider si des balises se dé
 
 L’[!UICONTROL Opt-in] est également plus facile à configurer avec Adobe Experience Platform Launch. Consultez la courte vidéo suivante pour découvrir comment procéder.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
 Si vous n’utilisez pas Experience Platform Launch, vous pouvez définir la configuration de l’[!UICONTROL Opt-in] dans l’initialisation de l’objet Visiteur global, comme indiqué dans la [documentation](https://marketing.adobe.com/resources/help/fr_FR/mcvid/getting-started.html).
 
@@ -46,7 +46,7 @@ Lors de la configuration d’une interface utilisateur afin qu’elle utilise l�
 
 Dans la vidéo suivante, visionnez une démonstration rapide de l’[!UICONTROL Opt-in] sur la page et découvrez comment il peut influer sur si oui ou non les solutions Experience Cloud définissent les cookies, déclenchent les balises, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
 
 **REMARQUE :** il est important de noter qu’au moment de la rédaction de cet article, l’[!UICONTROL Opt-in] n’a pas été intégré dans les bibliothèques pour toutes les solutions Experience Cloud. Les bibliothèques actuellement prises en charge pour l’[!UICONTROL Opt-in] sont les suivantes :
 
