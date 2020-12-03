@@ -5,10 +5,10 @@ seo-description: Méthodes d’implémentation standard ou non standard du servi
 seo-title: Méthodes de mise en œuvre
 title: Méthodes de mise en œuvre
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
-workflow-type: ht
-source-wordcount: '153'
+workflow-type: tm+mt
+source-wordcount: '149'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Vous pouvez choisir une méthode d’implémentation [!DNL Experience Cloud ID S
 
 ## Mise en œuvre standard {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe recommande vivement d’utiliser [[!DNL Experience Platform Launch]](https://docs.adobe.com/content/help/fr-FR/launch/using/implement/solutions/idservice-save.html) pour mettre en oeuvre le service d’ID. Cette méthode garantit l’intégration à d’autres solutions [!DNL Experience Cloud], simplifie les processus d’implémentation et assure automatiquement le placement et le séquencement corrects du code.
+Adobe recommande vivement d’utiliser [[!DNL Experience Platform Launch] pour implémenter le service d’ID. ](https://docs.adobe.com/content/help/fr-FR/launch/using/implement/solutions/idservice-save.html) Cette méthode garantit l’intégration à d’autres solutions [!DNL Experience Cloud], simplifie les processus d’implémentation et assure automatiquement le placement et le séquencement corrects du code.
 
 ## Mise en œuvre non standard {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
