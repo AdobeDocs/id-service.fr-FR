@@ -5,9 +5,9 @@ seo-description: Questions fréquemment posées sur les fonctionnalités et prob
 seo-title: Questions fréquentes sur Analytics et le service Identity
 title: Questions fréquentes sur Analytics et le service Identity
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 100%
 
