@@ -5,9 +5,9 @@ seo-description: Cette implémentation permet aux clients d’utiliser le servic
 seo-title: Intégration directe avec le service Experience Cloud Identity
 title: Intégration directe avec le service Experience Cloud Identity
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 100%
 
