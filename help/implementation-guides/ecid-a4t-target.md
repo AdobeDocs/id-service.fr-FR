@@ -1,25 +1,28 @@
 ---
-description: Ces instructions concernent les clients A4T avec un serveur mixte, pour la mise en œuvre de Target, Analytics et du service d’ID côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour obtenir des instructions relatives à l’installation et d’autres conditions préalables de configuration..
-keywords: Service d’identification
-seo-description: Ces instructions concernent les clients A4T avec un serveur mixte, pour la mise en œuvre de Target, Analytics et du service d’ID côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour obtenir des instructions relatives à l’installation et d’autres conditions préalables de configuration..
+description: Ces instructions s’adressent aux clients A4T avec des implémentations mixtes de Cible, d’Analytics et du service d’ID côté serveur et côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour connaître les instructions d’installation et les autres exigences de configuration.
+keywords: ID Service
+seo-description: Ces instructions s’adressent aux clients A4T avec des implémentations mixtes de Cible, d’Analytics et du service d’ID côté serveur et côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour connaître les instructions d’installation et les autres exigences de configuration.
 seo-title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 68%
 
 ---
 
 
 # Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-Ces instructions concernent les clients A4T avec un serveur mixte, pour la mise en œuvre de Target, Analytics et du service d’ID côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour obtenir des instructions relatives à l’installation et d’autres conditions préalables de configuration..
+Ces instructions s’adressent aux clients A4T avec des implémentations mixtes de Cible, d’Analytics et du service d’ID côté serveur et côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour connaître les instructions d’installation et les autres exigences de configuration.
 
 ## Introduction {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
-Les clients A4T (et les autres) peuvent utiliser cette version du service d’ID lorsqu’ils ont besoin d’effectuer les actions suivantes :
+A4T (et d’autres clients) peuvent utiliser cette version du service d’ID lorsqu’ils doivent :
 
-* Afficher du contenu de page Web sur leurs serveurs et le transmettre à un navigateur pour l’affichage final.
+* Générer le contenu d’une page Web sur leurs serveurs et le transmettre à un navigateur pour affichage final.
 * Lancer des appels [!DNL Target] côté serveur.
 * Lancer des appels côté client (dans le navigateur) à [!DNL Analytics].
 * Synchroniser différents identifiants [!DNL Target] et [!DNL Analytics] pour déterminer si un visiteur identifié par une solution est la même personne que celle identifiée par une autre solution.
@@ -40,14 +43,14 @@ L’activité côté serveur commencer lorsqu’un visiteur fait une demande HTT
 
 ## Étape 2 : Génération des données utiles du service d’ID {#section-c86531863db24bd9a5b761c1a2e0d964}
 
-Ensuite, vous devez effectuer une *`payload request`* côté serveur auprès du service d’ID. Une demande de données utiles :
+Ensuite, vous devez effectuer une *`payload request`* côté serveur auprès du service d’ID. Demande de charge utile :
 
 * Transmet le cookie AMCV au service d’ID.
-* Demande les données requises par Target et Analytics dans les étapes suivantes décrites ci-dessous.
+* Demande les données requises par Cible et Analytics lors des étapes suivantes décrites ci-dessous.
 
 >[!NOTE]
 >
->Cette méthode demande une mbox unique depuis [!DNL Target]. Si vous avez besoin de demander plusieurs mboxes dans un seul appel, voir [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Cette méthode demande une mbox unique depuis [!DNL Target]. If you need to request multiple mboxes in a single call, see [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 Votre demande de données utiles doit ressembler à l’exemple de code suivant. Dans l’exemple de code, la fonction `visitor.setCustomerIDs` est optionnelle. Pour plus d’informations, voir [ID de client et états de l’authentification.](../reference/authenticated-state.md)
 
@@ -124,7 +127,7 @@ Une fois que votre serveur a reçu les données utiles de la part du service d�
 
 ## Étape 4 : Obtention de l’état du serveur depuis le service d’ID {#section-8ebfd177d42941c1893bfdde6e514280}
 
-Les données sur l’état du serveur contiennent des informations sur le travail effectué par le serveur. Le code du service d’ID côté client nécessite ces informations. Les clients qui ont mis en œuvre le service d’ID via [!DNL Dynamic Tag Manager] (DTM) peuvent configurer DTM pour transmettre des données sur l’état du serveur via cet outil. Si vous avez configuré le service d’ID via un processus non standard, vous devrez renvoyer l’état du serveur avec votre propre code. Le code du service d’ID et d’[!DNL Analytics] côté client transmet des données sur l’état à Adobe lors du chargement de la page.
+Les données d’état du serveur contiennent des informations sur le travail effectué sur le serveur. Le code du service d’ID côté client requiert ces informations. Les clients qui ont mis en œuvre le service d’ID via [!DNL Dynamic Tag Manager] (DTM) peuvent configurer DTM pour transmettre des données sur l’état du serveur via cet outil. Si vous avez configuré le service d’ID via un processus non standard, vous devrez renvoyer l’état du serveur avec votre propre code. Le code du service d’ID et d’[!DNL Analytics] côté client transmet des données sur l’état à Adobe lors du chargement de la page.
 
 **Obtention de l’état du serveur via DTM**
 
@@ -153,7 +156,7 @@ Response.send("
 
 **Paramètres DTM**
 
-Ajoutez-les en tant que paires noms-valeurs dans la section **[!UICONTROL Général &gt; Paramètres]** de votre instance de service :
+Ajoutez-les en tant que paires noms-valeurs dans la section **[!UICONTROL Général > Paramètres]** de votre instance de service :
 
 * **[!UICONTROL Nom :]** serverState
 * **[!UICONTROL Valeur :]** %serverState%
@@ -162,11 +165,11 @@ Ajoutez-les en tant que paires noms-valeurs dans la section **[!UICONTROL Géné
    >
    >Le nom de la valeur doit correspondre au nom de la variable que vous définissez pour `serverState` dans le code de votre page.
 
-Voici à quoi doivent ressembler vos paramètres configurés :
+Les paramètres configurés doivent se présenter comme suit :
 
 ![](assets/server_side_dtm.png)
 
-Voir également [Paramètres du service Experience Cloud Identity pour DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+See also, [Experience Cloud Identity Service Settings for DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Obtention de l’état du serveur sans DTM**
 
@@ -191,9 +194,9 @@ Response.send("
 
 ## Étape 5 : Servir une page et renvoyer les données Experience Cloud {#section-4b5631a0d75a41febd6f43f8c214c263}
 
-À cette étape, le serveur Web envoie le contenu de la page dans le navigateur du visiteur. À partir de là, le navigateur (et non le serveur) lance tous les appels restants du service d’ID et d’[!DNL Analytics]. Par exemple, dans le navigateur :
+À cette étape, le serveur Web envoie le contenu de la page dans le navigateur du visiteur. À partir de là, le navigateur (et non le serveur) lance tous les appels restants du service d’ID et d’[!DNL Analytics]. Par exemple, dans le navigateur :
 
-* Le service d’ID reçoit les données d’état à partir du serveur et transmet le SDID à AppMeasurement.
+* Le service d’ID reçoit les données d’état du serveur et transmet le SDID à AppMeasurement.
 * AppMeasurement envoie les données sur l’accès à la page à [!DNL Analytics], y compris le SDID.
 * [!DNL Analytics] et [!DNL Target] comparent les SDID de ce visiteur. Si le SDID est identique, [!DNL Target] et [!DNL Analytics] réunissent l’appel côté serveur et l’appel côté client. À cette étape, les deux solutions reconnaissent désormais ce visiteur, qui est une seule et même personne.
 
