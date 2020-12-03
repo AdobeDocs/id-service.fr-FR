@@ -5,9 +5,9 @@ seo-description: Cette fonction permet de partager l’Experience Cloud ID d�
 seo-title: appendVisitorIDsTo (suivi interdomaines)
 title: appendVisitorIDsTo (suivi interdomaines)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 100%
 
