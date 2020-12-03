@@ -5,9 +5,9 @@ seo-description: Le cookie AMCV contient l’Experience Cloud ID (MID) et un i
 seo-title: Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID
 title: Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID
 uuid: bdd9d001-f29f-4ff0-800b-8182243da218
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 100%
 
