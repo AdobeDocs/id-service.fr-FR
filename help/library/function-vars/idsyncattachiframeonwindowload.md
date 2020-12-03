@@ -1,12 +1,15 @@
 ---
 description: Indicateur booléen facultatif qui contrôle la manière dont le service Experience Cloud Identity charge l’iFrame de synchronisation des identifiants.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: Indicateur booléen facultatif qui contrôle la manière dont le service Experience Cloud Identity charge l’iFrame de synchronisation des identifiants.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 79%
 
 ---
 
@@ -17,7 +20,7 @@ Indicateur booléen facultatif qui contrôle la manière dont le service Experie
 
 **Syntaxe :** ` `idSyncAttachIframeOnWindowLoad= true|false`` (la valeur par défaut est `false`).
 
-Si `idSyncAttachIframeOnWindowLoad: true`, le service d’identification charge l’iFrame de synchronisation des identifiants au chargement de la fenêtre. Par défaut, le service d’ID charge l’iFrame de synchronisation des identifiants aussi rapidement que possible au lieu d’un chargement par fenêtre.
+Si `idSyncAttachIframeOnWindowLoad: true`, le service d’identification charge l’iFrame de synchronisation des identifiants au chargement de la fenêtre. Par défaut, le service d’ID charge l’iFrame de synchronisation des identifiants aussi rapidement que possible au lieu de charger la fenêtre.
 
 **Exemple de code**
 
