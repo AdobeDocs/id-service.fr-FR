@@ -5,9 +5,9 @@ seo-description: Description des nouvelles fonctionnalités, des mises à jour e
 seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 <table id="table_FD24C06C7B3547C3A7673C46B1852A35"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -63,7 +63,7 @@ Août 2017
 <table id="table_D9623D34F4444B038F7835750932C8AA"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -86,7 +86,7 @@ Juillet 2017
 <table id="table_1448040D09B94A74883A694FCF91EB33"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -114,7 +114,7 @@ Date de publication : Juin 2017
 <table id="table_7E412383E89D46759B00FE7328C9946F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
@@ -173,7 +173,7 @@ Date de publication : février 2017
 <table id="table_1F7E1CF091604D22B1D9F3F1AE4DB2D7"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonction </th> 
+   <th colname="col1" class="entry"> Fonctionnalité </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
