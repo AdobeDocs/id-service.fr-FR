@@ -1,12 +1,15 @@
 ---
 description: Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
-keywords: ID d’organisation, service d’ID
+keywords: Organization ID;ID Service
 seo-description: Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
 seo-title: Configurations
 title: Configurations
 uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +20,7 @@ Configurez le service d’ID en transmettant les propriétés suivantes à la m�
 
 >[!NOTE]
 >
->Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Vous pouvez trouver la dernière mise à jour des bibliothèques JavaScript d’Experience Cloud ID à l’adresse :[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Articles connexes :
 
