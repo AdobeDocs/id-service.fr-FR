@@ -4,9 +4,9 @@ seo-description: Connecter leur plateforme de gestion du consentement (CMP) à l
 seo-title: Utilisation des services Opt-in avec un framework IAB
 title: Utilisation des services Opt-in avec un framework IAB
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
