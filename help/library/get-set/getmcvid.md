@@ -1,12 +1,15 @@
 ---
 description: getMarketingCloudVisitorID renvoie l’identifiant visiteur Experience Cloud.
-keywords: Service d’identification
+keywords: ID Service
 seo-description: getMarketingCloudVisitorID renvoie l’identifiant visiteur Experience Cloud.
 seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
 uuid: 93e16220-b5b3-4d81-9189-30031bc15129
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 100%
 
 ---
 
