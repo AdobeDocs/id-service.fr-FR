@@ -6,6 +6,9 @@ title: Service Opt-in
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
 translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +21,7 @@ Le service Opt-in est une extension du service Experience Cloud ID (ECID), con
 
 L’utilisation du service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, vous pouvez récupérer les approbations visiteur de la CMP de l’ensemble des solutions Adobe.
 
-The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Pour commencer, reportez-vous à la section [Configuration du service Opt-in](../../implementation-guides/opt-in-service/getting-started.md) pour commencer.
 
@@ -36,13 +39,13 @@ Le service Opt-in est un outil vous permettant de construire le workflow corresp
 
 Le service Opt-in vous permet de configurer les pratiques de gestion du consentement des solutions Adobe pour :
 
-* Indiquer si les conditions de collecte des consentements s’appliquent de manière générale à un utilisateur.
-* Indiquer, parmi les solutions, lesquelles sont autorisées à générer des cookies.
-* Appliquer les préférences par défaut pour chacune des solutions dont l’utilisateur n’a pas explicitement consenti ou refusé la catégorie.
-* Déclencher une réponse personnalisée basée sur les modifications apportées aux paramètres de consentement de l’utilisateur, vous permettant de conserver ou de mettre à jour les paramètres dudit utilisateur.
+* Indiquez si les exigences de collecte de consentement s’appliquent en général à un utilisateur.
+* Spécifiez les solutions autorisées pour générer des cookies.
+* Appliquez des préférences par défaut à toute solution dont la catégorie n’est pas explicitement consentie ou refusée par l’utilisateur.
+* Déclenchez une réponse personnalisée en fonction des modifications apportées aux paramètres de consentement d’un utilisateur, ce qui vous permet de conserver ou de mettre à jour les paramètres de l’utilisateur.
 
-L’utilisation des services Opt-in vous permet de configurer votre site de façon à autoriser le chargement de certains cookies avec consentement préalable avant que l’utilisateur ait fait son choix. Vous pouvez configurer les services Opt-in de sorte que les nouveaux clients autorisent le chargement de cookies après l’affichage de l’accord utilisateur ou après qu’un choix a été proposé à l’utilisateur. Vous pouvez également stocker et récupérer les consentements sur votre plate-forme de gestion de contenu, ou simplement stocker les autorisations d’opt-in dans un cookie.
+L’utilisation des services Opt-in vous permet de configurer votre site de façon à autoriser le chargement de certains cookies avec consentement préalable avant que l’utilisateur ait fait son choix. Vous pouvez configurer les services Opt-in de sorte que les nouveaux clients autorisent le chargement de cookies après l’affichage de l’accord utilisateur ou après qu’un choix a été proposé à l’utilisateur. Vous pouvez également stocker et récupérer opt-in consentement de votre plateforme de gestion de contenu existante ou simplement stocker les autorisations opt-in dans un cookie.
 
 ![](assets/Opt-in-approval.png)
 
-Les solutions Adobe peuvent alors vérifier que la balise est approuvée, s’abonner aux modifications, puis récupérer l’ensemble des clients opt-in. Le service Opt-in vous permet de récupérer les autorisations directement via les bibliothèques JavaScript de la solution ou via ECID lorsque celui-ci a été mis en œuvre.
+Les solutions d’Adobe peuvent alors vérifier si la balise est approuvée, s’abonner aux modifications, puis récupérer tous les clients ayant souscrit une souscription. Le service Opt-in vous permet de récupérer les autorisations directement via les bibliothèques JavaScript de la solution ou via ECID lorsque celui-ci a été mis en œuvre.
