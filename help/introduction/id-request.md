@@ -5,9 +5,9 @@ seo-description: Cette section décrit le processus de requête d’ID et de ré
 seo-title: Requête et définition d’ID par le service Experience Cloud Identity
 title: Requête et définition d’ID par le service Experience Cloud Identity
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 100%
 
