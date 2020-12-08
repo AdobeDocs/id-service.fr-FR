@@ -1,16 +1,12 @@
 ---
-source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
-workflow-type: ht
-translation-type: ht
-source-wordcount: '520'
+source-git-commit: 315d157c7eb5d7532056502d9a9b856dedf212c9
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '438'
 ht-degree: 100%
 
 ---
 # Article sur les contributions
-
-| EXL-PR | EXL | Aperçu | Activer | Publication | Aide |
-|--- |--- |--- |--- |--- |--- |
-| [![Statut de la version](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Statut de la version](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [URL de la prévisualisation](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL en direct](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Guide de création](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Nous invitons notre communauté et les employés d’Adobe ne faisant pas partie des équipes de documentation à nous faire part de leurs contributions au contenu.
 
