@@ -1,6 +1,6 @@
 ---
 description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un identifiant unique et persistant pour les visiteurs de votre site.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un identifiant unique et persistant pour les visiteurs de votre site.
 seo-title: Cas d’utilisation de l’intégration directe
 title: Cas d’utilisation de l’intégration directe
@@ -8,7 +8,7 @@ uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '475'
 ht-degree: 57%
 
 ---
@@ -44,7 +44,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
      <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">Posséder un MID pour le visiteur du site. Appelons cet identifiant 1234. </li> 
      <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">Connaissez ce visiteur à l’aide de votre propre identifiant unique. Appelons cet identifiant 9876. </li> 
      <li id="li_D93CE7182EBE4927A5C7A0BF414C03BC">Vous souhaitez lier le MID (1234) à votre propre ID unique (9876). </li> 
-     <li id="li_4611146E56624C2AB647733487A3F046"> <i>(Facultatif)</i> Vous souhaitez définir un état d’authentification sur ce visiteur. </li> 
+     <li id="li_4611146E56624C2AB647733487A3F046"> <i>(Facultatif)</i> Souhaitez définir un état d’authentification sur ce visiteur. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -62,7 +62,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
    <td colname="col2"> <p>Mettez en forme votre appel au service d’ID comme suit : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Remarquez que l’exemple d’appel contient : </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">Le MID : <span class="codeph">d_mid=1234</span> </li> 
-     <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">Le MID associé à votre identifiant unique pour le visiteur : <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
+     <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">Le MID associé à votre ID unique pour le visiteur : <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
      <li id="li_D428DBF765234DD78DDF152C5EE8AB69">L’ID d’état d’authentification : <span class="codeph">...d_cid=4444%019876%011</span> (indice : c’est le dernier chiffre) </li> 
     </ul> </td> 
   </tr> 
