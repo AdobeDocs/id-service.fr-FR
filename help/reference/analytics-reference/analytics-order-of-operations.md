@@ -1,6 +1,6 @@
 ---
 description: Une fois que vous avez déployé le service d’identification des visiteurs, un visiteur peut être identifié de 5 manières différentes dans Analytics.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Une fois que vous avez déployé le service d’identification des visiteurs, un visiteur peut être identifié de 5 manières différentes dans Analytics.
 seo-title: Ordre des opérations pour les Analytics ID
 title: Ordre des opérations pour les Analytics ID
@@ -8,7 +8,7 @@ uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
