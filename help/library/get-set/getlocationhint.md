@@ -1,6 +1,6 @@
 ---
 description: Renvoie l’ID de zone géographique du service Experience Cloud Identity. Un ID de zone géographique (ou indicateur d’emplacement) est un identifiant numérique pour l’emplacement géographique d’un centre de données de service d’ID en particulier. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur vers Audience Manager.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Renvoie l’ID de zone géographique du service Experience Cloud Identity. Un ID de zone géographique (ou indicateur d’emplacement) est un identifiant numérique pour l’emplacement géographique d’un centre de données de service d’ID en particulier. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur vers Audience Manager.
 seo-title: getLocationHint
 title: getLocationHint
@@ -8,7 +8,7 @@ uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '232'
 ht-degree: 100%
 
 ---
