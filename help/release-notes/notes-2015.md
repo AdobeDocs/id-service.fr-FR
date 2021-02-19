@@ -1,6 +1,6 @@
 ---
 description: Notes de mise à jour et mises à jour de 2015.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Notes de mise à jour et mises à jour de 2015.
 seo-title: Notes de mise à jour 2015
 title: Notes de mise à jour 2015
@@ -8,8 +8,8 @@ uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 84%
+source-wordcount: '415'
+ht-degree: 85%
 
 ---
 
@@ -38,7 +38,7 @@ Août 2015
 * Correction d’un bogue afin d’empêcher le service d’ID de demander un iframe s’il n’y a aucune donnée à synchroniser ou à déclencher. (AAM-20164)
 * Correction d’un bogue qui empêchait le service d’ID de définir correctement un cookie de domaine de niveau supérieur à parties multiples. Si, par exemple, vous avez un domaine du type `my_company.co.uk`, dans certains cas, le service d’ID définirait un cookie dans `co.uk` seulement. (AN-104683)
 
-   Cela n&#39;a affecté que quelques clients qui remplissaient *tous les* critères suivants :
+   Cela n&#39;a affecté que quelques clients qui remplissaient *tous* des critères suivants :
 
    * Utilisation du service d’ID.
    * activation d’une [période de grâce ](../reference/analytics-reference/grace-period.md)*ou* utilisation de cookies propriétaires et de cookies tiers de blocage des utilisateurs ;
