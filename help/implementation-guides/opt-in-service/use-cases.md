@@ -19,7 +19,7 @@ Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
 
 ## Conseils et dépannage {#section-5c566366410f4a8f89eca0d3f556d99f}
 
-* Le fichier JavaScript Visiteur initialisé est synchrone et s’exécute lors du chargement de la page. Si vous interagissez avec un CMP ou si la persistance des autorisations présente une latence élevée, il peut être préférable d’utiliser les fonctions asynchrones décrites dans la section Configuration [de l’](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)inclusion.
+* Le fichier JavaScript Visiteur initialisé est synchrone et s’exécute lors du chargement de la page. Si vous interagissez avec un CMP ou si la persistance des autorisations présente une latence élevée, il peut être préférable d&#39;utiliser les fonctions asynchrones décrites dans [Configuration de l&#39;inclusion](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047).
 * L’inclusion est une implémentation par domaine. Il ne traitera pas les implémentations interdomaines.
 * Pour désactiver les appels tiers pour une bibliothèque spécifique, vous devez configurer cette préférence dans chaque bibliothèque séparément.
 
