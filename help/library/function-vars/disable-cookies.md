@@ -1,6 +1,6 @@
 ---
 description: Un indicateur booléen facultatif qui empêche le service Experience Cloud Identity de renvoyer le cookie tiers demdex.net.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Un indicateur booléen facultatif qui empêche le service Experience Cloud Identity de renvoyer le cookie tiers demdex.net.
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
@@ -8,8 +8,8 @@ uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
 translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 60%
+source-wordcount: '157'
+ht-degree: 61%
 
 ---
 
