@@ -1,6 +1,6 @@
 ---
 description: Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
-keywords: cross domain tracking;ID Service
+keywords: suivi inter-domaines ; service d’ID
 seo-description: Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
@@ -8,8 +8,8 @@ uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 58%
+source-wordcount: '216'
+ht-degree: 59%
 
 ---
 
