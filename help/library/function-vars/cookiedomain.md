@@ -1,6 +1,6 @@
 ---
 description: Requise pour les domaines de niveau supérieur à parties multiples où chacune des deux dernières parties de l’URL comporte plus de deux caractères.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Requise pour les domaines de niveau supérieur à parties multiples où chacune des deux dernières parties de l’URL comporte plus de deux caractères.
 seo-title: cookieDomain
 title: cookieDomain
@@ -8,7 +8,7 @@ uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '76'
 ht-degree: 100%
 
 ---
