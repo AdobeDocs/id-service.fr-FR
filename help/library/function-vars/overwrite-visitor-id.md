@@ -1,6 +1,6 @@
 ---
 description: Cette propriété remplace un Experience Cloud visiteur et les identifiants Analytics lorsqu’ils naviguent d’un domaine à un autre. Pour remplacer un ID, vous devez posséder et avoir mis en oeuvre le service d’ID sur chaque domaine. Ce code ne vous permet pas de remplacer les ID sur les domaines que vous ne contrôlez pas.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Cette propriété remplace un Experience Cloud visiteur et les identifiants Analytics lorsqu’ils naviguent d’un domaine à un autre. Pour remplacer un ID, vous devez posséder et avoir mis en oeuvre le service d’ID sur chaque domaine. Ce code ne vous permet pas de remplacer les ID sur les domaines que vous ne contrôlez pas.
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
@@ -8,7 +8,7 @@ uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 19%
 
 ---
