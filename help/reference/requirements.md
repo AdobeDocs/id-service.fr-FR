@@ -1,6 +1,6 @@
 ---
 description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service Experience Cloud Identity.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service Experience Cloud Identity.
 seo-title: Conditions requises pour le service Experience Cloud Identity
 title: Conditions requises pour le service Experience Cloud Identity
@@ -8,7 +8,7 @@ uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '783'
 ht-degree: 100%
 
 ---
@@ -139,7 +139,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
  </tbody> 
 </table>
 
-## Versions minimales des SDK pour Android et iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
+## Versions minimales des SDK pour Android et iOS  {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Au minimum, le service d’ID requiert les versions du SDK répertoriées ci-dessous.
 
