@@ -1,6 +1,6 @@
 ---
 description: Informations sur les autres composants et fonctions du service Experience Cloud Identity.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Informations sur les autres composants et fonctions du service Experience Cloud Identity.
 seo-title: Référence
 title: Référence
@@ -8,7 +8,7 @@ uuid: 9e8f50db-1fdf-4fbc-89e5-4431bb6402d5
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 100%
 
 ---
