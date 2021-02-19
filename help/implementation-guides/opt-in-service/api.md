@@ -34,7 +34,7 @@ Cette section aborde l’utilisation de l’API pour configurer Opt-in. Une gran
 
 Les configurations d’Opt-in sont fournies dans la fonction `getInstance()` du fichier JavaScript Visiteur, qui instancie l’objet `adobe` global. Vous trouverez ci-après les configurations du fichier JavaScript Visiteur liées au service Opt-in.
 
-**`doesOptInApply (boolean or function that evaluates to a boolean)`**:
+**`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
 « False » indique que les visiteurs n’ont pas besoin de donner leur accord. Entraîne la création de cookies par Experience Cloud quelles que soient les catégories pour lesquelles le visiteur donne son accord ou se désinscrit. Cette configuration active ou désactive globalement l’inclusion.
 
@@ -58,13 +58,13 @@ Domaine propriétaire ou sous-domaine à utiliser pour le cookie d’Opt-in (si 
 
 Nombre de secondes nécessaires au remplacement de l’expiration par défaut de 13 mois.
 
-## Modification des paramètres de consentement {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## Modification des paramètres de consentement  {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 À tout moment lors de son passage sur votre site, un visiteur peut définir ses préférences pour la première fois ou modifier celles-ci à l’aide de votre CMP. Une fois que les fichiers JS Visiteur ont été initialisés avec les paramètres initiaux, les autorisations des visiteurs peuvent être modifiées à l&#39;aide des fonctions suivantes :
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-Fonction qui approuve ou engage le consentement du visiteur pour l’ensemble des catégories d’une liste. Pour plus d’informations sur le paramètre shouldWaitForComplete, voir Processus [d’](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)inclusion.
+Fonction qui approuve ou engage le consentement du visiteur pour l’ensemble des catégories d’une liste. Pour plus d’informations sur le paramètre shouldWaitForComplete, voir [Processus d’inclusion](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
@@ -132,7 +132,7 @@ Un objet qui reprend toutes les solutions d’Experience Cloud, comme les caté
 
 « True » ou « false », selon l’état. L’inclusion peut signaler un faux pour cette propriété lorsqu’un consentement de type workflow a démarré mais n’est pas terminé.
 
-## Méthodes de l’objet Opt-in {#section-e0417801a82548d199d833010033e433}
+## Méthodes de l’objet Opt-in  {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
@@ -162,7 +162,7 @@ Vérifiez si au moins une des catégories a été préalablement approuvée par 
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-API asynchrone pour récupérer la liste des autorisations. Le rappel est effectué avec la liste des autorisations, une fois le processus d’acceptation ou de refus des autorisations terminé. **`shouldAutoSubscribe`:** Utilitaire d&#39;assistance, abonnera automatiquement ce rappel à tous les futurs événements. Cela signifie que le rappel est effectué chaque fois qu’une approbation ou un refus est déclenché dans Opt-in. Ainsi, vous êtes toujours mis à jour, sans vous abonner aux événements vous-même.
+API asynchrone pour récupérer la liste des autorisations. Le rappel est effectué avec la liste des autorisations, une fois le processus d’acceptation ou de refus des autorisations terminé. **`shouldAutoSubscribe`:** Un utilitaire d&#39;assistance, abonnera automatiquement ce rappel à tous les événements futurs. Cela signifie que le rappel est effectué chaque fois qu’une approbation ou un refus est déclenché dans Opt-in. Ainsi, vous êtes toujours mis à jour, sans vous abonner aux événements vous-même.
 
 **Exemple**
 
@@ -205,7 +205,7 @@ Approuve l’ensemble des catégories existantes.
 
 Refuse l’ensemble des catégories existantes.
 
-## Événements de l’objet Opt-in {#section-06f25b33cab54bafb053183e937fb710}
+## Événements de l’objet Opt-in  {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
