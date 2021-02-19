@@ -1,6 +1,6 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
@@ -8,7 +8,7 @@ uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1164'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Octobre 2016
 
 **Correctifs et améliorations**
 
-* Correction d’un bogue qui transmettait des identifiants utilisateur Audience Manager uniques (AAMUUID) en tant qu’Experience Cloud ID au service ID.
+* Correction d’un bug qui transmettait des ID d’utilisateur Audience Manager uniques (AAMUUID) en tant qu’Experience Cloud ID au service ID.
 * Si la durée de vue d’un cookie AMCV expire, le service d’identification renvoie tout de même cette information au serveur, tant que le cookie contient un Experience Cloud ID. Après cet appel, le service d’ID effectue un appel asynchrone pour mettre à jour le cookie. Cela contribue à améliorer les performances, car le service d’identification n’a pas besoin d’attendre une réponse du serveur. Il peut utiliser les valeurs d’un cookie AMCV existant, puis demander une mise à jour.
 * Le service d’ID synchronise automatiquement les Experience Cloud ID (MID) avec Adobe Media Optimizer et d’autres domaines Adobe internes directement sur la page. La synchronisation automatique est activée pour tous les comptes nouveaux et existants. Cela permet d’améliorer les taux de correspondance pour Media Optimizer. Cela s’applique à VisitorAPI.js 1.8 ou version ultérieure. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
