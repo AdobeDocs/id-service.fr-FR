@@ -1,6 +1,6 @@
 ---
 description: Si plusieurs fichiers JavaScript envoient des données à la même suite de rapports ou si vous avez recours à d’autres technologies sur votre site, par exemple la mesure vidéo Flash, nous vous recommandons de configurer une période de grâce.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Si plusieurs fichiers JavaScript envoient des données à la même suite de rapports ou si vous avez recours à d’autres technologies sur votre site, par exemple la mesure vidéo Flash, nous vous recommandons de configurer une période de grâce.
 seo-title: Période de grâce du service d’ID
 title: Période de grâce du service d’ID
@@ -8,8 +8,8 @@ uuid: 10a7db7d-de32-4379-914f-edaf929efa32
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 78%
+source-wordcount: '458'
+ht-degree: 79%
 
 ---
 
@@ -32,8 +32,8 @@ Le déploiement du service [!DNL Experience Cloud] ID sur les sites qui utilise
 
 Si vous disposez d’un seul fichier JavaScript Analytics et que vous n’utilisez aucune autre bibliothèque AppMeasurement, vous n’avez pas besoin d’une période de grâce. Vous pouvez simplement mettre à jour le fichier JavaScript unique ; les nouveaux visiteurs seront identifiés de manière cohérente à l’aide de Experience Cloud ID durant leur visite.
 
-If you have multiple JavaScript files that are sending data to the *same report suite*, or if you are using other technologies on your site such as Flash video measurement, we recommend configuring a grace period.
+Si vous avez plusieurs fichiers JavaScript qui envoient des données à la *même suite de rapports* ou si vous utilisez d’autres technologies sur votre site, telles que la mesure vidéo par Flash, nous vous recommandons de configurer une période de grâce.
 
 ## Comment mettre en place une période de grâce ?  {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Contact [Customer Care](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
+Contactez le [service à la clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
