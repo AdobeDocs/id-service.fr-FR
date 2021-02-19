@@ -1,6 +1,6 @@
 ---
 description: getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experience Cloud spécifié. Cela est nécessaire pour initialiser l’objet ID de visiteur fourni à AppMeasurement via s.visitor.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experience Cloud spécifié. Cela est nécessaire pour initialiser l’objet ID de visiteur fourni à AppMeasurement via s.visitor.
 seo-title: getInstance
 title: getInstance
@@ -8,7 +8,7 @@ uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 100%
 
 ---
