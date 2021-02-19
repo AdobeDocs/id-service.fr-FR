@@ -1,13 +1,13 @@
 ---
 description: Le service Experience Cloud ID (ECID) prend en charge l’algorithme de hachage SHA-256 qui vous permet de transmettre des ID de client ou des adresses électroniques, et transmet des identifiants hachés. Il s’agit d’une méthode JavaScript facultative pour envoyer des identifiants hachés à Experience Cloud. Vous pouvez continuer à utiliser vos propres méthodes de hachage avant d’envoyer les ID de client.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Le service Experience Cloud ID (ECID) prend en charge l’algorithme de hachage SHA-256 qui vous permet de transmettre des ID de client ou des adresses électroniques, et transmet des identifiants hachés. Il s’agit d’une méthode JavaScript facultative pour envoyer des identifiants hachés à Experience Cloud. Vous pouvez continuer à utiliser vos propres méthodes de hachage avant d’envoyer les ID de client.
 seo-title: Prise en charge du hachage SHA-256 pour setCustomerIDs
 title: Prise en charge du hachage SHA-256 pour setCustomerIDs
 translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '666'
 ht-degree: 91%
 
 ---
@@ -23,7 +23,7 @@ Il existe deux façons de mettre en œuvre la prise en charge du hachage avec se
 
 ## Utilisation de la méthode `setCustomerIDs` dans ECID {#use-setcustomerids-method}
 
-The first method leverages using the [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) method.
+La première méthode utilise la méthode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`).
 
 Avant de procéder au hachage, la bibliothèque ECID effectue une normalisation des données sur les customerIDs. Ce processus supprime les espaces des customerIDs à chaque extrémité et convertit tous les caractères en minuscules. Par exemple, l’adresse électronique «  ecid@adobe.com  » devient « ecid@adobe.com »
 
@@ -38,7 +38,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client, un état d’authentification et un type de hachage (SHA-256) à chaque visiteur. Si vous ne spécifiez aucun type de hachage, ce dernier n’aura pas lieu.
 
-La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. For example, you can upload these IDs as [customer attributes](https://docs.adobe.com/content/help/fr-FR/core-services/interface/customer-attributes/attributes.html) to the Experience Cloud and access this data across the different solutions.
+La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Par exemple, vous pouvez télécharger ces identifiants sous la forme [attributs du client](https://docs.adobe.com/content/help/fr-FR/core-services/interface/customer-attributes/attributes.html) vers l’Experience Cloud et accéder à ces données dans les différentes solutions.
 
 Les ID de client, les états authentifiés et le type de hachage *ne sont pas* stockés dans un cookie à utiliser ultérieurement. Au lieu de cela, les ID de client, les états authentifiés et le type de hachage doivent être stockés dans une variable d’instance, qui peut être récupérée en utilisant [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), comme illustré ci-dessous :
 
@@ -67,13 +67,13 @@ Reportez-vous au tableau ci-dessous pour obtenir une description du paramètre `
 
 | Paramètre | Description |
 |------------|----------|
-| `d_cid_ic` | Transmet le code d’intégration, l’ID de l’utilisateur unique (DPUUID) et un ID d’état authentifié au service d’ID. Séparez le code d’intégration et le DPUUID par le caractère de contrôle non imprimable %01</code> : <br> Exemple : d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>État d’authentification</b> <br> Il s’agit d’un ID facultatif dans le paramètre d_cid_ic. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : <br> <ul><li>0 (inconnu ou jamais authentifié)</li><li>1 (actuellement authentifié pour cette instance, cette page ou ce contexte d’application)</li><li>2 (déconnecté)</li></ul> <br>Exemples :<br> <ul><li>Inconnu : ...d_cid=123%01456%01<b>0</b></li><li>Authentifié : ...d_cid=123%01456%01<b>1</b></li><li>Déconnecté : ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Transmet le code d’intégration, l’ID d’utilisateur unique (DPUUID) et un ID d’état authentifié au service d’ID. Séparez le code d’intégration et le DPUUID par le caractère de contrôle non imprimable %01</code> : <br> Exemple : d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>État d’authentification</b> <br> Il s’agit d’un ID facultatif dans le paramètre d_cid_ic. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : <br> <ul><li>0 (inconnu ou jamais authentifié)</li><li>1 (actuellement authentifié pour cette instance, cette page ou ce contexte d’application)</li><li>2 (déconnecté)</li></ul> <br>Exemples :<br> <ul><li>Inconnu : ...d_cid=123%01456%01<b>0</b></li><li>Authentifié : ...d_cid=123%01456%01<b>1</b></li><li>Déconnecté : ...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Ajout d’une Action dans Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Read more about Launch in the [Launch product documentation](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html).
+Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Pour en savoir plus sur le lancement, consultez la [documentation du produit de lancement](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html).
 
-To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/fr-FR/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
+Pour ajouter une action dans Lancement, consultez la [documentation des règles](https://docs.adobe.com/help/fr-FR/launch/using/reference/manage-resources/rules.html) dans Lancement d&#39;Adobe et consultez la capture d&#39;écran ci-dessous :
 
 ![](/help/reference/assets/hashing-support.png)
 
