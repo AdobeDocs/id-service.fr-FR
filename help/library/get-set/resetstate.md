@@ -1,6 +1,6 @@
 ---
 description: Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aider à résoudre des problèmes liés à l’utilisation d’identifiants sur des sites, écrans ou applications d’une seule page.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aider à résoudre des problèmes liés à l’utilisation d’identifiants sur des sites, écrans ou applications d’une seule page.
 seo-title: resetState
 title: resetState
@@ -8,7 +8,7 @@ uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '400'
 ht-degree: 66%
 
 ---
