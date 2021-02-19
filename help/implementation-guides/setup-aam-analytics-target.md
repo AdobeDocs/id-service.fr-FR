@@ -1,6 +1,6 @@
 ---
 description: Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
 seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
@@ -8,7 +8,7 @@ uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1574'
 ht-degree: 100%
 
 ---
@@ -144,7 +144,7 @@ Ajoutez la `Visitor.getInstance` fonction affichée ci-dessous à votre `AppMeas
 
 >[!IMPORTANT]
 >
->À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
+>À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
 
 ***(Étape facultative mais recommandée)* Créez une prop personnalisée.**
 
