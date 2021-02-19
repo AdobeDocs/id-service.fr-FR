@@ -1,6 +1,6 @@
 ---
 description: Dans certaines mises en œuvre, les identifiants visiteur sont transmis de JavaScript à un serveur, de sorte que des événements Analytics supplémentaires (tels qu’un achat) puissent être envoyés par le serveur.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Dans certaines mises en œuvre, les identifiants visiteur sont transmis de JavaScript à un serveur, de sorte que des événements Analytics supplémentaires (tels qu’un achat) puissent être envoyés par le serveur.
 seo-title: Mise en œuvre côté serveur alliée à JavaScript
 title: Mise en œuvre côté serveur alliée à JavaScript
@@ -8,7 +8,7 @@ uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '213'
 ht-degree: 100%
 
 ---
