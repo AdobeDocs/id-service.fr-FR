@@ -1,6 +1,6 @@
 ---
 description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
 seo-title: FAQ sur le service d’ID
 title: FAQ sur le service d’ID
@@ -8,7 +8,7 @@ uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '806'
 ht-degree: 100%
 
 ---
