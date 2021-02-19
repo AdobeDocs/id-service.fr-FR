@@ -1,6 +1,6 @@
 ---
 description: Cette méthode d’assistance vous permet d’ajouter l’ID de données supplémentaires (SDID) en tant que paramètre de chaîne de requête à une URL de redirection. Cela s’avère utile lorsque vous utilisez A4T et que vous devez conserver le SDID d’une page à l’autre et regrouper ces visites distinctes. Pour utiliser cette fonction, vous devez avoir mis en oeuvre le service d’ID avec le même ID d’organisation sur les domaines source et de destination.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Cette méthode d’assistance vous permet d’ajouter l’ID de données supplémentaires (SDID) en tant que paramètre de chaîne de requête à une URL de redirection. Cela s’avère utile lorsque vous utilisez A4T et que vous devez conserver le SDID d’une page à l’autre et regrouper ces visites distinctes. Pour utiliser cette fonction, vous devez avoir mis en oeuvre le service d’ID avec le même ID d’organisation sur les domaines source et de destination.
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
@@ -8,7 +8,7 @@ uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '412'
 ht-degree: 28%
 
 ---
