@@ -19,7 +19,7 @@ Adobe Experience Platform Launch est l’outil principal pour configurer, dé
 
 ## À propos de Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html) est la nouvelle génération de la fonctionnalité de gestion des balises d’Adobe intégrée au Adobe Experience Cloud. Le lancement permet aux clients de :
+[Adobe Experience Platform ](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html) Launchis est la nouvelle génération de la fonctionnalité de gestion des balises d’Adobe intégrée au Adobe Experience Cloud. Le lancement permet aux clients de :
 
 * déployer des produits web côté client grâce à des intégrations appelées extensions
 * Capturer, définir, gérer et partager en permanence les données entre les produits marketing et publicitaires provenant d&#39;autres fournisseurs et d&#39;Adobes
