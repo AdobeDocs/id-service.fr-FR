@@ -1,6 +1,6 @@
 ---
 description: Ces instructions s’adressent aux clients A4T avec des implémentations mixtes de Cible, d’Analytics et du service d’ID côté serveur et côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour connaître les instructions d’installation et les autres exigences de configuration.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Ces instructions s’adressent aux clients A4T avec des implémentations mixtes de Cible, d’Analytics et du service d’ID côté serveur et côté client. Les clients qui ont besoin d’exécuter le service d’ID dans un environnement NodeJS ou Rhino doivent également consulter ces informations. Cette instance du service d’ID utilise une version raccourcie de la bibliothèque de code VisitorAPI.js, que vous téléchargez et installez à partir de Node Package Manager (NPM). Consultez cette section pour connaître les instructions d’installation et les autres exigences de configuration.
 seo-title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
@@ -8,7 +8,7 @@ uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '915'
 ht-degree: 68%
 
 ---
@@ -50,7 +50,7 @@ Ensuite, vous devez effectuer une *`payload request`* côté serveur auprès du 
 
 >[!NOTE]
 >
->Cette méthode demande une mbox unique depuis [!DNL Target]. If you need to request multiple mboxes in a single call, see [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Cette méthode demande une mbox unique depuis [!DNL Target]. Si vous devez demander plusieurs mbox dans un seul appel, voir [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 Votre demande de données utiles doit ressembler à l’exemple de code suivant. Dans l’exemple de code, la fonction `visitor.setCustomerIDs` est optionnelle. Pour plus d’informations, voir [ID de client et états de l’authentification.](../reference/authenticated-state.md)
 
@@ -169,7 +169,7 @@ Les paramètres configurés doivent se présenter comme suit :
 
 ![](assets/server_side_dtm.png)
 
-See also, [Experience Cloud Identity Service Settings for DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+Voir aussi [Paramètres du service d’identité Experience Cloud pour la gestion dynamique des balises](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Obtention de l’état du serveur sans DTM**
 
