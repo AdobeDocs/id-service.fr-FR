@@ -1,6 +1,6 @@
 ---
 description: Une vue d’ensemble des processus de synchronisation des identifiants et des taux de correspondance dans le service Experience Cloud Identity, y compris Adobe Media Optimizer et le service d’ID.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Une vue d’ensemble des processus de synchronisation des identifiants et des taux de correspondance dans le service Experience Cloud Identity, y compris Adobe Media Optimizer et le service d’ID.
 seo-title: Comprendre la synchronisation des identifiants et les taux de correspondance
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
@@ -8,7 +8,7 @@ uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '833'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Le service d’ID synchronise les identifiants en temps réel. Ce processus fonc
 
 **Étape 1 : Chargement de la page**
 
-Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Visitor.getInstance`lance un appel [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P au service d’ID. Le service d’ID répond avec un cookie qui inclut l’[!DNL Experience Cloud] ID (MID) du visiteur. Les MID est un identifiant unique attribué à chaque visiteur du site. Voir aussi [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
+Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Visitor.getInstance`lance un appel [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P au service d’ID. Le service d’ID répond avec un cookie qui inclut l’[!DNL Experience Cloud] ID (MID) du visiteur. Les MID est un ID unique attribué à chaque visiteur du site. Voir aussi [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
 
 **Étape 2 : Chargement de l’iFrame**
 
