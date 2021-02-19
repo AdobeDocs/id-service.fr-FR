@@ -1,13 +1,13 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
 seo-title: Notes de mise à jour 2020
 title: Notes de mise à jour 2020
 translation-type: tm+mt
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 100%
 
 ---
