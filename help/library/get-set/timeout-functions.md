@@ -1,6 +1,6 @@
 ---
 description: Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 seo-title: Méthodes callTimeOut
 title: Méthodes callTimeOut
@@ -8,7 +8,7 @@ uuid: e5047498-11db-4945-b356-c92b7d447573
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '155'
 ht-degree: 96%
 
 ---
