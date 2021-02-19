@@ -1,6 +1,6 @@
 ---
 description: Comprend des exemples de configuration de serveur et les étapes de migration requises.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Comprend des exemples de configuration de serveur et les étapes de migration requises.
 seo-title: Scénarios de migration du service Experience Cloud Identity
 title: Scénarios de migration du service Experience Cloud Identity
@@ -8,7 +8,7 @@ uuid: 9e229045-6508-48c4-ae39-9537b4941853
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 62%
 
 ---
@@ -21,7 +21,7 @@ Comprend des exemples de configuration de serveur et les étapes de migration re
 ## Propriété Web unique {#section-6ccfea84628d46c99507cb124e7f5445}
 
 * **Client** : Exemple Entreprise Inc.
-* **Experience Cloud activé**: Non
+* **Experience Cloud activé** : Non
 * **Propriétés** Web : example.com
 * **Serveurs** de collecte de données : metrics.example.com, smetrics.example.com
 * **Fichier** JavaScript Analytics : Un seul fichier pour toutes les pages du site
@@ -31,7 +31,7 @@ Tout d’abord, ce client doit être pris en charge par Experience Cloud (voir 
 ## Plusieurs fichiers JavaScript, balises d’image codées de manière irréversible {#section-a665f6ee202940449198e4e7a5dcac54}
 
 * **Client** : Autre Exemple Entreprise Inc.
-* **Experience Cloud activé**: Oui
+* **Experience Cloud activé** : Oui
 * **Propriétés** Web : anotherexample.com
 * **Serveurs** de collecte de données : anotherexampleco.112.2o7.net
 * **Fichier JavaScript Analytics** : plusieurs fichiers JavaScript Un fichier pour leur site principal, un autre fichier pour leur section d&#39;assistance qui est conservé dans un CMS distinct.
@@ -44,7 +44,7 @@ Si ce client effectue la mise à jour vers le code JavaScript Analytics le plus 
 ## Plusieurs propriétés Web, plusieurs fichiers JavaScript et un lecteur vidéo Flash {#section-34647995ff3740b999fdee22d885e515}
 
 * **Client** : Un Bon Client LLC
-* **Experience Cloud activé**: Oui
+* **Experience Cloud activé** : Oui
 * **Propriétés** Web : mymainsite.com, myothersiteA.com, myothersiteB.com
 * **Serveurs** de collecte de données : metrics.monsiteprincipal.com, smetrics.monsiteprincipal.com
 * **Fichier JavaScript Analytics** : plusieurs fichiers JavaScript Un fichier pour chaque propriété Web.
