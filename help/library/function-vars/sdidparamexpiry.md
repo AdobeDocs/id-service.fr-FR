@@ -1,6 +1,6 @@
 ---
 description: Cette configuration vous permet de remplacer l’intervalle d’expiration SDID (Supplemental Data ID) par défaut lors du transfert de cet ID d’une page à une autre à l’aide de la fonction d’assistance appendSupplementalDataIDTo. Par défaut, le code du service d’ID sur la page de réception dispose de 30 secondes pour obtenir le SDID à partir de l’URL envoyée par la page de référence. Si le code du service d’ID sur la page de réception ne parvient pas à récupérer le SDID en moins de 30 secondes, il demande un nouveau SDID. Cette fonctionnalité s’adresse principalement aux clients A4T qui doivent transmettre le SDID d’une page à une autre et qui souhaitent contrôler cet intervalle de temporisation.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Cette configuration vous permet de remplacer l’intervalle d’expiration SDID (Supplemental Data ID) par défaut lors du transfert de cet ID d’une page à une autre à l’aide de la fonction d’assistance appendSupplementalDataIDTo. Par défaut, le code du service d’ID sur la page de réception dispose de 30 secondes pour obtenir le SDID à partir de l’URL envoyée par la page de référence. Si le code du service d’ID sur la page de réception ne parvient pas à récupérer le SDID en moins de 30 secondes, il demande un nouveau SDID. Cette fonctionnalité s’adresse principalement aux clients A4T qui doivent transmettre le SDID d’une page à une autre et qui souhaitent contrôler cet intervalle de temporisation.
 seo-title: sdidParamExpiry
 title: sdidParamExpiry
@@ -8,8 +8,8 @@ uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 9%
+source-wordcount: '357'
+ht-degree: 10%
 
 ---
 
