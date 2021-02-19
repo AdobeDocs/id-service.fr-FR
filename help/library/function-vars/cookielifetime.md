@@ -1,6 +1,6 @@
 ---
 description: Cette variable vous permet de remplacer l’intervalle de durée de vie par défaut par le cookie AMCV.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Cette variable vous permet de remplacer l’intervalle de durée de vie par défaut par le cookie AMCV.
 seo-title: cookieLifetime
 title: cookieLifetime
@@ -8,7 +8,7 @@ uuid: cd945db3-429a-4625-ac3f-69ac259377a3
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '64'
 ht-degree: 100%
 
 ---
