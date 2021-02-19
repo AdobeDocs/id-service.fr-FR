@@ -25,7 +25,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. ECID version 4.0.
 
-   [Téléchargez](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la dernière version d’ECID.
+   [](https://github.com/Adobe-Marketing-Cloud/id-service/releases) Téléchargez la dernière version d’ECID.
 
 1. Bibliothèques d’aide :
 
@@ -45,7 +45,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. Les besoins de confidentialité de votre société dépendent du degré de conformité au RGPD que vous souhaitez avoir. Sachez quelles bibliothèques vos équipes de protection de la vie privée des sociétés peuvent utiliser dans un état de pré-consentement.
 
-If using [Adobe Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+Si vous utilisez [Adobe Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html), profitez de l&#39;[extension d&#39;inclusion](../../implementation-guides/opt-in-service/launch.md) pour configurer le service d&#39;inclusion.
 
 ## Catégories Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -113,7 +113,7 @@ Voir les [Paramètres de configuration du workflow](../../implementation-guides/
 
 ## Inspection des autorisations d’Opt-in de votre visiteur {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Lorsque vos visiteurs modifient leurs autorisations, vous avez besoin d’informations sur les autorisations qui résultent de ces modifications, afin de synchroniser le stockage des consentements avec les modifications apportées au service Opt-in. Inspect vos préférences de visiteur à l’aide des fonctions [d’](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)autorisation, par exemple :
+Lorsque vos visiteurs modifient leurs autorisations, vous avez besoin d’informations sur les autorisations qui résultent de ces modifications, afin de synchroniser le stockage des consentements avec les modifications apportées au service Opt-in. Inspect vos préférences de visiteur à l’aide des fonctions [permissions](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), par exemple :
 
 **exemple fetchPermissions**
 
@@ -137,7 +137,7 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
+Voir [Documentation de l&#39;API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour plus d&#39;informations sur ces fonctions et les fonctions, propriétés ou configurations mentionnées dans ce document.
 
 ## Stockage des préférences des visiteurs {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
