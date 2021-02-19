@@ -1,6 +1,6 @@
 ---
 description: Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
 seo-title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
@@ -8,7 +8,7 @@ uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
