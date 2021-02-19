@@ -1,6 +1,6 @@
 ---
 description: Indicateur booléen facultatif qui contrôle la manière dont le service Experience Cloud Identity charge l’iFrame de synchronisation des identifiants.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Indicateur booléen facultatif qui contrôle la manière dont le service Experience Cloud Identity charge l’iFrame de synchronisation des identifiants.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
@@ -8,8 +8,8 @@ uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 79%
+source-wordcount: '95'
+ht-degree: 80%
 
 ---
 
