@@ -1,6 +1,6 @@
 ---
 description: Cette implémentation permet aux clients d’utiliser le service d’ID sur les périphériques qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Cette implémentation permet aux clients d’utiliser le service d’ID sur les périphériques qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
 seo-title: Intégration directe avec le service Experience Cloud Identity
 title: Intégration directe avec le service Experience Cloud Identity
@@ -8,7 +8,7 @@ uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -73,7 +73,7 @@ Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>Paramètre facultatif qui transmet l’ID du fournisseur de données (DPID), l’ID de l’utilisateur unique (DPUUID) et un <a href="../reference/authenticated-state.md" format="dita" scope="local"> ID d’état authentifié</a> au service d’ID. Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
+   <td colname="col2"> <p>Paramètre facultatif qui transmet l’ID du fournisseur de données (DPID), l’ID d’utilisateur unique (DPUUID) et un <a href="../reference/authenticated-state.md" format="dita" scope="local"> ID d’état authentifié</a> au service d’ID. Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Syntaxe : <span class="codeph">...d_cid=DPID%01DPUUID%01état d’authentification...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemple : <span class="codeph">...d_cid=123%01456%011...</span> </li> 
