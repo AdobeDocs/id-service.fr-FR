@@ -1,6 +1,6 @@
 ---
 description: Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
 seo-title: isCoopSafe
 title: isCoopSafe
@@ -8,7 +8,7 @@ uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -113,7 +113,7 @@ Les paramètres POST indiquent à [!DNL Experience Cloud] Device Co-op si cett
  </tbody> 
 </table>
 
-## API post-instanciation {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## API post-instanciation  {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Ces API permettent de remplacer l’état `isCoopSafe`. Elles sont nécessaires car elles vous permettent de modifier l’état post-instanciation/post-connexion d’un visiteur sur un site ou dans une application monopage où la page n’est pas actualisée. Par exemple, vous devez appeler ces API si un utilisateur s’authentifie sur votre site ou application et accepte ultérieurement une stratégie de conditions d’utilisation qui permet à Device Co-op d’utiliser ses données.
 
