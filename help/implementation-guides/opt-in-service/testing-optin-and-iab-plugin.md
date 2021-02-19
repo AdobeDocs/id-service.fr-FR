@@ -49,7 +49,7 @@ Aucune requête ne doit s’afficher pour les serveurs d’Adobe :
 
 Les cookies créés par les balises d’Adobe ne doivent pas s’afficher : (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
-Dans Chrome, accédez à l’onglet *Application* , développez la section *Cookies* sous *Enregistrement*, puis sélectionnez le nom de domaine de votre site Web :
+Dans Chrome, accédez à l’onglet *Application*, développez la section *Cookies* sous *Enregistrement*, puis sélectionnez le nom de domaine de votre site Web :
 
 ![](assets/use_case_1_2.png)
 
@@ -64,7 +64,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 La seule différence avec le cas d’utilisation 2, c’est la présence d’*un nouveau cookie* contenant les autorisations d’Opt-in fournies par votre visiteur : **adobeujs-optin**.
 
-## Cas d’utilisation 3 : Activation d’Opt-in et approbation préalable d’Adobe Analytics  {#section-257fe582b425496cbf986d0ec12d3692}
+## Cas d’utilisation 3 : Activation d’Opt-in et approbation préalable d’Adobe Analytics   {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -84,7 +84,7 @@ et vous verrez les cookies Analytics dans l’onglet Application :
 
 ![](assets/use_case_3_2.png)
 
-## Cas d’utilisation 4 : Activation d’Opt-in et de l’IAB  {#section-64331998954d4892960dcecd744a6d88}
+## Cas d’utilisation 4 : Activation d’Opt-in et de l’IAB   {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -95,7 +95,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 **Comment vue de votre consentement IAB actuel sur la page :**
 
-Ouvrez les outils de développement et sélectionnez l’onglet *Console* . Collez le fragment de code suivant et appuyez sur Entrée :
+Ouvrez les outils de développement et sélectionnez l&#39;onglet *Console*. Collez le fragment de code suivant et appuyez sur Entrée :
 
 ```
 <codeblock>
@@ -108,7 +108,7 @@ Ouvrez les outils de développement et sélectionnez l’onglet *Console* . Coll
 Voici un exemple de sortie lorsque les fins 1, 2 et 5 sont approuvées et que l’identifiant du fournisseur d’Audience Manager est approuvé :
 
 * demdex.net/id : La présence de cet appel prouve que l&#39;ECID a demandé un identifiant à demdex.net
-* demdex.net/event : La présence de cet appel prouve que l’appel de collecte de données du DIL fonctionne comme prévu.
+* demdex.net/event : La présence de cet appel prouve que l&#39;appel de collecte de données du DIL fonctionne comme prévu.
 * demdex.net/dest5.html : La présence de cet appel prouve que les synchronisations d’ID sont déclenchées.
 
 ![](assets/use_case_4_1.png)
