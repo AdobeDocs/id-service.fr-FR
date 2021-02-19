@@ -1,6 +1,6 @@
 ---
-description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
-keywords: ID Service
+description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
+keywords: Service d’identification
 seo-description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 seo-title: Définition des Analytics ID et Experience Cloud ID
 title: Définition des Analytics ID et Experience Cloud ID
@@ -8,7 +8,7 @@ uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '974'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ JavaScript peut lire et écrire des cookies définis dans le domaine propriétai
 
 Cependant, il arrive parfois que la définition du cookie dans l’en-tête HTTP soit bénéfique pour le suivi inter-domaines, ce qui est décrit dans [CNAME de collecte de données et suivi inter-domaines](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).
 
-## Analytics ID personnalisés {#section-b6a7bd19e9ff432390010062450808f6}
+## Analytics ID personnalisés  {#section-b6a7bd19e9ff432390010062450808f6}
 
 La définition d’un ID de client à l’aide de `s.visitorID` permet d’identifier les utilisateurs dans Analytics. Cependant, les intégrations dans lesquelles des données Analytics sont exportées ou importées à l’aide du service d’identification ne fonctionneront pas lorsqu’un visiteur est identifié à l’aide de `s.visitorID`.
 
