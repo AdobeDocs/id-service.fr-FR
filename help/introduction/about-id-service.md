@@ -1,6 +1,6 @@
 ---
 description: Le rôle du service Experience Cloud Identity dans Adobe Experience Cloud.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Le rôle du service Experience Cloud Identity dans Adobe Experience Cloud.
 seo-title: À propos du service d’ID
 title: Aperçu
@@ -8,7 +8,7 @@ uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 69%
 
 ---
@@ -28,7 +28,7 @@ Le service Experience Cloud Identity active le framework d’identification cour
 
 ![](assets/ecid-new.png)
 
-En outre, le service d’ID peut remplacer les différents identifiants spécifiques à la solution (par exemple, Analytics AID). And, through the [Customer IDs and Authentication States](../reference/authenticated-state.md) functionality, the ID service lets you pass in your own customer IDs to the [!DNL Experience Cloud]. Sachez toutefois que le service d’ID ne fonctionne qu’avec les solutions auxquelles vous êtes déjà abonné. Il ne vous permettra pas d&#39;accéder à d&#39;autres produits si vous n&#39;êtes pas inscrit pour ces derniers.
+En outre, le service d’ID peut remplacer les différents identifiants spécifiques à la solution (par exemple, Analytics AID). Par le biais de la fonctionnalité [ID de client et états d’authentification](../reference/authenticated-state.md), le service d’ID vous permet de transmettre vos propres ID de client à [!DNL Experience Cloud]. Sachez toutefois que le service d’ID ne fonctionne qu’avec les solutions auxquelles vous êtes déjà abonné. Il ne vous permettra pas d&#39;accéder à d&#39;autres produits si vous n&#39;êtes pas inscrit pour ces derniers.
 
 Par ailleurs, le service d’ID est un composant à part entière de plusieurs fonctionnalités, améliorations et services actuels et [!DNL Experience Cloud] futurs d’. Actuellement, le service d’ID prend en charge [Analytics](http://www.adobe.com/fr/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/fr/marketing-cloud/data-management-platform.html) et [Target](http://www.adobe.com/fr/marketing-cloud/testing-targeting.html). De plus, il est requis si vous souhaitez participer à la coopérative [!DNL Adobe Experience Cloud] Device Co-op. Si vous n’avez pas mis en œuvre le service d’ID, c’est le moment idéal d’envisager une stratégie de migration. Pour plus d’informations sur l’importance et le rôle du service d’ID, voir [Pourquoi le service Experience Cloud Identity vous concerne](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/).
 
