@@ -1,6 +1,6 @@
 ---
 description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) délai d’attente d’une réponse du service d’ID.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) délai d’attente d’une réponse du service d’ID.
 seo-title: loadTimeout
 title: loadTimeout
@@ -8,7 +8,7 @@ uuid: f627e044-bd73-49a4-8a90-6d19aa566751
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '169'
 ht-degree: 57%
 
 ---
