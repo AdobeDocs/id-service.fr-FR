@@ -1,6 +1,6 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2018.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2018.
 seo-title: Notes de mise à jour 2018
 title: Notes de mise à jour 2018
@@ -8,7 +8,7 @@ uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '491'
 ht-degree: 61%
 
 ---
