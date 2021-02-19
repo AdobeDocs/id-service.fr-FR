@@ -1,6 +1,6 @@
 ---
 description: 'Le service Experience Cloud Identity fournit un identifiant universel et permanent qui identifie vos visiteurs à l’échelle de toutes les solutions Experience Cloud. '
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Le service Adobe Experience Cloud Identity (service d’ID) fournit un identifiant universel et permanent qui identifie vos visiteurs à l’échelle de toutes les solutions Experience Cloud. Il peut remplacer le code de génération des identifiants pour des services tels qu’Analytics, Audience Manager, Target et d’autres solutions ou fonctionnalités d’Experience Cloud.
 seo-title: Service Experience Cloud Identity
 title: Service Experience Cloud Identity
@@ -8,7 +8,7 @@ uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
 translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ Le service Adobe Experience Cloud Identity (service d’ID) fournit un identi
    <td colname="col2"> <p> <b>Notes de mise à jour</b> </p> <p><b>La version 4.4</b> du 17 juillet 2019 comprend la prise en charge de <a href="reference/hashing-support.md" format="dita" scope="local"> l’algorithme de hachage SHA-256</a> qui vous permet de transmettre des ID de client ou des adresses électroniques, et transmet des identifiants hachés.</p><p><b>La version 4.0</b> du 12 février 2019 comprend le <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> service Opt-in</a> utilisé pour déterminer si vous pouvez placer un cookie sur le périphérique ou le navigateur d’un utilisateur lors de sa visite sur votre site. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Pour connaître les nouvelles fonctionnalités et les correctifs, voir les dernières <a href="https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html" format="https" scope="external">notes de mises à jour d’Experience Cloud</a>. </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Pour lire les anciennes notes de mise à jour, voir la section <a href="https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html" format="html" scope="external">notes de mise à jour précédentes</a>. </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Pour lire les anciennes notes de mise à jour, voir la section <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="html" scope="external">notes de mise à jour précédentes</a>. </li> 
      </ul> </p> <p> <b>Ressources d’Experience Cloud</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/fr/privacy.html" format="http" scope="external"> Centre de traitement des données personnelles Adobe</a> </li> 
