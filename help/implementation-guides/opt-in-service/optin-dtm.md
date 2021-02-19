@@ -21,7 +21,7 @@ Configurez les services Opt-in à l’aide de DTM.
 
 Obligatoire :
 
-* Mise à niveau vers ECID 4.0.0 ou version ultérieure. Voir Téléchargement [](https://github.com/Adobe-Marketing-Cloud/id-service/releases)ECID.
+* Mise à niveau vers ECID 4.0.0 ou version ultérieure. Voir [Téléchargement ECID](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Renseignez les [champs de configuration](/help/implementation-guides/opt-in-service/api.md) de la page Général de DTM.
 
