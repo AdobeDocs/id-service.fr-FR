@@ -1,6 +1,6 @@
 ---
 description: Méthodes publiques qui permettent d’interagir avec le service d’ID.
-keywords: ID Service
+keywords: Service d’identification
 seo-description: Méthodes publiques qui permettent d’interagir avec le service d’ID.
 seo-title: Méthodes
 title: Méthodes
@@ -8,8 +8,8 @@ uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 80%
+source-wordcount: '90'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ Méthodes publiques qui permettent d’interagir avec le service d’ID.
 
 >[!NOTE]
 >
->Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. La dernière version des bibliothèques JS ECID est disponible à l’adresse [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Articles connexes :
 
