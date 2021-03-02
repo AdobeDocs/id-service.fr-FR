@@ -7,10 +7,10 @@ breadcrumb-title: Guide d’Identity Service
 user-guide-description: Le service d’ID fournit un ID persistant universel qui identifie vos visiteurs dans toutes les solutions Experience Cloud. Il peut remplacer le code de génération des identifiants pour des services tels qu’Analytics, Audience Manager, Target et d’autres solutions ou fonctionnalités d’Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
+source-git-commit: cc198b092480f66611b6302ed3cb25dd2a0b22b3
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
+source-wordcount: '400'
+ht-degree: 99%
 
 ---
 
@@ -65,6 +65,7 @@ ht-degree: 100%
       + [overwriteCrossDomainMCIDAndAID](library/function-vars/overwrite-visitor-id.md)
       + [resetBeforeVersion](library/function-vars/resetbeforeversion.md)
       + [sdidParamExpiry](library/function-vars/sdidparamexpiry.md)
+      + [Configurations Secure et SameSite](library/function-vars/secure-samesite-config.md)
       + [secureCookie](library/function-vars/securecookie.md)
       + [useCORSOnly](library/function-vars/use-cors-only.md)
       + [whitelistParentDomain et whitelistIframeDomains](library/function-vars/whitelistdomain.md)
