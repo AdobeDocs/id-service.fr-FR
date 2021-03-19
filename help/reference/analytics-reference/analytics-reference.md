@@ -6,9 +6,9 @@ seo-title: Référence Analytics
 title: Référence Analytics
 uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 73465dcdab8b8316e0e9d41c5780ff0231270058
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '76'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,6 @@ Les composants ou fonctionnalités du service d’ID uniques à Adobe Analytics
 + [Points de prise de décision concernant la migration vers le service Experience Cloud Identity](migration-decisions.md)
 + [Scénarios de migration du service Experience Cloud Identity](migration-scenarios.md)
 + [Requêtes d’Analytics ID et d’Experience Cloud ID](legacy-analytics.md)
-+ [CNAME de collecte de données et suivi inter-domaines](cname.md)
 + [Mise en œuvre côté serveur alliée à JavaScript](server-side.md)
 + [Période de grâce du service d’ID](grace-period.md)
+<!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
