@@ -6,9 +6,9 @@ seo-title: Définition des Analytics ID et Experience Cloud ID
 title: Définition des Analytics ID et Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '945'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Pour éviter ce cas de figure, de nombreux clients ont implémenté des enregist
 
 JavaScript peut lire et écrire des cookies définis dans le domaine propriétaire (domaine du site Web actuel). Le service [!DNL Experience Cloud] ID applique cette méthode pour définir le cookie `AMCV_###@AdobeOrg` qui contient tous les identifiants visiteur. De cette manière, le domaine du serveur de suivi ne doit plus nécessairement correspondre à celui du site web pour que le cookie Identifiant visiteur soit stocké. Dans la plupart des cas, il s’agit de la méthode privilégiée pour définir le cookie du service d’ID, car elle élimine les frais supplémentaires liés aux enregistrements CNAME et des certificats SSL.
 
-Cependant, il arrive parfois que la définition du cookie dans l’en-tête HTTP soit bénéfique pour le suivi inter-domaines, ce qui est décrit dans [CNAME de collecte de données et suivi inter-domaines](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).
+<!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
 ## Analytics ID personnalisés  {#section-b6a7bd19e9ff432390010062450808f6}
 
