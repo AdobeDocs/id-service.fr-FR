@@ -6,9 +6,9 @@ seo-title: Points de prise de décision concernant la migration vers le service 
 title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Si vous avez plusieurs domaines qui envoient des données à la *même suite de 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Plusieurs domaines </p> </td> 
-   <td colname="col2"> <p>Si vous effectuez le suivi des visiteurs sur plusieurs domaines et que vous avez également un site d’accès principal où les clients peuvent être identifiés avant qu’ils ne visitent d’autres domaines, continuez à utiliser votre CNAME de collecte de données. Voir <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">CNAME de collecte de données et suivi inter-domaines</a> pour obtenir une explication détaillée. </p> <p>Notez que vous devez définir deux paramètres supplémentaires pour le serveur de suivi, <span class="codeph">visitor.marketingCloudServer</span> et <span class="codeph">visitor.marketingCloudServerSecure</span>, pour configurer un CNAME avec le service d’ID. </p> </td> 
+   <td colname="col2"> <p>Si vous effectuez le suivi des visiteurs sur plusieurs domaines et que vous avez également un site d’accès principal où les clients peuvent être identifiés avant qu’ils ne visitent d’autres domaines, continuez à utiliser votre CNAME de collecte de données. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Notez que vous devez définir deux paramètres supplémentaires pour le serveur de suivi, <span class="codeph">visitor.marketingCloudServer</span> et <span class="codeph">visitor.marketingCloudServerSecure</span>, pour configurer un CNAME avec le service d’ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un seul domaine </p> </td> 
