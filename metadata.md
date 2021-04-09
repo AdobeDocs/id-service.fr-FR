@@ -10,13 +10,13 @@ solution-image: assets/experience-cloud-logo-24.png
 getting-started-title: Prise en main
 getting-started-url: https://helpx.adobe.com/fr/experience-cloud-core-services/get-started.html
 tutorials-title: Tutoriels
-tutorials-url: https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html
+tutorials-url: https://docs.adobe.com/content/help/fr-FR/core-services-learn/tutorials/overview.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/id-service.fr-FR
 description: Identity Service
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26e76f846623e9a78f784816bec5acc970ed30f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '39'
 ht-degree: 100%
 
