@@ -1,18 +1,18 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour 2017 {#release-notes}
 
@@ -54,7 +54,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Correction d’un bogue lié à Chrome en raison duquel le service d’ID lançait une erreur en cliquant sur le bouton Précédent dans ce navigateur.
 * Le service d’ID déclenche à nouveau les synchronisations des identifiants lorsque l’identifiant de région change dans la réponse d’appel d’événement change.
-* Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et le service Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’identification.
+* Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et le service Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’ID.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -77,7 +77,7 @@ Août 2017
 
 **Documentation révisée**
 
-Mise à jour et révision des [Questions fréquentes](/help/faq-intro/faq-intro.md) afin d’inclure des questions distinctes pour chaque solution [!DNL Experience Cloud].
+Mise à jour et révision des  [Questions fréquentes](/help/faq-intro/faq-intro.md) afin d’inclure des questions distinctes pour chaque solution [!DNL Experience Cloud].
 
 ## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -126,7 +126,7 @@ Date de publication : Juin 2017
  </tbody> 
 </table>
 
-## Mises à jour de la documentation en mai {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## Mises à jour de la documentation en mai  {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -179,11 +179,11 @@ Date de publication : février 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> Propriété de l’API de service d’identification, <span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> Propriété de l’API de service d’ID, <span class="codeph">idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>Cette propriété définit l’identifiant du conteneur utilisé par <span class="keyword">Audience Manager</span> pour la synchronisation des identifiants. Voir <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Méthode d’API de service d’identification, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>Méthode d’API de service d’ID, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>Cette méthode publique ajoute le <span class="wintitle">SDID (Supplemental Data ID)</span> comme paramètre de chaîne de requête à une URL de redirection. Voir <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
@@ -191,7 +191,7 @@ Date de publication : février 2017
 
 **Correctifs**
 
-Correction d’un bogue en raison duquel le service d’identification envoyait des appels redondants au serveur pour un identifiant plutôt que d’utiliser celui qui était stocké dans le cookie AMCV. (MCID-296)
+Correction d’un bogue en raison duquel le service d’ID envoyait des appels redondants au serveur pour un identifiant plutôt que d’utiliser celui qui était stocké dans le cookie AMCV. (MCID-296)
 
 **Nouvelle documentation**
 
