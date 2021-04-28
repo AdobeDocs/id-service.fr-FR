@@ -1,18 +1,18 @@
 ---
 description: Les instructions, outils et procédures suivants vous aident à déterminer si le service d’ID fonctionne correctement. Les tests s’appliquent au service d’ID en général et pour différentes combinaisons de service d’ID et de solutions Experience Cloud.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Les instructions, outils et procédures suivants vous aident à déterminer si le service d’ID fonctionne correctement. Les tests s’appliquent au service d’ID en général et pour différentes combinaisons de service d’ID et de solutions Experience Cloud.
 seo-title: Test et vérification du service Experience Cloud Identity
 title: Test et vérification du service Experience Cloud Identity
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '723'
 ht-degree: 100%
 
 ---
-
 
 # Test et vérification du service Experience Cloud Identity {#test-and-verify-the-experience-cloud-id-service}
 
@@ -32,11 +32,11 @@ Vous pouvez également tester le service d’ID dans une session de navigateur a
 
 Le [débogueur Adobe](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) et le [proxy HTTP Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’ID a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
 
-## Test à l’aide du débogueur Adobe {#section-861365abc24b498e925b3837ea81d469}
+## Test à l’aide du débogueur Adobe  {#section-861365abc24b498e925b3837ea81d469}
 
 La mise en œuvre de votre service est correctement configurée lorsqu’un [!DNL Experience Cloud ID] (MID) s’affiche dans la réponse du [!DNL Adobe] débogueur. Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md) pour plus d’informations sur le MID.
 
-Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) :
+Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) :
 
 1. Effacez vos cookies de navigateur ou ouvrez une session de navigation anonyme.
 1. Chargez votre page de test qui contient le code du service d’ID.
