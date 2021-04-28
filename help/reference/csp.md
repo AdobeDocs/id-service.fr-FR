@@ -1,24 +1,24 @@
 ---
 description: Une stratégie de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page Web. Consultez cette section si vous utilisez le service d’ID et si vous disposez de CSP strictes qui utilisent des listes blanches pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes blanches CSP.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Une stratégie de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page Web. Consultez cette section si vous utilisez le service d’ID et si vous disposez de CSP strictes qui utilisent des listes blanches pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes blanches CSP.
 seo-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '621'
 ht-degree: 100%
 
 ---
 
-
 # Stratégies de sécurité du contenu et service Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
 
 Une stratégie de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page Web. Consultez cette section si vous utilisez le service d’ID et si vous disposez de CSP strictes qui utilisent des listes blanches pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes blanches CSP.
 
-## Présentation des stratégies de sécurité du contenu {#section-5fde5c00a678455c914b8307a8caab82}
+## Présentation des stratégies de sécurité du contenu  {#section-5fde5c00a678455c914b8307a8caab82}
 
 Les stratégies de sécurité du contenu utilisent l’en-tête HTTP `Content-Security-Policy` pour contrôler le type de ressources qu’un navigateur accepte ou charge sur une page. L’application d’un fichier CSP peut vous aider à empêcher :
 
