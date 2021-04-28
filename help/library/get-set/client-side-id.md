@@ -1,28 +1,28 @@
 ---
-description: Appelez cette fonction du service d’ID pour déterminer si le service d’ID a généré un ID de visiteur Experience Cloud (MID) côté client. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
-keywords: Service d’identification
-seo-description: Appelez cette fonction du service d’ID pour déterminer si le service d’ID a généré un ID de visiteur Experience Cloud (MID) côté client. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+description: Appelez cette fonction du service d’ID pour déterminer si le service d’ID a généré un ID de visiteur Experience Cloud (MID) côté client. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+keywords: Service d’ID
+seo-description: Appelez cette fonction du service d’ID pour déterminer si le service d’ID a généré un ID de visiteur Experience Cloud (MID) côté client. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
 uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '148'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
+# isClientSideMarketingCloudVisitorID {#isclientsidemarketingcloudvisitorid}
 
-# isClientSideMarketingCloudVisitorID{#isclientsidemarketingcloudvisitorid}
-
-Appelez cette fonction du service d’ID pour déterminer si le service d’ID a généré un ID de visiteur Experience Cloud (MID) côté client. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+Appelez cette fonction du service d’ID pour déterminer si le service d’ID a généré un ID de visiteur Experience Cloud (MID) côté client. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
 **Syntaxe**
 
 `var *`variableName`* = visitor.isClientSideMarketingCloudVisitorID()`
 
-Le tableau suivant liste et décrit les réponses renvoyées par cette fonction.
+Le tableau suivant répertorie et décrit les réponses renvoyées par cette fonction.
 
 <table id="table_5D08A5DD6FD04F94818B0E8B790D3136"> 
  <thead> 
@@ -46,4 +46,3 @@ Le tableau suivant liste et décrit les réponses renvoyées par cette fonction.
   </tr> 
  </tbody> 
 </table>
-
