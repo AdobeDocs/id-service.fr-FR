@@ -1,24 +1,24 @@
 ---
 description: Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
 seo-title: Requêtes d’Analytics ID et d’Experience Cloud ID
 title: Requêtes d’Analytics ID et d’Experience Cloud ID
 uuid: 28beed16-7ef9-4824-8e82-853930756eca
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '469'
 ht-degree: 100%
 
 ---
 
-
 # Requêtes d’Analytics ID et d’Experience Cloud ID {#analytics-and-experience-cloud-id-requests}
 
 Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
 
-## Résumé {#section-64d8523ff7634cb987d0c6480f587dd3}
+## Résumé  {#section-64d8523ff7634cb987d0c6480f587dd3}
 
 Le service Experience Cloud Identity a été étroitement intégré à Adobe Analytics. Aujourd’hui, il reste un composant intégral d’Analytics mais exerce aussi des fonctions importantes pour d’autres solutions et fonctionnalités [!DNL Experience Cloud]. En raison de cet héritage, la vérification ou l’écriture d’un Analytics ID fonctionne un peu différemment par rapport au processus générique décrit dans [Requête et définition d’ID par le service Experience Cloud Identity... ](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) Pour plus d’informations sur l’ordre des opérations de vérification des ID, voir [Définition des Analytics ID et Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
 
@@ -51,7 +51,7 @@ Si le cookie [!DNL Experience Cloud] (AMCV) n’est pas présent, un appel du se
 
 >[!NOTE]
 >
->La valeur FID des utilisateurs identifiés par le cookie s_fid ne sera pas migrée vers le cookie AMCV. Avec un cookie s_fid, les utilisateurs seront migrés comme si aucun cookie s_vi n’était présent (voir ci-dessus) et apparaîtront comme de nouveaux visiteurs de votre site. Voir [Cookies Analytics](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) pour en savoir plus.
+>La valeur FID des utilisateurs identifiés par le cookie s_fid ne sera pas migrée vers le cookie AMCV. Avec un cookie s_fid, les utilisateurs seront migrés comme si aucun cookie s_vi n’était présent (voir ci-dessus) et apparaîtront comme de nouveaux visiteurs de votre site. Voir [Cookies Analytics](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-analytics.html) pour en savoir plus.
 
 ## Le cookie AMCV est défini dans le navigateur {#section-01c088fc565c4b24ba1722c7cc240310}
 
