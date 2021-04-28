@@ -1,18 +1,18 @@
 ---
-description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un identifiant unique et persistant pour les visiteurs de votre site.
-keywords: Service d’identification
-seo-description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un identifiant unique et persistant pour les visiteurs de votre site.
+description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un ID unique et persistant pour les visiteurs de votre site.
+keywords: Service d’ID
+seo-description: Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (MID). Le MID est un ID unique et persistant pour les visiteurs de votre site.
 seo-title: Cas d’utilisation de l’intégration directe
 title: Cas d’utilisation de l’intégration directe
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
-source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
-workflow-type: tm+mt
+exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
-
 
 # Cas d’utilisation de l’intégration directe {#direct-integration-use-cases}
 
@@ -39,27 +39,27 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Conditions</b> </p> </td> 
-   <td colname="col2"> <p>Ce cas d’utilisation suppose que vous : </p> 
+   <td colname="col2"> <p>Pour ce cas d’utilisation, vous devez : </p> 
     <ul id="ul_F20231F83EE84889B78971A64E758757"> 
-     <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">Posséder un MID pour le visiteur du site. Appelons cet identifiant 1234. </li> 
-     <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">Connaissez ce visiteur à l’aide de votre propre identifiant unique. Appelons cet identifiant 9876. </li> 
-     <li id="li_D93CE7182EBE4927A5C7A0BF414C03BC">Vous souhaitez lier le MID (1234) à votre propre ID unique (9876). </li> 
-     <li id="li_4611146E56624C2AB647733487A3F046"> <i>(Facultatif)</i> Souhaitez définir un état d’authentification sur ce visiteur. </li> 
+     <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">Posséder un MID pour le visiteur du site. Nommons cet ID 1234. </li> 
+     <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">Reconnaître ce visiteur à l’aide de votre propre ID unique. Nommons cet ID 9876. </li> 
+     <li id="li_D93CE7182EBE4927A5C7A0BF414C03BC">Vouloir lier le MID (1234) à votre propre ID unique (9876). </li> 
+     <li id="li_4611146E56624C2AB647733487A3F046"> <i>(Facultatif)</i> Vouloir définir un statut d’authentification pour ce visiteur. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Actions</b> </p> </td> 
-   <td colname="col2"> <p>Compte tenu de ces conditions, effectuez un appel au service d’ID comprenant les éléments suivants : </p> 
+   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec les éléments suivants : </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
-     <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">MID (1234). </li> 
-     <li id="li_4869572B40E54C54B88A2474DAC475A8">ID de votre fournisseur de données. Il s’agit d’un identifiant unique attribué à votre société. Appelons cet ID 4444. </li> 
-     <li id="li_05C8ED47488C4E289D84093127EC7B19">Votre identifiant pour le visiteur (9876). </li> 
-     <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facultatif)</i> ID d’état permettant de définir l’état d’authentification de ce visiteur. </li> 
-    </ul> <p>Si vous disposez d’autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guide d’intégration directe</a> (par ex. <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span>, etc.), c'est bien de les faire passer aussi. </p> </td> 
+     <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">Le MID (1234). </li> 
+     <li id="li_4869572B40E54C54B88A2474DAC475A8">L’ID de votre fournisseur de données. Il s’agit d’un ID unique attribué à votre société. Nommons cet ID 4444. </li> 
+     <li id="li_05C8ED47488C4E289D84093127EC7B19">L’ID dont vous disposez pour le visiteur (9876). </li> 
+     <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facultatif)</i> Un ID de statut permettant de définir l’état de l’authentification de ce visiteur. </li> 
+    </ul> <p>Si vous disposez d’autres paramètres répertoriés dans le  <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par ex. <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Exemple de solution et de code</b> </p> </td> 
-   <td colname="col2"> <p>Mettez en forme votre appel au service d’ID comme suit : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Remarquez que l’exemple d’appel contient : </p> 
+   <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
+   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Remarquez que l’exemple d’appel contient : </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">Le MID : <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">Le MID associé à votre ID unique pour le visiteur : <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -81,21 +81,20 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Conditions</b> </p> </td> 
-   <td colname="col2"> <p>Ce cas d’utilisation suppose que vous : </p> 
+   <td colname="col2"> <p>Pour ce cas d’utilisation, vous devez : </p> 
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
-     <li id="li_E658AE0671D14558B65FDD8992F25996">Ne pas avoir de MID pour le visiteur du site. </li> 
-     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">Vous devez demander un MID auprès du service d’ID. </li> 
-     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Connaissez votre <a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">ID d’organisation</a>. Appelons ça 5555. </li> 
+     <li id="li_E658AE0671D14558B65FDD8992F25996">Ne pas disposer de MID pour le visiteur du site. </li> 
+     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">Avoir besoin de demander un MID auprès du service d’ID. </li> 
+     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Connaissez votre <a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">ID d’organisation</a>. Nommons-le 5555. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Actions</b> </p> </td> 
-   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID qui inclut votre ID d’organisation. </p> <p>Si vous disposez d’autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guide d’intégration directe</a> (par ex. <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span>, etc.), c'est bien de les faire passer aussi. </p> </td> 
+   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec votre ID d’organisation. </p> <p>Si vous disposez d’autres paramètres répertoriés dans le  <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par ex. <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Exemple de solution et de code</b> </p> </td> 
-   <td colname="col2"> <p>Mettez en forme votre appel au service d’ID comme suit : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Notez de quelle manière l’exemple d’appel contient votre ID d’organisation, <span class="codeph">d_orgid=5555</span>. Il renvoie un <span class="keyword">Experience Cloud</span> ID pour ce visiteur. </p> </td> 
+   <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
+   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Notez de quelle manière l’exemple d’appel contient votre ID d’organisation, <span class="codeph">d_orgid=5555</span>. Il renvoie un <span class="keyword">Experience Cloud</span> ID pour ce visiteur. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
