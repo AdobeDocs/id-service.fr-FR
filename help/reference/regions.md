@@ -1,18 +1,18 @@
 ---
 description: Le cookie AMCV contient l’Experience Cloud ID (MID) et un identifiant de région pour les visiteurs de votre site. Ces identifiants sont stockés en tant que paires clé-valeur. Le mid user ID contient l’Experience Cloud ID des visiteurs. Le aamlh region ID contient l’identifiant de région des visiteurs de votre site. Vous pouvez récupérer ces informations en analysant le cookie AMCV.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Le cookie AMCV contient l’Experience Cloud ID (MID) et un identifiant de région pour les visiteurs de votre site. Ces identifiants sont stockés en tant que paires clé-valeur. Le mid user ID contient l’Experience Cloud ID des visiteurs. Le aamlh region ID contient l’identifiant de région des visiteurs de votre site. Vous pouvez récupérer ces informations en analysant le cookie AMCV.
 seo-title: Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID
 title: Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID
 uuid: bdd9d001-f29f-4ff0-800b-8182243da218
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 986e761e-4bc7-4511-86b7-7d13a7761a2b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID {#get-region-and-user-ids-from-the-amcv-cookie-or-the-id-service}
 
