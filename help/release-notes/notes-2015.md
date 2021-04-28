@@ -1,18 +1,18 @@
 ---
 description: Notes de mise à jour et mises à jour de 2015.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Notes de mise à jour et mises à jour de 2015.
 seo-title: Notes de mise à jour 2015
 title: Notes de mise à jour 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour 2015 {#release-notes}
 
@@ -33,19 +33,19 @@ Septembre 2015
 
 ## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
-Août 2015
+Août 2015
 
-* Correction d’un bogue afin d’empêcher le service d’ID de demander un iframe s’il n’y a aucune donnée à synchroniser ou à déclencher. (AAM-20164)
+* Correction d’un bug pour empêcher le service d’ID de demander un iframe s’il n’y a aucune donnée à synchroniser ou à déclencher. (AAM-20164)
 * Correction d’un bogue qui empêchait le service d’ID de définir correctement un cookie de domaine de niveau supérieur à parties multiples. Si, par exemple, vous avez un domaine du type `my_company.co.uk`, dans certains cas, le service d’ID définirait un cookie dans `co.uk` seulement. (AN-104683)
 
-   Cela n&#39;a affecté que quelques clients qui remplissaient *tous* des critères suivants :
+   Cela n’a affecté que quelques clients qui remplissaient *tous* les critères suivants :
 
    * Utilisation du service d’ID.
    * activation d’une [période de grâce ](../reference/analytics-reference/grace-period.md)*ou* utilisation de cookies propriétaires et de cookies tiers de blocage des utilisateurs ;
 
    * possèdent des pages avec des domaines de niveau supérieur à parties multiples.
 
-Les révisions de la documentation de cette version sont les suivantes :
+Les révisions de la documentation de cette mise à jour incluent :
 
 * [Méthodes d’API et bibliothèque de code](../library/library.md#concept-ff27497375644a898d47984aefb21c97) : Réorganisation du contenu et du texte. Dans la plupart des cas, une page est dédiée à chaque méthode.
 * [Conditions requises du service Experience Cloud Identity](../reference/requirements.md) : Contenu révisé et texte réorganisé.
@@ -74,9 +74,9 @@ Voir [Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebb
 
 ## Version 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
-Février 2015
+Février 2015
 
-Correction de la gestion des délais d’attente des demandes pour les objets blob AAM et les conseils d’emplacement. Désormais, après temporisation, ces champs resteront correctement vierges pour les pages actives et tous les rappels seront appelés. Le délai d’attente est traité comme une condition d’erreur ; il réessaiera donc sur la page suivante. (AN-94473, AN-94474)
+Correction de la gestion des délais d’attente des demandes pour les objets blob AAM et les conseils d’emplacement. Désormais, après temporisation, ces champs resteront correctement vierges pour les pages actives et tous les rappels seront appelés. Le délai d’expiration est traité comme une condition d’erreur. Par conséquent, l’opération réessaiera sur la page suivante. (AN-94473, AN-94474)
 
 ## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
