@@ -1,20 +1,20 @@
 ---
 description: Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service Experience Cloud Identity.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service Experience Cloud Identity.
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '163'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-
-# useCORSOnly{#usecorsonly}
+# useCORSOnly {#usecorsonly}
 
 Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service Experience Cloud Identity.
 
@@ -26,7 +26,7 @@ Lorsqu’il est défini sur `false`, le navigateur vérifie les ressources avec 
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` si vous avez des exigences de sécurité strictes. Vous ne devez activer ce mode que si vous êtes sûr que tous vos visiteurs utilisent des navigateurs qui prennent en charge CORS. L’expérience utilisateur n’est pas affectée par les navigateurs qui ne prennent pas en charge CORS. Cependant, les navigateurs qui ne prennent pas en charge CORS ne peuvent pas demander de ressources ni échanger des données avec [!DNL Adobe Experience Cloud].
+>`Set useCORSOnly: true` si vous avez des exigences de sécurité strictes. Vous ne devez activer ce mode que si vous êtes certain que les visiteurs utilisent des navigateurs qui prennent en charge CORS. L’expérience client n’est pas affectée par les navigateurs ne prenant pas en charge CORS. Cependant, les navigateurs qui ne prennent pas en charge CORS ne peuvent pas demander de ressources ni échanger des données avec [!DNL Adobe Experience Cloud].
 
 **Exemple de code**
 
@@ -43,4 +43,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    useCORSOnly: true 
 });
 ```
-
