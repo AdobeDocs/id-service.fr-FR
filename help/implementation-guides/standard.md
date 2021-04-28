@@ -1,18 +1,18 @@
 ---
 description: Les mises en œuvre précédentes utilisaient Dynamic Tag Management (DTM) pour configurer, déployer et intégrer le service Experience Cloud Identity à vos autres solutions Experience Cloud.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Les mises en œuvre précédentes utilisaient Dynamic Tag Management (DTM) pour configurer, déployer et intégrer le service Experience Cloud Identity à vos autres solutions Experience Cloud.
 seo-title: Mise en œuvre avec Dynamic Tag Management
 title: Mise en œuvre avec Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '2058'
 ht-degree: 100%
 
 ---
-
 
 # Mise en œuvre avec Dynamic Tag Management {#implementation-with-dynamic-tag-management}
 
@@ -78,7 +78,7 @@ Pour mettre en œuvre le service d’ID avec Dynamic Tag Management (DTM), pro
 
 **Conditions préalables**
 
-* Activez vos solutions pour [!DNL Experience Cloud] et vérifiez que vous disposez des autorisations de niveau administrateur. Reportez-vous à la section [Activation des solutions pour les services principaux](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
+* Activez vos solutions pour [!DNL Experience Cloud] et vérifiez que vous disposez des autorisations de niveau administrateur. Reportez-vous à la section [Activation des solutions pour les services principaux](https://docs.adobe.com/content/help/fr-FR/core-services/interface/about-core-services/core-services.html).
 
 * Création d’une propriété Web dans DTM. Reportez-vous à la documentation DTM relative à la [création d’une propriété Web](https://docs.adobe.com/content/help/fr-FR/dtm/using/admin/web-property.html).
 
@@ -143,7 +143,7 @@ Nom du serveur de suivi utilisé pour la collecte de données Analytics. Il s’
 
 Si vous ne connaissez pas les URL de votre serveur de suivi, consultez vos fichiers `s_code.js` ou `AppMeasurement.js`. L’URL est définie par la `s.trackingServer` variable.
 
-Voir [trackingServer](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Voir [trackingServer](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
 
 **Serveur de suivi sécurisé**
 
@@ -151,7 +151,7 @@ Nom du serveur de suivi sécurisé utilisé pour la collecte de données Analyti
 
 Si vous ne connaissez pas les URL de votre serveur de suivi, consultez vos fichiers `s_code.js` ou `AppMeasurement.js`. L’URL est définie par la `s.trackingServerSecure` variable.
 
-Voir [trackingServer](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Voir [trackingServer](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
 
 **Serveur Experience Cloud**
 
@@ -167,7 +167,7 @@ Définit la version de la bibliothèque de code du service d’ID (`VisitorAPI.j
 
 **Paramètres**
 
-Ces champs vous permettent d’ajouter [des variables de fonction](../library/function-vars/function-vars.md) en tant que paires clé-valeur. Cliquez sur **[!UICONTROL Ajouter]** pour ajouter une ou plusieurs variables à la mise en œuvre de votre service d’ID.
+Ces champs vous permettent d’ajouter  [des variables de fonction](../library/function-vars/function-vars.md) en tant que paires clé-valeur. Cliquez sur **[!UICONTROL Ajouter]** pour ajouter une ou plusieurs variables à la mise en œuvre de votre service d’ID.
 
 ![](assets/dtmVars.png)
 
@@ -215,11 +215,11 @@ Vous pouvez également tester le service d’ID dans une session de navigateur a
 
 Le [débogueur Adobe](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) et le [proxy HTTP Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’ID a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
 
-## Test à l’aide du débogueur Adobe {#section-861365abc24b498e925b3837ea81d469}
+## Test à l’aide du débogueur Adobe  {#section-861365abc24b498e925b3837ea81d469}
 
 La mise en œuvre de votre service est correctement configurée lorsqu’un [!DNL Experience Cloud ID] (MID) s’affiche dans la réponse du [!DNL Adobe] débogueur. Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md) pour plus d’informations sur le MID.
 
-Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) :
+Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) :
 
 1. Effacez vos cookies de navigateur ou ouvrez une session de navigation anonyme.
 1. Chargez votre page de test qui contient le code du service d’ID.
@@ -285,5 +285,5 @@ Pour plus d’informations sur les codes d’erreur, voir [Exemples, messages et
 
 >[!MORELIKETHIS]
 >
->* [Propriétés Web](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
+>* [Propriétés Web](https://docs.adobe.com/content/help/fr-FR/dtm/using/admin/web-property.html)
 
