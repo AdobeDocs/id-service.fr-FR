@@ -1,18 +1,18 @@
 ---
 description: Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '606'
 ht-degree: 100%
 
 ---
-
 
 # isCoopSafe {#iscoopsafe}
 
@@ -66,7 +66,7 @@ Pour utiliser `isCoopSafe`, vous devez :
 
 ## Syntaxe et exemple de code {#section-952f56724a2b4d349340e26fbaf33ddd}
 
-**Syntaxe :**`isCoopSafe: true | false`
+**Syntaxe :** `isCoopSafe: true | false`
 
 Les options booléennes déterminent la manière dont les données des clients sont ou ne sont pas utilisées par Device Co-op.
 
@@ -85,7 +85,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## Paramètres POST de l’appel d’événement {#section-fcd441933506493faefaa6b51f194a17}
+## Paramètres POST de l’appel d’événement  {#section-fcd441933506493faefaa6b51f194a17}
 
 En fonction de l’indicateur que vous définissez (`true` ou `false`), le service d’ID convertit `isCoopSafe` en les paramètres POST suivants et les envoie à [!DNL Adobe] dans un appel d’événement :
 
