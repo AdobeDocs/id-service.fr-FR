@@ -1,18 +1,18 @@
 ---
 description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service Experience Cloud Identity.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service Experience Cloud Identity.
 seo-title: Conditions requises pour le service Experience Cloud Identity
 title: Conditions requises pour le service Experience Cloud Identity
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '783'
 ht-degree: 100%
 
 ---
-
 
 # Conditions requises pour le service Experience Cloud Identity {#requirements-for-the-experience-cloud-id-service}
 
@@ -50,7 +50,7 @@ Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditi
  </tbody> 
 </table>
 
-## Conditions requises pour Experience Cloud : ID d’organisation {#section-a02f537129a64ffbb690d5738d360c26}
+## Conditions requises pour Experience Cloud : ID d’organisation  {#section-a02f537129a64ffbb690d5738d360c26}
 
 Pour utiliser le service d’ID, votre société doit être activée pour [!DNL Experience Cloud] et disposer d’un ID d’organisation. Consultez la liste ci-dessous si vous n’êtes pas sûr de l’état de votre société en ce qui concerne [!DNL Experience Cloud] et si vous devez rechercher votre ID d’organisation.
 
@@ -83,7 +83,7 @@ Pour utiliser le service d’ID, votre société doit être activée pour [!DNL 
 
 ## Conditions requises pour Analytics : collecte des données régionale {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://docs.adobe.com/content/help/fr-FR/analytics/technotes/rdc/regional-data-collection.translate.html)
+Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://docs.adobe.com/content/help/fr-FR/analytics/technotes/rdc/regional-data-collection.html)
 
 ## Bibliothèques de code et versions minimales requises {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -152,7 +152,7 @@ Au minimum, le service d’ID requiert les versions du SDK répertoriées ci-des
 
 Le code de votre SDK doit être activé pour le service d’ID. Activez et téléchargez le dernier code du SDK pour chaque application depuis votre compte [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Voir également :
 
-* [Configuration des options du SDK Service d’identification des visiteurs](https://docs.adobe.com/content/help/fr-FR/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Configuration des options du SDK Service d’ID des visiteurs](https://docs.adobe.com/content/help/fr-FR/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
 * [Méthodes du SDK Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
 * [Méthodes du SDK iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
