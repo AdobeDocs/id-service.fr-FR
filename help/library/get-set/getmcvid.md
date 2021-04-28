@@ -1,20 +1,20 @@
 ---
 description: getMarketingCloudVisitorID renvoie l’identifiant visiteur Experience Cloud.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: getMarketingCloudVisitorID renvoie l’identifiant visiteur Experience Cloud.
 seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
 uuid: 93e16220-b5b3-4d81-9189-30031bc15129
-translation-type: tm+mt
-source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
-workflow-type: tm+mt
+exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '125'
 ht-degree: 100%
 
 ---
 
-
-# getMarketingCloudVisitorID{#getmarketingcloudvisitorid}
+# getMarketingCloudVisitorID {#getmarketingcloudvisitorid}
 
 getMarketingCloudVisitorID renvoie l’identifiant visiteur Experience Cloud.
 
@@ -35,4 +35,3 @@ var mcID = visitor.getMarketingCloudVisitorID(useMarketingCloudID)
 >[!TIP]
 >
 >Si vous êtes un [!DNL Analytics] client, recherchez également [!DNL Analytics] l’identifiant et envoyez-le à votre fonction. Par exemple, vous souhaitez les deux identifiants lorsque vous transmettez l’identifiant visiteur dans un élément de formulaire masqué à une application côté serveur qui utilise l’API d’insertion de données. Dans ce cas, vous devez collecter et renvoyer les identifiants visiteur [!DNL Experience Cloud] et [!DNL Analytics]. Voir [Obtention de l’identifiant visiteur Analytics](../../library/get-set/getanalyticsvisitorid.md).
-
