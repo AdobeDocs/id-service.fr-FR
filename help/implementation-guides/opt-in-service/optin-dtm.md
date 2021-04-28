@@ -4,16 +4,16 @@ seo-description: Activez les services Opt-in à l’aide de Dynamic Tag Manage
 seo-title: Configuration d’Opt-in à l’aide de DTM
 title: Configuration d’Opt-in à l’aide de DTM
 uuid: 7a886bc3-c9e5-4eac-85e8-828a83c847c5
-translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
-workflow-type: tm+mt
+exl-id: 0e21e73c-aefe-41a5-87e6-499d2164f301
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '64'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-
-# Configuration d’Opt-in à l’aide de DTM{#configuring-opt-in-with-dtm}
+# Configuration d’Opt-in à l’aide de DTM {#configuring-opt-in-with-dtm}
 
 Activez les services Opt-in à l’aide de Dynamic Tag Management (DTM).
 
@@ -21,7 +21,7 @@ Configurez les services Opt-in à l’aide de DTM.
 
 Obligatoire :
 
-* Mise à niveau vers ECID 4.0.0 ou version ultérieure. Voir [Téléchargement ECID](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+* Procédez à la mise à niveau vers ECID 4.0.0 ou une version ultérieure. Voir [Téléchargement d’ECID](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Renseignez les [champs de configuration](/help/implementation-guides/opt-in-service/api.md) de la page Général de DTM.
 
