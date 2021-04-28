@@ -3,14 +3,14 @@ title: Modifications de l’étiquetage SameSite de Google Chrome
 seo-title: Modifications de l’étiquetage SameSite de Google Chrome
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 seo-description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
-translation-type: tm+mt
-source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
+exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '1079'
 ht-degree: 100%
 
 ---
-
 
 # Modifications de l’étiquetage SameSite de Google Chrome {#google-chrome-samesite-labelling-changes}
 
