@@ -1,18 +1,18 @@
 ---
 description: Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 seo-title: appendVisitorIDsTo (suivi interdomaines)
 title: appendVisitorIDsTo (suivi interdomaines)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '448'
 ht-degree: 100%
 
 ---
-
 
 # appendVisitorIDsTo (suivi interdomaines) {#appendvisitoridsto-cross-domain-tracking}
 
@@ -41,7 +41,7 @@ Pour résoudre ce problème, mettez en œuvre ` Visitor.appendVisitorIDsTo( *`l�
 
 Consultez l’exemple de code pour plus de détails.
 
-## Ajout d’un exemple de code d’identifiant visiteur {#section-62d55f7f986542b0b9238e483d50d7b0}
+## Ajout d’un exemple de code d’identifiant visiteur  {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 L’exemple suivant peut vous aider à démarrer avec ` Visitor.appendVisitorIDsTo( *`l’URL`*)`. Lorsque votre code JavaScript est correctement mis en œuvre, il peut ressembler à l’exemple suivant.
 
@@ -83,4 +83,3 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
   </tr> 
  </tbody> 
 </table>
-
