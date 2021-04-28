@@ -1,18 +1,18 @@
 ---
 description: Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
 seo-title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 
@@ -90,11 +90,11 @@ Si vous disposez de plusieurs fichiers JavaScript Analytics ou d’applications 
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">Plusieurs fichiers JavaScript Analytics </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">Autres méthodes de collecte de données </li> 
     </ul> </td> 
-   <td colname="col2"> <p>Vous devez configurer une période de grâce d’identification des visiteurs afin que vous puissiez déployer le service d’identification des visiteurs sur chaque fichier JavaScript et sur les autres bibliothèques de collecte de données. Voir <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> Période de grâce du service d’ID</a>. </p> </td> 
+   <td colname="col2"> <p>Vous devez configurer une période de grâce d’ID des visiteurs afin que vous puissiez déployer le service d’ID des visiteurs sur chaque fichier JavaScript et sur les autres bibliothèques de collecte de données. Voir  <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> Période de grâce du service d’ID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un seul fichier JavaScript Analytics </p> </td> 
-   <td colname="col2"> <p>Vous pouvez mettre à jour votre fichier JavaScript unique pour utiliser le service d’identification des visiteurs sans période de grâce. </p> </td> 
+   <td colname="col2"> <p>Vous pouvez mettre à jour votre fichier JavaScript unique pour utiliser le service d’ID des visiteurs sans période de grâce. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -125,4 +125,3 @@ Vous devrez peut-être mettre à jour la façon dont vous effectuez le suivi des
   </tr> 
  </tbody> 
 </table>
-
