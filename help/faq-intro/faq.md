@@ -1,18 +1,18 @@
 ---
 description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
 seo-title: FAQ sur le service d’ID
 title: FAQ sur le service d’ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # FAQ sur le service d’ID {#id-service-faqs}
 
@@ -22,7 +22,7 @@ Questions fréquemment posées sur les fonctionnalités et problèmes liés à l
 
 **Quel type de fonctions ou de fonctionnalités le service d’ID fournit-il ?**
 
-Voir [Aperçu](../introduction/overview.md).
+Voir  [Aperçu](../introduction/overview.md).
 
 **Pourquoi le service d’ID ne lance-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
