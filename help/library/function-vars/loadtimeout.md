@@ -1,30 +1,30 @@
 ---
-description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) délai d’attente d’une réponse du service d’ID.
-keywords: Service d’identification
-seo-description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) délai d’attente d’une réponse du service d’ID.
+description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) le délai d’attente d’une réponse du service d’ID.
+keywords: Service d’ID
+seo-description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) le délai d’attente d’une réponse du service d’ID.
 seo-title: loadTimeout
 title: loadTimeout
 uuid: f627e044-bd73-49a4-8a90-6d19aa566751
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 485264f4-ee24-4042-8be3-259e70462110
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
+# loadTimeout {#loadtimeout}
 
-# loadTimeout{#loadtimeout}
-
-Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) délai d’attente d’une réponse du service d’ID.
+Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) le délai d’attente d’une réponse du service d’ID.
 
 **Syntaxe :** ` loadTimeout: *`intervalle en millisecondes`*`
 
-La valeur par défaut est de 30 000 millisecondes (30 secondes). Nous vous recommandons vivement de *ne pas* modifier la valeur par défaut.
+La valeur par défaut est de 30 000 millisecondes (30 secondes). Nous vous recommandons vivement de *ne pas* modifier la valeur par défaut.
 
 >[!NOTE]
 >
->Les appels au service d’ID sont asynchrones par rapport aux autres codes hors Adobe sur la page. Par conséquent, l’augmentation ou la réduction du délai d’attente n’a aucune incidence sur la vitesse du rendu du contenu par la page. Cependant, de longs délais d’expiration peuvent affecter les temps de chargement de page, mesurés par des outils de surveillance réseau courants, mais le temps de rendu n’est pas affecté.
+>Les appels au service d’ID sont asynchrones par rapport aux autres codes hors Adobe sur la page. Par conséquent, l’augmentation ou la réduction du délai d’attente n’a aucune incidence sur la vitesse du rendu du contenu par la page. Toutefois, les longs intervalles d’expiration peuvent affecter les temps de chargement des pages, lesquels sont mesurés par des outils de surveillance réseau courants. Le temps de rendu n’est quant à lui pas affecté.
 
 **Exemple de code**
 
@@ -41,4 +41,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    loadTimeout:10000 
 });
 ```
-
