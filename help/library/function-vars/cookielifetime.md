@@ -1,20 +1,20 @@
 ---
 description: Cette variable vous permet de remplacer l’intervalle de durée de vie par défaut par le cookie AMCV.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Cette variable vous permet de remplacer l’intervalle de durée de vie par défaut par le cookie AMCV.
 seo-title: cookieLifetime
 title: cookieLifetime
 uuid: cd945db3-429a-4625-ac3f-69ac259377a3
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '64'
 ht-degree: 100%
 
 ---
 
-
-# cookieLifetime{#cookielifetime}
+# cookieLifetime {#cookielifetime}
 
 Cette variable vous permet de remplacer l’intervalle de durée de vie par défaut par le cookie AMCV.
 
@@ -37,4 +37,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    cookieLifetime:31536000 
 });
 ```
-
