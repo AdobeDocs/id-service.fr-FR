@@ -1,20 +1,20 @@
 ---
 description: Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aider à résoudre des problèmes liés à l’utilisation d’identifiants sur des sites, écrans ou applications d’une seule page.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aider à résoudre des problèmes liés à l’utilisation d’identifiants sur des sites, écrans ou applications d’une seule page.
 seo-title: resetState
 title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-
-# resetState{#resetstate}
+# resetState {#resetstate}
 
 Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aider à résoudre des problèmes liés à l’utilisation d’identifiants sur des sites, écrans ou applications d’une seule page.
 
@@ -22,8 +22,8 @@ Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aid
 
 En tant que client d’A4T utilisant le service d’ID, vous pouvez utiliser la fonction `visitor.resetState()` lorsque vous devez :
 
-* Pour transmettre un SDID (Supplemental Data ID), ou tout autre ID, d’une page ou d’un écran à l’autre par le biais d’une redirection. Normalement, le service d’ID ne transmet pas cet identifiant sans cette fonction.
-* Utilisez du code qui met uniquement à jour des sections spécifiques d’une page ou d’une application via des appels Ajax et vous souhaitez effectuer le suivi de ces actions. Supposons, par exemple, que vous ayez une page sur laquelle le fait de cliquer sur un objet charge ou modifie uniquement une section spéciale. Dans ce cas, le service d’ID ne peut pas demander un autre ID, sauf si la page est rechargée. Cependant, avec `visitor.resetState()`, vous pouvez demander un nouvel ID.
+* Transmettre un identifiant de données supplémentaires (SDID), ou tout autre identifiant, dʼune page ou dʼun écran à un autre par le biais dʼune redirection. Normalement, le service dʼidentification ne transmet pas cet identifiant sans cette fonction.
+* Utiliser du code qui met uniquement à jour des sections spécifiques dʼune page ou dʼune application via des appels Ajax, et que vous souhaitez effectuer le suivi de ces actions. Supposons, par exemple, que vous ayez une page sur laquelle lorsque vous cliquez sur un objet seule une section spéciale est chargée ou modifiée. Dans ce cas, le service dʼidentification ne peut pas demander un autre identifiant, sauf si la page est rechargée. Cependant, avec `visitor.resetState()`, vous pouvez demander un nouvel ID.
 
 Voir les exemples de code ci-dessous.
 
@@ -33,7 +33,7 @@ Voir les exemples de code ci-dessous.
 
 ## Exemples de code {#section-d75b211bb4ea473887eb284de2ad838b}
 
-La mise en oeuvre de votre service d’ID affecte votre manière d’utiliser cette fonction. Consultez le tableau ci-dessous pour obtenir des exemples.
+La mise en œuvre de votre service dʼidentification affecte votre manière dʼutiliser cette fonction. Consultez des exemples dans le tableau ci-dessous.
 
 **Mise en œuvre côté serveur**
 
@@ -66,7 +66,7 @@ visitor.resetState(serverState);
 
 **Mise en œuvre non standard** (sans transmission d’un ID)
 
-Dans ce cas, vous pouvez utiliser `visitor.resetState()` pour générer un nouvel ID. Cela peut s’avérer utile dans une application d’une seule page lorsqu’un utilisateur accède à un nouvel écran sans actualiser la page et que vous avez besoin d’un nouvel identifiant.
+Dans ce cas, vous pouvez utiliser `visitor.resetState()` pour générer un nouvel ID. Cela peut sʼavérer utile dans une application monopage lorsquʼun utilisateur accède à un nouvel écran sans actualiser la page et que vous avez besoin dʼun nouvel identifiant.
 
 ```js
  
