@@ -1,28 +1,28 @@
 ---
 description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
-keywords: Service d’identification
-seo-description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
+keywords: Service d’ID
+seo-description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 seo-title: Définition des Analytics ID et Experience Cloud ID
 title: Définition des Analytics ID et Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
+exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '945'
 ht-degree: 100%
 
 ---
 
-
 # Définition des Analytics ID et Experience Cloud ID {#setting-analytics-and-experience-cloud-ids}
 
-Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
+Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 
 Une fois le service d’ID mis en œuvre, ce code s’exécute avant AppMeasurement. Le service d’ID récupère les Experience Cloud et Analytics ID afin que ces valeurs soient prêtes au chargement d’AppMeasurement.
 
 Au chargement d’AppMeasurement, les valeurs des Experience Cloud et Analytics ID sont demandées par le service d’ID et sont envoyées à la collecte de données avec chaque appel au serveur. Dans la mesure où le service d’ID détermine l’identifiant du visiteur et le transmet simplement à AppMeasurement, il doit être inclus et implémenté sur chaque page avant votre fichier JavaScript AppMeasurement.
 
-## Modifications du processus d’Analytics ID {#section-79bb86ae63f546419bb1a7ef5e710462}
+## Modifications du processus d’Analytics ID  {#section-79bb86ae63f546419bb1a7ef5e710462}
 
 Le principal changement lors de la migration vers le service [!DNL Experience Cloud] ID concerne la définition du cookie ID. Désormais, il est défini à l’aide de JavaScript, plutôt que dans l’en-tête HTTP renvoyé par le serveur web de collecte de données. Pour comprendre cette modification, les sections suivantes décrivent comment les cookies sont définis à l’aide de ces deux méthodes.
 
@@ -42,15 +42,15 @@ JavaScript peut lire et écrire des cookies définis dans le domaine propriétai
 
 <!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
-## Analytics ID personnalisés {#section-b6a7bd19e9ff432390010062450808f6}
+## Analytics ID personnalisés  {#section-b6a7bd19e9ff432390010062450808f6}
 
-La définition d’un ID de client à l’aide de `s.visitorID` permet d’identifier les utilisateurs dans Analytics. Cependant, les intégrations dans lesquelles des données Analytics sont exportées ou importées à l’aide du service d’identification ne fonctionneront pas lorsqu’un visiteur est identifié à l’aide de `s.visitorID`.
+La définition d’un ID de client à l’aide de `s.visitorID` permet d’identifier les utilisateurs dans Analytics. Cependant, les intégrations dans lesquelles des données Analytics sont exportées ou importées à l’aide du service d’ID ne fonctionneront pas lorsqu’un visiteur est identifié à l’aide de `s.visitorID`.
 
 Cela comprend, sans s’y limiter, les audiences partagées, Analytics for Target (A4T) et les attributs du client. Pour ces intégrations, la définition d’un Analytics ID personnalisé n’est pas prise en charge.
 
 ## Classement des identifiants visiteur Analytics {#section-de1dc9fc9b6d4388995b70e35b8bcddf}
 
-Après avoir déployé le service d’identification des visiteurs, il existe cinq façons d’identifier un visiteur dans Analytics (répertoriées dans le tableau suivant par ordre de préférence) :
+Après avoir déployé le service d’ID des visiteurs, il existe cinq façons d’identifier un visiteur dans Analytics (répertoriées dans le tableau suivant par ordre de préférence) :
 
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
@@ -73,7 +73,7 @@ Après avoir déployé le service d’identification des visiteurs, il existe ci
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
-   <td colname="col2"> <p>mid (cookie AMCV_ défini par le service d’identification des visiteurs d’Experience Cloud) </p> </td> 
+   <td colname="col2"> <p>mid (cookie AMCV_ défini par le service d’ID des visiteurs d’Experience Cloud) </p> </td> 
    <td colname="col3"> <p>Le navigateur du visiteur accepte les cookies propriétaires. </p> </td> 
   </tr> 
   <tr> 
@@ -83,7 +83,7 @@ Après avoir déployé le service d’identification des visiteurs, il existe ci
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/analytics/technotes/visitor-identification.html" format="http" scope="external"> Adresse IP, Agent utilisateur, Adresse IP de passerelle</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> Adresse IP, Agent utilisateur, Adresse IP de passerelle</a> </p> </td> 
    <td colname="col3"> <p>Le navigateur du visiteur n’accepte pas les cookies. </p> </td> 
   </tr> 
  </tbody> 
