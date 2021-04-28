@@ -1,18 +1,18 @@
 ---
 description: Ces instructions concernent les clients d’Analytics et d’Audience Manager qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Ces instructions concernent les clients d’Analytics et d’Audience Manager qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
 seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '1305'
 ht-degree: 100%
 
 ---
-
 
 # Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager {#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
@@ -144,7 +144,7 @@ Ajoutez la `Visitor.getInstance` fonction affichée ci-dessous à votre `AppMeas
 
 >[!IMPORTANT]
 >
->À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
+>À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
 
 ***(Étape facultative mais recommandée)* Créez une prop personnalisée.**
 
@@ -210,4 +210,3 @@ Si vous avez activé une période de grâce :
 
 * Vérifiez que l’Analytics ID (AID) et le MID figurent dans la demande d’image.
 * Souvenez-vous de désactiver la période de grâce lorsque les critères d’interruption sont remplis.
-
