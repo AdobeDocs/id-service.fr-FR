@@ -1,18 +1,18 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: f96b9869-6282-4090-b392-797608e25a51
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '1164'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour 2016 {#release-notes}
 
@@ -35,7 +35,7 @@ Novembre 2016
 * Instructions supplémentaires sur la manière de mettre en œuvre le service d’ID dans un environnement côté serveur.
 * Ajout de la fonction booléenne `Visitor.overwriteCrossDomainMCIDAndAID` qui permet de remplacer les Experience Cloud ID et Analytics ID sur d’autres domaines dont vous êtes propriétaire. Voir [Remplacement d’un identifiant visiteur](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
 
-* Ajout d’un `TS = UTC`horodatage en tant que propriété de la fonction `visitor.appendVisitorIDsTo`. Le service d’ID utilise l’horodatage pour déterminer si les identifiants doivent être utilisés dans l’URL de redirection selon un intervalle d’âge de 5 minutes. Voir [Fonction d’ajout d’identifiant visiteur](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* Ajout d’un `TS = UTC`horodatage en tant que propriété de la fonction `visitor.appendVisitorIDsTo`. Le service d’ID utilise l’horodatage pour déterminer si les identifiants doivent être utilisés dans l’URL de redirection selon un intervalle d’âge de 5 minutes. Voir  [Fonction d’ajout d’identifiant visiteur](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
 * Ajout de la nouvelle fonction `Visitor.getLocationHint,` qui renvoie un identifiant de région. Voir [Obtention des identifiants de région (indicateur de location)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
 
@@ -51,7 +51,7 @@ Octobre 2016
 **Correctifs et améliorations**
 
 * Correction d’un bug qui transmettait des ID d’utilisateur Audience Manager uniques (AAMUUID) en tant qu’Experience Cloud ID au service ID.
-* Si la durée de vue d’un cookie AMCV expire, le service d’identification renvoie tout de même cette information au serveur, tant que le cookie contient un Experience Cloud ID. Après cet appel, le service d’ID effectue un appel asynchrone pour mettre à jour le cookie. Cela contribue à améliorer les performances, car le service d’identification n’a pas besoin d’attendre une réponse du serveur. Il peut utiliser les valeurs d’un cookie AMCV existant, puis demander une mise à jour.
+* Si la durée de vue d’un cookie AMCV expire, le service d’ID renvoie tout de même cette information au serveur, tant que le cookie contient un Experience Cloud ID. Après cet appel, le service d’ID effectue un appel asynchrone pour mettre à jour le cookie. Cela contribue à améliorer les performances, car le service d’ID n’a pas besoin d’attendre une réponse du serveur. Il peut utiliser les valeurs d’un cookie AMCV existant, puis demander une mise à jour.
 * Le service d’ID synchronise automatiquement les Experience Cloud ID (MID) avec Adobe Media Optimizer et d’autres domaines Adobe internes directement sur la page. La synchronisation automatique est activée pour tous les comptes nouveaux et existants. Cela permet d’améliorer les taux de correspondance pour Media Optimizer. Cela s’applique à VisitorAPI.js 1.8 ou version ultérieure. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Documentation nouvelle et révisée**
@@ -64,7 +64,7 @@ Septembre 2016
 
 **Correctifs et améliorations**
 
-Ajout de `disableThirdPartyCalls` comme indicateur booléen optionnel que vous pouvez définir dans la fonction `Visitor.getInstance`. Lorsque `disableThirdPartyCalls= true`, le service d’identification ne lancera pas d’appel vers d’autres domaines. Par défaut, `disableThirdPartyCalls= false`. Voir [disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b).
+Ajout de `disableThirdPartyCalls` comme indicateur booléen optionnel que vous pouvez définir dans la fonction `Visitor.getInstance`. Lorsque `disableThirdPartyCalls= true`, le service d’ID ne lancera pas d’appel vers d’autres domaines. Par défaut, `disableThirdPartyCalls= false`. Voir [disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b).
 
 ## Version 1.7.0 {#section-f7d59104de6644fca3691480383d4644}
 
@@ -72,7 +72,7 @@ Août 2016
 
 **Correctifs et améliorations**
 
-* Ajout de `idSyncAttachIframeOnWindowLoad` comme indicateur booléen optionnel que vous pouvez définir dans la fonction `Visitor.getInstance`. Si `idSyncAttachIframeOnWindowLoad= true`, le service d’identification charge l’iFrame de synchronisation des identifiants au chargement de la fenêtre. Par défaut, le service d’identification charge l’iFrame aussi vite que possible. Cet indicateur *remplace*`idSyncAttachIframeASAP`, qui est obsolète. Voir [Variables de fonction Visitor.getInstance](../library/function-vars/function-vars.md).
+* Ajout de `idSyncAttachIframeOnWindowLoad` comme indicateur booléen optionnel que vous pouvez définir dans la fonction `Visitor.getInstance`. Si `idSyncAttachIframeOnWindowLoad= true`, le service d’ID charge l’iFrame de synchronisation des identifiants au chargement de la fenêtre. Par défaut, le service d’ID charge l’iFrame aussi vite que possible. Cet indicateur *remplace*`idSyncAttachIframeASAP`, qui est obsolète. Voir [Variables de fonction Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * Ajout d’une fonctionnalité permettant la prise en charge du suivi des [!DNL Experience Cloud] ID à l’échelle de tous les domaines, applications natives et applications hybrides jusqu’aux transitions web. Voir [Fonction auxiliaire d’ajout d’identifiant visiteur](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
@@ -116,8 +116,8 @@ Juillet 2016
 
 * Ajout d’un paramètre `d_fieldgroup` aux appels de synchronisation des identifiants vers `dpm.demdex.net`. Ce nouveau paramètre est utilisé à des fins de dépannage et de débogage internes.
 
-* Ajout d’un attribut de titre à l’iFrame du service d’identification. Avec un titre d’iFrame, les lecteurs d’écran peuvent plus facilement fournir des informations sur la page aux utilisateurs qui ont besoin d’aide lors de leur interaction avec du contenu en ligne. L’attribut du titre d’iFrame est défini sur `Adobe ID Syncing iFrame`.
-* Ajout de `idSyncAttachIframeASAP: true` comme indicateur en option que vous pouvez définir dans la fonction `Visitor.getInstance`. S’il est défini sur `true`, le service d’identification charge l’iFrame de synchronisation des identifiants aussi vite que possible. Cette modification vise à améliorer les taux de correspondance de la synchronisation des identifiants. Par défaut, le service d’identification charge l’iFrame au chargement de la fenêtre. Voir [Variables de fonction Visitor.getInstance](../library/function-vars/function-vars.md).
+* Ajout d’un attribut de titre à l’iFrame du service d’ID. Avec un titre d’iFrame, les lecteurs d’écran peuvent plus facilement fournir des informations sur la page aux utilisateurs qui ont besoin d’aide lors de leur interaction avec du contenu en ligne. L’attribut du titre d’iFrame est défini sur `Adobe ID Syncing iFrame`.
+* Ajout de `idSyncAttachIframeASAP: true` comme indicateur en option que vous pouvez définir dans la fonction `Visitor.getInstance`. S’il est défini sur `true`, le service d’ID charge l’iFrame de synchronisation des identifiants aussi vite que possible. Cette modification vise à améliorer les taux de correspondance de la synchronisation des identifiants. Par défaut, le service d’ID charge l’iFrame au chargement de la fenêtre. Voir [Variables de fonction Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * Correction d’un bogue d’une fonction de rappel en raison duquel AppMeasurement était bloqué dans une boucle infinie.
 * Valeur par défaut de l’intervalle `loadTimeout` modifiée et définie sur 30 000 millisecondes au lieu de 500 millisecondes. Voir [Variables de fonction Visitor.getInstance](../library/function-vars/function-vars.md).
@@ -148,7 +148,7 @@ Juin 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Modifications de l’attribut <span class="codeph">iframe.sandbox</span> </p> </td> 
-   <td colname="col2"> <p>L’attribut iFrame est désormais défini de sorte que <span class="codeph">iframe.sandbox=’allow-scripts allow-same-origin’;</span>. </p> <p>Le fait d’autoriser seulement ces 2 jetons permet de renforcer la sécurité et d’offrir au service d’identification les fonctionnalités de base requises pour la synchronisation des ID. </p> <p>L’attribut sandbox n’est pas pris en charge dans Internet Explorer version 9 ou antérieure. Pour en savoir plus, voir la section sur les attributs de cette <a href="https://developer.mozilla.org/fr-FR/docs/Web/HTML/Element/iframe" format="https" scope="external">documentation sur les iFrames</a>. </p> </td> 
+   <td colname="col2"> <p>L’attribut iFrame est désormais défini de sorte que <span class="codeph">iframe.sandbox=’allow-scripts allow-same-origin’;</span>. </p> <p>Le fait d’autoriser seulement ces 2 jetons permet de renforcer la sécurité et d’offrir au service d’ID les fonctionnalités de base requises pour la synchronisation des ID. </p> <p>L’attribut sandbox n’est pas pris en charge dans Internet Explorer version 9 ou antérieure. Pour en savoir plus, voir la section sur les attributs de cette <a href="https://developer.mozilla.org/fr-FR/docs/Web/HTML/Element/iframe" format="https" scope="external">documentation sur les iFrames</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Codage de l’Experience Cloud ID (MID) </p> </td> 
@@ -228,4 +228,3 @@ Janvier 2016
   </tr> 
  </tbody> 
 </table>
-
