@@ -4,16 +4,16 @@ seo-description: API pour la bibliothèque et références des paramètres de co
 seo-title: Références d’Opt-in
 title: Références d’Opt-in
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
-workflow-type: tm+mt
+exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-
-# Références d’Opt-in{#opt-in-reference}
+# Références d’Opt-in {#opt-in-reference}
 
 API pour la bibliothèque et références des paramètres de configuration d’Opt-in.
 
@@ -28,15 +28,15 @@ adobe.OptInCategories = {
 }
 ```
 
-## Paramètres de configuration d’Opt-in {#section-d66018342baf401389f248bb381becbf}
+## Paramètres de configuration d’Opt-in  {#section-d66018342baf401389f248bb381becbf}
 
 Cette section aborde l’utilisation de l’API pour configurer Opt-in. Une grande partie de la configuration et de la mise en œuvre peut être effectuée avec l’extension Experience Platform Launch.
 
 Les configurations d’Opt-in sont fournies dans la fonction `getInstance()` du fichier JavaScript Visiteur, qui instancie l’objet `adobe` global. Vous trouverez ci-après les configurations du fichier JavaScript Visiteur liées au service Opt-in.
 
-**`doesOptInApply (boolean or function that evaluates to a boolean)`**
+**`doesOptInApply (boolean or function that evaluates to a boolean)`** :
 
-« False » indique que les visiteurs n’ont pas besoin de donner leur accord. Entraîne la création de cookies par Experience Cloud quelles que soient les catégories pour lesquelles le visiteur donne son accord ou se désinscrit. Cette configuration active ou désactive globalement l’inclusion.
+« False » indique que les visiteurs n’ont pas besoin de donner leur accord. Entraîne la création de cookies par Experience Cloud quelles que soient les catégories pour lesquelles le visiteur donne son accord ou se désinscrit. Cette configuration active ou désactive entièrement Opt-in.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -60,21 +60,21 @@ Nombre de secondes nécessaires au remplacement de l’expiration par défaut de
 
 ## Modification des paramètres de consentement  {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-À tout moment lors de son passage sur votre site, un visiteur peut définir ses préférences pour la première fois ou modifier celles-ci à l’aide de votre CMP. Une fois que les fichiers JS Visiteur ont été initialisés avec les paramètres initiaux, les autorisations des visiteurs peuvent être modifiées à l&#39;aide des fonctions suivantes :
+À tout moment lors de son passage sur votre site, un visiteur peut définir ses préférences pour la première fois ou modifier celles-ci à l’aide de votre CMP. Une fois le fichier JavaScript Visiteur initialisé avec les premiers paramètres, les autorisations du visiteur peuvent être modifiées à lʼaide des fonctions suivantes :
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-Fonction qui approuve ou engage le consentement du visiteur pour l’ensemble des catégories d’une liste. Pour plus d’informations sur le paramètre shouldWaitForComplete, voir [Processus d’inclusion](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
+Fonction qui approuve ou engage le consentement du visiteur pour l’ensemble des catégories d’une liste. Pour plus dʼinformations sur le paramètre shouldWaitForComplete, voir [Processus dʼopt-in](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
 Fonction qui refuse ou désinscrit le visiteur de l’ensemble des catégories spécifiées.
 
-**`adobe.optIn.approveAll()`**:
+**`adobe.optIn.approveAll()`** :
 
 Si la demande d’autorisation de création de cookies pour votre site est formulée de façon à ce que le visiteur accepte ou refuse de manière globale d’accorder l’autorisation de création, utilisez `approveAll()` ou `denyAll()`, selon la réponse donnée par celui-ci.
 
-**`adobe.optIn.denyAll()`**:
+**`adobe.optIn.denyAll()`** :
 
 Si la demande d’autorisation de création de cookies pour votre site est formulée de façon à ce que le visiteur accepte ou refuse de manière globale d’accorder l’autorisation de création, utilisez `approveAll()` ou `denyAll()`, selon la réponse donnée par celui-ci.
 
@@ -117,7 +117,7 @@ Un objet qui reprend toutes les solutions d’Experience Cloud, comme les caté
 **`status`**
 
 * en attente
-* changé
+* modifié
 * terminé
 
 **`doesOptInApply`**
@@ -126,17 +126,17 @@ Un objet qui reprend toutes les solutions d’Experience Cloud, comme les caté
 
 **`isPending`**
 
-« True » ou « false », selon l’état. Les rapports d’inclusion sont vrais pour cette propriété pour un visiteur qui n’a pas encore explicitement accepté ou refusé l’autorisation.
+« True » ou « false », selon l’état. Opt-in signale que cette propriété est vraie pour un visiteur qui nʼa pas encore explicitement accepté ou refusé lʼautorisation.
 
 **`isComplete`**
 
-« True » ou « false », selon l’état. L’inclusion peut signaler un faux pour cette propriété lorsqu’un consentement de type workflow a démarré mais n’est pas terminé.
+« True » ou « false », selon l’état. Opt-in peut signaler que cette propriété est fausse lorsquʼun consentement de type processus a démarré mais nʼest pas terminé.
 
 ## Méthodes de l’objet Opt-in  {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`** : Une ou plusieurs catégories à approuver. Par exemple : `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`categories`** : une ou plusieurs catégories à approuver. Par exemple : `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
 **`shouldWaitForComplete`** : (facultatif) paramètre booléen, réglé sur « false » par défaut. Si vous le réglez sur « true », Opt-in ne termine pas le processus d’approbation, jusqu’à ce que vous appeliez `adobe.optIn.complete()`. Ce processus est similaire à un workflow.
 
 ```
@@ -149,8 +149,8 @@ Un objet qui reprend toutes les solutions d’Experience Cloud, comme les caté
 
 **`deny(categories, shouldWaitForComplete)`**
 
-* Transmettez une ou plusieurs catégories pour vérifier si elles sont approuvées.
-* Si aucune catégorie n’est transmise, TOUTES les catégories disponibles sont vérifiées.
+* Saisissez une ou plusieurs catégories pour vérifier si elles sont approuvées.
+* Si aucune catégorie nʼest saisie, TOUTES les catégories disponibles sont vérifiées.
 
 **`isApproved(categories)`**
 
@@ -162,7 +162,7 @@ Vérifiez si au moins une des catégories a été préalablement approuvée par 
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-API asynchrone pour récupérer la liste des autorisations. Le rappel est effectué avec la liste des autorisations, une fois le processus d’acceptation ou de refus des autorisations terminé. **`shouldAutoSubscribe`:** Un utilitaire d&#39;assistance, abonnera automatiquement ce rappel à tous les événements futurs. Cela signifie que le rappel est effectué chaque fois qu’une approbation ou un refus est déclenché dans Opt-in. Ainsi, vous êtes toujours mis à jour, sans vous abonner aux événements vous-même.
+API asynchrone pour récupérer la liste des autorisations. Le rappel est effectué avec la liste des autorisations, une fois le processus d’acceptation ou de refus des autorisations terminé. **`shouldAutoSubscribe`:** Utilitaire dʼaide qui souscrit automatiquement à ce rappel à tous les futurs événements. Cela signifie que le rappel est effectué chaque fois qu’une approbation ou un refus est déclenché dans Opt-in. De cette façon, vous êtes toujours informé, sans avoir à vous abonner aux événements.
 
 **Exemple**
 
