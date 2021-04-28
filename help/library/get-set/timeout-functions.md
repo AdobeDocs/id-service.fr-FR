@@ -1,24 +1,24 @@
 ---
 description: Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
-keywords: Service d’identification
+keywords: Service d’ID
 seo-description: Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 seo-title: Méthodes callTimeOut
 title: Méthodes callTimeOut
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '155'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-
-# Méthodes callTimeOut{#calltimeout-methods}
+# Méthodes callTimeOut {#calltimeout-methods}
 
 Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
-## Fonctions du délai d’expiration {#section-e08228ef5f9b45c9a84139bbb763164a}
+## Fonctions du délai d’expiration  {#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
@@ -67,4 +67,3 @@ Appelez ces fonctions du service d’ID pour déterminer l’état du délai d�
   </tr> 
  </tbody> 
 </table>
-
