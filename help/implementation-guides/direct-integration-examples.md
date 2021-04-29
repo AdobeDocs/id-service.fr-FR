@@ -22,7 +22,6 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
 >
 >* Consultez et comprenez [les variables et la syntaxe du code](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) avant de passer aux cas d’utilisation.
 >* Pour plus d’informations sur le MID, voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
-
 >
 
 
