@@ -2,50 +2,20 @@
 description: Si vous disposez d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi inter-domaines dans les navigateurs qui n’acceptent pas les cookies tiers (comme Safari).
 keywords: ordre des opérations ; service d’ID
 seo-description: Si vous disposez d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi inter-domaines dans les navigateurs qui n’acceptent pas les cookies tiers (comme Safari).
-seo-title: CNAME de collecte de données et suivi inter-domaines
-title: CNAME de collecte de données et suivi inter-domaines
+seo-title: Présentation de la mise en oeuvre CNAME
+title: Présentation de la mise en oeuvre CNAME
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: 053d45656e941adc1950d49099c30da1d9a72aa0
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 28%
 
 ---
 
 
-# CNAME de collecte de données et suivi inter-domaines {#data-collection-cnames-and-cross-domain-tracking}
+# Présentation de l’implémentation CNAME{#cname-implementation-overview}
 
-Si vous disposez d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi inter-domaines dans les navigateurs qui n’acceptent pas les cookies tiers (comme Safari).
+Les implémentations CNAME vous permettent de personnaliser le domaine de collecte utilisé par l’Adobe afin qu’il corresponde à votre propre domaine. Cela permet à l’Adobe de définir des cookies propriétaires côté serveur plutôt que côté client à l’aide de JavaScript. Auparavant, ces cookies propriétaires côté serveur n’étaient pas soumis aux limites imposées par la politique ITP (Intelligent Tracking Prevention) d’Apple. Cependant, en novembre 2020, [!DNL Apple] a mis à jour leurs stratégies afin que ces limitations soient également appliquées aux cookies définis via CNAME. Actuellement, les deux cookies définis côté serveur via CNAME et les cookies définis côté client via Javascript sont limités à une expiration de sept jours ou 24 heures sous ITP. Pour plus d&#39;informations sur la politique du PTI, consultez le [!DNL Apple] document [sur la prévention du suivi](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp).
 
-Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini par les serveurs de collecte de données lors de la demande d’un ID de visiteur. Ce cookie permet au service ID visiteur de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation Experience Cloud.
-
-Dans les navigateurs qui rejettent les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
-
-Le cookie demdex.net permet au service d’identification des visiteurs de fournir le même niveau de suivi inter-domaines que le cookie s_vi dans Analytics, où le cookie est accepté dans certains navigateurs et utilisé sur plusieurs domaines, mais rejeté par d’autres navigateurs.
-
-## CNAME de collecte de données {#section-48fd186d376a48079769d12c4bd9f317}
-
-Lorsque le cookie Analytics a été défini par le serveur de collecte de données, de nombreux clients ont configuré les enregistrements CNAME du serveur de collecte de données dans le cadre d’une [mise en œuvre de cookie propriétaire](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-first-party.html) afin d’éviter des problèmes éventuels avec les navigateurs qui rejettent les cookies tiers. Ce processus configure votre domaine de serveur de collecte de données pour qu’il corresponde à votre domaine de site Web, de sorte que le cookie ID de visiteur soit défini comme cookie propriétaire.
-
-Comme le service d’identification des visiteurs définit le cookie visiteur directement sur le domaine du site Web en cours à l’aide de JavaScript, cette configuration n’est plus nécessaire pour définir des cookies propriétaires.
-
-Les clients qui disposent d’une propriété Web unique (un seul domaine) peuvent migrer en dehors des CNAME de collecte de données et utiliser plutôt leur nom d’hôte de collecte de données par défaut (`omtrdc.net` ou `2o7.net`).
-
-Toutefois, l’utilisation d’un CNAME pour la collecte de données vous permet par ailleurs d’effectuer un suivi sur les visiteurs entre un domaine d’entrée principal et d’autres domaines dans les navigateurs qui n’acceptent pas les cookies tiers. Les clients qui disposent de plusieurs propriétés Web (plusieurs domaines) peuvent avoir intérêt à préserver un CNAME de collecte de données. La section suivante explique comment fonctionne le suivi visiteur inter-domaines.
-
-## Suivi inter-domaines {#section-78925af798e24917b9abed79de290ad9}
-
-Le service d’identification des visiteurs utilise demdex.net comme domaine pour le suivi inter-domaines des visiteurs (mais au sein de la même société propriétaire) si les paramètres de confidentialité et de navigateur de l’utilisateur le permettent.
-
-Un CNAME ne fournit pas d’avantages inter-domaines supplémentaires. Supposons que votre site principal se situe à l’adresse `mymainsite.com`. Vous avez configuré l’enregistrement CNAME pour pointer vers votre serveur de collecte de données sécurisé : `smetrics.mymainsite.com`.
-
-Lorsqu’un visiteur se rend sur le site `mymainsite.com`, le cookie du service d’ID est défini par le serveur de collecte de données. Cela est autorisé dans la mesure où le domaine du serveur de collecte de données correspond à celui du site Web. C’est ce que l’on désigne sous le nom d’utilisation d’un *contexte propriétaire* ou plus simplement de *cookie propriétaire*.
-
-Si vous utilisez le même serveur de collecte de données sur d’autres sites (`myothersiteA.com` et `myothersiteB.com` par exemple), et qu’un visiteur se rend ultérieurement sur ces sites, le cookie qui avait été défini au cours de la visite de `mymainsite.com` est envoyé dans la demande HTTPS adressée au serveur de collecte de données (pour rappel, les navigateurs envoient tous les cookies d’un domaine avec l’ensemble des demandes HTTPS adressées à ce domaine, même si ce dernier ne correspond pas au domaine du site Web en cours). C’est que l’on appelle utiliser un cookie dans un *contexte tiers* ou simplement un *cookie tiers*, même si vous utilisez un CNAME. Adobe recommande un CNAME pour chaque domaine unique.
-
-*Remarque : Safari bloque tous les cookies dans le contexte tiers, quelle que soit la manière dont ils sont définis.*
-
-## Activation de la prise en charge de la collecte de données propriétaires (CNAME) avec le service Experience Cloud Identity {#section-25d4feb686d944e3a877d7aad8dbdf9a}
-
-Pour activer la prise en charge du CNAME du serveur de collecte de données, définissez les variables `visitor.marketingCloudServerSecure`.
+Bien qu’une implémentation CNAME ne présente aucun avantage en termes de durée de vie des cookies, d’autres avantages peuvent être associés, tels que le blocage des publicités et les navigateurs moins courants, qui empêchent l’envoi de données vers des domaines qu’ils classent comme suivis. Dans ces cas, l’utilisation d’un CNAME peut empêcher que votre collecte de données ne soit perturbée pour les utilisateurs qui utilisent ces outils.
