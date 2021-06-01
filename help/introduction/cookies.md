@@ -7,9 +7,9 @@ title: Cookies et service Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Le bon fonctionnement du service d’ID repose sur les cookies AMCV, AMCVS et De
 * Conserver cet ID unique afin que le service d’ID puisse collecter et partager des données avec d’autres solutions Experience Cloud.
 * Effectuez le suivi des utilisateurs sur l’ensemble de vos domaines. Toutefois, cela nécessite que vous possédiez ces autres domaines et que le code du service d’ID soit déployé sur eux.
 
-### Ce que les cookies du service d’ID ne peuvent pas faire
+### Ce que ne peuvent pas faire les cookies du service d’ID
 
 * Stocker, transmettre ou exécuter des virus informatiques.
 * Accéder ou stocker des informations d’identification personnelle comme votre adresse e-mail.
