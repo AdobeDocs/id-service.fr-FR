@@ -6,11 +6,10 @@ seo-title: Comprendre la synchronisation des identifiants et les taux de corresp
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 95%
 
 ---
 
@@ -54,11 +53,11 @@ La synchronisation des identifiants est une URL qui est déclenchée dans l’iF
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Voir également [Synchronisation des identifiants pour les transferts de données entrants](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html).
+Voir également [Synchronisation des identifiants pour les transferts de données entrants](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en).
 
 **Étape 4 : Enregistrement des identifiants**
 
-Les identifiants synchronisés sont enregistrés sur les [serveurs de données principaux et de périphérie](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/system-components/components-edge.html).
+Les identifiants synchronisés sont enregistrés sur les [serveurs de données principaux et de périphérie](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en).
 
 ## Les services de synchronisation gèrent la synchronisation des identifiants {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -73,9 +72,9 @@ Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Expe
 
 ## Synchronisation des identifiants avec Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (précédemment appelé [!DNL Adobe Media Optimizer]) est une exception au processus de synchronisation des identifiants basé sur l’iFrame. Comme [!DNL Advertising Cloud] est un domaine de confiance, les synchronisations des identifiants ont lieu à partir de la page parente plutôt que dans l’[!UICONTROL iFrame de publication de destination]. Pendant la synchronisation, le service d’ID appelle [!DNL Advertising Cloud] à l’adresse `cm.eversttech.net`, qui est un nom de domaine hérité utilisé par [!DNL Advertising Cloud] avant son acquisition par Adobe. L’envoi de données à [!DNL Advertising Cloud] permet d’améliorer les taux de correspondance et est automatique pour les clients du service d’ID utilisant la version 2.0 (ou ultérieure). Voir également [Cookies Advertising Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-advertising-cloud.html).
+[!DNL Adobe Advertising Cloud] (précédemment appelé [!DNL Adobe Media Optimizer]) est une exception au processus de synchronisation des identifiants basé sur l’iFrame. Comme [!DNL Advertising Cloud] est un domaine de confiance, les synchronisations des identifiants ont lieu à partir de la page parente plutôt que dans l’[!UICONTROL iFrame de publication de destination]. Pendant la synchronisation, le service d’ID appelle [!DNL Advertising Cloud] à l’adresse `cm.eversttech.net`, qui est un nom de domaine hérité utilisé par [!DNL Advertising Cloud] avant son acquisition par Adobe. L’envoi de données à [!DNL Advertising Cloud] permet d’améliorer les taux de correspondance et est automatique pour les clients du service d’ID utilisant la version 2.0 (ou ultérieure). Voir également [Cookies Advertising Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en).
 
 >[!MORELIKETHIS]
 >
->* [Signification des appels vers le domaine Demdex](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html)
+>* [Signification des appels vers le domaine Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
 
