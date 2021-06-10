@@ -1,15 +1,11 @@
 ---
 description: Ces configurations permettent à différentes instances du code du service d’ID implémentées dans un iFrame et sur la page parente de communiquer entre elles. Elles sont conçues pour aider à résoudre les problèmes liés à deux cas d’utilisation spécifiques où vous pouvez contrôler ou non la page/le domaine parent et où le code du service d’ID est chargé dans l’iFrame d’un domaine que vous contrôlez. Elles sont disponibles dans le code VisitorAPI.js version 2.2 ou ultérieure.
 keywords: Service d’ID
-seo-description: Ces configurations permettent à différentes instances du code du service d’ID implémentées dans un iFrame et sur la page parente de communiquer entre elles. Elles sont conçues pour aider à résoudre les problèmes liés à deux cas d’utilisation spécifiques où vous pouvez contrôler ou non la page/le domaine parent et où le code du service d’ID est chargé dans l’iFrame d’un domaine que vous contrôlez. Elles sont disponibles dans le code VisitorAPI.js version 2.2 ou ultérieure.
-seo-title: whitelistParentDomain et whitelistIframeDomains
 title: whitelistParentDomain et whitelistIframeDomains
-uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '934'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '862'
 ht-degree: 100%
 
 ---
@@ -147,7 +143,7 @@ Ces configurations permettent de résoudre le problème de définition d’un co
  </tbody> 
 </table>
 
-## Sécurité des configurations  {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
+## Sécurité des configurations   {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
 Vous pouvez mettre en œuvre ces configurations en toute sécurité car :
 
@@ -155,7 +151,7 @@ Vous pouvez mettre en œuvre ces configurations en toute sécurité car :
 * Ces configurations communiquent uniquement avec le domaine et les iFrames spécifiés dans le code.
 * La communication entre l’iFrame et la page parente suit un format spécifique. Si le service d’ID de la page parente ne reçoit pas de demande au format attendu, ce processus de partage échoue.
 
-## Méthodes API visiteur prises en charge  {#section-30c6a9f4dcdc4265a1149260b97cc057}
+## Méthodes API visiteur prises en charge   {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
 Le service d’ID prend en charge un ensemble limité de méthodes API publiques lorsque vous implémentez ces configurations de liste blanche. Les méthodes prises en charge varient en fonction des scénarios d’utilisation décrits ci-dessus.
 
@@ -182,7 +178,7 @@ Le service d’ID prend en charge un ensemble limité de méthodes API publiques
    <td colname="col1"> <p> <b>Cas 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
