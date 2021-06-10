@@ -1,15 +1,11 @@
 ---
 description: Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 keywords: Service d’ID
-seo-description: Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
-seo-title: appendVisitorIDsTo (suivi interdomaines)
 title: appendVisitorIDsTo (suivi interdomaines)
-uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '448'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '404'
 ht-degree: 100%
 
 ---
@@ -59,7 +55,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
 //Redirect to the destination
 ```
 
-## Prise en charge de Dynamic Tag Management (DTM) et du SDK  {#section-168e313df6054af0a7e27b9fa0d69640}
+## Prise en charge de Dynamic Tag Management (DTM) et du SDK   {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
