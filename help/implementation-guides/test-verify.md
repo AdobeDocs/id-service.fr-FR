@@ -3,10 +3,10 @@ description: Les instructions, outils et procédures suivants vous aident à dé
 keywords: Service d’ID
 title: Test et vérification du service Experience Cloud Identity
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 
@@ -26,13 +26,13 @@ Vous pouvez également tester le service d’ID dans une session de navigateur a
 
 **Outils**
 
-Le [débogueur Adobe](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) et le [proxy HTTP Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’ID a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
+Le [débogueur Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) et le [proxy HTTP Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’ID a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
 
 ## Test à l’aide du débogueur Adobe  {#section-861365abc24b498e925b3837ea81d469}
 
 La mise en œuvre de votre service est correctement configurée lorsqu’un [!DNL Experience Cloud ID] (MID) s’affiche dans la réponse du [!DNL Adobe] débogueur. Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md) pour plus d’informations sur le MID.
 
-Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) :
+Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) :
 
 1. Effacez vos cookies de navigateur ou ouvrez une session de navigation anonyme.
 1. Chargez votre page de test qui contient le code du service d’ID.
@@ -84,7 +84,7 @@ Le code de votre service d’ID fonctionne correctement si la fonction `Visitor.
 
 **Réponses du service d’ID réussies dans Charles**
 
-Votre compte a été configuré correctement pour le service d’ID si la réponse des [serveurs de collecte des données](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) renvoie un MID. Le MID est renvoyé comme une paire clé-valeur qui suit cette syntaxe : `d_mid: *`visiteur Experience Cloud ID`*`. Recherchez le MID dans l’onglet [!UICONTROL Réponse] tel qu’affiché ci-dessous.
+Votre compte a été configuré correctement pour le service d’ID si la réponse des [serveurs de collecte des données](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) renvoie un MID. Le MID est renvoyé comme une paire clé-valeur qui suit cette syntaxe : `d_mid: *`visiteur Experience Cloud ID`*`. Recherchez le MID dans l’onglet [!UICONTROL Réponse] tel qu’affiché ci-dessous.
 
 ![](assets/charles_response_success.png)
 
@@ -94,4 +94,4 @@ Votre compte n’a pas été configuré correctement si la réponse DCS ne conti
 
 ![](assets/charles_response_unsuccessful.png)
 
-Pour plus d’informations sur les codes d’erreur, voir [Exemples, messages et codes d’erreur DCS (DCS Error Codes, Messages, and Examples)](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
+Pour plus d’informations sur les codes d’erreur, voir [Exemples, messages et codes d’erreur DCS (DCS Error Codes, Messages, and Examples)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
