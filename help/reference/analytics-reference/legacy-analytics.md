@@ -1,15 +1,11 @@
 ---
 description: Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
 keywords: Service d’ID
-seo-description: Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
-seo-title: Requêtes d’Analytics ID et d’Experience Cloud ID
 title: Requêtes d’Analytics ID et d’Experience Cloud ID
-uuid: 28beed16-7ef9-4824-8e82-853930756eca
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '469'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
@@ -51,7 +47,7 @@ Si le cookie [!DNL Experience Cloud] (AMCV) n’est pas présent, un appel du se
 
 >[!NOTE]
 >
->La valeur FID des utilisateurs identifiés par le cookie s_fid ne sera pas migrée vers le cookie AMCV. Avec un cookie s_fid, les utilisateurs seront migrés comme si aucun cookie s_vi n’était présent (voir ci-dessus) et apparaîtront comme de nouveaux visiteurs de votre site. Voir [Cookies Analytics](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-analytics.html) pour en savoir plus.
+>La valeur FID des utilisateurs identifiés par le cookie s_fid ne sera pas migrée vers le cookie AMCV. Avec un cookie s_fid, les utilisateurs seront migrés comme si aucun cookie s_vi n’était présent (voir ci-dessus) et apparaîtront comme de nouveaux visiteurs de votre site. Voir [Cookies Analytics](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) pour en savoir plus.
 
 ## Le cookie AMCV est défini dans le navigateur {#section-01c088fc565c4b24ba1722c7cc240310}
 
