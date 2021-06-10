@@ -3,10 +3,10 @@ description: Ces instructions concernent les clients d’Analytics, d’Audience
 keywords: Service d’ID
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Ces instructions concernent les clients d’Analytics, d’Audience Manager et 
 
 ## Étape 1 : Planifier le transfert côté serveur {#section-880797cc992d4755b29cada7b831f1fc}
 
-En plus des étapes décrites ici, les clients qui utilisent [!DNL Analytics] et [!DNL Audience Manager] doivent passer au transfert côté serveur. Le transfert côté serveur permet de supprimer le code DIL (code de collecte de données d’Audience Manager) et de le remplacer par le [Module de Gestion de l’audience](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Pour plus d’informations, voir la [documentation sur le transfert côté serveur](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+En plus des étapes décrites ici, les clients qui utilisent [!DNL Analytics] et [!DNL Audience Manager] doivent passer au transfert côté serveur. Le transfert côté serveur permet de supprimer le code DIL (code de collecte de données d’Audience Manager) et de le remplacer par le [Module de Gestion de l’audience](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Pour plus d’informations, voir la [documentation sur le transfert côté serveur](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 La migration vers le transfert côté serveur nécessite une planification et une coordination. Ce processus implique des modifications externes du code de votre site et des étapes internes qu’Adobe doit effectuer pour approvisionner votre compte. En fait, beaucoup de ces procédures de migration doivent se produire en parallèle et être publiées ensemble. Votre chemin d’implémentation doit suivre la séquence d’événements suivante :
 
@@ -140,7 +140,7 @@ Ajoutez la `Visitor.getInstance` fonction affichée ci-dessous à votre `AppMeas
 
 >[!IMPORTANT]
 >
->À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
+>À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
 
 ***(Étape facultative mais recommandée)* Créez une prop personnalisée.**
 
@@ -182,7 +182,7 @@ Vous avez besoin d’une période de grâce si vous envoyez les données à un s
 
 Interrompez la période de grâce une fois que le processus d’ingestion des données peut utiliser les colonnes `post_visid_high` et `post_visid_low`.
 
-Voir aussi [Référence des colonnes de données du parcours de navigation](https://docs.adobe.com/content/help/fr-FR/analytics/export/analytics-data-feed/data-feed-overview.html).
+Voir aussi [Référence des colonnes de données du parcours de navigation](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 ## Étape 9 : Test et vérification {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -190,7 +190,7 @@ Lors de cette mise en œuvre, les solutions [!DNL Experience Cloud] renvoient de
 
 >[!TIP]
 >
->Vous pouvez utiliser le [débogueur Adobe](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) ou le [proxy HTTP Charles](https://www.charlesproxy.com/) pour rechercher ces identifiants spécifiques à une solution. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
+>Vous pouvez utiliser le [débogueur Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) ou le [proxy HTTP Charles](https://www.charlesproxy.com/) pour rechercher ces identifiants spécifiques à une solution. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
 
 **Toutes les solutions**
 
@@ -214,7 +214,7 @@ Si un AID s’affiche, vérifiez sa valeur par rapport au [!DNL Target] mboxMCAV
 
 **Audience Manager**
 
-Pour tester le transfert côté serveur, voir [Comment vérifier l’implémentation du transfert côté serveur](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html).
+Pour tester le transfert côté serveur, voir [Comment vérifier l’implémentation du transfert côté serveur](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html).
 
 **Target**
 
