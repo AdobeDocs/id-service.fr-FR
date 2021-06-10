@@ -3,10 +3,10 @@ description: Renvoie l’ID de zone géographique du service Experience Cloud 
 keywords: Service d’ID
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ Renvoie l’ID de zone géographique du service Experience Cloud Identity. Un 
 
 **Syntaxe :** ` var *`nom de variable`* = visitor.getLocationHint()`
 
-Pour obtenir la liste des ID de zone géographique et d’emplacements correspondants, voir [DCS Region IDs, Locations, and Host Names](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html).
+Pour obtenir la liste des ID de zone géographique et d’emplacements correspondants, voir [DCS Region IDs, Locations, and Host Names](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html).
 
 **Exemple de code**
 
