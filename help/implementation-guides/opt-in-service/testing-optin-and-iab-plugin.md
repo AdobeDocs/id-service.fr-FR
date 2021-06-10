@@ -1,14 +1,10 @@
 ---
 description: Une fois le service Opt-in activé sur votre site web, utilisez les différentes méthodes de validation afin de vérifier que celui-ci fonctionne correctement, à l’aide des outils de développement de votre navigateur.
-seo-description: Une fois le service Opt-in activé sur votre site web, utilisez les différentes méthodes de validation afin de vérifier que celui-ci fonctionne correctement, à l’aide des outils de développement de votre navigateur.
-seo-title: Validation du service Opt-in
 title: Validation du service Opt-in
-uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '471'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
@@ -64,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 La seule différence avec le cas d’utilisation 2, c’est la présence d’*un nouveau cookie* contenant les autorisations d’Opt-in fournies par votre visiteur : **adobeujs-optin**.
 
-## Cas d’utilisation 3 : Activation d’Opt-in et approbation préalable d’Adobe Analytics   {#section-257fe582b425496cbf986d0ec12d3692}
+## Cas d’utilisation 3 : Activation d’Opt-in et approbation préalable d’Adobe Analytics    {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -84,7 +80,7 @@ et des cookies Analytics sont affichés dans lʼonglet Application :
 
 ![](assets/use_case_3_2.png)
 
-## Cas d’utilisation 4 : Activation d’Opt-in et de l’IAB   {#section-64331998954d4892960dcecd744a6d88}
+## Cas d’utilisation 4 : Activation d’Opt-in et de l’IAB    {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
