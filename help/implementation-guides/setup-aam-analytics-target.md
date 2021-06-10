@@ -1,15 +1,11 @@
 ---
 description: Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
 keywords: Service d’ID
-seo-description: Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
-seo-title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
-uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1574'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1508'
 ht-degree: 100%
 
 ---
@@ -144,7 +140,7 @@ Ajoutez la `Visitor.getInstance` fonction affichée ci-dessous à votre `AppMeas
 
 >[!IMPORTANT]
 >
->À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
+>À cette étape, vous devez supprimer le code [!DNL Audience Manager] DIL d’et le remplacer avec le Module de Gestion de l’audience. Voir [Mise en œuvre du transfert côté serveur](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) pour obtenir des instructions.
 
 ***(Étape facultative mais recommandée)* Créez une prop personnalisée.**
 
