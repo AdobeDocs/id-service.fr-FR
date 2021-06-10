@@ -1,15 +1,11 @@
 ---
 description: Si plusieurs fichiers JavaScript envoient des données à la même suite de rapports ou si vous avez recours à d’autres technologies sur votre site, par exemple la mesure vidéo Flash, nous vous recommandons de configurer une période de grâce.
 keywords: Service d’ID
-seo-description: Si plusieurs fichiers JavaScript envoient des données à la même suite de rapports ou si vous avez recours à d’autres technologies sur votre site, par exemple la mesure vidéo Flash, nous vous recommandons de configurer une période de grâce.
-seo-title: Période de grâce du service d’ID
 title: Période de grâce du service d’ID
-uuid: 10a7db7d-de32-4379-914f-edaf929efa32
 exl-id: 83b4898c-8358-458b-a798-1e3c9633afe9
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
