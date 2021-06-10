@@ -1,14 +1,10 @@
 ---
 description: API pour la bibliothèque et références des paramètres de configuration d’Opt-in.
-seo-description: API pour la bibliothèque et références des paramètres de configuration d’Opt-in.
-seo-title: Références d’Opt-in
 title: Références d’Opt-in
-uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '897'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '886'
 ht-degree: 100%
 
 ---
@@ -58,7 +54,7 @@ Domaine propriétaire ou sous-domaine à utiliser pour le cookie d’Opt-in (si 
 
 Nombre de secondes nécessaires au remplacement de l’expiration par défaut de 13 mois.
 
-## Modification des paramètres de consentement  {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## Modification des paramètres de consentement   {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 À tout moment lors de son passage sur votre site, un visiteur peut définir ses préférences pour la première fois ou modifier celles-ci à l’aide de votre CMP. Une fois le fichier JavaScript Visiteur initialisé avec les premiers paramètres, les autorisations du visiteur peuvent être modifiées à lʼaide des fonctions suivantes :
 
@@ -132,7 +128,7 @@ Un objet qui reprend toutes les solutions d’Experience Cloud, comme les caté
 
 « True » ou « false », selon l’état. Opt-in peut signaler que cette propriété est fausse lorsquʼun consentement de type processus a démarré mais nʼest pas terminé.
 
-## Méthodes de l’objet Opt-in  {#section-e0417801a82548d199d833010033e433}
+## Méthodes de l’objet Opt-in   {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
@@ -205,7 +201,7 @@ Approuve l’ensemble des catégories existantes.
 
 Refuse l’ensemble des catégories existantes.
 
-## Événements de l’objet Opt-in  {#section-06f25b33cab54bafb053183e937fb710}
+## Événements de l’objet Opt-in   {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
