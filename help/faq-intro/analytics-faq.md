@@ -1,15 +1,11 @@
 ---
 description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec le service Experience Cloud Identity.
 keywords: Service Experience Cloud Identity
-seo-description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec le service Identity.
-seo-title: Questions fréquentes sur Analytics et le service Identity
 title: Questions fréquentes sur Analytics et le service Identity
-uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '993'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '972'
 ht-degree: 100%
 
 ---
@@ -54,7 +50,7 @@ Cependant, le code H n’est pas pris en charge avec le code visitorAPI.js versi
 
 **Qu’est-ce qu’une période de grâce et comment la configurer ?**
 
-Voir [La Période de grâce du service d’identité](../reference/analytics-reference/grace-period.md) et contacter le service [d’assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
+Voir [La Période de grâce du service d’identité](../reference/analytics-reference/grace-period.md) et contacter le service [d’assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Pourquoi dois-je migrer vers la collecte de données régionales (RDC) pour utiliser le service Identity ?**
 
@@ -93,5 +89,5 @@ Il existe trois scénarios possibles dans lesquels cela affecte les données Ana
 
 >[!MORELIKETHIS]
 >
->* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
+>* [Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
