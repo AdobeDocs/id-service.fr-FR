@@ -3,9 +3,9 @@ description: Le service Experience Cloud ID (ECID) prend en charge l’algorit
 keywords: Service d’ID
 title: Prise en charge du hachage SHA-256 pour setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 97%
 
 ---
@@ -35,7 +35,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client, un état d’authentification et un type de hachage (SHA-256) à chaque visiteur. Si vous ne spécifiez aucun type de hachage, ce dernier n’aura pas lieu.
 
-La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://docs.adobe.com/content/help/fr-FR/core-services/interface/customer-attributes/attributes.html) vers Experience Cloud et accéder à ces données à partir de différentes solutions.
+La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) vers Experience Cloud et accéder à ces données à partir de différentes solutions.
 
 Les ID de client, les états authentifiés et le type de hachage *ne sont pas* stockés dans un cookie à utiliser ultérieurement. Au lieu de cela, les ID de client, les états authentifiés et le type de hachage doivent être stockés dans une variable d’instance, qui peut être récupérée en utilisant [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), comme illustré ci-dessous :
 
