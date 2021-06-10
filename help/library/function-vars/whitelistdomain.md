@@ -3,9 +3,9 @@ description: Ces configurations permettent à différentes instances du code du 
 keywords: Service d’ID
 title: whitelistParentDomain et whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 100%
 
 ---
@@ -72,7 +72,7 @@ Ces configurations permettent de résoudre le problème de définition d’un co
 
 >[!TIP]
 >
->Vous pouvez également mettre en œuvre ces configurations lorsque vous diffusez de la vidéo dans un iFrame avec [Video Heartbeat](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html). Video Heartbeat a besoin d’un service d’ID (le MID) pour fonctionner correctement.
+>Vous pouvez également mettre en œuvre ces configurations lorsque vous diffusez de la vidéo dans un iFrame avec [Video Heartbeat](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html). Video Heartbeat a besoin d’un service d’ID (le MID) pour fonctionner correctement.
 
 **Exemple d’utilisation 1 : Le navigateur bloque les cookies tiers et le service d’ID est implémenté sur l’iFrame et la page parente.**
 
