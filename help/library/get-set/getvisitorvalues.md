@@ -1,20 +1,16 @@
 ---
 description: Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
 keywords: Service d’ID
-seo-description: Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
-seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '449'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '409'
 ht-degree: 100%
 
 ---
 
-# getVisitorValues {#getvisitorvalues}
+# getVisitorValues{#getvisitorvalues}
 
 Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
 
@@ -63,7 +59,7 @@ Dans l’exemple de réponse par défaut, certaines valeurs ont été raccourcie
 }
 ```
 
-## Cas d’utilisation 2 : demander le jeu de données personnalisé  {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Cas d’utilisation 2 : demander le jeu de données personnalisé   {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de `visitor.FIELDS` l’énumération. Dans ce cas, nous voulons uniquement l’Experience Cloud ID (MCID) et l’Analytics ID (MCAID) du visiteur. Votre demande et votre réponse peuvent ressembler aux exemples suivants.
 
@@ -85,7 +81,7 @@ L’exemple de réponse personnalisé renvoie uniquement les ID spécifiés dans
 }
 ```
 
-## Paramètres de réponse définis  {#section-4c4c300167694c6fbff1d6c612f372b5}
+## Paramètres de réponse définis   {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de `visitor.FIELDS` l’énumération. Remarque : cette méthode renvoie une chaîne vide si aucune valeur n’est définie pour une variable particulière.
 
