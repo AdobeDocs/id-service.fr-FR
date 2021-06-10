@@ -3,10 +3,10 @@ description: Une configuration booléenne facultative permet de déterminer si l
 keywords: Service d’ID
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '578'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Contenu :
 Pour utiliser `isCoopSafe`, vous devez :
 
 * Utiliser le code du service d’ID version 2.4 ou ultérieure.
-* Participez à l’opération [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/fr-FR/device-co-op/using/about/overview.html). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
+* Participez à l’opération [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
 
 * Collaborer avec votre conseiller [!DNL Adobe] afin de définir un indicateur de liste blanche ou de liste noire pour votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
@@ -138,5 +138,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [Code DIL isCoopSafe](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [Code DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
