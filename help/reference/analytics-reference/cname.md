@@ -1,14 +1,10 @@
 ---
 description: Si vous disposez d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi inter-domaines dans les navigateurs qui n’acceptent pas les cookies tiers (comme Safari).
 keywords: ordre des opérations ; service d’ID
-seo-description: Si vous disposez d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi inter-domaines dans les navigateurs qui n’acceptent pas les cookies tiers (comme Safari).
-seo-title: Présentation de l’implémentation CNAME
 title: Présentation de l’implémentation CNAME
-uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
-workflow-type: ht
-source-wordcount: '259'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '221'
 ht-degree: 100%
 
 ---
