@@ -1,15 +1,11 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 keywords: Service d’ID
-seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
-seo-title: Notes de mise à jour 2016
 title: Notes de mise à jour 2016
-uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1164'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1150'
 ht-degree: 100%
 
 ---
