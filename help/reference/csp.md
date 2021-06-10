@@ -3,10 +3,10 @@ description: Une stratégie de sécurité de contenu (CSP) est une fonction d’
 keywords: Service d’ID
 title: Stratégies de sécurité du contenu et service Experience Cloud Identity
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 100%
+source-wordcount: '547'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li></ul></p> <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et le service Experience Cloud Identity</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> </tr> 
+   <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li></ul></p> <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et le service Experience Cloud Identity</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Module externe Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure *.adobe.com. **Remarque** : si Activity Map était déjà installé avant janvier 2020, votre navigateur verra toujours une requête initiale vers *.omniture.com, mais il sera redirigé vers *.adobe.com. </p></td> 
