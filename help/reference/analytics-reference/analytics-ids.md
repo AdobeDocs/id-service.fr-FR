@@ -3,10 +3,10 @@ description: Le service Experience Cloud Identity remplace les anciennes méth
 keywords: Service d’ID
 title: Définition des Analytics ID et Experience Cloud ID
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 100%
+source-wordcount: '917'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Lors de l’envoi d’une demande au serveur de collecte de données Adobe, le c
 
 Certains navigateurs, comme Apple Safari, n’acceptent toutefois pas de cookies tiers. Il s’agit de cookies définis dans le navigateur à partir de domaines autres que le site Web actif. En outre, Safari bloque les cookies des domaines tiers si un visiteur ne s’est pas rendu auparavant sur celui-ci. Supposons que vous visitiez le site `mysite.com` et que votre serveur de collecte de données soit `mysite.omtrdc.net`. Dans ce cas, le cookie renvoyé dans l’en-tête HTTP en provenance de `mysite.omtrdc.net` risque d’être rejeté par le navigateur.
 
-Pour éviter ce cas de figure, de nombreux clients ont implémenté des enregistrements CNAME pour leurs serveurs de collecte de données dans le cadre d’une stratégie de [mise en œuvre de cookies propriétaires](https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-first-party.html). Si un enregistrement CNAME est configuré pour mapper un nom d’hôte sur le domaine du client au serveur de collecte de données (mappage de `metrics.mysite.com` à `mysite.omtrdc.net`, par exemple), le cookie [!DNL Experience Cloud] ID est stocké, étant donné que le domaine de collecte de données correspond désormais à celui du site web. Cela augmente la probabilité que le cookie du service d’ID soit stocké. Toutefois, cette opération entraîne des frais supplémentaires, car vous devez configurer des enregistrements CNAME et gérer des certificats SSL pour les serveurs de collecte de données.
+Pour éviter ce cas de figure, de nombreux clients ont implémenté des enregistrements CNAME pour leurs serveurs de collecte de données dans le cadre d’une stratégie de [mise en œuvre de cookies propriétaires](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html). Si un enregistrement CNAME est configuré pour mapper un nom d’hôte sur le domaine du client au serveur de collecte de données (mappage de `metrics.mysite.com` à `mysite.omtrdc.net`, par exemple), le cookie [!DNL Experience Cloud] ID est stocké, étant donné que le domaine de collecte de données correspond désormais à celui du site web. Cela augmente la probabilité que le cookie du service d’ID soit stocké. Toutefois, cette opération entraîne des frais supplémentaires, car vous devez configurer des enregistrements CNAME et gérer des certificats SSL pour les serveurs de collecte de données.
 
 **JavaScript**
 
@@ -59,12 +59,12 @@ Après avoir déployé le service d’ID des visiteurs, il existe cinq façons d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>s.visitorID est défini. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
    <td colname="col3"> <p>Le visiteur disposait d’un cookie s_vi existant avant le déploiement du service <span class="keyword">Experience Cloud</span> ID ou vous avez configuré une <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">période de grâce</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -74,12 +74,12 @@ Après avoir déployé le service d’ID des visiteurs, il existe cinq façons d
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (cookie de secours sur H.25.3 ou plus récent ou AppMeasurement pour JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (cookie de secours sur H.25.3 ou plus récent ou AppMeasurement pour JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Un navigateur n’accepte pas les cookies tiers. Or, le serveur de suivi Analytics est configuré en tant que serveur de suivi tiers. </p> <p> <p>Remarque : Le <span class="codeph">fid</span> est un identifiant hérité. Il n’est pas utilisé si vous avez implémenté le service d’ID sur votre site. Dans ce cas, le <span class="codeph"> fid</span> n’est pas nécessaire, car le <a href="../../introduction/cookies.md" format="dita" scope="local"> cookie AMCV</a> propriétaire le rend obsolète. Il a été conservé pour prendre en charge le code hérité et pour des raisons historiques. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/fr-FR/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> Adresse IP, Agent utilisateur, Adresse IP de passerelle</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> Adresse IP, Agent utilisateur, Adresse IP de passerelle</a> </p> </td> 
    <td colname="col3"> <p>Le navigateur du visiteur n’accepte pas les cookies. </p> </td> 
   </tr> 
  </tbody> 
