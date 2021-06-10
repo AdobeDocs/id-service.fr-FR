@@ -3,10 +3,10 @@ description: Questions fréquemment posées sur les fonctionnalités et problèm
 keywords: Service Experience Cloud Identity
 title: Questions fréquentes sur Analytics et le service Identity
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 100%
+source-wordcount: '970'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Aucun changement pour les utilisateurs qui ont déjà été authentifiés par le
 
 Si vous disposez d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi inter-domaines dans les navigateurs qui n’acceptent pas les cookies tiers (comme Safari).
 
-Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini dans le [domaine demdex.net](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/demdex-calls.html) lors de la demande pour récupérer un identifiant visiteur. Ce cookie permet au service Identity de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation. Dans les navigateurs qui rejettent les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
+Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini dans le [domaine demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) lors de la demande pour récupérer un identifiant visiteur. Ce cookie permet au service Identity de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation. Dans les navigateurs qui rejettent les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
 
 Même lorsqu’un CNAME est configuré, si le site d’entrée principal n’est pas visité en premier, les visiteurs sont identifiés différemment sur le site secondaire et sur le site principal dans les navigateurs qui n’acceptent pas les cookies tiers.
 
