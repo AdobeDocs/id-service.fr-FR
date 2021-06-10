@@ -1,6 +1,8 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: ht
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 # Contribution
@@ -15,7 +17,7 @@ Ce projet respecte le [Code de conduite](code-of-conduct.md) Adobe. En participa
 
 ## Guide du contributeur pour la documentation
 
-Voir [Guide du contributeur](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Consultez le [Guide du contributeur](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 ## Une question ?
 
@@ -23,11 +25,11 @@ Commencez par soumettre un problème. Les validateurs existants à ce projet s�
 
 ## Contrat de licence du contributeur
 
-Toutes les contributions tierces à ce projet doivent être accompagnées d’un contrat de licence de contributeur signé. Cela donne à Adobe l’autorisation de redistribuer vos contributions dans le cadre du projet. [Signez notre CLA](http://opensource.adobe.com/cla.html). Vous ne devez envoyer un contrat de licence du contributeur Adobe qu’une seule fois. Par conséquent, si vous en avez déjà envoyé un, vous pouvez poursuivre !
+Toutes les contributions tierces à ce projet doivent être accompagnées d’un contrat de licence de contributeur signé. Cela donne à Adobe l’autorisation de redistribuer vos contributions dans le cadre du projet. [Signez notre contrat de licence du contributeur](http://opensource.adobe.com/cla.html). Vous ne devez envoyer un contrat de licence du contributeur Adobe qu’une seule fois. Par conséquent, si vous en avez déjà envoyé un, vous pouvez poursuivre !
 
 ## Révisions du code
 
-Toutes les soumissions doivent être effectuées sous la forme de requêtes de tirage et doivent être examinées par les responsables du projet. Lisez la [documentation sur la requête de tirage de GitHub](https://help.github.com/articles/about-pull-requests/)pour en savoir plus sur l’envoi de requêtes de tirage.
+Toutes les soumissions doivent être effectuées sous la forme de requêtes de tirage et doivent être examinées par les responsables du projet. Lisez la [documentation sur la requête de tirage de GitHub](https://help.github.com/fr/articles/about-pull-requests/) pour en savoir plus sur l’envoi de requêtes de tirage.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
