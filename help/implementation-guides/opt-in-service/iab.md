@@ -1,14 +1,10 @@
 ---
 description: Connecter leur plateforme de gestion du consentement (CMP) à l’aide du module Opt-in externe Audience Manager pour IAB Transparency and Consent Framework (TCF).
-seo-description: Connecter leur plateforme de gestion du consentement (CMP) à l’aide du module externe Audience Manager pour IAB Transparency and Consent Framework (TCF).
-seo-title: Utilisation des services Opt-in avec un framework IAB
 title: Utilisation des services Opt-in avec un framework IAB
-uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '493'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
