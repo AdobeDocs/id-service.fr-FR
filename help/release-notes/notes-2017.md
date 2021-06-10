@@ -1,15 +1,11 @@
 ---
 description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 keywords: Service d’ID
-seo-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
-seo-title: Notes de mise à jour 2017
 title: Notes de mise à jour 2017
-uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '762'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '748'
 ht-degree: 100%
 
 ---
@@ -211,6 +207,6 @@ Janvier 2017
 * Correction d’un bogue empêchant la panne du service ID juste après qu’un visiteur active un bloqueur d’annonces publicitaires configuré pour exclure le domaine demdex.net. Ce bogue reste rare et inhabituel car la plupart des bloqueurs d’annonces publicitaires ne bloquent pas le domaine demdex.net. (MCID-233)
 * Correction d’un bogue lié aux interactions entre le code du service d’ID et un script personnalisé sur le site Web d’un client. Ce problème empêchait Internet Explorer 9 de charger les pages Web. (MCID-206)
 
-## Années précédentes  {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## Années précédentes   {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Notes de mise à jour précédentes relatives au service d’ID.
