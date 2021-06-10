@@ -3,10 +3,10 @@ description: Ces instructions concernent les clients d’Analytics qui souhaiten
 keywords: Service d’ID
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 100%
+source-wordcount: '1025'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Étape 3 : Ajout de l’ID d’organisation Experience Cloud à Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par [!DNL Experience Cloud] l’ID d’organisation. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver dans la page [!DNL Experience Cloud] d’administration. Voir aussi [Administration - Services principaux](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html). La fonction modifiée peut ressembler à l’exemple ci-après.
+Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par [!DNL Experience Cloud] l’ID d’organisation. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver dans la page [!DNL Experience Cloud] d’administration. Voir aussi [Administration - Services principaux](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr). La fonction modifiée peut ressembler à l’exemple ci-après.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -178,7 +178,7 @@ Vous avez besoin d’une période de grâce si vous envoyez les données à un s
 
 Interrompez la période de grâce une fois que le processus d’ingestion des données peut utiliser les colonnes `post_visid_high` et `post_visid_low`.
 
-Voir [Référence des colonnes de données du parcours de navigation](https://docs.adobe.com/content/help/fr-FR/analytics/export/analytics-data-feed/data-feed-overview.html).
+Voir [Référence des colonnes de données du parcours de navigation](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 **Ingestion des données du parcours de navigation**
 
@@ -191,7 +191,7 @@ Vous pouvez tester et déployer les éléments comme suit.
 Pour tester la mise en œuvre du service d’ID, recherchez les éléments suivants :
 
 * Le [cookie AMCV](../introduction/cookies.md) dans le domaine où est hébergée votre page ;
-* La valeur du MID dans la demande d’image [!DNL Analytics] à l’aide de l’[outil de débogage Adobe](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html).
+* La valeur du MID dans la demande d’image [!DNL Analytics] à l’aide de l’[outil de débogage Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
 
 Voir [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md).
 
