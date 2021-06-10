@@ -1,20 +1,16 @@
 ---
 description: Cette propriété définit l’identifiant du conteneur de la source de données que vous souhaitez utiliser pour les synchronisations des identifiants.
 keywords: Service d’ID
-seo-description: Cette propriété définit l’identifiant du conteneur de la source de données que vous souhaitez utiliser pour les synchronisations des identifiants.
-seo-title: idSyncContainerID
 title: idSyncContainerID
-uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '336'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '319'
 ht-degree: 100%
 
 ---
 
-# idSyncContainerID {#idsynccontainerid}
+# idSyncContainerID{#idsynccontainerid}
 
 Cette propriété définit l’identifiant du conteneur de la source de données que vous souhaitez utiliser pour les synchronisations des identifiants.
 
@@ -83,7 +79,7 @@ Selon votre situation, il se peut que vous deviez ajouter cette configuration à
  </tbody> 
 </table>
 
-## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js  {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js   {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
 Si vous avez déployé [!UICONTROL DIL ]* et* VisitorAPI.js sur la même page :
 
