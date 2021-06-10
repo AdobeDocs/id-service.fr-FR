@@ -3,10 +3,10 @@ description: Avec l’identifiant visiteur Experience Cloud, vous pouvez associ
 keywords: Service d’ID
 title: ID de client et états d’authentification
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '628'
+ht-degree: 98%
 
 ---
 
@@ -16,11 +16,11 @@ Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres
 
 ## États d’authentification {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://docs.adobe.com/content/help/fr-FR/core-services/interface/customer-attributes/attributes.html) vers [!DNL Experience Cloud] et accéder à ces données à partir de différentes solutions.
+La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) vers [!DNL Experience Cloud] et accéder à ces données à partir de différentes solutions.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (synchronisation des ID de client) est requis pour les fonctionnalités d’attributs du client et des services principaux. La synchronisation des ID de client est une méthode d’identification facultative pour [!DNL Analytics]. [!DNL Target] nécessite `Visitor.AuthState.AUTHENTICATED` pour que les attributs du client fonctionnent. Pour obtenir des exemples, voir [Services principaux – Comment activer vos solutions](https://docs.adobe.com/content/help/fr-FR/core-services/interface/about-core-services/core-services.html).
+>`setCustomerIDs` (synchronisation des ID de client) est requis pour les fonctionnalités d’attributs du client et des services principaux. La synchronisation des ID de client est une méthode d’identification facultative pour [!DNL Analytics]. [!DNL Target] nécessite `Visitor.AuthState.AUTHENTICATED` pour que les attributs du client fonctionnent. Pour obtenir des exemples, voir [Services principaux – Comment activer vos solutions](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=fr).
 
 À partir de la version 1.5 du service Experience Cloud Identity, `setCustomerIDs` comprend l’objet `AuthState` facultatif. `AuthState` identifie les visiteurs selon leur état d’authentification (connecté ou déconnecté, par exemple). Vous définissez l’état d’authentification avec une valeur d’état répertoriée dans le tableau. L’état d’authentification est renvoyé sous la forme d’un entier.
 
@@ -212,8 +212,8 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Le service [!DNL Experience Cloud] ID prend en charge les identifiants et les états d’authentification du client dans le code de nos SDK Android et iOS. Voir les bibliothèques de codes suivantes :
 
-* [Méthodes du SDK Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/overview.html)
-* [Méthodes du SDK iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/overview.html)
+* [Méthodes du SDK Android](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
+* [Méthodes du SDK iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
 ## Remarque destinée aux clients Analytics et Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
