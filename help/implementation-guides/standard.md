@@ -3,10 +3,10 @@ description: Les mises en œuvre précédentes utilisaient Dynamic Tag Managem
 keywords: Service d’ID
 title: Mise en œuvre avec Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 99%
+source-wordcount: '1999'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Les mises en œuvre précédentes utilisaient Dynamic Tag Management (DTM) pou
 
 ## Dynamic Tag Management et service d’ID {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
-[Dynamic Tag Management](https://docs.adobe.com/content/help/fr-FR/dtm/using/dtm-home.html) vous permet de configurer, de déployer et de gérer votre instance de service d’ID et les intégrations de solutions [!DNL Experience Cloud] associées. Dynamic Tag Management contribue à simplifier le processus d’implémentation, car il est profondément intégré au service d’ID et à d’autres solutions Experience Cloud. Il vous suffit d’ajouter et de configurer l’outil Experience Cloud ID et de spécifier des informations, telles que :
+[Dynamic Tag Management](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html) vous permet de configurer, de déployer et de gérer votre instance de service d’ID et les intégrations de solutions [!DNL Experience Cloud] associées. Dynamic Tag Management contribue à simplifier le processus d’implémentation, car il est profondément intégré au service d’ID et à d’autres solutions Experience Cloud. Il vous suffit d’ajouter et de configurer l’outil Experience Cloud ID et de spécifier des informations, telles que :
 
 * ID d’organisation Experience Cloud (automatiquement renseigné si lié à Experience Cloud)
 * Serveur de suivi Analytics (sécurisé et non sécurisé)
@@ -34,7 +34,7 @@ DTM est mise gratuitement à disposition de tous les [!DNL Experience Cloud] cli
 
 **Prise en main de DTM**
 
-Dynamic Tag Management est un outil simple mais puissant. Si vous ne l’utilisez pas, nous vous encourageons vivement à le faire. Consultez la [documentation de DTM](https://docs.adobe.com/content/help/fr-FR/dtm/using/c-overview.html) pour commencer à utiliser ce service. Pour obtenir des instructions relatives à la configuration du service d’ID avec DTM, voir les informations et procédures des sections ci-dessous.
+Dynamic Tag Management est un outil simple mais puissant. Si vous ne l’utilisez pas, nous vous encourageons vivement à le faire. Consultez la [documentation de DTM](https://experienceleague.adobe.com/docs/dtm/using/c-overview.html) pour commencer à utiliser ce service. Pour obtenir des instructions relatives à la configuration du service d’ID avec DTM, voir les informations et procédures des sections ci-dessous.
 
 ## Consignes de déploiement {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
@@ -48,8 +48,8 @@ mcvid-dtm-deployment.xml
 
 Avant de commencer, assurez-vous d’avoir configuré votre organisation et vos solutions pour [!DNL Experience Cloud]. Vous devez également vous familiariser avec [!DNL Dyanamic Tag Management]. Cette documentation peut vous aider à démarrer :
 
-* [Activez vos solutions pour les services principaux](https://docs.adobe.com/content/help/fr-FR/core-services/interface/about-core-services/core-services.html) : Mettez en œuvre Experience Cloud et devenez administrateur. Ce processus modernise vos solutions en ce qui concerne les services principaux tels que les attributs du client et les audiences Experience Cloud.
-* [Prise en main de Dynamic Tag Management](https://docs.adobe.com/content/help/fr-FR/dtm/using/getting-started/get-started.html).
+* [Activez vos solutions pour les services principaux](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=fr) : Mettez en œuvre Experience Cloud et devenez administrateur. Ce processus modernise vos solutions en ce qui concerne les services principaux tels que les attributs du client et les audiences Experience Cloud.
+* [Prise en main de Dynamic Tag Management](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html).
 
 **Emplacement et ordre de chargement du code du service d’ID**
 
@@ -62,11 +62,11 @@ Tant que vous conservez toutes vos solutions et bibliothèques de code [!DNL Ado
 
 **Validation de la collecte de données régionale**
 
-Les clients doivent fournir un CNAME ou utiliser `*.sc.omtrdc` pour la [collecte de données régionales](https://docs.adobe.com/content/help/fr-FR/analytics/technotes/rdc/regional-data-collection.html) (RDC). Demandez à votre consultant [!DNL Adobe] de vous fournir les paramètres RDC spécifiques.
+Les clients doivent fournir un CNAME ou utiliser `*.sc.omtrdc` pour la [collecte de données régionales](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html) (RDC). Demandez à votre consultant [!DNL Adobe] de vous fournir les paramètres RDC spécifiques.
 
 **Configuration des suites de rapports Analytics**
 
-Les nouveaux clients [!DNL Analytics] doivent [créer une suite de rapports](https://docs.adobe.com/content/help/fr-FR/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) pour la collecte des données.
+Les nouveaux clients [!DNL Analytics] doivent [créer une suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) pour la collecte des données.
 
 ## Mise en œuvre du service Experience Cloud Identity à l’aide de DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
@@ -74,9 +74,9 @@ Pour mettre en œuvre le service d’ID avec Dynamic Tag Management (DTM), pro
 
 **Conditions préalables**
 
-* Activez vos solutions pour [!DNL Experience Cloud] et vérifiez que vous disposez des autorisations de niveau administrateur. Reportez-vous à la section [Activation des solutions pour les services principaux](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
+* Activez vos solutions pour [!DNL Experience Cloud] et vérifiez que vous disposez des autorisations de niveau administrateur. Reportez-vous à la section [Activation des solutions pour les services principaux](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html).
 
-* Création d’une propriété Web dans DTM. Reportez-vous à la documentation DTM relative à la [création d’une propriété Web](https://docs.adobe.com/content/help/fr-FR/dtm/using/admin/web-property.html).
+* Création d’une propriété Web dans DTM. Reportez-vous à la documentation DTM relative à la [création d’une propriété Web](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html).
 
 <!--
 mcvid-dtm-implement.xml
@@ -90,7 +90,7 @@ mcvid-dtm-implement.xml
 
    >[!NOTE]
    >
-   >Cette action renseigne le champ **[!UICONTROL ID d’organisation d’Experience Cloud]** avec votre ID d’organisation. Si votre compte DTM n’est pas associé à [!DNL Experience Cloud], vous devrez fournir cet ID. Pour associer votre compte, voir [Association des comptes dans Experience Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/organizations.html). Voir les [conditions requises](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) pour obtenir des informations sur la manière de trouver votre ID d’organisation.
+   >Cette action renseigne le champ **[!UICONTROL ID d’organisation d’Experience Cloud]** avec votre ID d’organisation. Si votre compte DTM n’est pas associé à [!DNL Experience Cloud], vous devrez fournir cet ID. Pour associer votre compte, voir [Association des comptes dans Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=fr). Voir les [conditions requises](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) pour obtenir des informations sur la manière de trouver votre ID d’organisation.
 
 1. Saisissez le nom de votre serveur de suivi dans la boîte **[!UICONTROL Serveur de suivi]**. Si vous ne savez pas comment trouver votre serveur de suivi, consultez la [FAQ](../faq-intro/faq.md) et la [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
 1. Cliquez sur **[!UICONTROL Créer un outil]**, puis sur **[!UICONTROL Enregistrer les modifications]**.
@@ -113,7 +113,7 @@ Les paramètres sont disponibles une fois que vous avez ajouté et enregistré l
 
 ## ID d’organisation {#section-949b5a0d8af940558b04ff675cf53f77}
 
-ID requis et associé à votre société [!DNL Experience Cloud] configurée. Une organisation est l’entité qui permet à un administrateur de configurer des groupes et des utilisateurs et de contrôler l’accès par authentification unique à [!DNL Experience Cloud]. L’ID d’organisation correspond à une chaîne de 24 caractères alphanumériques, suivie de @AdobeOrg (obligatoire). Les administrateurs [!DNL Experience Cloud] peuvent accéder à cet ID dans [Experience Cloud > Outils](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html).
+ID requis et associé à votre société [!DNL Experience Cloud] configurée. Une organisation est l’entité qui permet à un administrateur de configurer des groupes et des utilisateurs et de contrôler l’accès par authentification unique à [!DNL Experience Cloud]. L’ID d’organisation correspond à une chaîne de 24 caractères alphanumériques, suivie de @AdobeOrg (obligatoire). Les administrateurs [!DNL Experience Cloud] peuvent accéder à cet ID dans [Experience Cloud > Outils](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr).
 
 ![](assets/orgID.png)
 
@@ -139,7 +139,7 @@ Nom du serveur de suivi utilisé pour la collecte de données Analytics. Il s’
 
 Si vous ne connaissez pas les URL de votre serveur de suivi, consultez vos fichiers `s_code.js` ou `AppMeasurement.js`. L’URL est définie par la `s.trackingServer` variable.
 
-Voir [trackingServer](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Voir [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Serveur de suivi sécurisé**
 
@@ -147,7 +147,7 @@ Nom du serveur de suivi sécurisé utilisé pour la collecte de données Analyti
 
 Si vous ne connaissez pas les URL de votre serveur de suivi, consultez vos fichiers `s_code.js` ou `AppMeasurement.js`. L’URL est définie par la `s.trackingServerSecure` variable.
 
-Voir [trackingServer](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Voir [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Serveur Experience Cloud**
 
@@ -179,7 +179,7 @@ Champs supplémentaires vous permettant d’ajouter un code d’intégration ou 
 
 **Code d’intégration**
 
-Un code d’intégration est un identifiant unique fourni par le client. Le code d’intégration doit contenir la valeur que vous avez utilisée pour [créer une source de données](hhttps://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) dans [!DNL Audience Manager].
+Un code d’intégration est un identifiant unique fourni par le client. Le code d’intégration doit contenir la valeur que vous avez utilisée pour [créer une source de données](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) dans [!DNL Audience Manager].
 
 **Valeur**
 
@@ -209,13 +209,13 @@ Vous pouvez également tester le service d’ID dans une session de navigateur a
 
 **Outils**
 
-Le [débogueur Adobe](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) et le [proxy HTTP Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’ID a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
+Le [débogueur Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) et le [proxy HTTP Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’ID a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
 
 ## Test à l’aide du débogueur Adobe  {#section-861365abc24b498e925b3837ea81d469}
 
 La mise en œuvre de votre service est correctement configurée lorsqu’un [!DNL Experience Cloud ID] (MID) s’affiche dans la réponse du [!DNL Adobe] débogueur. Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md) pour plus d’informations sur le MID.
 
-Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) :
+Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) :
 
 1. Effacez vos cookies de navigateur ou ouvrez une session de navigation anonyme.
 1. Chargez votre page de test qui contient le code du service d’ID.
@@ -267,7 +267,7 @@ Le code de votre service d’ID fonctionne correctement si la fonction `Visitor.
 
 ### Réponses du service d’ID réussies dans Charles
 
-Votre compte a été configuré correctement pour le service d’ID si la réponse des [serveurs de collecte des données](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) renvoie un MID. Le MID est renvoyé en tant que paire clé-valeur utilisant la syntaxe : `d_mid: visitor Experience Cloud ID`. Recherchez le MID dans l’onglet [!UICONTROL Réponse] tel qu’affiché ci-dessous.
+Votre compte a été configuré correctement pour le service d’ID si la réponse des [serveurs de collecte des données](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) renvoie un MID. Le MID est renvoyé en tant que paire clé-valeur utilisant la syntaxe : `d_mid: visitor Experience Cloud ID`. Recherchez le MID dans l’onglet [!UICONTROL Réponse] tel qu’affiché ci-dessous.
 
 ![](assets/charles_response_success.png)
 
@@ -277,9 +277,9 @@ Votre compte n’a pas été configuré correctement si la réponse DCS ne conti
 
 ![](assets/charles_response_unsuccessful.png)
 
-Pour plus d’informations sur les codes d’erreur, voir [Exemples, messages et codes d’erreur DCS (DCS Error Codes, Messages, and Examples)](https://docs.adobe.com/content/help/fr-FR/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
+Pour plus d’informations sur les codes d’erreur, voir [Exemples, messages et codes d’erreur DCS (DCS Error Codes, Messages, and Examples)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
 
 >[!MORELIKETHIS]
 >
->* [Propriétés Web](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
+>* [Propriétés Web](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
 
