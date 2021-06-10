@@ -1,16 +1,12 @@
 ---
 description: Les mises en œuvre précédentes utilisaient Dynamic Tag Management (DTM) pour configurer, déployer et intégrer le service Experience Cloud Identity à vos autres solutions Experience Cloud.
 keywords: Service d’ID
-seo-description: Les mises en œuvre précédentes utilisaient Dynamic Tag Management (DTM) pour configurer, déployer et intégrer le service Experience Cloud Identity à vos autres solutions Experience Cloud.
-seo-title: Mise en œuvre avec Dynamic Tag Management
 title: Mise en œuvre avec Dynamic Tag Management
-uuid: c4f752c4-392e-4909-b178-911706857064
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '2058'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '2033'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +20,7 @@ Les mises en œuvre précédentes utilisaient Dynamic Tag Management (DTM) pou
 
 >[!NOTE]
 >
->Actuellement, l’outil de mise en œuvre favorisé et recommandé est [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html). En effet, celui-ci permet la simplification des tâches complexes de gestion des balises ainsi que l’automatisation du placement du code, allant au-delà des capacités de DTM. Voir [Mise en œuvre avec Launch](../implementation-guides/ecid-implement-with-launch.md).
+>Actuellement, l’outil de mise en œuvre favorisé et recommandé est [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html). En effet, celui-ci permet la simplification des tâches complexes de gestion des balises ainsi que l’automatisation du placement du code, allant au-delà des capacités de DTM. Voir [Mise en œuvre avec Launch](../implementation-guides/ecid-implement-with-launch.md).
 
 ## Dynamic Tag Management et service d’ID {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
@@ -78,7 +74,7 @@ Pour mettre en œuvre le service d’ID avec Dynamic Tag Management (DTM), pro
 
 **Conditions préalables**
 
-* Activez vos solutions pour [!DNL Experience Cloud] et vérifiez que vous disposez des autorisations de niveau administrateur. Reportez-vous à la section [Activation des solutions pour les services principaux](https://docs.adobe.com/content/help/fr-FR/core-services/interface/about-core-services/core-services.html).
+* Activez vos solutions pour [!DNL Experience Cloud] et vérifiez que vous disposez des autorisations de niveau administrateur. Reportez-vous à la section [Activation des solutions pour les services principaux](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
 
 * Création d’une propriété Web dans DTM. Reportez-vous à la documentation DTM relative à la [création d’une propriété Web](https://docs.adobe.com/content/help/fr-FR/dtm/using/admin/web-property.html).
 
@@ -143,7 +139,7 @@ Nom du serveur de suivi utilisé pour la collecte de données Analytics. Il s’
 
 Si vous ne connaissez pas les URL de votre serveur de suivi, consultez vos fichiers `s_code.js` ou `AppMeasurement.js`. L’URL est définie par la `s.trackingServer` variable.
 
-Voir [trackingServer](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
+Voir [trackingServer](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Serveur de suivi sécurisé**
 
@@ -151,7 +147,7 @@ Nom du serveur de suivi sécurisé utilisé pour la collecte de données Analyti
 
 Si vous ne connaissez pas les URL de votre serveur de suivi, consultez vos fichiers `s_code.js` ou `AppMeasurement.js`. L’URL est définie par la `s.trackingServerSecure` variable.
 
-Voir [trackingServer](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
+Voir [trackingServer](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) et [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Serveur Experience Cloud**
 
@@ -219,7 +215,7 @@ Le [débogueur Adobe](https://docs.adobe.com/content/help/fr-FR/analytics/implem
 
 La mise en œuvre de votre service est correctement configurée lorsqu’un [!DNL Experience Cloud ID] (MID) s’affiche dans la réponse du [!DNL Adobe] débogueur. Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md) pour plus d’informations sur le MID.
 
-Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/validate/debugger.html) :
+Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) :
 
 1. Effacez vos cookies de navigateur ou ouvrez une session de navigation anonyme.
 1. Chargez votre page de test qui contient le code du service d’ID.
@@ -285,5 +281,5 @@ Pour plus d’informations sur les codes d’erreur, voir [Exemples, messages et
 
 >[!MORELIKETHIS]
 >
->* [Propriétés Web](https://docs.adobe.com/content/help/fr-FR/dtm/using/admin/web-property.html)
+>* [Propriétés Web](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
 
