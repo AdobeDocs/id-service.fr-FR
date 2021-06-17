@@ -6,7 +6,7 @@ exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Reportez-vous au tableau ci-dessous pour obtenir une description du paramètre `
 
 ## Ajout d’une Action dans Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Pour en savoir plus sur le Platform launch, consultez la [documentation du produit Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en).
+Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Pour en savoir plus, consultez la [documentation produit de Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr).
 
 Pour ajouter une action à Launch, consultez la [documentation sur les règles](https://docs.adobe.com/help/fr-FR/launch/using/reference/manage-resources/rules.html) dans Adobe Launch et reportez-vous à la capture d’écran ci-dessous :
 
