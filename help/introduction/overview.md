@@ -41,7 +41,7 @@ En résumé, le service d’ID :
 
 ## Conditions requises du service d’ID
 
-Votre solution et les autres bibliothèques de code Adobe doivent répondre  [à certaines conditions requises](/help/reference/requirements.md) avant que vous puissiez utiliser le service d’ID.
+Votre solution et les autres bibliothèques de code Adobe doivent répondre [à certaines conditions requises](/help/reference/requirements.md) avant que vous puissiez utiliser le service d’ID.
 
 * [Cookies et service Experience Cloud Identity](cookies.md) : le service d’ID utilise l’ID d’organisation, le cookie AMCV d’Experience Cloud et un cookie demdex pour créer et stocker les identifiants uniques et persistants des visiteurs de votre site. Ces cookies permettent au service d’ID d’effectuer le suivi des visiteurs dans vos différents domaines et d’activer le partage de données entre différentes solutions Experience Cloud.
 * [Requête et définition d’ID par le service Experience Cloud Identity](id-request.md) : cette section décrit le processus de demande d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
