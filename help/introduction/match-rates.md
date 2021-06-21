@@ -6,7 +6,7 @@ exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Vis
 
 **Étape 2 : Chargement de l’iFrame**
 
-Pendant que le corps de la page se charge, le service d’ID charge une iFrame appelée  *`Destination Publishing iFrame`*. L’[!UICONTROL iFrame de publication de destination] se charge dans un domaine séparé de la page parente. Cette conception permet d’assurer les performances des pages et d’améliorer la sécurité, car l’iFrame :
+Pendant que le corps de la page se charge, le service d’ID charge une iFrame appelée *`Destination Publishing iFrame`*. L’[!UICONTROL iFrame de publication de destination] se charge dans un domaine séparé de la page parente. Cette conception permet d’assurer les performances des pages et d’améliorer la sécurité, car l’iFrame :
 
 * Se charge de manière asynchrone par rapport à la page parente. Cela signifie que la page parente peut se charger indépendamment de l’[!UICONTROL iFrame de publication de destination]. Le chargement de l’iFrame et des pixels de synchronisation des identifiants à partir de l’iFrame n’affecte pas la page parente ni l’expérience utilisateur.
 * Charge aussi vite que possible. Si cette opération est trop rapide, vous pouvez charger l’iFrame après l’événement de chargement de la fenêtre (non recommandé). Voir [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) pour plus de détails.
@@ -50,15 +50,15 @@ La synchronisation des identifiants est une URL qui est déclenchée dans l’iF
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Voir également [Synchronisation des identifiants pour les transferts de données entrants](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en).
+Voir également [Synchronisation des identifiants pour les transferts de données entrants](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=fr).
 
 **Étape 4 : Enregistrement des identifiants**
 
-Les identifiants synchronisés sont enregistrés sur les [serveurs de données principaux et de périphérie](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en).
+Les identifiants synchronisés sont enregistrés sur les [serveurs de données principaux et de périphérie](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=fr).
 
 ## Les services de synchronisation gèrent la synchronisation des identifiants {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Experience Cloud] responsables de la synchronisation des identifiants. Ce service est activé par défaut. Pour le désactiver, ajoutez une  [variable optionnelle](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) à la fonction du service d’ID `Visitor.getInstance`. Les services de synchronisation établissent des correspondances entre différents [!DNL Experience Cloud] ID, tels que :
+Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Experience Cloud] responsables de la synchronisation des identifiants. Ce service est activé par défaut. Pour le désactiver, ajoutez une [variable optionnelle](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) à la fonction du service d’ID `Visitor.getInstance`. Les services de synchronisation établissent des correspondances entre différents [!DNL Experience Cloud] ID, tels que :
 
 * Les identifiants de [!DNL Experience Cloud] cookie tiers et les [!DNL Experience Cloud] identifiants propriétaires.
 
@@ -69,9 +69,9 @@ Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Expe
 
 ## Synchronisation des identifiants avec Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (précédemment appelé [!DNL Adobe Media Optimizer]) est une exception au processus de synchronisation des identifiants basé sur l’iFrame. Comme [!DNL Advertising Cloud] est un domaine de confiance, les synchronisations des identifiants ont lieu à partir de la page parente plutôt que dans l’[!UICONTROL iFrame de publication de destination]. Pendant la synchronisation, le service d’ID appelle [!DNL Advertising Cloud] à l’adresse `cm.eversttech.net`, qui est un nom de domaine hérité utilisé par [!DNL Advertising Cloud] avant son acquisition par Adobe. L’envoi de données à [!DNL Advertising Cloud] permet d’améliorer les taux de correspondance et est automatique pour les clients du service d’ID utilisant la version 2.0 (ou ultérieure). Voir également [Cookies Advertising Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en).
+[!DNL Adobe Advertising Cloud] (précédemment appelé [!DNL Adobe Media Optimizer]) est une exception au processus de synchronisation des identifiants basé sur l’iFrame. Comme [!DNL Advertising Cloud] est un domaine de confiance, les synchronisations des identifiants ont lieu à partir de la page parente plutôt que dans l’[!UICONTROL iFrame de publication de destination]. Pendant la synchronisation, le service d’ID appelle [!DNL Advertising Cloud] à l’adresse `cm.eversttech.net`, qui est un nom de domaine hérité utilisé par [!DNL Advertising Cloud] avant son acquisition par Adobe. L’envoi de données à [!DNL Advertising Cloud] permet d’améliorer les taux de correspondance et est automatique pour les clients du service d’ID utilisant la version 2.0 (ou ultérieure). Voir également [Cookies Advertising Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=fr).
 
 >[!MORELIKETHIS]
 >
->* [Signification des appels vers le domaine Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
+>* [Signification des appels vers le domaine Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr)
 
