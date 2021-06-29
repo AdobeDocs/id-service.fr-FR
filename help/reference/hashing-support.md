@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Prise en charge du hachage SHA-256 pour setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Reportez-vous au tableau ci-dessous pour obtenir une description du paramètre `
 
 | Paramètre | Description |
 |------------|----------|
-| `d_cid_ic` | Transmet le code d’intégration, l’ID d’utilisateur unique (DPUUID) et un ID d’état authentifié au service d’ID. Séparez le code d’intégration et le DPUUID par le caractère de contrôle non imprimable %01</code> : <br> Exemple : d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>État d’authentification</b> <br> Il s’agit d’un ID facultatif dans le paramètre d_cid_ic. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : <br> <ul><li>0 (inconnu ou jamais authentifié)</li><li>1 (actuellement authentifié pour cette instance, cette page ou ce contexte d’application)</li><li>2 (déconnecté)</li></ul> <br>Exemples :<br> <ul><li>Inconnu : ...d_cid=123%01456%01<b>0</b></li><li>Authentifié : ...d_cid=123%01456%01<b>1</b></li><li>Déconnecté : ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Transmet le code d’intégration, l’ID d’utilisateur unique (DPUUID) et un ID d’état authentifié au service d’ID. Séparez le code d’intégration et le DPUUID par le caractère de contrôle non imprimable %01</code> : <br> Exemple : d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>État d’authentification</b> <br> Il s’agit d’un ID facultatif dans le paramètre d_cid_ic. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : <br> <ul><li>0 (inconnu ou jamais authentifié)</li><li>1 (actuellement authentifié pour cette instance, cette page ou ce contexte d’application)</li><li>2 (déconnecté)</li></ul> <br>Exemples : <br> <ul><li>Inconnu : ...d_cid=123%01456%01<b>0</b></li><li>Authentifié : ...d_cid=123%01456%01<b>1</b></li><li>Déconnecté : ...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Ajout d’une Action dans Adobe Experience Platform Launch {#add-action-launch}
 
