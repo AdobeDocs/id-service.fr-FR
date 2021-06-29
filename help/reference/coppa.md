@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Prise en charge de la loi COPPA dans le service Experience Cloud Identity
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
 ht-degree: 100%
 
