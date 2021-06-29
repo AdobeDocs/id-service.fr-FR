@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: setCustomerIDs
 exl-id: 8fc549d3-2a6f-4214-bb0d-3e0bc1501ce2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '58'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ setCustomerIDs définit une ou plusieurs paires clé-valeur qui définissent les
 
 **Syntaxe :** `visitor.setCustomerIDs()`
 
-Vous pouvez définir un ou plusieurs ID comme l’illustre l’exemple de code ci-après. Voir  [ID de client et états d’authentification](../../reference/authenticated-state.md) pour obtenir des informations supplémentaires et des exemples.
+Vous pouvez définir un ou plusieurs ID comme l’illustre l’exemple de code ci-après. Voir [ID de client et états d’authentification](../../reference/authenticated-state.md) pour obtenir des informations supplémentaires et des exemples.
 
 ```js
 // Single ID with a single authentication state 
