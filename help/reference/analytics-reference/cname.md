@@ -3,7 +3,7 @@ description: Si vous disposez d’un site d’accès principal où les clients p
 keywords: ordre des opérations ; service d’ID
 title: Présentation de l’implémentation CNAME
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
 ht-degree: 100%
 
