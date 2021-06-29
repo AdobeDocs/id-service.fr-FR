@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: Notes de mise à jour 2016
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Novembre 2016
 * Instructions supplémentaires sur la manière de mettre en œuvre le service d’ID dans un environnement côté serveur.
 * Ajout de la fonction booléenne `Visitor.overwriteCrossDomainMCIDAndAID` qui permet de remplacer les Experience Cloud ID et Analytics ID sur d’autres domaines dont vous êtes propriétaire. Voir [Remplacement d’un identifiant visiteur](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
 
-* Ajout d’un `TS = UTC`horodatage en tant que propriété de la fonction `visitor.appendVisitorIDsTo`. Le service d’ID utilise l’horodatage pour déterminer si les identifiants doivent être utilisés dans l’URL de redirection selon un intervalle d’âge de 5 minutes. Voir  [Fonction d’ajout d’identifiant visiteur](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* Ajout d’un `TS = UTC`horodatage en tant que propriété de la fonction `visitor.appendVisitorIDsTo`. Le service d’ID utilise l’horodatage pour déterminer si les identifiants doivent être utilisés dans l’URL de redirection selon un intervalle d’âge de 5 minutes. Voir [Fonction d’ajout d’identifiant visiteur](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
 * Ajout de la nouvelle fonction `Visitor.getLocationHint,` qui renvoie un identifiant de région. Voir [Obtention des identifiants de région (indicateur de location)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
 
@@ -68,7 +68,7 @@ Août 2016
 
 **Correctifs et améliorations**
 
-* Ajout de `idSyncAttachIframeOnWindowLoad` comme indicateur booléen optionnel que vous pouvez définir dans la fonction `Visitor.getInstance`. Si `idSyncAttachIframeOnWindowLoad= true`, le service d’ID charge l’iFrame de synchronisation des identifiants au chargement de la fenêtre. Par défaut, le service d’ID charge l’iFrame aussi vite que possible. Cet indicateur *remplace*`idSyncAttachIframeASAP`, qui est obsolète. Voir [Variables de fonction Visitor.getInstance](../library/function-vars/function-vars.md).
+* Ajout de `idSyncAttachIframeOnWindowLoad` comme indicateur booléen optionnel que vous pouvez définir dans la fonction `Visitor.getInstance`. Si `idSyncAttachIframeOnWindowLoad= true`, le service d’ID charge l’iFrame de synchronisation des identifiants au chargement de la fenêtre. Par défaut, le service d’ID charge l’iFrame aussi vite que possible. Cet indicateur *remplace* `idSyncAttachIframeASAP`, qui est obsolète. Voir [Variables de fonction Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * Ajout d’une fonctionnalité permettant la prise en charge du suivi des [!DNL Experience Cloud] ID à l’échelle de tous les domaines, applications natives et applications hybrides jusqu’aux transitions web. Voir [Fonction auxiliaire d’ajout d’identifiant visiteur](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
@@ -80,7 +80,7 @@ Révision : [Conditions requises du service Experience Cloud Identity](../ref
 
 **Problèmes connus**
 
-Les clients qui utilisent le code DIL [!DNL Audience Manager] et le code visitorAPI.js sur la même page doivent définir la variable DIL `secureDataCollection= false`. Voir [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html).
+Les clients qui utilisent le code DIL [!DNL Audience Manager] et le code visitorAPI.js sur la même page doivent définir la variable DIL `secureDataCollection= false`. Voir [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=fr).
 
 ## Version 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
