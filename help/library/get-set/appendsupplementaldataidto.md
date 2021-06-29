@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ var pageB = "www.domain.com/pageB";
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219");
 ```
 
-## Exemple de résultat   {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
+## Exemple de résultat {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
 Comme indiqué ci-dessous, la redirection d’URL contient le SDID du visiteur, l’ID d’organisation et un horodatage UNIX dans l’appel à la page de réception.
 
