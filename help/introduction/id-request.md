@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Requête et définition d’ID par le service Experience Cloud Identity
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
 
