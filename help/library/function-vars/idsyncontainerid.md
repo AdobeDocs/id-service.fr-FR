@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## Que sont les conteneurs et quand les utiliser ?  {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## Que sont les conteneurs et quand les utiliser ? {#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **Conteneurs**
 
@@ -79,7 +79,7 @@ Selon votre situation, il se peut que vous deviez ajouter cette configuration à
  </tbody> 
 </table>
 
-## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js   {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
 Si vous avez déployé [!UICONTROL DIL ]* et* VisitorAPI.js sur la même page :
 
