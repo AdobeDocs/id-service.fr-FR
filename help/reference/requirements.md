@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: Conditions requises pour le service Experience Cloud Identity
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditi
      <li id="li_1F16C6D412944197BEA56BC24730782C"> Placez l’un de ces codes DTM incorporés ailleurs dans votre code de balisage et/ou de page. </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> Apposez, ajoutez ou chargez du code DTM avec des méthodes asynchrones, des méthodes d’appel/de rappel ou des wrappers. </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">Incluez plusieurs instances de code incorporé sur la même page. </li> 
-    </ul> <p>Voir <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html" format="https" scope="external">Code incorporé et options d’hébergement</a>. </p> </td> 
+    </ul> <p>Voir <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=fr" format="https" scope="external">Code incorporé et options d’hébergement</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Mise en œuvre non standard </a> </p> </td> 
@@ -46,7 +46,7 @@ Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditi
  </tbody> 
 </table>
 
-## Conditions requises pour Experience Cloud : ID d’organisation  {#section-a02f537129a64ffbb690d5738d360c26}
+## Conditions requises pour Experience Cloud : ID d’organisation {#section-a02f537129a64ffbb690d5738d360c26}
 
 Pour utiliser le service d’ID, votre société doit être activée pour [!DNL Experience Cloud] et disposer d’un ID d’organisation. Consultez la liste ci-dessous si vous n’êtes pas sûr de l’état de votre société en ce qui concerne [!DNL Experience Cloud] et si vous devez rechercher votre ID d’organisation.
 
@@ -79,7 +79,7 @@ Pour utiliser le service d’ID, votre société doit être activée pour [!DNL 
 
 ## Conditions requises pour Analytics : collecte des données régionale {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html?lang=fr)
 
 ## Bibliothèques de code et versions minimales requises {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -115,27 +115,27 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
    <td colname="col4"> <p>H.27 </p> <p> <p>Remarque :<span class="keyword"> Le s_code version H.27 d’Analytics</span> n’est plus pris en charge avec la mise à jour du service d’ID version 1.6.0. Mettez votre code à niveau avec la dernière version d’AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>Video Heartbeat </p> <p>Voir <a href="https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html" format="https" scope="external">Video Heartbeat 2.x pour JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p>Video Heartbeat </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr" format="https" scope="external">Video Heartbeat 2.x pour JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Bibliothèque d’intégration des données</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=fr" format="https" scope="external">Bibliothèque d’intégration des données</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Code mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html?lang=fr" format="https" scope="external">Code mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Mise en œuvre d’at.jss</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html?lang=fr" format="https" scope="external">Mise en œuvre d’at.jss</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Versions minimales des SDK pour Android et iOS   {#section-73b2446fba8e463888642c7d7dfd94f1}
+## Versions minimales des SDK pour Android et iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Au minimum, le service d’ID requiert les versions du SDK répertoriées ci-dessous.
 
@@ -148,9 +148,9 @@ Au minimum, le service d’ID requiert les versions du SDK répertoriées ci-des
 
 Le code de votre SDK doit être activé pour le service d’ID. Activez et téléchargez le dernier code du SDK pour chaque application depuis votre compte [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Voir également :
 
-* [Configuration des options du SDK Service d’ID des visiteurs](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Méthodes du SDK Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [Méthodes du SDK iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Configuration des options du SDK Service d’ID des visiteurs](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=fr)
+* [Méthodes du SDK Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html?lang=fr)
+* [Méthodes du SDK iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html?lang=fr)
 
 >[!MORELIKETHIS]
 >
