@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Le diagramme et les sections ci-dessous décrivent le déroulement et les élém
 
 ## Étape 1 : Page de demande {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-L’activité côté serveur commencer lorsqu’un visiteur fait une demande HTTP de chargement d’une page Web. Lors de cette étape, votre serveur reçoit cette demande et vérifie  [Cookie AMCV](../introduction/cookies.md). Le cookie AMCV contient l’[!DNL Experience Cloud] ID (MID) du visiteur.
+L’activité côté serveur commencer lorsqu’un visiteur fait une demande HTTP de chargement d’une page Web. Lors de cette étape, votre serveur reçoit cette demande et vérifie [Cookie AMCV](../introduction/cookies.md). Le cookie AMCV contient l’[!DNL Experience Cloud] ID (MID) du visiteur.
 
 ## Étape 2 : Génération des données utiles du service d’ID {#section-c86531863db24bd9a5b761c1a2e0d964}
 
