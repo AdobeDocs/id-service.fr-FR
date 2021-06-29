@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ Vous avez besoin d’une période de grâce si vous envoyez les données à un s
 
 Interrompez la période de grâce une fois que le processus d’ingestion des données peut utiliser les colonnes `post_visid_high` et `post_visid_low`.
 
-Voir [Référence des colonnes de données du parcours de navigation](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
+Voir [Référence des colonnes de données du parcours de navigation](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=fr).
 
 **Ingestion des données du parcours de navigation**
 
@@ -191,7 +191,7 @@ Vous pouvez tester et déployer les éléments comme suit.
 Pour tester la mise en œuvre du service d’ID, recherchez les éléments suivants :
 
 * Le [cookie AMCV](../introduction/cookies.md) dans le domaine où est hébergée votre page ;
-* La valeur du MID dans la demande d’image [!DNL Analytics] à l’aide de l’[outil de débogage Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
+* La valeur du MID dans la demande d’image [!DNL Analytics] à l’aide de l’[outil de débogage Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=fr).
 
 Voir [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md).
 
