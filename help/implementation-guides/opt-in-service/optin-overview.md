@@ -3,9 +3,9 @@ description: Le service Opt-in vous permet de configurer des protocoles permetta
 title: Service Opt-in
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '507'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Le service Opt-in est une extension du service Experience Cloud ID (ECID), con
 
 L’utilisation du service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, vous pouvez récupérer les approbations visiteur de la CMP de l’ensemble des solutions Adobe.
 
-Le service Opt-in est implémenté et configuré facilement à l’aide d’[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) avec [l’extension Opt-in](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Le service Opt-in est implémenté et configuré facilement à l’aide d’[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr) avec [l’extension Opt-in](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Pour commencer, reportez-vous à la section [Configuration du service Opt-in](../../implementation-guides/opt-in-service/getting-started.md) pour commencer.
 
@@ -29,7 +29,7 @@ Pour commencer, reportez-vous à la section [Configuration du service Opt-in](..
 >
 >Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à remplacer un avis juridique. Adressez-vous au service juridique de votre société pour obtenir des conseils en ce qui concerne le consentement et les pratiques quant à la configuration de la mise en œuvre de l’opt-in.
 
-## Opt-in et les diverses solutions Experience Cloud  {#section-053e6224505542cf961896f0ca869e52}
+## Opt-in et les diverses solutions Experience Cloud {#section-053e6224505542cf961896f0ca869e52}
 
 Le service Opt-in est un outil vous permettant de construire le workflow correspondant à vos besoins pour l’obtention du consentement. Il vous permet de concevoir un workflow pour agir (déclencher des balises) avant et après avoir reçu l’autorisation de l’utilisateur ou de votre responsable des consentements.
 
