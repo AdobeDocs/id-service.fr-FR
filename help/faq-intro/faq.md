@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: FAQ sur le service d’ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Questions fréquemment posées sur les fonctionnalités et problèmes liés à l
 
 **Quel type de fonctions ou de fonctionnalités le service d’ID fournit-il ?**
 
-Voir  [Aperçu](../introduction/overview.md).
+Voir [Aperçu](../introduction/overview.md).
 
 **Pourquoi le service d’ID ne lance-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
@@ -34,7 +34,7 @@ Vous pouvez rencontrer des problèmes si vous hébergez le fichier VisitorAPI.js
 
 Placez la bibliothèque VisitorAPI.js dans la partie supérieure de la page, dans la `<head>` section d’en-tête du code. Vous pouvez ainsi vous assurer que l’appel d’un ID disparaît avant que le corps de la page ne commence à se charger. Cela maximise les chances de réussite d’un renvoi d’ID.
 
-L’appel du service d’ID est asynchrone et est le seul appel au [domaine demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
+L’appel du service d’ID est asynchrone et est le seul appel au [domaine demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr). L’appel du service d’ID ne bloque pas le chargement d’autres éléments sur la page.
 
 Pour les [!DNL Target] clients, le placement du code du service d’ID dans le corps `<body>` de la page peut augmenter les risques qu’il puisse bloquer un appel [!DNL Target]. Si vous devez placer le code du service d’ID dans le corps de votre page, il doit être placé après la balise `<body>` ouverte.
 
