@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: Notes de mise à jour 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '744'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Août 2017
 
 **Documentation révisée**
 
-Mise à jour et révision des  [Questions fréquentes](/help/faq-intro/faq-intro.md) afin d’inclure des questions distinctes pour chaque solution [!DNL Experience Cloud].
+Mise à jour et révision des [Questions fréquentes](/help/faq-intro/faq-intro.md) afin d’inclure des questions distinctes pour chaque solution [!DNL Experience Cloud].
 
 ## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -122,7 +122,7 @@ Date de publication : Juin 2017
  </tbody> 
 </table>
 
-## Mises à jour de la documentation en mai  {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## Mises à jour de la documentation en mai {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -191,7 +191,7 @@ Correction d’un bogue en raison duquel le service d’ID envoyait des appels r
 
 **Nouvelle documentation**
 
-[Utilisation de la prérécupération DNS avec différents services et solutions Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
+[Utilisation de la prérécupération DNS avec différents services et solutions Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=fr)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -207,6 +207,6 @@ Janvier 2017
 * Correction d’un bogue empêchant la panne du service ID juste après qu’un visiteur active un bloqueur d’annonces publicitaires configuré pour exclure le domaine demdex.net. Ce bogue reste rare et inhabituel car la plupart des bloqueurs d’annonces publicitaires ne bloquent pas le domaine demdex.net. (MCID-233)
 * Correction d’un bogue lié aux interactions entre le code du service d’ID et un script personnalisé sur le site Web d’un client. Ce problème empêchait Internet Explorer 9 de charger les pages Web. (MCID-206)
 
-## Années précédentes   {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## Années précédentes {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Notes de mise à jour précédentes relatives au service d’ID.
