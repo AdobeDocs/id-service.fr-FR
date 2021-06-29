@@ -3,9 +3,9 @@ description: Mettez le service Opt-in en œuvre en tant que seul point de réfé
 title: Configuration du service Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Le service Opt-in est une bibliothèque JavaScript inclue avec Experience Cloud
 
 Le service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, l’ensemble des solutions Adobe peuvent récupérer les approbations visiteur de la CMP en réponse aux appels de consentement associés.
 
-## Conditions préalables   {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
+## Conditions préalables {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID version 4.0.
 
@@ -41,7 +41,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. Les besoins de confidentialité de votre société dépendent du degré de conformité au RGPD que vous souhaitez avoir. Découvrez les bibliothèques que les équipes de protection de la vie privée de votre société peuvent utiliser à l’état de consentement préalable.
 
-Si vous utilisez [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html), tirez parti de l’[extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
+Si vous utilisez [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr), tirez parti de l’[extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
 
 ## Catégories Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
