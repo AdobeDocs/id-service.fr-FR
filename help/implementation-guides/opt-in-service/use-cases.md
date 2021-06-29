@@ -3,7 +3,7 @@ description: Exemples de cas d’utilisation et de solutions pour gérer le serv
 title: Cas d’utilisation d’Opt-in
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
 * L’Opt-in correspond à une implémentation par domaine. Cela ne permet pas de gérer les implémentations sur plusieurs domaines.
 * Afin de désactiver les appels tiers pour une bibliothèque spécifique, vous devez configurer cette préférence dans chaque bibliothèque de manière distincte.
 
-## Scénarios d’Opt-in  {#section-1178053c065c430bba26f82ef383a71c}
+## Scénarios d’Opt-in {#section-1178053c065c430bba26f82ef383a71c}
 
 Ces cas d’utilisation sont des exemples d’utilisation du service Opt-in.
 
