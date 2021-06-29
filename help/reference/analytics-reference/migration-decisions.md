@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Si vous avez plusieurs domaines qui envoient des données à la *même suite de 
    <td colname="col1"> <p>Un seul domaine </p> </td> 
    <td colname="col2"> <p>L’utilisation d’un seul domaine vous permet de migrer hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Toutefois, il n’est pas nécessaire de modifier votre CNAME si celui-ci fonctionne. </p> <p>Si vous supprimez le CNAME : </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Vérifiez que le nouveau serveur de suivi est <a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatible avec RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Vérifiez que le nouveau serveur de suivi est <a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=fr" format="https" scope="external">compatible avec RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passez du CNAME à un serveur de suivi RDC quelques mois avant la migration vers le service <span class="keyword">Experience Cloud</span> ID. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>N’utilisez pas</i> de serveur de suivi <span class="codeph">*.2o7.net</span>. </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Contactez le <a href="https://helpx.adobe.com/fr/marketing-cloud/contact-support.html" format="https" scope="external">service à la clientèle</a> pour configurer la migration des visiteurs. Cela permet d’assurer des décomptes cohérents des visiteurs. </li> 
@@ -86,7 +86,7 @@ Si vous disposez de plusieurs fichiers JavaScript Analytics ou d’applications 
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">Plusieurs fichiers JavaScript Analytics </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">Autres méthodes de collecte de données </li> 
     </ul> </td> 
-   <td colname="col2"> <p>Vous devez configurer une période de grâce d’ID des visiteurs afin que vous puissiez déployer le service d’ID des visiteurs sur chaque fichier JavaScript et sur les autres bibliothèques de collecte de données. Voir  <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> Période de grâce du service d’ID</a>. </p> </td> 
+   <td colname="col2"> <p>Vous devez configurer une période de grâce d’ID des visiteurs afin que vous puissiez déployer le service d’ID des visiteurs sur chaque fichier JavaScript et sur les autres bibliothèques de collecte de données. Voir <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> Période de grâce du service d’ID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un seul fichier JavaScript Analytics </p> </td> 
