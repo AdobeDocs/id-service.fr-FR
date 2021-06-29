@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Mesure de pulsation vidéo et service Experience Cloud Identity
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '105'
 ht-degree: 100%
 
@@ -16,5 +16,5 @@ La mesure de pulsation vidéo nécessite le service Experience Cloud Identity.
 
 >[!MORELIKETHIS]
 >
->* [Mesures audio et vidéo dans Adobe Analytics ](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html)
+>* [Mesures audio et vidéo dans Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
 
