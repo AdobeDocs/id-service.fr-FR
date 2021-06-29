@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: secureCookie
 exl-id: ba281b1c-1112-4ed6-b4fd-b8f87cabc575
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '91'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Un indicateur booléen facultatif qui ajoute un attribut « sécurisé » au cookie AMCV.
 
-Cet attribut de configuration est disponible dans la `visitorAPI`version 3.3.0 de.
+Cet attribut de configuration est disponible dans la `visitorAPI` version 3.3.0 de.
 
 >[!NOTE]
 >
