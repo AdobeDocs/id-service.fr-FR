@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Dans les paramètres de la fonction :
 
 Pour plus d’informations, voir les cas d’utilisation et définitions suivants.
 
-## Cas d’utilisation 1 : demander le jeu de données par défaut  {#section-36a31683558742a5915db3a391e09f7b}
+## Cas d’utilisation 1 : demander le jeu de données par défaut {#section-36a31683558742a5915db3a391e09f7b}
 
 Ce code renvoie le jeu de données standard. Votre demande et votre réponse peuvent ressembler aux exemples suivants.
 
@@ -59,7 +59,7 @@ Dans l’exemple de réponse par défaut, certaines valeurs ont été raccourcie
 }
 ```
 
-## Cas d’utilisation 2 : demander le jeu de données personnalisé   {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Cas d’utilisation 2 : demander le jeu de données personnalisé {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de `visitor.FIELDS` l’énumération. Dans ce cas, nous voulons uniquement l’Experience Cloud ID (MCID) et l’Analytics ID (MCAID) du visiteur. Votre demande et votre réponse peuvent ressembler aux exemples suivants.
 
@@ -81,7 +81,7 @@ L’exemple de réponse personnalisé renvoie uniquement les ID spécifiés dans
 }
 ```
 
-## Paramètres de réponse définis   {#section-4c4c300167694c6fbff1d6c612f372b5}
+## Paramètres de réponse définis {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 Le tableau suivant répertorie et définit les paramètres de réponse. Il s’agit également de toutes les valeurs de `visitor.FIELDS` l’énumération. Remarque : cette méthode renvoie une chaîne vide si aucune valeur n’est définie pour une variable particulière.
 
@@ -99,7 +99,7 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>ID de la région de collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données de service d’ID en particulier. </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données </a> (DCS Region IDs, Locations, and Host Names) et <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col2"> <p>ID de la région de collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données de service d’ID en particulier. </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=fr" format="https" scope="external"> ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données </a> (DCS Region IDs, Locations, and Host Names) et <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
