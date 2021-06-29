@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: Méthodes de mise en œuvre
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Vous pouvez choisir une méthode d’implémentation [!DNL Experience Cloud ID S
 
 ## Mise en œuvre standard {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe recommande vivement d’utiliser [[!DNL Experience Platform Launch] pour implémenter le service d’ID. ](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html) Cette méthode garantit l’intégration à d’autres solutions [!DNL Experience Cloud], simplifie les processus d’implémentation et assure automatiquement le placement et le séquencement corrects du code.
+Adobe recommande vivement d’utiliser [[!DNL Experience Platform Launch]](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=fr) pour implémenter le service d’ID. Cette méthode garantit l’intégration à d’autres solutions [!DNL Experience Cloud], simplifie les processus d’implémentation et assure automatiquement le placement et le séquencement corrects du code.
 
 ## Mise en œuvre non standard {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
