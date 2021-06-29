@@ -3,7 +3,7 @@ description: Une fois le service Opt-in activé sur votre site web, utilisez les
 title: Validation du service Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Dans Chrome, accédez à lʼonglet *Application*, développez la section *Cookie
 
 ![](assets/use_case_1_2.png)
 
-## Cas d’utilisation 2 : Activation d’Opt-in et du stockage   {#section-bd28326f52474fa09a2addca23ccdc0f}
+## Cas d’utilisation 2 : Activation d’Opt-in et du stockage {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -60,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 La seule différence avec le cas d’utilisation 2, c’est la présence d’*un nouveau cookie* contenant les autorisations d’Opt-in fournies par votre visiteur : **adobeujs-optin**.
 
-## Cas d’utilisation 3 : Activation d’Opt-in et approbation préalable d’Adobe Analytics    {#section-257fe582b425496cbf986d0ec12d3692}
+## Cas d’utilisation 3 : Activation d’Opt-in et approbation préalable d’Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -80,7 +80,7 @@ et des cookies Analytics sont affichés dans lʼonglet Application :
 
 ![](assets/use_case_3_2.png)
 
-## Cas d’utilisation 4 : Activation d’Opt-in et de l’IAB    {#section-64331998954d4892960dcecd744a6d88}
+## Cas d’utilisation 4 : Activation d’Opt-in et de l’IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
