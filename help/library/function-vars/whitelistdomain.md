@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: whitelistParentDomain et whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Les deux éléments de configuration sont requis lorsque vous utilisez ce code.
  </tbody> 
 </table>
 
-## Exemple de code  {#section-09d0049fe88a473baa69d404c50bf8ae}
+## Exemple de code {#section-09d0049fe88a473baa69d404c50bf8ae}
 
 Le code du [!UICONTROL service d’ID] que vous avez configuré pourrait ressembler à cet exemple.
 
@@ -72,7 +72,7 @@ Ces configurations permettent de résoudre le problème de définition d’un co
 
 >[!TIP]
 >
->Vous pouvez également mettre en œuvre ces configurations lorsque vous diffusez de la vidéo dans un iFrame avec [Video Heartbeat](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html). Video Heartbeat a besoin d’un service d’ID (le MID) pour fonctionner correctement.
+>Vous pouvez également mettre en œuvre ces configurations lorsque vous diffusez de la vidéo dans un iFrame avec [Video Heartbeat](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr). Video Heartbeat a besoin d’un service d’ID (le MID) pour fonctionner correctement.
 
 **Exemple d’utilisation 1 : Le navigateur bloque les cookies tiers et le service d’ID est implémenté sur l’iFrame et la page parente.**
 
@@ -143,7 +143,7 @@ Ces configurations permettent de résoudre le problème de définition d’un co
  </tbody> 
 </table>
 
-## Sécurité des configurations   {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
+## Sécurité des configurations {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
 Vous pouvez mettre en œuvre ces configurations en toute sécurité car :
 
@@ -151,7 +151,7 @@ Vous pouvez mettre en œuvre ces configurations en toute sécurité car :
 * Ces configurations communiquent uniquement avec le domaine et les iFrames spécifiés dans le code.
 * La communication entre l’iFrame et la page parente suit un format spécifique. Si le service d’ID de la page parente ne reçoit pas de demande au format attendu, ce processus de partage échoue.
 
-## Méthodes API visiteur prises en charge   {#section-30c6a9f4dcdc4265a1149260b97cc057}
+## Méthodes API visiteur prises en charge {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
 Le service d’ID prend en charge un ensemble limité de méthodes API publiques lorsque vous implémentez ces configurations de liste blanche. Les méthodes prises en charge varient en fonction des scénarios d’utilisation décrits ci-dessus.
 
@@ -178,7 +178,7 @@ Le service d’ID prend en charge un ensemble limité de méthodes API publiques
    <td colname="col1"> <p> <b>Cas 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
