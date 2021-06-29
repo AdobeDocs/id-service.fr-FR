@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Prise en charge de la norme CORS dans le service Experience Cloud Identity
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
 ht-degree: 100%
 
@@ -24,9 +24,9 @@ Les règles de même origine sont des contrôles de sécurité ou des restrictio
 
 Le navigateur permet à une requête de réussir si les deux pages partagent ces caractéristiques et bloque les requêtes de ressources dans le cas contraire.
 
-## La norme CORS résout les problèmes liés aux règles de même origine  {#section-76c87ec3295d447bab220c84f138c235}
+## La norme CORS résout les problèmes liés aux règles de même origine {#section-76c87ec3295d447bab220c84f138c235}
 
-La norme CORS offre un moyen sécurisé et efficace de demander des ressources sur différents domaines. La spécification CORS comprend un ensemble d’en-têtes HTTP que les navigateurs utilisent pour envoyer, recevoir et évaluer les requêtes liées aux ressources. L’évaluation d’une demande de ressource s’appelle une  *`preflight check`*. Cette vérification permet aux navigateurs et aux serveurs de déterminer quelles requêtes sont autorisées ou bloquées. La vérification en amont est transparente pour l’application, l’API ou le script qui demande une ressource. Deux en-têtes importants pour le processus de demande de ressources sont les suivants :
+La norme CORS offre un moyen sécurisé et efficace de demander des ressources sur différents domaines. La spécification CORS comprend un ensemble d’en-têtes HTTP que les navigateurs utilisent pour envoyer, recevoir et évaluer les requêtes liées aux ressources. L’évaluation d’une demande de ressource s’appelle une *`preflight check`*. Cette vérification permet aux navigateurs et aux serveurs de déterminer quelles requêtes sont autorisées ou bloquées. La vérification en amont est transparente pour l’application, l’API ou le script qui demande une ressource. Deux en-têtes importants pour le processus de demande de ressources sont les suivants :
 
 * `Origin` : un en-tête de demande qui identifie la source de la requête.
 * `Access-Control-Allow-Origin` : un en-tête de réponse qui indique si une ressource peut être partagée avec le demandeur.
