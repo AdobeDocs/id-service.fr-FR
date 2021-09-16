@@ -3,9 +3,9 @@ description: Consultez cette section pour vous assurer que vous utilisez les sol
 keywords: Service d’ID
 title: Conditions requises pour le service Experience Cloud Identity
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '730'
+source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
+workflow-type: tm+mt
+source-wordcount: '731'
 ht-degree: 100%
 
 ---
@@ -77,9 +77,9 @@ Pour utiliser le service d’ID, votre société doit être activée pour [!DNL 
  </tbody> 
 </table>
 
-## Conditions requises pour Analytics : collecte des données régionale {#section-7d04bb013bc84a25bae3b148bc0ca25f}
+## Conditions requises pour Analytics : collecte des données régionale  {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html?lang=fr)
+Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=fr)
 
 ## Bibliothèques de code et versions minimales requises {#section-ad7542a4317d430fa79fc6b095beb84d}
 
