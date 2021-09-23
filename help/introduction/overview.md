@@ -3,7 +3,7 @@ description: Le rôle du service Experience Cloud Identity dans Adobe Experience
 title: Présentation du service Experience Cloud ID
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
 ht-degree: 100%
 
