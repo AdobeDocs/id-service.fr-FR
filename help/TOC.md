@@ -5,11 +5,10 @@ user-guide-title: Aide d’Experience Cloud Identity Service
 breadcrumb-title: Guide d’Identity Service
 user-guide-description: Le service d’ID fournit un ID persistant universel qui identifie vos visiteurs dans toutes les solutions Experience Cloud. Il peut remplacer le code de génération des identifiants pour des services tels qu’Analytics, Audience Manager, Target et d’autres solutions ou fonctionnalités d’Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -17,8 +16,8 @@ ht-degree: 100%
 # Aide d’Experience Cloud Identity Service {#using}
 
 + [Aide du service d’ID](home.md)
-+ Aperçu {#intro}
-   + [Aperçu](introduction/overview.md)
++ Présentation {#intro}
+   + [Présentation](introduction/overview.md)
    + [À propos du service d’ID](introduction/about-id-service.md)
    + [Cookies et service d’ID](introduction/cookies.md)
    + [Requête et définition d’ID par le service d’ID](introduction/id-request.md)
@@ -26,8 +25,7 @@ ht-degree: 100%
 + Mise en œuvre {#implementation}
    + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
-   + [Mise en œuvre avec Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
-   + [Mise en œuvre à l’aide de DTM](implementation-guides/standard.md)
+   + [Mise en oeuvre avec des balises Experience Platform](implementation-guides/ecid-implement-with-launch.md)
    + [Mise en œuvre pour Analytics](implementation-guides/setup-analytics.md)
    + [Mise en œuvre pour Target](implementation-guides/setup-target.md)
    + [Mise en œuvre pour Analytics et Audience Manager](implementation-guides/setup-aam-analytics.md)
@@ -88,7 +86,7 @@ ht-degree: 100%
    + Référence Analytics {#analytics-reference}
       + [Aperçu de la référence Analytics](reference/analytics-reference/analytics-reference.md)
       + [Présentation de l’implémentation CNAME](reference/analytics-reference/cname.md)
-      + [Définition des Analytics ID et Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
+      + [Définition des Analytics ID et Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Ordre des opérations pour les Analytics ID](reference/analytics-reference/analytics-order-of-operations.md)
       + [Points de prise de décision concernant la migration vers le service d’ID](reference/analytics-reference/migration-decisions.md)
       + [Scénarios de migration du service d’ID](reference/analytics-reference/migration-scenarios.md)
@@ -102,7 +100,7 @@ ht-degree: 100%
    + [ID de client et états d’authentification](reference/authenticated-state.md)
    + [Méthodes de bibliothèque ECID dans un univers ITP Safari](reference/ecid-library-methods.md)
    + [Identification des visiteurs uniques](reference/unique-vis-method.md)
-   + [Obtention des identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID](reference/regions.md)
+   + [Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID](reference/regions.md)
    + [Conditions requises pour le service d’ID](reference/requirements.md)
    + [Mesure de pulsation vidéo et service d’ID](reference/heartbeat.md)
    + [Data Workbench et service d’ID](reference/dwb.md)

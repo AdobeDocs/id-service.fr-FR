@@ -3,10 +3,10 @@ description: Consultez cette section pour vous assurer que vous utilisez les sol
 keywords: Service d’ID
 title: Conditions requises pour le service Experience Cloud Identity
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
@@ -18,33 +18,13 @@ Consultez cette section pour vous assurer que vous utilisez les solutions, servi
 
 Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditions requises du code et suit les instructions telles qu’elles s’affichent sur l’aide [!DNL Adobe]. Une mise en œuvre non prise en charge produira des résultats inattendus et empêchera l’assistance clientèle et nos équipes d’ingénieurs de vous aider à résoudre les problèmes ou à les résoudre avec le service d’ID.
 
-<table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Type d’implémentation </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Standard</a> </p> </td> 
-   <td colname="col2"> <p>Pour une mise en œuvre standard de Dynamic Tag Management (DTM), vous devez : </p> 
-    <ul id="ul_59CDE179566844B494F3068FF6333809"> 
-     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Insérez le code d’intégration du header dans la section <span class="codeph">&lt;head&gt;</span> de votre page. </li> 
-     <li id="li_13962F2CB1764091A84863BE499675A2">Insérez le code d’intégration du footer avant la balise de fermeture <span class="codeph">&lt;/body&gt;</span>. </li> 
-    </ul> <p>Une mise en œuvre standard n’est pas prise en charge lorsque vous : </p> 
-    <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> Placez l’un de ces codes DTM incorporés ailleurs dans votre code de balisage et/ou de page. </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> Apposez, ajoutez ou chargez du code DTM avec des méthodes asynchrones, des méthodes d’appel/de rappel ou des wrappers. </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">Incluez plusieurs instances de code incorporé sur la même page. </li> 
-    </ul> <p>Voir <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=fr" format="https" scope="external">Code incorporé et options d’hébergement</a>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Mise en œuvre non standard </a> </p> </td> 
-   <td colname="col2"> <p>Pour les mises en œuvre non standard ou manuelles, vous devez configurer le service d’ID comme décrit dans les procédures de ce guide. Comme pour les instructions relatives à DTM ci-dessus, un placement et un chargement de code incorrects créeront une mise en œuvre non prise en charge. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### Mises en oeuvre standard
+
+Voir [Balises Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) pour votre mise en oeuvre standard.
+
+### Mise en œuvre non standard
+
+Pour les mises en œuvre non standard ou manuelles, vous devez configurer le service d’ID comme décrit dans les procédures de ce guide. Comme pour les instructions relatives à DTM ci-dessus, un placement et un chargement de code incorrects créeront une mise en œuvre non prise en charge.
 
 ## Conditions requises pour Experience Cloud : ID d’organisation {#section-a02f537129a64ffbb690d5738d360c26}
 
@@ -101,7 +81,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b> <span class="keyword"> Service </span>Experience Cloud ID</b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="keyword"> Service </span>Experience Cloud ID</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 ou version ultérieure </p> </td> 
   </tr> 
@@ -119,7 +99,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
+   <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=fr" format="https" scope="external">Bibliothèque d’intégration des données</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p></td> 
   </tr> 

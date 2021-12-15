@@ -1,22 +1,22 @@
 ---
-description: Une vue d’ensemble des processus de synchronisation des identifiants et des taux de correspondance dans le service Experience Cloud Identity, y compris Adobe Media Optimizer et le service d’ID.
+description: Une vue d’ensemble des processus de synchronisation des identifiants et des taux de correspondance dans le service d’identités Experience Cloud, y compris Adobe Media Optimizer et le service d’ID.
 keywords: Service d’ID
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '805'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
 
-# Comprendre la synchronisation des identifiants et les taux de correspondance {#understanding-id-synchronization-and-match-rates}
+# Comprendre la synchronisation des identifiants et les taux de correspondance{#understanding-id-synchronization-and-match-rates}
 
-Une vue d’ensemble des processus de synchronisation des identifiants et des taux de correspondance dans le service Experience Cloud Identity, y compris Adobe Media Optimizer et le service d’ID.
+Une vue d’ensemble des processus de synchronisation des identifiants et des taux de correspondance dans le service d’identités Experience Cloud, y compris Adobe Media Optimizer et le service d’ID.
 
 ## Synchronisation des identifiants et taux de correspondance {#section-f652aae7234945e89d26dd833c5215fb}
 
-La synchronisation des identifiants fait correspondre les identifiants attribués par le service d’ID aux identifiants attribués aux visiteurs du site par nos clients. Par exemple, supposons que le service d’ID ait attribué un ID de visiteur 1234. Une autre plate-forme connaît ce visiteur comme possédant l’ID 4321. Le service d’ID associe ces ID lors du processus de synchronisation. Les résultats ajoutent de nouveaux points de données à ce que nos clients savent sur les visiteurs de leur site. Et si le service d’ID ne peut pas faire correspondre un ID, il en crée un nouveau et l’utilise pour une synchronisation ultérieure.
+La synchronisation des identifiants fait correspondre les identifiants attribués par le service d’ID aux identifiants attribués aux visiteurs du site par nos clients. Par exemple, supposons que le service d’ID ait attribué un identifiant visiteur 1234. Une autre plateforme connaît ce visiteur comme possédant l’ID 4321. Le service d’ID associe ces ID lors du processus de synchronisation. Les résultats ajoutent de nouveaux points de données à ce que nos clients savent sur les visiteurs de leur site. Et si le service d’ID ne peut pas faire correspondre un ID, il en crée un nouveau et l’utilise pour une synchronisation ultérieure.
 
 Les taux de correspondance mesurent et valident l’efficacité du processus de synchronisation des identifiants. Des taux de correspondance élevés suggèrent qu’un service particulier sera plus efficace et donnera accès à une plus large audience en ligne qu’un service avec des taux de correspondance faibles. La comparaison des taux de correspondance est un moyen quantifiable d’évaluer les différentes plateformes technologiques publicitaires intégrées.
 
@@ -24,15 +24,15 @@ Les taux de correspondance mesurent et valident l’efficacité du processus de 
 
 **Assurer des taux de correspondance élevés**
 
-Pour générer des taux de correspondance élevés, il est important de bien configurer le service d’ID (voir le [guide de mise en œuvre standard](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Une mise en œuvre appropriée permet d’assurer des taux de correspondance élevés, car elle permet au service d’ID de définir les cookies dont il a besoin pour fonctionner et synchroniser les identifiants avec les partenaires de données activés. Cependant, des facteurs tels que la lenteur des connexions Internet, la collecte de données à partir de périphériques mobiles ou de réseaux sans fil peuvent affecter la collecte, la synchronisation et la correspondance des identifiants du service d’ID. Ces variables côté client dépassent le champ d’action du service d’ID ou d’[!DNL Adobe].
+Une mise en œuvre appropriée permet d’assurer des taux de correspondance élevés, car elle permet au service d’ID de définir les cookies dont il a besoin pour fonctionner et synchroniser les identifiants avec les partenaires de données activés. Cependant, des facteurs tels que la lenteur des connexions Internet, la collecte de données à partir de périphériques mobiles ou de réseaux sans fil peuvent affecter la collecte, la synchronisation et la correspondance des identifiants du service d’ID. Ces variables côté client dépassent le champ d’action du service d’ID ou d’[!DNL Adobe].
 
 ## Description du processus de synchronisation des identifiants {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
 Le service d’ID synchronise les identifiants en temps réel. Ce processus fonctionne dans le navigateur plutôt que par le biais d’un transfert de données serveur à serveur. Le tableau suivant décrit les étapes du processus de synchronisation des identifiants.
 
-**Étape 1 : Chargement de la page**
+**Étape 1 : chargement de la page**
 
-Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Visitor.getInstance`lance un appel [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P au service d’ID. Le service d’ID répond avec un cookie qui inclut l’[!DNL Experience Cloud] ID (MID) du visiteur. Les MID est un ID unique attribué à chaque visiteur du site. Voir aussi [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
+Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Visitor.getInstance`lance un appel [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) ou JSON-P au service d’ID. Le service d’ID répond avec un cookie qui inclut l’[!DNL Experience Cloud] ID (MID) du visiteur. Les MID est un ID unique attribué à chaque visiteur du site. Voir aussi [Cookies et service d’identités Experience Cloud](../introduction/cookies.md).
 
 **Étape 2 : Chargement de l’iFrame**
 
@@ -42,7 +42,7 @@ Pendant que le corps de la page se charge, le service d’ID charge une iFrame a
 * Charge aussi vite que possible. Si cette opération est trop rapide, vous pouvez charger l’iFrame après l’événement de chargement de la fenêtre (non recommandé). Voir [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) pour plus de détails.
 * Empêche le code de l’iFrame d’accéder à la page parente ou de l’affecter.
 
-Consultez également la section [Requête et définition d’ID par le service Experience Cloud Identity...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Consultez également la section [Requête et définition d’ID par le service Experience Cloud Identity...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
 **Étape 3 : Déclenchement de la synchronisation des ID**
 
