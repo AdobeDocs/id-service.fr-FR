@@ -4,13 +4,13 @@ keywords: Service d’ID
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
 ht-degree: 100%
 
 ---
 
-# Comprendre la synchronisation des identifiants et les taux de correspondance{#understanding-id-synchronization-and-match-rates}
+# Comprendre la synchronisation des identifiants et les taux de correspondance {#understanding-id-synchronization-and-match-rates}
 
 Une vue d’ensemble des processus de synchronisation des identifiants et des taux de correspondance dans le service d’identités Experience Cloud, y compris Adobe Media Optimizer et le service d’ID.
 
