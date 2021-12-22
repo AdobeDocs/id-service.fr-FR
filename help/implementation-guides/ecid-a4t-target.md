@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
 ht-degree: 100%
 
@@ -25,19 +25,19 @@ A4T (et d’autres clients) peuvent utiliser cette version du service d’ID lor
 
 ## Téléchargement du code et interfaces fournies {#section-32d75561438b4c3dba8861be6557be8a}
 
-Voir le [référentiel NPM du service d’ID](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server) pour télécharger le package de code côté serveur et consulter les interfaces incluses dans la version actuelle.
+Consultez le [référentiel NPM du service d’ID](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server) pour télécharger le package de code côté serveur et consulter les interfaces incluses dans la version actuelle.
 
 ## Workflow {#section-56b01017922046ed96536404239a272b}
 
-Le diagramme et les sections ci-dessous décrivent le déroulement et les éléments à configurer de chaque étape du processus de mise en œuvre côté serveur.
+Le diagramme ainsi que les sections ci-dessous décrivent le déroulement et les éléments à configurer de chaque étape du processus d’implémentation côté serveur.
 
 ![](assets/serverside.png)
 
-## Étape 1 : Page de demande {#section-c12e82633bc94e8b8a65747115d0dda8}
+## Étape 1 : demande de page {#section-c12e82633bc94e8b8a65747115d0dda8}
 
 L’activité côté serveur commencer lorsqu’un visiteur fait une demande HTTP de chargement d’une page Web. Lors de cette étape, votre serveur reçoit cette demande et vérifie [Cookie AMCV](../introduction/cookies.md). Le cookie AMCV contient l’[!DNL Experience Cloud] ID (MID) du visiteur.
 
-## Étape 2 : Génération des données utiles du service d’ID {#section-c86531863db24bd9a5b761c1a2e0d964}
+## Étape 2 : génération de la payload du service d’ID {#section-c86531863db24bd9a5b761c1a2e0d964}
 
 Ensuite, vous devez effectuer une *`payload request`* côté serveur auprès du service d’ID. Une demande de payload :
 
@@ -99,7 +99,7 @@ Si votre visiteur n’a pas de cookie AMCV, les données utiles omettent ces pai
 * `mboxAAMB`
 * `mboxMCGLH`
 
-## Étape 3 : Ajout des données utiles dans l’appel Target {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
+## Étape 3 : ajout de la payload dans l’appel Target {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
 
 Une fois que votre serveur a reçu les données utiles de la part du service d’ID, vous devez instancier du code supplémentaire pour le fusionner avec les données transmises à [!DNL Target]. L’objet JSON final transmis à [!DNL Target] peut ressembler à cela :
 
@@ -121,7 +121,7 @@ Une fois que votre serveur a reçu les données utiles de la part du service d�
 } 
 ```
 
-## Étape 4 : Obtention de l’état du serveur depuis le service d’ID {#section-8ebfd177d42941c1893bfdde6e514280}
+## Étape 4 : obtention de l’état du serveur pour le service d’ID {#section-8ebfd177d42941c1893bfdde6e514280}
 
 Les données d’état du serveur contiennent des informations sur le travail effectué sur le serveur. Le code du service d’ID côté client requiert ces informations. Les clients qui ont mis en œuvre le service d’ID via [!DNL Dynamic Tag Manager] (DTM) peuvent configurer DTM pour transmettre des données sur l’état du serveur via cet outil. Si vous avez configuré le service d’ID via un processus non standard, vous devrez renvoyer l’état du serveur avec votre propre code. Le code du service d’ID et d’[!DNL Analytics] côté client transmet des données sur l’état à Adobe lors du chargement de la page.
 
@@ -186,7 +186,7 @@ Response.send("
 ...
 ```
 
-## Étape 5 : Servir une page et renvoyer les données Experience Cloud {#section-4b5631a0d75a41febd6f43f8c214c263}
+## Étape 5 : servir une page et renvoyer les données Experience Cloud {#section-4b5631a0d75a41febd6f43f8c214c263}
 
 À cette étape, le serveur Web envoie le contenu de la page dans le navigateur du visiteur. À partir de là, le navigateur (et non le serveur) lance tous les appels restants du service d’ID et d’[!DNL Analytics]. Par exemple, dans le navigateur :
 
