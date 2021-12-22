@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: Conditions requises pour le service Experience Cloud Identity
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ Consultez cette section pour vous assurer que vous utilisez les solutions, servi
 
 Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditions requises du code et suit les instructions telles qu’elles s’affichent sur l’aide [!DNL Adobe]. Une mise en œuvre non prise en charge produira des résultats inattendus et empêchera l’assistance clientèle et nos équipes d’ingénieurs de vous aider à résoudre les problèmes ou à les résoudre avec le service d’ID.
 
-### Mises en oeuvre standard
+### Implémentations standard
 
-Voir [Balises Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) pour votre mise en oeuvre standard.
+Consultez la section [Balises Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) pour votre implémentation standard.
 
-### Mise en œuvre non standard
+### Implémentations non standard
 
 Pour les mises en œuvre non standard ou manuelles, vous devez configurer le service d’ID comme décrit dans les procédures de ce guide. Comme pour les instructions relatives à DTM ci-dessus, un placement et un chargement de code incorrects créeront une mise en œuvre non prise en charge.
 
@@ -57,7 +57,7 @@ Pour utiliser le service d’ID, votre société doit être activée pour [!DNL 
  </tbody> 
 </table>
 
-## Conditions requises pour Analytics : collecte des données régionale  {#section-7d04bb013bc84a25bae3b148bc0ca25f}
+## Conditions requises pour Analytics : collecte des données régionale {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
 Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas nécessaire de modifier le serveur de suivi Analytics. [Plus d’informations...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=fr)
 
