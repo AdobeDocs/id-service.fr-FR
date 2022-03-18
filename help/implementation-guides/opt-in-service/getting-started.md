@@ -1,5 +1,5 @@
 ---
-description: Mettez le service Opt-in en œuvre en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
+description: Implémentez le service Opt-in en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
 title: Configuration du service Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
@@ -9,9 +9,9 @@ ht-degree: 100%
 
 ---
 
-# Configuration du service Opt-in {#setting-up-opt-in-service}
+# Configuration du service Opt-in{#setting-up-opt-in-service}
 
-Mettez le service Opt-in en œuvre en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
+Implémentez le service Opt-in en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
 
 Le service Opt-in est une bibliothèque JavaScript inclue avec Experience Cloud ID (ECID) et existe dans le JavaScript du visiteur dans l’objet `adobe` global comme objet `adobe.optIn`. Le service Opt-in installé vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Le service Opt-in, fonctionnalité de gestion de contenu, vous permet de mettre en œuvre plusieurs configurations pour vos besoins spécifiques de confidentialité.
 
@@ -95,7 +95,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 <p> *** <b>sample code block </b>*** </p>
 -->
 
-## Processus d’Opt-in {#section-70cd243dec834c8ea096488640ae20a5}
+## Workflows d’Opt-in {#section-70cd243dec834c8ea096488640ae20a5}
 
 Le service Opt-in prend en charge un processus avec lequel des autorisations peuvent être collectées sur plus d’un cycle de requêtes et les préférences sont délivrées une par une. En utilisant les fonctions suivantes et en stipulant *true* pour `shouldWaitForComplete`, votre solution peut collecter le consentement pour une catégorie ou pour un sous-ensemble de catégories parmi toutes celles qui existent, puis collecter le consentement pour la catégorie suivante ou le sous-ensemble de catégories suivant. La propriété `adobe.optIn.status` démarre au premier appel et est mise *en attente* jusqu’à ce que `adobe.optIn.complete()` soit appelée en fin de flux. Une fois appelée, son état est défini sur *complete*.
 
@@ -107,7 +107,7 @@ adobe.optIn.complete();
 
 Voir les [Paramètres de configuration du workflow](../../implementation-guides/opt-in-service/api.md#section-2c5adfa5459c4e72b96d2693123a53c2).
 
-## Inspection des autorisations d’Opt-in de votre visiteur {#section-f136a9024e054d84881e6667fb7c94eb}
+## Inspecter les autorisations d’Opt-in de votre visiteur {#section-f136a9024e054d84881e6667fb7c94eb}
 
 Lorsque vos visiteurs modifient leurs autorisations, vous avez besoin d’informations sur les autorisations qui résultent de ces modifications, afin de synchroniser le stockage des consentements avec les modifications apportées au service Opt-in. Inspectez les préférences de vos visiteurs à l’aide des [fonctions d’autorisations](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), par exemple :
 
@@ -135,7 +135,7 @@ optIn.fetchPermissions(callback, true);
 
 Consultez la [documentation sur l’API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour plus de détails sur ces fonctions et sur d’autres, ainsi que sur les propriétés ou les configurations mentionnées dans ce document.
 
-## Stockage des préférences des visiteurs {#section-ef2884ae67e34879bf7c7c3372706c9f}
+## Stocker les préférences des visiteurs {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 Le service Opt-in fournit une option de stockage des préférences de consentement adaptée à un environnement de développement ou à un environnement dans lequel l’utilisation d’un CRM est impossible. Le fait de définir la propriété de configuration `isOptInStorageEnabled` sur *true* entraîne le service Opt-in à créer un cookie sur le système du visiteur dans votre domaine.
 
