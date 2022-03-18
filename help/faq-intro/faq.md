@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# FAQ sur le service d’ID {#id-service-faqs}
+# FAQ sur le service d’ID{#id-service-faqs}
 
 Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation du service d’ID.
 
@@ -66,7 +66,7 @@ Cette modification améliore les performances des clients utilisant Visitor 2.3
 
 Les demandes de ressources avec CORS sont généralement préférables à celles effectuées avec JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et dépriorisent les requêtes par rapport à d’autres appels synchrones et asynchrones sur la page. CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
-Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
@@ -76,7 +76,7 @@ Oui. Voir [Prise en charge de la norme CORS dans le service Experience Cloud I
 
 **Qu’est-ce que la norme CORS ?**
 
-*`Cross-Origin Resource Sharing`*(Cross-Origin Resource Sharing) ou CORS est une méthode que les navigateurs utilisent pour demander des ressources. Le service d’ID demande toujours des ressources à l’aide de CORS dans les navigateurs qui les prennent en charge. Le service d’ID demande des ressources avec JSON-P dans les navigateurs plus anciens qui ne prennent pas en charge CORS. Voir [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+*`Cross-Origin Resource Sharing`*(Cross-Origin Resource Sharing) ou CORS est une méthode que les navigateurs utilisent pour demander des ressources. Le service d’ID demande toujours des ressources à l’aide de CORS dans les navigateurs qui les prennent en charge. Le service d’ID demande des ressources avec JSON-P dans les navigateurs plus anciens qui ne prennent pas en charge CORS. Voir [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Que faire si mes exigences en matière de sécurité sont si strictes que je ne souhaite jamais utiliser JSONP ?**
 
