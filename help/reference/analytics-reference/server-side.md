@@ -32,4 +32,4 @@ Voir [Balises XML prises en charge](https://www.adobe.io).
 
 ## AppMeasurement pour Java {#section-d664b94934924d048300d9c2b6560085}
 
-Le service Experience Cloud Identity n’est actuellement pas pris en charge par AppMeasurement pour Java.
+Experience Cloud Identity Service n’est actuellement pas pris en charge par AppMeasurement pour Java.
