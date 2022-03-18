@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# API du service d’ID {#id-service-api}
+# API du service d’ID{#id-service-api}
 
 Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service Experience Cloud Identity.
 
