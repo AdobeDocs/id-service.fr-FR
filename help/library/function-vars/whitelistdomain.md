@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# whitelistParentDomain et whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
+# whitelistParentDomain et whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
 Ces configurations permettent à différentes instances du code du service d’ID implémentées dans un iFrame et sur la page parente de communiquer entre elles. Elles sont conçues pour aider à résoudre les problèmes liés à deux cas d’utilisation spécifiques où vous pouvez contrôler ou non la page/le domaine parent et où le code du service d’ID est chargé dans l’iFrame d’un domaine que vous contrôlez. Elles sont disponibles dans le code VisitorAPI.js version 2.2 ou ultérieure.
 
