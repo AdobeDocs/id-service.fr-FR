@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Indicateur booléen facultatif qui contrôle la manière dont le service Experience Cloud Identity charge l’iFrame de synchronisation des identifiants.
 
-**Syntaxe :** ` `idSyncAttachIframeOnWindowLoad= true false`` (la valeur par défaut est `false`).
+**Syntaxe :** ` `idSyncAttachIframeOnWindowLoad= true|false`` (la valeur par défaut est `false`).
 
 Si `idSyncAttachIframeOnWindowLoad: true`, le service d’ID charge l’iFrame de synchronisation des identifiants au chargement de la fenêtre. Par défaut, le service d’ID charge l’iFrame de synchronisation des ID aussi rapidement que possible au lieu de charger la fenêtre.
 
