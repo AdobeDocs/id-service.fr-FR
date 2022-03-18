@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Safari renforçant le suivi inter-domaines via ITP, Adobe doit conserver de bonnes pratiques pour les bibliothèques qui prennent en charge les clients, ainsi que la confidentialité et le choix des utilisateurs.
 
-Depuis le 10 novembre 2020, tous les cookies propriétaires persistants définis via l’API document.cookie, souvent appelés « cookies côté client », ainsi que les cookies définis via les mises en œuvre CNAME propriétaires dans Safari et les navigateurs iOS mobiles sont dotés d’une durée d’expiration plafonnée à sept jours. Les cookies tiers continueront d’être bloqués, comme indiqué dans les versions précédentes d’ITP. Pour plus d’informations sur ITP 2.1 et l’impact des solutions Adobe, lisez [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers (en anglais)](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+Depuis le 10 novembre 2020, tous les cookies propriétaires persistants définis via l’API document.cookie, souvent appelés « cookies côté client », ainsi que les cookies définis via les mises en œuvre CNAME propriétaires dans Safari et les navigateurs iOS mobiles sont dotés d’une durée d’expiration plafonnée à sept jours. Les cookies tiers continueront d’être bloqués, comme indiqué dans les versions précédentes d’ITP. Pour plus d’informations sur ITP 2.1 et l’impact des solutions Adobe, lisez [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers (en anglais)](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
 ## Modifications, méthodes et configurations liées à l’ITP
 
@@ -31,7 +31,7 @@ Voir ci-dessous pour connaître les efforts liés à l’utilisation des bibliot
 
 ## Comportement actuel de la bibliothèque ECID avec l’ITP et WebKit d’Apple
 
-ITP 2.1 empêche la possibilité d’écrire des cookies côté client, ce qui empêche de fournir aux clients des informations précises de suivi des visiteurs. Par conséquent, une modification est introduite dans les serveurs de suivi CNAME d’Adobe pour stocker l’Experience Cloud ID (ECID) dans un cookie propriétaire.
+ITP 2.1 empêche la possibilité d’écrire des cookies côté client, ce qui empêche de fournir aux clients des informations précises de suivi des visiteurs. Par conséquent, une modification est introduite dans les serveurs de suivi CNAME d’Adobe pour stocker l’Experience Cloud ID (ECID) dans un cookie propriétaire.
 
 Cette modification n’est utile que pour les clients ECID qui utilisent un CNAME Analytics dans un contexte propriétaire. Si vous êtes un client Analytics qui n’utilise pas actuellement de CNAME, ou même un client non Analytics, vous êtes tout de même éligible pour un enregistrement CNAME. Contactez le service à la clientèle ou votre représentant de compte pour lancer le processus d’enregistrement d’un [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=fr).
 
