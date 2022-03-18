@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Méthodes callTimeOut {#calltimeout-methods}
+# Méthodes callTimeOut{#calltimeout-methods}
 
 Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
@@ -33,13 +33,13 @@ Appelez ces fonctions du service d’ID pour déterminer l’état du délai d�
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
+   <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Réponse de la fonction {#section-ff73aaca58b74e10a0953c49a3387160}
+## Réponses de la fonction {#section-ff73aaca58b74e10a0953c49a3387160}
 
 <table id="table_5D08A5DD6FD04F94818B0E8B790D3136"> 
  <thead> 
