@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager {#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
 Ces instructions concernent les clients d’Analytics et d’Audience Manager qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
 
@@ -21,7 +21,7 @@ Ces instructions concernent les clients d’Analytics et d’Audience Manager q
 >* Configurez ce code et testez-le dans un environnement de développement avant de le mettre en œuvre en production.
 
 
-## Étape 1 : Planifier le transfert côté serveur {#section-880797cc992d4755b29cada7b831f1fc}
+## Étape 1 : planifier le transfert côté serveur {#section-880797cc992d4755b29cada7b831f1fc}
 
 En plus des étapes décrites ici, les clients qui utilisent [!DNL Analytics] et [!DNL Audience Manager] doivent passer au transfert côté serveur. Le transfert côté serveur permet de supprimer le code DIL (code de collecte de données d’Audience Manager) et de le remplacer par le [Module de Gestion de l’audience](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=fr). Pour plus d’informations, voir la [documentation sur le transfert côté serveur](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
@@ -33,7 +33,7 @@ La migration vers le transfert côté serveur nécessite une planification et un
 
 1. Mettez en œuvre le service d’ID et le [!DNL Audience Management Module] simultanément. Pour fonctionner correctement, le [!DNL Audience Management Module] (transfert côté serveur) et le service d’ID doivent être mis à jour pour le même ensemble de pages et au même moment.
 
-## Étape 2 : Téléchargement du code du service d’ID {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
+## Étape 2 : télécharger le code du service d’ID {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
 
 Le service d’ID requiert la `VisitorAPI.js` bibliothèque de code. Pour télécharger cette bibliothèque de code :
 
@@ -43,7 +43,7 @@ Le service d’ID requiert la `VisitorAPI.js` bibliothèque de code. Pour télé
 
 1. Décompressez le fichier de code, puis ouvrez le `VisitorAPI.js` fichier.
 
-## Étape 3 : Ajout de la fonction Visitor.getInstance au code du service d’ID {#section-9e30838b4d0741658a7a492153c49f27}
+## Étape 3 : ajouter la fonction Visitor.getInstance au code du service d’ID {#section-9e30838b4d0741658a7a492153c49f27}
 
 >[!IMPORTANT]
 >
@@ -90,7 +90,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 }); 
 ```
 
-## Étape 4 : Ajout de l’ID d’organisation Experience Cloud à Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
+## Étape 4 : ajouter l’ID d’organisation Experience Cloud à Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
 
 Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par l’ID d’organisation Experience Cloud. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver sur la page d’administration d’Experience Cloud. La fonction modifiée peut ressembler à l’exemple ci-après.
 
@@ -100,7 +100,7 @@ Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANI
 >
 >*Ne modifiez pas* la casse des caractères de l’ID d’organisation. L’ID est sensible à la casse et doit être utilisé tel quel.
 
-## Étape 5 : Ajout des serveurs de suivi à Visitor.getInstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
+## Étape 5 : ajouter des serveurs de suivi à Visitor.getInstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
 
 Analytics utilise des serveurs de suivi pour la collecte de données.
 
@@ -130,7 +130,7 @@ Pour déterminer les variables de serveur de suivi à utiliser :
 
 Si vous ne savez pas comment trouver votre serveur de suivi, consultez la [FAQ](../faq-intro/faq.md) et la [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
 
-## Étape 6 : Mise à jour de votre fichier AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
+## Étape 6 : mettre à jour votre fichier AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
 Cette procédure nécessite [!UICONTROL AppMeasurement]. Vous ne pouvez pas continuer si vous utilisez toujours s_code.
 
@@ -151,14 +151,14 @@ Définir une prop personnalisée dans le fichier `AppMeasurement.js` pour mesure
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## Étape 7 : Ajout du code de l’API visiteur à la page {#section-c2bd096a3e484872a72967b6468d3673}
+## Étape 7 : ajouter le code de l’API visiteur à la page {#section-c2bd096a3e484872a72967b6468d3673}
 
 Placez le fichier ` [!UICONTROL VisitorAPI.js]` à l’intérieur des balises `<head>` sur chaque page. Lorsque vous placez le `VisitorAPI.js` fichier sur votre page :
 
 * Insérez-le au début de la `<head>` section afin qu’il s’affiche avant les balises d’autres solutions.
 * Il doit s’exécuter avant AppMeasurement et le code d’autres [!DNL Experience Cloud] solutions.
 
-## Étape 8 : (facultative) Configuration d’une période de grâce {#section-aceacdb7d5794f25ac6ff46f82e148e1}
+## Étape 8 : (facultative) configurer un délai de grâce {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
 Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de mettre en place une [période de grâce](../reference/analytics-reference/grace-period.md) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. Vous pouvez renouveler une période de grâce si nécessaire.
 
@@ -174,7 +174,7 @@ Vous avez besoin d’une période de grâce si vous souhaitez que les nouveaux v
 
 Arrêtez la période de grâce une fois que votre implémentation peut capturer le MID au lieu de lire le cookie s_vi.
 
-Voir aussi [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
+Voir aussi [Cookies et service d’identités Experience Cloud](../introduction/cookies.md).
 
 **Intégration des données du parcours de navigation**
 
@@ -184,7 +184,7 @@ Interrompez la période de grâce une fois que le processus d’ingestion des do
 
 Voir aussi [Référence des colonnes de données du parcours de navigation](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=fr).
 
-## Étape 9 : Test et déploiement du code du service d’ID {#section-f857542bfc70496dbb9f318d6b3ae110}
+## Étape 9 : tester et déployer le code du service d’ID {#section-f857542bfc70496dbb9f318d6b3ae110}
 
 Vous pouvez tester et déployer les éléments comme suit.
 
