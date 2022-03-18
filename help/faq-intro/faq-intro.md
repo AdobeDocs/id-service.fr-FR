@@ -14,6 +14,6 @@ ht-degree: 100%
 
 Questions fréquemment posées sur le service Experience Cloud Identity ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
 
-* [Service d’ID Questions fréquentes](faq.md)
+* [FAQ sur le service d’ID](faq.md)
 * [Questions fréquentes sur Analytics et le service d’ID](analytics-faq.md)
 * [Questions fréquentes sur d’autres solutions Experience Cloud](other-faq.md)
