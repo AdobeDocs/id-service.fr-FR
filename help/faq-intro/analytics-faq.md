@@ -10,9 +10,9 @@ ht-degree: 100%
 
 ---
 
-# Questions fréquentes sur Analytics et le service Identity {#analytics-and-id-service-faqs}
+# Questions fréquentes sur Analytics et le service Identity{#analytics-and-id-service-faqs}
 
-Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec le service Identity.
+Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec Identity Service.
 
 ## Serveurs de suivi {#section-9a2ad7842e364c869e1650480d17f8ef}
 
@@ -28,7 +28,7 @@ Si vous ne trouvez pas les informations de votre serveur de suivi, il se peut qu
 
 Aucun changement pour les utilisateurs qui ont déjà été authentifiés par le service Identity. Les visiteurs historiques qui ne sont pas passés au service Identity et qui sont toujours identifiés avec un cookie Analytics seront détachés du service. Le nombre d’utilisateurs affectés dépend de la durée d’activité du service Identity. Par exemple, une mise en œuvre où le service Identity a été actif depuis une semaine aura plus d’utilisateurs historiques qu’une mise en œuvre où le service Identity a été actif depuis six mois, puisque les utilisateurs qui sont revenus sur le site ont effectué la migration.
 
-## Mise en œuvre et configuration {#section-6028f55d5b514ae6a631c6a79f42fb89}
+## Implémentation et configuration {#section-6028f55d5b514ae6a631c6a79f42fb89}
 
 **Dois-je configurer un CNAME pour effectuer le suivi des visiteurs sur plusieurs domaines ?**
 
