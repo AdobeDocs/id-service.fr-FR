@@ -16,5 +16,5 @@ La mesure de pulsation vidéo nécessite le service Experience Cloud Identity.
 
 >[!MORELIKETHIS]
 >
->* [Mesures audio et vidéo dans Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
+>* [Mesures audio et vidéo dans Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
 
