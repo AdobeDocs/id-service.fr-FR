@@ -49,7 +49,7 @@ Mise à jour de `publishDestinations` par nouveau changement d’API. Avec cette
 
 ## Version 4.2
 
-Prise en charge du module externe Audience Manager pour IAB TCF, disponible via l’objet d’abonnement ECID.
+Prise en charge du module externe Audience Manager pour IAB TCF, disponible via l’objet d’abonnement ECID.
 
 **Correctifs**
 
@@ -57,7 +57,7 @@ Prise en charge du module externe Audience Manager pour IAB TCF, disponible via
 * Correction d’un bogue sur la configuration de l’inclusion doesOptInApply dans la gestion dynamique des balises.
 * L’exclusion ECID désactive les synchronisations d’ID.
 
-## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
+## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
 **Service Opt-in**. Opt-in est une extension de l’Experience Cloud ID (ECID) qui vous permet de contrôler la création de cookies par les bibliothèques Experience Cloud sur les pages web pour les visiteurs (ainsi que de décider quelles sont les bibliothèques concernées). Avec [Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr), vous pouvez simplifier la collecte des consentements d’inclusion des visiteurs pour la solution Experience Cloud en autorisant Analytics, Target, Audience Manager et d’autres solutions Experience Cloud, ou une partie de celles-ci, à souscrire à votre système de gestion du consentement.
 
