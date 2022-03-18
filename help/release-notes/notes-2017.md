@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2017.
 
-Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
+Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
 
 >[!NOTE]
 >
