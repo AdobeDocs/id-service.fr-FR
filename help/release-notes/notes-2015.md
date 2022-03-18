@@ -27,7 +27,7 @@ Septembre 2015
 * Correction d’un bogue dans le navigateur Safari qui empêchait la synchronisation des services lorsque des utilisateurs bloquaient les cookies tiers. (AAM-20764)
 * Les appels au service d’ID incluent désormais l’ID de version dans le paramètre `d_visid_ver=`. L’ID renvoyé est utile aux équipes internes pour le dépannage et les problèmes de prise en charge. (AAM-20824)
 
-## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
+## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 Août 2015
 
@@ -52,7 +52,7 @@ Juillet 2015
 
 Le service [!DNL Experience Cloud] ID prend en charge plusieurs ID et états d’authentification. Cette modification arrête la prise en charge des mises en correspondance des [!DNL Audience Manager] DPID avec les ID utilisés par la `setCustomerIDs`fonction. Voir [ID de client et états d’authentification](../reference/authenticated-state.md)
 
-## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
+## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
 Mai 2015
 
@@ -66,15 +66,15 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 });
 ```
 
-Voir [Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd).
+Voir [Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd).
 
-## Version 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
+## Version 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
 Février 2015
 
 Correction de la gestion des délais d’attente des demandes pour les objets blob AAM et les conseils d’emplacement. Désormais, après temporisation, ces champs resteront correctement vierges pour les pages actives et tous les rappels seront appelés. Le délai d’expiration est traité comme une condition d’erreur. Par conséquent, l’opération réessaiera sur la page suivante. (AN-94473, AN-94474)
 
-## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
+## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
 Janvier 2015
 
