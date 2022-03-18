@@ -27,7 +27,7 @@ Consultez le [document portant sur les normes des cookies](https://tools.ietf.or
 | `lax` | Les cookies comprenant ce paramètre sont uniquement envoyés lorsque le domaine affiché dans l’URL du navigateur correspond au domaine du cookie. Cela constitue le nouveau réglage par défaut des cookies dans Chrome. |
 | `none` | Les cookies comprenant ce paramètre sont disponibles pour un accès externe ou tiers, tel que les accès « intersites ». Avant cette modification, le paramètre SameSite par défaut pour les cookies était `none`. L’utilisation de ce paramètre permet donc de conserver l’ancien comportement d’un cookie presque à l’identique. Cependant, Google exige que tout cookie comprenant ce paramètre affiche désormais l’indicateur « sécurisé ». Cela signifie que le cookie sera uniquement créé et envoyé avec des requêtes par HTTPS. Tous les cookies intersites ne présentant pas l’indicateur « sécurisé » seront rejetés par Google. |
 
-## Ce que vous devez savoir en tant que client Adobe Experience Cloud
+## Ce que vous devez savoir en tant que client Adobe Experience Cloud
 
 **Aucune mise à jour JavaScript requise**
 
@@ -35,7 +35,7 @@ Les produits Adobe ont déjà publié des mises à jour côté serveur pour déf
 
 **S’assurer que les points d’entrée tiers utilisent HTTPS**
 
-Tous les clients doivent confirmer que leur configuration JavaScript utilise HTTPS pour leurs appels aux services Adobe. Target, Audience Manager et le service d’identités Experience Cloud (ECID) redirigent les appels HTTP tiers vers leurs points d’entrée HTTPS respectifs, ce qui peut augmenter la latence. Cela signifie que vous n’êtes pas contraint de modifier votre configuration. Les clients Analytics doivent mettre à jour leurs implémentations pour utiliser exclusivement HTTPS, car les redirections spécifiques à Analytics peuvent entraîner une perte de données.
+Tous les clients doivent confirmer que leur configuration JavaScript utilise HTTPS pour leurs appels aux services Adobe. Target, Audience Manager et le service d’identités Experience Cloud (ECID) redirigent les appels HTTP tiers vers leurs points d’entrée HTTPS respectifs, ce qui peut augmenter la latence. Cela signifie que vous n’êtes pas contraint de modifier votre configuration. Les clients Analytics doivent mettre à jour leurs implémentations pour utiliser exclusivement HTTPS, car les redirections spécifiques à Analytics peuvent entraîner une perte de données.
 
 **Les cookies correctement étiquetés devraient collecter les données comme prévu**
 
@@ -49,9 +49,9 @@ La plupart des cookies tiers d’Adobe existants ne possèdent pas ces indicateu
 
 La plupart des produits Adobe ont déjà attribué les indicateurs appropriés aux cookies. Les implémentations d’Analytics qui emploient la collecte de données tierces et n’utilisent pas ECID constituent les seules exceptions. Il se peut que les clients connaissent une légère augmentation temporaire du nombre de nouveaux visiteurs qui auraient été autrement des visiteurs récurrents.
 
-**Diminution possible de la correspondance des cookies pour les partenaires de Destination et de Marketplace (Audience Manager uniquement)**
+**Diminution possible de la correspondance des cookies pour les partenaires de Destination et de Marketplace (Audience Manager uniquement)**
 
-Bien qu’Adobe décide de la mise à jour de ses cookies, Adobe ne peut pas obliger les partenaires à apporter les modifications nécessaires. La correspondance des cookies peut diminuer pour les clients Audience Manager qui utilisent des partenaires de Destination ou des partenaires de Marketplace qui n’ont pas effectué ces mises à jour.
+Bien qu’Adobe décide de la mise à jour de ses cookies, Adobe ne peut pas obliger les partenaires à apporter les modifications nécessaires. La correspondance des cookies peut diminuer pour les clients Audience Manager qui utilisent des partenaires de Destination ou des partenaires de Marketplace qui n’ont pas effectué ces mises à jour.
 
 **Cookies tiers compatibles avec Analytics (cookies `s_vi` Analytics uniquement)**
 
@@ -77,7 +77,7 @@ Seuls les cookies standards du visiteur communs sont répertoriés dans le table
 | AMCVS_###@AdobeOrg | Propriétaire côté client | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Configurable |
 | s_ecid | Propriétaire côté serveur | SameSite==`lax` | Non défini |
 
-### Audience Manager
+### Audience Manager
 
 | Cookie | Type | Attribut SameSite | Attribut sécurisé |
 | ------ | ---- | ------------------ | ---------------- |
