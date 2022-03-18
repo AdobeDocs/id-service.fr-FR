@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# appendVisitorIDsTo (suivi interdomaines) {#appendvisitoridsto-cross-domain-tracking}
+# appendVisitorIDsTo (suivi interdomaines){#appendvisitoridsto-cross-domain-tracking}
 
 Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
@@ -22,9 +22,9 @@ Contenu :
  <li> <a href="../../library/get-set/appendvisitorid.md#section-168e313df6054af0a7e27b9fa0d69640" format="dita" scope="local"> Prise en charge de Dynamic Tag Management (DTM) et du SDK </a> </li> 
 </ul>
 
-## Suivi des visiteurs sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers {#section-7251d88befd440b4b79520e33c5aa44a}
+## Suivre les visiteurs sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Le service d’ID écrit un cookie propriétaire et tiers dans le navigateur lorsqu’une personne visite votre site (voir [Cookies et service Experience Cloud Identity](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un ID unique pour ce visiteur. Le cookie tiers contient un autre ID utilisé par le service d’ID pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’ID ne peut pas :
+Le service d’ID écrit un cookie propriétaire et tiers dans le navigateur lorsqu’une personne visite votre site (voir [Cookies et service d’identités Experience Cloud](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un ID unique pour ce visiteur. Le cookie tiers contient un autre ID utilisé par le service d’ID pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’ID ne peut pas :
 
 * Régénérer l’ID unique de ce visiteur de site lorsqu’il accède à un autre domaine.
 * Effectuer le suivi des visiteurs sur différents domaines appartenant à votre entreprise.
