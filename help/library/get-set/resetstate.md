@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aider à résoudre des problèmes liés à l’utilisation d’identifiants sur des sites, écrans ou applications d’une seule page.
 
-## Cas d’utilisation {#section-840b88a5cdb042488b340cad5d7b22a5}
+## Cas dʼutilisation {#section-840b88a5cdb042488b340cad5d7b22a5}
 
 En tant que client d’A4T utilisant le service d’ID, vous pouvez utiliser la fonction `visitor.resetState()` lorsque vous devez :
 
