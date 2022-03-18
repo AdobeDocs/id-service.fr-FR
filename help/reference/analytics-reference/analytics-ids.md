@@ -1,7 +1,7 @@
 ---
 description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 keywords: Service d’ID
-title: Définition des Analytics ID et Experience Cloud ID
+title: Définition des Analytics ID et Experience Cloud ID
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: ht
@@ -10,13 +10,13 @@ ht-degree: 100%
 
 ---
 
-# Définition des Analytics ID et Experience Cloud ID {#setting-analytics-and-experience-cloud-ids}
+# Définition des Analytics ID et Experience Cloud ID{#setting-analytics-and-experience-cloud-ids}
 
-Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
+Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 
-Une fois le service d’ID mis en œuvre, ce code s’exécute avant AppMeasurement. Le service d’ID récupère les Experience Cloud et Analytics ID afin que ces valeurs soient prêtes au chargement d’AppMeasurement.
+Une fois le service d’ID mis en œuvre, ce code s’exécute avant AppMeasurement. Le service d’ID récupère les Experience Cloud et Analytics ID afin que ces valeurs soient prêtes au chargement d’AppMeasurement.
 
-Au chargement d’AppMeasurement, les valeurs des Experience Cloud et Analytics ID sont demandées par le service d’ID et sont envoyées à la collecte de données avec chaque appel au serveur. Dans la mesure où le service d’ID détermine l’identifiant du visiteur et le transmet simplement à AppMeasurement, il doit être inclus et implémenté sur chaque page avant votre fichier JavaScript AppMeasurement.
+Au chargement d’AppMeasurement, les valeurs des Experience Cloud et Analytics ID sont demandées par le service d’ID et sont envoyées à la collecte de données avec chaque appel au serveur. Dans la mesure où le service d’ID détermine l’identifiant du visiteur et le transmet simplement à AppMeasurement, il doit être inclus et implémenté sur chaque page avant votre fichier JavaScript AppMeasurement.
 
 ## Modifications du processus d’Analytics ID {#section-79bb86ae63f546419bb1a7ef5e710462}
 
@@ -44,7 +44,7 @@ La définition d’un ID de client à l’aide de `s.visitorID` permet d’ident
 
 Cela comprend, sans s’y limiter, les audiences partagées, Analytics for Target (A4T) et les attributs du client. Pour ces intégrations, la définition d’un Analytics ID personnalisé n’est pas prise en charge.
 
-## Classement des identifiants visiteur Analytics {#section-de1dc9fc9b6d4388995b70e35b8bcddf}
+## Ordre des identifiants visiteur Analytics {#section-de1dc9fc9b6d4388995b70e35b8bcddf}
 
 Après avoir déployé le service d’ID des visiteurs, il existe cinq façons d’identifier un visiteur dans Analytics (répertoriées dans le tableau suivant par ordre de préférence) :
 
@@ -65,11 +65,11 @@ Après avoir déployé le service d’ID des visiteurs, il existe cinq façons d
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=fr" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
-   <td colname="col3"> <p>Le visiteur disposait d’un cookie s_vi existant avant le déploiement du service <span class="keyword">Experience Cloud</span> ID ou vous avez configuré une <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">période de grâce</a>. </p> </td> 
+   <td colname="col3"> <p>Le visiteur disposait d’un cookie s_vi existant avant le déploiement du service <span class="keyword">Experience Cloud</span> ID ou vous avez configuré une <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">période de grâce</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
-   <td colname="col2"> <p>mid (cookie AMCV_ défini par le service d’ID des visiteurs d’Experience Cloud) </p> </td> 
+   <td colname="col2"> <p>mid (cookie AMCV_ défini par le service d’identification des visiteurs d’Experience Cloud) </p> </td> 
    <td colname="col3"> <p>Le navigateur du visiteur accepte les cookies propriétaires. </p> </td> 
   </tr> 
   <tr> 
