@@ -31,7 +31,7 @@ Pour mettre en œuvre le service d’ID pour Adobe Analytics, procédez comme s
 1. [Configurez une période de grâce (facultatif)](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3)
 1. [Testez et déployez le code du service d’ID](../implementation-guides/setup-analytics.md#section-e9c1764ac21a4ec5be1ff338c0e2e01b)
 
-## Étape 1 : Téléchargement du code du service d’ID {#section-ead9403a6b7e45b887f9ac959ef89f7f}
+## Étape 1 : télécharger le code du service d’ID {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
 Le [!UICONTROL service d’ID] requiert la bibliothèque de code `VisitorAPI.js`. Pour télécharger cette bibliothèque de code :
 
@@ -42,7 +42,7 @@ Le [!UICONTROL service d’ID] requiert la bibliothèque de code `VisitorAPI.js`
 
 1. Décompressez le fichier de code, puis ouvrez le `VisitorAPI.js` fichier.
 
-## Étape 2 : Ajout de la fonction Visitor.getInstance au code du service d’ID {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## Étape 2 : ajouter la fonction Visitor.getInstance au code du service d’ID {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -89,7 +89,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-## Étape 3 : Ajout de l’ID d’organisation Experience Cloud à Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
+## Étape 3 : ajouter l’ID d’organisation Experience Cloud à Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
 Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` par [!DNL Experience Cloud] l’ID d’organisation. Si vous ne connaissez pas votre ID d’organisation, vous pouvez le trouver dans la page [!DNL Experience Cloud] d’administration. Voir aussi [Administration - Services principaux](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr). La fonction modifiée peut ressembler à l’exemple ci-après.
 
@@ -99,7 +99,7 @@ Dans la `Visitor.getInstance` fonction, remplacez `INSERT-MARKETING-CLOUD-ORGANI
 >
 >*Ne modifiez pas* la casse des caractères de l’ID d’organisation. L’ID est sensible à la casse et doit être utilisé tel quel.
 
-## Étape 4 : Ajout des serveurs de suivi à Visitor.getInstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
+## Étape 4 : ajouter les serveurs de suivi à Visitor.getInstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
 
 Les serveurs de suivi sont utilisés pour la [!DNL Analytics] collecte des données.
 
@@ -130,7 +130,7 @@ Pour déterminer les variables de serveur de suivi à utiliser :
 
 Si vous ne savez pas comment trouver votre serveur de suivi, consultez la [FAQ](../faq-intro/faq.md) et la [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
 
-## Étape 5 : Mise à jour du fichier AppMeasurement.js ou s_code.js {#section-b53113aea1bd4de896e0e4e9a7edee19}
+## Étape 5 : mettre à jour le fichier AppMeasurement.js ou s_code.js {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
 Ajoutez la fonction suivante au fichier `AppMeasurement.js` ou `s_code.js` :
 
@@ -147,7 +147,7 @@ Définissez une prop personnalisée dans le fichier `AppMeasurement.js` ou `s_co
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## Étape 6 : Ajout du code de l’API visiteur à la page {#section-d46d6aa324c842f2931d901e38d6db1d}
+## Étape 6 : ajouter le code de l’API visiteur à la page {#section-d46d6aa324c842f2931d901e38d6db1d}
 
 Placez le fichier `VisitorAPI.js` à l’intérieur des balises `<head>` sur chaque page. Lorsque vous placez le `VisitorAPI.js` fichier sur votre page :
 
@@ -156,7 +156,7 @@ Placez le fichier `VisitorAPI.js` à l’intérieur des balises `<head>` sur cha
 
 Placez ce code en production après les tests et la vérification.
 
-## Étape 7 : (facultative) Configuration d’une période de grâce {#section-7bbb2f72c26e4abeb8881e18366797a3}
+## Étape 7 : (facultative) configurer un délai de grâce {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
 Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de mettre en place une [période de grâce](../reference/analytics-reference/grace-period.md) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. Vous pouvez renouveler une période de grâce si nécessaire.
 
@@ -172,7 +172,7 @@ Vous avez besoin d’une période de grâce si vous souhaitez que les nouveaux v
 
 Arrêtez la période de grâce une fois que votre implémentation peut capturer le MID au lieu de lire le cookie s_vi.
 
-Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
+Voir [Cookies et service d’identités Experience Cloud](../introduction/cookies.md).
 
 Vous avez besoin d’une période de grâce si vous envoyez les données à un système interne à partir d’un flux de données de parcours de navigation et si ce processus utilise les colonnes `visid_high` et `visid_low`.
 
@@ -180,9 +180,9 @@ Interrompez la période de grâce une fois que le processus d’ingestion des do
 
 Voir [Référence des colonnes de données du parcours de navigation](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=fr).
 
-**Ingestion des données du parcours de navigation**
+**Ingérer les données de flux de clics**
 
-## Étape 8 : Test et déploiement du code du service d’ID {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
+## Étape 8 : tester et déployer le code du service d’ID {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
 
 Vous pouvez tester et déployer les éléments comme suit.
 
