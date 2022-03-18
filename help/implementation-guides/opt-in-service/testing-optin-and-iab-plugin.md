@@ -9,11 +9,11 @@ ht-degree: 100%
 
 ---
 
-# Validation du service Opt-in {#validating-opt-in-service}
+# Validation du service Opt-in{#validating-opt-in-service}
 
 Une fois le service Opt-in activé sur votre site web, utilisez les différentes méthodes de validation afin de vérifier que celui-ci fonctionne correctement, à l’aide des outils de développement de votre navigateur.
 
-## Cas d’utilisation 1 : Activation d’Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## Cas d’utilisation 1 : activer Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
