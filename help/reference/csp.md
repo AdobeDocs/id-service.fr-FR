@@ -26,7 +26,7 @@ Les stratégies de sécurité du contenu utilisent l’en-tête HTTP `Content-Se
 
 L’utilisation des CSP est courante et bien comprise. La présente documentation n’a pas pour but d’expliquer en détail les CSP (voir les liens d’information connexes ci-dessous pour plus d’informations). Il est important de comprendre les noms de domaine Adobe que vous devez ajouter à un fichier CSP si vous les utilisez et si vous disposez de stratégies de sécurité rigoureuses. L’ajout de ces domaines permet aux navigateurs visiteurs qui accèdent à votre site d’effectuer ces appels importants vers les ressources Experience Cloud que vous utilisez.
 
-## Domaines Experience Cloud en liste blanche {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domaines Experience Cloud en liste autorisée {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messagerie instantanée pour chaque solution ou service Experience Cloud de liste que vous utilisez.
 
@@ -51,7 +51,7 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
    <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure <span class="codeph">*.tt.omtrdc.net</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Service Experience Cloud ID et Audience Manager</b> </p> </td> 
+   <td colname="col1"> <p> <b>Service Experience Cloud ID et Audience Manager</b> </p> </td> 
    <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure les domaines ci-dessous :</p> 
    <p><ul>
    <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
