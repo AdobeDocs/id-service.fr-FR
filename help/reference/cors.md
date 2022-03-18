@@ -5,7 +5,7 @@ title: Prise en charge de la norme CORS dans le service Experience Cloud Ident
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: ht
-source-wordcount: '616'
+source-wordcount: '615'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ Observons le fonctionnement de ces en-têtes : Dans cet exemple, imaginons une 
    <td colname="col1"> <p> <b>Requête</b> </p> </td> 
    <td colname="col2"> <p>Alors que la page de l’entreprise financière se charge, le navigateur envoie une demande à <span class="codeph">dpm.demdex.net</span>. Il s’agit d’un appel au domaine des serveurs de collecte de données (DCS) utilisés par le service d’ID. Cette requête sur l’ensemble des domaines comprend l’en-tête : </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origin: https://www.finance-website.com</span> </li> 
+      <li> <span class="codeph"> Origine:https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
