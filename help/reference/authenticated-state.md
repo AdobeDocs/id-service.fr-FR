@@ -1,5 +1,5 @@
 ---
-description: Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client et un état d’authentification à chaque visiteur.
+description: Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client et un statut d’authentification à chaque visiteur.
 keywords: Service d’ID
 title: ID de client et états d’authentification
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # ID de client et états d’authentification {#customer-ids-and-authentication-states}
 
-Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client et un état d’authentification à chaque visiteur.
+Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client et un statut d’authentification à chaque visiteur.
 
 ## États d’authentification {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
@@ -82,7 +82,7 @@ Vous pouvez affecter des états d’authentification à vos utilisateurs selon l
  </tbody> 
 </table>
 
-## Définition des ID de client et des états authentifiés {#section-ec4b367d16ad4ac1a1baca9b01f4ee98}
+## Définir les ID de client et les états authentifiés {#section-ec4b367d16ad4ac1a1baca9b01f4ee98}
 
 Les ID de client peuvent contenir des combinaisons d’ID et d’états authentifiés comme l’illustrent les exemples ci-après.
 
@@ -91,7 +91,7 @@ Les ID de client peuvent contenir des combinaisons d’ID et d’états authenti
 >* Les identifiants sont sensibles à la casse.
 >* Utilisez uniquement des valeurs non codées pour les identifiants.
 >* Les ID de client et les états d’authentification ne sont pas stockés dans le cookie Identifiant visiteur. Ils doivent être définis pour chaque page ou contexte d’application.
->* N’incluez aucune information d’identification personnelle dans les identifiants client. Si vous utilisez des informations d’identification personnelle pour identifier un visiteur (par exemple, une adresse électronique), il est recommandé de stocker plutôt une version hachée ou chiffrée de l’information. La bibliothèque ECID prend en charge le hachage des identifiants utilisateur. Reportez-vous à la section [Prise en charge du hachage SHA-256 pour setCustomerIDs](/help/reference/hashing-support.md).
+>* N’incluez aucune information d’identification personnelle dans les identifiants client. Si vous utilisez des informations d’identification personnelle pour identifier un visiteur (par exemple, une adresse e-mail), il est recommandé de stocker plutôt une version hachée ou chiffrée de l’information. La bibliothèque ECID prend en charge le hachage des identifiants utilisateur. Reportez-vous à la section [Prise en charge du hachage SHA-256 pour setCustomerIDs](/help/reference/hashing-support.md).
 
 
 ```js
@@ -141,7 +141,7 @@ visitor.setCustomerIDs({
 }); 
 ```
 
-## Renvoi des ID de client et des états authentifiés {#section-71a610546188478fa9a3185a01d6e83b}
+## Renvoyer les ID de client et les états authentifiés {#section-71a610546188478fa9a3185a01d6e83b}
 
 Utilisez `getCustomerIDs` pour renvoyer les ID de client et les états authentifiés associés. Cette méthode renvoie l’état authentifié d’un visiteur sous la forme d’un entier.
 
@@ -215,6 +215,6 @@ Le service [!DNL Experience Cloud] ID prend en charge les identifiants et les �
 * [Méthodes du SDK Android](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=fr)
 * [Méthodes du SDK iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=fr)
 
-## Remarque destinée aux clients Analytics et Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
+## Remarque destinée aux clients Analytics et Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
 Si vous transmettez des ID déclarés à [!DNL Audience Manager], l’objet `userid` doit correspondre au code d’intégration associé à une source de données. Pour plus d’informations, reportez-vous à la section relative au [!UICONTROL service d’ID des visiteurs] de la documentation sur la [configuration du code des règles de fusion](https://docs.adobe.com/help/fr-FR/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
