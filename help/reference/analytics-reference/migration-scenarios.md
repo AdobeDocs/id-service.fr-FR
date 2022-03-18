@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Comprend des exemples de configuration de serveur et les étapes de migration requises.
 
-## Propriété Web unique {#section-6ccfea84628d46c99507cb124e7f5445}
+## Propriété web unique {#section-6ccfea84628d46c99507cb124e7f5445}
 
 * **Client** : Exemple Entreprise Inc.
 * **Activé pour Experience Cloud** : non
@@ -24,7 +24,7 @@ Comprend des exemples de configuration de serveur et les étapes de migration re
 
 Tout d’abord, ce client doit être pris en charge par Experience Cloud (voir les [conditions](../../reference/requirements.md)). De plus, puisqu’il dispose d’un fichier JavaScript unique, ce client n’a pas besoin d’une période de grâce. Il configure également la migration des visiteurs, puis migre hors de son CNAME de collecte de données, qui n’est pas nécessaire.
 
-## Plusieurs fichiers JavaScript, balises d’image codées de manière irréversible {#section-a665f6ee202940449198e4e7a5dcac54}
+## Plusieurs fichiers JavaScript, balises d’image codées en dur {#section-a665f6ee202940449198e4e7a5dcac54}
 
 * **Client** : Autre Exemple Entreprise Inc.
 * **Activé pour Experience Cloud** : oui
@@ -37,7 +37,7 @@ Tout d’abord, ce client doit connaître son ID d’organisation Adobe Experie
 
 Si ce client effectue la mise à jour vers le code JavaScript Analytics le plus récent en préparation au déploiement du service [!DNL Experience Cloud] ID, il doit également mettre à jour toutes les balises d’image codées de manière irréversible afin d’utiliser JavaScript à la place.
 
-## Plusieurs propriétés Web, plusieurs fichiers JavaScript et un lecteur vidéo Flash {#section-34647995ff3740b999fdee22d885e515}
+## Plusieurs propriétés web, plusieurs fichiers JavaScript et un lecteur vidéo Flash {#section-34647995ff3740b999fdee22d885e515}
 
 * **Client** : Un Bon Client LLC
 * **Activé pour Experience Cloud** : oui
