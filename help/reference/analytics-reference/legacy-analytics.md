@@ -10,15 +10,15 @@ ht-degree: 100%
 
 ---
 
-# Requêtes d’Analytics ID et d’Experience Cloud ID {#analytics-and-experience-cloud-id-requests}
+# Requêtes d’Analytics ID et d’Experience Cloud ID{#analytics-and-experience-cloud-id-requests}
 
 Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
 
 ## Résumé {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-Le service Experience Cloud Identity a été étroitement intégré à Adobe Analytics. Aujourd’hui, il reste un composant intégral d’Analytics mais exerce aussi des fonctions importantes pour d’autres solutions et fonctionnalités [!DNL Experience Cloud]. En raison de cet héritage, la vérification ou l’écriture d’un Analytics ID fonctionne un peu différemment par rapport au processus générique décrit dans [Requête et définition d’ID par le service Experience Cloud Identity... ](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) Pour plus d’informations sur l’ordre des opérations de vérification des ID, voir [Définition des Analytics ID et Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
+Le service Experience Cloud Identity a été étroitement intégré à Adobe Analytics. Aujourd’hui, il reste un composant intégral d’Analytics mais exerce aussi des fonctions importantes pour d’autres solutions et fonctionnalités [!DNL Experience Cloud]. En raison de cet héritage, la vérification ou l’écriture d’un Analytics ID fonctionne un peu différemment par rapport au processus générique décrit dans [Requête et définition d’ID par le service Experience Cloud Identity... ](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) Pour plus d’informations sur l’ordre des opérations de vérification des ID, voir [Définir les Analytics ID et Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
 
-## Le cookie AMCV n’est pas défini dans le navigateur {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
+## Le cookie AMCV n’est pas défini dans le navigateur. {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
 Si le cookie [!DNL Experience Cloud] (AMCV) n’est pas présent, un appel du service d’ID à [!DNL Adobe] permet de générer une réponse qui varie selon la présence ou l’absence d’un Analytics ID hérité. L’ID [!DNL Analytics] est stocké dans le [cookie s_vi](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=fr). Le tableau ci-dessous décrit comment les ID sont écrits dans le cookie AMCV en fonction de l’état du cookie s_vi.
 
@@ -49,6 +49,6 @@ Si le cookie [!DNL Experience Cloud] (AMCV) n’est pas présent, un appel du se
 >
 >La valeur FID des utilisateurs identifiés par le cookie s_fid ne sera pas migrée vers le cookie AMCV. Avec un cookie s_fid, les utilisateurs seront migrés comme si aucun cookie s_vi n’était présent (voir ci-dessus) et apparaîtront comme de nouveaux visiteurs de votre site. Voir [Cookies Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=fr) pour en savoir plus.
 
-## Le cookie AMCV est défini dans le navigateur {#section-01c088fc565c4b24ba1722c7cc240310}
+## Le cookie AMCV est défini dans le navigateur. {#section-01c088fc565c4b24ba1722c7cc240310}
 
-Si le cookie AMCV est présent, utilisera le MID en tant qu’identifiant [!DNL Analytics] si aucune valeur d’[!DNL Analytics] Analytics ID hérité ne figure dans le cookie.
+Si le cookie AMCV est présent, Analytics utilise le MID en tant qu’identifiant [!DNL Analytics] si aucune valeur d’ID [!DNL Analytics] hérité ne figure dans le cookie.
