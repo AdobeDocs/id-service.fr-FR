@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Configuration d’Opt-in à l’aide de DTM {#configuring-opt-in-with-dtm}
+# Configuration d’Opt-in à l’aide de DTM{#configuring-opt-in-with-dtm}
 
 Activez les services Opt-in à l’aide de Dynamic Tag Management (DTM).
 
