@@ -38,7 +38,7 @@ ht-degree: 100%
       + [Aperçu du service Opt-in](implementation-guides/opt-in-service/optin-overview.md)
       + [Configuration du service Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Validation du service Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Configuration d’Opt-in avec Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
+      + [Configurer Opt-in avec Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Configuration d’Opt-in à l’aide de DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Contrôle des activités Experience Cloud en fonction du consentement de l’utilisateur](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [Cas d’utilisation d’Opt-in](implementation-guides/opt-in-service/use-cases.md)
