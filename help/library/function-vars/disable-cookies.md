@@ -20,7 +20,7 @@ Un indicateur booléen facultatif qui empêche le service Experience Cloud Ide
 
 **Syntaxe :** `disableThirdPartyCookies: true|false` (la valeur par défaut est `false`). Pour `VisitorAPI.js` version 3.0.0 ou ultérieure.
 
-Lorsque `disableThirdPartyCookies: true`, le service d’ID ne renvoie pas le cookie tiers demdex.net (voir [Cookies et service Experience Cloud Identity](../../introduction/cookies.md) ). Si le navigateur d’un visiteur du site contient déjà ce cookie, le service d’ID ne l’utilise pas pour créer un Experience Cloud ID (MID) ou renvoyer un ID existant. Le service d’ID crée à la place un MID aléatoire dans le cookie propriétaire. Une fois activé, vous pouvez collecter des données avec le service d’ID et les partager dans différentes solutions d’Experience Cloud.
+Lorsque `disableThirdPartyCookies: true`, le service d’ID ne renvoie pas le cookie tiers demdex.net (voir [Cookies et service d’identités Experience Cloud](../../introduction/cookies.md) ). Si le navigateur d’un visiteur du site contient déjà ce cookie, le service d’ID ne l’utilise pas pour créer un Experience Cloud ID (MID) ou renvoyer un ID existant. Le service d’ID crée à la place un MID aléatoire dans le cookie propriétaire. Une fois activé, vous pouvez collecter des données avec le service d’ID et les partager dans différentes solutions d’Experience Cloud.
 
 **Exemple de code**
 
