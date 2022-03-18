@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Test et vérification du service Experience Cloud Identity {#test-and-verify-the-experience-cloud-id-service}
+# Test et vérification du service Experience Cloud Identity{#test-and-verify-the-experience-cloud-id-service}
 
 Les instructions, outils et procédures suivants vous aident à déterminer si le service d’ID fonctionne correctement. Les tests s’appliquent au service d’ID en général et pour différentes combinaisons de service d’ID et de solutions Experience Cloud.
 
@@ -30,7 +30,7 @@ Le [débogueur Adobe](https://experienceleague.adobe.com/docs/analytics/implemen
 
 ## Test à l’aide du débogueur Adobe {#section-861365abc24b498e925b3837ea81d469}
 
-La mise en œuvre de votre service est correctement configurée lorsqu’un [!DNL Experience Cloud ID] (MID) s’affiche dans la réponse du [!DNL Adobe] débogueur. Voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md) pour plus d’informations sur le MID.
+La mise en œuvre de votre service est correctement configurée lorsqu’un [!DNL Experience Cloud ID] (MID) s’affiche dans la réponse du [!DNL Adobe] débogueur. Voir [Cookies et service d’identités Experience Cloud](../introduction/cookies.md) pour plus d’informations sur le MID.
 
 Pour vérifier l’état du service d’ID avec le [!DNL Adobe] [débogueur](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=fr) :
 
