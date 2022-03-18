@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Notes de mise à jour d’Experience Cloud - 2020 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées à Experience Cloud Identity Service (ECID).
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées à Experience Cloud Identity Service (ECID).
 
 ## Version 4.6
 
