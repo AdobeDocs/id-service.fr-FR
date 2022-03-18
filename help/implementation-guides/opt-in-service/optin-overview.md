@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Service Opt-in {#opt-in-service}
+# Service Opt-in{#opt-in-service}
 
 Le service Opt-in vous permet de configurer des protocoles permettant aux visiteurs de vous donner ou pas l’autorisation d’installer des cookies sur leurs appareils ou sur leurs navigateurs lorsqu’ils visitent votre site.
 
@@ -27,7 +27,7 @@ Pour commencer, reportez-vous à la section [Configuration du service Opt-in](..
 
 >[!IMPORTANT]
 >
->Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à remplacer un avis juridique. Adressez-vous au service juridique de votre société pour obtenir des conseils en ce qui concerne le consentement et les pratiques quant à la configuration de la mise en œuvre de l’opt-in.
+>Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à en remplacer un. Adressez-vous au service juridique de votre société pour obtenir des conseils en ce qui concerne le consentement et les pratiques quant à la configuration de la mise en œuvre de l’opt-in.
 
 ## Opt-in et les diverses solutions Experience Cloud {#section-053e6224505542cf961896f0ca869e52}
 
