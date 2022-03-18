@@ -10,11 +10,11 @@ ht-degree: 100%
 
 ---
 
-# Référence Analytics {#analytics-reference}
+# Référence Analytics{#analytics-reference}
 
 Les composants ou fonctionnalités du service d’ID uniques à Adobe Analytics.
 
-+ [Définition des Analytics ID et Experience Cloud ID](analytics-ids.md)
++ [Définition des Analytics ID et Experience Cloud ID](analytics-ids.md)
 + [Ordre des opérations pour les Analytics ID](analytics-order-of-operations.md)
 + [Points de prise de décision concernant la migration vers le service Experience Cloud Identity](migration-decisions.md)
 + [Scénarios de migration du service Experience Cloud Identity](migration-scenarios.md)
