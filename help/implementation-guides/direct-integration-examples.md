@@ -12,17 +12,16 @@ ht-degree: 100%
 
 # Cas d’utilisation de l’intégration directe {#direct-integration-use-cases}
 
-Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (ECID ou MID). Cet ID est un identifiant unique et persistant pour les visiteurs de votre site.
+Les exemples suivants présentent 2 cas d’utilisation courants liés à une intégration directe et à l’Experience Cloud ID (ECID ou MID). Cet ID est un identifiant unique et persistant pour les visiteurs de votre site.
 
 >[!TIP]
 >
 >* Consultez et comprenez [les variables et la syntaxe du code](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) avant de passer aux cas d’utilisation.
->* Pour plus d’informations sur le MID, voir [Cookies et service Experience Cloud Identity](../introduction/cookies.md).
+>* Pour plus d’informations sur le MID, voir [Cookies et service d’identités Experience Cloud](../introduction/cookies.md).
 >
 
 
-
-## Cas d’utilisation 1 : je dispose d’un Experience Cloud ID, mais je souhaite transmettre mes identifiants visiteur et définir un état d’authentification {#section-a67d89a343754d1286d03cf08d34b806}
+## Cas d’utilisation 1 : je dispose d’un Experience Cloud ID (MID), mais je souhaite transmettre mes identifiants visiteur et définir un état d’authentification {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
