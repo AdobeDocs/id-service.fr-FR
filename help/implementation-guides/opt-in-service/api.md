@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Références d’Opt-in {#opt-in-reference}
+# Références d’Opt-in{#opt-in-reference}
 
 API pour la bibliothèque et références des paramètres de configuration d’Opt-in.
 
