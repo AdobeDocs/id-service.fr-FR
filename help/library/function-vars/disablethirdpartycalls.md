@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
 
-**Syntaxe :** ` `disableThirdPartyCalls: true false`` (la valeur par défaut est `false`).
+**Syntaxe :** ` `disableThirdPartyCalls: true|false`` (la valeur par défaut est `false`).
 
 Lorsque `disableThirdPartyCalls: true`, le service d’ID ne lancera pas d’appel vers d’autres domaines.
 
