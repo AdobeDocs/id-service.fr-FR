@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
 
-Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
+Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
 
 ## Version 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -148,7 +148,7 @@ Juin 2016
   </tr> 
   <tr> 
    <td colname="col1"> <p>Codage de l’Experience Cloud ID (MID) </p> </td> 
-   <td colname="col2"> <p>Le service d’ID code la valeur MID qui est renvoyée du serveur ou lorsqu’elle est définie par la fonction <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Pour plus d’informations sur le MID, voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>Le service d’ID code la valeur MID qui est renvoyée du serveur ou lorsqu’elle est définie par la fonction <span class="codeph">visitor.setMarketingCloudVisitorID()</span>. Pour plus d’informations sur le MID, voir <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies et service Experience Cloud ID</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
