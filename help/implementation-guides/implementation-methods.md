@@ -1,5 +1,5 @@
 ---
-description: Méthodes d’implémentation standard ou non standard du service Experience Cloud Identity.
+description: Méthodes d’implémentation standard ou non standard du service Experience Cloud Identity.
 keywords: Service d’ID
 title: Méthodes de mise en œuvre
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
@@ -22,6 +22,6 @@ Vous pouvez choisir une méthode d’implémentation [!DNL Experience Cloud ID S
 
 Adobe recommande vivement d’utiliser [[!DNL Experience Platform Launch]](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=fr) pour implémenter le service d’ID. Cette méthode garantit l’intégration à d’autres solutions [!DNL Experience Cloud], simplifie les processus d’implémentation et assure automatiquement le placement et le séquencement corrects du code.
 
-## Mise en œuvre non standard {#section-2c4f2db1f9704315a7cccab6d2e07113}
+## Implémentations non standard {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 Les procédures et exemples de codes de ce guide peuvent vous aider à configurer le service [!DNL Experience Cloud] ID d’une manière manuelle ou non standard. Veuillez noter que ces implémentations sont souvent complexes et difficiles d’un point de vue technique. Elles peuvent nécessiter de votre part des ressources d’ingénierie limitées ou consommer du temps d’assistance contractuel avec votre consultant en Adobe.
