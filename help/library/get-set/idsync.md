@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Synchronisation des ID par URL ou source de données {#id-synchronization-by-url-or-data-source}
+# Synchronisation des ID par URL ou source de données{#id-synchronization-by-url-or-data-source}
 
 Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permettent de mettre en œuvre manuellement une synchronisation des identifiants dans l’iFrame de publication de destination. Elles sont disponibles dans VisitorAPI.js 1.10 ou version ultérieure.
 
@@ -28,11 +28,11 @@ Les fonctions du service d’ID idSyncByURL et idSyncByDataSource vous permetten
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
-   <td colname="col2"> <p>Entre différents partenaires de données et <span class="keyword">Audience Manager</span> en utilisant une URL de synchronisation d’identifiant personnalisé. </p> </td> 
+   <td colname="col2"> <p>Entre différents partenaires de données et <span class="keyword">Audience Manager</span> en utilisant une URL de synchronisation d’identifiant personnalisé. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
-   <td colname="col2"> <p>Si vous connaissez déjà le DPID et DPUUID et si vous voulez l’envoyer à <span class="keyword">Audience Manager</span> dans le format d’URL de synchronisation d’identifiant standard. </p> <p></p> </td> 
+   <td colname="col2"> <p>Si vous connaissez déjà le DPID et DPUUID et si vous voulez l’envoyer à <span class="keyword">Audience Manager</span> dans le format d’URL de synchronisation d’identifiant standard. </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
