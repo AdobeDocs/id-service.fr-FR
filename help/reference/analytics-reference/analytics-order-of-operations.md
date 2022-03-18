@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Ordre des opérations pour les Analytics ID {#order-of-operations-for-analytics-ids}
+# Ordre des opérations pour les Analytics ID{#order-of-operations-for-analytics-ids}
 
 Une fois que vous avez déployé le service d’ID des visiteurs, un visiteur peut être identifié de 5 manières différentes dans Analytics.
 
