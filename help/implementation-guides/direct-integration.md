@@ -61,7 +61,7 @@ Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>ID de visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local">Cookies et service Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>ID de visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local">Cookies et service d’identités Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
