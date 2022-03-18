@@ -22,9 +22,9 @@ Le service Adobe Visitor ID définit les cookies ECID selon le paramètre par d�
 
 **Mise en œuvre** :
 
-Si vous utilisez Adobe Experience Platform Launch, mettez à niveau votre extension Experience Cloud ID vers la version 5.1.0 et configurez `secureCookie: true` et `sameSiteCookie: none`.
+Si vous utilisez Adobe Experience Platform Launch, mettez à niveau votre extension Experience Cloud ID vers la version 5.1.0 et configurez `secureCookie: true` et `sameSiteCookie: none`.
 
-Si vous nʼutilisez pas Experience Platform Launch, mettez à jour la bibliothèque Visitor vers la dernière version (5.1.0) et suivez les configurations ci-dessous, tout en initialisant lʼinstance Visitor :
+Si vous nʼutilisez pas Experience Platform Launch, mettez à jour la bibliothèque Visitor vers la dernière version (5.1.0) et suivez les configurations ci-dessous, tout en initialisant lʼinstance Visitor :
 
 **Exemple de code**
 
