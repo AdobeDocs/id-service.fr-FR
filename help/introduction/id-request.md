@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Requête et définition d’ID par le service Experience Cloud Identity {#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Requête et définition d’ID par le service Experience Cloud Identity{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 Cette section décrit le processus de requête d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
 
@@ -20,7 +20,7 @@ Cette section décrit le processus de requête d’ID et de réponse. Ces exempl
 
 **Conseil :** Consultez également notre [vidéo service d’ID sur le suivi inter-domaines](https://helpx.adobe.com/fr/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
-## Requête d’un Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
+## Faire la requête d’un Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
 Les exemples ci-après montrent comment le service d’ID demande l’identifiant visiteur Experience Cloud et le reçoit. Ces exemples utilisent deux sociétés fictives, Food Company et Sports Company, pour illustrer les flux de données pour les requêtes d’ID et les réponses. Chaque société possède un ID d’organisation Experience Cloud unique et a implémenté le code du service d’ID sur tous ses sites. Ces cas d’utilisation représentent les flux de données pour une mise en œuvre générique du service d’ID sans Analytics, d’ID hérités ni de navigateurs qui bloquent les cookies tiers.
 
