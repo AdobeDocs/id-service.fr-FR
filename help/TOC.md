@@ -6,9 +6,9 @@ breadcrumb-title: Guide d’Identity Service
 user-guide-description: Le service d’ID fournit un ID persistant universel qui identifie vos visiteurs dans toutes les solutions Experience Cloud. Il peut remplacer le code de génération des identifiants pour des services tels qu’Analytics, Audience Manager, Target et d’autres solutions ou fonctionnalités d’Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 121fde9981e85da6cc56eec35fc931d6040356d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -117,4 +117,4 @@ ht-degree: 98%
    + [Notes de mise à jour de 2017](release-notes/notes-2017.md)
    + [Notes de mise à jour de 2016](release-notes/notes-2016.md)
    + [Notes de mise à jour de 2015](release-notes/notes-2015.md)
-+ [Test Analytics masqué de la table des matières](analytics-test-file-hidetoc.md)
++ [Test Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
