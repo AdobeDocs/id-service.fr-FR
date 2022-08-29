@@ -3,9 +3,9 @@ description: Description des nouvelles fonctionnalités, des mises à jour et de
 keywords: Service d’ID
 title: Notes de mise à jour 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: ht
-source-wordcount: '744'
+source-wordcount: '700'
 ht-degree: 100%
 
 ---
@@ -52,28 +52,28 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * Le service d’ID déclenche à nouveau les synchronisations des identifiants lorsque l’identifiant de région change dans la réponse d’appel d’événement change.
 * Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et le service Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’ID.
 
-## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+<!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
-Août 2017
+August, 2017
 
 <table id="table_D9623D34F4444B038F7835750932C8AA"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Fonctionnalité </th> 
+   <th colname="col1" class="entry"> Feature </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op. Voir <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local">isCoopSafe</a>. </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Documentation révisée**
+**Revised Documentation**
 
-Mise à jour et révision des [Questions fréquentes](/help/faq-intro/faq-intro.md) afin d’inclure des questions distinctes pour chaque solution [!DNL Experience Cloud].
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. -->
 
 ## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
