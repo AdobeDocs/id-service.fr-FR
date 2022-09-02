@@ -3,9 +3,9 @@ description: Le rôle du service Experience Cloud Identity dans Adobe Experien
 title: Présentation du service Experience Cloud ID
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ En résumé, le service d’ID :
 
 * Crée une clé ou un ID commun pouvant être utilisé pour lier des profils et des identités.
 * Identifie de manière unique un appareil sur plusieurs solutions.
-* Définit un cookie propriétaire dans le domaine du client pour garantir le suivi sur le même domaine. Consultez le document sur les [cookies et le service Experience Cloud Identity](./cookies.md) pour plus d’informations.
+* Définit un cookie propriétaire dans le domaine du client afin d’assurer le tracking sur le domaine en question. Consultez le document sur les [cookies et le service Experience Cloud Identity](./cookies.md) pour plus d’informations.
 * Reçoit les alias et les mappages d’ID des clients et partenaires d’Experience Cloud.
 * Gère la synchronisation des identifiants dans Experience Cloud.
 * Prend en charge la synchronisation des identifiants avec différents tiers dans l’écosystème de la technologie publicitaire.
