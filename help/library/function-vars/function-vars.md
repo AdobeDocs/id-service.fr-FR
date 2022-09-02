@@ -1,16 +1,16 @@
 ---
 description: Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
-keywords: ID d’organisation, service d’ID
+keywords: ID d’organisation;service d’ID
 title: Configurations
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '85'
 ht-degree: 100%
 
 ---
 
-# Configurations{#configurations}
+# Configurations {#configurations}
 
 Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
 
