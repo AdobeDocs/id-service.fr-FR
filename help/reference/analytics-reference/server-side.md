@@ -3,8 +3,8 @@ description: Dans certaines mises en œuvre, les identifiants visiteur sont tran
 keywords: Service d’ID
 title: Mise en œuvre côté serveur alliée à JavaScript
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Incluez l’identifiant visiteur Analytics (s’il est défini) dans l’éléme
 
 Incluez l’identifiant visiteur Experience Cloud dans l’élément `<marketingCloudVisitorID>`.
 
-Voir [Balises XML prises en charge](https://www.adobe.io).
+Voir [Balises XML prises en charge](https://developer.adobe.com/).
 
 ## AppMeasurement pour Java {#section-d664b94934924d048300d9c2b6560085}
 
