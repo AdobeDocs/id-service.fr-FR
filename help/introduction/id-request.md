@@ -3,9 +3,9 @@ description: Cette section décrit le processus de requête d’ID et de répons
 keywords: Service d’ID
 title: Requête et définition d’ID par le service Experience Cloud Identity
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: ht
-source-wordcount: '762'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,6 @@ Cette section décrit le processus de requête d’ID et de réponse. Ces exempl
 >[!NOTE]
 >
 >Si vous ne savez pas comment le service Experience Cloud Identity crée un identifiant visiteur, prenez quelques instants pour consulter la section [Experience Cloud](../introduction/cookies.md).
-
-**Conseil :** Consultez également notre [vidéo service d’ID sur le suivi inter-domaines](https://helpx.adobe.com/fr/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Faire la requête d’un Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
