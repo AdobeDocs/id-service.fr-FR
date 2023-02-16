@@ -4,13 +4,13 @@ keywords: Service d’ID
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
-workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# appendSupplementalDataIDTo{#appendsupplementaldataidto}
+# appendSupplementalDataIDTo {#appendsupplementaldataidto}
 
 Cette méthode d’aide vous permet d’ajouter le SDID (Supplemental Data ID) comme paramètre de chaîne de requête à une URL de redirection. Cette opération est utile lorsque vous utilisez A4T et que vous devez conserver le SDID d’une page à une autre afin de regrouper ces visites distinctes. Pour utiliser cette fonction, vous devez avoir implémenté le service d’ID avec le même ID d’organisation sur les domaines source et de destination.
 
@@ -42,7 +42,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 ## Exemple de résultat {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
-Comme indiqué ci-dessous, la redirection d’URL contient le SDID du visiteur, l’ID d’organisation et un horodatage UNIX dans l’appel à la page de réception.
+Comme indiqué ci-dessous, la redirection d’URL contient le SDID du visiteur ou de la visiteuse, l’ID d’organisation et un horodatage UNIX dans l’appel à la page de réception.
 
 <ul class="simplelist"> 
  <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=7996F0B028999505-13DA591039D6226|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
