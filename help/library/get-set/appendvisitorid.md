@@ -3,10 +3,10 @@ description: Cette fonction permet de partager l’Experience Cloud ID d’un 
 keywords: Service d’ID
 title: appendVisitorIDsTo (suivi interdomaines)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -38,6 +38,10 @@ Pour résoudre ce problème, mettez en œuvre ` Visitor.appendVisitorIDsTo( *`l�
 Consultez l’exemple de code pour plus de détails.
 
 ## Ajout d’un exemple de code d’identifiant visiteur {#section-62d55f7f986542b0b9238e483d50d7b0}
+
+>[!IMPORTANT]
+>
+>Pour que les valeurs transmises dans l’URL via appendVisitorsIDsTo soient récupérées, la variable [overwriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) doit être définie sur true.
 
 L’exemple suivant peut vous aider à démarrer avec ` Visitor.appendVisitorIDsTo( *`l’URL`*)`. Lorsque votre code JavaScript est correctement mis en œuvre, il peut ressembler à l’exemple suivant.
 
