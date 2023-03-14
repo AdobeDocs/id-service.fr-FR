@@ -3,10 +3,10 @@ description: Le service d’ID utilise l’ID d’organisation, le cookie AMCV 
 keywords: playstation ; service d’ID
 title: Cookies et service d’identités Experience Cloud
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 96%
 
 ---
 
@@ -113,7 +113,9 @@ Le tableau suivant liste et définit certains attributs importants du cookie dem
  </tbody> 
 </table>
 
-Pour plus d’informations connexes, voir [Signification des appels vers le domaine Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr).
+Pour plus d’informations sur les divulgations concernant Demdex, consultez la [Audience Manager des divulgations de stockage de périphérique](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+
+Pour plus d’informations, consultez la documentation sur la [Signification des appels vers le domaine Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr).
 
 ## Générer l’Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
