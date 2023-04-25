@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: appendVisitorIDsTo (suivi interdomaines)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Consultez l’exemple de code pour plus de détails.
 
 ## Ajout d’un exemple de code d’identifiant visiteur {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-L’exemple de code suivant peut vous aider à commencer à utiliser la fonction `appendVisitorIDsTo` function:
+L’exemple de code suivant peut vous aider à commencer à utiliser la fonction `appendVisitorIDsTo` :
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
