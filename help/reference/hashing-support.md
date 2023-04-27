@@ -3,9 +3,9 @@ description: Le service Experience Cloud ID (ECID) prend en charge l’algorit
 keywords: Service d’ID
 title: Prise en charge du hachage SHA-256 pour setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '606'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '602'
 ht-degree: 100%
 
 ---
@@ -68,9 +68,9 @@ Reportez-vous au tableau ci-dessous pour obtenir une description du paramètre `
 
 ## Ajouter une action dans Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Pour en savoir plus, consultez la [documentation produit de Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr).
+Experience Platform Launch représente la nouvelle génération des fonctionnalités de gestion des balises d’Adobe. Pour en savoir plus, consultez la [documentation produit de Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr).
 
-Pour ajouter une action à Launch, consultez la [documentation sur les règles](https://docs.adobe.com/help/fr-FR/launch/using/reference/manage-resources/rules.html) dans Adobe Launch et reportez-vous à la capture d’écran ci-dessous :
+Pour ajouter une action à Launch, consultez la [documentation sur les règles](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=fr) dans Adobe Launch et reportez-vous à la capture d’écran ci-dessous :
 
 ![](/help/reference/assets/hashing-support.png)
 

@@ -2,10 +2,10 @@
 description: Simplifiez l’activation de la solution Experience Cloud pour la fonction Opt-in à l’aide d’Adobe Experience Platform Launch.
 title: Configuration d’Opt-in avec Launch
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ Simplifiez l’activation de la solution Experience Cloud pour la fonction Opt-
 
 ## Configurer un scénario Opt-in avec Experience Platform Launch {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr) facilite lʼinstallation et la configuration d’un scénario dʼopt-in avec les solutions Adobe. Vous pouvez simplifier la collecte des consentements dʼopt-in des visiteurs pour la solution Experience Cloud en autorisant Analytics, Target, Audience Manager et dʼautres solutions Experience Cloud, ou une partie de celles-ci, à souscrire à votre système de gestion du consentement.
+[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) facilite lʼinstallation et la configuration d’un scénario dʼopt-in avec les solutions Adobe. Vous pouvez simplifier la collecte des consentements dʼopt-in des visiteurs pour la solution Experience Cloud en autorisant Analytics, Target, Audience Manager et dʼautres solutions Experience Cloud, ou une partie de celles-ci, à souscrire à votre système de gestion du consentement.
 
 **Configuration de l’extension Experience Cloud ID**
 
@@ -23,6 +23,6 @@ Si l’extension Experience Cloud ID n’est pas encore installée, ouvrez vot
 
 Pour configurer l’extension, ouvrez l’onglet *Extensions* et survolez l’extension avec votre souris. Cliquez ensuite sur *Configurer*.
 
-Pour plus dʼinformations de référence, voir [Extension Opt-in pour Launch](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html?lang=fr).
+Pour plus d’informations sur les références, reportez-vous à la section [Présentation de l’extension Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=fr).
 
 ![](assets/optin-launch.jpg)

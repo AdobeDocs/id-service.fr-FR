@@ -2,10 +2,10 @@
 description: Implémentez le service Opt-in en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
 title: Configuration du service Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '908'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. Les besoins de confidentialité de votre société dépendent du degré de conformité au RGPD que vous souhaitez avoir. Découvrez les bibliothèques que les équipes de protection de la vie privée de votre société peuvent utiliser à l’état de consentement préalable.
 
-Si vous utilisez [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr), tirez parti de l’[extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
+Si vous utilisez [Balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr), profitez de la fonction [Extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
 
 ## Catégories Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -139,7 +139,7 @@ Consultez la [documentation sur l’API](../../implementation-guides/opt-in-serv
 
 Le service Opt-in fournit une option de stockage des préférences de consentement adaptée à un environnement de développement ou à un environnement dans lequel l’utilisation d’un CRM est impossible. Le fait de définir la propriété de configuration `isOptInStorageEnabled` sur *true* entraîne le service Opt-in à créer un cookie sur le système du visiteur dans votre domaine.
 
-`adobe.optIn` L’objet est sans état et ne fournit pas de mécanisme de stockage. Il est plutôt prévu que vous gériez les paramètres de consentement d’Adobe dans la plate-forme de gestion de contenu (CMP) existante, si celle-ci permet le stockage de données de consentement. Alternativement, vous pouvez stocker les préférences des visiteurs dans un cookie sur leur navigateur. Deux options s’offrent à vous pour transmettre les préférences d’un utilisateur au service Opt-in :
+`adobe.optIn` L’objet est sans état et ne fournit pas de mécanisme de stockage. Il est plutôt prévu que vous gériez les paramètres de consentement d’Adobe dans la plateforme de gestion de contenu (CMP) existante, si celle-ci permet le stockage de données de consentement. Alternativement, vous pouvez stocker les préférences des visiteurs dans un cookie sur leur navigateur. Deux options s’offrent à vous pour transmettre les préférences d’un utilisateur au service Opt-in :
 
 * Si votre solution de consentement permanente, que ce soit une CMP ou un cookie sur le navigateur du visiteur, autorise l’extraction opportune des préférences d’un visiteur, vous pouvez transmettre celles-ci au service Opt-in lors de l’initialisation du visiteur.
 * Cependant, lorsque l’extraction risque de durer un certain temps et qu’elle peut par ailleurs servir de processus asynchrone, vous pouvez utiliser la `approve()` fonction pour fournir ces paramètres une fois qu’ils sont bien chargés.

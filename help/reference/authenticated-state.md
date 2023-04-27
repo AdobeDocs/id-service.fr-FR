@@ -3,10 +3,10 @@ description: Avec l’identifiant visiteur Experience Cloud, vous pouvez associ
 keywords: Service d’ID
 title: ID de client et états d’authentification
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 98%
 
 ---
 
@@ -217,4 +217,4 @@ Le service [!DNL Experience Cloud] ID prend en charge les identifiants et les �
 
 ## Remarque destinée aux clients Analytics et Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Si vous transmettez des ID déclarés à [!DNL Audience Manager], l’objet `userid` doit correspondre au code d’intégration associé à une source de données. Pour plus d’informations, reportez-vous à la section relative au [!UICONTROL service d’ID des visiteurs] de la documentation sur la [configuration du code des règles de fusion](https://docs.adobe.com/help/fr-FR/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
+Si vous transmettez des ID déclarés à [!DNL Audience Manager], l’objet `userid` doit correspondre au code d’intégration associé à une source de données. Pour plus d’informations, reportez-vous à la section relative au [!UICONTROL service d’ID des visiteurs] de la documentation sur la [configuration du code des règles de fusion](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code).

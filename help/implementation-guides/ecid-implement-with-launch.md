@@ -2,20 +2,20 @@
 description: Adobe Experience Platform Launch est l’outil principal pour configurer, déployer et intégrer le service Experience Cloud Identity à vos autres solutions Experience Cloud.
 title: Mise en œuvre avec Launch
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
-source-wordcount: '170'
-ht-degree: 100%
+source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+workflow-type: tm+mt
+source-wordcount: '174'
+ht-degree: 72%
 
 ---
 
 # Implémentation avec les balises Experience Platform {#implement-with-launch}
 
-Les balises Adobe Experience Platform offrent l’outil principal pour configurer, déployer et intégrer Experience Cloud Identity Service à vos autres solutions Experience Cloud.
+Dans Adobe Experience Platform, les balises sont l’outil Principal utilisé pour configurer, déployer et intégrer le service d’identité Experience Cloud à vos autres solutions Experience Cloud.
 
 ## À propos des balises Experience Platform {#section-611711602854464ea351a4af80a8dafe}
 
-Les [balises Adobe Experience Platform](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=fr) constituent lʼévolution en matière de gestion des balises d’Adobe et sont intégrées à Adobe Experience Cloud. Les balises Platform permettent aux clients de :
+[Balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) représente la nouvelle génération de la fonctionnalité de gestion des balises Adobe intégrée à Adobe Experience Cloud. Les balises Platform permettent aux clients de :
 
 * Déployer des produits web côté client grâce à des intégrations appelées _extensions_.
 * Collecter, définir, gérer et partager des données de façon constante entre les produits marketing et publicitaires d’autres fournisseurs et d’Adobe.

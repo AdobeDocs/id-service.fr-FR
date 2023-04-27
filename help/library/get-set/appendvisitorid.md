@@ -3,10 +3,10 @@ description: Cette fonction permet de partager l’Experience Cloud ID d’un 
 keywords: Service d’ID
 title: appendVisitorIDsTo (suivi interdomaines)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 93%
 
 ---
 
@@ -42,6 +42,10 @@ Consultez l’exemple de code pour plus de détails.
 ## Ajout d’un exemple de code d’identifiant visiteur {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 L’exemple de code suivant peut vous aider à commencer à utiliser la fonction `appendVisitorIDsTo` :
+
+>[!TIP]
+>
+>Ce code peut être placé dans l’éditeur de code personnalisé qui fait partie de l’extension Adobe Analytics ou dans la partie supérieure de [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
