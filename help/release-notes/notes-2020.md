@@ -4,36 +4,36 @@ keywords: Service d’ID
 title: Notes de mise à jour 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Notes de mise à jour d’Experience Cloud - 2020 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées à Experience Cloud Identity Service.
 
 ## Version 5.1.1
 
-* Correctif pour la définition du cookie AMCV avec `SameSite=None` lorsque VisitorJS est chargé dans un iFrame.
+* Correctif pour la définition du cookie AMCV avec `SameSite=None` lorsque VisitorJS est chargé dans un iFrame.
 
 ## Version 5.1.0
 
-* Ajouter `sameSiteCookie` configuration pour spécifier la variable `SameSite` pour le cookie AMCV. Cette configuration prend en charge les valeurs suivantes pour la variable `SameSite` attribute:
+* Ajout de la configuration `sameSiteCookie` pour spécifier l’attribut `SameSite` du cookie AMCV. Cette configuration prend en charge les valeurs suivantes pour l’attribut `SameSite` :
    * `Strict`
    * `Lax`
    * `None`
 
-Pour plus d’informations sur ces valeurs d’attribut, voir [web.dev](https://web.dev/samesite-cookies-explained/) et [Mises à jour de SameSite par The Chromium Projects](https://www.chromium.org/updates/same-site/).
+Pour plus d’informations sur ces valeurs d’attribut, voir [web.dev](https://web.dev/samesite-cookies-explained/) et [Mises à jour de SameSite par The Chromium Projects](https://www.chromium.org/updates/same-site/).
 
 ## Version 5.0.1
 
-* Correctif pour l’inclusion de `d_cf` Indicateur lorsqu’une nouvelle chaîne de consentement IAB est envoyée aux périphéries de la collecte de données Adobe.
+* Correctif pour l’inclusion de l’indicateur `d_cf` lorsqu’une nouvelle chaîne de consentement IAB est envoyée aux périphéries de la collecte de données d’Adobe.
 
 ## Version 5.0.0
 
-* Version 5.0.0 du visiteur avec prise en charge de `IAB 2.0`.
+* Version 5.0.0 de Visitor avec prise en charge de `IAB 2.0`.
 
 ## Version 4.6
 
