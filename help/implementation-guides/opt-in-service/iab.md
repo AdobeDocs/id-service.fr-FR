@@ -3,7 +3,7 @@ description: Connectez leur plateforme de gestion du consentement (CMP) à l’a
 title: Utilisation des services Opt-in avec un framework IAB
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
 ht-degree: 100%
 
