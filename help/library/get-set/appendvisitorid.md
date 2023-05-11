@@ -4,9 +4,9 @@ keywords: Service d’ID
 title: appendVisitorIDsTo (suivi interdomaines)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ L’exemple de code suivant peut vous aider à commencer à utiliser la fonction
 
 >[!TIP]
 >
->Ce code peut être placé dans l’éditeur de code personnalisé qui fait partie de l’extension Adobe Analytics ou dans la partie supérieure de [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr).
+>Ce code peut être placé dans l’éditeur de code personnalisé qui fait partie de l’extension Adobe Analytics ou dans la partie supérieure de [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
