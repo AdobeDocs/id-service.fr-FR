@@ -3,9 +3,9 @@ description: Implémentez le service Opt-in en tant que seul point de référenc
 title: Configuration du service Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. Les besoins de confidentialité de votre société dépendent du degré de conformité au RGPD que vous souhaitez avoir. Découvrez les bibliothèques que les équipes de protection de la vie privée de votre société peuvent utiliser à l’état de consentement préalable.
 
-Si vous utilisez [Balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr), profitez de la fonction [Extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
+Si vous utilisez les [balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr), tirez parti de l’[extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
 
 ## Catégories Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
