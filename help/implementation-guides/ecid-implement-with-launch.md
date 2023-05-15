@@ -1,8 +1,10 @@
 ---
 description: Adobe Experience Platform Launch est l’outil principal pour configurer, déployer et intégrer le service Experience Cloud Identity à vos autres solutions Experience Cloud.
 title: Mise en œuvre avec Launch
+feature-set: Experience Cloud Services
+feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: ht
 source-wordcount: '174'
 ht-degree: 100%
