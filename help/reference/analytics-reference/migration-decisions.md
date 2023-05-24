@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 100%
 

@@ -1,6 +1,6 @@
 ---
 source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifications majeures d’employés d’Adobe
 
-Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe de produits en charge d’une [!UICONTROL solution Adobe Experience Cloud], et que votre travail implique de créer ou de contribuer à des articles techniques, utilisez le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
+Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe de produits en charge d’une [!UICONTROL solution Adobe Experience Cloud], et que votre travail implique de créer ou de contribuer à des articles techniques, utilisez le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -58,5 +58,5 @@ Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vou
 
 Dans le référentiel public, des étiquettes automatisées sont assignées à des requêtes de tirage afin de nous aider à gérer le workflow de requête de tirage et à vous aider à savoir ce qui se passe avec votre requête de tirage :
 
-* **Modification envoyée à l’auteur** : l’auteur a été informé de la requête de tirage en attente.
-* **Prêt à fusionner** : prêt à être analysé par notre équipe d’analyse de demande de tirage.
+* **Change sent to author** : l’auteur a été informé de la requête de tirage en attente.
+* **ready-to-merge** : prêt à être analysé par notre équipe d’analyse de demande de tirage.

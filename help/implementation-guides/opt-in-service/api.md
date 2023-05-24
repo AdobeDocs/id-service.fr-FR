@@ -3,7 +3,7 @@ description: API pour la bibliothèque et références des paramètres de config
 title: Références d’Opt-in
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 

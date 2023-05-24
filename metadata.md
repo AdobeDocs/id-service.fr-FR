@@ -5,7 +5,7 @@ solution: Experience Cloud Services
 type: Documentation
 audience: end-user
 git-repo: https://github.com/AdobeDocs/id-service.fr-FR
-description: Identity Service
+description: Service d’identités
 index: true
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt

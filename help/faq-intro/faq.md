@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: FAQ sur le service d’ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Voir [Aperçu](../introduction/overview.md).
 
 **Pourquoi le service d’ID ne lance-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
-Cela peut être difficile à diagnostiquer. Vous pouvez notamment vérifier les en-têtes de stratégie de sécurité de contenu de votre site. Si vous avez une stratégie de sécurité stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir la section [Stratégies de sécurité du contenu et service Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)
+Cela peut être difficile à diagnostiquer. Vous pouvez notamment vérifier les en-têtes de politique de sécurité de contenu de votre site. Si vous avez une politique de sécurité stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir la section [Politiques de sécurité du contenu et service Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)
 
 **Enregistrement de fichier VisitorAPI.js**
 

@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 100%
 
@@ -111,7 +111,7 @@ Les paramètres POST indiquent à [!DNL Experience Cloud] Device Co-op si cett
 
 ## API post-instanciation {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-Ces API permettent de remplacer l’état `isCoopSafe`. Elles sont nécessaires car elles vous permettent de modifier l’état post-instanciation/post-connexion d’un visiteur sur un site ou dans une application monopage où la page n’est pas actualisée. Par exemple, vous devez appeler ces API si un utilisateur s’authentifie sur votre site ou application et accepte ultérieurement une stratégie de conditions d’utilisation qui permet à Device Co-op d’utiliser ses données.
+Ces API permettent de remplacer l’état `isCoopSafe`. Elles sont nécessaires car elles vous permettent de modifier l’état post-instanciation/post-connexion d’un visiteur sur un site ou dans une application monopage où la page n’est pas actualisée. Par exemple, vous devez appeler ces API si un utilisateur s’authentifie sur votre site ou application et accepte ultérieurement une politique de conditions d’utilisation qui permet à Device Co-op d’utiliser ses données.
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 

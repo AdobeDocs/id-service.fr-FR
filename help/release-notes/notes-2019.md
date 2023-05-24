@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Notes de mise à jour 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Ajout d’une case à cocher d’approbation de pré-inclusion pour les analyses
 * Nous avons corrigé un bogue lié à `getVisitorValues` dans `localVisitor`.
 * Nous avons corrigé un bogue en raison duquel la valeur MCOPTOUT était incohérente dans le navigateur Safari, renvoyée par la méthode `getVisitorValue`.
 * Nous avons mis à jour la bibliothèque Opt-in par l’ajout de `optIn.off` pour se désabonner des événements.
-* Nous avons corrigé un bogue lié à la fonction setTimeout, en raison duquel `setTimeout` violait la stratégie de sécurité du contenu (CSP) sur certains sites clients.
+* Nous avons corrigé un bogue lié à la fonction setTimeout, en raison duquel `setTimeout` violait la politique de sécurité du contenu (CSP) sur certains sites clients.
 
 ## Version 4.3 {#version-4point3}
 

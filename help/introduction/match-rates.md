@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Comprendre la synchronisation des identifiants et les taux de correspondance
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Consultez également la section [Requête et définition d’ID par le service E
 
 **Étape 3 : Déclenchement de la synchronisation des ID**
 
-La synchronisation des identifiants est une URL qui est déclenchée dans l’iFrame de publication de destination. Comme l’exemple générique le montre, une URL de synchronisation des identifiants contient le point de terminaison de la synchronisation des identifiants d’un partenaire, ainsi qu’une URL de redirection, qui redirige vers [!DNL Adobe] avec leur identifiant.
+La synchronisation des identifiants est une URL qui est déclenchée dans l’iFrame de publication de destination. Comme l’exemple générique le montre, une URL de synchronisation des identifiants contient le point d’entrée de la synchronisation des identifiants d’un partenaire, ainsi qu’une URL de redirection, qui redirige vers [!DNL Adobe] avec leur identifiant.
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 

@@ -4,7 +4,7 @@ keywords: Service d’ID
 title: Prise en charge de la norme CORS dans le service Experience Cloud Identity
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS qui permettent d’envoyer des requêtes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
 
-## Problèmes liés aux règles sur la même origine et aux demandes de service d’ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
+## Problèmes liés aux politiques sur la même origine et aux demandes de service d’ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
 Les règles de même origine sont des contrôles de sécurité ou des restrictions appliqués par un navigateur web. Lorsqu’elles sont appliquées à ce niveau, le navigateur Web lui-même détermine si une requête de ressources effectuée d’une page à une autre sera autorisée ou bloquée. Pour déterminer si une requête est une requête de même origine, le navigateur compare :
 

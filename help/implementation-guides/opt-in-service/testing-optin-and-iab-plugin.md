@@ -3,9 +3,9 @@ description: Une fois le service Opt-in activé sur votre site web, utilisez les
 title: Validation du service Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '440'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 94%
 
 ---
 
@@ -41,9 +41,9 @@ Aucune requête vers les serveurs Adobe ne doit sʼafficher :
 
 >[!NOTE]
 >
->Vous devez voir un appel vers `http://dpm.demdex.net/optOutStatus`, un point de terminaison en LECTURE SEULE utilisé pour récupérer l’état de désinscription du visiteur. Ce point dʼentrée nʼentraîne la création dʼaucun cookie tiers et ne collecte aucune information sur la page.
+>Vous devez voir un appel vers `http://dpm.demdex.net/optOutStatus`, un point d’entrée en LECTURE SEULE utilisé pour récupérer l’état de désinscription du visiteur. Ce point dʼentrée nʼentraîne la création dʼaucun cookie tiers et ne collecte aucune information sur la page.
 
-Aucun cookie créé par les balises Adobe ne doit sʼafficher : (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2).
+Les cookies créés par les balises Adobe ne doivent pas apparaître : (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
 Dans Chrome, accédez à lʼonglet *Application*, développez la section *Cookies* sous *Stockage*, puis sélectionnez le nom de domaine de votre site Web :
 

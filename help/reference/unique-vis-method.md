@@ -3,8 +3,8 @@ title: Identification des visiteurs uniques
 description: Documentation pour Adobe ECID (Service d’ID)
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
-workflow-type: ht
-source-wordcount: '253'
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,6 @@ La méthode d’ID des visiteurs uniques entre plusieurs contextes comprend une 
 |  5  |  [En-tête d’abonné mobile HTTP](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr)  |  2  |  L’appareil est reconnu comme un appareil mobile.  |
 |  6  |  [Adresse IP, Agent utilisateur, Adresse IP de passerelle](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=fr)  |  1  |  Le navigateur du visiteur n’accepte pas les cookies. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Pour plus d’informations sur les rapports de visiteurs uniques, voir [Visiteurs uniques dans Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=fr).

@@ -1,18 +1,18 @@
 ---
-description: Une stratégie de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page Web. Consultez cette section si vous utilisez le service d’ID et si vous disposez de CSP strictes qui utilisent des listes blanches pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes blanches CSP.
+description: Une politique de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page Web. Consultez cette section si vous utilisez le service d’ID et si vous disposez de CSP strictes qui utilisent des listes blanches pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes blanches CSP.
 keywords: Service d’ID
-title: Stratégies de sécurité du contenu et service Experience Cloud Identity
+title: Politiques de sécurité du contenu et service Experience Cloud Identity
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 100%
 
 ---
 
-# Stratégies de sécurité du contenu et service Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
+# Politiques de sécurité du contenu et service Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
 
-Une stratégie de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page Web. Consultez cette section si vous utilisez le service d’ID et si vous disposez de CSP strictes qui utilisent des listes blanches pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes blanches CSP.
+Une politique de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page Web. Consultez cette section si vous utilisez le service d’ID et si vous disposez de CSP strictes qui utilisent des listes blanches pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes blanches CSP.
 
 ## Présentation des stratégies de sécurité du contenu {#section-5fde5c00a678455c914b8307a8caab82}
 
@@ -24,7 +24,7 @@ Les stratégies de sécurité du contenu utilisent l’en-tête HTTP `Content-Se
 * Les attaques de défacement de site.
 * La distribution de programmes malveillants.
 
-L’utilisation des CSP est courante et bien comprise. La présente documentation n’a pas pour but d’expliquer en détail les CSP (voir les liens d’information connexes ci-dessous pour plus d’informations). Il est important de comprendre les noms de domaine Adobe que vous devez ajouter à un fichier CSP si vous les utilisez et si vous disposez de stratégies de sécurité rigoureuses. L’ajout de ces domaines permet aux navigateurs visiteurs qui accèdent à votre site d’effectuer ces appels importants vers les ressources Experience Cloud que vous utilisez.
+L’utilisation des CSP est courante et bien comprise. La présente documentation n’a pas pour but d’expliquer en détail les CSP (voir les liens d’information connexes ci-dessous pour plus d’informations). Il est important de comprendre les noms de domaine Adobe que vous devez ajouter à un fichier CSP si vous les utilisez et si vous disposez de politiques de sécurité rigoureuses. L’ajout de ces domaines permet aux navigateurs visiteurs qui accèdent à votre site d’effectuer ces appels importants vers les ressources Experience Cloud que vous utilisez.
 
 ## Domaines Experience Cloud en liste autorisée {#section-30693e9a96834edfbf04de9e698cf2aa}
 
@@ -72,7 +72,7 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
 
 >[!MORELIKETHIS]
 >
->* [Référence des stratégies de sécurité du contenu](https://content-security-policy.com/)
->* [MDN : Stratégie de sécurité du contenu](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP)
->* [Wikipédia : Stratégie de sécurité du contenu](https://fr.wikipedia.org/wiki/Content_Security_Policy)
+>* [Référence des politiques de sécurité du contenu](https://content-security-policy.com/)
+>* [MDN : Politique de sécurité du contenu](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP)
+>* [Wikipédia : Politique de sécurité du contenu](https://fr.wikipedia.org/wiki/Content_Security_Policy)
 

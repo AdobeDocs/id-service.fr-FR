@@ -5,8 +5,8 @@ title: Notes de mise à jour 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '700'
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Correction d’un bogue lié à Chrome en raison duquel le service d’ID lançait une erreur en cliquant sur le bouton Précédent dans ce navigateur.
 * Le service d’ID déclenche à nouveau les synchronisations des identifiants lorsque l’identifiant de région change dans la réponse d’appel d’événement change.
-* Ajout d’une nouvelle documentation, [Stratégies de sécurité du contenu et le service Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’ID.
+* Ajout d’une nouvelle documentation, [Politiques de sécurité du contenu et le service Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’ID.
 
 <!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 

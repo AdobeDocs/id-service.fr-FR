@@ -4,7 +4,7 @@ keywords: Service Experience Cloud Identity
 title: Questions fréquentes sur Analytics et le service Identity
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ La collecte de données régionales offre des avantages en termes de performance
 Causes possibles d’écarts lors de l’utilisation du service Identity :
 
 * Utilisation continue du cookie s_vi hérité. Cela contribue à des incohérences dans la collecte des données.
-* Doublon comptant les visiteurs lorsqu’ils naviguent d’un questionnaire à une fenêtre contextuelle.
+* Doublon comptant les visiteurs lorsqu’ils naviguent d’un questionnaire à un pop-up.
 
 ## Cookies {#section-b7d5384fbedd47b09e1030211c39a3d1}
 

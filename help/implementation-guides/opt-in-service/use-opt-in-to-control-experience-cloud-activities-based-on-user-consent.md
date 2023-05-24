@@ -3,7 +3,7 @@ title: Utilisation de l’Opt-in pour contrôler les activités Experience Clou
 description: L’objet Opt-in d’Adobe est une extension d’Adobe Experience Platform Identity Service, conçu pour vous aider à contrôler si et quelles solutions Experience Cloud peuvent créer des cookies sur les pages web ou lancer des balises, en fonction du consentement de l’utilisateur final.
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Dans la vidéo suivante, visionnez une démonstration rapide de l’[!UICONTROL 
 
 **REMARQUE :** il est important de noter qu’au moment de la rédaction de cet article, l’[!UICONTROL Opt-in] n’a pas été intégré dans les bibliothèques pour toutes les applications Experience Cloud. Les bibliothèques actuellement prises en charge pour l’[!UICONTROL Opt-in] sont les suivantes :
 
-* Identity Service
+* Service d’identités
 * Analytics
 * Audience Manager
 * [!DNL Target]

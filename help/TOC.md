@@ -6,8 +6,8 @@ user-guide-description: Adobe Experience Cloud Identity Service fournit un i
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 0%
       + [Mise en œuvre côté serveur alliée à JavaScript](reference/analytics-reference/server-side.md)
       + [Période de grâce du service d’ID](reference/analytics-reference/grace-period.md)
    + [Modifications de l’étiquetage SameSite de Google Chrome](reference/chrome-samesite-labelling.md)
-   + [Stratégies de sécurité du contenu et service d’ID](reference/csp.md)
+   + [Politiques de sécurité du contenu et service d’ID](reference/csp.md)
    + [Prise en charge de la loi COPPA dans le service d’ID](reference/coppa.md)
    + [Prise en charge de la norme CORS dans le service d’ID](reference/cors.md)
    + [ID de client et états d’authentification](reference/authenticated-state.md)
