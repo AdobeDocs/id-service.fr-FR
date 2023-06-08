@@ -2,10 +2,10 @@
 title: Modifications de l’étiquetage SameSite de Google Chrome
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 100%
+source-wordcount: '1064'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Consultez le [document portant sur les normes des cookies](https://tools.ietf.or
 | ------ | ------------ |
 | `strict` | Les cookies comprenant ce paramètre sont uniquement envoyés lorsque la page de référence et la page de destination font toutes deux partie du même domaine que le cookie. |
 | `lax` | Les cookies comprenant ce paramètre sont uniquement envoyés lorsque le domaine affiché dans l’URL du navigateur correspond au domaine du cookie. Cela constitue le nouveau réglage par défaut des cookies dans Chrome. |
-| `none` | Les cookies comprenant ce paramètre sont disponibles pour un accès externe ou tiers, tel que les accès « intersites ». Avant cette modification, le paramètre SameSite par défaut pour les cookies était `none`. L’utilisation de ce paramètre permet donc de conserver l’ancien comportement d’un cookie presque à l’identique. Cependant, Google exige que tout cookie comprenant ce paramètre affiche désormais l’indicateur « sécurisé ». Cela signifie que le cookie sera uniquement créé et envoyé avec des requêtes par HTTPS. Tous les cookies intersites ne présentant pas l’indicateur « sécurisé » seront rejetés par Google. |
+| `none` | Les cookies avec ce paramètre sont disponibles pour un accès externe ou tiers, tel que &quot;intersite&quot;. Avant cette modification, le paramètre SameSite par défaut pour les cookies était `none`. L’utilisation de ce paramètre permet donc de conserver l’ancien comportement d’un cookie presque à l’identique. Cependant, Google exige que tout cookie comprenant ce paramètre affiche désormais l’indicateur « sécurisé ». Cela signifie que le cookie sera uniquement créé et envoyé avec des requêtes par HTTPS. Tous les cookies intersites ne présentant pas l’indicateur « sécurisé » seront rejetés par Google. |
 
 ## Ce que vous devez savoir en tant que client Adobe Experience Cloud
 
@@ -51,7 +51,7 @@ La plupart des produits Adobe ont déjà attribué les indicateurs appropriés a
 
 **Diminution possible de la correspondance des cookies pour les partenaires de Destination et de Marketplace (Audience Manager uniquement)**
 
-Bien qu’Adobe décide de la mise à jour de ses cookies, Adobe ne peut pas obliger les partenaires à apporter les modifications nécessaires. La correspondance des cookies peut diminuer pour les clients Audience Manager qui utilisent des partenaires de Destination ou des partenaires de Marketplace qui n’ont pas effectué ces mises à jour.
+Bien qu’Adobe contrôle la mise à jour de ses cookies, l’Adobe ne peut pas forcer les partenaires à apporter les modifications nécessaires. La correspondance des cookies peut diminuer pour les clients Audience Manager qui utilisent des partenaires de Destination ou des partenaires de Marketplace qui n’ont pas effectué ces mises à jour.
 
 **Cookies tiers compatibles avec Analytics (cookies `s_vi` Analytics uniquement)**
 
@@ -117,6 +117,6 @@ Seuls les cookies standards du visiteur communs sont répertoriés dans le table
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Propriétaire côté client | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Configurable pour les pages externes |
 
-> !![IMPORTANT] Les cookies tiers Adobes sont définis côté serveur.
+>  Les cookies tiers Adobes sont définis côté serveur..
 
-Pour plus d’informations, voir le document concernant les [politiques de Google Chrome concernant SameSite pour Target](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html?lang=fr).
+Pour plus d’informations, voir le document concernant les [politiques de Google Chrome concernant SameSite pour Target](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html).
