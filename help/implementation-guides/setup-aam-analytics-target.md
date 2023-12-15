@@ -1,18 +1,18 @@
 ---
-description: Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
+description: Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Identity Experience Cloud et n’utilisent pas de balises de collecte de données. Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
 keywords: Service d’ID
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 100%
+source-wordcount: '1450'
+ht-degree: 92%
 
 ---
 
 # Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
+Ces instructions concernent les clients d’Analytics, d’Audience Manager et de Target qui souhaitent utiliser le service Identity d’Experience Cloud et n’utilisent pas [Balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
 
 >[!IMPORTANT]
 >
@@ -20,7 +20,6 @@ Ces instructions concernent les clients d’Analytics, d’Audience Manager et 
 >
 >* Les clients qui utilisent s_code ne peuvent pas effectuer cette procédure. Effectuez la mise à niveau vers le code mbox v61 pour terminer cette procédure.
 >* Configurez ce code et testez-le dans un environnement de développement *avant* de le mettre en œuvre en production.
-
 
 ## Étape 1 : planifier le transfert côté serveur {#section-880797cc992d4755b29cada7b831f1fc}
 
@@ -49,7 +48,6 @@ Le service d’ID requiert la `VisitorAPI.js` bibliothèque de code. Pour télé
 >
 >* Les versions précédentes de l’API du service d’ID plaçaient cette fonction à un autre emplacement et nécessitaient une syntaxe différente. Si vous effectuez une migration à partir d’une version antérieure à la [version 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), notez le nouvel emplacement et la nouvelle syntaxe documentés ici.
 >* Le code en MAJUSCULES est un espace réservé pour des valeurs réelles. Remplacez ce texte par votre ID d’organisation, l’URL du serveur de suivi ou toute autre valeur nommée.
-
 
 **Partie 1 : Copiez la fonction Visiteur.getInstance ci-dessous**
 

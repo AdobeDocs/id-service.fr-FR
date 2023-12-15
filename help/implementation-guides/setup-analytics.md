@@ -1,24 +1,23 @@
 ---
-description: Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
+description: Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Identity Experience Cloud et n’utilisent pas de balises de collecte de données. Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
 keywords: Service d’ID
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 90%
 
 ---
 
 # Mise en œuvre du service Experience Cloud Identity pour Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
+Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Identity Experience Cloud et n’utilisent pas [Balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
 
 >[!IMPORTANT]
 >
 >* [Lisez les conditions requises](../reference/requirements.md) avant de commencer.
 >* Configurez ce code et testez-le dans un environnement de développement avant de le mettre en œuvre en production.
-
 
 Pour mettre en œuvre le service d’ID pour Adobe Analytics, procédez comme suit :
 
@@ -48,7 +47,6 @@ Le [!UICONTROL service d’ID] requiert la bibliothèque de code `VisitorAPI.js`
 >
 >* Les versions précédentes de l’API du service d’ID plaçaient cette fonction à un autre emplacement et nécessitaient une syntaxe différente. Si vous effectuez une migration à partir d’une version antérieure à la [version 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), notez le nouvel emplacement et la nouvelle syntaxe documentés ici.
 >* Le code en MAJUSCULES est un espace réservé pour des valeurs réelles. Remplacez ce texte par votre ID d’organisation, l’URL du serveur de suivi ou toute autre valeur nommée.
-
 
 **Partie 1 : Copiez la fonction Visiteur.getInstance ci-dessous**
 
@@ -126,7 +124,6 @@ Pour déterminer les variables de serveur de suivi à utiliser :
 >
 >* [!DNL Experience Cloud] URL du serveur = URL du serveur de suivi
 >* [!DNL Experience Cloud] URL du serveur sécurisé = URL du serveur sécurisé de suivi
-
 
 Si vous ne savez pas comment trouver votre serveur de suivi, consultez la [FAQ](../faq-intro/faq.md) et la [Collecte correcte des variables trackingServer et trackingServerSecure](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html#).
 

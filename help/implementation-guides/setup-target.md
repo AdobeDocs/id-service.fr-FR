@@ -1,24 +1,23 @@
 ---
-description: Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
+description: Ces instructions concernent les clients Target qui souhaitent utiliser le service Identity Experience Cloud et n’utilisent pas de balises de collecte de données. Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
 keywords: Service d’ID
 title: Mise en œuvre du service Experience Cloud Identity pour Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 75%
 
 ---
 
 # Mise en œuvre du service Experience Cloud Identity pour Target{#implement-the-experience-cloud-id-service-for-target}
 
-Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas Dynamic Tag Management (DTM). Cependant, il est vivement recommandé d’utiliser DTM pour implémenter le service d’ID. DTM simplifie le processus d’implémentation et assure automatiquement un placement et un séquencement du code adéquats.
+Ces instructions concernent les clients de Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas [Balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
 
 >[!IMPORTANT]
 >
 >* [Lisez les conditions requises](../reference/requirements.md) avant de commencer.
 >* Configurez ce code et testez-le dans un environnement de développement avant de le mettre en œuvre en production.
-
 
 ## Étape 1 : obtenir le code du service d’ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
