@@ -1,18 +1,18 @@
 ---
-description: Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Identity Experience Cloud et n’utilisent pas de balises de collecte de données. Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
+description: Ces instructions concernent les clientes et clients Analytics qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas les balises de collecte de données. Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
 keywords: Service d’ID
 title: Mise en œuvre du service Experience Cloud Identity pour Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1007'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Mise en œuvre du service Experience Cloud Identity pour Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Ces instructions concernent les clients d’Analytics qui souhaitent utiliser le service Identity Experience Cloud et n’utilisent pas [Balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, nous vous recommandons vivement d’utiliser des balises pour mettre en oeuvre le service d’ID. Les balises simplifient le processus d’implémentation et garantissent automatiquement le placement et le séquencement corrects du code.
+Ces instructions concernent les clientes et clients Analytics qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas les [balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
 
 >[!IMPORTANT]
 >
