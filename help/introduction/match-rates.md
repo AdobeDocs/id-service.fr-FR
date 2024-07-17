@@ -5,8 +5,8 @@ title: Comprendre la synchronisation des identifiants et les taux de corresponda
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Les taux de correspondance mesurent et valident l’efficacité du processus de 
 
 **Assurer des taux de correspondance élevés**
 
-Une mise en œuvre appropriée permet d’assurer des taux de correspondance élevés, car elle permet au service d’ID de définir les cookies dont il a besoin pour fonctionner et synchroniser les identifiants avec les partenaires de données activés. Cependant, des facteurs tels que la lenteur des connexions Internet, la collecte de données à partir de périphériques mobiles ou de réseaux sans fil peuvent affecter la collecte, la synchronisation et la correspondance des identifiants du service d’ID. Ces variables côté client dépassent le champ d’action du service d’ID ou d’[!DNL Adobe].
+Une mise en œuvre appropriée permet d’assurer des taux de correspondance élevés, car elle permet au service d’ID de définir les cookies dont il a besoin pour fonctionner et synchroniser les identifiants avec les partenaires de données activés. Cependant, des facteurs tels que la lenteur des connexions Internet, la collecte de données à partir d’appareils mobiles ou de réseaux sans fil peuvent affecter la collecte, la synchronisation et la correspondance des identifiants du service d’ID. Ces variables côté client dépassent le champ d’action du service d’ID ou d’[!DNL Adobe].
 
 ## Description du processus de synchronisation des identifiants {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
@@ -36,13 +36,13 @@ Lorsqu’un visiteur se rend sur votre site et charge une page, la fonction `Vis
 
 **Étape 2 : Chargement de l’iFrame**
 
-Pendant que le corps de la page se charge, le service d’ID charge une iFrame appelée *`Destination Publishing iFrame`*. L’[!UICONTROL iFrame de publication de destination] se charge dans un domaine séparé de la page parente. Cette conception permet d’assurer les performances des pages et d’améliorer la sécurité, car l’iFrame :
+Pendant le chargement du corps de la page, le service d’ID charge une iFrame appelée *`Destination Publishing iFrame`*. L’[!UICONTROL iFrame de publication de destination] se charge dans un domaine séparé de la page parente. Cette conception permet d’assurer les performances des pages et d’améliorer la sécurité, car l’iFrame :
 
 * Se charge de manière asynchrone par rapport à la page parente. Cela signifie que la page parente peut se charger indépendamment de l’[!UICONTROL iFrame de publication de destination]. Le chargement de l’iFrame et des pixels de synchronisation des identifiants à partir de l’iFrame n’affecte pas la page parente ni l’expérience utilisateur.
 * Charge aussi vite que possible. Si cette opération est trop rapide, vous pouvez charger l’iFrame après l’événement de chargement de la fenêtre (non recommandé). Voir [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) pour plus de détails.
 * Empêche le code de l’iFrame d’accéder à la page parente ou de l’affecter.
 
-Consultez également la section [Requête et définition d’ID par le service Experience Cloud Identity...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Consultez également la section [Requête et définition d’ID par le service d’identités d’Experience Cloud Identity…](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
 **Étape 3 : Déclenchement de la synchronisation des ID**
 
@@ -58,7 +58,7 @@ Les identifiants synchronisés sont enregistrés sur les [serveurs de données p
 
 ## Les services de synchronisation gèrent la synchronisation des identifiants {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Experience Cloud] responsables de la synchronisation des identifiants. Ce service est activé par défaut. Pour le désactiver, ajoutez une [variable optionnelle](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) à la fonction du service d’ID `Visitor.getInstance`. Les services de synchronisation établissent des correspondances entre différents [!DNL Experience Cloud] ID, tels que :
+Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Experience Cloud] responsables de la synchronisation des identifiants. Ce service est activé par défaut. Pour la désactiver, ajoutez une [variable facultative](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) à la fonction `Visitor.getInstance` du service d’ID. Les services de synchronisation établissent des correspondances entre différents [!DNL Experience Cloud] ID, tels que :
 
 * Les identifiants de [!DNL Experience Cloud] cookie tiers et les [!DNL Experience Cloud] identifiants propriétaires.
 
@@ -74,4 +74,3 @@ Le terme *`Sync Services`* fait référence aux technologies internes [!DNL Expe
 >[!MORELIKETHIS]
 >
 >* [Signification des appels vers le domaine Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr)
-

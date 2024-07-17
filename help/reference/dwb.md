@@ -1,16 +1,16 @@
 ---
 description: Suivez les instructions ci-dessous pour intégrer le champ Experience Cloud ID au Data Workbench. Ce processus vous permet d’utiliser l’Experience Cloud ID persistant dans votre flux de données, ce qui permet une intégration plus étroite avec d’autres produits dans Adobe Experience Cloud et fournit un suivi amélioré pour les visiteurs.
 keywords: Service d’ID
-title: Data Workbench et service Experience Cloud Identity
+title: Data Workbench et service d’identités d’Experience Cloud
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
-# Data Workbench et service Experience Cloud Identity {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench et service d’identités d’Experience Cloud {#data-workbench-and-the-experience-cloud-id-service}
 
 Suivez les instructions ci-dessous pour intégrer le champ Experience Cloud ID au Data Workbench. Ce processus vous permet d’utiliser l’Experience Cloud ID persistant dans votre flux de données, ce qui permet une intégration plus étroite avec d’autres produits dans Adobe Experience Cloud et fournit un suivi amélioré pour les visiteurs.
 

@@ -5,8 +5,8 @@ title: FAQ sur le service d’ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Voir [Aperçu](../introduction/overview.md).
 
 **Pourquoi le service d’ID ne lance-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
-Cela peut être difficile à diagnostiquer. Vous pouvez notamment vérifier les en-têtes de politique de sécurité de contenu de votre site. Si vous avez une politique de sécurité stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir la section [Politiques de sécurité du contenu et service Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)
+Cela peut être difficile à diagnostiquer. Vous pouvez notamment vérifier les en-têtes de politique de sécurité de contenu de votre site. Si vous avez une politique de sécurité stricte, ces paramètres peuvent bloquer les appels tiers effectués par le service d’ID. Voir la section [Politiques de sécurité du contenu et service d’identités d’Experience Cloud](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)
 
 **Enregistrement de fichier VisitorAPI.js**
 
@@ -51,7 +51,7 @@ Il est difficile de cataloguer toutes les conditions possibles. Des milliards de
 * Les vitesses varient considérablement sur les réseaux mobiles. Ces réseaux souffrent également de pertes de signal et de données ou de paquets vocaux.
 * La connectivité souffre sur les appareils connectés par WiFi dans diverses conditions. Par exemple, les problèmes de perte de paquets et de vitesse sont fréquents dans les lieux publics comme les cafés ou dans d’autres environnements comme les avions où les paquets doivent rebondir par satellite avant d’atteindre les réseaux terrestres.
 * Les réseaux locaux mal configurés peuvent avoir un impact négatif sur la connectivité et la vitesse.
-* Les périphériques clients peuvent rencontrer leurs propres problèmes, tels qu’une faible mémoire, un échange de disque excessif ou une puissance CPU limitée par rapport aux charges de travail actuelles.
+* Les appareils clients peuvent rencontrer leurs propres problèmes, tels qu’une faible mémoire, un échange de disque excessif ou une puissance CPU limitée par rapport aux charges de travail actuelles.
 * Les navigateurs mettent en file d’attente et exécutent les appels de serveur distant et traitent même les réponses avec des règles différentes, selon le fabricant et la version du navigateur. Ce comportement affecte la vitesse et les performances.
 
 **Pouvez-vous nommer certaines améliorations apportées pour raccourcir les temps de chargement de page ?**
@@ -66,13 +66,13 @@ Cette modification améliore les performances des clients utilisant Visitor 2.3
 
 Les demandes de ressources avec CORS sont généralement préférables à celles effectuées avec JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et dépriorisent les requêtes par rapport à d’autres appels synchrones et asynchrones sur la page. CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
-Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Voir [Prise en charge de la norme CORS dans le service d’identités d’Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Le service d’ID prend-il en charge CORS ?**
 
-Oui. Voir [Prise en charge de la norme CORS dans le service Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Oui. Voir [Prise en charge de la norme CORS dans le service d’identités d’Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)
 
 **Qu’est-ce que la norme CORS ?**
 
@@ -87,4 +87,3 @@ Voir les sections [Experience Cloud](../reference/cors.md#concept-6c280446990d4
 >[!MORELIKETHIS]
 >
 >* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
-

@@ -1,5 +1,5 @@
 ---
-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2016.
 keywords: Service d’ID
 title: Notes de mise à jour 2016
 feature-set: Experience Cloud Services
@@ -7,14 +7,14 @@ feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 99%
 
 ---
 
 # Notes de mise à jour 2016 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2016.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2016.
 
 Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
 
@@ -25,8 +25,7 @@ Novembre 2016
 >[!IMPORTANT]
 >
 >* La version 1.10 requiert [!UICONTROL AppMeasurement] version 1.8.0.
->* Si vous utilisez la bibliothèque version 2.0.0 ou ultérieure du service Experience Cloud Identity, la synchronisation des identifiants commencera par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](/help/introduction/match-rates.md).
-
+>* Si vous utilisez la bibliothèque version 2.0.0 ou ultérieure du service d’identités d’Experience Cloud, la synchronisation des identifiants commencera par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](/help/introduction/match-rates.md).
 
 **Correctifs et améliorations**
 
@@ -78,7 +77,7 @@ Août 2016
 
 **Documentation nouvelle et révisée**
 
-Révision : [Conditions requises du service Experience Cloud Identity](../reference/requirements.md)
+Révision : [Conditions requises pour le service d’identités d’Experience Cloud](../reference/requirements.md)
 
 **Problèmes connus**
 
@@ -102,9 +101,9 @@ Juillet 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Partage des ressources cross-origin (CORS) </p> </td> 
-   <td colname="col2"> <p>Grâce au partage des ressources cross-origin (CORS), les navigateurs peuvent demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS afin de permettre les requêtes de ressources cross-origin côté client. Dans les navigateurs non compatibles avec la norme CORS, les demandes JSONP sont restaurées par le service ID. </p> <p>Voir : </p> 
+   <td colname="col2"> <p>Grâce au partage des ressources cross-origin (CORS), les navigateurs peuvent demander des ressources auprès d’un domaine autre que le domaine actuel. Le service dʼidentités d’Experience Cloud prend en charge les normes CORS afin de permettre les requêtes de ressources cross-origin côté client. Dans les navigateurs non compatibles avec la norme CORS, les demandes JSONP sont restaurées par le service ID. </p> <p>Voir : </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Prise en charge de la norme CORS dans le service Experience Cloud Identity </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Prise en charge de la norme CORS dans le service d’identités d’Experience Cloud </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -124,13 +123,13 @@ Juillet 2016
 
 **Nouveau**
 
-* [Mise en œuvre du service Experience Cloud Identity pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Mise en œuvre du service Experience Cloud Identity pour Analytics, Audience Manager et Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics, Audience Manager et Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Révision**
 
-* [Conditions requises pour le service Experience Cloud Identity](../reference/requirements.md)
-* [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md)
+* [Conditions requises pour le service d’identités d’Experience Cloud](../reference/requirements.md)
+* [Test et vérification du service d’identités d’Experience Cloud](../implementation-guides/test-verify.md)
 
 ## Version 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -166,8 +165,8 @@ Mai 2016
 **Mises à jour de la documentation**
 
 * [Versions minimales des SDK pour Android et iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench et service Experience Cloud Identity](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md)
+* [Data Workbench et service d’identités d’Experience Cloud](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Test et vérification du service d’identités d’Experience Cloud](../implementation-guides/test-verify.md)
 
 ## Version 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -175,7 +174,7 @@ Avril 2016
 
 **Mises à jour de la documentation**
 
-[Mise en œuvre du service Experience Cloud Identity pour Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Mise en œuvre du service d’identités d’Experience Cloud pour Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Version 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -202,9 +201,9 @@ Mars 2016
 
 **Mises à jour de la documentation**
 
-* [Mise en œuvre du service Experience Cloud Identity pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : nouvelle procédure qui décrit comment configurer le service d’ID avec [!DNL Analytics].
+* [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : nouvelle procédure qui décrit comment configurer le service d’ID avec [!DNL Analytics].
 
-* [Points de prise de décision concernant la migration vers le service Experience Cloud Identity](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : révision du texte pour le clarifier. L’utilisation d’un seul domaine vous permet de migrer hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Toutefois, il n’est pas nécessaire de modifier votre CNAME si celui-ci fonctionne.
+* [Points de prise de décision concernant la migration vers le service d’identités d’Experience Cloud](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : révision du texte pour le clarifier. L’utilisation d’un seul domaine vous permet de migrer hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Toutefois, il n’est pas nécessaire de modifier votre CNAME si celui-ci fonctionne.
 
 ## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 

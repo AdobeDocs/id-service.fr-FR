@@ -1,18 +1,18 @@
 ---
-description: Ces instructions concernent les clientes et clients Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas les balises de collecte de données. Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
+description: Ces instructions concernent les clientes et clients de Target qui souhaitent utiliser le service d’identités d’Experience Cloud Identity et n’utilisent pas les balises de collecte de données. Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
 keywords: Service d’ID
-title: Mise en œuvre du service Experience Cloud Identity pour Target
+title: Mise en œuvre du service d’identités d’Experience Cloud pour Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 
 ---
 
-# Mise en œuvre du service Experience Cloud Identity pour Target{#implement-the-experience-cloud-id-service-for-target}
+# Mise en œuvre du service d’identités d’Experience Cloud pour Target{#implement-the-experience-cloud-id-service-for-target}
 
-Ces instructions concernent les clientes et clients Target qui souhaitent utiliser le service Experience Cloud Identity et n’utilisent pas les [balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
+Ces instructions concernent les clientes et clients de Target qui souhaitent utiliser le service d’identités d’Experience Cloud et n’utilisent pas les [balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
 
 >[!IMPORTANT]
 >

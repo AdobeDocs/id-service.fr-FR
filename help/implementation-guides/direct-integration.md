@@ -1,18 +1,18 @@
 ---
-description: Cette implémentation permet aux clients d’utiliser le service d’ID sur les périphériques qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
+description: Cette implémentation permet aux clients d’utiliser le service d’ID sur les appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
 keywords: Service d’ID
-title: Intégration directe avec le service Experience Cloud Identity
+title: Intégration directe au service d’identités d’Experience Cloud
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 97%
 
 ---
 
-# Intégration directe avec le service Experience Cloud Identity {#direct-integration-with-the-experience-cloud-id-service}
+# Intégration directe au service d’identités d’Experience Cloud {#direct-integration-with-the-experience-cloud-id-service}
 
-Cette implémentation permet aux clients d’utiliser le service d’ID sur les périphériques qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
+Cette implémentation permet aux clients d’utiliser le service d’ID sur les appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
 
 ## Syntaxe {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -65,7 +65,7 @@ Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet ID, voir <a href="../reference/requirements.md" format="dita" scope="local"> Conditions requises pour le service Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet ID, voir <a href="../reference/requirements.md" format="dita" scope="local"> Conditions requises pour le service d’identité Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 

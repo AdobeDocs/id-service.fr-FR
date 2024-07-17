@@ -5,8 +5,8 @@ title: Cas d’utilisation de l’intégration directe
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,6 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
 >* Consultez et comprenez [les variables et la syntaxe du code](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) avant de passer aux cas d’utilisation.
 >* Pour plus d’informations sur le MID, voir [Cookies et service d’identités Experience Cloud](../introduction/cookies.md).
 >
-
 
 ## Cas d’utilisation 1 : je dispose d’un Experience Cloud ID (MID), mais je souhaite transmettre mes identifiants visiteur et définir un état d’authentification {#section-a67d89a343754d1286d03cf08d34b806}
 
@@ -49,7 +48,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
      <li id="li_4869572B40E54C54B88A2474DAC475A8">L’ID de votre fournisseur de données. Il s’agit d’un ID unique attribué à votre société. Nommons cet ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">L’ID dont vous disposez pour le visiteur (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facultatif)</i> Un ID de statut permettant de définir l’état de l’authentification de ce visiteur. </li> 
-    </ul> <p>Si vous disposez d’autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par ex. <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
+    </ul> <p>Et, si vous disposez de l’un des autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par exemple,<span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.) vous pouvez également les transmettre. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
@@ -84,7 +83,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Actions</b> </p> </td> 
-   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec votre ID d’organisation. </p> <p>Si vous disposez d’autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par ex. <span class="codeph">d_blob</span> ou <span class="codeph">dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
+   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec votre ID d’organisation. </p> <p>Et, si vous disposez de l’un des autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par exemple,<span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.) vous pouvez également les transmettre. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 

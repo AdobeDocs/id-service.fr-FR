@@ -1,26 +1,26 @@
 ---
-description: Le rôle du service Experience Cloud Identity dans Adobe Experience Cloud.
+description: Le rôle du service dʼidentités d’Experience Cloud dans Adobe Experience Cloud.
 keywords: Service d’ID
 title: Présentation
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 96%
 
 ---
 
 # À propos du service d’ID{#aboutidservice}
 
-Le rôle du service Experience Cloud Identity dans Adobe Experience Cloud.
+Le rôle du service dʼidentités d’Experience Cloud dans Adobe Experience Cloud.
 
 <!--
 mcvid-functionality.xml
 -->
 
-## Le service Experience Cloud Identity : un élément fondamental des services principaux {#section-2de0eb1d65664e92a4d8bbb167b84bde}
+## Le service dʼidentités d’Experience Cloud : un élément fondamental des services principaux {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
-Le service Experience Cloud Identity active le framework d’identification courant pour les services principaux, les solutions, les attributs du client et les audiences d’Experience Cloud. Pour ce faire, le service attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
+Le service dʼidentités d’Experience Cloud active le framework d’ID courant pour les services principaux, les solutions, les attributs du client et les audiences d’Experience Cloud. Il fonctionne en attribuant un identifiant persistant unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
 
 ![](assets/ecid-new.png)
 

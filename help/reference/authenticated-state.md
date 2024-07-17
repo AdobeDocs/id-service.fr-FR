@@ -5,7 +5,7 @@ title: ID de client et états d’authentification
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '595'
 ht-degree: 100%
 
 ---
@@ -68,7 +68,7 @@ Vous pouvez affecter des états d’authentification à vos utilisateurs selon l
    <td colname="col2"> <p>Cet état peut être utilisé pour des scénarios tels que : </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Lecture d’un email (cette action signifie probablement que le lecteur est le destinataire prévu, mais l’email aurait également pu être transféré). </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Clic d’un email vers une page d’entrée. </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Clic d’un email vers une page de destination. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -92,7 +92,6 @@ Les ID de client peuvent contenir des combinaisons d’ID et d’états authenti
 >* Utilisez uniquement des valeurs non codées pour les identifiants.
 >* Les ID de client et les états d’authentification ne sont pas stockés dans le cookie Identifiant visiteur. Ils doivent être définis pour chaque page ou contexte d’application.
 >* N’incluez aucune information d’identification personnelle dans les identifiants client. Si vous utilisez des informations d’identification personnelle pour identifier un visiteur (par exemple, une adresse e-mail), il est recommandé de stocker plutôt une version hachée ou chiffrée de l’information. La bibliothèque ECID prend en charge le hachage des identifiants utilisateur. Reportez-vous à la section [Prise en charge du hachage SHA-256 pour setCustomerIDs](/help/reference/hashing-support.md).
-
 
 ```js
 // Single ID with a single authentication state 

@@ -1,18 +1,18 @@
 ---
-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud.
 keywords: Service d’ID
 title: Notes de mise à jour 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 100%
+source-wordcount: '218'
+ht-degree: 99%
 
 ---
 
 # Notes de mise à jour d’Experience Cloud - 2020 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées à Experience Cloud Identity Service.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud.
 
 ## Version 5.1.1
 
@@ -37,7 +37,7 @@ Pour plus d’informations sur ces valeurs d’attribut, voir [web.dev](https://
 
 ## Version 4.6
 
-* L’indicateur `loadSSL` est activé par défaut. Tous les appels à Identity Service seront par défaut en `https`.  Les clients peuvent définir ce paramètre sur false s’ils souhaitent appeler Identity Services en HTTP à partir de leurs `non-ssl` pages.
+* L’indicateur `loadSSL` est activé par défaut. Tous les appels au service d’identités seront par défaut en `https`.  Les clients peuvent définir ce paramètre sur false s’ils souhaitent appeler le service d’identités en HTTP à partir de leurs `non-ssl` pages.
 * Mise à jour de la fonction utilisée pour détecter la version d’`Internet-Explorer (IE)`, afin de corriger un problème signalé par `ESLint`.
 Correction d’un problème de performances sur `Internet-Explorer (IE) 11` lorsque l’inclusion `pre-approval` est accordée à ECID et que ce dernier est mis à jour ultérieurement.
 

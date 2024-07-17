@@ -1,18 +1,18 @@
 ---
-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud.
 keywords: Service d’ID
 title: Notes de mise à jour 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 100%
 
 ---
 
 # Notes de mise à jour d’Experience Cloud - 2019 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud.
 
 ## Version 4.4.1
 

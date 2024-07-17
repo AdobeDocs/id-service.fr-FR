@@ -1,18 +1,18 @@
 ---
 description: La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service Experience Cloud Identity afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
 keywords: Service d’ID
-title: Prise en charge de la loi COPPA dans le service Experience Cloud Identity
+title: Prise en charge de la norme COPPA dans le service d’identités d’Experience Cloud
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 100%
 
 ---
 
-# Prise en charge de la loi COPPA dans le service Experience Cloud Identity {#coppa-support-in-the-experience-cloud-id-service}
+# Prise en charge de la norme COPPA dans le service d’identités d’Experience Cloud {#coppa-support-in-the-experience-cloud-id-service}
 
-La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service Experience Cloud Identity afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
+La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service d’identités d’Experience Cloud afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
 
 >[!NOTE]
 >
@@ -46,4 +46,3 @@ Lorsqu’il est défini sur la valeur `true`, `disableThirdPartyCookies` l’obj
 >
 >* [Centre de traitement des données personnelles Adobe](http://www.adobe.com/fr/privacy.html)
 >* [Définition de la loi COPPA](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
-

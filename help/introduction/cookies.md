@@ -5,7 +5,7 @@ title: Cookies et service d’identités Experience Cloud
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '941'
 ht-degree: 100%
 
 ---
@@ -137,4 +137,4 @@ Le tableau suivant décrit les indicateurs des cookies d’Experience Cloud :
 
 ## Étapes suivantes {#section-8db1727a63bc4ff68b495f270315d453}
 
-Consultez la section [Requête et définition d’ID par Experience Cloud Identity Service...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Consultez la section [Requête et définition d’ID par le service d’identités d’Experience Cloud…](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).

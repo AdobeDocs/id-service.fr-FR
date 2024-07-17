@@ -1,5 +1,5 @@
 ---
-description: getCustomerIDs renvoie les ID d’un client définis par le service Experience Cloud Identity.
+description: getCustomerIDs renvoie les ID d’un client définis par le service d’identités d’Experience Cloud.
 keywords: Service d’ID
 title: getCustomerIDs
 exl-id: 4a05509b-99f6-42c8-a539-0784f5b9fabc
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # getCustomerIDs{#getcustomerids}
 
-getCustomerIDs renvoie les ID d’un client définis par le service Experience Cloud Identity.
+getCustomerIDs renvoie les ID d’un client définis par le service d’identités d’Experience Cloud.
 
 <!--
 Is there anything else we can say about this??

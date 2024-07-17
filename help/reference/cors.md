@@ -1,12 +1,12 @@
 ---
 description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS qui permettent d’envoyer des requêtes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
 keywords: Service d’ID
-title: Prise en charge de la norme CORS dans le service Experience Cloud Identity
+title: Prise en charge de la norme CORS dans le service d’identités d’Experience Cloud
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 100%
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Le navigateur permet à une requête de réussir si les deux pages partagent ces
 
 ## La norme CORS résout les problèmes liés aux règles de même origine {#section-76c87ec3295d447bab220c84f138c235}
 
-La norme CORS offre un moyen sécurisé et efficace de demander des ressources sur différents domaines. La spécification CORS comprend un ensemble d’en-têtes HTTP que les navigateurs utilisent pour envoyer, recevoir et évaluer les requêtes liées aux ressources. L’évaluation d’une demande de ressource s’appelle une *`preflight check`*. Cette vérification permet aux navigateurs et aux serveurs de déterminer quelles requêtes sont autorisées ou bloquées. La vérification en amont est transparente pour l’application, l’API ou le script qui demande une ressource. Deux en-têtes importants pour le processus de demande de ressources sont les suivants :
+La norme CORS offre un moyen sécurisé et efficace de demander des ressources sur différents domaines. La spécification CORS comprend un ensemble d’en-têtes HTTP que les navigateurs utilisent pour envoyer, recevoir et évaluer les requêtes liées aux ressources. L’évaluation d’une requête de ressource est appelée *`preflight check`*. Cette vérification permet aux navigateurs et aux serveurs de déterminer quelles requêtes sont autorisées ou bloquées. La vérification en amont est transparente pour l’application, l’API ou le script qui demande une ressource. Deux en-têtes importants pour le processus de demande de ressources sont les suivants :
 
 * `Origin` : un en-tête de demande qui identifie la source de la requête.
 * `Access-Control-Allow-Origin` : un en-tête de réponse qui indique si une ressource peut être partagée avec le demandeur.

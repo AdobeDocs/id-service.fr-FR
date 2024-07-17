@@ -4,7 +4,7 @@ title: Configuration du service Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ adobe.OptInCategories = {
 };
 ```
 
-Le service Opt-in vous permet de définir les préférences d’autorisation des visiteurs pour chaque solution Adobe utilisée sur votre site. Cela comprend une bibliothèque pour la sauvegarde des paramètres d’un visiteur par catégorie approuvée. De plus, un flux séquentiel est pris en charge, où le processus d’approbation reçoit des préférences « confirmer » ou « refuser » pour chaque catégorie, chacune son tour. Vous pouvez définir les solutions ou catégories pour lesquelles demander le consentement, pour l’ensemble ou individuellement. 
+Le service Opt-in vous permet de définir les préférences d’autorisation des visiteurs pour chaque solution Adobe utilisée sur votre site. Cela comprend une bibliothèque pour la sauvegarde des paramètres d’un visiteur par catégorie approuvée. De plus, un flux séquentiel est pris en charge, où le processus d’approbation reçoit des préférences « confirmer » ou « refuser » pour chaque catégorie, chacune son tour. Vous pouvez définir les solutions ou catégories pour lesquelles demander l’opt-in, de manière globale ou individuelle. 
 L’ensemble des bibliothèques côté client des solutions Adobe dépend du service Opt-in. Elles ne génèrent pas de cookie, sauf si l’autorisation a été donnée pour la solution. Opt-in prend en charge plusieurs approches pour fournir et mettre à jour les paramètres de consentement pour le visiteur actuel. Cette section présente des exemples de définition des préférences du service Opt-in. Voir les [Références de l’API d’Opt-in](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour obtenir la liste complète des fonctions et paramètres.
 
 Les configurations du service Opt-in sont fournies dans la `getInstance()` fonction du fichier JavaScript Visiteur, qui instancie `adobe` l’objet global. Vous trouverez ci-après les [paramètres de configuration](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) JavaScript Visiteur pour le service Opt-in.

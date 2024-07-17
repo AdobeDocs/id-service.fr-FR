@@ -1,18 +1,18 @@
 ---
-description: Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
+description: Avant de déployer le service d’identités d’Experience Cloud, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
 keywords: Service d’ID
-title: Points de prise de décision concernant la migration vers le service Experience Cloud Identity
+title: Points de prise de décision concernant la migration vers le service d’identités d’Experience Cloud
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 93%
 
 ---
 
-# Points de prise de décision concernant la migration vers le service Experience Cloud Identity
+# Points de prise de décision concernant la migration vers le service d’identités d’Experience Cloud
 
-Avant de déployer le service Experience Cloud Identity, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
+Avant de déployer le service d’identités d’Experience Cloud, vous devez comprendre l’impact de ce service sur le suivi des visiteurs sur plusieurs domaines et les problèmes éventuels en cas de collecte des données à l’aide de méthodes différentes ou au moyen de fichiers JavaScript.
 
 Répondez aux questions de cette section pour déterminer quelles autres étapes de migration vous devez suivre.
 
@@ -53,7 +53,7 @@ Si vous avez plusieurs domaines qui envoient des données à la *même suite de 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Plusieurs domaines </p> </td> 
-   <td colname="col2"> <p>Si vous effectuez le suivi des visiteurs sur plusieurs domaines et que vous avez également un site d’accès principal où les clients peuvent être identifiés avant qu’ils ne visitent d’autres domaines, continuez à utiliser votre CNAME de collecte de données. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Notez que vous devez définir deux paramètres supplémentaires pour le serveur de suivi, <span class="codeph">visitor.marketingCloudServer</span> et <span class="codeph">visitor.marketingCloudServerSecure</span>, pour configurer un CNAME avec le service d’ID. </p> </td> 
+   <td colname="col2"> <p>Si vous effectuez le suivi des visiteurs sur plusieurs domaines et que vous disposez également d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, continuez à utiliser votre CNAME de collecte de données. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Notez que vous devez définir deux paramètres supplémentaires pour le serveur de suivi, <span class="codeph">visitor.marketingCloudServer</span> et <span class="codeph">visitor.marketingCloudServerSecure</span>, pour configurer un CNAME avec le service d’ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un seul domaine </p> </td> 

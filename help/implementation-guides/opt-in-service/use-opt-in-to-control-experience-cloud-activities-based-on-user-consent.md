@@ -1,27 +1,27 @@
 ---
 title: Utilisation de l’Opt-in pour contrôler les activités Experience Cloud en fonction du consentement de l’utilisateur
-description: L’objet Opt-in d’Adobe est une extension d’Adobe Experience Platform Identity Service, conçu pour vous aider à contrôler si et quelles solutions Experience Cloud peuvent créer des cookies sur les pages web ou lancer des balises, en fonction du consentement de l’utilisateur final.
+description: L’objet Opt-in d’Adobe est une extension du service d’identités d’Adobe Experience Platform, conçue pour vous aider à contrôler si et quelles solutions Experience Cloud peuvent créer des cookies sur les pages web ou lancer des balises, en fonction du consentement de l’utilisateur final.
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '508'
 ht-degree: 100%
 
 ---
 
 # Contrôle des activités Experience Cloud en fonction du consentement de l’utilisateur
 
-L’objet [!UICONTROL Opt-in] d’Adobe est une extension d’Adobe [!UICONTROL Experience Platform Identity Service], conçu pour vous aider à contrôler si et quelles solutions Experience Cloud peuvent créer des cookies sur les pages web ou déclencher des balises, en fonction du consentement de l’utilisateur final.
+L’objet [!UICONTROL Opt-in] d’Adobe est une extension du [!UICONTROL service d’identités d’Adobe Experience Platform], conçue pour vous aider à contrôler si et quelles solutions Experience Cloud peuvent créer des cookies sur les pages web ou déclencher des balises, en fonction du consentement de l’utilisateur final.
 
 ## Principes de base de l’[!UICONTROL Opt-in]
 
-Un aspect important de la réglementation sur la protection des renseignements personnels est l’acquisition et la transmission du consentement des utilisateurs quant à la façon dont leurs données personnelles peuvent être utilisées et par qui. La dernière version d’[!UICONTROL Identity Service] inclut une fonctionnalité permettant le déclenchement conditionnel (par exemple avant et après le consentement) des balises de la solution Experience Cloud, selon que l’utilisateur final a donné ou non son consentement. L’image suivante illustre ce processus :
+Un aspect important de la réglementation sur la protection des renseignements personnels est l’acquisition et la transmission du consentement des utilisateurs quant à la façon dont leurs données personnelles peuvent être utilisées et par qui. La dernière version du [!UICONTROL service dʼidentités] inclut une fonctionnalité permettant le déclenchement conditionnel (par exemple avant et après le consentement) des balises de la solution Experience Cloud, selon que l’utilisateur final a donné ou non son consentement. L’image suivante illustre ce processus :
 
 ![Diagramme de fonctionnement de l’[!UICONTROL Opt-in]](assets/opt-in.png)
 
 Lʼ[!UICONTROL Opt-in] fonctionne comme suit :
 
-**Si l’[!UICONTROL Opt-in] est activé dans Identity Service (par le biais d’une variable booléenne), les bibliothèques de solutions Experience Cloud ne déclenchent pas les balises ou ne définissent pas de cookies tant que le consentement n’a pas été donné pour cette solution.**
+**Si l’[!UICONTROL Opt-in] est activé dans le service d’identités (par le biais d’une variable booléenne), les bibliothèques de solutions Experience Cloud ne déclenchent pas les balises ou ne définissent pas de cookies tant que le consentement n’a pas été donné pour cette solution.**
 
 L’[!UICONTROL Opt-in] vous permet également de décider si des balises se déclenchent avant le consentement de l’utilisateur, puis ces informations de consentement (ainsi que le consentement donné par l’utilisateur final) sont stockées, afin qu’elles puissent être utilisées lors des accès suivants. L’enregistrement du consentement est disponible dans les options d’[!UICONTROL Opt-in], ou vous pouvez l’intégrer à un CMP pour stocker les consentements sélectionnés.
 

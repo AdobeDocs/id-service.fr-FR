@@ -1,11 +1,11 @@
 ---
-description: Méthodes d’implémentation standard ou non standard du service Experience Cloud Identity.
+description: Méthodes d’implémentation standard ou non standard du service d’identités d’Experience Cloud.
 keywords: Service d’ID
 title: Méthodes de mise en œuvre
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '129'
 ht-degree: 100%
 
 ---

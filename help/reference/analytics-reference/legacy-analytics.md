@@ -1,22 +1,22 @@
 ---
-description: Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
+description: Cette section décrit comment le service d’identités d’Experience Cloud fonctionne avec l’Analytics ID hérité.
 keywords: Service d’ID
 title: Requêtes d’Analytics ID et d’Experience Cloud ID
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '421'
 ht-degree: 100%
 
 ---
 
 # Requêtes d’Analytics ID et d’Experience Cloud ID{#analytics-and-experience-cloud-id-requests}
 
-Cette section décrit comment le service Experience Cloud Identity fonctionne avec l’Analytics ID hérité.
+Cette section décrit comment le service d’identités d’Experience Cloud fonctionne avec l’Analytics ID hérité.
 
 ## Résumé {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-Le service Experience Cloud Identity a été étroitement intégré à Adobe Analytics. Aujourd’hui, il reste un composant intégral d’Analytics mais exerce aussi des fonctions importantes pour d’autres solutions et fonctionnalités [!DNL Experience Cloud]. En raison de cet héritage, la vérification ou l’écriture d’un Analytics ID fonctionne un peu différemment par rapport au processus générique décrit dans [Requête et définition d’ID par le service Experience Cloud Identity... ](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) Pour plus d’informations sur l’ordre des opérations de vérification des ID, voir [Définir les Analytics ID et Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
+Le service d’identités d’Experience Cloud a été étroitement intégré à Adobe Analytics. Aujourd’hui, il reste un composant intégral d’Analytics mais exerce aussi des fonctions importantes pour d’autres solutions et fonctionnalités [!DNL Experience Cloud]. En raison de cet héritage, la vérification ou l’écriture d’un Analytics ID fonctionne un peu différemment par rapport au processus générique décrit dans [Requête et définition d’ID par le service d’identités d’Experience Cloud…](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) Pour plus d’informations sur l’ordre des opérations de vérification des ID, voir [Définir les Analytics ID et Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
 
 ## Le cookie AMCV n’est pas défini dans le navigateur. {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
@@ -36,7 +36,7 @@ Si le cookie [!DNL Experience Cloud] (AMCV) n’est pas présent, un appel du se
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Le cookie s_vi est défini</b> </p> </td> 
-   <td colname="col2"> <p>Lorsqu’un visiteur du site avec un cookie s_vi rencontre le service Experience Cloud Identity pour la première fois, ce service : </p> 
+   <td colname="col2"> <p>Lorsqu’un visiteur du site avec un cookie s_vi rencontre le service d’identités d’Experience Cloud pour la première fois, ce service : </p> 
     <ul id="ul_BE584810280D4874AF802A9247011787"> 
      <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">Écrit dans le cookie AMCV l’<span class="keyword">Analytics</span> ID stocké dans le cookie s_vi. Il est écrit en tant qu’<span class="keyword">Analytics</span> ID (AID). Cette action <i>n’a aucune</i> incidence sur les décomptes des visiteurs. <span class="keyword"> Analytics</span> continue à identifier les utilisateurs à l’aide de leur ID hérité. </li> 
      <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">Écrit le MID dans le cookie AMCV. Le MID identifie les utilisateurs dans différentes solutions. </li> 

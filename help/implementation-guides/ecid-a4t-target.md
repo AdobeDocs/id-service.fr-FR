@@ -5,8 +5,8 @@ title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur 
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '807'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Le diagramme ainsi que les sections ci-dessous décrivent le déroulement et les
 
 ## Étape 1 : demande de page {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-L’activité côté serveur commencer lorsqu’un visiteur fait une demande HTTP de chargement d’une page Web. Lors de cette étape, votre serveur reçoit cette demande et vérifie [Cookie AMCV](../introduction/cookies.md). Le cookie AMCV contient l’[!DNL Experience Cloud] ID (MID) du visiteur.
+L’activité côté serveur commencer lorsqu’un visiteur fait une demande HTTP de chargement d’une page Web. Au cours de cette étape, votre serveur reçoit cette demande et vérifie le [cookie AMCV](../introduction/cookies.md). Le cookie AMCV contient l’[!DNL Experience Cloud] ID (MID) du visiteur.
 
 ## Étape 2 : génération de la payload du service d’ID {#section-c86531863db24bd9a5b761c1a2e0d964}
 
@@ -157,9 +157,9 @@ Ajoutez-les en tant que paires noms-valeurs dans la section **[!UICONTROL Géné
 * **[!UICONTROL Nom :]** serverState
 * **[!UICONTROL Valeur :]** %serverState%
 
-   >[!IMPORTANT]
-   >
-   >Le nom de la valeur doit correspondre au nom de la variable que vous définissez pour `serverState` dans le code de votre page.
+  >[!IMPORTANT]
+  >
+  >Le nom de la valeur doit correspondre au nom de la variable que vous définissez pour `serverState` dans le code de votre page.
 
 Les paramètres configurés doivent se présenter comme suit :
 
@@ -197,4 +197,3 @@ Response.send("
 >[!MORELIKETHIS]
 >
 >* [Package du service d’ID côté serveur à partir de Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
-

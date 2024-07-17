@@ -1,16 +1,16 @@
 ---
 description: Ces instructions concernent les clientes et clients d’Analytics et d’Audience Manager qui souhaitent utiliser le service d’identités d’Experience Cloud et n’utilisent pas les balises de collecte de données. Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
 keywords: Service d’ID
-title: Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager
+title: Mise en œuvre du service d’identités d’Experience Cloud pour Analytics et Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 100%
 
 ---
 
-# Mise en œuvre du service Experience Cloud Identity pour Analytics et Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Mise en œuvre du service d’identités d’Experience Cloud pour Analytics et Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
 Ces instructions concernent les clientes et clients d’Analytics et d’Audience Manager qui souhaitent utiliser le service d’identités d’Experience Cloud et n’utilisent pas les [balises de collecte de données](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Cependant, il est vivement recommandé d’utiliser les balises pour implémenter le service d’identités. Les balises optimisent le workflow d’implémentation et assurent automatiquement le placement et le séquencement adéquats du code.
 
@@ -192,7 +192,7 @@ Pour tester la mise en œuvre du service d’ID, recherchez les éléments suiva
 
 * [le cookie AMCV](../introduction/cookies.md) dans le domaine où est hébergée votre page.
 * Valeur du MID dans la demande d’image Analytics avec le [débogueur Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=fr).
-* Voir aussi [Test et vérification du service Experience Cloud Identity](../implementation-guides/test-verify.md).
+* Voir aussi [Test et vérification du service d’identités d’Experience Cloud](../implementation-guides/test-verify.md).
 
 Pour vérifier le transfert côté serveur, voir [Comment vérifier l’implémentation du transfert côté serveur](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html?lang=fr).
 

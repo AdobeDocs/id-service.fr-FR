@@ -5,7 +5,7 @@ title: Notes de mise à jour 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Notes de mise à jour et mises à jour de 2015.
 
 Novembre 2015
 
-La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service de [!DNL Experience Cloud] ID afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur. Voir [Prise en charge de la loi COPPA dans le service Experience Cloud Identity](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Pour les versions 1.5.3 ou ultérieures.
+La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service de [!DNL Experience Cloud] ID afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur. Voir [Prise en charge de la norme COPPA dans le service d’identités d’Experience Cloud](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413) Pour les versions 1.5.3 ou ultérieures.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -34,7 +34,7 @@ Août 2015
 * Correction d’un bug pour empêcher le service d’ID de demander un iframe s’il n’y a aucune donnée à synchroniser ou à déclencher. (AAM-20164)
 * Correction d’un bogue qui empêchait le service d’ID de définir correctement un cookie de domaine de niveau supérieur à parties multiples. Si, par exemple, vous avez un domaine du type `my_company.co.uk`, dans certains cas, le service d’ID définirait un cookie dans `co.uk` seulement. (AN-104683)
 
-   Cela n’a affecté que quelques clients qui remplissaient *tous* les critères suivants :
+  Cela n’a affecté que quelques clients qui remplissaient *tous* les critères suivants :
 
    * Utilisation du service d’ID.
    * activation d’une [période de grâce ](../reference/analytics-reference/grace-period.md)*ou* utilisation de cookies propriétaires et de cookies tiers de blocage des utilisateurs ;
@@ -44,7 +44,7 @@ Août 2015
 Les révisions de la documentation de cette mise à jour incluent :
 
 * [Méthodes d’API et bibliothèque de code](../library/library.md#concept-ff27497375644a898d47984aefb21c97) : Réorganisation du contenu et du texte. Dans la plupart des cas, une page est dédiée à chaque méthode.
-* [Conditions requises du service Experience Cloud Identity](../reference/requirements.md) : Contenu révisé et texte réorganisé.
+* [Conditions requises pour le service d’identités d’Experience Cloud](../reference/requirements.md) : contenu révisé et texte réorganisé.
 
 ## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 

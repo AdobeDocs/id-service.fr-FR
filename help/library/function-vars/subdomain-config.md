@@ -1,18 +1,18 @@
 ---
-description: Définissez le nom de domaine par défaut utilisé par les appels au service Experience Cloud Identity en votre propre nom de sous-domaine avec ces configurations.
+description: Définissez le nom de domaine par défaut utilisé par les appels au service d’identités d’Experience Cloud en votre propre nom de sous-domaine avec ces configurations.
 keywords: Service d’ID
 title: audienceManagerServer et audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '212'
 ht-degree: 100%
 
 ---
 
 # audienceManagerServer et audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Définissez le nom de domaine par défaut utilisé par les appels au service Experience Cloud Identity en votre propre nom de sous-domaine avec ces configurations.
+Définissez le nom de domaine par défaut utilisé par les appels au service d’identités d’Experience Cloud en votre propre nom de sous-domaine avec ces configurations.
 
 **Syntaxe :**
 

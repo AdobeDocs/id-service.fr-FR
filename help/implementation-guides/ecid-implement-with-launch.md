@@ -1,19 +1,19 @@
 ---
-description: Adobe Experience Platform Launch est l’outil principal pour configurer, déployer et intégrer le service Experience Cloud Identity à vos autres solutions Experience Cloud.
+description: Adobe Experience Platform Launch est l’outil principal pour configurer, déployer et intégrer le service d’identités d’Experience Cloud à vos autres solutions Experience Cloud.
 title: Mise en œuvre avec Launch
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '167'
 ht-degree: 100%
 
 ---
 
 # Implémentation avec les balises Experience Platform {#implement-with-launch}
 
-Les balises d’Adobe Experience Platform constituent l’outil principal pour configurer, déployer et intégrer Experience Cloud Identity Service à vos autres solutions Experience Cloud.
+Les balises d’Adobe Experience Platform constituent l’outil principal pour configurer, déployer et intégrer le service d’identités d’Experience Cloud à vos autres solutions Experience Cloud.
 
 ## À propos des balises Experience Platform {#section-611711602854464ea351a4af80a8dafe}
 

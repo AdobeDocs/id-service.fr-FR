@@ -1,18 +1,18 @@
 ---
-description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec le service Experience Cloud Identity.
-keywords: Service Experience Cloud Identity
-title: Questions fréquentes sur Analytics et le service Identity
+description: Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec le service d’identités d’Experience Cloud.
+keywords: Service d’identités d’Experience Cloud
+title: Questions fréquentes sur Analytics et le service d’identités
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '963'
 ht-degree: 100%
 
 ---
 
-# Questions fréquentes sur Analytics et le service Identity{#analytics-and-id-service-faqs}
+# Questions fréquentes sur Analytics et le service d’identités{#analytics-and-id-service-faqs}
 
-Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec Identity Service.
+Questions fréquemment posées sur les fonctionnalités et problèmes liés à l’utilisation d’Analytics avec le service d’identités.
 
 ## Serveurs de suivi {#section-9a2ad7842e364c869e1650480d17f8ef}
 
@@ -24,9 +24,9 @@ Cependant, il arrive parfois que les clients divisent leur fichier Analytics Ap
 
 Si vous ne trouvez pas les informations de votre serveur de suivi, il se peut que votre instance Analytics ne soit pas correctement configurée. Contactez l’[Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) si vous ne trouvez pas les informations de votre serveur de suivi.
 
-**Que se passe-t-il si j’utilise le service Identity et que je change de serveur de suivi ?**
+**Que se passe-t-il si j’utilise le service d’identités et que je change de serveur de suivi ?**
 
-Aucun changement pour les utilisateurs qui ont déjà été authentifiés par le service Identity. Les visiteurs historiques qui ne sont pas passés au service Identity et qui sont toujours identifiés avec un cookie Analytics seront détachés du service. Le nombre d’utilisateurs affectés dépend de la durée d’activité du service Identity. Par exemple, une mise en œuvre où le service Identity a été actif depuis une semaine aura plus d’utilisateurs historiques qu’une mise en œuvre où le service Identity a été actif depuis six mois, puisque les utilisateurs qui sont revenus sur le site ont effectué la migration.
+Aucun changement pour les utilisateurs ou utilisatrices qui ont déjà été identifiés par le service d’identités. Les visiteurs historiques qui ne sont pas passés au service d’identités et qui sont toujours identifiés avec un cookie Analytics seront détachés du service. Le nombre d’utilisateurs affectés dépend de la durée d’activité du service dʼidentités. Par exemple, une mise en œuvre où le service d’identités a été actif depuis une semaine aura plus d’utilisateurs historiques qu’une mise en œuvre où le service d’identités a été actif depuis six mois, puisque les utilisateurs qui sont revenus sur le site ont effectué la migration.
 
 ## Implémentation et configuration {#section-6028f55d5b514ae6a631c6a79f42fb89}
 
@@ -34,15 +34,15 @@ Aucun changement pour les utilisateurs qui ont déjà été authentifiés par le
 
 Si vous disposez d’un site d’accès principal où les clients peuvent être identifiés avant de se rendre sur d’autres domaines, un CNAME peut activer le suivi inter-domaines dans les navigateurs qui n’acceptent pas les cookies tiers (comme Safari).
 
-Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini dans le [domaine demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr) lors de la demande pour récupérer un identifiant visiteur. Ce cookie permet au service Identity de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation. Dans les navigateurs qui rejettent les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
+Dans les navigateurs qui acceptent les cookies tiers, un cookie est défini dans le [domaine demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr) lors de la demande pour récupérer un identifiant visiteur. Ce cookie permet au service d’identités de renvoyer le même identifiant visiteur Experience Cloud sur tous les domaines configurés à l’aide du même ID d’organisation. Dans les navigateurs qui rejettent les cookies tiers, un nouvel identifiant visiteur Experience Cloud est attribué pour chaque domaine.
 
 Même lorsqu’un CNAME est configuré, si le site d’entrée principal n’est pas visité en premier, les visiteurs sont identifiés différemment sur le site secondaire et sur le site principal dans les navigateurs qui n’acceptent pas les cookies tiers.
 
 **Pourquoi le paramètre Experience Cloud ID (MID) n’est-il pas présent dans la demande Analytics ?**
 
-Si le service Identity renvoie correctement les informations, mais que le paramètre `MID` n’apparaît pas, vérifiez que vous avez effectué la mise à niveau vers une version prise en charge d’AppMeasurement.
+Si le service d’identités renvoie correctement les informations, mais que le paramètre `MID` n’apparaît pas, vérifiez que vous avez effectué la mise à niveau vers une version prise en charge d’AppMeasurement.
 
-**Mon site peut-il utiliser du code H et AppMeasurement pour JavaScript avec le service Identity ?**
+**Mon site peut-il utiliser du code H et AppMeasurement pour JavaScript avec le service d’identités ?**
 
 Oui. Tant que les deux fichiers font référence au même fichier VisitorAPI.js, vous pouvez utiliser un mélange de code H et AppMeasurement pour JavaScript sur l’ensemble de votre site.
 
@@ -52,34 +52,34 @@ Cependant, le code H n’est pas pris en charge avec le code visitorAPI.js versi
 
 Voir [La Période de grâce du service d’identité](../reference/analytics-reference/grace-period.md) et contacter le service [d’assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
-**Pourquoi dois-je migrer vers la collecte de données régionales (RDC) pour utiliser le service Identity ?**
+**Pourquoi dois-je migrer vers la collecte de données en temps réel (RDC) pour utiliser le service d’identités ?**
 
 La collecte de données régionales offre des avantages en termes de performances globales et est requise pour vous assurer que votre implémentation sera prête pour les fonctions à venir qui exploiteront le réseau global de notes de périphérie d’Adobe. Voir [Conditions requises pour Analytics : collecte de données régionales. ](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f)
 
 ## Création de rapports {#section-123cd55a32e54a45a23beb140becfa8f}
 
-**Quelles sont les causes possibles d’écarts lors de l’utilisation d’Analytics avec le service Identity ?**
+**Quelles sont les causes possibles d’écarts lors de l’utilisation d’Analytics avec le service d’identités ?**
 
-Causes possibles d’écarts lors de l’utilisation du service Identity :
+Causes possibles d’écarts lors de l’utilisation du service d’identités :
 
 * Utilisation continue du cookie s_vi hérité. Cela contribue à des incohérences dans la collecte des données.
 * Doublon comptant les visiteurs lorsqu’ils naviguent d’un questionnaire à un pop-up.
 
 ## Cookies {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
-**Que se passe-t-il dans Analytics lorsque le service Identity ne peut pas définir le cookie AMCV ?**
+**Que se passe-t-il dans Analytics lorsque le service d’identités ne peut pas définir le cookie AMCV ?**
 
 Il existe trois scénarios possibles dans lesquels cela affecte les données Analytics pour les nouveaux visiteurs :
 
 1. Un utilisateur final quitte une page avant que les cookies AMCV ne soient définis correctement (dans la fenêtre de délai d’attente de 30 secondes).
 
-   Si un visiteur quitte une page avant qu’elle ne soit chargée, l’accès Analytics n’est pas envoyé. Analytics ne recevra pas de données de ce scénario et considérera que les données ont été perdues lors d’une fermeture anticipée de la page. D’après nos tests qui comprenaient des géographies éloignées, nous avons constaté que ce scénario représentait en moyenne moins d’1 % du trafic. Il est important de noter que ce scénario se produit parfois même sans la présence du service Identity. C’est une conséquence de l’inclusion du code de la collecte de données Analytics au bas de la page.
+   Si un visiteur quitte une page avant qu’elle ne soit chargée, l’accès Analytics n’est pas envoyé. Analytics ne recevra pas de données de ce scénario et considérera que les données ont été perdues lors d’une fermeture anticipée de la page. D’après nos tests qui comprenaient des géographies éloignées, nous avons constaté que ce scénario représentait en moyenne moins d’1 % du trafic. Il est important de noter que ce scénario se produit parfois même sans la présence du service d’identités. C’est une conséquence de l’inclusion du code de la collecte de données Analytics au bas de la page.
 
-1. Un service Identity ou un Analytics ID n’est pas attribué à un utilisateur final dans la fenêtre de délai d’attente de 30 secondes en raison d’une connexion lente ou de la « rotation » du navigateur.
+1. Un service d’identités ou un Analytics ID n’est pas attribué à un utilisateur final dans la fenêtre de délai d’attente de 30 secondes en raison d’une connexion lente ou de la « rotation » du navigateur.
 
-   Le service Identity et l’Analytics ID ne sont pas définis et le visiteur reçoit un ID côté client. Cela permet de capturer les données Analytics, mais le profil du visiteur est interrompu lorsque, sur une page suivante, un identifiant Analytics est défini. L’identifiant côté client ne correspond pas non plus à un profil de visiteur existant stocké dans Audience Manager ou Analytics. Cet identifiant côté client s’affiche également sous la forme de deux visiteurs différents dans Analytics si deux domaines distincts sont envoyés dans la même suite de rapports.
+   Le service d’identités et l’Analytics ID ne sont pas définis et le visiteur reçoit un ID côté client. Cela permet de capturer les données Analytics, mais le profil du visiteur est interrompu lorsque, sur une page suivante, un identifiant Analytics est défini. L’identifiant côté client ne correspond pas non plus à un profil de visiteur existant stocké dans Audience Manager ou Analytics. Cet identifiant côté client s’affiche également sous la forme de deux visiteurs différents dans Analytics si deux domaines distincts sont envoyés dans la même suite de rapports.
 
-1. Un ID de service Identity n’est pas affecté à un utilisateur final dans la fenêtre de délai d’attente de 30 secondes, mais un ID de suivi Analytics standard lui est affecté et la période de grâce n’est pas activée.
+1. Un ID de service d’identités n’est pas affecté à un utilisateur final dans la fenêtre de délai d’attente de 30 secondes, mais un ID de suivi Analytics standard lui est affecté et la période de grâce n’est pas activée.
 
    Le scénario 3 produit le même résultat que le scénario 2 en ce sens qu’un ID côté client est utilisé.
 
@@ -90,4 +90,3 @@ Il existe trois scénarios possibles dans lesquels cela affecte les données Ana
 >[!MORELIKETHIS]
 >
 >* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
-

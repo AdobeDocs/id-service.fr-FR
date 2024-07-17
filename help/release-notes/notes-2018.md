@@ -1,18 +1,18 @@
 ---
-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2018.
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2018.
 keywords: Service d’ID
 title: Notes de mise à jour 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '500'
 ht-degree: 100%
 
 ---
 
 # Notes de mise à jour 2018 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service Experience Cloud Identity en 2018.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -68,7 +68,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Pic irréaliste au niveau du nombre de visiteurs uniques </p> </td> 
-   <td colname="col2"> <p>Avec le lancement du service Experience Cloud Identity 3.1.0, nous avons détecté une erreur qui créait un pic irréaliste du nombre de visiteurs uniques lorsque cette version était mise en œuvre. Ce comportement apparaît uniquement avec la dernière version d’ECID, la version 3.1.0, et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actuel uniquement » dans les paramètres de confidentialité d’un navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
+   <td colname="col2"> <p>Avec le lancement du service d’identités d’Experience Cloud 3.1.0, nous avons détecté une erreur qui créait un pic irréaliste du nombre de visiteurs uniques lorsque cette version était mise en œuvre. Ce comportement apparaît uniquement avec la dernière version d’ECID, la version 3.1.0, et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actuel uniquement » dans les paramètres de confidentialité d’un navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
   </tr> 
  </tbody> 
 </table>

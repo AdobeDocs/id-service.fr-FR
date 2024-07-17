@@ -5,7 +5,7 @@ title: Mise en œuvre côté serveur alliée à JavaScript
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Veillez à rechercher les identifiants visiteur Experience Cloud et Analytics e
 
 >[!IMPORTANT]
 >
->AppMeasurement pour Java ne prend actuellement pas en charge le service Experience Cloud Identity.
+>AppMeasurement pour Java ne prend actuellement pas en charge le service d’identités d’Experience Cloud.
 
 ## API d’insertion de données {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -32,4 +32,4 @@ Voir [Balises XML prises en charge](https://developer.adobe.com/).
 
 ## AppMeasurement pour Java {#section-d664b94934924d048300d9c2b6560085}
 
-Experience Cloud Identity Service n’est actuellement pas pris en charge par AppMeasurement pour Java.
+Le service dʼidentités d’Experience Cloud n’est actuellement pas pris en charge par AppMeasurement pour Java.

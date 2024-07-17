@@ -1,5 +1,5 @@
 ---
-description: Questions fréquemment posées sur le service Experience Cloud Identity ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
+description: Questions fréquemment posées sur le service d’identités d’Experience Cloud ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
 keywords: Service d’ID
 title: Questions fréquentes
 feature-set: Experience Cloud Services
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Questions fréquentes {#faqs}
 
-Questions fréquemment posées sur le service Experience Cloud Identity ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
+Questions fréquemment posées sur le service d’identités d’Experience Cloud ainsi que des sections sur le service d’ID et d’autres combinaisons de solutions Experience Cloud.
 
 * [FAQ sur le service d’ID](faq.md)
 * [Questions fréquentes sur Analytics et le service d’ID](analytics-faq.md)

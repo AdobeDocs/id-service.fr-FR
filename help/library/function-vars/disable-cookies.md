@@ -1,5 +1,5 @@
 ---
-description: Un indicateur booléen facultatif qui empêche le service Experience Cloud Identity de renvoyer le cookie tiers demdex.net.
+description: Un indicateur booléen facultatif qui empêche le service d’identités d’Experience Cloud de renvoyer le cookie tiers demdex.net.
 keywords: Service d’ID
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-Un indicateur booléen facultatif qui empêche le service Experience Cloud Identity de renvoyer le cookie tiers demdex.net.
+Un indicateur booléen facultatif qui empêche le service d’identités d’Experience Cloud de renvoyer le cookie tiers demdex.net.
 
 >[!NOTE]
 >

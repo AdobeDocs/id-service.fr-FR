@@ -1,5 +1,5 @@
 ---
-description: Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service Experience Cloud Identity.
+description: Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service d’identités d’Experience Cloud.
 keywords: Service d’ID
 title: useCORSOnly
 exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # useCORSOnly{#usecorsonly}
 
-Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service Experience Cloud Identity.
+Un indicateur booléen facultatif qui contrôle la manière dont le navigateur demande des ressources auprès du service d’identités d’Experience Cloud.
 
 **Syntaxe :** `useCORSOnly: true|false` (la valeur par défaut est `false`).
 

@@ -1,5 +1,5 @@
 ---
-description: Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service Experience Cloud Identity.
+description: Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d’identités d’Experience Cloud.
 keywords: Service d’ID
 title: API du service d’ID
 feature-set: Experience Cloud Services
@@ -7,14 +7,14 @@ feature: TK421
 exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '65'
 ht-degree: 100%
 
 ---
 
 # API du service d’ID{#id-service-api}
 
-Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service Experience Cloud Identity.
+Propriétés, méthodes et configurations qui vous permettent de travailler par programmation avec le service d’identités d’Experience Cloud.
 
 * [Aperçu des configurations](function-vars/function-vars.md)
 * [Aperçu des méthodes](get-set/get-set.md)

@@ -1,18 +1,18 @@
 ---
-description: Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
+description: Le service dʼidentités d’Experience Cloud remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 keywords: Service d’ID
 title: Définition des Analytics ID et Experience Cloud ID
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '885'
 ht-degree: 100%
 
 ---
 
 # Définition des Analytics ID et Experience Cloud ID{#setting-analytics-and-experience-cloud-ids}
 
-Le service Experience Cloud Identity remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
+Le service dʼidentités d’Experience Cloud remplace les anciennes méthodes d’identification des visiteurs d’Analytics.
 
 Une fois le service d’ID mis en œuvre, ce code s’exécute avant AppMeasurement. Le service d’ID récupère les Experience Cloud et Analytics ID afin que ces valeurs soient prêtes au chargement d’AppMeasurement.
 
@@ -90,4 +90,3 @@ Dans de nombreux scénarios, il se peut qu’il y ait 2 ou 3 ID distincts pour 
 >[!MORELIKETHIS]
 >
 >* [Ordre des opérations pour les Analytics ID](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
-

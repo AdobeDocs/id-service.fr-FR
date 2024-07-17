@@ -1,18 +1,18 @@
 ---
-description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service Experience Cloud Identity.
+description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service d’identités d’Experience Cloud.
 keywords: Service d’ID
-title: Conditions requises pour le service Experience Cloud Identity
+title: Conditions requises pour le service d’identités d’Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
-workflow-type: ht
-source-wordcount: '653'
+workflow-type: tm+mt
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
 
-# Conditions requises pour le service Experience Cloud Identity {#requirements-for-the-experience-cloud-id-service}
+# Conditions requises pour le service d’identités d’Experience Cloud {#requirements-for-the-experience-cloud-id-service}
 
-Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service Experience Cloud Identity.
+Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service d’identités d’Experience Cloud.
 
 ## Les conditions requises assurent le succès et la prise en charge de la mise en œuvre {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -135,4 +135,3 @@ Le code de votre SDK doit être activé pour le service d’ID. Activez et tél�
 >[!MORELIKETHIS]
 >
 >* [Bibliothèque de code](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-

@@ -1,18 +1,18 @@
 ---
-description: Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+description: Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service d’identités d’Experience Cloud, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 keywords: Service d’ID
 title: Méthodes callTimeOut
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '129'
 ht-degree: 100%
 
 ---
 
 # Méthodes callTimeOut{#calltimeout-methods}
 
-Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service Experience Cloud Identity, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
+Appelez ces fonctions du service d’ID pour déterminer l’état du délai d’expiration pour une requête d’ID du service d’identités d’Experience Cloud, d’Analytics ou d’Audience Manager. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
 ## Fonctions du délai d’expiration {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -25,7 +25,7 @@ Appelez ces fonctions du service d’ID pour déterminer l’état du délai d�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Service Experience Cloud Identity </p> </td> 
+   <td colname="col1"> <p>Service d’identités d’Experience Cloud </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
