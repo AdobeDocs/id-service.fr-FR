@@ -3,14 +3,18 @@ description: Cette fonction permet de partager l’Experience Cloud ID d’un 
 keywords: Service d’ID
 title: appendVisitorIDsTo (suivi interdomaines)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+source-git-commit: fc630f3a161b65edab1c34ec3b3f07938bf13aaf
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 88%
 
 ---
 
 # appendVisitorIDsTo (suivi interdomaines){#appendvisitoridsto-cross-domain-tracking}
+
+>[!TIP]
+>
+>Le suivi inter-domaines ne fonctionnera pas comme prévu si l’ECID est initialement rejeté (ou précédemment). Il ne vérifie pas les identifiants existants qui ont été transmis par URL ou qui existaient auparavant dans le cookie, étant donné qu’il s’agissait des identifiants lorsque le consentement a été défini sur &quot;NON&quot;.
 
 Cette fonction permet de partager l’Experience Cloud ID d’un visiteur sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers. Pour utiliser cette fonction, vous devez avoir mis en œuvre le service d’ID et posséder les domaines source et de destination. Disponible dans VisitorAPI.js 1.7.0 ou version ultérieure.
 
