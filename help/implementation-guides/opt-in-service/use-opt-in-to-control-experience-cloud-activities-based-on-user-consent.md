@@ -29,7 +29,7 @@ L’[!UICONTROL Opt-in] vous permet également de décider si des balises se dé
 
 L’[!UICONTROL Opt-in] est plus facile à configurer avec les balises Adobe Experience Platform (anciennement Launch). Consultez la courte vidéo suivante pour découvrir comment procéder.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40333/?quality=12&captions=fre_fr)
 
 Si vous n’utilisez pas les balises Experience Platform, vous pouvez définir la configuration de l’[!UICONTROL Opt-in] dans l’initialisation de l’objet Visiteur global, comme indiqué dans la [documentation](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=fr).
 
@@ -43,7 +43,7 @@ Lors de la configuration d’une interface utilisateur afin qu’elle utilise l�
 
 Dans la vidéo suivante, visionnez une démonstration rapide de l’[!UICONTROL Opt-in] sur la page et découvrez comment il peut influer sur si oui ou non les solutions Experience Cloud définissent les cookies, déclenchent les balises, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40338/?quality=12&captions=fre_fr)
 
 **REMARQUE :** il est important de noter qu’au moment de la rédaction de cet article, l’[!UICONTROL Opt-in] n’a pas été intégré dans les bibliothèques pour toutes les applications Experience Cloud. Les bibliothèques actuellement prises en charge pour l’[!UICONTROL Opt-in] sont les suivantes :
 
