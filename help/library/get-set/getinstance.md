@@ -16,7 +16,7 @@ getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experie
 
 **Syntaxe**
 
-**JavaScript **
+**JavaScript &#x200B;**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE", { 
