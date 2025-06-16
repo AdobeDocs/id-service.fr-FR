@@ -4,9 +4,9 @@ keywords: Service d’ID ; Service d’identités ; Experience Cloud Identit
 title: Service d’identités d’Experience Cloud
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
 source-git-commit: 507b5c9fed0d6d16828522c0fd9c7db4fdeefe3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Le service dʼidentités d’Experience Cloud active la structure d’identifica
 
 ## Comprendre les principales entités identitaires
 
-Pour mieux comprendre comment Adobe permet d’identifier les visiteurs de manière unique et résout les informations d’identité, lisez la répartition ci-dessous :
+Pour mieux comprendre la façon unique dont Adobe identifie les visiteurs et visiteuses et résout les informations d’identité, lisez le résumé ci-dessous :
 
 * **Experience Cloud Identity Service** : le service d’identités Experience Cloud Identity Service **est chargé de définir l’Experience Cloud ID (ECID)**. Pour plus d’informations, reportez-vous à la [Présentation du service d’identités d’Experience Cloud](./introduction/overview.md).
 * **Experience Cloud ID (ECID)** : l’ECID est un espace de noms d’identité partagé utilisé dans les applications Adobe Experience Platform et Adobe Experience Cloud pour identifier les personnes et les appareils. Pour plus d’informations sur l’ECID, consultez la [Présentation de l’ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=fr).
