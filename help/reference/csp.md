@@ -3,10 +3,10 @@ description: Une politique de sécurité de contenu (CSP) est une fonction d’e
 keywords: Service d’ID
 title: Politiques de sécurité du contenu et service d’identités d’Experience Cloud
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '501'
+ht-degree: 81%
 
 ---
 
@@ -30,44 +30,85 @@ L’utilisation des CSP est courante et bien comprise. La présente documentatio
 
 Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messagerie instantanée pour chaque solution ou service Experience Cloud de liste que vous utilisez.
 
-<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Solution ou service Experience Cloud </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
+<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry">Solution ou service Experience Cloud</th>
+   <th colname="col2" class="entry">Description</th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>Modifiez votre CSP afin d’inclure les domaines ci-dessous : </p> <p> 
-     <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
-      <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
-      <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Target</b> </p> </td> 
-   <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure <span class="codeph">*.tt.omtrdc.net</span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Service Experience Cloud ID et Audience Manager</b> </p> </td> 
-   <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure les domaines ci-dessous :</p> 
-   <p><ul>
-   <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li></ul></p> <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et le service d’identités d’Experience Cloud</a>, ainsi que pour les synchronisations des identifiants. Voir également <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr" format="https" scope="external">Signification des appels vers le domaine Demdex</a>. </p> </td> </tr> 
- <tr>
- <td colname="col1"> <p> <b>Module externe Activity Map</b> </p> </td> 
- <td colname="col2"> <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure *.adobe.com. **Remarque** : si Activity Map était déjà installé avant janvier 2020, votre navigateur verra toujours une requête initiale vers *.omniture.com, mais il sera redirigé vers *.adobe.com. </p></td> 
- </tr>
- <tr>
- <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Si vous pouvez modifier les paramètres de chaîne de requête, veillez à mettre en liste blanche les paramètres « s_kwcid » et « ef_id ». Normalement, Advertising Analytics utilise uniquement « s_kwcid », mais si vous sélectionnez Ad Cloud Search ou DSP, « ef_id » est également utilisé. Ces paramètres de chaîne de requête sont alphanumériques. Le paramètre « s_kwcid » le caractère « ! » et le paramètre « ef_id » utilise le caractère « : ». Si le caractère « ! » est bloqué dans l’URL, vous devez également le mettre en liste blanche.</p></td> 
- </tr>
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1">
+    <p><b>AppMeasurement</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifiez votre CSP afin d’inclure les domaines ci-dessous :</p>
+    <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B">
+     <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"><span class="codeph">*.2o7.net</span></li>
+     <li id="li_4B12A283716746949201528CD6AF529E"><span class="codeph">*.omtrdc.net</span></li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Cible</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifiez votre CSP pour inclure <span class="codeph">*.tt.omtrdc.net</span>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Service Experience Cloud ID et Audience Manager</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure les domaines ci-dessous :</p>
+    <ul>
+     <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
+     <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li>
+    </ul>
+    <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et le service d’identités Experience Cloud</a> ainsi que pour les synchronisations d’identifiants. Voir aussi <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr" format="https" scope="external">Compréhension des appels vers le domaine Demdex</a>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Plug-in Activity Map</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure *.adobe.com. **Remarque** : si Activity Map était déjà installé avant janvier 2020, votre navigateur verra toujours une requête initiale vers *.omniture.com, mais il sera redirigé vers *.adobe.com.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Advertising Analytics</b></p>
+   </td>
+   <td colname="col2">
+    <p>Si vous limitez des paramètres de chaîne de requête, placez sur liste autorisée les paramètres suivants :</p>
+    <ul>
+     <li><code>s_kwcid</code> (qui utilise <code>!</code>)</li>
+     <li><code>ef_id</code> (qui utilise <code>:</code>)</li>
+    </ul>
+    <p>Si vous bloquez le caractère <code>!</code> dans les URL, vous devez également le placer sur la liste autorisée.</p>
+    <p>Advertising Analytics utilise uniquement <code>s_kwcid</code>, mais Advertising Search, Social et Commerce et Advertising DSP utilisent également <code>ef_id</code>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Adobe Advertising</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifiez votre CSP pour inclure les domaines suivants :</p>
+    <ul>
+     <li><code>.everestjs.net</code></li>
+     <li><code>.everesttech.net</code></li>
+    </ul>
+   </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!MORELIKETHIS]
