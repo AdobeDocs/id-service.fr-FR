@@ -5,8 +5,8 @@ title: Politiques de sécurité du contenu et service d’identités d’Experie
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,12 +55,12 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
     <p><b>Cible</b></p>
    </td>
    <td colname="col2">
-    <p>Modifiez votre CSP pour inclure <span class="codeph">*.tt.omtrdc.net</span>.</p>
+    <p>Modifiez votre CSP afin d’inclure <span class="codeph">*.tt.omtrdc.net</span>.</p>
    </td>
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Service Experience Cloud ID et Audience Manager</b></p>
+    <p><b>Experience Cloud ID_Service et Audience Manager</b></p>
    </td>
    <td colname="col2">
     <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure les domaines ci-dessous :</p>
@@ -71,12 +71,12 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
      <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li>
     </ul>
-    <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et le service d’identités Experience Cloud</a> ainsi que pour les synchronisations d’identifiants. Voir aussi <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr" format="https" scope="external">Compréhension des appels vers le domaine Demdex</a>.</p>
+    <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et Experience Cloud ID_Service</a> et pour les synchronisations d’ID. Voir également la section <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr" format="https" scope="external">Comprendre les appels vers le domaine Demdex</a>.</p>
    </td>
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Plug-in Activity Map</b></p>
+    <p><b>Plug-in Activity Map</b></p>
    </td>
    <td colname="col2">
     <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure *.adobe.com. **Remarque** : si Activity Map était déjà installé avant janvier 2020, votre navigateur verra toujours une requête initiale vers *.omniture.com, mais il sera redirigé vers *.adobe.com.</p>
@@ -93,7 +93,7 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
      <li><code>ef_id</code> (qui utilise <code>:</code>)</li>
     </ul>
     <p>Si vous bloquez le caractère <code>!</code> dans les URL, alors vous pouvez également le placer sur la liste autorisée.</p>
-    <p>Advertising Analytics utilise uniquement <code>s_kwcid</code>, mais Advertising Search, Social et Commerce et Advertising DSP utilisent également <code>ef_id</code>.</p>
+    <p>Advertising Analytics utilise uniquement <code>s_kwcid</code>, mais Advertising Search, Social et Commerce et Advertising DSP utilisent également <code>ef_id</code>.</p>
    </td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
     <p><b>Adobe Advertising</b></p>
    </td>
    <td colname="col2">
-    <p>Modifiez votre CSP pour inclure les domaines suivants :</p>
+    <p>Modifiez votre CSP afin d’inclure les domaines suivants :</p>
     <ul>
      <li><code>.everestjs.net</code></li>
      <li><code>.everesttech.net</code></li>
