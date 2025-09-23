@@ -4,10 +4,10 @@ user-guide-title: Aide du service d’identités d’Experience Cloud
 breadcrumb-title: Guide du service d’identités
 user-guide-description: Le service d’identités d’Adobe Experience Cloud fournit un identifiant universel et persistant qui identifie vos visiteurs et visiteuses à l’échelle de toutes les solutions dans Experience Cloud. Il permet de remplacer le code de génération d’ID hérité pour les services et solutions Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
+source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 98%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 # Aide du service d’identités d’Experience Cloud {#using}
 
 + [Aide du service d’identités](home.md)
-+ Présentation {#intro}
++ Aperçu {#intro}
    + [Présentation](introduction/overview.md)
    + [À propos du service d’ID](introduction/about-id-service.md)
    + [Cookies et service d’ID](introduction/cookies.md)
    + [Requête et définition d’ID par le service d’ID](introduction/id-request.md)
    + [Comprendre la synchronisation et les taux de correspondance](introduction/match-rates.md)
-+ Implémentation {#implementation}
++ Mise en œuvre {#implementation}
    + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
    + [Implémentation avec les balises Experience Platform](implementation-guides/ecid-implement-with-launch.md)
@@ -103,7 +103,7 @@ ht-degree: 100%
    + [Mesure de pulsation vidéo et service d’ID](reference/heartbeat.md)
    + [Data Workbench et service d’ID](reference/dwb.md)
    + [Prise en charge du hachage SHA-256 pour setCustomerIDs](reference/hashing-support.md)
-+ FAQ {#faqs}
++ Questions fréquentes {#faqs}
    + [Présentation des FAQ](faq-intro/faq-intro.md)
    + [FAQ sur le service d’ID](faq-intro/faq.md)
    + [Questions fréquentes sur Analytics et le service d’ID](faq-intro/analytics-faq.md)
@@ -118,3 +118,4 @@ ht-degree: 100%
    + [Notes de mise à jour de 2016](release-notes/notes-2016.md)
    + [Notes de mise à jour de 2015](release-notes/notes-2015.md)
 + [Test Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
++ [Fichier de test masqué](hidden-file.md)
