@@ -5,9 +5,9 @@ breadcrumb-title: Guide du service d’identités
 user-guide-description: Le service d’identités d’Adobe Experience Cloud fournit un identifiant universel et persistant qui identifie vos visiteurs et visiteuses à l’échelle de toutes les solutions dans Experience Cloud. Il permet de remplacer le code de génération d’ID hérité pour les services et solutions Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 98%
       + [Références d’Opt-in](implementation-guides/opt-in-service/api.md)
       + [Utilisation des services Opt-in avec un framework IAB](implementation-guides/opt-in-service/iab.md)
 + API du service d’ID {#id-service-api}
-   + [Présentation de l’API du service d’ID](library/library.md)
+   + [Vue d’ensemble de l’API du service d’ID](library/library.md)
    + Configuration {#configurations}
       + [Présentation des configurations](library/function-vars/function-vars.md)
       + [audienceManagerServer et audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -80,7 +80,7 @@ ht-degree: 98%
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
 + Référence {#reference}
-   + [Présentation de la référence](reference/reference.md)
+   + [Vue d’ensemble de la référence](reference/reference.md)
    + Référence Analytics {#analytics-reference}
       + [Présentation de la référence Analytics](reference/analytics-reference/analytics-reference.md)
       + [Présentation de l’implémentation CNAME](reference/analytics-reference/cname.md)
