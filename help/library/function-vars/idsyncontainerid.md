@@ -81,7 +81,7 @@ Selon votre situation, il se peut que vous deviez ajouter cette configuration à
 
 ## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Si vous avez déployé [!UICONTROL DIL ]* et* VisitorAPI.js sur la même page :
+Si vous avez déployé [!UICONTROL DIL &#x200B;]* et* VisitorAPI.js sur la même page :
 
 * Le code du service d’ID des visiteurs a la priorité sur DIL pour les synchronisations des identifiants.
 * Définissez la `idSyncContainerID` configuration uniquement dans le code du service d’ID.
