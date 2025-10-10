@@ -3,7 +3,7 @@ description: Il s’agit d’une API asynchrone qui renvoie les identifiants pou
 keywords: Service d’ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 100%
@@ -25,12 +25,12 @@ Contenu :
 
 ## Syntaxe {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-Cette fonction utilise la syntaxe suivante (le format italique représente un espace réservé pour une variable) : ` var *`valeurs`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`type d’ID`*, visitor.FIELDS. *`type d’ID`*]);`
+Cette fonction utilise la syntaxe suivante (le format italique représente un espace réservé pour une variable) : `var *`valeurs`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`type d’ID`*, visitor.FIELDS. *`type d’ID`*]);`
 
 Dans les paramètres de la fonction :
 
-* ` *`callback`*` représente votre propre code de rappel qui reçoit les ID renvoyés.
-* *(Facultatif)* ` visitor.FIELDS. *`type d’ID`*` est une énumération permettant d’indiquer les [valeurs d’ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) que vous souhaitez que cette fonction renvoie.
+* `*`callback`*` représente votre propre code de rappel qui reçoit les ID renvoyés.
+* *(Facultatif)* `visitor.FIELDS. *`type d’ID`*` est une énumération permettant d’indiquer les [valeurs d’ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) que vous souhaitez que cette fonction renvoie.
 
 Pour plus d’informations, voir les cas d’utilisation et définitions suivants.
 

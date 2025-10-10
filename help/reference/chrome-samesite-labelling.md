@@ -2,7 +2,7 @@
 title: Modifications de l’étiquetage SameSite de Google Chrome
 description: Documentation pour la bibliothèque Adobe ECID (Service d’ID).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 99%
@@ -41,7 +41,7 @@ Tous les clients doivent confirmer que leur configuration JavaScript utilise HTT
 
 Tant que les cookies sont correctement étiquetés, les navigateurs ne prennent aucune mesure pour les bloquer. Les clients auront la possibilité de bloquer certains types de cookies, mais il semblerait qu’il s’agisse pour le moment uniquement d’une option devant être sélectionnée manuellement.
 
-**Les cookies tiers existants sans étiquettes à jour seront ignorés.**
+**Les cookies tiers existants sans libellés à jour seront ignorés.**
 
 Les cookies tiers créés avant que Chrome 80 ne commence à appliquer les paramètres SameSite=`none` et les indicateurs « sécurisé » seront ignorés par Chrome 80 si ces indicateurs sont absents.
 
@@ -117,6 +117,8 @@ Seuls les cookies standards du visiteur communs sont répertoriés dans le table
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Propriétaire côté client | Aucune valeur ajoutée *Chrome opte par défaut pour le paramètre `lax` | Configurable pour les pages externes |
 
->  Les cookies tiers Adobes sont définis côté serveur.
+>
+>
+>Les cookies tiers Adobe sont définis côté serveur.
 
 Pour plus d’informations, voir le document concernant les [politiques de Google Chrome concernant SameSite pour Target](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=fr).

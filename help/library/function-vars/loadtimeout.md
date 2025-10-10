@@ -1,20 +1,20 @@
 ---
-description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) le délai d’attente d’une réponse du service d’ID.
+description: Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) la durée d’attente d’une réponse du service d’ID.
 keywords: Service d’ID
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) le délai d’attente d’une réponse du service d’ID.
+Définit un intervalle d’expiration en millisecondes. Utilisé pour indiquer à d’autres solutions (par exemple, Analytics, Audience Manager, Target, etc.) la durée d’attente d’une réponse du service d’ID.
 
-**Syntaxe :** ` loadTimeout: *`intervalle en millisecondes`*`
+**Syntaxe :** `loadTimeout: *`intervalle en millisecondes`*`
 
 La valeur par défaut est de 30 000 millisecondes (30 secondes). Nous vous recommandons vivement de *ne pas* modifier la valeur par défaut.
 

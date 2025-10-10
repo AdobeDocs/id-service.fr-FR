@@ -3,7 +3,7 @@ description: Définissez le nom de domaine par défaut utilisé par les appels a
 keywords: Service d’ID
 title: audienceManagerServer et audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 100%
@@ -16,8 +16,8 @@ Définissez le nom de domaine par défaut utilisé par les appels au service d�
 
 **Syntaxe :**
 
-* ` audienceManagerServer: " *`votre nom de sous-domaine`*.demdex.net"`
-* ` audienceManagerServerSecure: " *`votre nom de sous-domaine`*.demdex.net"`
+* `audienceManagerServer: " *`votre nom de sous-domaine`*.demdex.net"`
+* `audienceManagerServerSecure: " *`votre nom de sous-domaine`*.demdex.net"`
 
 **Rôle**
 

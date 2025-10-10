@@ -3,7 +3,7 @@ description: Cette configuration vous permet de remplacer l’intervalle d’exp
 keywords: Service d’ID
 title: sdidParamExpiry
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 96%
@@ -18,11 +18,11 @@ Cette configuration vous permet de remplacer l’intervalle d’expiration par d
 
 Si vous devez modifier le délai d’expiration par défaut du SDID, ajoutez `sdidParamExpiry` à la `Visitor.getInstance` fonction en utilisant la syntaxe suivante :
 
-**Syntaxe :** ` sdidParamExpiry: *`temps en secondes`*`
+**Syntaxe :** `sdidParamExpiry: *`temps en secondes`*`
 
 **Exemple de code**
 
-Voici à quoi pourrait ressembler votre code de service d’ID une fois configuré. Cet exemple définit le délai d’expiration du SDID sur 15 secondes. Cette configuration fonctionne avec la méthode d’assistance [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) .
+Voici à quoi pourrait ressembler votre code de service d’ID une fois configuré. Cet exemple définit le délai d’expiration du SDID sur 15 secondes. Cette configuration fonctionne avec la méthode d’assistance [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

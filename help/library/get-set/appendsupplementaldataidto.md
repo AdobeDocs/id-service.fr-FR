@@ -1,9 +1,9 @@
 ---
 description: Cette méthode d’aide vous permet d’ajouter le SDID (Supplemental Data ID) comme paramètre de chaîne de requête à une URL de redirection. Cette opération est utile lorsque vous utilisez A4T et que vous devez conserver le SDID d’une page à une autre afin de regrouper ces visites distinctes. Pour utiliser cette fonction, vous devez avoir implémenté le service d’ID avec le même ID d’organisation sur les domaines source et de destination.
 keywords: Service d’ID
-title: appendSupplementalDataIDTo
+title: 'appendSupplementalDataIDTo '
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Contenu :
 
 ## Syntaxe et exemple de code {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Syntaxe :** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**Syntaxe :** `appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **Exemple de code**
 
@@ -54,7 +54,7 @@ La configuration [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.m
 
 Si vous devez modifier le délai d’expiration par défaut du SDID, ajoutez `sdidParamExpiry` à la `Visitor.getInstance` fonction en utilisant la syntaxe suivante :
 
-**Syntaxe :** ` sdidParamExpiry: *`temps en secondes`*`
+**Syntaxe :** `sdidParamExpiry: *`temps en secondes`*`
 
 **Exemple de code**
 

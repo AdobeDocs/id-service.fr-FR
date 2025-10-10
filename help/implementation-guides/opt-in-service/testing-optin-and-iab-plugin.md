@@ -2,10 +2,10 @@
 description: Une fois le service Opt-in activé sur votre site web, utilisez les différentes méthodes de validation afin de vérifier que celui-ci fonctionne correctement, à l’aide des outils de développement de votre navigateur.
 title: Validation du service Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 95%
+source-wordcount: '434'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Aucune requête vers les serveurs Adobe ne doit sʼafficher :
 >
 >Vous devez voir un appel vers `http://dpm.demdex.net/optOutStatus`, un point d’entrée en LECTURE SEULE utilisé pour récupérer l’état de désinscription du visiteur. Ce point dʼentrée nʼentraîne la création dʼaucun cookie tiers et ne collecte aucune information sur la page.
 
-Vous ne devriez voir aucun cookie créé par les balises Adobe : (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2).
+Vous ne devriez pas voir de cookies créés par les balises Adobe : (`AMCV_{{YOUR_ORG_ID}}`, `mbox`, `demdex`, `s_cc`, `s_sq`, `everest_g_v2`, `everest_session_v2`)
 
 Dans Chrome, accédez à lʼonglet *Application*, développez la section *Cookies* sous *Stockage*, puis sélectionnez le nom de domaine de votre site Web :
 

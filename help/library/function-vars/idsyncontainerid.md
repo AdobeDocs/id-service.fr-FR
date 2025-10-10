@@ -3,10 +3,10 @@ description: Cette propriété définit l’identifiant du conteneur de la sourc
 keywords: Service d’ID
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Contenu :
 
 ## Syntaxe et exemple de code {#section-b0c50732b1c84bed8616e82e8e83d58c}
 
-**Syntaxe :** ` idSyncContainerID: *`valeur de l’identifiant du conteneur`*`
+**Syntaxe :** `idSyncContainerID: *`valeur de l’identifiant du conteneur`*`
 
 **Exemple de code:**
 

@@ -3,7 +3,7 @@ description: Cette variable vous permet de remplacer l’intervalle de durée de
 keywords: Service d’ID
 title: cookieLifetime
 exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 100%
@@ -16,7 +16,7 @@ Cette variable vous permet de remplacer l’intervalle de durée de vie par déf
 
 Par défaut, les cookies du service [!DNL Experience Cloud] ID expirent après 24 mois. Définissez l’intervalle en secondes.
 
-**Syntaxe :** ` cookieLifetime: *`durée de vie en secondes`*`
+**Syntaxe :** `cookieLifetime: *`durée de vie en secondes`*`
 
 **Exemple de code**
 

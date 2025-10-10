@@ -3,7 +3,7 @@ description: Renvoie l’ID de zone géographique du service d’identités d’
 keywords: Service d’ID
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Renvoie l’ID de zone géographique du service d’identités d’Experience Cloud. Un ID de zone géographique (ou indicateur d’emplacement) est un identifiant numérique pour l’emplacement géographique d’un centre de données de service d’ID en particulier. Vous avez besoin de l’ID de zone géographique pour effectuer des appels d’API côté serveur vers Audience Manager.
 
-**Syntaxe :** ` var *`nom de variable`* = visitor.getLocationHint()`
+**Syntaxe :** `var *`nom de variable`* = visitor.getLocationHint()`
 
 Pour obtenir la liste des ID de zone géographique et d’emplacements correspondants, voir [DCS Region IDs, Locations, and Host Names](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=fr).
 

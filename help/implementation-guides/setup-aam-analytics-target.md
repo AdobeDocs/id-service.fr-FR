@@ -3,7 +3,7 @@ description: Ces instructions concernent les clientes et clients d’Analytics, 
 keywords: Service d’ID
 title: Mise en œuvre du service d’identités d’Experience Cloud pour Analytics, Audience Manager et Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
@@ -151,7 +151,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## Étape 7 : ajouter le code de l’API visiteur à la page {#section-c2bd096a3e484872a72967b6468d3673}
 
-Placez le fichier ` [!UICONTROL VisitorAPI.js]` à l’intérieur des balises `<head>` sur chaque page. Lorsque vous placez le `VisitorAPI.js` fichier sur votre page :
+Placez le fichier `[!UICONTROL VisitorAPI.js]` à l’intérieur des balises `<head>` sur chaque page. Lorsque vous placez le `VisitorAPI.js` fichier sur votre page :
 
 * Insérez-le au début de la `<head>` section afin qu’il s’affiche avant les balises d’autres solutions.
 * Il doit s’exécuter avant AppMeasurement et le code d’autres [!DNL Experience Cloud] solutions.
@@ -174,13 +174,13 @@ Arrêtez la période de grâce une fois que votre implémentation peut capturer 
 
 Voir aussi [Cookies et service d’identités Experience Cloud](../introduction/cookies.md).
 
-**Intégration des données du parcours de navigation**
+**Intégration des données du flux de clics**
 
-Vous avez besoin d’une période de grâce si vous envoyez les données à un système interne à partir d’un flux de données de parcours de navigation et si ce processus utilise les colonnes `visid_high` et `visid_low`.
+Vous avez besoin d’une période de grâce si vous envoyez les données à un système interne à partir d’un flux de données de flux de clics et si ce processus utilise les colonnes `visid_high` et `visid_low`.
 
 Interrompez la période de grâce une fois que le processus d’ingestion des données peut utiliser les colonnes `post_visid_high` et `post_visid_low`.
 
-Voir aussi [Référence des colonnes de données du parcours de navigation](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=fr).
+Voir aussi [Référence des colonnes de données du flux de clics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=fr).
 
 ## Étape 9 : tester et vérifier {#section-f857542bfc70496dbb9f318d6b3ae110}
 
