@@ -3,7 +3,7 @@ description: getInstance renvoie un objet ID de visiteur pour l’ID d’organis
 keywords: Service d’ID
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 96%
@@ -16,7 +16,7 @@ getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experie
 
 **Syntaxe**
 
-**JavaScript &#x200B;**
+**JavaScript **
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE", { 

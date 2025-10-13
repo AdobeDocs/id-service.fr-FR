@@ -3,10 +3,10 @@ description: Cette propriété définit l’identifiant du conteneur de la sourc
 keywords: Service d’ID
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: d8b230331d983bc95f96516243c3a65037dea7f0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '320'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Selon votre situation, il se peut que vous deviez ajouter cette configuration à
 
 ## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Si vous avez déployé [!UICONTROL DIL &#x200B;]* et* VisitorAPI.js sur la même page :
+Si vous avez déployé [!UICONTROL DIL] *et* VisitorAPI.js sur la même page :
 
 * Le code du service d’ID des visiteurs a la priorité sur DIL pour les synchronisations des identifiants.
 * Définissez la `idSyncContainerID` configuration uniquement dans le code du service d’ID.
