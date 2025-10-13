@@ -54,7 +54,7 @@ Voir [La Période de grâce du service d’identité](../reference/analytics-ref
 
 **Pourquoi dois-je migrer vers la collecte de données en temps réel (RDC) pour utiliser le service d’identités ?**
 
-La collecte de données régionales offre des avantages en termes de performances globales et est requise pour vous assurer que votre implémentation sera prête pour les fonctions à venir qui exploiteront le réseau global de notes de périphérie d’Adobe. Voir [Conditions requises pour Analytics : collecte de données régionales. ](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f)
+La collecte de données régionales offre des avantages en termes de performances globales et est requise pour vous assurer que votre implémentation sera prête pour les fonctions à venir qui exploiteront le réseau global de notes de périphérie d’Adobe. Voir [Conditions requises pour Analytics : collecte de données régionales. &#x200B;](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f)
 
 ## Création de rapports {#section-123cd55a32e54a45a23beb140becfa8f}
 

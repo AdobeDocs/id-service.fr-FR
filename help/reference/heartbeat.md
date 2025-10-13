@@ -18,4 +18,4 @@ La mesure de pulsation vidéo nécessite le service d’identités d’Experienc
 
 >[!MORELIKETHIS]
 >
->* [Mesures audio et vidéo dans Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
+>* [Mesures audio et vidéo dans Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
