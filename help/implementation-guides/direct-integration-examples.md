@@ -52,7 +52,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
-   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Remarquez que l’exemple d’appel contient : </p> 
+   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Remarquez que l’exemple d’appel contient : </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">Le MID : <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">Le MID associé à votre ID unique pour le visiteur : <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,7 +87,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
-   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Notez de quelle manière l’exemple d’appel contient votre ID d’organisation, <span class="codeph">d_orgid=5555</span>. Il renvoie un <span class="keyword">Experience Cloud</span> ID pour ce visiteur. </p> </td> 
+   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Notez de quelle manière l’exemple d’appel contient votre ID d’organisation, <span class="codeph">d_orgid=5555</span>. Il renvoie un <span class="keyword">Experience Cloud</span> ID pour ce visiteur. </p> </td> 
   </tr> 
  </tbody> 
 </table>
