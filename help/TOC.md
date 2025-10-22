@@ -4,10 +4,10 @@ user-guide-title: Aide du service d’identités d’Experience Cloud
 breadcrumb-title: Guide du service d’identités
 user-guide-description: Le service d’identités d’Adobe Experience Cloud fournit un identifiant universel et persistant qui identifie vos visiteurs et visiteuses à l’échelle de toutes les solutions dans Experience Cloud. Il permet de remplacer le code de génération d’ID hérité pour les services et solutions Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
    + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
    + [Implémentation avec les balises Experience Platform](implementation-guides/ecid-implement-with-launch.md)
-   + [Implémentation pour Analytics](implementation-guides/setup-analytics.md)
+   + [Mise en œuvre pour Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview)
    + [Implémentation pour Target](implementation-guides/setup-target.md)
    + [Implémentation pour Analytics et Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implémentation pour Analytics, Audience Manager et Target](implementation-guides/setup-aam-analytics-target.md)
@@ -81,16 +81,6 @@ ht-degree: 100%
       + [resetState](library/get-set/resetstate.md)
 + Référence {#reference}
    + [Vue d’ensemble de la référence](reference/reference.md)
-   + Référence Analytics {#analytics-reference}
-      + [Présentation de la référence Analytics](reference/analytics-reference/analytics-reference.md)
-      + [Présentation de l’implémentation CNAME](reference/analytics-reference/cname.md)
-      + [Définition des Analytics ID et Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
-      + [Ordre des opérations pour les Analytics ID](reference/analytics-reference/analytics-order-of-operations.md)
-      + [Points de prise de décision concernant la migration vers le service d’ID](reference/analytics-reference/migration-decisions.md)
-      + [Scénarios de migration du service d’ID](reference/analytics-reference/migration-scenarios.md)
-      + [Requêtes Analytics et d’identité](reference/analytics-reference/legacy-analytics.md)
-      + [Mise en œuvre côté serveur alliée à JavaScript](reference/analytics-reference/server-side.md)
-      + [Période de grâce du service d’ID](reference/analytics-reference/grace-period.md)
    + [Modifications de l’étiquetage SameSite de Google Chrome](reference/chrome-samesite-labelling.md)
    + [Politiques de sécurité du contenu et service d’ID](reference/csp.md)
    + [Prise en charge de la loi COPPA dans le service d’ID](reference/coppa.md)
@@ -106,7 +96,6 @@ ht-degree: 100%
 + Questions fréquentes {#faqs}
    + [Présentation des FAQ](faq-intro/faq-intro.md)
    + [FAQ sur le service d’ID](faq-intro/faq.md)
-   + [Questions fréquentes sur Analytics et le service d’ID](faq-intro/analytics-faq.md)
    + [Questions fréquentes sur d’autres solutions Experience Cloud](faq-intro/other-faq.md)
 + Notes de mise à jour du service d’ID {#release-notes}
    + [Notes de mise à jour de 2022](release-notes/notes-2022.md)

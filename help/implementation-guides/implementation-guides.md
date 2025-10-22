@@ -5,10 +5,10 @@ solution: Experience Cloud
 title: Guides de mise en œuvre
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,6 @@ Une mise en œuvre standard utilise [Adobe Exprience Platform Launch](https://ex
 
 * [Méthodes de mise en œuvre](implementation-methods.md)
 * [Mise en œuvre avec Experience Platform Launch](ecid-implement-with-launch.md)
-* [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics](setup-analytics.md)
 * [Mise en œuvre du service d’identités d’Experience Cloud pour Target](setup-target.md)
 * [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics et Audience Manager](setup-aam-analytics.md)
 * [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics, Audience Manager et Target](setup-aam-analytics-target.md)

@@ -5,9 +5,9 @@ title: Notes de mise à jour 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1099'
 ht-degree: 99%
 
 ---
@@ -24,7 +24,7 @@ Novembre 2016
 
 >[!IMPORTANT]
 >
->* La version 1.10 requiert [!UICONTROL AppMeasurement] version 1.8.0.
+>* La version 1.10 requiert [!UICONTROL AppMeasurement] 1.8.0.
 >* Si vous utilisez la bibliothèque version 2.0.0 ou ultérieure du service d’identités d’Experience Cloud, la synchronisation des identifiants commencera par défaut pour Adobe Media Optimizer. Voir [Comprendre la synchronisation des identifiants et les taux de correspondance](/help/introduction/match-rates.md).
 
 **Correctifs et améliorations**
@@ -123,7 +123,6 @@ Juillet 2016
 
 **Nouveau**
 
-* [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
 * [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics, Audience Manager et Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Révision**
@@ -198,12 +197,6 @@ Mars 2016
   </tr> 
  </tbody> 
 </table>
-
-**Mises à jour de la documentation**
-
-* [Mise en œuvre du service d’identités d’Experience Cloud pour Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : nouvelle procédure qui décrit comment configurer le service d’ID avec [!DNL Analytics].
-
-* [Points de prise de décision concernant la migration vers le service d’identités d’Experience Cloud](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : révision du texte pour le clarifier. L’utilisation d’un seul domaine vous permet de migrer hors d’un CNAME de collecte de données si vous ne souhaitez plus le gérer. Toutefois, il n’est pas nécessaire de modifier votre CNAME si celui-ci fonctionne.
 
 ## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 

@@ -3,10 +3,10 @@ description: Informations sur les autres composants et fonctions du service d’
 keywords: Service d’ID
 title: Référence
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,6 @@ ht-degree: 100%
 
 Informations sur les autres composants et fonctions du service d’identités d’Experience Cloud.
 
-* [Aperçu de la référence Analytics](analytics-reference/analytics-reference.md)
 * [Politiques de sécurité du contenu et service d’identités d’Experience Cloud](csp.md)
 * [Prise en charge de la norme COPPA dans le service d’identités d’Experience Cloud](coppa.md)
 * [Prise en charge de la norme CORS dans le service d’identités d’Experience Cloud](cors.md)
