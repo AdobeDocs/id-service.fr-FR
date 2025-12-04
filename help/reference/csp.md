@@ -3,8 +3,8 @@ description: Une politique de sécurité de contenu (CSP) est une fonction d’
 keywords: Service d’ID
 title: Politiques de sécurité du contenu et service d’identités d’Experience Cloud
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
-workflow-type: ht
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
 
@@ -116,3 +116,4 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
 >* [Référence des politiques de sécurité du contenu](https://content-security-policy.com/)
 >* [MDN : Politique de sécurité du contenu](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP)
 >* [Wikipédia : Politique de sécurité du contenu](https://fr.wikipedia.org/wiki/Content_Security_Policy)
+

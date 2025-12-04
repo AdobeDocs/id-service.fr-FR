@@ -3,10 +3,10 @@ description: Un indicateur booléen facultatif qui contrôle la manière dont le
 keywords: Service d’ID
 title: useCORSOnly
 exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,7 @@ Lorsqu’il est défini sur `false`, le navigateur vérifie les ressources avec 
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` si vous avez des exigences de sécurité strictes. Vous ne devez activer ce mode que si vous êtes certain que les visiteurs utilisent des navigateurs qui prennent en charge CORS. L’expérience client n’est pas affectée par les navigateurs ne prenant pas en charge CORS. Cependant, les navigateurs qui ne prennent pas en charge CORS ne peuvent pas demander de ressources ni échanger des données avec [!DNL Adobe Experience Cloud].
+>`Set useCORSOnly: true` si vous avez des exigences de sécurité strictes. Vous ne devez activer ce mode que si vous êtes certain que tous vos visiteurs utilisent des navigateurs qui prennent en charge CORS. L’expérience client n’est pas affectée par les navigateurs ne prenant pas en charge CORS. Cependant, les navigateurs qui ne prennent pas en charge CORS ne peuvent pas demander de ressources ni échanger des données avec [!DNL Adobe Experience Cloud].
 
 **Exemple de code**
 
@@ -39,3 +39,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    useCORSOnly: true 
 });
 ```
+

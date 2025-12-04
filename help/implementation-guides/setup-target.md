@@ -3,9 +3,9 @@ description: Ces instructions concernent les clientes et clients de Target qui s
 keywords: Service d’ID
 title: Mise en œuvre du service d’identités d’Experience Cloud pour Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '396'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Ces instructions concernent les clientes et clients de Target qui souhaitent uti
 
 ## Étape 1 : obtenir le code du service d’ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Le [!UICONTROL service d’ID] requiert la bibliothèque de code `VisitorAPI.js`. Contactez l’[assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir ce code.
+Le [!UICONTROL ID Service] requiert la `VisitorAPI.js` bibliothèque de code. Contactez l’[assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir ce code.
 
 ## Étape 2 : ajouter la fonction Visitor.getInstance au code du service d’ID {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -78,3 +78,4 @@ Voir [Cookies et service d’identités Experience Cloud](../introduction/cooki
 **Déploiement**
 
 Déployez votre code une fois qu’il a réussi le test.
+

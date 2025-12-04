@@ -3,7 +3,7 @@ description: Le service Experience Cloud ID (ECID) prend en charge l’algorit
 keywords: Service d’ID
 title: Prise en charge du hachage SHA-256 pour setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 97%
@@ -64,7 +64,7 @@ Reportez-vous au tableau ci-dessous pour obtenir une description du paramètre `
 
 | Paramètre | Description |
 |------------|----------|
-| `d_cid_ic` | Transmet le code d’intégration, l’ID d’utilisateur unique (DPUUID) et un ID d’état authentifié au service d’ID. Séparez le code d’intégration et le DPUUID par le caractère de contrôle non imprimable <code>%01</code>: <br> Exemple : <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>État d’authentification</b> <br> Il s’agit d’un ID facultatif dans le paramètre d_cid_ic. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : <br> <ul><li>0 (inconnu ou jamais authentifié)</li><li>1 (actuellement authentifié pour cette instance, cette page ou ce contexte d’application)</li><li>2 (déconnecté)</li></ul> <br>Exemples : <br> <ul><li>Inconnu : ...d_cid=123%01456%01<b>0</b></li><li>Authentifié : ...d_cid=123%01456%01<b>1</b></li><li>Déconnecté : ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Transmet le code d’intégration, l’ID d’utilisateur unique (DPUUID) et un ID d’état authentifié au service d’ID. Séparez le code d&#39;intégration et DPUUID par le caractère de contrôle non imprimable, <code>%01</code>: <br> exemple : <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>État d’authentification</b> <br> Il s’agit d’un ID facultatif dans le paramètre d_cid_ic. Exprimé sous la forme d’un entier, il identifie les utilisateurs en fonction de leur état d’authentification comme indiqué ci-dessous : <br> <ul><li>0 (inconnu ou jamais authentifié)</li><li>1 (actuellement authentifié pour cette instance, cette page ou ce contexte d’application)</li><li>2 (déconnecté)</li></ul> <br>Exemples : <br> <ul><li>Inconnu : ...d_cid=123%01456%01<b>0</b></li><li>Authentifié : ...d_cid=123%01456%01<b>1</b></li><li>Déconnecté : ...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Ajouter une action dans Adobe Experience Platform Launch {#add-action-launch}
 
@@ -100,3 +100,4 @@ setCustomerIDs(Ingeration code: {
 ```
 
 Comme pour la méthode `setCustomerIDs` décrite dans la première section, il en découle un appel au service Experience Cloud ID, auquel est ajouté le paramètre de requête `d_cid_ic`.
+

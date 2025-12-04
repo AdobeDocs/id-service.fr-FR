@@ -3,10 +3,10 @@ description: Les exemples suivants présentent 2 cas d’utilisation courants l
 keywords: Service d’ID
 title: Cas d’utilisation de l’intégration directe
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 86%
 
 ---
 
@@ -48,11 +48,11 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
      <li id="li_4869572B40E54C54B88A2474DAC475A8">L’ID de votre fournisseur de données. Il s’agit d’un ID unique attribué à votre société. Nommons cet ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">L’ID dont vous disposez pour le visiteur (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facultatif)</i> Un ID de statut permettant de définir l’état de l’authentification de ce visiteur. </li> 
-    </ul> <p>Et, si vous disposez de l’un des autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par exemple,<span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.) vous pouvez également les transmettre. </p> </td> 
+    </ul> <p>De plus, si vous disposez de l’un des autres paramètres répertoriés dans le guide d’intégration directe de <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> (par exemple</a> <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
-   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Remarquez que l’exemple d’appel contient : </p> 
+   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Remarquez que l’exemple d’appel contient : </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">Le MID : <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">Le MID associé à votre ID unique pour le visiteur : <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -83,11 +83,12 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Actions</b> </p> </td> 
-   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec votre ID d’organisation. </p> <p>Et, si vous disposez de l’un des autres paramètres répertoriés dans le <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guide d’intégration directe</a> (par exemple,<span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.) vous pouvez également les transmettre. </p> </td> 
+   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec votre ID d’organisation. </p> <p>De plus, si vous disposez de l’un des autres paramètres répertoriés dans le guide d’intégration directe de <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> (par exemple</a> <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
-   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Notez de quelle manière l’exemple d’appel contient votre ID d’organisation, <span class="codeph">d_orgid=5555</span>. Il renvoie un <span class="keyword">Experience Cloud</span> ID pour ce visiteur. </p> </td> 
+   <td colname="col2"> <p>Utilisez le format suivant pour votre appel au service d’ID : </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Notez de quelle manière l’exemple d’appel contient votre ID d’organisation, <span class="codeph">d_orgid=5555</span>. Il renvoie un <span class="keyword">Experience Cloud</span> ID pour ce visiteur. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+

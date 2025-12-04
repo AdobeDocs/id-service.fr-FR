@@ -3,7 +3,7 @@ description: Description des nouvelles fonctionnalités, des mises à jour et de
 keywords: Service d’ID
 title: Notes de mise à jour 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 99%
@@ -175,7 +175,7 @@ Date de publication : février 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> Propriété de l’API de service d’ID, <span class="codeph"> idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> Propriété de l’API du service d’ID, <span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>Cette propriété définit l’identifiant du conteneur utilisé par <span class="keyword">Audience Manager</span> pour la synchronisation des identifiants. Voir <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -210,3 +210,4 @@ Janvier 2017
 ## Années précédentes {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Notes de mise à jour précédentes relatives au service d’ID.
+

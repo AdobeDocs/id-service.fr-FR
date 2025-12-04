@@ -3,7 +3,7 @@ description: Un indicateur booléen optionnel qui empêche le service d’ID de 
 keywords: suivi inter-domaines ; service d’ID
 title: disableThirdPartyCalls
 exl-id: 1d5b4e80-1b2d-4401-9057-449a6abf5db5
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
@@ -45,3 +45,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableThirdPartyCalls: true 
 }); 
 ```
+

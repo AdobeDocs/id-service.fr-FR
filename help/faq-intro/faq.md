@@ -3,10 +3,10 @@ description: Questions fréquemment posées sur les fonctionnalités et problèm
 keywords: Service d’ID
 title: FAQ sur le service d’ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Questions fréquemment posées sur les fonctionnalités et problèmes liés à l
 
 **Quel type de fonctions ou de fonctionnalités le service d’ID fournit-il ?**
 
-Voir [Aperçu](../introduction/overview.md).
+Voir la [Présentation](../introduction/overview.md).
 
 **Pourquoi le service d’ID ne lance-t-il pas d’appel pour récupérer l’Experience Cloud ID ?**
 
@@ -26,7 +26,7 @@ Cela peut être difficile à diagnostiquer. Vous pouvez notamment vérifier les 
 
 **Enregistrement de fichier VisitorAPI.js**
 
-Vous pouvez rencontrer des problèmes si vous hébergez le fichier VisitorAPI.js comme fichier local dans des applications mobiles. Nous vous recommandons d’héberger le fichier sur un serveur Web.
+Vous pouvez rencontrer des problèmes si vous hébergez le fichier VisitorAPI.js comme fichier local dans des applications mobiles. Nous vous recommandons d’héberger le fichier sur un serveur web.
 
 ## Temps de chargement des pages et latence {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
@@ -87,3 +87,4 @@ Voir les sections [Experience Cloud](../reference/cors.md#concept-6c280446990d4
 >[!MORELIKETHIS]
 >
 >* [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
+

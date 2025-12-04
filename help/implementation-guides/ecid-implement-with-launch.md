@@ -4,7 +4,7 @@ title: Mise en œuvre avec Launch
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 100%
@@ -22,3 +22,4 @@ Les [balises d’Adobe Experience Platform](https://experienceleague.adobe.com
 * Déployer des produits web côté client grâce à des intégrations appelées _extensions_.
 * Collecter, définir, gérer et partager des données de façon constante entre les produits marketing et publicitaires d’autres fournisseurs et d’Adobe.
 * Les balises Platform sont un système de diffusion JavaScript avancé qui évalue les conditions et exécute des actions pour déployer les bibliothèques et produits côté client de façon efficace. Les balises offrent une approche extrêmement évolutive qui permet de gérer et créer des extensions, le tout accompagné d’un solide ensemble d’API pour une interaction automatisée avec Adobe Experience Cloud.
+

@@ -3,7 +3,7 @@ description: Configurez le service d’ID en transmettant les propriétés suiva
 keywords: ID d’organisation;service d’ID
 title: Configurations
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 100%
@@ -36,3 +36,4 @@ Articles connexes :
 + [secureCookie](securecookie.md)
 + [useCORSOnly](use-cors-only.md)
 + [whitelistParentDomain et whitelistIframeDomains](whitelistdomain.md)
+

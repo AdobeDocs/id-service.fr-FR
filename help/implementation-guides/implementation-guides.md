@@ -5,10 +5,10 @@ solution: Experience Cloud
 title: Guides de mise en œuvre
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '171'
+ht-degree: 100%
 
 ---
 
@@ -36,3 +36,4 @@ Une mise en œuvre standard utilise [Adobe Exprience Platform Launch](https://ex
 * [Cas d’utilisation de l’intégration directe](direct-integration-examples.md)
 * [Test et vérification du service d’identités d’Experience Cloud](test-verify.md)
 * [Aperçu du service Opt-in](opt-in-service/optin-overview.md)
+

@@ -3,7 +3,7 @@ description: Description des nouvelles fonctionnalités, des mises à jour et de
 keywords: Service d’ID
 title: Notes de mise à jour 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 100%
@@ -67,3 +67,4 @@ Prise en charge du module externe Audience Manager pour IAB TCF, disponible vi
 |---|---|
 | L’indicateur `disableIdSyncs` ne fonctionne pas après une certaine chaîne. | Corrigé. Les valeurs définies du `disableidSyncs` paramètre pour la `getInstance` fonction sont désormais honorées. |
 | Certains iFrames tiers ne disposent pas de l’ECID. | Correction de l’ECID sur Safari Mobile et des ECID dans divers iFrames qui ne fonctionnaient pas. |
+

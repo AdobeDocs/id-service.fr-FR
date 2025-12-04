@@ -2,7 +2,7 @@
 description: Le rôle du service d’identités Experience Cloud Identity dans Adobe Experience Cloud.
 title: Vue d’ensemble du service d’identités d’Experience Cloud
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
@@ -50,3 +50,4 @@ Votre solution et d’autres bibliothèques de code d’Adobe doivent répondre 
 * [Cookies et Experience Cloud Identity Service](cookies.md) : le service d’identités Experience Cloud Identity Service utilise l’identifiant de votre organisation, le cookie AMCV d’Experience Cloud et un cookie demdex pour créer et stocker les identifiants uniques et persistants des visiteurs et visiteuses de votre site. Ces cookies permettent au service d’identités d’effectuer le suivi des visiteurs et des visiteuses dans vos différents domaines et d’activer le partage de données entre différentes solutions Experience Cloud.
 * [Requête et définition d’ID par le service d’identités d’Experience Cloud](id-request.md) : cette section décrit le processus de demande d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients Experience Cloud avec leurs ID d’organisation.
 * [Comprendre la synchronisation des identifiants et les taux de correspondance](match-rates.md) : cette section décrit les processus de synchronisation des identifiants et les taux de correspondance dans Experience Cloud Identity Service, y compris Adobe Media Optimizer et le service d’identités.
+

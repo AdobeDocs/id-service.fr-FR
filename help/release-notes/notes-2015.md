@@ -3,7 +3,7 @@ description: Notes de mise à jour et mises à jour de 2015.
 keywords: Service d’ID
 title: Notes de mise à jour 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 96%
@@ -37,7 +37,7 @@ Août 2015
   Cela n’a affecté que quelques clients qui remplissaient *tous* les critères suivants :
 
    * Utilisation du service d’ID.
-   * L’activation d’une [&#x200B; période de grâce &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
+   * L’activation d’une [ période de grâce ](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
    * possèdent des pages avec des domaines de niveau supérieur à parties multiples.
 
 Les révisions de la documentation de cette mise à jour incluent :
@@ -76,3 +76,4 @@ Correction de la gestion des délais d’attente des demandes pour les objets bl
 Janvier 2015
 
 Reprise de la recherche des balises `<head>/<body>` pour le conteneur de balises `<script>` de la demande JSONP, ainsi que la création de la balise `<script>` afin de comptabiliser différentes mises en œuvre DOM (HTML/XHTML) avec éventuellement différents paramètres de respect de la casse. (AN-9355)
+

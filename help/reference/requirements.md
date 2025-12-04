@@ -3,7 +3,7 @@ description: Consultez cette section pour vous assurer que vous utilisez les sol
 keywords: Service d’ID
 title: Conditions requises pour le service d’identités d’Experience Cloud
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 100%
@@ -92,7 +92,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> s_code.js</span> </p> </td> 
-   <td colname="col4"> <p>H.27 </p> <p> <p>Remarque :<span class="keyword"> Le s_code version H.27 d’Analytics</span> n’est plus pris en charge avec la mise à jour du service d’ID version 1.6.0. Mettez votre code à niveau avec la dernière version d’AppMeasurement. </p> </p> </td> 
+   <td colname="col4"> <p>H.27 </p> <p> <p>Remarque :<span class="keyword"> Le s_code version H.27 d’Analytics</span> n’est plus pris en charge avec la mise à niveau du service d’ID version 1.6.0. Mettez votre code à niveau avec la dernière version d’AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col3"> <p>Video Heartbeat </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr" format="https" scope="external">Video Heartbeat 2.x pour JavaScript</a>. </p> </td> 
@@ -135,3 +135,4 @@ Le code de votre SDK doit être activé pour le service d’ID. Activez et tél�
 >[!MORELIKETHIS]
 >
 >* [Bibliothèque de code](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
+

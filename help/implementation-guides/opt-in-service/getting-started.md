@@ -2,7 +2,7 @@
 description: Implémentez le service Opt-in en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
 title: Configuration du service Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -143,3 +143,4 @@ Le service Opt-in fournit une option de stockage des préférences de consenteme
 
 * Si votre solution de consentement permanente, que ce soit une CMP ou un cookie sur le navigateur du visiteur, autorise l’extraction opportune des préférences d’un visiteur, vous pouvez transmettre celles-ci au service Opt-in lors de l’initialisation du visiteur.
 * Cependant, lorsque l’extraction risque de durer un certain temps et qu’elle peut par ailleurs servir de processus asynchrone, vous pouvez utiliser la `approve()` fonction pour fournir ces paramètres une fois qu’ils sont bien chargés.
+

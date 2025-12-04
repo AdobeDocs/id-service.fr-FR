@@ -3,9 +3,9 @@ description: getInstance renvoie un objet ID de visiteur pour l’ID d’organis
 keywords: Service d’ID
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 96%
 
 ---
@@ -16,7 +16,7 @@ getInstance renvoie un objet ID de visiteur pour l’ID d’organisation Experie
 
 **Syntaxe**
 
-**JavaScript &#x200B;**
+**JavaScript **
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE", { 
@@ -32,7 +32,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*N’instanciez pas* la fonction Visitor avec `var visitor = new Visitor`. Vous devez utiliser l’appel de fonction approprié indiqué ici. S’applique à la bibliothèque de code [!UICONTROL VisitorAPI.js] version 3.0 ou ultérieure.
+>*N’instanciez pas* la fonction Visitor avec `var visitor = new Visitor`. Vous devez utiliser l’appel de fonction approprié indiqué ici. S’applique à la [!UICONTROL VisitorAPI.js] bibliothèque de code version 3.0 ou ultérieure.
 
 **ActionScript/Flash**
 
@@ -57,3 +57,4 @@ Si `getInstance` ne trouve pas d’instance existante, une instance est créée 
 L’API du service [!DNL Experience Cloud] ID gère la liste de toutes les instances créées pour chaque [!DNL Adobe Experience Cloud] ID d’organisation. Si l’application qui utilise le service d’ID API ne transmet pas de référence à l’instance, elle peut la trouver en appelant `getInstance` au lieu d’en créer une autre. Cela permet également la prise en charge de plusieurs instances pour différentes organisations dans la même page/application Web.
 
 Cela s’avère utile pour les applications qui n’ont pas une `init` phase claire, mais qui doivent invoquer l’API du service d’ID en plusieurs endroits. Vous pouvez appeler `getInstance` à tous ces emplacements et le premier à s’exécuter crée l’instance. L’instance existante est renvoyée par les appels qui suivent.
+

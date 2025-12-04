@@ -3,7 +3,7 @@ description: Il s’agit d’une API asynchrone qui renvoie les identifiants pou
 keywords: Service d’ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 100%
@@ -119,3 +119,4 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
  </tbody> 
 </table>
+

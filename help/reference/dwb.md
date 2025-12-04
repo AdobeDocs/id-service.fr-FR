@@ -3,9 +3,9 @@ description: Suivez les instructions ci-dessous pour intégrer le champ Experien
 keywords: Service d’ID
 title: Data Workbench et service d’identités d’Experience Cloud
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '192'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Pour mettre à jour [Data Workbench](https://experienceleague.adobe.com/docs/dat
 
 1. Recherchez le fichier de configuration [Decoder Group](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html?lang=fr) actif.
 
-   En règle générale, le fichier [!DNL Decoder Group] se trouve dans un [!UICONTROL Gestionnaire de profil] sur ce chemin d’accès : `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copiez le format de décodeur dans le fichier de configuration.
+   En règle générale, le fichier [!DNL Decoder Group] se trouve dans un [!UICONTROL Profile Manager] sur ce chemin d’accès : `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copiez le format de décodeur dans le fichier de configuration.
 1. Collez le format de décodeur en dessous du format d’origine.
 1. Ouvrez le format de décodeur et ajoutez ces nouvelles positions de champ à la fin de la liste :
 
@@ -827,3 +827,4 @@ Log Processing Include = LogProcessingInclude:
   Stage = string: Default
   Transformations = vector: 0 items
 ```
+

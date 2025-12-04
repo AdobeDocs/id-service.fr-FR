@@ -3,7 +3,7 @@ description: Renvoie l’Analytics ID hérité (s’il existe) qui était stock
 keywords: Service d’ID
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 99%
@@ -47,8 +47,9 @@ Le paramètre `aid` apparaît dans une chaîne de requête dans les cas suivants
 
 **Cas 2**
 
-Le `aid` paramètre apparaît dans une chaîne de requête lorsque votre organisation utilise une [période de grâce](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) avant de mettre entièrement en œuvre le service d’ID. Si le visiteur de votre site est nouveau et que vous n’utilisez pas de période de grâce, le visiteur obtient le paramètre `mid` ( [!DNL Experience Cloud] ID).
+Le `aid` paramètre apparaît dans une chaîne de requête lorsque votre organisation utilise une [période de grâce](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) avant de mettre entièrement en œuvre le service d’ID. Si le visiteur de votre site est nouveau et que vous n’utilisez pas de période de grâce, le visiteur obtient le paramètre `mid` ( [!DNL Experience Cloud] ID).
 
 >[!MORELIKETHIS]
 >
 >* [Cookies Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=fr)
+

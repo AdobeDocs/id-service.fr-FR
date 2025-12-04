@@ -3,7 +3,7 @@ description: Méthodes d’implémentation standard ou non standard du service d
 keywords: Service d’ID
 title: Méthodes de mise en œuvre
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
@@ -25,3 +25,4 @@ Adobe recommande vivement d’utiliser [[!DNL Experience Platform tags]](https:/
 ## Implémentations non standard {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 Les procédures et exemples de codes de ce guide peuvent vous aider à configurer le service [!DNL Experience Cloud] ID d’une manière manuelle ou non standard. Veuillez noter que ces implémentations sont souvent complexes et difficiles d’un point de vue technique. Elles peuvent nécessiter de votre part des ressources d’ingénierie limitées ou consommer du temps d’assistance contractuel avec votre consultant en Adobe.
+

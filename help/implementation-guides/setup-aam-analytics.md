@@ -3,7 +3,7 @@ description: Ces instructions concernent les clientes et clients d’Analytics e
 keywords: Service d’ID
 title: Mise en œuvre du service d’identités d’Experience Cloud pour Analytics et Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 98%
@@ -158,7 +158,7 @@ Placez le fichier `[!UICONTROL VisitorAPI.js]` à l’intérieur des balises `<h
 
 ## Étape 8 : (facultative) configurer un délai de grâce {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de mettre en place une [période de grâce](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. Vous pouvez renouveler une période de grâce si nécessaire.
+Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de mettre en place une [période de grâce](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. Vous pouvez renouveler une période de grâce si nécessaire.
 
 **Mise en œuvre partielle**
 
@@ -204,3 +204,4 @@ Si vous avez activé une période de grâce :
 
 * Vérifiez que l’Analytics ID (AID) et le MID figurent dans la demande d’image.
 * Souvenez-vous de désactiver la période de grâce lorsque les critères d’interruption sont remplis.
+

@@ -2,10 +2,10 @@
 description: Exemples de cas d’utilisation et de solutions pour gérer le service Opt-in.
 title: Cas d’utilisation d’Opt-in
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -33,13 +33,13 @@ Ces cas d’utilisation sont des exemples d’utilisation du service Opt-in.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Il est possible de collecter des données Analytics à l’état de consentement préalable, mais le chargement de toutes les autres bibliothèques est empêché jusqu’à réception du consentement. </p> </td> 
+   <td colname="col1"> <p>Analytics peut être collecté en statut de consentement préalable, mais toutes les autres bibliothèques ne peuvent pas être chargées tant que le consentement n’a pas été reçu </p> </td> 
    <td colname="col2"> <p>Utilisez l’Opt-in pour activer la catégorie Analytics à l’état de consentement préalable. </p> </td> 
    <td colname="col3"> <p>Analytics utilise l’identifiant Analytics plutôt qu’ECID pour collecter le consentement préalable. Une fois l’ECID approuvé, un nouvel identifiant est utilisé et le visiteur reçoit un ECID qui peut être utilisé pour l’activation et les intégrations. </p> <p>La fragmentation du visiteur à l’état de consentement préalable ou postérieur est attendue. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Il est possible de collecter les mesures propriétaires dans un état de consentement préalable. Tous les autres types d’utilisation des données sont empêchés jusqu’à réception du consentement. </p> </td> 
-   <td colname="col2"> <p>Utilisez l’Opt-in pour activer les bibliothèques Analytics et ECID à l’état de consentement préalable. </p> <p>Ajoutez la configuration « disablethirdpartycookies » à la bibliothèque ECID afin de bloquer les cookies tiers et la synchronisation d’ID à l’état de consentement préalable. </p> </td> 
+   <td colname="col2"> <p>Utilisez l’Opt-in pour activer les bibliothèques Analytics et ECID à l’état de consentement préalable. </p> <p>Ajoutez la configuration « disablethirdpartycookies » à la bibliothèque ECID pour bloquer les synchronisations des cookies + identifiants tiers à l’état de pré-consentement </p> </td> 
    <td colname="col3"> <p>L’appel Demdex d’Adobe déclenche la récupération de l’ECID, mais aucun cookie Demdex, autre cookie tiers ou synchronisation d’ID n’est présent. </p> <p>Garde les visiteurs cohérents dans un état de consentement préalable /postérieur pour Analytics. La collecte à l’état de consentement préalable sera liée à la collecte de données à l’état de consentement postérieur. </p> </td> 
   </tr> 
   <tr> 
@@ -54,3 +54,4 @@ Ces cas d’utilisation sont des exemples d’utilisation du service Opt-in.
   </tr> 
  </tbody> 
 </table>
+

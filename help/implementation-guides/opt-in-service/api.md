@@ -2,7 +2,7 @@
 description: API pour la bibliothèque et références des paramètres de configuration d’Opt-in.
 title: Références d’Opt-in
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 100%
@@ -88,7 +88,7 @@ Fonction qui refuse ou désinscrit le visiteur de l’ensemble des catégories s
 
 `adobe.optIn.complete()`
 
-Fonction qui entraîne l’agrégation des appels faisant partie de la procédure d’approbation [approve()] ou de refus [deny()] en une requête unique pour définir les préférences d’un visiteur. Lorsque vous souscrivez aux modifications d’Opt-in (voir `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) ci-dessous, votre rappel (callback) se déclenche uniquement lors de l’appel de cette fonction.
+Fonction qui déclenche l’agrégation des appels faisant partie de la procédure d’approbation [approve()] ou de refus [deny()] en une requête unique pour définir les préférences d’un visiteur. Lorsque vous souscrivez aux modifications d’Opt-in (voir `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) ci-dessous, votre rappel (callback) se déclenche uniquement lors de l’appel de cette fonction.
 
 ## Paramètres des autorisations d’Opt-in des visiteurs {#section-7fe57279b5b44b4f8fe47e336df60155}
 
@@ -214,3 +214,4 @@ L’événement « complete » se déclenche une fois le processus d’approba
   adobe.optIn.on("complete", callback); 
 </codeph>
 ```
+

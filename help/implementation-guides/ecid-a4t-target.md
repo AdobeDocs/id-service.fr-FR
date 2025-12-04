@@ -3,10 +3,10 @@ description: Ces instructions s’adressent aux clients A4T avec des implémenta
 keywords: Service d’ID
 title: Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
+source-wordcount: '803'
+ht-degree: 96%
 
 ---
 
@@ -152,10 +152,10 @@ Response.send("
 
 **Paramètres DTM**
 
-Ajoutez-les en tant que paires noms-valeurs dans la section **[!UICONTROL Général > Paramètres]** de votre instance de service :
+Ajoutez-les en tant que paires nom-valeur à la section **[!UICONTROL General > Settings]** de votre instance de service d’ID :
 
-* **[!UICONTROL Nom :]** serverState
-* **[!UICONTROL Valeur :]** %serverState%
+* **[!UICONTROL Name:]** serverState
+* **[!UICONTROL Value:]** %serverState%
 
   >[!IMPORTANT]
   >
@@ -197,3 +197,4 @@ Response.send("
 >[!MORELIKETHIS]
 >
 >* [Package du service d’ID côté serveur à partir de Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+

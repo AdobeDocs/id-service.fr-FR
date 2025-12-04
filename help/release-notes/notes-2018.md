@@ -3,10 +3,10 @@ description: Description des nouvelles fonctionnalités, des mises à jour et de
 keywords: Service d’ID
 title: Notes de mise à jour 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -89,7 +89,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Cookie défini sur un domaine incorrect </p> </td> 
-   <td colname="col2"> <p>Nous avons corrigé un bug en raison duquel le cookie Visiteur temporaire définissait un cookie dans le domaine de cookie « par défaut » au lieu de le définir dans le domaine fourni dans la configuration (initConfig). </p> </td> 
+   <td colname="col2"> <p>Correction d’un bug en raison duquel le cookie visiteur temporaire définissait un cookie dans le domaine de cookie « par défaut » au lieu de le définir dans le domaine fourni dans la configuration (initConfig). </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,3 +122,4 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
   </tr> 
  </tbody> 
 </table>
+
