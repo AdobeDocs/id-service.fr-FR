@@ -206,7 +206,7 @@ Recherchez l’identifiant SDID dans la demande JavaScript. L’Analytics SDID 
 Si vos tests renvoient un AID, cela indique l’un des éléments suivants :
 
 * Vous êtes un visiteur qui revient en cours de migration des [!DNL Analytics] identifiants hérités.
-* Vous avez activé une [période de grâce](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration).
+* Vous avez activé une [période de grâce](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration).
 
 Si un AID s’affiche, vérifiez sa valeur par rapport au [!DNL Target] mboxMCAVID. Ces valeurs sont identiques lorsque le service d’ID a été correctement mis en œuvre.
 
