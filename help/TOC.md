@@ -4,10 +4,10 @@ user-guide-title: Aide du service d’identités d’Experience Cloud
 breadcrumb-title: Guide du service d’identités
 user-guide-description: Le service d’identités d’Adobe Experience Cloud fournit un identifiant universel et persistant qui identifie vos visiteurs et visiteuses à l’échelle de toutes les solutions dans Experience Cloud. Il permet de remplacer le code de génération d’ID hérité pour les services et solutions Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 99%
 # Aide du service d’identités d’Experience Cloud {#using}
 
 + [Aide du service d’identités](home.md)
-+ Aperçu {#intro}
-   + [Présentation](introduction/overview.md)
++ Vue d’ensemble {#intro}
+   + [Vue d’ensemble](introduction/overview.md)
    + [À propos du service d’ID](introduction/about-id-service.md)
    + [Cookies et service d’ID](introduction/cookies.md)
    + [Requête et définition d’ID par le service d’ID](introduction/id-request.md)
@@ -25,7 +25,7 @@ ht-degree: 99%
    + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
    + [Implémentation avec les balises Experience Platform](implementation-guides/ecid-implement-with-launch.md)
-   + [Mise en œuvre pour Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/overview){target=_blank}
+   + [Mise en œuvre pour Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Implémentation pour Target](implementation-guides/setup-target.md)
    + [Implémentation pour Analytics et Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implémentation pour Analytics, Audience Manager et Target](implementation-guides/setup-aam-analytics-target.md)
@@ -106,5 +106,5 @@ ht-degree: 99%
    + [Notes de mise à jour de 2017](release-notes/notes-2017.md)
    + [Notes de mise à jour de 2016](release-notes/notes-2016.md)
    + [Notes de mise à jour de 2015](release-notes/notes-2015.md)
-+ [Test Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
-+ [Fichier de test masqué](hidden-file.md)
++ {hide-from-toc}[Test Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
++ {hide-from-toc}[Fichier de test masqué](hidden-file.md)
