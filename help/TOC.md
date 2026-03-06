@@ -106,5 +106,5 @@ ht-degree: 97%
    + [Notes de mise à jour de 2017](release-notes/notes-2017.md)
    + [Notes de mise à jour de 2016](release-notes/notes-2016.md)
    + [Notes de mise à jour de 2015](release-notes/notes-2015.md)
-+ {hide-from-toc}[Test Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
-+ {hide-from-toc}[Fichier de test masqué](hidden-file.md)
++ [hide-from-tocTest Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
++ [hide-from-tocFichier de test masqué](hidden-file.md)
