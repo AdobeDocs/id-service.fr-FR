@@ -3,10 +3,10 @@ description: Les navigateurs utilisent la norme CORS (Cross Origin Resource S
 keywords: Service d’ID
 title: Prise en charge de la norme CORS dans le service d’identités d’Experience Cloud
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 98%
+source-wordcount: '630'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour 
 Les règles de même origine sont des contrôles de sécurité ou des restrictions appliqués par un navigateur web. Lorsqu’elles sont appliquées à ce niveau, le navigateur Web lui-même détermine si une requête de ressources effectuée d’une page à une autre sera autorisée ou bloquée. Pour déterminer si une requête est une requête de même origine, le navigateur compare :
 
 * Les URI (Uniform Resource Identifiers) ;
-* Les noms d’hôtes (par exemple, http://www.ma-page-web-exemple.com) ;
+* Noms d’hôtes (par exemple, `http://www.my-webpage-example.com`)
 * Les numéros de port (par exemple, port 80 et 440 pour les requêtes HTTP et HTTPS).
 
 Le navigateur permet à une requête de réussir si les deux pages partagent ces caractéristiques et bloque les requêtes de ressources dans le cas contraire.
@@ -31,7 +31,7 @@ La norme CORS offre un moyen sécurisé et efficace de demander des ressources s
 * `Origin` : un en-tête de demande qui identifie la source de la requête.
 * `Access-Control-Allow-Origin` : un en-tête de réponse qui indique si une ressource peut être partagée avec le demandeur.
 
-Observons le fonctionnement de ces en-têtes : Dans cet exemple, imaginons une entreprise de services financiers ayant mis en œuvre le service [!DNL Experience Cloud] ID sur son site, www.finance-website.com. Le tableau suivant définit comment les en-têtes de requête et de réponse du mécanisme CORS vérifient l’accès à une ressource.
+Observons le fonctionnement de ces en-têtes : Dans cet exemple, supposons que nous ayons une société de services financiers qui a mis en œuvre le service [!DNL Experience Cloud] ID sur son site, `www.finance-website.com`. Le tableau suivant définit comment les en-têtes de requête et de réponse du mécanisme CORS vérifient l’accès à une ressource.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -45,7 +45,7 @@ Observons le fonctionnement de ces en-têtes : Dans cet exemple, imaginons une 
    <td colname="col1"> <p> <b>Requête</b> </p> </td> 
    <td colname="col2"> <p>Alors que la page de l’entreprise financière se charge, le navigateur envoie une demande à <span class="codeph">dpm.demdex.net</span>. Il s’agit d’un appel au domaine des serveurs de collecte de données (DCS) utilisés par le service d’ID. Cette requête sur l’ensemble des domaines comprend l’en-tête : </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origine:https://www.finance-website.com</span> </li> 
+      <li> <code> Origin:https://www.finance-website.com</code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
