@@ -3,9 +3,9 @@ description: Cette section décrit le processus de requête d’ID et de répons
 keywords: Service d’ID
 title: Requête et définition d’ID par le service d’identités d’Experience Cloud
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 96fb9d7fe7d8527d1689e20503722e9b1674e921
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '759'
 ht-degree: 100%
 
 ---
@@ -58,4 +58,3 @@ Une fois que le serveur de collecte de données a reçu l’ID d’organisation 
 Dans cet exemple, notre visiteur quitte les sites de la société Food Company et accède au site de football appartenant à la Société Sports Company. Lorsque le visiteur se rend sur le site de football, le processus de vérification des identifiants et de demande fonctionne de la même manière que décrit dans les exemples précédents. Cependant, comme la société Sports Company possède son propre ID d’organisation, le service d’ID renvoie un autre MID. Le nouveau MID est unique aux domaines contrôlés par la société Sports Company et permet à celle-ci d’effectuer le suivi et de partager les données du visiteur dans l’ensemble des solutions [!DNL Experience Cloud]. L’ID demdex reste identique pour ce visiteur, car il contient un cookie tiers et persiste dans les différents domaines.
 
 ![](assets/req_resp.png)
-
