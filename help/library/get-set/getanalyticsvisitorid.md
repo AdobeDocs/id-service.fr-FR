@@ -58,7 +58,7 @@ Le paramètre `aid` apparaît dans une chaîne de requête dans les cas suivants
 
 **Cas 2**
 
-Le `aid` paramètre apparaît dans une chaîne de requête lorsque votre organisation utilise une [période de grâce](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) avant de mettre entièrement en œuvre le service d’ID. Si le visiteur de votre site est nouveau et que vous n’utilisez pas de période de grâce, le visiteur obtient le paramètre `mid` ( [!DNL Experience Cloud] ID).
+Le `aid` paramètre apparaît dans une chaîne de requête lorsque votre organisation utilise une [période de grâce](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) avant de mettre entièrement en œuvre le service d’ID. Si le visiteur de votre site est nouveau et que vous n’utilisez pas de période de grâce, le visiteur obtient le paramètre `mid` ( [!DNL Experience Cloud] ID).
 
 >[!MORELIKETHIS]
 >
