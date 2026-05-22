@@ -2,10 +2,20 @@
 description: API pour la bibliothèque et références des paramètres de configuration d’Opt-in.
 title: Références d’Opt-in
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/Fmah6TphSbKa3W6s6ew97Diz59Brj-2tpYKcxwzEj1o
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 100%
+source-wordcount: 916
+ht-degree: 99%
 
 ---
 
@@ -133,7 +143,7 @@ Un objet qui reprend toutes les solutions d’Experience Cloud, comme les caté
 **`approve(categories, shouldWaitForComplete)`**
 
 **`categories`** : une ou plusieurs catégories à approuver. Par exemple : `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
-**`shouldWaitForComplete`** : (facultatif) paramètre booléen, réglé sur « false » par défaut. Si vous le réglez sur « true », Opt-in ne termine pas le processus d’approbation, jusqu’à ce que vous appeliez `adobe.optIn.complete()`. Ce processus est similaire à un workflow.
+**`shouldWaitForComplete`** : (facultatif) paramètre booléen, réglé sur false par défaut. Si vous le réglez sur « true », Opt-in ne termine pas le processus d’approbation, jusqu’à ce que vous appeliez `adobe.optIn.complete()`. Ce processus est similaire à un workflow.
 
 ```
 <codeblock>
@@ -158,7 +168,7 @@ Vérifiez si au moins une des catégories a été préalablement approuvée par 
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-API asynchrone pour récupérer la liste des autorisations. Le rappel est effectué avec la liste des autorisations, une fois le processus d’acceptation ou de refus des autorisations terminé. **`shouldAutoSubscribe`:** Utilitaire dʼaide qui souscrit automatiquement à ce rappel à tous les futurs événements. Cela signifie que le rappel est effectué chaque fois qu’une approbation ou un refus est déclenché dans Opt-in. De cette façon, vous êtes toujours informé, sans avoir à vous abonner aux événements.
+API asynchrone pour récupérer la liste des autorisations. Le rappel est effectué avec la liste des autorisations, une fois le processus d’acceptation ou de refus des autorisations terminé. **`shouldAutoSubscribe`:** Utilitaire dʼaide qui souscrit automatiquement à ce rappel à tous les futurs événements. Cela signifie que le rappel est effectué chaque fois qu’une approbation ou un refus est déclenché dans Opt-in. Cela vous permet d’être constamment à jour, sans devoir vous abonner vous-même aux événements.
 
 **Exemple**
 

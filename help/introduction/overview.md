@@ -2,9 +2,17 @@
 description: Le rôle du service d’identités Experience Cloud Identity dans Adobe Experience Cloud.
 title: Vue d’ensemble du service d’identités d’Experience Cloud
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/fkT81V3iLEz2irg-3SDoyx733RNhqa2zWV1FgiXoYO4
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: 505
 ht-degree: 100%
 
 ---
@@ -28,7 +36,7 @@ Le service dʼidentités d’Experience Cloud peut remplacer différents identif
 Le service d’identités d’Experience Cloud prend en charge les applications suivantes :
 
 * [Adobe Analytics](https://business.adobe.com/fr/products/analytics/web-analytics.html)
-* [Audience Manager](https://business.adobe.com/fr/products/audience-manager/adobe-audience-manager.html)
+* [Audience Manager](https://business.adobe.com/fr/products/audience-manager/adobe-audience-manager.html)
 * [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html)
 
 Par ailleurs, le service d’ID est un composant à part entière de plusieurs fonctionnalités, améliorations et services actuels et futurs d’Experience Cloud. Actuellement, le service d’ID prend en charge [Analytics](http://www.adobe.com/fr/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/fr/marketing-cloud/data-management-platform.html) et [Target](http://www.adobe.com/fr/marketing-cloud/testing-targeting.html). Si vous n’avez pas mis en œuvre le service d’ID, c’est le moment idéal d’envisager une stratégie de migration.

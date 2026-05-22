@@ -3,9 +3,19 @@ description: Les exemples suivants présentent 2 cas d’utilisation courants l
 keywords: Service d’ID
 title: Cas d’utilisation de l’intégration directe
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: 457
 ht-degree: 86%
 
 ---
@@ -48,7 +58,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
      <li id="li_4869572B40E54C54B88A2474DAC475A8">L’ID de votre fournisseur de données. Il s’agit d’un ID unique attribué à votre société. Nommons cet ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">L’ID dont vous disposez pour le visiteur (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facultatif)</i> Un ID de statut permettant de définir l’état de l’authentification de ce visiteur. </li> 
-    </ul> <p>De plus, si vous disposez de l’un des autres paramètres répertoriés dans le guide d’intégration directe de <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> (par exemple</a> <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
+    </ul> <p>Si vous disposez également de l’un des autres paramètres répertoriés dans le guide d’intégration directe <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> (par exemple, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.)</a> c'est bon de les transmettre aussi. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 
@@ -83,7 +93,7 @@ Les exemples suivants présentent 2 cas d’utilisation courants liés à une i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Actions</b> </p> </td> 
-   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec votre ID d’organisation. </p> <p>De plus, si vous disposez de l’un des autres paramètres répertoriés dans le guide d’intégration directe de <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> (par exemple</a> <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.), vous pouvez également les transmettre. </p> </td> 
+   <td colname="col2"> <p>Dans ces conditions, appelez le service d’ID avec votre ID d’organisation. </p> <p>Si vous disposez également de l’un des autres paramètres répertoriés dans le guide d’intégration directe <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> (par exemple, <span class="codeph"> d_blob</span> ou <span class="codeph"> dcs_region</span>, etc.)</a> c'est bon de les transmettre aussi. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Solution et exemple de code</b> </p> </td> 

@@ -5,10 +5,24 @@ title: Notes de mise à jour 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/u91aLAt-ycKk1U1A1yhAVUAonGhV6fHWNRVTZB0QAXI
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 99%
+source-wordcount: 1131
+ht-degree: 96%
 
 ---
 
@@ -73,7 +87,7 @@ Août 2016
 
 * Ajout d’une fonctionnalité permettant la prise en charge du suivi des [!DNL Experience Cloud] ID à l’échelle de tous les domaines, applications natives et applications hybrides jusqu’aux transitions web. Voir [Fonction auxiliaire d’ajout d’identifiant visiteur](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* Ajout de fonctions au code visitorAPI.js qui déterminent si le service d’ID a généré l’[!DNL Experience Cloud] ID du visiteur côté client ou côté serveur ou si les appels d’identifiants sont expirés. Voir les sections relatives aux [fonctions de suivi de dépassement de délai](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) et au [suivi de la génération d’identifiants de visiteurs côté client](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
+* Ajout de fonctions au code visitorAPI.js qui déterminent si le service d’ID a généré l’[!DNL Experience Cloud] ID du visiteur côté client ou côté serveur ou si les appels d’identifiants sont expirés. Voir les sections relatives aux [fonctions de tracking de délai d’expiration](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) et au [suivi de la génération d’identifiants de visiteurs côté client](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
 
 **Documentation nouvelle et révisée**
 
@@ -89,7 +103,7 @@ Juillet 2016
 
 >[!IMPORTANT]
 >
->La version 1.6.0 du service [!DNL Experience Cloud] ID *nécessite* AppMeasurement pour JavaScript version 1.6.2. Si vous passez à la version 1.6.0 du service d’ID, assurez-vous d’utiliser la bonne version du code AppMeasurement.
+>La version 1.6.0 du service [!DNL Experience Cloud] ID *nécessite* AppMeasurement pour JavaScript version 1.6.2. Si vous effectuez une mise à niveau vers la version 1.6.0 du service d’ID, veillez à utiliser la version de code AppMeasurement appropriée.
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
