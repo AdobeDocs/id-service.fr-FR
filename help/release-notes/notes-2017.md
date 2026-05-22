@@ -3,9 +3,13 @@ description: Description des nouvelles fonctionnalités, des mises à jour et de
 keywords: Service d’ID
 title: Notes de mise à jour 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
+TQID: https://experienceleague.adobe.com/lt0zISb6FrqIuziYTt8pA6VZyU4XQkVsIha19v-LU7w
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: 734
 ht-degree: 97%
 
 ---
@@ -177,7 +181,7 @@ Date de publication : février 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID service API property, <span class="codeph"> idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> Propriété de l’API du service d’ID, <span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>Cette propriété définit l’identifiant du conteneur utilisé par <span class="keyword">Audience Manager</span> pour la synchronisation des identifiants. Voir <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -193,7 +197,7 @@ Correction d’un bogue en raison duquel le service d’ID envoyait des appels r
 
 **Nouvelle documentation**
 
-[Using DNS Prefetch with Different Experience Cloud Solutions and Services](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=fr)
+[Utilisation de la prérécupération DNS avec différents services et solutions Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=fr)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 

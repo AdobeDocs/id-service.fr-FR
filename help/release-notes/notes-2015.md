@@ -3,10 +3,14 @@ description: Notes de mise à jour et mises à jour de 2015.
 keywords: Service d’ID
 title: Notes de mise à jour 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 96%
+source-wordcount: 449
+ht-degree: 94%
 
 ---
 
@@ -37,7 +41,7 @@ Août 2015
   Cela n’a affecté que quelques clients qui remplissaient *tous* les critères suivants :
 
    * Utilisation du service d’ID.
-   * L’activation d’une [&#x200B; période de grâce &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
+   * L’activation d’une [ période de grâce ](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
    * possèdent des pages avec des domaines de niveau supérieur à parties multiples.
 
 Les révisions de la documentation de cette mise à jour incluent :
@@ -69,7 +73,7 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 Février 2015
 
-Correction de la gestion des délais d’attente des demandes pour les objets blob AAM et les conseils d’emplacement. Désormais, après temporisation, ces champs resteront correctement vierges pour les pages actives et tous les rappels seront appelés. Le délai d’expiration est traité comme une condition d’erreur. Par conséquent, l’opération réessaiera sur la page suivante. (AN-94473, AN-94474)
+Correction de la gestion des délais d’expiration des demandes pour les objets blob AAM et les conseils d’emplacement. Désormais, après temporisation, ces champs resteront correctement vierges pour les pages actives et tous les rappels seront appelés. Le délai d’expiration est traité comme une condition d’erreur. Par conséquent, l’opération réessaiera sur la page suivante. (AN-94473, AN-94474)
 
 ## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
