@@ -6,8 +6,8 @@ user-guide-description: Le service d’identités d’Adobe Experience Cloud f
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 97%
+source-wordcount: '378'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
    + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
    + [Implémentation avec les balises Experience Platform](implementation-guides/ecid-implement-with-launch.md)
-   + [Mise en œuvre pour Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/overview){target=_blank}
+   + [Implémentation pour Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Implémentation pour Target](implementation-guides/setup-target.md)
    + [Implémentation pour Analytics et Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implémentation pour Analytics, Audience Manager et Target](implementation-guides/setup-aam-analytics-target.md)
@@ -106,5 +106,5 @@ ht-degree: 97%
    + [Notes de mise à jour de 2017](release-notes/notes-2017.md)
    + [Notes de mise à jour de 2016](release-notes/notes-2016.md)
    + [Notes de mise à jour de 2015](release-notes/notes-2015.md)
-+ [hide-from-tocTest Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
-+ [hide-from-tocFichier de test masqué](hidden-file.md)
++ {hide-from-toc}[Test Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
++ {hide-from-toc}[Fichier de test masqué](hidden-file.md)
