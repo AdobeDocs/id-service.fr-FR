@@ -24,7 +24,7 @@ ht-degree: 86%
 
 # Prise en charge de la norme COPPA dans le service d’identités d’Experience Cloud {#coppa-support-in-the-experience-cloud-id-service}
 
-La Loi sur la protection de la vie privée des enfants en ligne (COPPA) interdit la collecte en ligne de renseignements personnels d&#39;enfants de moins de 13 ans sans le consentement vérifiable des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service Experience Cloud Identity afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
+La Loi sur la protection de la vie privée des enfants en ligne (COPPA) interdit la collecte en ligne de renseignements personnels d&#39;enfants de moins de 13 ans sans le consentement vérifiable des parents. Les clients qui le souhaitent peuvent ajouter une variable en option au code de leur service d’identités d’Experience Cloud afin de l’empêcher de définir des cookies dans le domaine tiers d’un navigateur.
 
 >[!NOTE]
 >

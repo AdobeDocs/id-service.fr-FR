@@ -22,7 +22,7 @@ ht-degree: 91%
 
 # Obtenir les identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID {#get-region-and-user-ids-from-the-amcv-cookie-or-the-id-service}
 
-Le cookie AMCV contient l’Experience Cloud ID (MID) et un identifiant de région pour les visiteurs de votre site. Ces identifiants sont stockés en tant que paires clé-valeur. L’ID mid:user contient l’ID Experience Cloud du visiteur. L’aamlh:region ID contient l’ID de région pour les visiteurs de votre site. Vous pouvez récupérer ces informations en analysant le cookie AMCV.
+Le cookie AMCV contient l’Experience Cloud ID (MID) et un identifiant de région pour les visiteurs de votre site. Ces identifiants sont stockés en tant que paires clé-valeur. L’ID mid:user contient l’Experience Cloud ID du visiteur. L’aamlh:region ID contient l’ID de région pour les visiteurs de votre site. Vous pouvez récupérer ces informations en analysant le cookie AMCV.
 
 Pour plus d’informations, voir [Obtention des identifiants de région et d’utilisateur via le service dʼidentités d’Experience Cloud](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html?lang=fr).
 

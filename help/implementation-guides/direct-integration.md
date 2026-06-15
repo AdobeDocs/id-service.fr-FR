@@ -77,7 +77,7 @@ Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet identifiant, voir Conditions requises pour <a href="../reference/requirements.md" format="dita" scope="local"> service d’identités Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet identifiant, voir Conditions requises pour <a href="../reference/requirements.md" format="dita" scope="local"> service Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 

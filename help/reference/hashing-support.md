@@ -13,15 +13,15 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 618
-ht-degree: 97%
+source-wordcount: 574
+ht-degree: 92%
 
 ---
 
 # Prise en charge du hachage SHA-256 pour `setCustomerIDs` {#hashing-support}
 
-Le service Experience Cloud ID (ECID) prend en charge l’algorithme de hachage SHA-256 qui vous permet de transmettre des ID de client ou des adresses électroniques, et transmet des identifiants hachés. Il s’agit d’une méthode JavaScript facultative pour envoyer des identifiants hachés à Experience Cloud. Vous pouvez continuer à utiliser vos propres méthodes de hachage avant d’envoyer les ID de client.
-Il existe deux façons de mettre en œuvre la prise en charge du hachage avec setCustomerIDs, comme décrit dans les sections ci-dessous :
+Le service Experience Cloud ID (ECID) prend en charge l’algorithme de hachage SHA-256 qui vous permet de transmettre des ID de client ou des adresses e-mail et de distribuer des ID hachés. Il s’agit d’une méthode JavaScript facultative pour envoyer des identifiants hachés à Experience Cloud. Vous pouvez continuer à utiliser vos propres méthodes de hachage avant d’envoyer les ID de client.
+Il existe deux façons d’implémenter la prise en charge du hachage avec setCustomerIDs, comme décrit dans les sections ci-dessous :
 
 * [Utiliser la méthode setCustomerIDs dans ECID](/help/reference/hashing-support.md#use-setcustomerids-method)
 * [Ajouter une action dans Adobe Experience Platform Launch](/help/reference/hashing-support.md#add-action-launch)

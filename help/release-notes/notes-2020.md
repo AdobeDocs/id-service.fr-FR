@@ -15,8 +15,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 97%
+source-wordcount: 216
+ht-degree: 91%
 
 ---
 
@@ -48,8 +48,8 @@ Pour plus d’informations sur ces valeurs d’attribut, voir [web.dev](https://
 ## Version 4.6
 
 * L’indicateur `loadSSL` est activé par défaut. Tous les appels au service d’identités seront par défaut en `https`.  Les clients peuvent définir ce paramètre sur false s’ils souhaitent appeler le service d’identités en HTTP à partir de leurs `non-ssl` pages.
-* Mise à jour de la fonction utilisée pour détecter la version d’`Internet-Explorer (IE)`, afin de corriger un problème signalé par `ESLint`.
-Correction d’un problème de performances sur `Internet-Explorer (IE) 11` lorsque l’inclusion `pre-approval` est accordée à ECID et que ce dernier est mis à jour ultérieurement.
+* Mise à jour de la fonction utilisée pour détecter `Internet-Explorer (IE)` version, afin de résoudre un problème signalé par `ESLint`.
+Correction d’un problème de performances sur `Internet-Explorer (IE) 11` lorsque l’ECID reçoit une `pre-approval` d’opt-in et est mis à jour ultérieurement.
 
 ## Version 4.5
 
