@@ -1,6 +1,6 @@
 ---
-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2018.
-keywords: Service d’ID
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identification des visiteurs en 2018.
+keywords: Service d’identification des visiteurs
 title: Notes de mise à jour 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
@@ -15,16 +15,16 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 94%
+source-wordcount: 488
+ht-degree: 66%
 
 ---
 
 # Notes de mise à jour 2018 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2018.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identification des visiteurs en 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -38,7 +38,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Sécurité accrue des cookies AMCV </p> </td> 
-   <td colname="col2"> <p>Pendant une analyse de sécurité interne, il a été déterminé que lors de l’utilisation de la bibliothèque de DTM, les cookies utilisés pour la gestion des sessions échouent à définir les attributs appropriés. Cela peut entraîner le partage inopportun des informations des cookies. Afin de résoudre ce problème, nous avons introduit une configuration permettant au client de définir le cookie AMCV comme étant sécurisé. Voir <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Lors d’une analyse de sécurité interne, il a été découvert que les cookies utilisés pour la gestion des sessions ne spécifiaient pas les attributs appropriés. Cela peut entraîner le partage inopportun des informations des cookies. Afin de résoudre ce problème, nous avons introduit une configuration permettant au client de définir le cookie AMCV comme étant sécurisé. Voir <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,7 +55,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Sécurité accrue des cookies AMCV </p> </td> 
-   <td colname="col2"> <p>Pendant une analyse de sécurité interne, il a été déterminé que lors de l’utilisation de la bibliothèque de DTM, les cookies utilisés pour la gestion des sessions échouent à définir les attributs appropriés. Cela peut entraîner le partage inopportun des informations des cookies. Afin de résoudre ce problème, nous avons introduit une configuration permettant au client de définir le cookie AMCV comme étant sécurisé. Voir secureCookie. </p> </td> 
+   <td colname="col2"> <p>Lors d’une analyse de sécurité interne, il a été découvert que les cookies utilisés pour la gestion des sessions ne spécifiaient pas les attributs appropriés. Cela peut entraîner le partage inopportun des informations des cookies. Afin de résoudre ce problème, nous avons introduit une configuration permettant au client de définir le cookie AMCV comme étant sécurisé. Voir secureCookie. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>L’ID et le code d’intégration doivent être des nombres ou des chaînes non vides. </p> </td> 
@@ -63,7 +63,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
   </tr> 
   <tr> 
    <td colname="col1"> Les fichiers JavaScript ECID sont disponibles dans un référentiel Git public. </td> 
-   <td colname="col2"> Les fichiers JavaScript ECID sont désormais disponibles dans un référentiel Git public accessible à tous les clients Experience Cloud à l’adresse https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
+   <td colname="col2"> ECID JS est désormais disponible dans le référentiel Git public pour tous les clients CX Enterprise à l’adresse https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,7 +80,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Pic irréaliste au niveau du nombre de visiteurs uniques </p> </td> 
-   <td colname="col2"> <p>Avec le lancement du service d’identités d’Experience Cloud 3.1.0, nous avons détecté une erreur qui créait un pic irréaliste du nombre de visiteurs uniques lorsque cette version était mise en œuvre. Ce comportement apparaît uniquement avec la dernière version d’ECID, la version 3.1.0, et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actuel uniquement » dans les paramètres de confidentialité d’un navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
+   <td colname="col2"> <p>Avec la version 3.1.0 du service d’identification des visiteurs, nous avons identifié un problème qui a créé un pic irréaliste dans le nombre de visiteurs uniques lors de la mise en œuvre de cette version. Ce comportement apparaît uniquement avec la dernière version d’ECID, la version 3.1.0, et si un utilisateur a sélectionné l’option « Autoriser à partir du site web actuel uniquement » dans les paramètres de confidentialité d’un navigateur Safari. La version 3.1.2 corrige ce problème. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +89,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
 
 >[!NOTE]
 >
->Nous vous recommandons de procéder à la mise à niveau de la version 3.1.0 vers la dernière version dès que possible. Voir la description de la version 3.1.2. Le dernier bundle est disponible dans Adobe Experience Platform Launch, Dynamic Tag Management et AppMeasurement.
+>Nous vous recommandons de procéder à la mise à niveau de la version 3.1.0 vers la dernière version dès que possible. Voir la description de la version 3.1.2. Le dernier bundle est disponible dans les balises et AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -126,7 +126,7 @@ Description des nouvelles fonctionnalités, des mises à jour et des modificatio
   </tr> 
   <tr> 
    <td colname="col1"> <p>Prise en charge d’Internet Explorer </p> </td> 
-   <td colname="col2"> <p>Le service d’ID ne prend plus en charge Internet Explorer 6, 7, 8 et 9. </p> </td> 
+   <td colname="col2"> <p>Le service d’identification des visiteurs ne prend plus en charge Internet Explorer 6, 7, 8 et 9. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Mise à jour de la documentation getInstance </p> </td> 

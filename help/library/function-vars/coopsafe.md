@@ -1,18 +1,18 @@
 ---
-description: Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
-keywords: Service d’ID
+description: Configuration booléenne facultative qui détermine si le service d’identification des visiteurs envoie (ou n’envoie pas) de données à Adobe Device Co-op.
+keywords: Service d’identification des visiteurs
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '618'
+ht-degree: 69%
 
 ---
 
 # isCoopSafe{#iscoopsafe}
 
-Une configuration booléenne facultative permet de déterminer si le service d’ID envoie (ou n’envoie pas) des données à Adobe Experience Cloud Device Co-op.
+Configuration booléenne facultative qui détermine si le service d’identification des visiteurs envoie (ou n’envoie pas) de données à Adobe Device Co-op.
 
 Contenu :
 
@@ -28,10 +28,10 @@ Contenu :
 
 Pour utiliser `isCoopSafe`, vous devez :
 
-* Utiliser le code du service d’ID version 2.4 ou ultérieure.
-* Participez à l’opération [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=fr). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
+* Utilisez la version 2.4 ou une version ultérieure du code du service d’identification des visiteurs.
+* Participez à la [Adobe Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=fr). Les membres potentiels de Co-op doivent également consulter cette documentation pour déterminer si `isCoopSafe` peut répondre à des préoccupations concernant la manière dont les données sont utilisées pour créer la coopérative Device Graph.
 
-* Collaborer avec votre conseiller [!DNL Adobe] afin de définir un indicateur de liste blanche ou de liste noire pour votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
+* Contactez votre consultant Adobe pour définir un indicateur de liste blanche ou de liste noire sur votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
 ## Cas d’utilisation {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
@@ -47,11 +47,11 @@ Pour utiliser `isCoopSafe`, vous devez :
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Visiteurs authentifiés</b> </p> </td> 
-   <td colname="col2"> <p>Ajoutez <span class="codeph">isCoopSafe</span> au code de votre service d’ID afin de contrôler la manière dont les données relatives aux visiteurs authentifiés, qui ont ou n’ont pas accepté les conditions d’utilisation, sont utilisées par Device Co-op pour créer la coopérative Device Graph. </p> </td> 
+   <td colname="col2"> <p>Ajoutez <span class="codeph"> code isCoopSafe </span> à votre service d’identification des visiteurs pour contrôler la manière dont les données des visiteurs authentifiés qui ont accepté ou non les conditions d’utilisation sont utilisées par Device Co-op pour créer le graphique d’appareil. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>DIL sur des sites tiers</b> </p> </td> 
-   <td colname="col2"> <p>Ajoutez <span class="codeph">isCoopSafe</span> au code de votre service d’ID pour l’utiliser sur des sites tiers sur lesquels vous : </p> <p> 
+   <td colname="col2"> <p>Ajoutez <span class="codeph"> code isCoopSafe </span> à votre service d'identification des visiteurs pour l'utiliser sur des sites tiers où vous : </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Impossible de vérifier si les visiteurs authentifiés ont ou n’ont pas accepté les conditions d’utilisation. </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Vous devez contrôler comment ces données sont utilisées par Device Co-op pour créer le graphique de l’appareil. </li> 
@@ -72,10 +72,10 @@ Les options booléennes déterminent la manière dont les données des clients s
 
 **Exemple de code**
 
-Définissez cette variable lorsque votre code de service d’ID instancie :
+Définissez cette option lorsque le code du service d’identification des visiteurs s’instancie :
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE",{ 
      ... 
      isCoopSafe: true 
 });
@@ -83,12 +83,12 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## Paramètres POST de l’appel d’événement {#section-fcd441933506493faefaa6b51f194a17}
 
-En fonction de l’indicateur que vous définissez (`true` ou `false`), le service d’ID convertit `isCoopSafe` en les paramètres POST suivants et les envoie à [!DNL Adobe] dans un appel d’événement :
+Selon l’indicateur que vous définissez ( `true` ou `false`), le service d’identification des visiteurs `isCoopSafe` convertit en paramètres POST et les envoie à Adobe dans un appel d’événement :
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-Les paramètres POST indiquent à [!DNL Experience Cloud] Device Co-op si cette application peut ou non inclure des données utilisateur dans la coopérative Device Graph. Le tableau ci-dessous définit la relation entre les indicateurs booléens `isCoopSafe` et les paramètres POST transmis dans un appel d’événement. Si vous n’utilisez pas `isCoopSafe`, aucun paramètre n’est transmis dans un appel d’événement.
+Les paramètres POST indiquent à Adobe Device Co-op s’il peut ou non inclure des données utilisateur dans le graphique de l’appareil. Le tableau ci-dessous définit la relation entre les indicateurs booléens `isCoopSafe` et les paramètres POST transmis dans un appel d’événement. Si vous n’utilisez pas `isCoopSafe`, aucun paramètre n’est transmis dans un appel d’événement.
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 

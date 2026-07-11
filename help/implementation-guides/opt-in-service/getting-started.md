@@ -1,5 +1,5 @@
 ---
-description: Implémentez le service Opt-in en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
+description: Implémentez le service Opt-in en tant que seul point de référence utilisé par les solutions d’entreprise CX (Catégories dans Opt-in) pour déterminer s’il faut créer ou non des cookies sur l’appareil d’un visiteur.
 title: Configuration du service Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 TQID: https://experienceleague.adobe.com/Nq3mYoy0U-0RK8MHzsu-yCIVwbCbaAJnIUR8QZDCKcs
@@ -14,18 +14,18 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 97%
+source-wordcount: 965
+ht-degree: 84%
 
 ---
 
 # Configuration du service Opt-in{#setting-up-opt-in-service}
 
-Implémentez le service Opt-in en tant que seul point de référence pris en compte par les solutions Experience Cloud (Catégories dans Opt-in) pour décider de la création ou non de cookies sur l’appareil d’un visiteur.
+Implémentez le service Opt-in en tant que seul point de référence utilisé par les solutions d’entreprise CX (Catégories dans Opt-in) pour déterminer s’il faut créer ou non des cookies sur l’appareil d’un visiteur.
 
-Le service Opt-in est une bibliothèque JavaScript inclue avec Experience Cloud ID (ECID) et existe dans le JavaScript du visiteur dans l’objet `adobe` global comme objet `adobe.optIn`. Le service Opt-in installé vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Le service Opt-in, fonctionnalité de gestion de contenu, vous permet de mettre en œuvre plusieurs configurations pour vos besoins spécifiques de confidentialité.
+Le service Opt-in est une bibliothèque JavaScript inclue avec ECID et existe dans le JavaScript du visiteur dans l’objet `adobe` global comme objet `adobe.optIn`. Le service Opt-in installé vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Le service Opt-in, fonctionnalité de gestion de contenu, vous permet de mettre en œuvre plusieurs configurations pour vos besoins spécifiques de confidentialité.
 
 Le service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, l’ensemble des solutions Adobe peuvent récupérer les approbations visiteur de la CMP en réponse aux appels de consentement associés.
 
@@ -41,7 +41,7 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
    * AppMeasurement 2.11 ou une version ultérieure
    * DIL 9.0
    * AT.js version 1.7.0
-   * Extension Launch AT.js version 9.0
+   * Extension de balises AT.js version 9.0
    * Pour Analytics, App Measurement 2.11 avec l’extension 1.6
    * Pour Target, l’extension 0.9.1
 
@@ -53,13 +53,13 @@ Le service Opt-in vous permet de définir si un visiteur peut donner son consent
 
 1. Les besoins de confidentialité de votre société dépendent du degré de conformité au RGPD que vous souhaitez avoir. Découvrez les bibliothèques que les équipes de protection de la vie privée de votre société peuvent utiliser à l’état de consentement préalable.
 
-Si vous utilisez les [balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr), tirez parti de l’[extension Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
+Si vous utilisez des [balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr), tirez parti de l’extension [Opt-in](../../implementation-guides/opt-in-service/launch.md) pour configurer le service Opt-in.
 
 ## Catégories Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
-Les préférences d’un visiteur en matière d’opt-in dépendent d’une solution Adobe Experience Cloud, au sein de laquelle chaque solution est représentée par une catégorie. Les catégories sont fournies par `adobe.OptInCategories` l’objet où, par exemple, le composant ECID est représenté par `adobe.OptInCategories`. `ECID`. Voici la définition de `adobe.OptInCategories` :
+Les préférences d’Opt-in d’un visiteur sont relatives à une solution Adobe CX Enterprise, où chaque solution est représentée sous la forme d’une catégorie. Les catégories sont fournies par `adobe.OptInCategories` l’objet où, par exemple, le composant ECID est représenté par `adobe.OptInCategories`. `ECID`. Voici la définition de `adobe.OptInCategories` :
 
-Les paramètres d’opt-in sont gérés par catégorie. Chaque solution Experience Cloud est représentée par une catégorie.
+Les paramètres d’opt-in sont conservés par catégorie, où chaque solution CX Enterprise est représentée par une catégorie :
 
 ```
 adobe.OptInCategories = { 
@@ -71,8 +71,7 @@ adobe.OptInCategories = {
 };
 ```
 
-Le service Opt-in vous permet de définir les préférences d’autorisation des visiteurs et visiteuses en fonction de chaque solution Adobe utilisée sur votre site. Il comprend une bibliothèque permettant d’enregistrer les paramètres d’un visiteur ou d’une visiteuse par catégorie approuvée et prend en charge un flux séquentiel, où le processus d’approbation reçoit les préférences « confirmer » ou « refuser » pour chaque catégorie, une à la fois. Vous pouvez définir des solutions/catégories pour l’opt-in dans son ensemble ou en tant que solutions individuelles.
-Les bibliothèques côté client de toutes les solutions Adobe dépendent du service Opt-in et ne génèrent pas de cookies sauf si la solution a reçu l’autorisation. L’Opt-in prend en charge diverses approches pour fournir et mettre à jour les paramètres de consentement pour le visiteur actuel. Cette section fournit des exemples pour définir les préférences du service Opt-in. Consultez la [Référence de l’API Opt-in](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour obtenir la liste complète des fonctions et des paramètres.
+Le service Opt-in vous permet de définir les préférences d’autorisation des visiteurs pour chaque solution Adobe utilisée sur votre site. Cela comprend une bibliothèque pour la sauvegarde des paramètres d’un visiteur par catégorie approuvée. De plus, un flux séquentiel est pris en charge, où le processus d’approbation reçoit des préférences « confirmer » ou « refuser » pour chaque catégorie, chacune son tour. Vous pouvez définir les solutions ou catégories pour lesquelles demander l’opt-in, de manière globale ou individuelle.L’ensemble des bibliothèques côté client des solutions Adobe dépend du service Opt-in. Elles ne génèrent pas de cookie, sauf si l’autorisation a été donnée pour la solution. Opt-in prend en charge plusieurs approches pour fournir et mettre à jour les paramètres de consentement pour le visiteur actuel. Cette section présente des exemples de définition des préférences du service Opt-in. Voir les [Références de l’API d’Opt-in](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) pour obtenir la liste complète des fonctions et paramètres.
 
 Les configurations du service Opt-in sont fournies dans la `getInstance()` fonction du fichier JavaScript Visiteur, qui instancie `adobe` l’objet global. Vous trouverez ci-après les [paramètres de configuration](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) JavaScript Visiteur pour le service Opt-in.
 

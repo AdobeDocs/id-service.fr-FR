@@ -1,6 +1,6 @@
 ---
-description: Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
-keywords: ID d’organisation;service d’ID
+description: Configurez le service d’identification des visiteurs en transmettant ces propriétés à la méthode statique Visitor.getInstance .
+keywords: ID d’organisation IMS;Service d’identification des visiteurs
 title: Configurations
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
 TQID: https://experienceleague.adobe.com/Nif2uo9Emxt2c2NFoVESjM77MkMG15Qw0-Hv8o8i9w8
@@ -11,20 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 91
-ht-degree: 100%
+source-wordcount: 58
+ht-degree: 41%
 
 ---
 
 # Configurations{#configurations}
 
-Configurez le service d’ID en transmettant les propriétés suivantes à la méthode statique Visitor.getInstance.
-
->[!NOTE]
->
->Les *bibliothèques JavaScript d’Experience Cloud ID* ont récemment été déplacées. Retrouvez la dernière mise à jour des bibliothèques JavaScript d’ECID à l’adresse [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+Configurez le service d’identification des visiteurs en transmettant ces propriétés à la méthode statique Visitor.getInstance .
 
 Articles connexes :
 

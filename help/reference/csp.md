@@ -1,7 +1,7 @@
 ---
-description: Une politique de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Consultez cette section si vous utilisez le service d’ID et que vous disposez de CSP strictes qui utilisent des listes autorisées pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes autorisées CSP.
-keywords: Service d’ID
-title: Politiques de sécurité du contenu et service d’identités d’Experience Cloud
+description: Une politique de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Consultez cette section si vous utilisez le service d’identification des visiteurs et disposez de CSP stricts qui utilisent des places sur la liste autorisée pour accepter des ressources provenant de domaines de confiance. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes autorisées CSP.
+keywords: Service d’identification des visiteurs
+title: Politiques de sécurité du contenu et service d’identification des visiteurs Adobe
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 TQID: https://experienceleague.adobe.com/UX0RWE7v912XEHJCJE49yt1sy13t1P0I0I79gG9Z7m8
 product_v2:
@@ -14,16 +14,16 @@ role_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 530
-ht-degree: 100%
+source-wordcount: 527
+ht-degree: 70%
 
 ---
 
-# Politiques de sécurité du contenu et service Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
+# Politiques de sécurité du contenu et service d’identification des visiteurs Adobe {#content-security-policies-and-the-experience-cloud-id-service}
 
-Une politique de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Consultez cette section si vous utilisez le service d’ID et que vous disposez de CSP strictes qui utilisent des listes autorisées pour accepter des ressources provenant de domaines approuvés. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes autorisées CSP.
+Une politique de sécurité de contenu (CSP) est une fonction d’en-tête et de sécurité HTTP qui permet aux navigateurs de contrôler le type de ressources chargées sur une page web. Consultez cette section si vous utilisez le service d’identification des visiteurs et disposez de CSP stricts qui utilisent des places sur la liste autorisée pour accepter des ressources provenant de domaines de confiance. Vous devrez ajouter les domaines Adobe répertoriés ici à vos listes autorisées CSP.
 
 ## Présentation des politiques de sécurité du contenu {#section-5fde5c00a678455c914b8307a8caab82}
 
@@ -35,16 +35,16 @@ Les stratégies de sécurité du contenu utilisent l’en-tête HTTP `Content-Se
 * Les attaques de défacement de site.
 * La distribution de programmes malveillants.
 
-L’utilisation des CSP est courante et bien comprise. La présente documentation n’a pas pour but d’expliquer en détail les CSP (voir les liens d’information connexes ci-dessous pour plus d’informations). Il est important de comprendre les noms de domaine Adobe que vous devez ajouter à un fichier CSP si vous les utilisez et si vous disposez de politiques de sécurité rigoureuses. L’ajout de ces domaines permet aux navigateurs visiteurs qui accèdent à votre site d’effectuer ces appels importants vers les ressources Experience Cloud que vous utilisez.
+L’utilisation des CSP est courante et bien comprise. La présente documentation n’a pas pour but d’expliquer en détail les CSP (voir les liens d’information connexes ci-dessous pour plus d’informations). Il est important de comprendre les noms de domaine Adobe que vous devez ajouter à un fichier CSP si vous les utilisez et si vous disposez de politiques de sécurité rigoureuses. L’ajout de ces domaines permet aux navigateurs visiteurs qui accèdent à votre site d’effectuer les appels importants vers les ressources d’entreprise CX que vous utilisez.
 
-## Domaines Experience Cloud en liste autorisée {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domaines d’entreprise CX pour la Liste autorisée {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messagerie instantanée pour chaque solution ou service Experience Cloud de liste que vous utilisez.
+Ajoutez ces noms de domaine ou URL à votre CSP pour chaque liste de solutions ou de services CX Enterprise que vous utilisez.
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
  <thead>
   <tr>
-   <th colname="col1" class="entry">Solution ou service Experience Cloud</th>
+   <th colname="col1" class="entry">Solution ou service d’entreprise CX</th>
    <th colname="col2" class="entry">Description</th>
   </tr>
  </thead>
@@ -71,7 +71,7 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Experience Cloud ID_Service et Audience Manager</b></p>
+    <p><b>Service d’identification des visiteurs et Audience Manager</b></p>
    </td>
    <td colname="col2">
     <p>Modifiez votre stratégie de sécurité du contenu afin d’inclure les domaines ci-dessous :</p>
@@ -80,9 +80,9 @@ Ajoutez ces noms de domaine ou URL à votre fournisseur de services de messageri
      <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-     <li>Si vous utilisez Adobe Launch pour déployer des balises, vous devez également ajouter <code>https://assets.adobedtm.com</code> à la liste des domaines.</li>
+     <li>Si vous utilisez des balises, vous devez également ajouter des <code>https://assets.adobedtm.com</code> à la liste des domaines.</li>
     </ul>
-    <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et Experience Cloud ID_Service</a> et pour les synchronisations d’ID. Voir également la section <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr" format="https" scope="external">Comprendre les appels vers le domaine Demdex</a>.</p>
+    <p>Les appels au domaine <span class="codeph">demdex.net</span> sont utilisés pour générer les <a href="../introduction/cookies.md" format="dita" scope="local">cookies et le service d’identification des visiteurs</a> ainsi que pour la synchronisation des identifiants. Voir également la section <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr" format="https" scope="external">Comprendre les appels vers le domaine Demdex</a>.</p>
    </td>
   </tr>
   <tr>

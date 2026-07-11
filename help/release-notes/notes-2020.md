@@ -1,7 +1,7 @@
 ---
-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud.
-keywords: Service d’ID
-title: Notes de mise à jour 2020
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identification des visiteurs.
+keywords: Service d’identification des visiteurs
+title: Notes de mise à jour de 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 TQID: https://experienceleague.adobe.com/hqAMIyXTeLBPU-4B6AVRXhcWux3bkyViMCrbjoGiRwk
 product_v2:
@@ -13,16 +13,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 216
-ht-degree: 91%
+source-wordcount: 235
+ht-degree: 71%
 
 ---
 
-# Notes de mise à jour d’Experience Cloud - 2020 {#release-notes}
+# Notes de mise à jour de 2020 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identification des visiteurs.
 
 ## Version 5.1.1
 
@@ -47,14 +47,13 @@ Pour plus d’informations sur ces valeurs d’attribut, voir [web.dev](https://
 
 ## Version 4.6
 
-* L’indicateur `loadSSL` est activé par défaut. Tous les appels au service d’identités seront par défaut en `https`.  Les clients peuvent définir ce paramètre sur false s’ils souhaitent appeler le service d’identités en HTTP à partir de leurs `non-ssl` pages.
-* Mise à jour de la fonction utilisée pour détecter `Internet-Explorer (IE)` version, afin de résoudre un problème signalé par `ESLint`.
-Correction d’un problème de performances sur `Internet-Explorer (IE) 11` lorsque l’ECID reçoit une `pre-approval` d’opt-in et est mis à jour ultérieurement.
+* L’indicateur `loadSSL` est activé par défaut. Tous les appels au service d’identification des visiteurs seront activés `https` par défaut.  Les clients peuvent définir ce paramètre sur false s’ils souhaitent appeler le service d’identification des visiteurs sur http à partir de leurs pages `non-ssl`.
+* Mise à jour de la fonction utilisée pour détecter la version d’`Internet-Explorer (IE)`, afin de corriger un problème signalé par `ESLint`.Correction d’un problème de performances sur `Internet-Explorer (IE) 11` lorsque l’inclusion `pre-approval` est accordée à ECID et que ce dernier est mis à jour ultérieurement.
 
 ## Version 4.5
 
 * À partir de la version 4.5, ECID rejettera les identifiants vides envoyés à la méthode `setCustomerIDs`.
 * Correction d’un problème survenant lorsque l’inclusion était configurée sur `doesOptInApply=false` et `isIabContext=true`.
 
-Pour consulter les notes de mise à jour mensuelles de tous les produits, reportez-vous aux [Notes de mise à jour Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
+Consultez les notes de mise à jour [CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr) pour obtenir des notes de mise à jour mensuelles pour tous les produits.
 

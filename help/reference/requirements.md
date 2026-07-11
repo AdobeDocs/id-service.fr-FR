@@ -1,7 +1,7 @@
 ---
-description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service d’identités d’Experience Cloud.
-keywords: Service d’ID
-title: Conditions requises pour le service d’identités d’Experience Cloud
+description: Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service d’identification des visiteurs.
+keywords: Service d’identification des visiteurs
+title: Conditions requises pour le service d’identification des visiteurs Adobe
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 TQID: https://experienceleague.adobe.com/yOoLEIKihVSpDLeZsplTZzg-toOENKlBzsQt2G2YcKk
 product_v2:
@@ -17,56 +17,56 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 707
-ht-degree: 91%
+source-wordcount: 727
+ht-degree: 39%
 
 ---
 
-# Conditions requises pour le service d’identités d’Experience Cloud {#requirements-for-the-experience-cloud-id-service}
+# Conditions requises pour le service d’identification des visiteurs Adobe {#requirements-for-the-experience-cloud-id-service}
 
-Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service d’identités d’Experience Cloud.
+Consultez cette section pour vous assurer que vous utilisez les solutions, services et versions de code adéquats requis par le service d’identification des visiteurs.
 
 ## Les conditions requises assurent le succès et la prise en charge de la mise en œuvre {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Une mise en œuvre réussie et prise en charge répond (ou dépasse) les conditions requises du code et suit les instructions telles qu’elles s’affichent sur l’aide [!DNL Adobe]. Une mise en œuvre non prise en charge produira des résultats inattendus et empêchera l’assistance clientèle et nos équipes d’ingénieurs de vous aider à résoudre les problèmes ou à les résoudre avec le service d’ID.
+Une implémentation réussie et prise en charge répond aux exigences du code (ou les dépasse) et suit les instructions telles qu’elles apparaissent dans l’aide d’Adobe. Une implémentation non prise en charge provoquera des résultats inattendus et empêchera l’assistance clientèle et nos équipes d’ingénieurs de vous aider à résoudre les problèmes liés au service d’identification des visiteurs.
 
 ### Implémentations standard
 
-Consultez la section [Balises Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) pour votre implémentation standard.
+Voir [balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) dans Collecte de données Adobe Experience Platform pour votre implémentation standard.
 
 ### Implémentations non standard
 
-Pour les mises en œuvre non standard ou manuelles, vous devez configurer le service d’ID comme décrit dans les procédures de ce guide. Comme pour les instructions relatives à DTM ci-dessus, un placement et un chargement de code incorrects créeront une mise en œuvre non prise en charge.
+Pour les implémentations manuelles ou non standard, vous devez configurer le service d’identification des visiteurs comme décrit par les procédures dans ce guide. Comme pour les instructions d’implémentation standard ci-dessus, un placement et un chargement de code incorrects créeront une implémentation non prise en charge.
 
-## Conditions requises pour Experience Cloud : ID d’organisation {#section-a02f537129a64ffbb690d5738d360c26}
+## Exigences des entreprises CX : ID d’organisation IMS {#section-a02f537129a64ffbb690d5738d360c26}
 
-Pour utiliser le service d’ID, votre société doit être activée pour [!DNL Experience Cloud] et disposer d’un ID d’organisation. Consultez la liste ci-dessous si vous n’êtes pas sûr de l’état de votre société en ce qui concerne [!DNL Experience Cloud] et si vous devez rechercher votre ID d’organisation.
+Pour utiliser le service d’identification des visiteurs, votre entreprise doit être activée pour CX Enterprise et disposer d’un identifiant d’organisation IMS. Vérifiez la liste suivante si vous n’êtes pas sûr du statut CX Enterprise de votre société et si vous devez trouver votre ID d’organisation IMS.
 
 >[!IMPORTANT]
 >
->L’ID d’organisation est sensible à la casse est doit être utilisé tel quel.
+>L’ID d’organisation IMS est sensible à la casse et doit être utilisé exactement comme indiqué.
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> État d’Experience Cloud </th> 
+   <th colname="col1" class="entry"> Statut Entreprise CX </th> 
    <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Activé</b> </p> </td> 
-   <td colname="col2"> <p>Si votre société est activée pour <span class="keyword">Experience Cloud</span> mais que vous n’avez pas votre ID d’organisation, consultez la rubrique d’aide sur les <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=fr" format="https" scope="external">ID d’organisation</a> (faites défiler la page jusqu’à la section <i>Trouver votre ID d’organisation</i>). </p> </td> 
+   <td colname="col2"> <p>Si votre société est activée pour CX Enterprise, mais que vous ne disposez pas de votre identifiant d’organisation IMS, reportez-vous à <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=fr" format="https" scope="external"> identifiants d’organisation</a> (faites défiler l’écran jusqu’à la section <i>Rechercher votre identifiant d’organisation</i>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Pas sûr</b> </p> </td> 
-   <td colname="col2"> <p> Si vous ne connaissez pas l’état de votre société en ce qui concerne <span class="keyword">Experience Cloud</span>, demandez à la personne en charge de votre compte Adobe si des employés de votre société peuvent se connecter à l’adresse <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> à l’aide d’un Adobe ID. S’ils le peuvent, cela signifie que votre société est activée et qu’un administrateur peut afficher l’ID d’organisation. Pour trouver l’ID d’organisation, voir la section Page d’administration dans <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=fr" format="https" scope="external">Administration d’Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p> Si vous ne connaissez pas le statut d’entreprise CX de votre société, demandez à la personne qui gère votre compte Adobe si les membres de votre société peuvent se connecter à <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a> à l’aide d’une Adobe ID. Si vous le pouvez, vous êtes activé et un administrateur peut afficher votre ID d’organisation IMS. Pour trouver l’ID d’organisation IMS, consultez la section « Page d’administration » dans <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=fr" format="https" scope="external"> Administration d’entreprise CX</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Pas activé</b> </p> </td> 
-   <td colname="col2"> <p> Si votre société n’est pas activée pour Experience Cloud, voir <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=fr" format="https" scope="external">Services principaux – Comment activer vos solutions</a> pour commencer. </p> </td> 
+   <td colname="col2"> <p> Si votre société n’est pas activée pour CX Enterprise, reportez-vous à <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=fr" format="https" scope="external"> Services principaux - Activation de vos solutions</a> pour commencer. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -77,7 +77,7 @@ Tous les serveurs de suivi ont été convertis en RDC ; il n’est donc pas né
 
 ## Bibliothèques de code et versions minimales requises {#section-ad7542a4317d430fa79fc6b095beb84d}
 
-Les sections ci-après répertorient les versions de code minimales qui sont requises pour l’utilisation du service [!DNL Experience Cloud] ID.
+Les sections suivantes répertorient les versions de code minimales requises pour utiliser le service d’identification des visiteurs.
 
 >[!TIP]
 >
@@ -88,14 +88,14 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
 <table id="table_8E773F76DBCB4797A0C117080CA8707C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Solution Experience Cloud </th> 
+   <th colname="col1" class="entry"> Solution d’entreprise CX </th> 
    <th colname="col3" class="entry"> Bibliothèque de code </th> 
    <th colname="col4" class="entry"> Version requise </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"> Service </span>Experience Cloud ID</b> </p> </td> 
+   <td colname="col1"> <p> <b> Service d’identification des visiteurs </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 ou version ultérieure </p> </td> 
   </tr> 
@@ -106,7 +106,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> s_code.js</span> </p> </td> 
-   <td colname="col4"> <p>H.27 </p> <p> <p>Remarque : <span class="keyword"> Analytics</span> s_code version H.27 n’est plus pris en charge avec la version 1.6.0 du service d’ID. Mettez à niveau votre code vers la dernière version d’AppMeasurement. </p> </p> </td> 
+   <td colname="col4"> <p>H.27 </p> <p> <p>Remarque : <span class="keyword"> Analytics</span> s_code version H.27 n’est plus pris en charge avec la version 1.6.0 du service d’identification des visiteurs. Mettez à niveau votre code vers la dernière version d’AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col3"> <p>Video Heartbeat </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr" format="https" scope="external">Video Heartbeat 2.x pour JavaScript</a>. </p> </td> 
@@ -131,7 +131,7 @@ Les sections ci-après répertorient les versions de code minimales qui sont req
 
 ## Versions minimales des SDK pour Android et iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
 
-Au minimum, le service d’ID requiert les versions du SDK répertoriées ci-dessous.
+Le service d’identification des visiteurs nécessite au minimum les versions de SDK répertoriées ci-dessous.
 
 * Android : 4.11.0
 * iOS : 4.11.0
@@ -140,7 +140,7 @@ Au minimum, le service d’ID requiert les versions du SDK répertoriées ci-des
 >
 >Nous vous recommandons d’utiliser les dernières versions du code plutôt que la version minimale requise.
 
-Le code de votre SDK doit être activé pour le service d’ID. Activez et téléchargez le dernier code du SDK pour chaque application depuis votre compte [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Voir également :
+Votre code SDK doit être activé pour le service d’identification des visiteurs. Activez et téléchargez le dernier code du SDK pour chaque application depuis votre compte [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Voir également :
 
 * [Configuration des options du SDK Service d’ID des visiteurs](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=fr)
 * [Méthodes du SDK Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html?lang=fr)

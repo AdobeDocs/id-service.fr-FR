@@ -1,6 +1,6 @@
 ---
-description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2017.
-keywords: Service d’ID
+description: Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identification des visiteurs en 2017.
+keywords: Service d’identification des visiteurs
 title: Notes de mise à jour 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 TQID: https://experienceleague.adobe.com/lt0zISb6FrqIuziYTt8pA6VZyU4XQkVsIha19v-LU7w
@@ -16,22 +16,22 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 734
-ht-degree: 97%
+source-wordcount: 751
+ht-degree: 47%
 
 ---
 
 # Notes de mise à jour 2017 {#release-notes}
 
-Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identités d’Experience Cloud en 2017.
+Description des nouvelles fonctionnalités, des mises à jour et des modifications apportées au service d’identification des visiteurs en 2017.
 
-Ces modifications sont également consignées dans les [notes de mise à jour d’Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
+Ces modifications sont également consignées dans les notes de mise à jour d’[CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
 
 >[!NOTE]
 >
->Il n’existe pas de notes de mise à jour destinées au client ni de modifications du code pour les mois de mars, avril, mai et octobre 2017. Pour ces mois, le code du service d’ID est resté inchangé à la version 2.1.
+>Il n’existe pas de notes de mise à jour destinées au client ni de modifications du code pour les mois de mars, avril, mai et octobre 2017. Pendant ces mois, le code du service d’identification des visiteurs est resté inchangé à la version 2.1.
 
 ## Version 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -40,7 +40,7 @@ Septembre 2017
 <!--
 <p>
 <note type="important">
-ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
+Visitor ID Service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
 </note> </p>
 -->
 
@@ -54,16 +54,16 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative <span class="codeph">visitor.FIELDS</span>. Voir <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
+   <td colname="col2"> <p>Il s’agit d’une API asynchrone qui renvoie des identifiants pour Analytics, le service d’identification des visiteurs, le processus d’opt-out de la collecte de données, l’emplacement géographique et le contenu « blob » des métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative <span class="codeph">visitor.FIELDS</span>. Voir <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Correctifs et autres modifications**
 
-* Correction d’un bogue lié à Chrome en raison duquel le service d’ID lançait une erreur en cliquant sur le bouton Précédent dans ce navigateur.
-* Le service d’ID déclenche à nouveau les synchronisations des identifiants lorsque l’identifiant de région change dans la réponse d’appel d’événement change.
-* Ajout d’une nouvelle documentation, [Politiques de sécurité du contenu et service d’identités d’Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’ID.
+* Correction d’un bug lié à Chrome en raison duquel le service d’identification des visiteurs générait une erreur lors d’un clic sur le bouton Précédent dans ce navigateur.
+* Le service d’identification des visiteurs déclenche à nouveau les synchronisations d’identifiant lorsque l’identifiant de région dans la réponse de l’appel d’événement change.
+* Ajout d’une nouvelle documentation, [Politiques de sécurité du contenu et service d’identification des visiteurs](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), qui explique comment ajouter à la liste blanche les appels aux domaines Adobe utilisés par le service d’identification des visiteurs.
 
 <!--
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
@@ -80,14 +80,14 @@ August, 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the Visitor ID Service sends (or does not send) data to the Adobe Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Revised Documentation**
 
-Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. 
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different CX Enterprise solutions. 
 -->
 
 ## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
@@ -115,8 +115,8 @@ Juillet 2017
 
 **Correctifs et autres modifications**
 
-* Correction d’un bogue dans VisitorAPI.js v2.2 qui empêchait le service d’ID et Target de fonctionner ensemble dans Internet Explorer.
-* Révision du code afin d’améliorer la manière dont le service d’ID envoie les données à l’iFrame de publication de destination. Cela permet de réduire l’utilisation du processeur.
+* Correction d’un bug dans `VisitorAPI.js` v2.2 qui empêchait le service d’identification des visiteurs et Target de fonctionner ensemble dans Internet Explorer.
+* Code révisé pour améliorer la manière dont le service d’identification des visiteurs envoie des données à l’iFrame de publication de destination. Cela permet de réduire l’utilisation du processeur.
 
 ## Version 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -132,7 +132,7 @@ Date de publication : Juin 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain et whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>Ces configurations permettent à différentes instances du code du service d’ID implémentées dans un iFrame et sur la page parente de communiquer entre elles. Elles sont conçues pour aider à résoudre les problèmes liés à deux cas d’utilisation spécifiques où vous pouvez contrôler ou non la page/le domaine parent et où le code du service d’ID est chargé dans l’iFrame d’un domaine que vous contrôlez. </p> </td> 
+   <td colname="col2"> <p>Ces configurations permettent aux différentes instances du code du service d’identification des visiteurs implémentées dans un iFrame et sur la page parente de communiquer entre elles. Ils sont conçus pour aider à résoudre des problèmes avec 2 cas d’utilisation spécifiques où vous pouvez contrôler ou non la page/le domaine parent et où vous avez un chargement de code du service d’identification des visiteurs dans l’iFrame d’un domaine que vous contrôlez. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,7 +170,7 @@ Date de publication : Juin 2017
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Comprendre la synchronisation des identifiants et les taux de correspondance </a> </p> </td> 
-   <td colname="col2"> <p>Modification de la section <span class="keyword">Media Optimizer</span> afin de décrire l’appel à <span class="codeph">cm.eversttech.net</span>. Il s’agit de la synchronisation automatique des identifiants effectuée par le service d’ID avec <span class="keyword">Media Optimizer</span>. Cette fonctionnalité a été publiée en janvier 2017. Voir <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">Version 2.0</a> ci-dessous. </p> </td> 
+   <td colname="col2"> <p>Modification de la section <span class="keyword">Media Optimizer</span> afin de décrire l’appel à <span class="codeph">cm.eversttech.net</span>. Il s’agit de la synchronisation automatique des identifiants effectuée par le service d’identification des visiteurs avec <span class="keyword"> Media Optimizer</span>. Cette fonctionnalité a été publiée en janvier 2017. Voir <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">Version 2.0</a> ci-dessous. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -190,11 +190,11 @@ Date de publication : février 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> Propriété de l’API du service d’ID, <span class="codeph"> idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> Propriété de l’API du service d’identification des visiteurs, <span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>Cette propriété définit l’identifiant du conteneur utilisé par <span class="keyword">Audience Manager</span> pour la synchronisation des identifiants. Voir <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Méthode d’API de service d’ID, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>Méthode de l’API du service d’identification des visiteurs, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>Cette méthode publique ajoute le <span class="wintitle">SDID (Supplemental Data ID)</span> comme paramètre de chaîne de requête à une URL de redirection. Voir <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
@@ -202,11 +202,11 @@ Date de publication : février 2017
 
 **Correctifs**
 
-Correction d’un bogue en raison duquel le service d’ID envoyait des appels redondants au serveur pour un identifiant plutôt que d’utiliser celui qui était stocké dans le cookie AMCV. (MCID-296)
+Correction d’un bug en raison duquel le service d’identification des visiteurs effectuait des appels au serveur redondants pour un identifiant au lieu d’utiliser l’identifiant stocké dans le cookie AMCV. (MCID-296)
 
 **Nouvelle documentation**
 
-[Utilisation de la prérécupération DNS avec différents services et solutions Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=fr)
+[Utilisation de la prérécupération DNS avec différents services et solutions d’entreprise CX](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=fr)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -214,15 +214,15 @@ Janvier 2017
 
 >[!IMPORTANT]
 >
->Le code du service d’ID de la version 2.0 synchronise automatiquement les identifiants avec Adobe Media Optimizer, par défaut. Cela signifie que vous verrez un appel depuis la page à `cm.eversttech.net`, qui est un domaine hérité de [!DNL Media Optimizer] contrôlé par [!DNL Adobe]. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>Le code du service d’identification des visiteurs v2.0 synchronise automatiquement les identifiants avec Adobe Media Optimizer par défaut. Cela signifie qu’un appel s’affichera de la page vers `cm.eversttech.net`, qui est un domaine Adobe Media Optimizer hérité contrôlé par Adobe. Voir la documentation [Comprendre la synchronisation des identifiants et les taux de correspondance](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Correctifs et améliorations**
 
 * Correction d’un bogue qui empêchait AppMeasurement d’effectuer des appels de suivi vers Analytics. (MCID-254, MCID-256, MCID-286)
-* Correction d’un bogue empêchant la panne du service ID juste après qu’un visiteur active un bloqueur d’annonces publicitaires configuré pour exclure le domaine demdex.net. Ce bogue reste rare et inhabituel car la plupart des bloqueurs d’annonces publicitaires ne bloquent pas le domaine demdex.net. (MCID-233)
-* Correction d’un bogue lié aux interactions entre le code du service d’ID et un script personnalisé sur le site Web d’un client. Ce problème empêchait Internet Explorer 9 de charger les pages Web. (MCID-206)
+* Correction d’un bug en raison duquel le service d’identification des visiteurs échouait immédiatement si un visiteur avait activé un bloqueur de publicités et que ce bloqueur était configuré pour exclure le domaine demdex.net. Ce bogue reste rare et inhabituel car la plupart des bloqueurs d’annonces publicitaires ne bloquent pas le domaine demdex.net. (MCID-233)
+* Correction d’un bug provoqué par des interactions entre le code du service d’identification des visiteurs et un script personnalisé sur le site web d’un client. Ce problème empêchait Internet Explorer 9 de charger les pages Web. (MCID-206)
 
 ## Années précédentes {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
-Notes de mise à jour précédentes relatives au service d’ID.
+Anciennes notes de mise à jour du service d’identification des visiteurs.
 

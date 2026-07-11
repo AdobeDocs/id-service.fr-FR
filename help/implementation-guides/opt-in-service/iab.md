@@ -14,10 +14,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 518
-ht-degree: 96%
+source-wordcount: 515
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Pour plus de détails, lisez les [documents d’Interactive Advertising Bureau](
 >
 >Opt-in est disponible uniquement dans ECID 4.0+.
 
-Utilisez Adobe Experience Platform Launch pour mettre en œuvre le plug-in IAB TCF de l’Opt-in pour votre site. Lors de l’activation manuelle d’IAB pour Opt-in, vérifiez que les paramètres suivants sont définis sur true dans l’objet Visiteur :
+Utilisez les balises pour implémenter le plug-in IAB TCF de l’Opt-in pour votre site. Lors de l’activation manuelle d’IAB pour Opt-in, vérifiez que les paramètres suivants sont définis sur true dans l’objet Visiteur :
 
 ```javascript
 Visitor.getInstance("YOUR_ORG_ID", {  

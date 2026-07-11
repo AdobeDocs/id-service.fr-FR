@@ -1,6 +1,6 @@
 ---
-description: Un indicateur booléen facultatif qui empêche le service d’identités d’Experience Cloud de renvoyer le cookie tiers demdex.net.
-keywords: Service d’ID
+description: Indicateur booléen facultatif qui empêche le service d’identification des visiteurs de renvoyer le cookie tiers demdex.net.
+keywords: Service d’identification des visiteurs
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
 TQID: https://experienceleague.adobe.com/vx9q-Q1X0fraWPUmaBlx-bBFX-gvnAox03mpENTizHw
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 145
-ht-degree: 97%
+source-wordcount: 144
+ht-degree: 16%
 
 ---
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-Un indicateur booléen facultatif qui empêche le service d’identités d’Experience Cloud de renvoyer le cookie tiers demdex.net.
+Indicateur booléen facultatif qui empêche le service d’identification des visiteurs de renvoyer le cookie tiers demdex.net.
 
 >[!NOTE]
 >
@@ -28,12 +28,12 @@ Un indicateur booléen facultatif qui empêche le service d’identités d’Exp
 
 **Syntaxe :** `disableThirdPartyCookies: true|false` (la valeur par défaut est `false`). Pour `VisitorAPI.js` v3.0.0 ou une version ultérieure.
 
-Lorsque `disableThirdPartyCookies: true`, le service d’ID ne renvoie pas le cookie tiers demdex.net (voir [Cookies et service d’identités Experience Cloud](../../introduction/cookies.md) ). Si le navigateur d’un visiteur du site contient déjà ce cookie, le service d’ID ne l’utilise pas pour créer un Experience Cloud ID (MID) ou renvoyer un ID existant. Le service d’ID crée à la place un MID aléatoire dans le cookie propriétaire. Une fois activé, vous pouvez collecter des données avec le service d’ID et les partager dans différentes solutions d’Experience Cloud.
+Lorsqu’il est `disableThirdPartyCookies: true`, le service d’identification des visiteurs ne renvoie pas le cookie tiers demdex.net (voir [Cookies et service d’identification des visiteurs](../../introduction/cookies.md) ). Si un visiteur du site dispose déjà de ce cookie dans son navigateur, le service d’identification des visiteurs ne l’utilisera pas pour créer un ECID ou renvoyer un identifiant existant. Au lieu de cela, le service d’identification des visiteurs crée un MID aléatoire dans le cookie propriétaire. Une fois activé, vous pouvez collecter des données avec le service d’identification des visiteurs et les partager dans différentes solutions d’entreprise CX.
 
 **Exemple de code**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
    trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
  

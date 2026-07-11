@@ -1,6 +1,6 @@
 ---
 description: Configuration dans ECID qui permet la prise en charge des cookies AMCV sur les pages Google AMP.
-keywords: Service d’ID
+keywords: Service d’identification des visiteurs
 title: Configurations Secure et SameSite
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
 TQID: https://experienceleague.adobe.com/qT9et54-InwTH7usPnjGN8mdBeMMrqK-qjxGOwqsXBA
@@ -13,10 +13,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 156
-ht-degree: 100%
+source-wordcount: 151
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Cette configuration vous permet de modifier les paramètres de vos cookies et de prendre en charge [les cookies AMCV](../../introduction/cookies.md) sur les pages Google AMP.
 
-Le service Adobe Visitor ID définit les cookies ECID selon le paramètre par défaut du navigateur `SameSite = Lax`, qui est inaccessible si la page est chargée dans une balise iframe telle quʼune page Google AMP. Pour accéder aux cookies ECID, utilisez les configurations ci-dessous pour mettre à jour le paramètre SameSite sur `SameSite = None`.
+Le service d’identification des visiteurs Adobe définit les cookies ECID avec le paramètre par défaut du navigateur de `SameSite = Lax`, qui est inaccessible si la page est chargée dans un iframe comme une page Google AMP. Pour accéder aux cookies ECID, utilisez les configurations ci-dessous pour mettre à jour le paramètre SameSite sur `SameSite = None`.
 
 >[!NOTE]
 >
@@ -32,9 +32,9 @@ Le service Adobe Visitor ID définit les cookies ECID selon le paramètre par d�
 
 **Mise en œuvre** :
 
-Si vous utilisez Adobe Experience Platform Launch, mettez à niveau votre extension Experience Cloud ID vers la version 5.1.0 et configurez `secureCookie: true` et `sameSiteCookie: none`.
+Si vous utilisez des balises, mettez à niveau votre extension de balise [!UICONTROL Experience Cloud ID Service] vers la version 5.1.0 et configurez `secureCookie: true` et `sameSiteCookie: none`.
 
-Si vous nʼutilisez pas Experience Platform Launch, mettez à jour la bibliothèque Visitor vers la dernière version (5.1.0) et suivez les configurations ci-dessous, tout en initialisant lʼinstance Visitor :
+Si vous n’utilisez pas de balises, mettez à jour vers la dernière bibliothèque Visitor 5.1.0 et suivez les configurations ci-dessous, lors de l’initialisation de l’instance Visiteur :
 
 **Exemple de code**
 

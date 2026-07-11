@@ -1,6 +1,6 @@
 ---
 description: Cette propriété définit l’identifiant du conteneur de la source de données que vous souhaitez utiliser pour les synchronisations des identifiants.
-keywords: Service d’ID
+keywords: Service d’identification des visiteurs
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
@@ -11,10 +11,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 320
-ht-degree: 96%
+source-wordcount: 328
+ht-degree: 60%
 
 ---
 
@@ -37,7 +37,7 @@ Contenu :
 **Exemple de code:**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Set container ID 
    idSyncContainerID:80 
@@ -48,16 +48,16 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **Conteneurs**
 
-Les conteneurs sont des objets créés par [!DNL Audience Manager]. Bien qu’ils ne soient pas accessibles en externe, ces conteneurs répertorient toutes les sources de données qui :
+Les conteneurs sont des objets créés par Audience Manager. Bien qu’ils ne soient pas accessibles en externe, ces conteneurs répertorient toutes les sources de données qui :
 
 * Sont disponibles pour la synchronisation des ID, mais ne sont pas utilisées.
 * Sont utilisées pour la synchronisation des ID.
 
-Même si vous n’êtes pas un client[!DNL Audience Manager], votre compte comporte ces conteneurs si vous échangez des identifiants avec différentes sources de données sur différentes pages de votre domaine. En effet, [!DNL Audience Manager] fournit la technologie et la fonctionnalité back-end qui permettent la synchronisation des identifiants.
+Même si vous n’êtes pas un client Audience Manager, votre compte disposera de ces conteneurs si vous échangez des identifiants avec différentes sources de données sur différentes pages de votre domaine. En effet, Audience Manager fournit la technologie et la fonctionnalité d’arrière-plan qui permettent la synchronisation des identifiants.
 
 **Cas d’utilisation**
 
-Selon votre situation, il se peut que vous deviez ajouter cette configuration à votre code de service d’ID.
+Selon votre situation, vous devrez peut-être ajouter cette configuration à votre code de service d’identification des visiteurs.
 
 <table id="table_48621F343C7F4760A75F6BCC2DB2DA20"> 
  <thead> 
@@ -71,7 +71,7 @@ Selon votre situation, il se peut que vous deviez ajouter cette configuration à
    <td colname="col1"> <p> <b>Inutile</b> </p> </td> 
    <td colname="col2"> <p>Vous n’avez pas besoin d’utiliser cette configuration si : </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Vous utilisez le service d’ID avec une solution <span class="keyword">Experience Cloud</span> et n’effectuez pas de synchronisation des identifiants avec d’autres sources de données. Dans ce cas, votre compte possède un conteneur par défaut avec l’ID 0 et aucune action n’est requise. </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Vous utilisez le service d’identification des visiteurs avec n’importe quelle solution d’entreprise CX et n’effectuez aucune synchronisation d’identifiants avec d’autres sources de données. Dans ce cas, votre compte possède un conteneur par défaut avec l’ID 0 et aucune action n’est requise. </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">Toutes vos sources de données se trouvent dans un seul conteneur. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -87,10 +87,10 @@ Selon votre situation, il se peut que vous deviez ajouter cette configuration à
  </tbody> 
 </table>
 
-## Définition des identifiants de conteneur lorsque vous utilisez DIL et VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Définition des ID de conteneur lorsque vous utilisez DIL et `VisitorAPI.js` {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Si vous avez déployé [!UICONTROL DIL] *et* VisitorAPI.js sur la même page :
+Si vous avez déployé [!UICONTROL DIL] *et* `VisitorAPI.js` sur la même page :
 
-* Le code du service d’ID des visiteurs a la priorité sur DIL pour les synchronisations des identifiants.
-* Définissez la `idSyncContainerID` configuration uniquement dans le code du service d’ID.
+* Le code du service d’identification des visiteurs est prioritaire sur DIL pour les synchronisations des identifiants.
+* Définissez la configuration `idSyncContainerID` dans le code du service d’identification des visiteurs uniquement.
 

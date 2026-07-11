@@ -1,6 +1,6 @@
 ---
-description: Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
-keywords: suivi inter-domaines ; service d’ID
+description: Indicateur booléen facultatif qui empêche le service d’identification des visiteurs d’effectuer des appels vers d’autres domaines.
+keywords: suivi inter-domaines;Service d’identification des visiteurs
 title: disableThirdPartyCalls
 exl-id: 1d5b4e80-1b2d-4401-9057-449a6abf5db5
 TQID: https://experienceleague.adobe.com/mv00QfToxSqeITADmY1LbihbtJNHf1zzQef9uKDu-dc
@@ -13,37 +13,37 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 200
-ht-degree: 100%
+source-wordcount: 205
+ht-degree: 24%
 
 ---
 
 # disableThirdPartyCalls{#disablethirdpartycalls}
 
-Un indicateur booléen optionnel qui empêche le service d’ID de lancer des appels à d’autres domaines.
+Indicateur booléen facultatif qui empêche le service d’identification des visiteurs d’effectuer des appels vers d’autres domaines.
 
-**Syntaxe :** ` `disableThirdPartyCalls: true|false`` (la valeur par défaut est `false`).
+**Syntaxe :** ` `disableThirdPartyCalls: true|false&grave;&grave; (la valeur par défaut est `false`).
 
-Lorsque `disableThirdPartyCalls: true`, le service d’ID ne lancera pas d’appel vers d’autres domaines.
+Lorsqu’il est `disableThirdPartyCalls: true`, le service d’identification des visiteurs n’effectuera pas d’appels vers d’autres domaines.
 
 **Rôle**
 
 Cette variable est conçue pour les clients qui ont besoin des éléments suivants :
 
-* Empêcher le service dʼidentification dʼeffectuer des appels à partir de leurs pages sécurisées et authentifiées.
-* Les visiteurs du site doivent posséder un Experience Cloud ID (MID).
-* Leurs autres solutions Experience Cloud doivent fonctionner correctement.
+* Pour empêcher le service d’identification des visiteurs d’effectuer des appels à partir de leurs pages authentifiées et sécurisées
+* Les visiteurs et visiteuses du site doivent disposer d’un ECID.
+* Leurs autres solutions CX Enterprise fonctionnent correctement.
 
 **Stratégie de mise en œuvre**
 
-Étant donné que dʼautres solutions Experience Cloud dépendent du MID, le service dʼidentification appelle Adobe pour renvoyer et définir cet identifiant. Si vous avez besoin d’empêcher le service d’ID de lancer des appels à partir des sections authentifiées de votre site Web, laissez-le lancer ces appels requis à partir des pages qui ne nécessitent pas d’authentification préalable. Une fois que le visiteur de votre site possède un MID, vous pouvez définir `disableThirdPartyCalls= true` dans le code du service d’ID sur les sections authentifiées de votre site. En principe, la plupart, voire la totalité, de vos clients accédera à une page dʼauthentification avant dʼaccéder aux parties sécurisées de votre site.
+Comme d’autres solutions d’entreprise CX reposent sur le MID, le service d’identification des visiteurs appelle Adobe pour revenir et définir cet identifiant. Si vous devez empêcher le service d’identification des visiteurs d’effectuer des appels à partir de sections authentifiées de votre site web, laissez-le effectuer ces appels requis à partir de pages qui ne nécessitent pas d’authentification au préalable. Une fois que le visiteur de votre site dispose d’un MID, vous pouvez le `disableThirdPartyCalls= true` dans le code du service d’identification des visiteurs dans les sections authentifiées de votre site. En principe, la plupart, voire la totalité, de vos clients accédera à une page dʼauthentification avant dʼaccéder aux parties sécurisées de votre site.
 
 **Exemple de code**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
    trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
  

@@ -1,6 +1,6 @@
 ---
-description: Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client et un statut d’authentification à chaque visiteur.
-keywords: Service d’ID
+description: Avec l’ECID, vous pouvez associer d’autres ID de client et un statut d’authentification à chaque visiteur.
+keywords: Service d’identification des visiteurs
 title: ID de client et états d’authentification
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 TQID: https://experienceleague.adobe.com/0z2HaRyNYcuJhE6WMkTZVXK-DiPu2S5bdnOiYsZwxYg
@@ -11,26 +11,26 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 642
-ht-degree: 97%
+ht-degree: 78%
 
 ---
 
 # ID de client et états d’authentification {#customer-ids-and-authentication-states}
 
-Avec l’identifiant visiteur Experience Cloud, vous pouvez associer d’autres ID de client et un statut d’authentification à chaque visiteur.
+Avec l’ECID, vous pouvez associer d’autres ID de client et un statut d’authentification à chaque visiteur.
 
 ## États d’authentification {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Vous pouvez par exemple télécharger ces ID en tant qu’[attributs du client](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) vers [!DNL Experience Cloud] et accéder à ces données à partir de différentes solutions.
+La `setCustomerIDs` méthode accepte plusieurs ID de client pour un même visiteur. Vous pouvez ainsi identifier ou cibler un utilisateur sur différents appareils. Par exemple, vous pouvez charger ces identifiants en tant qu’[attributs du client](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) vers l’expérience client d’entreprise et accéder à ces données dans les différentes solutions.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (synchronisation des ID de client) est requis pour les fonctionnalités d’attributs du client et des services principaux. La synchronisation des ID de client est une méthode d’identification facultative pour [!DNL Analytics]. [!DNL Target] nécessite `Visitor.AuthState.AUTHENTICATED` pour que les attributs du client fonctionnent. Pour obtenir des exemples, voir [Services principaux – Comment activer vos solutions](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=fr).
+>`setCustomerIDs` (synchronisation des ID de client) est requis pour les fonctionnalités d’attributs du client et des services principaux. La synchronisation des ID de client est une méthode d’identification facultative pour Analytics. Target nécessite des `Visitor.AuthState.AUTHENTICATED` pour que les attributs du client fonctionnent. Pour obtenir des exemples, voir [Services principaux – Comment activer vos solutions](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=fr).
 
-À partir de la version 1.5 du service Experience Cloud Identity, `setCustomerIDs` comprend l’objet `AuthState` facultatif. `AuthState` identifie les visiteurs selon leur état d’authentification (connecté ou déconnecté, par exemple). Vous définissez l’état d’authentification avec une valeur d’état répertoriée dans le tableau. L’état d’authentification est renvoyé sous la forme d’un entier.
+À partir du service d’identification des visiteurs version 1.5 ou ultérieure, `setCustomerIDs` inclut l’objet `AuthState` facultatif. `AuthState` identifie les visiteurs selon leur état d’authentification (connecté ou déconnecté, par exemple). Vous définissez l’état d’authentification avec une valeur d’état répertoriée dans le tableau. L’état d’authentification est renvoyé sous la forme d’un entier.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -217,12 +217,12 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Prise en charge du SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-Le service [!DNL Experience Cloud] ID prend en charge les identifiants et les états d’authentification du client dans le code de nos SDK Android et iOS. Voir les bibliothèques de codes suivantes :
+Le service d’identification des visiteurs prend en charge les identifiants de client et les états d’authentification dans notre code Android et iOS SDK. Voir les bibliothèques de codes suivantes :
 
 * [Méthodes du SDK Android](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=fr)
 * [Méthodes de SDK iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=fr)
 
 ## Remarque destinée aux clients Analytics et Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Si vous transmettez des ID déclarés à [!DNL Audience Manager], l’objet `userid` doit correspondre au code d’intégration associé à une source de données. Pour plus d’informations, consultez la section [!UICONTROL Visitor ID Service] de la documentation [Configurer le code des règles de fusion](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=fr#configure-merge-rule-code).
+Si vous transmettez des identifiants déclarés à Audience Manager, l’objet `userid` doit correspondre au code d’intégration associé à une source de données. Pour plus d’informations, consultez la section [!UICONTROL Visitor ID Service] de la documentation [Configurer le code des règles de fusion](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=fr#configure-merge-rule-code).
 

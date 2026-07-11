@@ -1,6 +1,6 @@
 ---
 description: Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aider à résoudre des problèmes liés à l’utilisation d’identifiants sur des sites, écrans ou applications d’une seule page.
-keywords: Service d’ID
+keywords: Service d’identification des visiteurs
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 TQID: https://experienceleague.adobe.com/ud8yTufRC6V5T58oh20G65MYNTCZvMlK5FdHVrrZFpU
@@ -13,10 +13,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 377
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
@@ -26,10 +26,10 @@ Cette fonction s’adresse principalement aux utilisateurs d’A4T, pour les aid
 
 ## Cas d’utilisation {#section-840b88a5cdb042488b340cad5d7b22a5}
 
-En tant que client d’A4T utilisant le service d’ID, vous pouvez utiliser la fonction `visitor.resetState()` lorsque vous devez :
+En tant que client A4T utilisant le service d’identification des visiteurs , vous pouvez utiliser la fonction `visitor.resetState()` lorsque vous devez :
 
-* Transmettre un identifiant de données supplémentaires (SDID), ou tout autre identifiant, dʼune page ou dʼun écran à un autre par le biais dʼune redirection. Normalement, le service dʼidentification ne transmet pas cet identifiant sans cette fonction.
-* Utiliser du code qui met uniquement à jour des sections spécifiques dʼune page ou dʼune application via des appels Ajax, et que vous souhaitez effectuer le suivi de ces actions. Supposons, par exemple, que vous ayez une page sur laquelle lorsque vous cliquez sur un objet seule une section spéciale est chargée ou modifiée. Dans ce cas, le service dʼidentification ne peut pas demander un autre identifiant, sauf si la page est rechargée. Cependant, avec `visitor.resetState()`, vous pouvez demander un nouvel ID.
+* Transmettre un identifiant de données supplémentaires (SDID), ou tout autre identifiant, dʼune page ou dʼun écran à un autre par le biais dʼune redirection. Normalement, le service d’identification des visiteurs ne transmet pas cet identifiant sans cette fonction.
+* Utiliser du code qui met uniquement à jour des sections spécifiques dʼune page ou dʼune application via des appels Ajax, et que vous souhaitez effectuer le suivi de ces actions. Supposons, par exemple, que vous ayez une page sur laquelle lorsque vous cliquez sur un objet seule une section spéciale est chargée ou modifiée. Dans ce cas, le service d’identification des visiteurs ne peut pas demander un identifiant différent à moins que la page ne soit rechargée. Cependant, avec `visitor.resetState()`, vous pouvez demander un nouvel ID.
 
 Voir les exemples de code ci-dessous.
 
@@ -39,20 +39,20 @@ Voir les exemples de code ci-dessous.
 
 ## Exemples de code {#section-d75b211bb4ea473887eb284de2ad838b}
 
-La mise en œuvre de votre service dʼidentification affecte votre manière dʼutiliser cette fonction. Consultez des exemples dans le tableau ci-dessous.
+L’implémentation de votre service d’identification des visiteurs affecte la manière dont vous utiliseriez cette fonction. Consultez des exemples dans le tableau ci-dessous.
 
 **Mise en œuvre côté serveur**
 
-Une mise en œuvre côté serveur concerne les clients d’A4T disposant d’un serveur mixte, des mises en œuvre de [!DNL Target] et d’[!DNL Analytics] côté client et du service d’ID. Si vous avez configuré le service d’ID avec cette méthode, il ne vous reste plus qu’à ajouter `visitor.resetState()` à la page. Les appels au service d’ID renvoient automatiquement un nouvel ID et un nouvel état du serveur.
+Une implémentation côté serveur est destinée aux clients A4T avec des implémentations mixtes côté serveur et côté client de Target, d’Analytics et du service d’identification des visiteurs. Si vous avez configuré le service d’identification des visiteurs avec cette méthode, il vous suffit d’ajouter des `visitor.resetState()` à la page. Les appels au service d’identification des visiteurs renverront automatiquement un nouvel ID et l’état du serveur.
 
 **Mise en œuvre non standard** (avec ID)
 
-Si vous avez configuré le service d’ID avec une [mise en œuvre non standard](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113), vous devez configurer un objet variable pour contenir le SDID (ou les autres ID) que vous souhaitez transmettre avec `visitor.resetState()`. Comme indiqué ci-dessous, cela inclut votre [ID d’organisation](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) et l’ID que vous souhaitez transmettre. Voici à quoi pourrait ressembler votre code.
+Si vous avez configuré le service d’identification des visiteurs avec une [implémentation non standard](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113), vous devez configurer un objet variable pour contenir le SDID (ou d’autres ID) que vous souhaitez transmettre avec `visitor.resetState()`. Comme illustré ci-dessous, cela inclut votre [ID d’organisation IMS](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) et l’identifiant que vous souhaitez transmettre. Voici à quoi pourrait ressembler votre code.
 
 ```js
 //Instantiate server state variable 
 var serverState = { 
-     "Insert Experience Cloud organization ID here": { 
+     "INSERT-IMS-ORG-ID-HERE": { 
           //Specify the SDID or other ID 
           supplementalDataIDCurrent: "1234", 
           supplementalDataIDCurrentConsumed: { 
@@ -61,8 +61,8 @@ var serverState = {
      } 
 }; 
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -76,8 +76,8 @@ Dans ce cas, vous pouvez utiliser `visitor.resetState()` pour générer un nouve
 
 ```js
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -95,8 +95,4 @@ var sdid1 = visitor.getSupplementalDataID("consumer3"); // sdid1: 5678
  
 var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 ```
-
-**Gestionnaire dynamique de balises**
-
-À l’heure actuelle, il n’existe pas de parcours de configuration de DTM pour `visitor.resetState()`.
 
