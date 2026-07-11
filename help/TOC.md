@@ -1,50 +1,49 @@
 ---
 audience: end-user
-user-guide-title: Aide du service d’identités d’Experience Cloud
-breadcrumb-title: Guide du service d’identités
-user-guide-description: Le service d’identités d’Adobe Experience Cloud fournit un identifiant universel et persistant qui identifie vos visiteurs et visiteuses à l’échelle de toutes les solutions dans Experience Cloud. Il permet de remplacer le code de génération d’ID hérité pour les services et solutions Experience Cloud.
+user-guide-title: Aide du service d’identification des visiteurs Adobe
+breadcrumb-title: Guide du service d’identification des visiteurs
+user-guide-description: Le service d’identification des visiteurs d’Adobe fournit un identifiant universel et persistant qui identifie vos visiteurs dans toutes les solutions de l’expérience client. Il permet de remplacer le code de génération d’ID hérité pour les solutions et services d’entreprise CX.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
+source-git-commit: 7621dc8925235bd3cf159a404741bd02fc9b6a77
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 94%
+source-wordcount: '372'
+ht-degree: 45%
 
 ---
 
 
-# Aide du service d’identités d’Experience Cloud {#using}
+# Aide du service d’identification des visiteurs Adobe {#using}
 
-+ [Aide du service d’identités](home.md)
++ [Aide du service d’identification des visiteurs](home.md)
 + Vue d’ensemble {#intro}
    + [Vue d’ensemble](introduction/overview.md)
-   + [À propos du service d’ID](introduction/about-id-service.md)
-   + [Cookies et service d’ID](introduction/cookies.md)
-   + [Requête et définition d’ID par le service d’ID](introduction/id-request.md)
+   + [À propos du service d’identification des visiteurs](introduction/about-id-service.md)
+   + [Cookies et service d’identification des visiteurs](introduction/cookies.md)
+   + [Requête et définition d’ID par le service d’identification des visiteurs](introduction/id-request.md)
    + [Comprendre la synchronisation et les taux de correspondance](introduction/match-rates.md)
 + Mise en œuvre {#implementation}
    + [Méthodes de mise en œuvre](implementation-guides/implementation-methods.md)
    + [Guides de mise en œuvre](implementation-guides/implementation-guides.md)
-   + [Implémentation avec les balises Experience Platform](implementation-guides/ecid-implement-with-launch.md)
-   + [Implémentation pour Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/overview){target=_blank}
+   + [Implémentation avec des balises](implementation-guides/ecid-implement-with-launch.md)
+   + [Implémentation pour Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Implémentation pour Target](implementation-guides/setup-target.md)
    + [Implémentation pour Analytics et Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implémentation pour Analytics, Audience Manager et Target](implementation-guides/setup-aam-analytics-target.md)
-   + [Utilisation du service ID avec A4T et une mise en œuvre côté serveur de Target](implementation-guides/ecid-a4t-target.md)
-   + [Intégration directe avec le service d’ID](implementation-guides/direct-integration.md)
+   + [Utilisation du service d’identification des visiteurs avec A4T et une implémentation côté serveur de Target](implementation-guides/ecid-a4t-target.md)
+   + [Intégration directe au service d’identification des visiteurs](implementation-guides/direct-integration.md)
    + [Cas d’utilisation de l’intégration directe](implementation-guides/direct-integration-examples.md)
-   + [Test et vérification du service d’ID](implementation-guides/test-verify.md)
+   + [Test et vérification du service d’identification des visiteurs](implementation-guides/test-verify.md)
    + Service Opt-in {#opt-in-service}
       + [Aperçu du service Opt-in](implementation-guides/opt-in-service/optin-overview.md)
       + [Configuration du service Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Validation du service Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Configurer Opt-in avec Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
-      + [Configuration d’Opt-in à l’aide de DTM](implementation-guides/opt-in-service/optin-dtm.md)
-      + [Contrôle des activités Experience Cloud en fonction du consentement de l’utilisateur](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [Configuration d’Opt-in avec des balises](implementation-guides/opt-in-service/launch.md)
+      + [Contrôlez les activités CX Enterprise en fonction du consentement de l’utilisateur](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [Cas d’utilisation d’Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Références d’Opt-in](implementation-guides/opt-in-service/api.md)
       + [Utilisation des services Opt-in avec un framework IAB](implementation-guides/opt-in-service/iab.md)
-+ API du service d’ID {#id-service-api}
-   + [Vue d’ensemble de l’API du service d’ID](library/library.md)
++ API du service d’identification des visiteurs {#id-service-api}
+   + [Présentation de l’API du service d’identification des visiteurs](library/library.md)
    + Configuration {#configurations}
       + [Présentation des configurations](library/function-vars/function-vars.md)
       + [audienceManagerServer et audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -82,22 +81,21 @@ ht-degree: 94%
 + Référence {#reference}
    + [Vue d’ensemble de la référence](reference/reference.md)
    + [Modifications de l’étiquetage SameSite de Google Chrome](reference/chrome-samesite-labelling.md)
-   + [Politiques de sécurité du contenu et service d’ID](reference/csp.md)
-   + [Prise en charge de la loi COPPA dans le service d’ID](reference/coppa.md)
-   + [Prise en charge de la norme CORS dans le service d’ID](reference/cors.md)
+   + [Politiques de sécurité du contenu et service d’identification des visiteurs](reference/csp.md)
+   + [Prise en charge de la loi COPPA dans le service d’identification des visiteurs](reference/coppa.md)
+   + [Prise en charge de la norme CORS dans le service d’identification des visiteurs](reference/cors.md)
    + [ID de client et états d’authentification](reference/authenticated-state.md)
    + [Méthodes de bibliothèque ECID dans un univers ITP Safari](reference/ecid-library-methods.md)
    + [Identification des visiteurs uniques](reference/unique-vis-method.md)
-   + [Obtention des identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’ID](reference/regions.md)
-   + [Conditions requises pour le service d’ID](reference/requirements.md)
-   + [Mesure de pulsation vidéo et service d’ID](reference/heartbeat.md)
-   + [Data Workbench et service d’ID](reference/dwb.md)
+   + [Obtention des identifiants de région et d’utilisateur à partir du cookie AMCV ou du service d’identification des visiteurs](reference/regions.md)
+   + [Conditions requises pour le service d’identification des visiteurs](reference/requirements.md)
+   + [Mesure de pulsation vidéo et service d’identification des visiteurs](reference/heartbeat.md)
    + [Prise en charge du hachage SHA-256 pour setCustomerIDs](reference/hashing-support.md)
 + Questions fréquentes {#faqs}
    + [Présentation des FAQ](faq-intro/faq-intro.md)
-   + [FAQ sur le service d’ID](faq-intro/faq.md)
-   + [Questions fréquentes sur d’autres solutions Experience Cloud](faq-intro/other-faq.md)
-+ Notes de mise à jour du service d’ID {#release-notes}
+   + [FAQ sur le service d’identification des visiteurs](faq-intro/faq.md)
+   + [Questions fréquentes sur les autres solutions CX pour les entreprises](faq-intro/other-faq.md)
++ Notes de mise à jour du service d’identification des visiteurs {#release-notes}
    + [Notes de mise à jour de 2022](release-notes/notes-2022.md)
    + [Notes de mise à jour de 2021](release-notes/notes-2021.md)
    + [Notes de mise à jour de 2020](release-notes/notes-2020.md)
@@ -106,5 +104,3 @@ ht-degree: 94%
    + [Notes de mise à jour de 2017](release-notes/notes-2017.md)
    + [Notes de mise à jour de 2016](release-notes/notes-2016.md)
    + [Notes de mise à jour de 2015](release-notes/notes-2015.md)
-+ {hide-from-toc}[Test Analytics masqué dans la table des matières](analytics-test-file-hidetoc.md)
-+ {hide-from-toc}[Fichier de test masqué](hidden-file.md)

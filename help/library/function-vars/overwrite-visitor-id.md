@@ -1,26 +1,21 @@
 ---
-description: Cette propriété remplace les ID Experience Cloud et Analytics d’un visiteur lors de sa navigation d’un domaine à un autre. Pour remplacer un identifiant, vous devez posséder le service d’ID et l’avoir implémenté sur chaque domaine. Ce code ne vous permet pas de remplacer les identifiants sur les domaines que vous ne contrôlez pas.
-keywords: Service d’ID
+description: Cette propriété remplace l’ECID et l’ID Analytics d’un visiteur lors de sa navigation d’un domaine à un autre. Pour remplacer un identifiant, vous devez posséder le service d’identification des visiteurs et l’avoir mis en œuvre sur chaque domaine. Ce code ne vous permet pas de remplacer les identifiants sur les domaines que vous ne contrôlez pas.
+keywords: Service d’identification des visiteurs
 title: overwriteCrossDomainMCIDAndAID
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
 TQID: https://experienceleague.adobe.com/dJUuTbc9zspC93WZrRaxBsp2BgpbE-z-iUuePQXGTeY
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 401
-ht-degree: 100%
+source-wordcount: 404
+ht-degree: 71%
 
 ---
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-Cette propriété remplace les ID Experience Cloud et Analytics d’un visiteur lors de sa navigation d’un domaine à un autre. Pour remplacer un identifiant, vous devez posséder le service d’ID et l’avoir implémenté sur chaque domaine. Ce code ne vous permet pas de remplacer les identifiants sur les domaines que vous ne contrôlez pas.
+Cette propriété remplace l’ECID et l’ID Analytics d’un visiteur lors de sa navigation d’un domaine à un autre. Pour remplacer un identifiant, vous devez posséder le service d’identification des visiteurs et l’avoir mis en œuvre sur chaque domaine. Ce code ne vous permet pas de remplacer les identifiants sur les domaines que vous ne contrôlez pas.
 
 **Syntaxe :** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (la valeur par défaut est `false`)
 
@@ -29,7 +24,7 @@ Cette propriété remplace les ID Experience Cloud et Analytics d’un visiteur
 Voici à quoi pourrait ressembler votre code JavaScript.
 
 ```js
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", { 
      ... 
  
@@ -40,7 +35,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 
 **Cas d’utilisation**
 
-Pour effectuer le suivi des visiteurs d’un site, le service d’ID écrit un [!DNL Experience Cloud] ID (ou MID) sur un cookie du navigateur. Le tableau suivant répertorie et décrit les cas d’utilisation fréquents pouvant vous amener à vouloir remplacer un MID existant défini par le service d’ID dans un autre domaine.
+Pour effectuer le suivi des visiteurs du site, le service d’identification des visiteurs écrit un ECID (ou MID) dans un cookie de navigateur. Le tableau suivant répertorie et décrit les cas d’utilisation courants dans lesquels vous souhaitez peut-être remplacer un MID existant défini par le service d’identification des visiteurs dans un autre domaine.
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 

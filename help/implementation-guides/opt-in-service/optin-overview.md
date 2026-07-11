@@ -3,19 +3,13 @@ description: Le service Opt-in vous permet de configurer des protocoles permetta
 title: Service Opt-in
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
 TQID: https://experienceleague.adobe.com/7XqAQ83gu6qQQfIWNB7Ui6aqtU-IbOxSMrYbMerHBCo
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 100%
+source-wordcount: 512
+ht-degree: 89%
 
 ---
 
@@ -23,11 +17,11 @@ ht-degree: 100%
 
 Le service Opt-in vous permet de configurer des protocoles permettant aux visiteurs de vous donner ou pas l’autorisation d’installer des cookies sur leurs appareils ou sur leurs navigateurs lorsqu’ils visitent votre site.
 
-Le service Opt-in est une extension du service Experience Cloud ID (ECID), conçu pour vous permettre de contrôler la création de cookies par les solutions Experience Cloud sur les pages web pour les visiteurs avant d’avoir eu l’accord de l’utilisateur (ainsi que de désigner les solutions concernées). Le service Opt-in vous laisse également en charge de la configuration des protocoles et de l’intégration à votre plateforme de gestion de contenu (CMP) et aux systèmes existants, faisant partie d’un ensemble plus vaste.
+Le service Opt-in est une extension d’ECID, conçu pour vous permettre de contrôler si et quelles solutions d’entreprise CX peuvent créer des cookies sur les pages web pour les visiteurs avant que l’utilisateur ne donne son consentement. Le service Opt-in vous laisse également en charge de la configuration des protocoles et de l’intégration à votre plateforme de gestion de contenu (CMP) et aux systèmes existants, faisant partie d’un ensemble plus vaste.
 
 L’utilisation du service Opt-in vous permet de définir si un visiteur peut donner son consentement pour toutes les solutions Adobe à la fois ou pour les solutions actuelles l’une après l’autre. Une fois le processus d’approbation terminé et enregistré par le client, vous pouvez récupérer les approbations visiteur de la CMP de l’ensemble des solutions Adobe.
 
-Vous pouvez implémenter et configurer facilement le service Opt-in à l’aide de [balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) avec l’[extension Opt-in](../../implementation-guides/opt-in-service/launch.md). Vous pouvez également le mettre en œuvre et le configurer à l’aide de [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Le service Opt-in est implémenté et configuré facilement à l’aide de [balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) avec l’extension [ Opt-in](../../implementation-guides/opt-in-service/launch.md).
 
 Pour commencer, reportez-vous à la section [Configuration du service Opt-in](../../implementation-guides/opt-in-service/getting-started.md) pour commencer.
 
@@ -39,7 +33,7 @@ Pour commencer, reportez-vous à la section [Configuration du service Opt-in](..
 >
 >Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à en remplacer un. Adressez-vous au service juridique de votre société pour obtenir des conseils en ce qui concerne le consentement et les pratiques quant à la configuration de la mise en œuvre de l’opt-in.
 
-## Opt-in et les diverses solutions Experience Cloud {#section-053e6224505542cf961896f0ca869e52}
+## Souscription aux solutions d’entreprise CX {#section-053e6224505542cf961896f0ca869e52}
 
 Le service Opt-in est un outil vous permettant de construire le workflow correspondant à vos besoins pour l’obtention du consentement. Il vous permet de concevoir un workflow pour agir (déclencher des balises) avant et après avoir reçu l’autorisation de l’utilisateur ou de votre responsable des consentements.
 

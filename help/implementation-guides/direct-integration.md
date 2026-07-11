@@ -1,40 +1,32 @@
 ---
-description: Cette implémentation permet aux clients d’utiliser le service d’ID sur les appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
-keywords: Service d’ID
-title: Intégration directe au service d’identités d’Experience Cloud
+description: Cette implémentation permet aux clients d’utiliser le service d’identification des visiteurs sur les appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
+keywords: Service d’identification des visiteurs
+title: Intégration directe au service d’identification des visiteurs Adobe
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 TQID: https://experienceleague.adobe.com/f5Tp-XaNY-KIpHXExT4hFwNt7FQqh6y4iaaWmIHEhAI
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 688
-ht-degree: 97%
+source-wordcount: 690
+ht-degree: 71%
 
 ---
 
-# Intégration directe au service d’identités d’Experience Cloud {#direct-integration-with-the-experience-cloud-id-service}
+# Intégration directe au service d’identification des visiteurs Adobe {#direct-integration-with-the-experience-cloud-id-service}
 
-Cette implémentation permet aux clients d’utiliser le service d’ID sur les appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
+Cette implémentation permet aux clients d’utiliser le service d’identification des visiteurs sur les appareils qui ne peuvent pas accepter ou utiliser notre code JavaScript ou SDK. Cela inclut les périphériques tels que les consoles de jeux, les téléviseurs intelligents ou d’autres appareils compatibles avec Internet. Reportez-vous à cette section pour connaître la syntaxe, voir des exemples de code et les définitions.
 
 ## Syntaxe {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
-Les appareils qui ne peuvent pas utiliser les bibliothèques de code VisitorAPI.js ou du SDK peuvent appeler directement les serveurs de collecte de données (DCS) utilisés par le service d’ID. Pour ce faire, appelez `dpm.demdex.net` et formatez votre requête comme indiqué ci-dessous. Le format *italique* indique un espace réservé variable.
+Les appareils qui ne peuvent pas utiliser les bibliothèques de code `VisitorAPI.js` ou SDK peuvent passer des appels directement aux serveurs de collecte de données (DCS) utilisés par le service d’identification des visiteurs. Pour ce faire, appelez `dpm.demdex.net` et formatez votre requête comme indiqué ci-dessous. Le format *italique* indique un espace réservé variable.
 
 ![](assets/directSyntax.png)
 
-Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre plusieurs `d_` paramètres au service d’ID, mais restez concentré sur les paires clé-valeur comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=fr).
+Dans cet exemple de syntaxe, le `d_` préfixe identifie les paires clé-valeur de l’appel en tant que variable de niveau système. Vous pouvez transmettre un certain nombre de paramètres de `d_` au service d’identification des visiteurs, mais restez concentré sur les paires clé-valeur, comme indiqué dans le code ci-dessus. Pour plus d’informations sur les autres variables, voir [Attributs pris en charge pour les appels d’API DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=fr).
 
-Le service d’ID prend en charge les appels HTTP et HTTPS. Utilisez HTTPS pour transmettre des données à partir d’une page sécurisée.
+Le service d’identification des visiteurs prend en charge les appels HTTP et HTTPS. Utilisez HTTPS pour transmettre des données à partir d’une page sécurisée.
 
 ## Exemple de requête {#section-26302b8851704888b6f8e6b2071bcdb0}
 
@@ -44,7 +36,7 @@ Votre demande peut ressembler à l’exemple ci-dessous. De longues variables on
 
 ## Exemple de réponse {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-dessous. Votre réponse peut être différente.
+Le service d’identification des visiteurs renvoie des données dans un objet JSON, comme illustré ci-dessous. Votre réponse peut être différente.
 
 ```js
 {
@@ -73,15 +65,15 @@ Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>ID de visiteur Experience Cloud. Voir <a href="../introduction/cookies.md" format="dita" scope="local">Cookies et service d’identités Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>ECID. Voir Cookies <a href="../introduction/cookies.md" format="dita" scope="local"> et service d’identification des visiteurs</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>ID d’organisation Experience Cloud. Pour obtenir de l’aide sur la recherche de cet identifiant, voir Conditions requises pour <a href="../reference/requirements.md" format="dita" scope="local"> service Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>Votre identifiant de l’organisation IMS. Pour obtenir de l’aide sur la recherche de cet identifiant, voir Conditions requises <a href="../reference/requirements.md" format="dita" scope="local"> le service d’identification des visiteurs</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>Paramètre facultatif qui transmet l’ID du fournisseur de données (DPID), l’ID d’utilisateur unique (DPUUID) et un <a href="../reference/authenticated-state.md" format="dita" scope="local"> ID d’état authentifié</a> au service d’ID. Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
+   <td colname="col2"> <p>Paramètre facultatif qui transmet l’ID de fournisseur de données (DPID), l’ID d’utilisateur unique (DPUUID) et un ID d’état authentifié </a> au service d’identification des visiteurs. <a href="../reference/authenticated-state.md" format="dita" scope="local">Comme indiqué dans l’exemple de code, séparez le DPID et le DPUUID par le caractère de contrôle non imprimable <span class="codeph">%01</span>. </p> <p> <b>DPID et DPUUID</b> </p> <p>Dans le paramètre <span class="codeph">d_cid</span>, affectez chaque combinaison DPID et DPUUID associée au même paramètre <span class="codeph">d_cid</span>. Vous pouvez ainsi renvoyer plusieurs jeux d’ID dans une même requête. En outre, séparez le DPID, le DPUUID et l’indicateur d’authentification facultatif par le caractère de contrôle non imprimable <span class="codeph">%01</span>. Dans les exemples ci-dessous, les ID de fournisseur et d’utilisateur sont mis en évidence en <b>gras</b> dans la syntaxe. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Syntaxe : <span class="codeph">...d_cid=DPID%01DPUUID%01état d’authentification...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">Exemple : <span class="codeph">...d_cid=123%01456%011...</span> </li> 
@@ -99,7 +91,7 @@ Le service d’ID renvoie des données dans un objet JSON, comme illustré ci-de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Le service d’ID est un système géographiquement réparti et dont la charge est équilibrée. L’identifiant identifie la région du centre de données qui gère l’appel. Voir <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=fr" format="https" scope="external">ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données</a> (DCS Region IDs, Locations, and Host Names). </p> </td> 
+   <td colname="col2"> <p>Le service d’identification des visiteurs est un système distribué géographiquement et dont la charge est équilibrée. L’identifiant identifie la région du centre de données qui gère l’appel. Voir <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=fr" format="https" scope="external">ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données</a> (DCS Region IDs, Locations, and Host Names). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 

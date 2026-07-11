@@ -1,29 +1,22 @@
 ---
-description: Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
-keywords: Service d’ID
+description: Il s’agit d’une API asynchrone qui renvoie des identifiants pour Analytics, le service d’identification des visiteurs, le processus d’opt-out de la collecte de données, l’emplacement géographique et le contenu « blob » des métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
+keywords: Service d’identification des visiteurs
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 77%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-Il s’agit d’une API asynchrone qui renvoie les identifiants pour Analytics, le service d’ID, le droit d’opposition à la collecte de données, l’emplacement géographique et le contenu d’objet blob de métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
+Il s’agit d’une API asynchrone qui renvoie des identifiants pour Analytics, le service d’identification des visiteurs, le processus d’opt-out de la collecte de données, l’emplacement géographique et le contenu « blob » des métadonnées par défaut. Vous pouvez également contrôler les ID que vous souhaitez renvoyer à l’aide de l’énumération facultative visitor.FIELDS.
 
 Contenu :
 
@@ -50,8 +43,8 @@ Pour plus d’informations, voir les cas d’utilisation et définitions suivant
 Ce code renvoie le jeu de données standard. Votre demande et votre réponse peuvent ressembler aux exemples suivants.
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{...}); 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{...}); 
    
 //Add your callback to the GET method to return IDs and data. 
 visitor.getVisitorValues(visitorIdsCallback);
@@ -72,11 +65,11 @@ Dans l’exemple de réponse par défaut, certaines valeurs ont été raccourcie
 
 ## Cas d’utilisation 2 : demander le jeu de données personnalisé {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de `visitor.FIELDS` l’énumération. Dans ce cas, nous voulons uniquement l’Experience Cloud ID (MCID) et l’Analytics ID (MCAID) du visiteur. Votre demande et votre réponse peuvent ressembler aux exemples suivants.
+Ce code utilise un tableau facultatif pour renvoyer un jeu d’ID spécifique à l’aide de `visitor.FIELDS` l’énumération. Dans ce cas, nous ne voulons que l’ECID du visiteur (MCID) et l’ID Analytics (MCAID). Votre demande et votre réponse peuvent ressembler aux exemples suivants.
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here", { ... });
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE", { ... });
 
 // Add an optional array to specify which IDs you want to return. 
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
@@ -110,7 +103,7 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>ID de la région de collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données de service d’ID en particulier. </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=fr" format="https" scope="external"> ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données </a> (DCS Region IDs, Locations, and Host Names) et <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col2"> <p>ID de la région de collecte de données. Il s’agit d’un identifiant numérique pour l’emplacement géographique d’un centre de données particulier du service d’identification des visiteurs. </p> <p>Voir <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=fr" format="https" scope="external"> ID de zone géographique, emplacements et noms d’hôte du serveur de collecte de données </a> (DCS Region IDs, Locations, and Host Names) et <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -118,7 +111,7 @@ Le tableau suivant répertorie et définit les paramètres de réponse. Il s’a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud ID du visiteur. </p> <p>Voir <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies et service d’identités Experience Cloud </a>. </p> </td> 
+   <td colname="col2"> <p>ECID du visiteur. </p> <p>Voir <a href="../../introduction/cookies.md" format="dita" scope="local"> de cookies et le </a> du service d’identification des visiteurs. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 

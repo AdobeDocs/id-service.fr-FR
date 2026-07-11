@@ -1,31 +1,24 @@
 ---
-description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS qui permettent d’envoyer des requêtes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
-keywords: Service d’ID
-title: Prise en charge de la norme CORS dans le service d’identités d’Experience Cloud
+description: Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service d’identification des visiteurs prend en charge les normes CORS qui activent ces requêtes de ressources cross-origin côté client. Le service d’identification des visiteurs revient aux requêtes JSONP sur les navigateurs plus anciens ou les navigateurs qui ne prennent pas en charge CORS.
+keywords: Service d’identification des visiteurs
+title: Prise en charge de la norme CORS dans le service d’identification des visiteurs Adobe
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 TQID: https://experienceleague.adobe.com/eix2FaBue-Nf--wGzg5jBqB93QGIWtbM78Efjd8QZWM
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 630
-ht-degree: 95%
+source-wordcount: 639
+ht-degree: 65%
 
 ---
 
-# Prise en charge de la norme CORS dans le service Experience Cloud Identity {#cors-support-in-the-experience-cloud-id-service}
+# Prise en charge de la norme CORS dans le service d’identification des visiteurs Adobe {#cors-support-in-the-experience-cloud-id-service}
 
-Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service Experience Cloud Identity prend en charge les normes CORS qui permettent d’envoyer des requêtes de ressources cross-origin côté client. Dans les navigateurs plus anciens ou non compatibles avec la norme CORS, les demandes JSONP sont restaurées.
+Les navigateurs utilisent la norme CORS (Cross Origin Resource Sharing) pour demander des ressources auprès d’un domaine autre que le domaine actuel. Le service d’identification des visiteurs prend en charge les normes CORS qui activent ces requêtes de ressources cross-origin côté client. Le service d’identification des visiteurs revient aux requêtes JSONP sur les navigateurs plus anciens ou les navigateurs qui ne prennent pas en charge CORS.
 
-## Problèmes liés aux politiques sur la même origine et aux demandes de service d’ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
+## Problèmes liés aux politiques sur la même origine et aux demandes de service d’identification des visiteurs {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
 Les règles de même origine sont des contrôles de sécurité ou des restrictions appliqués par un navigateur web. Lorsqu’elles sont appliquées à ce niveau, le navigateur Web lui-même détermine si une requête de ressources effectuée d’une page à une autre sera autorisée ou bloquée. Pour déterminer si une requête est une requête de même origine, le navigateur compare :
 
@@ -42,7 +35,7 @@ La norme CORS offre un moyen sécurisé et efficace de demander des ressources s
 * `Origin` : un en-tête de demande qui identifie la source de la requête.
 * `Access-Control-Allow-Origin` : un en-tête de réponse qui indique si une ressource peut être partagée avec le demandeur.
 
-Observons le fonctionnement de ces en-têtes : Dans cet exemple, supposons que nous ayons une société de services financiers qui a mis en œuvre le service [!DNL Experience Cloud] ID sur son site, `www.finance-website.com`. Le tableau suivant définit comment les en-têtes de requête et de réponse du mécanisme CORS vérifient l’accès à une ressource.
+Observons le fonctionnement de ces en-têtes : Dans cet exemple, supposons que nous ayons une société de services financiers qui a mis en œuvre le service d’identification des visiteurs sur son site, `www.finance-website.com`. Le tableau suivant définit comment les en-têtes de requête et de réponse du mécanisme CORS vérifient l’accès à une ressource.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -54,7 +47,7 @@ Observons le fonctionnement de ces en-têtes : Dans cet exemple, supposons que 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Requête</b> </p> </td> 
-   <td colname="col2"> <p>Alors que la page de l’entreprise financière se charge, le navigateur envoie une demande à <span class="codeph">dpm.demdex.net</span>. Il s’agit d’un appel au domaine des serveurs de collecte de données (DCS) utilisés par le service d’ID. Cette requête sur l’ensemble des domaines comprend l’en-tête : </p> <p> 
+   <td colname="col2"> <p>Alors que la page de l’entreprise financière se charge, le navigateur envoie une demande à <span class="codeph">dpm.demdex.net</span>. Il s’agit d’un appel au domaine des serveurs de collecte de données (DCS) utilisés par le service d’identification des visiteurs. Cette requête sur l’ensemble des domaines comprend l’en-tête : </p> <p> 
      <ul class="simplelist"> 
       <li> <code> Origin:https://www.finance-website.com</code> </li> 
      </ul> </p> </td> 
@@ -74,7 +67,7 @@ Voir aussi [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9
 
 ## Autres avantages liés à l’utilisation des normes CORS {#section-6f44f30694c44f95bf9854b8a2af8449}
 
-Le tableau ci-dessous décrit certains des avantages offerts par la norme CORS aux clients qui utilisent le service d’ID.
+Le tableau ci-dessous décrit certains des avantages offerts par CORS aux clients qui utilisent le service d’identification des visiteurs.
 
 <table id="table_AEB51A263D454F90B66E8C8D0513CF79"> 
  <thead> 
@@ -86,15 +79,15 @@ Le tableau ci-dessous décrit certains des avantages offerts par la norme CORS a
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Sécurité renforcée</b> </p> </td> 
-   <td colname="col2"> <p>La norme CORS utilise <a href="https://developer.mozilla.org/fr-FR/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> pour effectuer des requêtes et des transferts de données. Cette méthode est plus sécurisée qu’une requête JSONP. Elle fait en sorte qu’il n’existe aucune façon d’exécuter du JavaScript aléatoire, qui peut être compris dans la réponse du DCS. La payload de réponse XMLHttpRequest du mécanisme CORS est analysée par le code JavaScript du service d’ID et n’est pas simplement exécutée dans une fonction de rappel. </p> <p> <p>Remarque : Pour accepter les cookies, la propriété <span class="codeph">withCredentials</span> de l’objet <span class="codeph">XMLHttpRequest</span> doit être définie sur <span class="codeph">true</span>. Cette propriété est prise en charge dans Chrome, Firefox, Internet Explorer (v10+), Opera et Safari. </p> </p> </td> 
+   <td colname="col2"> <p>La norme CORS utilise <a href="https://developer.mozilla.org/fr-FR/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> pour effectuer des requêtes et des transferts de données. Cette méthode est plus sécurisée qu’une requête JSONP. Elle fait en sorte qu’il n’existe aucune façon d’exécuter du JavaScript aléatoire, qui peut être compris dans la réponse du DCS. La payload de réponse CORS XMLHttpRequest est analysée par le service d'identification des visiteurs JavaScript et n'est pas simplement exécutée dans une fonction de rappel. </p> <p> <p>Remarque : Pour accepter les cookies, la propriété <span class="codeph">withCredentials</span> de l’objet <span class="codeph">XMLHttpRequest</span> doit être définie sur <span class="codeph">true</span>. Cette propriété est prise en charge dans Chrome, Firefox, Internet Explorer (v10+), Opera et Safari. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Améliorations des performances</b> </p> </td> 
    <td colname="col2"> <p>Les raisons pour lesquelles la norme CORS contribue à améliorer les performances sont les suivantes : </p> 
     <ul id="ul_EC3A178003A94D70883B914050D7C464"> 
-     <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">Le navigateur gère les requêtes de ressources. Le processus de requête est transparent pour le service d’ID. </li> 
+     <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">Le navigateur gère les requêtes de ressources. Le processus de demande est transparent pour le service d’identification des visiteurs. </li> 
      <li id="li_C63E43A4CAB84210AB6A39100E5864BE">Contrairement aux requêtes JSONP asynchrones, le navigateur ne déclasse pas la priorité des requêtes CORS et ne les met pas en file d’attente. </li> 
-     <li id="li_1A2A15F591B84D1BAED3CFAB391EEBEC">Le service d’ID répond de manière autorisée. Cela signifie que lorsqu’une URL est transmise en tant qu’<span class="codeph">origine</span>, le service d’ID lui donne accès aux ressources requises. </li> 
+     <li id="li_1A2A15F591B84D1BAED3CFAB391EEBEC">Le service d’identification des visiteurs répond de manière autorisée. Cela signifie que lorsqu’une URL transmise en tant qu<span class="codeph">origine </span>, le service d’identification des visiteurs accorde à la page l’accès aux ressources requises. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

@@ -1,30 +1,25 @@
 ---
-description: Cette configuration vous permet d’effacer les Experience Cloud ID (ECID) orphelins ou bloqués, en s’appuyant sur la version mise à jour du service d’ID.
-keywords: Service d’ID
+description: Cette configuration vous permet d’effacer les ECID orphelins ou obsolètes en fonction de la version du service d’identification des visiteurs mise à jour.
+keywords: Service d’identification des visiteurs
 title: resetBeforeVersion
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
 TQID: https://experienceleague.adobe.com/5aqi7F5QkybjotjVMJgDWCchFw1XOYa6qPOSUzDyeqE
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 254
-ht-degree: 87%
+source-wordcount: 257
+ht-degree: 41%
 
 ---
 
 # resetBeforeVersion{#resetbeforeversion}
 
-Cette configuration vous permet d’effacer les Experience Cloud ID (ECID) orphelins ou bloqués, en s’appuyant sur la version mise à jour du service d’ID.
+Cette configuration vous permet d’effacer les ECID orphelins ou obsolètes en fonction de la version du service d’identification des visiteurs mise à jour.
 
-Le fait de fournir votre version du service d’ID comme valeur pour la variable `resetBeforeVersion` entraîne la suppression des ECID obsolètes de la liste des ID côté client.
+Fournir votre version du service d’identification des visiteurs comme valeur de la variable `resetBeforeVersion` entraîne l’effacement des ECID obsolètes des ID côté client.
 
-Certaines conditions, comme les expirations de sessions, peuvent parfois entraîner la création d’un ID côté client sans que le service d’ID reçoive un ID côté serveur. Lorsque cela se produit, le service d’ID trace l’ID côté client orphelin, sans toutefois pouvoir le suivre sur plusieurs domaines. Celui-ci ne peut pas non plus être synchronisé correctement avec les autres solutions. Le comportement compare la version du cookie AMCV actuel avec la valeur de la variable `resetBeforeVersion`. Si le cookie n’existe pas ou si la version du cookie est inférieure (antérieure) à la dernière version publiée de `resetBeforeVersion`, le cookie AMCV est supprimé et le service d’ID demande un nouvel ECID.
+Certaines conditions, telles que les délais d’expiration de session, peuvent parfois entraîner la génération d’un identifiant côté client sans que le service d’identification des visiteurs obtienne un identifiant côté serveur. Dans ce cas, un ID client orphelin est suivi par le service d’identification des visiteurs sans possibilité de suivi sur plusieurs domaines ou de synchronisation correcte avec d’autres solutions. Le comportement compare la version du cookie AMCV actuel avec la valeur de la variable `resetBeforeVersion`. Si le cookie n’existe pas ou si la version du cookie est inférieure (antérieure) à la dernière version publiée de `resetBeforeVersion`, le cookie AMCV est supprimé et le service d’identification des visiteurs demande un nouvel ECID.
 
 Dans le cas de visiteurs avec des cookies Demdex tiers sur leur navigateur, l’ECID est vérifié pour voir s’il a bien été généré en utilisant l’UUID dans le cookie Demdex. Si cela est bien le cas, le nouvel ECID sera bien le même et le visiteur est considéré comme nouveau. Si, pour une raison quelconque, lʼECID effacé nʼa pas été généré à lʼaide du cookie Demdex ou sʼil nʼy a pas de cookie Demdex, le visiteur recevra un nouvel ECID et sera considéré comme nouveau.
 
@@ -33,8 +28,8 @@ Dans le cas de visiteurs avec des cookies Demdex tiers sur leur navigateur, l’
 **Exemple de code**
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Marketing Cloud organization ID here", { 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
   
     //Same as s.trackingServer 
     trackingServer: "Insert tracking server here ", 
