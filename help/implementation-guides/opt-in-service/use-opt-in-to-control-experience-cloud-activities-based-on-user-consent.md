@@ -40,7 +40,7 @@ Un aspect important de la réglementation sur la protection des renseignements p
 
 [!UICONTROL Opt-in] est plus facile à configurer avec les balises. Consultez la courte vidéo suivante pour découvrir comment procéder.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40333/?captions=fre_fr&quality=12)
 
 Si vous n’utilisez pas de balises, vous pouvez définir la configuration de [!UICONTROL Opt-in] dans l’initialisation de l’objet Visiteur global, comme indiqué dans la [documentation](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=fr).
 
@@ -54,7 +54,7 @@ Lors de la configuration d’une interface utilisateur pour l’utilisation de [
 
 Dans la vidéo suivante, visionnez une démonstration rapide des [!UICONTROL Opt-in] qui travaillent sur la page et découvrez comment elles peuvent déterminer si les solutions d’entreprise CX définissent les cookies, déclenchent les balises, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40338/?captions=fre_fr&quality=12)
 
 **REMARQUE :** Il est important de noter qu&#39;au moment de la rédaction de cet article, [!UICONTROL Opt-in] n&#39;a pas été intégré dans les bibliothèques pour toutes les applications CX Enterprise. Les bibliothèques actuellement prises en charge pour [!UICONTROL Opt-in] sont les suivantes :
 
