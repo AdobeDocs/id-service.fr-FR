@@ -58,7 +58,7 @@ Le paramètre `aid` apparaît dans une chaîne de requête dans les cas suivants
 
 **Cas 2**
 
-Le paramètre `aid` s’affiche dans une chaîne de requête lorsque votre organisation utilise une [période de grâce](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) avant la mise en œuvre complète du service d’identification des visiteurs. Si l’utilisateur ou l’utilisatrice qui visite votre site est nouveau et que vous n’utilisez pas de période de grâce, le visiteur ou la visiteuse obtient le paramètre `mid` (ECID).
+Le paramètre `aid` s’affiche dans une chaîne de requête lorsque votre organisation utilise une [période de grâce](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) avant la mise en œuvre complète du service d’identification des visiteurs. Si l’utilisateur ou l’utilisatrice qui visite votre site est nouveau et que vous n’utilisez pas de période de grâce, le visiteur ou la visiteuse obtient le paramètre `mid` (ECID).
 
 >[!MORELIKETHIS]
 >

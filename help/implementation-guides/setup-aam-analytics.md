@@ -172,7 +172,7 @@ Placez le fichier `VisitorAPI.js` à l’intérieur des balises `<head>` sur cha
 
 ## Étape 8 : (facultative) configurer un délai de grâce {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de mettre en place une [période de grâce](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. Vous pouvez renouveler une période de grâce si nécessaire.
+Si l’un de ces cas d’utilisation s’applique à votre situation, demandez à [l’Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) de mettre en place une [période de grâce](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) temporaire. Les périodes de grâce peuvent durer jusqu’à 180 jours. Vous pouvez renouveler une période de grâce si nécessaire.
 
 **Mise en œuvre partielle**
 

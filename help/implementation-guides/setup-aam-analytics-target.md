@@ -220,7 +220,7 @@ Recherchez l’identifiant SDID dans la demande JavaScript. L’Analytics SDID 
 Si vos tests renvoient un AID, cela indique l’un des éléments suivants :
 
 * Vous êtes un visiteur récurrent dans le processus de migration des Analytics ID hérités.
-* Vous avez activé une [période de grâce](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration).
+* Vous avez activé une [période de grâce](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration).
 
 Lorsque vous voyez un AID, vérifiez sa valeur par rapport au mboxMCAVID cible. Ces valeurs sont identiques lorsque le service d’identification des visiteurs a été correctement implémenté.
 

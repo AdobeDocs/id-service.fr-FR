@@ -36,7 +36,7 @@ Le service d’identification des visiteurs Adobe active le framework d’identi
 Pour mieux comprendre la façon unique dont Adobe identifie les visiteurs et visiteuses et résout les informations d’identité, lisez la présentation ci-dessous :
 
 * **Service d’identification des visiteurs** : le service d’identification des visiteurs **est chargé de définir l’ECID**. Pour plus d’informations, consultez la [présentation du service d’identification des visiteurs](./introduction/overview.md).
-* **ECID** : l’ECID est un espace de noms d’identité partagé utilisé dans les applications Adobe Experience Platform et Adobe CX Enterprise pour identifier les personnes et les appareils. Pour plus d’informations sur l’ECID, consultez la [Présentation de l’ECID](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
+* **ECID** : l’ECID est un espace de noms d’identité partagé utilisé dans les applications Adobe Experience Platform et Adobe CX Enterprise pour identifier les personnes et les appareils. Pour plus d’informations sur l’ECID, consultez la [Présentation de l’ECID](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/ecid).
 * **Experience Platform Identity Service** : le service d’identités Experience Platform Identity Service vous offre une vue d’ensemble complète de vos client(e)s et de leur comportement en rapprochant les identités sur les appareils et systèmes. Pour plus d’informations, reportez-vous à la [Présentation du service d’identités d’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr).
 
 ## Commencer

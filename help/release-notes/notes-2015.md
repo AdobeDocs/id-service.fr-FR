@@ -49,7 +49,7 @@ Août 2015
   Cela n’a affecté que quelques clients qui remplissaient *tous* les critères suivants :
 
    * Utilisation du service d’identification des visiteurs.
-   * L’activation d’une [&#x200B; période de grâce &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
+   * L’activation d’une [&#x200B; période de grâce &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
    * possèdent des pages avec des domaines de niveau supérieur à parties multiples.
 
 Les révisions de la documentation de cette mise à jour incluent :

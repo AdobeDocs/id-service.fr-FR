@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifications majeures d’employés d’Adobe
 
-Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe produit d’une solution d’entreprise CX, et qu’il vous incombe de contribuer ou de rédiger des articles techniques, vous devez utiliser le référentiel privé à l’adresse `https://github.com/Adobe-Enterprise-Docs/id-service.en`.
+Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe produit d’une solution d’entreprise CX, et qu’il vous incombe de contribuer ou de rédiger des articles techniques, vous devez utiliser le référentiel privé à l’adresse `https://github.com/Adobe-Enterprise-Docs/id-service.fr-FR`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
