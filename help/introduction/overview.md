@@ -3,8 +3,13 @@ description: Le rôle du service d’identification des visiteurs dans Adobe CX 
 title: Présentation du service d’identification des visiteurs Adobe
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 TQID: https://experienceleague.adobe.com/fkT81V3iLEz2irg-3SDoyx733RNhqa2zWV1FgiXoYO4
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 497
@@ -52,5 +57,5 @@ Votre solution et d’autres bibliothèques de code Adobe doivent répondre à [
 
 * [Cookies et service d’identification des visiteurs](cookies.md) : le service d’identification des visiteurs utilise votre identifiant d’organisation IMS, le cookie AMCV d’entreprise CX et un cookie demdex pour créer et stocker les identifiants uniques et persistants des visiteurs de votre site. Ces cookies permettent au service d’identification des visiteurs de suivre les visiteurs dans vos différents domaines et d’activer le partage de données entre différentes solutions d’entreprise CX.
 * [Requête et définition d’ID par le service d’identification des visiteurs](id-request.md) : présentation du processus de demande d’ID et de réponse. Ces exemples illustrent l’affectation d’ID sur chaque site, entre différents sites et pour les sites gérés par différents clients CX Enterprise avec leurs propres ID d’organisation IMS.
-* [Comprendre la synchronisation des identifiants et les taux de correspondance ](match-rates.md) : cette section décrit les processus de synchronisation des identifiants et les taux de correspondance dans le service d’identification des visiteurs, y compris Adobe Media Optimizer et le service d’identification des visiteurs.
+* [Comprendre la synchronisation des identifiants et les taux de correspondance &#x200B;](match-rates.md) : cette section décrit les processus de synchronisation des identifiants et les taux de correspondance dans le service d’identification des visiteurs, y compris Adobe Media Optimizer et le service d’identification des visiteurs.
 

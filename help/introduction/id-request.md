@@ -4,9 +4,16 @@ keywords: Service d’identification des visiteurs
 title: Requête et définition d’ID par le service d’identification des visiteurs d’Adobe
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 TQID: https://experienceleague.adobe.com/B6fpw9A-yjGD58XgzLd1UQmAhxr-rGYcSbfPODdbZz4
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 777
@@ -20,7 +27,7 @@ Cette section décrit le processus de requête d’ID et de réponse. Ces exempl
 
 >[!NOTE]
 >
->Si vous ne savez pas comment le service d’identification des visiteurs crée l’identifiant visiteur, prenez un moment pour consulter la section [ Cookies et service d’identification des visiteurs ](../introduction/cookies.md).
+>Si vous ne savez pas comment le service d’identification des visiteurs crée l’identifiant visiteur, prenez un moment pour consulter la section [&#x200B; Cookies et service d’identification des visiteurs &#x200B;](../introduction/cookies.md).
 
 ## Demande d’un ECID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 

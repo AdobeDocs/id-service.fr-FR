@@ -4,9 +4,15 @@ keywords: Service d’identification des visiteurs
 title: FAQ sur le service d’identification des visiteurs
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 TQID: https://experienceleague.adobe.com/FxgL8UXSmoJM1oFr47yCAgYGcTa2PqKvSNM4bHjTw1M
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 824
@@ -38,7 +44,7 @@ Vous pouvez rencontrer des problèmes si vous hébergez le `VisitorAPI.js` en ta
 
 Placez la bibliothèque `VisitorAPI.js` en haut de la page dans la section `<head>` de votre code. Vous pouvez ainsi vous assurer que l’appel d’un ID disparaît avant que le corps de la page ne commence à se charger. Cela maximise les chances de réussite d’un renvoi d’ID.
 
-L’appel du service d’identification des visiteurs est asynchrone et est le seul appel au domaine [](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr). L’appel du service d’identification des visiteurs ne bloque pas le chargement d’autres éléments sur la page.
+L’appel du service d’identification des visiteurs est asynchrone et est le seul appel au domaine [&#128279;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=fr). L’appel du service d’identification des visiteurs ne bloque pas le chargement d’autres éléments sur la page.
 
 Pour les clients Target, placer le code du service d’identification des visiteurs dans la `<body>` de la page peut augmenter les chances de blocage d’un appel Target. Si vous devez placer le code du service d’identification des visiteurs dans le corps de votre page, il doit être placé après la balise `<body>` ouverte.
 
@@ -70,17 +76,17 @@ Cette modification améliore les performances des clients utilisant Visitor 2.3
 
 Les demandes de ressources avec CORS sont généralement préférables à celles effectuées avec JSONP. Avec JSONP, certains navigateurs mettent en file d’attente et dépriorisent les requêtes par rapport à d’autres appels synchrones et asynchrones sur la page. CORS permet de s’assurer que ces requêtes sont traitées avec une priorité plus élevée dans la pile d’appels du navigateur.
 
-Voir [ Prise en charge de la norme CORS dans le service d’identification des visiteurs](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Voir [&#x200B; Prise en charge de la norme CORS dans le service d’identification des visiteurs](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sécurité {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Le service d’identification des visiteurs prend-il en charge CORS ?**
 
-Oui. Voir [ Prise en charge de la norme CORS dans le service d’identification des visiteurs](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Oui. Voir [&#x200B; Prise en charge de la norme CORS dans le service d’identification des visiteurs](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Qu’est-ce que la norme CORS ?**
 
-*`Cross-Origin Resource Sharing`*(Cross-Origin Resource Sharing) ou CORS est une méthode que les navigateurs utilisent pour demander des ressources. Le service d’identification des visiteurs demande toujours des ressources à l’aide de la norme CORS dans les navigateurs qui le prennent en charge. Le service d’identification des visiteurs demande des ressources avec JSON-P dans les navigateurs plus anciens qui ne prennent pas en charge CORS. Voir [ Prise en charge de la norme CORS dans le service d’identification des visiteurs](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+*`Cross-Origin Resource Sharing`*(Cross-Origin Resource Sharing) ou CORS est une méthode que les navigateurs utilisent pour demander des ressources. Le service d’identification des visiteurs demande toujours des ressources à l’aide de la norme CORS dans les navigateurs qui le prennent en charge. Le service d’identification des visiteurs demande des ressources avec JSON-P dans les navigateurs plus anciens qui ne prennent pas en charge CORS. Voir [&#x200B; Prise en charge de la norme CORS dans le service d’identification des visiteurs](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Que faire si mes exigences en matière de sécurité sont si strictes que je ne souhaite jamais utiliser JSONP ?**
 

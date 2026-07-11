@@ -4,9 +4,16 @@ keywords: Service d’identification des visiteurs
 title: appendVisitorIDsTo (suivi interdomaines)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 TQID: https://experienceleague.adobe.com/F4rWmYj6NidX861-qU8KI9RRbdwNdzP0x4CZUxPZfYw
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 432
@@ -32,7 +39,7 @@ Contenu :
 
 ## Suivre les visiteurs sur plusieurs domaines lorsque les navigateurs bloquent les cookies tiers {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Le service d’identification des visiteurs écrit un cookie propriétaire et tiers dans le navigateur lorsqu’une personne visite votre site (voir [ Cookies et service d’identification des visiteurs ](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un ID unique pour ce visiteur. Le cookie tiers contient un autre identifiant utilisé par le service d’identification des visiteurs pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’identification des visiteurs ne peut pas :
+Le service d’identification des visiteurs écrit un cookie propriétaire et tiers dans le navigateur lorsqu’une personne visite votre site (voir [&#x200B; Cookies et service d’identification des visiteurs &#x200B;](../../introduction/cookies.md) ). Le cookie propriétaire contient le MID, un ID unique pour ce visiteur. Le cookie tiers contient un autre identifiant utilisé par le service d’identification des visiteurs pour générer le MID. Lorsqu’un navigateur bloque ce cookie tiers, le service d’identification des visiteurs ne peut pas :
 
 * Régénérer l’ID unique de ce visiteur de site lorsqu’il accède à un autre domaine.
 * Effectuer le suivi des visiteurs sur différents domaines appartenant à votre entreprise.

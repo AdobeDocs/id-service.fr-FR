@@ -4,9 +4,16 @@ keywords: Service d’identification des visiteurs
 title: Test et vérification du service d’identification des visiteurs Adobe
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 TQID: https://experienceleague.adobe.com/LPXZ0ydoky48kzyRnMK0kHsfoQyK3mi5IeXM0vtQV0s
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 713
@@ -30,11 +37,11 @@ Vous pouvez également tester le service d’identification des visiteurs dans u
 
 **Outils**
 
-Le débogueur Adobe [](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=fr) et le proxy HTTP [Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’identification des visiteurs a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
+Le débogueur Adobe [&#128279;](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=fr) et le proxy HTTP [Charles](https://www.charlesproxy.com/) peuvent vous aider à déterminer si le service d’identification des visiteurs a été configuré pour fonctionner correctement avec Analytics. Les informations de cette section sont basées sur les résultats renvoyés par le débogueur Adobe et Charles. Cependant, sentez-vous libre d’utiliser l’outil ou le débogueur qui fonctionne le mieux pour vous.
 
 ## Test à l’aide du débogueur Adobe {#section-861365abc24b498e925b3837ea81d469}
 
-Votre intégration de service est correctement configurée lorsque vous voyez un ECID dans la réponse du débogueur Adobe. Voir [ Cookies et service d’identification des visiteurs ](../introduction/cookies.md) pour plus d’informations sur le MID.
+Votre intégration de service est correctement configurée lorsque vous voyez un ECID dans la réponse du débogueur Adobe. Voir [&#x200B; Cookies et service d’identification des visiteurs &#x200B;](../introduction/cookies.md) pour plus d’informations sur le MID.
 
 Pour vérifier le statut du service d’identification des visiteurs avec Adobe [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=fr) :
 

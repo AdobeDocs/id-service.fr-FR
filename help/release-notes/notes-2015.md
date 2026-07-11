@@ -4,9 +4,17 @@ keywords: Service d’identification des visiteurs
 title: Notes de mise à jour 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 457
@@ -22,7 +30,7 @@ Notes de mise à jour et mises à jour de 2015.
 
 Novembre 2015
 
-La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients et clientes concernés par la loi COPPA peuvent ajouter une variable facultative à leur code de service d’identification des visiteurs qui les empêche de définir des cookies dans le domaine tiers d’un navigateur. Voir [ Prise en charge de la loi COPPA dans le service d’identification des visiteurs](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Pour les versions 1.5.3 ou ultérieures.
+La loi COPPA (Children’s Online Privacy Protection Act) interdit la collecte en ligne d’informations personnelles sur les mineurs de moins de 13 ans sans le consentement vérifiable de l’un des parents. Les clients et clientes concernés par la loi COPPA peuvent ajouter une variable facultative à leur code de service d’identification des visiteurs qui les empêche de définir des cookies dans le domaine tiers d’un navigateur. Voir [&#x200B; Prise en charge de la loi COPPA dans le service d’identification des visiteurs](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Pour les versions 1.5.3 ou ultérieures.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -41,7 +49,7 @@ Août 2015
   Cela n’a affecté que quelques clients qui remplissaient *tous* les critères suivants :
 
    * Utilisation du service d’identification des visiteurs.
-   * L’activation d’une [ période de grâce ](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
+   * L’activation d’une [&#x200B; période de grâce &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *ou* utilise des cookies propriétaires et les utilisateurs bloquent les cookies tiers.
    * possèdent des pages avec des domaines de niveau supérieur à parties multiples.
 
 Les révisions de la documentation de cette mise à jour incluent :
